@@ -1,0 +1,830 @@
+[
+{
+"ID": 1,
+"name": 200000112,
+"point": {
+"map": 30605,
+"x": 7,
+"y": 12
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 2,
+"name": 200000113,
+"point": {
+"map": 32020,
+"x": 20,
+"y": 11
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 3,
+"name": 200000119,
+"point": {
+"map": 5510,
+"x": 50,
+"y": 17
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 4,
+"name": 30618,
+"point": {
+"map": 60005,
+"x": 28,
+"y": 22
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 5,
+"name": 30619,
+"point": {
+"map": 700,
+"x": 66,
+"y": 87
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 6,
+"name": 30620,
+"point": {
+"map": 32020,
+"x": 20,
+"y": 11
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 7,
+"name": 30621,
+"point": {
+"map": 706,
+"x": 184,
+"y": 149
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 8,
+"name": 30622,
+"point": {
+"map": 703,
+"x": 35,
+"y": 70
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 9,
+"name": 30623,
+"point": {
+"map": 701,
+"x": 170,
+"y": 127
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 10,
+"name": 30624,
+"point": {
+"map": 7402,
+"x": 150,
+"y": 89
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 11,
+"name": 30625,
+"point": {
+"map": 31301,
+"x": 25,
+"y": 20
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 12,
+"name": 30626,
+"point": {
+"map": 7402,
+"x": 146,
+"y": 112
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 13,
+"name": 30627,
+"point": {
+"map": 60053,
+"x": 49,
+"y": 35
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 14,
+"name": 30628,
+"point": {
+"map": 60049,
+"x": 47,
+"y": 40
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 15,
+"name": 30629,
+"point": {
+"map": 7402,
+"x": 146,
+"y": 89
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 16,
+"name": 30630,
+"point": {
+"map": 817,
+"x": 279,
+"y": 110
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 17,
+"name": 30631,
+"point": {
+"map": 817,
+"x": 377,
+"y": 196
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 18,
+"name": 30632,
+"point": {
+"map": 817,
+"x": 159,
+"y": 436
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 19,
+"name": 30633,
+"point": {
+"map": 817,
+"x": 198,
+"y": 97
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 20,
+"name": 30634,
+"point": {
+"map": 817,
+"x": 326,
+"y": 81
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 21,
+"name": 30635,
+"point": {
+"map": 817,
+"x": 63,
+"y": 324
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 22,
+"name": 30546,
+"point": {
+"map": 7300,
+"x": 109,
+"y": 22
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 23,
+"name": 30550,
+"point": {
+"map": 7111,
+"x": 20,
+"y": 16
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 24,
+"name": 30551,
+"point": {
+"map": 8011,
+"x": 80,
+"y": 15
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 25,
+"name": 30838,
+"point": {
+"map": 21214,
+"x": 51,
+"y": 52
+}
+},
+{
+"ID": 26,
+"name": 30839,
+"point": {
+"map": 30305,
+"x": 19,
+"y": 21
+}
+},
+{
+"ID": 27,
+"name": 30840,
+"point": {
+"map": 30008,
+"x": 16,
+"y": 68
+}
+},
+{
+"ID": 28,
+"name": 30841,
+"point": {
+"map": 21009,
+"x": 27,
+"y": 41
+}
+},
+{
+"ID": 29,
+"name": 30842,
+"point": {
+"map": 32006,
+"x": 51,
+"y": 51
+}
+},
+{
+"ID": 30,
+"name": 30843,
+"point": {
+"map": 60050,
+"x": 13,
+"y": 17
+}
+},
+{
+"ID": 31,
+"name": 30844,
+"point": {
+"map": 60340,
+"x": 31,
+"y": 38
+}
+},
+{
+"ID": 32,
+"name": 30547,
+"point": {
+"map": 7107,
+"x": 23,
+"y": 8
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 33,
+"name": 30548,
+"point": {
+"map": 7400,
+"x": 73,
+"y": 117
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 34,
+"name": 30549,
+"point": {
+"map": 7300,
+"x": 126,
+"y": 41
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 35,
+"name": 30552,
+"point": {
+"map": 3200,
+"x": 54,
+"y": 46
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 36,
+"name": 30553,
+"point": {
+"map": 31801,
+"x": 38,
+"y": 8
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 37,
+"name": 30554,
+"point": {
+"map": 30003,
+"x": 24,
+"y": 24
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 38,
+"name": 30555,
+"point": {
+"map": 30307,
+"x": 40,
+"y": 32
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 39,
+"name": 30556,
+"point": {
+"map": 20701,
+"x": 46,
+"y": 20
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 40,
+"name": 30557,
+"point": {
+"map": 21005,
+"x": 19,
+"y": 37
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 41,
+"name": 30558,
+"point": {
+"map": 30503,
+"x": 46,
+"y": 34
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 42,
+"name": 30559,
+"point": {
+"map": 21205,
+"x": 29,
+"y": 6
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 43,
+"name": 30560,
+"point": {
+"map": 21303,
+"x": 17,
+"y": 4
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 44,
+"name": 30561,
+"point": {
+"map": 31901,
+"x": 17,
+"y": 9
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 45,
+"name": 30562,
+"point": {
+"map": 31202,
+"x": 25,
+"y": 54
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 46,
+"name": 30563,
+"point": {
+"map": 11204,
+"x": 33,
+"y": 13
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 47,
+"name": 30564,
+"point": {
+"map": 2000,
+"x": 71,
+"y": 34
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 48,
+"name": 30565,
+"point": {
+"map": 7105,
+"x": 12,
+"y": 12
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 49,
+"name": 30566,
+"point": {
+"map": 7000,
+"x": 98,
+"y": 103
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 50,
+"name": 30567,
+"point": {
+"map": 4000,
+"x": 71,
+"y": 105
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 51,
+"name": 600001281,
+"point": {
+"map": 7108,
+"x": 7,
+"y": 5
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 52,
+"name": 600001282,
+"point": {
+"map": 7203,
+"x": 30,
+"y": 27
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 53,
+"name": 600001283,
+"point": {
+"map": 7300,
+"x": 102,
+"y": 106
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 54,
+"name": 600001284,
+"point": {
+"map": 7400,
+"x": 45,
+"y": 101
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 55,
+"name": 30909,
+"point": {
+"map": 21001,
+"x": 5,
+"y": 6
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 56,
+"name": 30910,
+"point": {
+"map": 21201,
+"x": 61,
+"y": 48
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 57,
+"name": 30911,
+"point": {
+"map": 30001,
+"x": 28,
+"y": 16
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+},
+{
+"ID": 58,
+"name": 30912,
+"point": {
+"map": 11201,
+"x": 30,
+"y": 74
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 5000
+}
+]
+}
+]

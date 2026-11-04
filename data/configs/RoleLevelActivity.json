@@ -1,0 +1,106 @@
+[
+{
+"ID": 0,
+"roleLevelActivityInfo": [
+{
+"overDate": 1794398400
+}
+]
+},
+{
+"ID": 1,
+"rankStr": [
+1,
+10
+],
+"roleLevelActivityInfo": [
+{
+"itemId": 92107,
+"itemNum": 50
+},
+{
+"itemId": 92138,
+"itemNum": 50,
+"level": 140,
+"trans": 5,
+"rolePoint": 625
+}
+]
+},
+{
+"ID": 2,
+"rankStr": [
+11,
+30
+],
+"roleLevelActivityInfo": [
+{
+"itemId": 92107,
+"itemNum": 30
+},
+{
+"itemId": 92138,
+"itemNum": 30,
+"level": 140,
+"trans": 5,
+"rolePoint": 625
+}
+]
+},
+{
+"ID": 3,
+"rankStr": [
+31,
+66
+],
+"roleLevelActivityInfo": [
+{
+"itemId": 92107,
+"itemNum": 20
+},
+{
+"itemId": 92138,
+"itemNum": 20,
+"level": 140,
+"trans": 5,
+"rolePoint": 625
+}
+]
+},
+{
+"ID": 4,
+"rankStr": [
+67,
+100
+],
+"roleLevelActivityInfo": [
+{
+"itemId": 92107,
+"itemNum": 10
+},
+{
+"itemId": 92138,
+"itemNum": 10,
+"level": 140,
+"trans": 5,
+"rolePoint": 625
+}
+]
+},
+{
+"ID": 5,
+"rankStr": [
+101,
+9999
+],
+"roleLevelActivityInfo": [
+{
+"itemId": 92138,
+"itemNum": 5,
+"level": 140,
+"trans": 5,
+"rolePoint": 625
+}
+]
+}
+]

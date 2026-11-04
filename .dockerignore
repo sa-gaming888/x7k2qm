@@ -1,0 +1,9 @@
+.git
+.github
+**/__pycache__
+*.log
+Dockerfile
+Dockerfile.base
+.dockerignore
+scan.sh
+data/logs

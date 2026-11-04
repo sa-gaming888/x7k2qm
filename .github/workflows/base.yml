@@ -1,0 +1,46 @@
+name: base
+
+# 基底映像（Python＋CA 憑證，無 shell、非 root）：只在 Dockerfile.base 改了或手動觸發時重建，
+# 推 ghcr.io/<owner>/x7k2qm-base:latest 與日期標籤。程式映像（build.yml）直接用它，不每次重建 Python。
+# CVE 掃描在本地做（scan.sh）。
+
+on:
+  push:
+    branches: [main]
+    paths: [Dockerfile.base, .github/workflows/base.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE: ghcr.io/${{ github.repository }}-base
+
+jobs:
+  base:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 日期標籤
+        id: tag
+        run: echo "date=$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
+
+      - name: 建並推基底映像
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.base
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:${{ steps.tag.outputs.date }}

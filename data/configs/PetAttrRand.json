@@ -1,0 +1,27 @@
+[
+{
+"ID": 111085,
+"randInfo1": {
+"hp": "1700-2200",
+"gj": "380-480",
+"fy": "200-400",
+"mj": "200-350"
+},
+"randInfo2": {
+"hp": "1300-2500",
+"gj": "100-530",
+"fy": "100-450",
+"mj": "100-400"
+},
+"PetAttrRandRequire": [
+{
+"currencyType": 1,
+"payValue": 0.5
+},
+{
+"currencyType": 8,
+"currencyValue": 20000
+}
+]
+}
+]

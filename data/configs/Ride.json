@@ -1,0 +1,6661 @@
+[
+{
+"ID": 100327,
+"petId": 307,
+"needlearn": false,
+"rideType": {
+"type": 15
+},
+"rule": 1
+},
+{
+"ID": 100328,
+"petId": 308,
+"needlearn": false,
+"rideType": {
+"type": 15
+},
+"rule": 2
+},
+{
+"ID": 100329,
+"petId": 309,
+"needlearn": false,
+"rideType": {
+"type": 15
+},
+"rule": 3
+},
+{
+"ID": 100330,
+"petId": 310,
+"needlearn": false,
+"rideType": {
+"type": 15
+},
+"rule": 4
+},
+{
+"ID": 100871,
+"petId": 1609,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 214
+},
+"rule": 5
+},
+{
+"ID": 100873,
+"petId": 1611,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 282
+},
+"rule": 6
+},
+{
+"ID": 100874,
+"petId": 1612,
+"needlearn": false,
+"rideType": {
+"type": 213
+},
+"rule": 7
+},
+{
+"ID": 100352,
+"petId": 331,
+"needlearn": false,
+"rideType": {
+"type": 15
+},
+"rule": 8
+},
+{
+"ID": 100351,
+"petId": 330,
+"needlearn": false,
+"rideType": {
+"type": 22
+},
+"rule": 9
+},
+{
+"ID": 100353,
+"petId": 332,
+"needlearn": false,
+"rideType": {
+"type": 22
+},
+"rule": 10
+},
+{
+"ID": 100354,
+"petId": 333,
+"needlearn": false,
+"rideType": {
+"type": 22
+},
+"rule": 11
+},
+{
+"ID": 100396,
+"petId": 483,
+"needlearn": false,
+"rideType": {
+"type": 22
+},
+"rule": 12
+},
+{
+"ID": 100891,
+"petId": 1629,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 42
+},
+"rule": 13
+},
+{
+"ID": 100892,
+"petId": 1630,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 211
+},
+"rule": 14
+},
+{
+"ID": 100893,
+"petId": 1631,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 212
+},
+"rule": 15
+},
+{
+"ID": 100307,
+"petId": 75,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 102
+},
+"rule": 16
+},
+{
+"ID": 100308,
+"petId": 76,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 103
+},
+"rule": 17
+},
+{
+"ID": 100309,
+"petId": 77,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 26
+},
+"rule": 18
+},
+{
+"ID": 100310,
+"petId": 78,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 26
+},
+"rule": 19
+},
+{
+"ID": 100860,
+"petId": 1598,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 104
+},
+"rule": 20
+},
+{
+"ID": 100861,
+"petId": 1599,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 103
+},
+"rule": 21
+},
+{
+"ID": 100862,
+"petId": 1600,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 105
+},
+"rule": 22
+},
+{
+"ID": 100863,
+"petId": 1601,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 106
+},
+"rule": 23
+},
+{
+"ID": 100355,
+"petId": 334,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 88
+},
+"rule": 24
+},
+{
+"ID": 100356,
+"petId": 335,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 89
+},
+"rule": 25
+},
+{
+"ID": 100357,
+"petId": 336,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 90
+},
+"rule": 26
+},
+{
+"ID": 100358,
+"petId": 337,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 28
+},
+"rule": 27
+},
+{
+"ID": 100894,
+"petId": 1632,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 91
+},
+"rule": 28
+},
+{
+"ID": 100895,
+"petId": 1633,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 92
+},
+"rule": 29
+},
+{
+"ID": 100896,
+"petId": 1634,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 93
+},
+"rule": 30
+},
+{
+"ID": 100897,
+"petId": 1635,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 94
+},
+"rule": 31
+},
+{
+"ID": 100279,
+"petId": 46,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 27
+},
+"rule": 32
+},
+{
+"ID": 100280,
+"petId": 47,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 57
+},
+"rule": 33
+},
+{
+"ID": 100281,
+"petId": 48,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 55
+},
+"rule": 34
+},
+{
+"ID": 100282,
+"petId": 49,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 58
+},
+"rule": 35
+},
+{
+"ID": 100845,
+"petId": 1584,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 56
+},
+"rule": 36
+},
+{
+"ID": 100846,
+"petId": 1585,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 57
+},
+"rule": 37
+},
+{
+"ID": 100847,
+"petId": 1586,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 59
+},
+"rule": 38
+},
+{
+"ID": 100848,
+"petId": 1587,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 60
+},
+"rule": 39
+},
+{
+"ID": 100283,
+"petId": 50,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 21
+},
+"rule": 40
+},
+{
+"ID": 100284,
+"petId": 51,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 67
+},
+"rule": 41
+},
+{
+"ID": 100285,
+"petId": 52,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 68
+},
+"rule": 42
+},
+{
+"ID": 100286,
+"petId": 53,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 21
+},
+"rule": 43
+},
+{
+"ID": 100389,
+"petId": 477,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 69
+},
+"rule": 44
+},
+{
+"ID": 100390,
+"petId": 478,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 70
+},
+"rule": 45
+},
+{
+"ID": 100391,
+"petId": 479,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 68
+},
+"rule": 46
+},
+{
+"ID": 100392,
+"petId": 480,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 71
+},
+"rule": 47
+},
+{
+"ID": 100287,
+"petId": 54,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 75
+},
+"rule": 48
+},
+{
+"ID": 100288,
+"petId": 55,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 24
+},
+"rule": 49
+},
+{
+"ID": 100289,
+"petId": 56,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 76
+},
+"rule": 50
+},
+{
+"ID": 100290,
+"petId": 57,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 77
+},
+"rule": 51
+},
+{
+"ID": 100394,
+"petId": 481,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 78
+},
+"rule": 52
+},
+{
+"ID": 100849,
+"petId": 1588,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 79
+},
+"rule": 53
+},
+{
+"ID": 100850,
+"petId": 1660,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 80
+},
+"rule": 54
+},
+{
+"ID": 100851,
+"petId": 1589,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 81
+},
+"rule": 55
+},
+{
+"ID": 100343,
+"petId": 323,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 23
+},
+"rule": 56
+},
+{
+"ID": 100344,
+"petId": 324,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 82
+},
+"rule": 57
+},
+{
+"ID": 100345,
+"petId": 367,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 83
+},
+"rule": 58
+},
+{
+"ID": 100883,
+"petId": 1621,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 84
+},
+"rule": 59
+},
+{
+"ID": 100884,
+"petId": 1622,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 85
+},
+"rule": 60
+},
+{
+"ID": 100885,
+"petId": 1623,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 86
+},
+"rule": 61
+},
+{
+"ID": 100886,
+"petId": 1624,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 87
+},
+"rule": 62
+},
+{
+"ID": 100346,
+"petId": 325,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 23
+},
+"rule": 63
+},
+{
+"ID": 100359,
+"petId": 338,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 25
+},
+"rule": 64
+},
+{
+"ID": 100360,
+"petId": 339,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 95
+},
+"rule": 65
+},
+{
+"ID": 100361,
+"petId": 340,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 96
+},
+"rule": 66
+},
+{
+"ID": 100362,
+"petId": 341,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 25
+},
+"rule": 67
+},
+{
+"ID": 100898,
+"petId": 1636,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 97
+},
+"rule": 68
+},
+{
+"ID": 100899,
+"petId": 1637,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 98
+},
+"rule": 69
+},
+{
+"ID": 100900,
+"petId": 1638,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 99
+},
+"rule": 70
+},
+{
+"ID": 100901,
+"petId": 1639,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 100
+},
+"rule": 71
+},
+{
+"ID": 100371,
+"petId": 350,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 72
+},
+{
+"ID": 100373,
+"petId": 352,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 16
+},
+"rule": 73
+},
+{
+"ID": 100372,
+"petId": 351,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 74
+},
+{
+"ID": 100374,
+"petId": 353,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 286
+},
+"rule": 75
+},
+{
+"ID": 100909,
+"petId": 1647,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 76
+},
+{
+"ID": 100907,
+"petId": 1645,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 39
+},
+"rule": 77
+},
+{
+"ID": 120113,
+"petId": 23875,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 38
+},
+"rule": 78
+},
+{
+"ID": 180000,
+"petId": 20133,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 36
+},
+"rule": 79
+},
+{
+"ID": 180001,
+"petId": 20134,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 37
+},
+"rule": 80
+},
+{
+"ID": 100254,
+"petId": 13,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 40
+},
+"rule": 81
+},
+{
+"ID": 100255,
+"petId": 14,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 39
+},
+"rule": 82
+},
+{
+"ID": 100256,
+"petId": 15,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 72
+},
+"rule": 83
+},
+{
+"ID": 100257,
+"petId": 16,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 16
+},
+"rule": 84
+},
+{
+"ID": 100258,
+"petId": 17,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 16
+},
+"rule": 85
+},
+{
+"ID": 100823,
+"petId": 1561,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 44
+},
+"rule": 86
+},
+{
+"ID": 100824,
+"petId": 1562,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 73
+},
+"rule": 87
+},
+{
+"ID": 100825,
+"petId": 1563,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 88
+},
+{
+"ID": 101876,
+"petId": 2568,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 74
+},
+"rule": 89
+},
+{
+"ID": 100906,
+"petId": 1644,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 41
+},
+"rule": 90
+},
+{
+"ID": 100908,
+"petId": 1646,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 40
+},
+"rule": 91
+},
+{
+"ID": 101872,
+"petId": 2563,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 43
+},
+"rule": 92
+},
+{
+"ID": 101873,
+"petId": 2564,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 44
+},
+"rule": 93
+},
+{
+"ID": 101443,
+"petId": 2058,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 32
+},
+"rule": 94
+},
+{
+"ID": 101442,
+"petId": 2057,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 31
+},
+"rule": 95
+},
+{
+"ID": 101438,
+"petId": 1979,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 21
+},
+"rule": 96
+},
+{
+"ID": 101437,
+"petId": 1980,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 29
+},
+"rule": 97
+},
+{
+"ID": 101452,
+"petId": 24054,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 30
+},
+"rule": 98
+},
+{
+"ID": 101453,
+"petId": 24055,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 33
+},
+"rule": 99
+},
+{
+"ID": 101454,
+"petId": 24056,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 34
+},
+"manorRide": [
+1
+],
+"rule": 100
+},
+{
+"ID": 101455,
+"petId": 24057,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 35
+},
+"manorRide": [
+2
+],
+"rule": 101
+},
+{
+"ID": 110112,
+"petId": 23954,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 47
+},
+"rule": 102
+},
+{
+"ID": 100872,
+"petId": 1610,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 48
+},
+"rule": 103
+},
+{
+"ID": 101481,
+"petId": 2021,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 104
+},
+{
+"ID": 101482,
+"petId": 2022,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"manorRide": [
+3
+],
+"rule": 105
+},
+{
+"ID": 101483,
+"petId": 2023,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 106
+},
+{
+"ID": 101484,
+"petId": 2024,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 107
+},
+{
+"ID": 100271,
+"petId": 36,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 49
+},
+"rule": 108
+},
+{
+"ID": 100272,
+"petId": 37,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 45
+},
+"rule": 109
+},
+{
+"ID": 100273,
+"petId": 38,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 50
+},
+"rule": 110
+},
+{
+"ID": 100274,
+"petId": 39,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 46
+},
+"rule": 111
+},
+{
+"ID": 100838,
+"petId": 1577,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 51
+},
+"rule": 112
+},
+{
+"ID": 100839,
+"petId": 1578,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 52
+},
+"rule": 113
+},
+{
+"ID": 100840,
+"petId": 1579,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 53
+},
+"rule": 114
+},
+{
+"ID": 100841,
+"petId": 1580,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 54
+},
+"rule": 115
+},
+{
+"ID": 100367,
+"petId": 190,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 61
+},
+"rule": 116
+},
+{
+"ID": 100368,
+"petId": 347,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 62
+},
+"rule": 117
+},
+{
+"ID": 100369,
+"petId": 348,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 61
+},
+"rule": 118
+},
+{
+"ID": 100370,
+"petId": 194,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 63
+},
+"rule": 119
+},
+{
+"ID": 100902,
+"petId": 1640,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 64
+},
+"rule": 120
+},
+{
+"ID": 100903,
+"petId": 1641,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 65
+},
+"rule": 121
+},
+{
+"ID": 100904,
+"petId": 1642,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 66
+},
+"rule": 122
+},
+{
+"ID": 100905,
+"petId": 1643,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 61
+},
+"rule": 123
+},
+{
+"ID": 100339,
+"petId": 319,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 159
+},
+"rule": 124
+},
+{
+"ID": 100340,
+"petId": 320,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 160
+},
+"rule": 125
+},
+{
+"ID": 100341,
+"petId": 321,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 161
+},
+"rule": 126
+},
+{
+"ID": 100342,
+"petId": 322,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 162
+},
+"rule": 127
+},
+{
+"ID": 100879,
+"petId": 1617,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 163
+},
+"rule": 128
+},
+{
+"ID": 100880,
+"petId": 1618,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 164
+},
+"rule": 129
+},
+{
+"ID": 100881,
+"petId": 1619,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 165
+},
+"rule": 130
+},
+{
+"ID": 100882,
+"petId": 1620,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 166
+},
+"rule": 131
+},
+{
+"ID": 101819,
+"petId": 2546,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 107
+},
+"rule": 132
+},
+{
+"ID": 101820,
+"petId": 5128,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 271
+},
+"rule": 133
+},
+{
+"ID": 101821,
+"petId": 5129,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 272
+},
+"rule": 134
+},
+{
+"ID": 101822,
+"petId": 5130,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 273
+},
+"rule": 135
+},
+{
+"ID": 101823,
+"petId": 5131,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 274
+},
+"rule": 136
+},
+{
+"ID": 101874,
+"petId": 5132,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 275
+},
+"rule": 137
+},
+{
+"ID": 101152,
+"petId": 1795,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 113
+},
+"rule": 138
+},
+{
+"ID": 101153,
+"petId": 1796,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 114
+},
+"rule": 139
+},
+{
+"ID": 101154,
+"petId": 1794,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 115
+},
+"rule": 140
+},
+{
+"ID": 101155,
+"petId": 1797,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 116
+},
+"rule": 141
+},
+{
+"ID": 100250,
+"petId": 9,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 121
+},
+"rule": 142
+},
+{
+"ID": 100251,
+"petId": 1,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 122
+},
+"rule": 143
+},
+{
+"ID": 100252,
+"petId": 11,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 123
+},
+"rule": 144
+},
+{
+"ID": 100253,
+"petId": 12,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 124
+},
+"rule": 145
+},
+{
+"ID": 100388,
+"petId": 475,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 125
+},
+"rule": 146
+},
+{
+"ID": 100820,
+"petId": 1558,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 126
+},
+"rule": 147
+},
+{
+"ID": 100821,
+"petId": 1559,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 127
+},
+"rule": 148
+},
+{
+"ID": 100822,
+"petId": 1560,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 128
+},
+"rule": 149
+},
+{
+"ID": 100263,
+"petId": 28,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 129
+},
+"rule": 150
+},
+{
+"ID": 100264,
+"petId": 29,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 130
+},
+"rule": 151
+},
+{
+"ID": 100265,
+"petId": 30,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 131
+},
+"rule": 152
+},
+{
+"ID": 100266,
+"petId": 4,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 132
+},
+"rule": 153
+},
+{
+"ID": 100830,
+"petId": 1569,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 133
+},
+"rule": 154
+},
+{
+"ID": 100831,
+"petId": 1570,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 131
+},
+"rule": 155
+},
+{
+"ID": 100832,
+"petId": 1571,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 129
+},
+"rule": 156
+},
+{
+"ID": 100833,
+"petId": 1572,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 134
+},
+"rule": 157
+},
+{
+"ID": 100259,
+"petId": 21,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 135
+},
+"rule": 158
+},
+{
+"ID": 100260,
+"petId": 25,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 136
+},
+"rule": 159
+},
+{
+"ID": 100261,
+"petId": 26,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 137
+},
+"rule": 160
+},
+{
+"ID": 100262,
+"petId": 27,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 138
+},
+"rule": 161
+},
+{
+"ID": 100826,
+"petId": 1564,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 139
+},
+"rule": 162
+},
+{
+"ID": 100827,
+"petId": 1565,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 140
+},
+"rule": 163
+},
+{
+"ID": 100828,
+"petId": 1566,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 141
+},
+"rule": 164
+},
+{
+"ID": 100829,
+"petId": 1568,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 142
+},
+"rule": 165
+},
+{
+"ID": 100267,
+"petId": 32,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 143
+},
+"rule": 166
+},
+{
+"ID": 100268,
+"petId": 33,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 144
+},
+"rule": 167
+},
+{
+"ID": 100269,
+"petId": 34,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 145
+},
+"rule": 168
+},
+{
+"ID": 100270,
+"petId": 35,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 146
+},
+"rule": 169
+},
+{
+"ID": 100834,
+"petId": 1573,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 147
+},
+"rule": 170
+},
+{
+"ID": 100835,
+"petId": 1574,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 148
+},
+"rule": 171
+},
+{
+"ID": 100836,
+"petId": 1575,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 149
+},
+"rule": 172
+},
+{
+"ID": 100837,
+"petId": 1576,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 150
+},
+"rule": 173
+},
+{
+"ID": 100275,
+"petId": 42,
+"specilChange": {
+"reRole": 5,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 151
+},
+"rule": 174
+},
+{
+"ID": 100276,
+"petId": 43,
+"specilChange": {
+"reRole": 5,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 152
+},
+"rule": 175
+},
+{
+"ID": 100277,
+"petId": 44,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 153
+},
+"rule": 176
+},
+{
+"ID": 100278,
+"petId": 45,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 154
+},
+"rule": 177
+},
+{
+"ID": 100393,
+"petId": 476,
+"specilChange": {
+"reRole": 5,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 155
+},
+"rule": 178
+},
+{
+"ID": 100842,
+"petId": 1581,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 156
+},
+"rule": 179
+},
+{
+"ID": 100843,
+"petId": 1582,
+"specilChange": {
+"reRole": 5,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 157
+},
+"rule": 180
+},
+{
+"ID": 100844,
+"petId": 1583,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 158
+},
+"rule": 181
+},
+{
+"ID": 100291,
+"petId": 58,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 167
+},
+"rule": 182
+},
+{
+"ID": 100292,
+"petId": 3,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 168
+},
+"rule": 183
+},
+{
+"ID": 100293,
+"petId": 60,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 169
+},
+"rule": 184
+},
+{
+"ID": 100294,
+"petId": 61,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 170
+},
+"rule": 185
+},
+{
+"ID": 100852,
+"petId": 1590,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 171
+},
+"rule": 186
+},
+{
+"ID": 100853,
+"petId": 1591,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 169
+},
+"rule": 187
+},
+{
+"ID": 100854,
+"petId": 1592,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 172
+},
+"rule": 188
+},
+{
+"ID": 100855,
+"petId": 1593,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 173
+},
+"rule": 189
+},
+{
+"ID": 100295,
+"petId": 62,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 174
+},
+"rule": 190
+},
+{
+"ID": 100296,
+"petId": 2,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 175
+},
+"rule": 191
+},
+{
+"ID": 100297,
+"petId": 64,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 176
+},
+"rule": 192
+},
+{
+"ID": 100298,
+"petId": 65,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 177
+},
+"rule": 193
+},
+{
+"ID": 100856,
+"petId": 1594,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 178
+},
+"rule": 194
+},
+{
+"ID": 100857,
+"petId": 1595,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 179
+},
+"rule": 195
+},
+{
+"ID": 100858,
+"petId": 1596,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 180
+},
+"rule": 196
+},
+{
+"ID": 100859,
+"petId": 1597,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 181
+},
+"rule": 197
+},
+{
+"ID": 100319,
+"petId": 93,
+"specilChange": {
+"reRole": 4,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 182
+},
+"rule": 198
+},
+{
+"ID": 100320,
+"petId": 94,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 183
+},
+"rule": 199
+},
+{
+"ID": 100321,
+"petId": 95,
+"specilChange": {
+"reRole": 4,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 184
+},
+"rule": 200
+},
+{
+"ID": 100322,
+"petId": 96,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 185
+},
+"rule": 201
+},
+{
+"ID": 100395,
+"petId": 482,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 186
+},
+"rule": 202
+},
+{
+"ID": 100864,
+"petId": 1602,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 187
+},
+"rule": 203
+},
+{
+"ID": 100865,
+"petId": 1603,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 188
+},
+"rule": 204
+},
+{
+"ID": 100866,
+"petId": 1604,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 189
+},
+"rule": 205
+},
+{
+"ID": 100323,
+"petId": 303,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 190
+},
+"rule": 206
+},
+{
+"ID": 100324,
+"petId": 304,
+"specilChange": {
+"reRole": 4,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 194
+},
+"rule": 207
+},
+{
+"ID": 100325,
+"petId": 305,
+"specilChange": {
+"reRole": 4,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 194
+},
+"rule": 208
+},
+{
+"ID": 100326,
+"petId": 306,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 191
+},
+"rule": 209
+},
+{
+"ID": 100867,
+"petId": 1605,
+"specilChange": {
+"reRole": 4,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 195
+},
+"rule": 210
+},
+{
+"ID": 100868,
+"petId": 1606,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 192
+},
+"rule": 211
+},
+{
+"ID": 100869,
+"petId": 1607,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 193
+},
+"rule": 212
+},
+{
+"ID": 100870,
+"petId": 1608,
+"specilChange": {
+"reRole": 4,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 196
+},
+"rule": 213
+},
+{
+"ID": 100335,
+"petId": 315,
+"specilChange": {
+"reRole": 6,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 197
+},
+"rule": 214
+},
+{
+"ID": 100336,
+"petId": 149,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 198
+},
+"rule": 215
+},
+{
+"ID": 100337,
+"petId": 146,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 199
+},
+"rule": 216
+},
+{
+"ID": 100338,
+"petId": 318,
+"specilChange": {
+"reRole": 6,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 200
+},
+"rule": 217
+},
+{
+"ID": 100875,
+"petId": 1613,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 201
+},
+"rule": 218
+},
+{
+"ID": 100876,
+"petId": 1614,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 202
+},
+"rule": 219
+},
+{
+"ID": 100877,
+"petId": 1615,
+"specilChange": {
+"reRole": 6,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 203
+},
+"rule": 220
+},
+{
+"ID": 100878,
+"petId": 1616,
+"specilChange": {
+"reRole": 6,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 204
+},
+"rule": 221
+},
+{
+"ID": 100347,
+"petId": 326,
+"specilChange": {
+"reRole": 6,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 205
+},
+"rule": 222
+},
+{
+"ID": 100348,
+"petId": 301,
+"specilChange": {
+"reRole": 2,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 209
+},
+"rule": 223
+},
+{
+"ID": 100349,
+"petId": 328,
+"specilChange": {
+"reRole": 2,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 209
+},
+"rule": 224
+},
+{
+"ID": 100350,
+"petId": 329,
+"specilChange": {
+"reRole": 6,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 206
+},
+"rule": 225
+},
+{
+"ID": 100887,
+"petId": 1625,
+"specilChange": {
+"reRole": 6,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 206
+},
+"rule": 226
+},
+{
+"ID": 100888,
+"petId": 1626,
+"specilChange": {
+"reRole": 6,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 207
+},
+"rule": 227
+},
+{
+"ID": 100889,
+"petId": 1627,
+"specilChange": {
+"reRole": 2,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 210
+},
+"rule": 228
+},
+{
+"ID": 100890,
+"petId": 1628,
+"specilChange": {
+"reRole": 6,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 208
+},
+"rule": 229
+},
+{
+"ID": 100375,
+"petId": 354,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 215
+},
+"rule": 230
+},
+{
+"ID": 100376,
+"petId": 355,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 216
+},
+"rule": 231
+},
+{
+"ID": 100377,
+"petId": 356,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 217
+},
+"rule": 232
+},
+{
+"ID": 100378,
+"petId": 357,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 218
+},
+"rule": 233
+},
+{
+"ID": 100430,
+"petId": 484,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 219
+},
+"rule": 234
+},
+{
+"ID": 100910,
+"petId": 1648,
+"specilChange": {
+"reRole": 3,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 220
+},
+"rule": 235
+},
+{
+"ID": 100911,
+"petId": 1649,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 221
+},
+"rule": 236
+},
+{
+"ID": 100912,
+"petId": 1650,
+"specilChange": {
+"reRole": 2,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 222
+},
+"rule": 237
+},
+{
+"ID": 100379,
+"petId": 358,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 223
+},
+"rule": 238
+},
+{
+"ID": 100380,
+"petId": 359,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 223
+},
+"rule": 239
+},
+{
+"ID": 100381,
+"petId": 360,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 224
+},
+"rule": 240
+},
+{
+"ID": 100382,
+"petId": 361,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 224
+},
+"rule": 241
+},
+{
+"ID": 100383,
+"petId": 362,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 225
+},
+"rule": 242
+},
+{
+"ID": 100913,
+"petId": 1651,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 226
+},
+"rule": 243
+},
+{
+"ID": 100914,
+"petId": 1652,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 223
+},
+"rule": 244
+},
+{
+"ID": 100915,
+"petId": 1653,
+"specilChange": {
+"reRole": 5,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 226
+},
+"rule": 245
+},
+{
+"ID": 100384,
+"petId": 152,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 227
+},
+"rule": 246
+},
+{
+"ID": 100385,
+"petId": 364,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 227
+},
+"rule": 247
+},
+{
+"ID": 100386,
+"petId": 365,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 228
+},
+"rule": 248
+},
+{
+"ID": 100387,
+"petId": 366,
+"specilChange": {
+"reRole": 1,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 229
+},
+"rule": 249
+},
+{
+"ID": 100916,
+"petId": 1654,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 230
+},
+"rule": 250
+},
+{
+"ID": 100917,
+"petId": 1655,
+"specilChange": {
+"reRole": 1,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 231
+},
+"rule": 251
+},
+{
+"ID": 100918,
+"petId": 1656,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 232
+},
+"rule": 252
+},
+{
+"ID": 100919,
+"petId": 1657,
+"specilChange": {
+"reRole": 3,
+"LastRole": 10
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 233
+},
+"rule": 253
+},
+{
+"ID": 125300,
+"petId": 20202,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 234
+},
+"rule": 254
+},
+{
+"ID": 125301,
+"petId": 20215,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 235
+},
+"rule": 255
+},
+{
+"ID": 125302,
+"petId": 20216,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 236
+},
+"rule": 256
+},
+{
+"ID": 101948,
+"petId": 20372,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 237
+},
+"rule": 257
+},
+{
+"ID": 125310,
+"petId": 23995,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 269
+},
+"rule": 258
+},
+{
+"ID": 125107,
+"petId": 23939,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 238
+},
+"rule": 259
+},
+{
+"ID": 110169,
+"petId": 24002,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 239
+},
+"rule": 260
+},
+{
+"ID": 126123,
+"petId": 23776,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 240
+},
+"rule": 261
+},
+{
+"ID": 126124,
+"petId": 23777,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 241
+},
+"rule": 262
+},
+{
+"ID": 126125,
+"petId": 23778,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 242
+},
+"rule": 263
+},
+{
+"ID": 126126,
+"petId": 23779,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 243
+},
+"rule": 264
+},
+{
+"ID": 101616,
+"petId": 2258,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 244
+},
+"rule": 265
+},
+{
+"ID": 101180,
+"petId": 1845,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 245
+},
+"rule": 266
+},
+{
+"ID": 101760,
+"petId": 2474,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 246
+},
+"rule": 267
+},
+{
+"ID": 109026,
+"petId": 23855,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 247
+},
+"rule": 268
+},
+{
+"ID": 109027,
+"petId": 23856,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 248
+},
+"rule": 269
+},
+{
+"ID": 109028,
+"petId": 23857,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 249
+},
+"rule": 270
+},
+{
+"ID": 109029,
+"petId": 23858,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 250
+},
+"rule": 271
+},
+{
+"ID": 101423,
+"petId": 1946,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 251
+},
+"rule": 272
+},
+{
+"ID": 104103,
+"petId": 23981,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 252
+},
+"rule": 273
+},
+{
+"ID": 104104,
+"petId": 23763,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 253
+},
+"rule": 274
+},
+{
+"ID": 125303,
+"petId": 10043,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 254
+},
+"rule": 275
+},
+{
+"ID": 126331,
+"petId": 23868,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 255
+},
+"rule": 276
+},
+{
+"ID": 126386,
+"petId": 24053,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 256
+},
+"rule": 277
+},
+{
+"ID": 110357,
+"petId": 20347,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 257
+},
+"nosee": true,
+"rule": 278
+},
+{
+"ID": 101282,
+"petId": 1898,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 247
+},
+"nosee": true,
+"rule": 279
+},
+{
+"ID": 110489,
+"petId": 23862,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 259
+},
+"rule": 280
+},
+{
+"ID": 110468,
+"petId": 23891,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 258
+},
+"rule": 281
+},
+{
+"ID": 126400,
+"petId": 23962,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"rule": 282
+},
+{
+"ID": 110307,
+"petId": 23940,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 261
+},
+"rule": 283
+},
+{
+"ID": 110113,
+"petId": 23953,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 47
+},
+"rule": 284
+},
+{
+"ID": 110114,
+"petId": 23956,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 47
+},
+"rule": 285
+},
+{
+"ID": 110115,
+"petId": 23955,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 47
+},
+"rule": 286
+},
+{
+"ID": 110116,
+"petId": 23957,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 262
+},
+"rule": 287
+},
+{
+"ID": 110117,
+"petId": 23941,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 263
+},
+"rule": 288
+},
+{
+"ID": 110118,
+"petId": 23770,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 264
+},
+"rule": 289
+},
+{
+"ID": 110119,
+"petId": 23885,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 265
+},
+"rule": 290
+},
+{
+"ID": 101886,
+"petId": 23944,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 266
+},
+"rule": 291
+},
+{
+"ID": 104001,
+"petId": 20457,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 267
+},
+"rule": 292
+},
+{
+"ID": 104002,
+"petId": 24052,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 268
+},
+"rule": 293
+},
+{
+"ID": 126412,
+"petId": 23996,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 270
+},
+"rule": 294
+},
+{
+"ID": 114006,
+"petId": 24186,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 271
+},
+"rule": 295
+},
+{
+"ID": 114007,
+"petId": 24187,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 272
+},
+"rule": 296
+},
+{
+"ID": 114008,
+"petId": 24188,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 273
+},
+"rule": 297
+},
+{
+"ID": 114009,
+"petId": 24189,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 274
+},
+"rule": 298
+},
+{
+"ID": 114010,
+"petId": 24190,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 275
+},
+"rule": 299
+},
+{
+"ID": 104472,
+"petId": 20499,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 276
+},
+"nosee": true,
+"rule": 300
+},
+{
+"ID": 102301,
+"petId": 0,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 277
+},
+"nosee": true,
+"rule": 301
+},
+{
+"ID": 102302,
+"petId": 0,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 278
+},
+"nosee": true,
+"rule": 302
+},
+{
+"ID": 104473,
+"petId": 20496,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 279
+},
+"nosee": true,
+"rule": 303
+},
+{
+"ID": 104474,
+"petId": 24032,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 280
+},
+"rule": 304
+},
+{
+"ID": 104475,
+"petId": 24033,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 281
+},
+"rule": 305
+},
+{
+"ID": 106047,
+"petId": 0,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 283
+},
+"nosee": true,
+"rule": 306
+},
+{
+"ID": 101177,
+"petId": 1926,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 284
+},
+"nosee": true,
+"rule": 307,
+"douding": 101179,
+"saiyaren": 101179,
+"bianzinan": 101179,
+"kuge": 101179,
+"xiongp": 101179,
+"panzi": 101179,
+"doudingnv": 101179,
+"xiongpinv": 101179,
+"maozinv": 101179,
+"duanfajianv": 101179,
+"shotaonv": 101179,
+"lamei": 101179
+},
+{
+"ID": 101179,
+"petId": 0,
+"specilChangeImg": 101177,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 284
+},
+"nosee": true,
+"rule": 308
+},
+{
+"ID": 101875,
+"petId": 24018,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 101
+},
+"rule": 309
+},
+{
+"ID": 110336,
+"petId": 10046,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 285
+},
+"rule": 310
+},
+{
+"ID": 126072,
+"petId": 24049,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 283
+},
+"rule": 311
+},
+{
+"ID": 100451,
+"petId": 1479,
+"specilChange": {
+"reRole": 1,
+"LastRole": 1
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 287
+},
+"nosee": true,
+"rule": 312
+},
+{
+"ID": 101441,
+"petId": 2061,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 295
+},
+"rule": 313
+},
+{
+"ID": 110918,
+"petId": 23688,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 273
+},
+"rule": 314
+},
+{
+"ID": 102013,
+"petId": 5510,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 93
+},
+"rule": 315
+},
+{
+"ID": 102014,
+"petId": 5511,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 92
+},
+"rule": 316
+},
+{
+"ID": 102015,
+"petId": 5512,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 88
+},
+"rule": 317
+},
+{
+"ID": 102016,
+"petId": 5513,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 90
+},
+"rule": 318
+},
+{
+"ID": 101532,
+"petId": 2138,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 101
+},
+"rule": 319
+},
+{
+"ID": 101533,
+"petId": 2137,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 160
+},
+"nosee": true,
+"rule": 320
+},
+{
+"ID": 101501,
+"petId": 23925,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 275
+},
+"rule": 321
+},
+{
+"ID": 101576,
+"petId": 2119,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 101
+},
+"rule": 322,
+"douding": 101965,
+"saiyaren": 101966,
+"bianzinan": 101967,
+"kuge": 101968,
+"xiongp": 101969,
+"panzi": 101970,
+"doudingnv": 101971,
+"xiongpinv": 101972,
+"maozinv": 101973,
+"duanfajianv": 101974,
+"shotaonv": 101975,
+"lamei": 101976
+},
+{
+"ID": 104154,
+"petId": 23816,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 101
+},
+"rule": 323,
+"douding": 104155,
+"saiyaren": 104156,
+"bianzinan": 104157,
+"kuge": 104158,
+"xiongp": 104159,
+"panzi": 104160,
+"doudingnv": 104161,
+"xiongpinv": 104162,
+"maozinv": 104163,
+"duanfajianv": 104164,
+"shotaonv": 104165,
+"lamei": 104166
+},
+{
+"ID": 127003,
+"petId": 23730,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 101
+},
+"nosee": true,
+"rule": 324,
+"douding": 127001,
+"saiyaren": 127001,
+"bianzinan": 127001,
+"kuge": 127001,
+"xiongp": 127001,
+"panzi": 127001,
+"doudingnv": 127002,
+"xiongpinv": 127002,
+"maozinv": 127002,
+"duanfajianv": 127002,
+"shotaonv": 127002,
+"lamei": 127002
+},
+{
+"ID": 108385,
+"petId": 24045,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 72
+},
+"rule": 325
+},
+{
+"ID": 108386,
+"petId": 24046,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 73
+},
+"rule": 326
+},
+{
+"ID": 108387,
+"petId": 24047,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 41
+},
+"rule": 327
+},
+{
+"ID": 108384,
+"petId": 24048,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 14
+},
+"rule": 328
+},
+{
+"ID": 108383,
+"petId": 23752,
+"specilChange": {
+"reRole": 3,
+"LastRole": 9
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 39
+},
+"nosee": true,
+"rule": 329
+},
+{
+"ID": 101736,
+"petId": 2456,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 261
+},
+"rule": 330
+},
+{
+"ID": 101737,
+"petId": 2455,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"rule": 331
+},
+{
+"ID": 126414,
+"petId": 23924,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 290
+},
+"rule": 332
+},
+{
+"ID": 102024,
+"petId": 5521,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"nosee": true,
+"rule": 333,
+"douding": 135380,
+"saiyaren": 135380,
+"bianzinan": 135380,
+"kuge": 135380,
+"xiongp": 135380,
+"panzi": 135380,
+"doudingnv": 135381,
+"xiongpinv": 135381,
+"maozinv": 135381,
+"duanfajianv": 135381,
+"shotaonv": 135381,
+"lamei": 135381
+},
+{
+"ID": 109110,
+"petId": 23756,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"rule": 336,
+"douding": 109111,
+"saiyaren": 109112,
+"bianzinan": 109113,
+"kuge": 109114,
+"xiongp": 109115,
+"panzi": 109116,
+"doudingnv": 109117,
+"xiongpinv": 109118,
+"maozinv": 109119,
+"duanfajianv": 109120,
+"shotaonv": 109121,
+"lamei": 109122
+},
+{
+"ID": 180002,
+"petId": 23764,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 177
+},
+"nosee": true,
+"rule": 193
+},
+{
+"ID": 101816,
+"petId": 2515,
+"specilChange": {
+"reRole": 1,
+"LastRole": 7
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 270
+},
+"rule": 335
+},
+{
+"ID": 109135,
+"petId": 23767,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"nosee": true,
+"rule": 334,
+"douding": 109123,
+"saiyaren": 109124,
+"bianzinan": 109125,
+"kuge": 109126,
+"xiongp": 109127,
+"panzi": 109128,
+"doudingnv": 109129,
+"xiongpinv": 109130,
+"maozinv": 109131,
+"duanfajianv": 109132,
+"shotaonv": 109133,
+"lamei": 109134
+},
+{
+"ID": 126416,
+"petId": 23959,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 291
+},
+"rule": 337
+},
+{
+"ID": 101866,
+"petId": 2558,
+"specilChange": {
+"reRole": 2,
+"LastRole": 8
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 283
+},
+"rule": 338
+},
+{
+"ID": 106072,
+"petId": 23936,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 260
+},
+"nosee": true,
+"rule": 339,
+"douding": 135384,
+"saiyaren": 135384,
+"bianzinan": 135384,
+"kuge": 135384,
+"xiongp": 135384,
+"panzi": 135384,
+"doudingnv": 135385,
+"xiongpinv": 135385,
+"maozinv": 135385,
+"duanfajianv": 135385,
+"shotaonv": 135385,
+"lamei": 135385
+},
+{
+"ID": 125134,
+"petId": 23810,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 340,
+"douding": 100771,
+"saiyaren": 100771,
+"bianzinan": 100771,
+"kuge": 100771,
+"xiongp": 100771,
+"panzi": 100771,
+"doudingnv": 100772,
+"xiongpinv": 100772,
+"maozinv": 100772,
+"duanfajianv": 100772,
+"shotaonv": 100772,
+"lamei": 100772
+},
+{
+"ID": 126181,
+"petId": 23811,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 341,
+"douding": 101096,
+"saiyaren": 101096,
+"bianzinan": 101096,
+"kuge": 101096,
+"xiongp": 101096,
+"panzi": 101096,
+"doudingnv": 101097,
+"xiongpinv": 101097,
+"maozinv": 101097,
+"duanfajianv": 101097,
+"shotaonv": 101097,
+"lamei": 101097
+},
+{
+"ID": 126183,
+"petId": 23812,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 342,
+"douding": 130001,
+"saiyaren": 130001,
+"bianzinan": 130001,
+"kuge": 130001,
+"xiongp": 130001,
+"panzi": 130001,
+"doudingnv": 130000,
+"xiongpinv": 130000,
+"maozinv": 130000,
+"duanfajianv": 130000,
+"shotaonv": 130000,
+"lamei": 130000
+},
+{
+"ID": 126182,
+"petId": 23813,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 343,
+"douding": 101112,
+"saiyaren": 101112,
+"bianzinan": 101112,
+"kuge": 101112,
+"xiongp": 101112,
+"panzi": 101112,
+"doudingnv": 101111,
+"xiongpinv": 101111,
+"maozinv": 101111,
+"duanfajianv": 101111,
+"shotaonv": 101111,
+"lamei": 101111
+},
+{
+"ID": 110051,
+"petId": 23815,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 344,
+"douding": 108234,
+"saiyaren": 108234,
+"bianzinan": 108234,
+"kuge": 108234,
+"xiongp": 108234,
+"panzi": 108234,
+"doudingnv": 108237,
+"xiongpinv": 108237,
+"maozinv": 108237,
+"duanfajianv": 108237,
+"shotaonv": 108237,
+"lamei": 108237
+},
+{
+"ID": 126120,
+"petId": 23814,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 345,
+"douding": 136003,
+"saiyaren": 136003,
+"bianzinan": 136003,
+"kuge": 136003,
+"xiongp": 136003,
+"panzi": 136003,
+"doudingnv": 136004,
+"xiongpinv": 136004,
+"maozinv": 136004,
+"duanfajianv": 136004,
+"shotaonv": 136004,
+"lamei": 136004
+},
+{
+"ID": 180003,
+"petId": 23826,
+"rideAttrList": [
+{
+"attrName": "agileFix",
+"attrValue": 5
+}
+],
+"needlearn": true,
+"rule": 346,
+"douding": 180004,
+"saiyaren": 180005,
+"bianzinan": 180006,
+"kuge": 180007,
+"xiongp": 180008,
+"panzi": 180009,
+"doudingnv": 180010,
+"xiongpinv": 180011,
+"maozinv": 180012,
+"duanfajianv": 180013,
+"shotaonv": 180014,
+"lamei": 180015
+},
+{
+"ID": 180016,
+"petId": 23827,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 347,
+"douding": 180017,
+"saiyaren": 180018,
+"bianzinan": 180019,
+"kuge": 180020,
+"xiongp": 180021,
+"panzi": 180022,
+"doudingnv": 180023,
+"xiongpinv": 180024,
+"maozinv": 180025,
+"duanfajianv": 180026,
+"shotaonv": 180027,
+"lamei": 180028
+},
+{
+"ID": 180029,
+"petId": 23843,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 348,
+"douding": 180030,
+"saiyaren": 180031,
+"bianzinan": 180032,
+"kuge": 180033,
+"xiongp": 180034,
+"panzi": 180035,
+"doudingnv": 180036,
+"xiongpinv": 180037,
+"maozinv": 180038,
+"duanfajianv": 180039,
+"shotaonv": 180040,
+"lamei": 180041
+},
+{
+"ID": 180042,
+"petId": 23844,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 349,
+"douding": 180043,
+"saiyaren": 180044,
+"bianzinan": 180045,
+"kuge": 180046,
+"xiongp": 180047,
+"panzi": 180048,
+"doudingnv": 180049,
+"xiongpinv": 180050,
+"maozinv": 180051,
+"duanfajianv": 180052,
+"shotaonv": 180053,
+"lamei": 180054
+},
+{
+"ID": 107012,
+"petId": 23870,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 350,
+"douding": 107000,
+"saiyaren": 107001,
+"bianzinan": 107002,
+"kuge": 107003,
+"xiongp": 107004,
+"panzi": 107005,
+"doudingnv": 107006,
+"xiongpinv": 107007,
+"maozinv": 107008,
+"duanfajianv": 107009,
+"shotaonv": 107010,
+"lamei": 107011
+},
+{
+"ID": 106405,
+"petId": 23878,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 351,
+"douding": 106406,
+"saiyaren": 106407,
+"bianzinan": 106408,
+"kuge": 106409,
+"xiongp": 106410,
+"panzi": 106411,
+"doudingnv": 106412,
+"xiongpinv": 106413,
+"maozinv": 106414,
+"duanfajianv": 106415,
+"shotaonv": 106416,
+"lamei": 106417
+},
+{
+"ID": 106392,
+"petId": 23879,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 352,
+"douding": 106393,
+"saiyaren": 106394,
+"bianzinan": 106395,
+"kuge": 106396,
+"xiongp": 106397,
+"panzi": 106398,
+"doudingnv": 106399,
+"xiongpinv": 106400,
+"maozinv": 106401,
+"duanfajianv": 106402,
+"shotaonv": 106403,
+"lamei": 106404
+},
+{
+"ID": 109146,
+"petId": 23918,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 353,
+"douding": 109149,
+"saiyaren": 109150,
+"bianzinan": 109151,
+"kuge": 109152,
+"xiongp": 109153,
+"panzi": 109154,
+"doudingnv": 109155,
+"xiongpinv": 109156,
+"maozinv": 109157,
+"duanfajianv": 109158,
+"shotaonv": 109159,
+"lamei": 109160
+},
+{
+"ID": 106775,
+"petId": 23917,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 354,
+"douding": 106763,
+"saiyaren": 106764,
+"bianzinan": 106765,
+"kuge": 106766,
+"xiongp": 106767,
+"panzi": 106768,
+"doudingnv": 106769,
+"xiongpinv": 106770,
+"maozinv": 106771,
+"duanfajianv": 106772,
+"shotaonv": 106773,
+"lamei": 106774
+},
+{
+"ID": 135246,
+"petId": 23930,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 355,
+"douding": 135247,
+"saiyaren": 135248,
+"bianzinan": 135249,
+"kuge": 135250,
+"xiongp": 135251,
+"panzi": 135252,
+"doudingnv": 135253,
+"xiongpinv": 135254,
+"maozinv": 135255,
+"duanfajianv": 135256,
+"shotaonv": 135257,
+"lamei": 135258
+},
+{
+"ID": 102042,
+"petId": 23932,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 356,
+"douding": 102005,
+"saiyaren": 102005,
+"bianzinan": 102005,
+"kuge": 102005,
+"xiongp": 102005,
+"panzi": 102005,
+"doudingnv": 102005,
+"xiongpinv": 102005,
+"maozinv": 102005,
+"duanfajianv": 102005,
+"shotaonv": 102005,
+"lamei": 102005
+},
+{
+"ID": 115029,
+"petId": 23937,
+"specilChange": {
+"reRole": 11,
+"LastRole": 11
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 293
+},
+"nosee": true,
+"rule": 357
+},
+{
+"ID": 102304,
+"petId": 23958,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 278
+},
+"rule": 358
+},
+{
+"ID": 115028,
+"petId": 15002,
+"specilChange": {
+"reRole": 2,
+"LastRole": 12
+},
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 294
+},
+"nosee": true,
+"rule": 359
+},
+{
+"ID": 126057,
+"petId": 24005,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 360,
+"douding": 109161,
+"saiyaren": 109162,
+"bianzinan": 109163,
+"kuge": 109164,
+"xiongp": 109165,
+"panzi": 109166,
+"doudingnv": 109167,
+"xiongpinv": 109168,
+"maozinv": 109169,
+"duanfajianv": 109170,
+"shotaonv": 109171,
+"lamei": 109172
+},
+{
+"ID": 130346,
+"petId": 24004,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 361,
+"douding": 130347,
+"saiyaren": 130348,
+"bianzinan": 130349,
+"kuge": 130350,
+"xiongp": 130351,
+"panzi": 130352,
+"doudingnv": 130353,
+"xiongpinv": 130354,
+"maozinv": 130355,
+"duanfajianv": 130356,
+"shotaonv": 130357,
+"lamei": 130358
+},
+{
+"ID": 102303,
+"petId": 24034,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 288
+},
+"nosee": true,
+"rule": 362
+},
+{
+"ID": 126413,
+"petId": 24044,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rideType": {
+"type": 289
+},
+"rule": 363
+},
+{
+"ID": 115070,
+"petId": 24137,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 364,
+"douding": 201223,
+"saiyaren": 201223,
+"bianzinan": 201223,
+"kuge": 201223,
+"xiongp": 201223,
+"panzi": 201223,
+"doudingnv": 201222,
+"xiongpinv": 201222,
+"maozinv": 201222,
+"duanfajianv": 201222,
+"shotaonv": 201222,
+"lamei": 201222
+},
+{
+"ID": 115068,
+"petId": 24138,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 365,
+"douding": 201224,
+"saiyaren": 201224,
+"bianzinan": 201224,
+"kuge": 201224,
+"xiongp": 201224,
+"panzi": 201224,
+"doudingnv": 201221,
+"xiongpinv": 201221,
+"maozinv": 201221,
+"duanfajianv": 201221,
+"shotaonv": 201221,
+"lamei": 201221
+},
+{
+"ID": 115069,
+"petId": 24139,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 366,
+"douding": 201225,
+"saiyaren": 201225,
+"bianzinan": 201225,
+"kuge": 201225,
+"xiongp": 201225,
+"panzi": 201225,
+"doudingnv": 201226,
+"xiongpinv": 201226,
+"maozinv": 201226,
+"duanfajianv": 201226,
+"shotaonv": 201226,
+"lamei": 201226
+},
+{
+"ID": 115071,
+"petId": 24140,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 367,
+"douding": 201227,
+"saiyaren": 201227,
+"bianzinan": 201227,
+"kuge": 201227,
+"xiongp": 201227,
+"panzi": 201227,
+"doudingnv": 201228,
+"xiongpinv": 201228,
+"maozinv": 201228,
+"duanfajianv": 201228,
+"shotaonv": 201228,
+"lamei": 201228
+},
+{
+"ID": 210012,
+"petId": 24172,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 368,
+"douding": 210013,
+"saiyaren": 210013,
+"bianzinan": 210013,
+"kuge": 210013,
+"xiongp": 210013,
+"panzi": 210013,
+"doudingnv": 210013,
+"xiongpinv": 210013,
+"maozinv": 210013,
+"duanfajianv": 210013,
+"shotaonv": 210013,
+"lamei": 210013
+},
+{
+"ID": 210017,
+"petId": 24173,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 369,
+"douding": 210018,
+"saiyaren": 210018,
+"bianzinan": 210018,
+"kuge": 210018,
+"xiongp": 210018,
+"panzi": 210018,
+"doudingnv": 210018,
+"xiongpinv": 210018,
+"maozinv": 210018,
+"duanfajianv": 210018,
+"shotaonv": 210018,
+"lamei": 210018
+},
+{
+"ID": 210029,
+"petId": 24174,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 370,
+"douding": 210030,
+"saiyaren": 210030,
+"bianzinan": 210030,
+"kuge": 210030,
+"xiongp": 210030,
+"panzi": 210030,
+"doudingnv": 210030,
+"xiongpinv": 210030,
+"maozinv": 210030,
+"duanfajianv": 210030,
+"shotaonv": 210030,
+"lamei": 210030
+},
+{
+"ID": 210015,
+"petId": 24175,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 371,
+"douding": 210016,
+"saiyaren": 210016,
+"bianzinan": 210016,
+"kuge": 210016,
+"xiongp": 210016,
+"panzi": 210016,
+"doudingnv": 210016,
+"xiongpinv": 210016,
+"maozinv": 210016,
+"duanfajianv": 210016,
+"shotaonv": 210016,
+"lamei": 210016
+},
+{
+"ID": 210023,
+"petId": 24176,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 372,
+"douding": 210024,
+"saiyaren": 210024,
+"bianzinan": 210024,
+"kuge": 210024,
+"xiongp": 210024,
+"panzi": 210024,
+"doudingnv": 210024,
+"xiongpinv": 210024,
+"maozinv": 210024,
+"duanfajianv": 210024,
+"shotaonv": 210024,
+"lamei": 210024
+},
+{
+"ID": 210035,
+"petId": 24177,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 373,
+"douding": 210036,
+"saiyaren": 210036,
+"bianzinan": 210036,
+"kuge": 210036,
+"xiongp": 210036,
+"panzi": 210036,
+"doudingnv": 210036,
+"xiongpinv": 210036,
+"maozinv": 210036,
+"duanfajianv": 210036,
+"shotaonv": 210036,
+"lamei": 210036
+},
+{
+"ID": 210031,
+"petId": 24178,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 374,
+"douding": 210032,
+"saiyaren": 210032,
+"bianzinan": 210032,
+"kuge": 210032,
+"xiongp": 210032,
+"panzi": 210032,
+"doudingnv": 210032,
+"xiongpinv": 210032,
+"maozinv": 210032,
+"duanfajianv": 210032,
+"shotaonv": 210032,
+"lamei": 210032
+},
+{
+"ID": 210037,
+"petId": 24179,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 375,
+"douding": 210038,
+"saiyaren": 210038,
+"bianzinan": 210038,
+"kuge": 210038,
+"xiongp": 210038,
+"panzi": 210038,
+"doudingnv": 210038,
+"xiongpinv": 210038,
+"maozinv": 210038,
+"duanfajianv": 210038,
+"shotaonv": 210038,
+"lamei": 210038
+},
+{
+"ID": 210025,
+"petId": 24180,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 376,
+"douding": 210026,
+"saiyaren": 210026,
+"bianzinan": 210026,
+"kuge": 210026,
+"xiongp": 210026,
+"panzi": 210026,
+"doudingnv": 210026,
+"xiongpinv": 210026,
+"maozinv": 210026,
+"duanfajianv": 210026,
+"shotaonv": 210026,
+"lamei": 210026
+},
+{
+"ID": 210019,
+"petId": 24181,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 377,
+"douding": 210020,
+"saiyaren": 210020,
+"bianzinan": 210020,
+"kuge": 210020,
+"xiongp": 210020,
+"panzi": 210020,
+"doudingnv": 210020,
+"xiongpinv": 210020,
+"maozinv": 210020,
+"duanfajianv": 210020,
+"shotaonv": 210020,
+"lamei": 210020
+},
+{
+"ID": 210033,
+"petId": 24182,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 378,
+"douding": 210034,
+"saiyaren": 210034,
+"bianzinan": 210034,
+"kuge": 210034,
+"xiongp": 210034,
+"panzi": 210034,
+"doudingnv": 210034,
+"xiongpinv": 210034,
+"maozinv": 210034,
+"duanfajianv": 210034,
+"shotaonv": 210034,
+"lamei": 210034
+},
+{
+"ID": 210039,
+"petId": 24183,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 379,
+"douding": 210040,
+"saiyaren": 210040,
+"bianzinan": 210040,
+"kuge": 210040,
+"xiongp": 210040,
+"panzi": 210040,
+"doudingnv": 210040,
+"xiongpinv": 210040,
+"maozinv": 210040,
+"duanfajianv": 210040,
+"shotaonv": 210040,
+"lamei": 210040
+},
+{
+"ID": 210027,
+"petId": 24184,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 380,
+"douding": 210028,
+"saiyaren": 210028,
+"bianzinan": 210028,
+"kuge": 210028,
+"xiongp": 210028,
+"panzi": 210028,
+"doudingnv": 210028,
+"xiongpinv": 210028,
+"maozinv": 210028,
+"duanfajianv": 210028,
+"shotaonv": 210028,
+"lamei": 210028
+},
+{
+"ID": 210021,
+"petId": 24185,
+"noRideCut": true,
+"rideAttrList": [
+{
+"attrName": "hpMaxFix",
+"attrValue": 2
+}
+],
+"needlearn": true,
+"rule": 381,
+"douding": 210022,
+"saiyaren": 210022,
+"bianzinan": 210022,
+"kuge": 210022,
+"xiongp": 210022,
+"panzi": 210022,
+"doudingnv": 210022,
+"xiongpinv": 210022,
+"maozinv": 210022,
+"duanfajianv": 210022,
+"shotaonv": 210022,
+"lamei": 210022
+}
+]

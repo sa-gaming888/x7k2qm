@@ -1,0 +1,19 @@
+[
+{
+"ID": 1000001,
+"group": 1000,
+"priority": 9,
+"skillType": 60005,
+"incBattleExtraRule": [
+{
+"rule": 301,
+"para1": 1000.0,
+"para2": 3.0
+}
+],
+"decBattleExtraRule": [
+0
+],
+"decSkillAttr": 0
+}
+]

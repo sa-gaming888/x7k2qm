@@ -1,0 +1,6351 @@
+[
+{
+"ID": 1,
+"name": 1500000000,
+"effect": [
+{
+"skillId": 50001,
+"skillLevel": 1,
+"suitDes": 1600000002,
+"suitCount": 4
+}
+],
+"allSuit": [
+50000,
+50001,
+50002,
+50003
+]
+},
+{
+"ID": 2,
+"name": 1500000001,
+"effect": [
+{
+"skillId": 50004,
+"skillLevel": 1,
+"suitDes": 1600000003,
+"suitCount": 1
+},
+{
+"skillId": 50005,
+"skillLevel": 1,
+"suitDes": 1600000004,
+"suitCount": 2
+},
+{
+"skillId": 50006,
+"skillLevel": 1,
+"suitDes": 1600000005,
+"suitCount": 3
+}
+],
+"allSuit": [
+2604,
+2605,
+2606
+]
+},
+{
+"ID": 3,
+"name": 33173,
+"effect": [
+{
+"skillId": 55001,
+"skillLevel": 1,
+"suitDes": 33189,
+"suitCount": 3
+}
+],
+"allSuit": [
+71149,
+71150,
+71151,
+71152
+]
+},
+{
+"ID": 4,
+"name": 33174,
+"effect": [
+{
+"skillId": 55002,
+"skillLevel": 1,
+"suitDes": 33190,
+"suitCount": 3
+}
+],
+"allSuit": [
+71164,
+71165,
+71166,
+71167
+]
+},
+{
+"ID": 5,
+"name": 33175,
+"effect": [
+{
+"skillId": 55003,
+"skillLevel": 1,
+"suitDes": 33191,
+"suitCount": 3
+}
+],
+"allSuit": [
+71179,
+71180,
+71181,
+71182
+]
+},
+{
+"ID": 6,
+"name": 33176,
+"effect": [
+{
+"skillId": 55004,
+"skillLevel": 1,
+"suitDes": 33192,
+"suitCount": 3
+}
+],
+"allSuit": [
+71194,
+71195,
+71196,
+71197
+]
+},
+{
+"ID": 7,
+"name": 33177,
+"effect": [
+{
+"skillId": 55005,
+"skillLevel": 1,
+"suitDes": 33193,
+"suitCount": 3
+}
+],
+"allSuit": [
+71153,
+71154,
+71155,
+71156
+]
+},
+{
+"ID": 8,
+"name": 33178,
+"effect": [
+{
+"skillId": 55006,
+"skillLevel": 1,
+"suitDes": 33194,
+"suitCount": 3
+}
+],
+"allSuit": [
+71168,
+71169,
+71170,
+71171
+]
+},
+{
+"ID": 9,
+"name": 33179,
+"effect": [
+{
+"skillId": 55007,
+"skillLevel": 1,
+"suitDes": 33195,
+"suitCount": 3
+}
+],
+"allSuit": [
+71183,
+71184,
+71185,
+71186
+]
+},
+{
+"ID": 10,
+"name": 33180,
+"effect": [
+{
+"skillId": 55008,
+"skillLevel": 1,
+"suitDes": 33196,
+"suitCount": 3
+}
+],
+"allSuit": [
+71198,
+71199,
+71200,
+71201
+]
+},
+{
+"ID": 11,
+"name": 33181,
+"effect": [
+{
+"skillId": 55009,
+"skillLevel": 1,
+"suitDes": 33197,
+"suitCount": 3
+}
+],
+"allSuit": [
+71157,
+71158,
+71159,
+71160
+]
+},
+{
+"ID": 12,
+"name": 33182,
+"effect": [
+{
+"skillId": 55010,
+"skillLevel": 1,
+"suitDes": 33198,
+"suitCount": 3
+}
+],
+"allSuit": [
+71172,
+71173,
+71174,
+71175
+]
+},
+{
+"ID": 13,
+"name": 33183,
+"effect": [
+{
+"skillId": 55011,
+"skillLevel": 1,
+"suitDes": 33199,
+"suitCount": 3
+}
+],
+"allSuit": [
+71187,
+71188,
+71189,
+71190
+]
+},
+{
+"ID": 14,
+"name": 33184,
+"effect": [
+{
+"skillId": 55012,
+"skillLevel": 1,
+"suitDes": 33200,
+"suitCount": 3
+}
+],
+"allSuit": [
+71202,
+71203,
+71204,
+71205
+]
+},
+{
+"ID": 15,
+"name": 33185,
+"effect": [
+{
+"skillId": 55013,
+"skillLevel": 1,
+"suitDes": 33201,
+"suitCount": 3
+}
+],
+"allSuit": [
+71161,
+71162,
+71163,
+71210
+]
+},
+{
+"ID": 16,
+"name": 33186,
+"effect": [
+{
+"skillId": 55014,
+"skillLevel": 1,
+"suitDes": 33202,
+"suitCount": 3
+}
+],
+"allSuit": [
+71176,
+71177,
+71178,
+71211
+]
+},
+{
+"ID": 17,
+"name": 33187,
+"effect": [
+{
+"skillId": 55015,
+"skillLevel": 1,
+"suitDes": 33203,
+"suitCount": 3
+}
+],
+"allSuit": [
+71191,
+71192,
+71193,
+71212
+]
+},
+{
+"ID": 18,
+"name": 33188,
+"effect": [
+{
+"skillId": 55016,
+"skillLevel": 1,
+"suitDes": 33204,
+"suitCount": 3
+}
+],
+"allSuit": [
+71206,
+71207,
+71208,
+71213
+]
+},
+{
+"ID": 19,
+"name": 33383,
+"effect": [
+{
+"skillId": 55018,
+"skillLevel": 1,
+"suitDes": 33386,
+"suitCount": 4
+}
+],
+"allSuit": [
+71271,
+71272,
+71273,
+71274
+]
+},
+{
+"ID": 20,
+"name": 33384,
+"effect": [
+{
+"skillId": 10269,
+"skillLevel": 1,
+"suitDes": 33387,
+"suitCount": 4
+}
+],
+"allSuit": [
+71275,
+71276,
+71277,
+71278
+]
+},
+{
+"ID": 21,
+"name": 33385,
+"effect": [
+{
+"skillId": 10269,
+"skillLevel": 1,
+"suitDes": 33387,
+"suitCount": 4
+}
+],
+"allSuit": [
+71279,
+71280,
+71281,
+71282
+]
+},
+{
+"ID": 22,
+"name": 33682,
+"effect": [
+{
+"skillId": 55040,
+"skillLevel": 1,
+"suitDes": 33703,
+"suitCount": 3
+}
+],
+"allSuit": [
+71379,
+71380,
+71381
+]
+},
+{
+"ID": 23,
+"name": 33683,
+"effect": [
+{
+"skillId": 55041,
+"skillLevel": 1,
+"suitDes": 33704,
+"suitCount": 3
+},
+{
+"skillId": 55028,
+"skillLevel": 1,
+"suitDes": 33715,
+"suitCount": 3
+}
+],
+"allSuit": [
+71388,
+71389,
+71390
+]
+},
+{
+"ID": 24,
+"name": 33684,
+"effect": [
+{
+"skillId": 55042,
+"skillLevel": 1,
+"suitDes": 33705,
+"suitCount": 3
+},
+{
+"skillId": 55028,
+"skillLevel": 1,
+"suitDes": 33715,
+"suitCount": 3
+}
+],
+"allSuit": [
+71397,
+71398,
+71399
+]
+},
+{
+"ID": 25,
+"name": 33685,
+"effect": [
+{
+"skillId": 55043,
+"skillLevel": 1,
+"suitDes": 33706,
+"suitCount": 3
+}
+],
+"allSuit": [
+71382,
+71383,
+71384
+]
+},
+{
+"ID": 26,
+"name": 33686,
+"effect": [
+{
+"skillId": 55044,
+"skillLevel": 1,
+"suitDes": 33707,
+"suitCount": 3
+},
+{
+"skillId": 55029,
+"skillLevel": 1,
+"suitDes": 33716,
+"suitCount": 3
+}
+],
+"allSuit": [
+71391,
+71392,
+71393
+]
+},
+{
+"ID": 27,
+"name": 33687,
+"effect": [
+{
+"skillId": 55045,
+"skillLevel": 1,
+"suitDes": 33708,
+"suitCount": 3
+},
+{
+"skillId": 55029,
+"skillLevel": 1,
+"suitDes": 33716,
+"suitCount": 3
+}
+],
+"allSuit": [
+71400,
+71401,
+71402
+]
+},
+{
+"ID": 28,
+"name": 33688,
+"effect": [
+{
+"skillId": 55046,
+"skillLevel": 1,
+"suitDes": 33709,
+"suitCount": 3
+}
+],
+"allSuit": [
+71385,
+71386,
+71387
+]
+},
+{
+"ID": 29,
+"name": 33689,
+"effect": [
+{
+"skillId": 55047,
+"skillLevel": 1,
+"suitDes": 33710,
+"suitCount": 3
+},
+{
+"skillId": 10292,
+"skillLevel": 1,
+"suitDes": 33717,
+"suitCount": 3
+}
+],
+"allSuit": [
+71394,
+71395,
+71396
+]
+},
+{
+"ID": 30,
+"name": 33690,
+"effect": [
+{
+"skillId": 55048,
+"skillLevel": 1,
+"suitDes": 33711,
+"suitCount": 3
+},
+{
+"skillId": 10292,
+"skillLevel": 1,
+"suitDes": 33717,
+"suitCount": 3
+}
+],
+"allSuit": [
+71403,
+71404,
+71405
+]
+},
+{
+"ID": 31,
+"name": 33691,
+"effect": [
+{
+"skillId": 55049,
+"skillLevel": 1,
+"suitDes": 33703,
+"suitCount": 4
+}
+],
+"allSuit": [
+71406,
+71407,
+71408,
+71409
+]
+},
+{
+"ID": 32,
+"name": 33692,
+"effect": [
+{
+"skillId": 55050,
+"skillLevel": 1,
+"suitDes": 33704,
+"suitCount": 4
+},
+{
+"skillId": 10254,
+"skillLevel": 1,
+"suitDes": 33718,
+"suitCount": 4
+}
+],
+"allSuit": [
+71422,
+71423,
+71424,
+71425
+]
+},
+{
+"ID": 33,
+"name": 33693,
+"effect": [
+{
+"skillId": 55051,
+"skillLevel": 1,
+"suitDes": 33705,
+"suitCount": 4
+},
+{
+"skillId": 10254,
+"skillLevel": 1,
+"suitDes": 33718,
+"suitCount": 4
+}
+],
+"allSuit": [
+71438,
+71439,
+71440,
+71441
+]
+},
+{
+"ID": 34,
+"name": 33694,
+"effect": [
+{
+"skillId": 55052,
+"skillLevel": 1,
+"suitDes": 33709,
+"suitCount": 4
+}
+],
+"allSuit": [
+71410,
+71411,
+71412,
+71413
+]
+},
+{
+"ID": 35,
+"name": 33695,
+"effect": [
+{
+"skillId": 55053,
+"skillLevel": 1,
+"suitDes": 33710,
+"suitCount": 4
+},
+{
+"skillId": 55026,
+"skillLevel": 1,
+"suitDes": 33719,
+"suitCount": 4
+}
+],
+"allSuit": [
+71426,
+71427,
+71428,
+71429
+]
+},
+{
+"ID": 36,
+"name": 33696,
+"effect": [
+{
+"skillId": 55054,
+"skillLevel": 1,
+"suitDes": 33711,
+"suitCount": 4
+},
+{
+"skillId": 55026,
+"skillLevel": 1,
+"suitDes": 33719,
+"suitCount": 4
+}
+],
+"allSuit": [
+71442,
+71443,
+71444,
+71445
+]
+},
+{
+"ID": 37,
+"name": 33697,
+"effect": [
+{
+"skillId": 55055,
+"skillLevel": 1,
+"suitDes": 33706,
+"suitCount": 4
+}
+],
+"allSuit": [
+71414,
+71415,
+71416,
+71417
+]
+},
+{
+"ID": 38,
+"name": 33698,
+"effect": [
+{
+"skillId": 55056,
+"skillLevel": 1,
+"suitDes": 33707,
+"suitCount": 4
+},
+{
+"skillId": 55035,
+"skillLevel": 1,
+"suitDes": 33720,
+"suitCount": 4
+}
+],
+"allSuit": [
+71430,
+71431,
+71432,
+71433
+]
+},
+{
+"ID": 39,
+"name": 33699,
+"effect": [
+{
+"skillId": 55057,
+"skillLevel": 1,
+"suitDes": 33708,
+"suitCount": 4
+},
+{
+"skillId": 55035,
+"skillLevel": 1,
+"suitDes": 33720,
+"suitCount": 4
+}
+],
+"allSuit": [
+71446,
+71447,
+71448,
+71449
+]
+},
+{
+"ID": 40,
+"name": 33700,
+"effect": [
+{
+"skillId": 55058,
+"skillLevel": 1,
+"suitDes": 33712,
+"suitCount": 4
+}
+],
+"allSuit": [
+71418,
+71419,
+71420,
+71421
+]
+},
+{
+"ID": 41,
+"name": 33701,
+"effect": [
+{
+"skillId": 55059,
+"skillLevel": 1,
+"suitDes": 33713,
+"suitCount": 4
+},
+{
+"skillId": 55037,
+"skillLevel": 1,
+"suitDes": 33721,
+"suitCount": 4
+}
+],
+"allSuit": [
+71434,
+71435,
+71436,
+71437
+]
+},
+{
+"ID": 42,
+"name": 33702,
+"effect": [
+{
+"skillId": 55060,
+"skillLevel": 1,
+"suitDes": 33714,
+"suitCount": 4
+},
+{
+"skillId": 55037,
+"skillLevel": 1,
+"suitDes": 33721,
+"suitCount": 4
+}
+],
+"allSuit": [
+71450,
+71451,
+71452,
+71453
+]
+},
+{
+"ID": 43,
+"name": 34132,
+"effect": [
+{
+"skillId": 55040,
+"skillLevel": 1,
+"suitDes": 33703,
+"suitCount": 4
+}
+],
+"allSuit": [
+71556,
+71557,
+71558,
+71559
+]
+},
+{
+"ID": 44,
+"name": 34133,
+"effect": [
+{
+"skillId": 55041,
+"skillLevel": 1,
+"suitDes": 33704,
+"suitCount": 4
+},
+{
+"skillId": 55074,
+"skillLevel": 1,
+"suitDes": 34138,
+"suitCount": 4
+}
+],
+"allSuit": [
+71564,
+71565,
+71566,
+71567
+]
+},
+{
+"ID": 45,
+"name": 34134,
+"effect": [
+{
+"skillId": 55042,
+"skillLevel": 1,
+"suitDes": 33705,
+"suitCount": 4
+},
+{
+"skillId": 55074,
+"skillLevel": 1,
+"suitDes": 34138,
+"suitCount": 4
+}
+],
+"allSuit": [
+71572,
+71573,
+71574,
+71575
+]
+},
+{
+"ID": 46,
+"name": 34135,
+"effect": [
+{
+"skillId": 55055,
+"skillLevel": 1,
+"suitDes": 33706,
+"suitCount": 4
+}
+],
+"allSuit": [
+71560,
+71561,
+71562,
+71563
+]
+},
+{
+"ID": 47,
+"name": 34136,
+"effect": [
+{
+"skillId": 55056,
+"skillLevel": 1,
+"suitDes": 33707,
+"suitCount": 4
+},
+{
+"skillId": 10084,
+"skillLevel": 1,
+"suitDes": 34139,
+"suitCount": 4
+}
+],
+"allSuit": [
+71568,
+71569,
+71570,
+71571
+]
+},
+{
+"ID": 48,
+"name": 34137,
+"effect": [
+{
+"skillId": 55057,
+"skillLevel": 1,
+"suitDes": 33708,
+"suitCount": 4
+},
+{
+"skillId": 10084,
+"skillLevel": 1,
+"suitDes": 34139,
+"suitCount": 4
+}
+],
+"allSuit": [
+71576,
+71577,
+71578,
+71579
+]
+},
+{
+"ID": 49,
+"name": 34423,
+"effect": [
+{
+"skillId": 55091,
+"skillLevel": 1,
+"suitDes": 34424,
+"suitCount": 3
+}
+],
+"allSuit": [
+71680,
+71681,
+71682
+]
+},
+{
+"ID": 50,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71864,
+71865,
+71866
+]
+},
+{
+"ID": 51,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71867,
+71868,
+71869
+]
+},
+{
+"ID": 52,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71870,
+71871,
+71872
+]
+},
+{
+"ID": 53,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71873,
+71874,
+71875
+]
+},
+{
+"ID": 54,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71876,
+71877,
+71878
+]
+},
+{
+"ID": 55,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71879,
+71880,
+71881
+]
+},
+{
+"ID": 56,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71882,
+71883,
+71884
+]
+},
+{
+"ID": 57,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71885,
+71886,
+71887
+]
+},
+{
+"ID": 58,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71888,
+71889,
+71890
+]
+},
+{
+"ID": 59,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71891,
+71892,
+71893
+]
+},
+{
+"ID": 60,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71894,
+71895,
+71896
+]
+},
+{
+"ID": 61,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71897,
+71898,
+71899
+]
+},
+{
+"ID": 62,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71900,
+71901,
+71902
+]
+},
+{
+"ID": 63,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71903,
+71904,
+71905
+]
+},
+{
+"ID": 64,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71906,
+71907,
+71908
+]
+},
+{
+"ID": 65,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71909,
+71910,
+71911
+]
+},
+{
+"ID": 66,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71912,
+71913,
+71914
+]
+},
+{
+"ID": 67,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71915,
+71916,
+71917
+]
+},
+{
+"ID": 68,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71918,
+71919,
+71920
+]
+},
+{
+"ID": 69,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+}
+],
+"allSuit": [
+71921,
+71922,
+71923
+]
+},
+{
+"ID": 70,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72044,
+72045,
+72046,
+72047
+]
+},
+{
+"ID": 71,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72048,
+72049,
+72050,
+72051
+]
+},
+{
+"ID": 72,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72052,
+72053,
+72054,
+72055
+]
+},
+{
+"ID": 73,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72056,
+72057,
+72058,
+72059
+]
+},
+{
+"ID": 74,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72060,
+72061,
+72062,
+72063
+]
+},
+{
+"ID": 75,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72064,
+72065,
+72066,
+72067
+]
+},
+{
+"ID": 76,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72068,
+72069,
+72070,
+72071
+]
+},
+{
+"ID": 77,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72072,
+72073,
+72074,
+72075
+]
+},
+{
+"ID": 78,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72076,
+72077,
+72078,
+72079
+]
+},
+{
+"ID": 79,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72080,
+72081,
+72082,
+72083
+]
+},
+{
+"ID": 80,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72084,
+72085,
+72086,
+72087
+]
+},
+{
+"ID": 81,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72088,
+72089,
+72090,
+72091
+]
+},
+{
+"ID": 82,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72092,
+72093,
+72094,
+72095
+]
+},
+{
+"ID": 83,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72096,
+72097,
+72098,
+72099
+]
+},
+{
+"ID": 84,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72100,
+72101,
+72102,
+72103
+]
+},
+{
+"ID": 85,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72104,
+72105,
+72106,
+72107
+]
+},
+{
+"ID": 86,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72108,
+72109,
+72110,
+72111
+]
+},
+{
+"ID": 87,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72112,
+72113,
+72114,
+72115
+]
+},
+{
+"ID": 88,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72116,
+72117,
+72118,
+72119
+]
+},
+{
+"ID": 89,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+}
+],
+"allSuit": [
+72120,
+72121,
+72122,
+72123
+]
+},
+{
+"ID": 90,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 1,
+"suitDes": 70937,
+"suitCount": 3
+}
+],
+"allSuit": [
+71924,
+71925,
+71926
+]
+},
+{
+"ID": 91,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 1,
+"suitDes": 70939,
+"suitCount": 3
+}
+],
+"allSuit": [
+71927,
+71928,
+71929
+]
+},
+{
+"ID": 92,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 1,
+"suitDes": 70941,
+"suitCount": 3
+}
+],
+"allSuit": [
+71930,
+71931,
+71932
+]
+},
+{
+"ID": 93,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70003,
+"skillLevel": 1,
+"suitDes": 70943,
+"suitCount": 3
+}
+],
+"allSuit": [
+71933,
+71934,
+71935
+]
+},
+{
+"ID": 94,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 1,
+"suitDes": 70945,
+"suitCount": 3
+}
+],
+"allSuit": [
+71936,
+71937,
+71938
+]
+},
+{
+"ID": 95,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 1,
+"suitDes": 70947,
+"suitCount": 3
+}
+],
+"allSuit": [
+71939,
+71940,
+71941
+]
+},
+{
+"ID": 96,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70005,
+"skillLevel": 1,
+"suitDes": 70949,
+"suitCount": 3
+}
+],
+"allSuit": [
+71942,
+71943,
+71944
+]
+},
+{
+"ID": 97,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 1,
+"suitDes": 70951,
+"suitCount": 3
+}
+],
+"allSuit": [
+71945,
+71946,
+71947
+]
+},
+{
+"ID": 98,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 1,
+"suitDes": 70953,
+"suitCount": 3
+}
+],
+"allSuit": [
+71948,
+71949,
+71950
+]
+},
+{
+"ID": 99,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70955,
+"suitCount": 3
+}
+],
+"allSuit": [
+71951,
+71952,
+71953
+]
+},
+{
+"ID": 100,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70008,
+"skillLevel": 1,
+"suitDes": 70957,
+"suitCount": 3
+}
+],
+"allSuit": [
+71954,
+71955,
+71956
+]
+},
+{
+"ID": 101,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 1,
+"suitDes": 70959,
+"suitCount": 3
+}
+],
+"allSuit": [
+71957,
+71958,
+71959
+]
+},
+{
+"ID": 102,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 1,
+"suitDes": 70961,
+"suitCount": 3
+}
+],
+"allSuit": [
+71960,
+71961,
+71962
+]
+},
+{
+"ID": 103,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 1,
+"suitDes": 70963,
+"suitCount": 3
+}
+],
+"allSuit": [
+71963,
+71964,
+71965
+]
+},
+{
+"ID": 104,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 1,
+"suitDes": 70965,
+"suitCount": 3
+}
+],
+"allSuit": [
+71966,
+71967,
+71968
+]
+},
+{
+"ID": 105,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70012,
+"skillLevel": 1,
+"suitDes": 70967,
+"suitCount": 3
+}
+],
+"allSuit": [
+71969,
+71970,
+71971
+]
+},
+{
+"ID": 106,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 1,
+"suitDes": 70969,
+"suitCount": 3
+}
+],
+"allSuit": [
+71972,
+71973,
+71974
+]
+},
+{
+"ID": 107,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 1,
+"suitDes": 70971,
+"suitCount": 3
+}
+],
+"allSuit": [
+71975,
+71976,
+71977
+]
+},
+{
+"ID": 108,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 1,
+"suitDes": 70973,
+"suitCount": 3
+}
+],
+"allSuit": [
+71978,
+71979,
+71980
+]
+},
+{
+"ID": 109,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 1,
+"suitDes": 70975,
+"suitCount": 3
+}
+],
+"allSuit": [
+71981,
+71982,
+71983
+]
+},
+{
+"ID": 110,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 1,
+"suitDes": 70977,
+"suitCount": 4
+}
+],
+"allSuit": [
+72124,
+72125,
+72126,
+72127
+]
+},
+{
+"ID": 111,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 1,
+"suitDes": 70979,
+"suitCount": 4
+}
+],
+"allSuit": [
+72128,
+72129,
+72130,
+72131
+]
+},
+{
+"ID": 112,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 1,
+"suitDes": 70981,
+"suitCount": 4
+}
+],
+"allSuit": [
+72132,
+72133,
+72134,
+72135
+]
+},
+{
+"ID": 113,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 1,
+"suitDes": 70983,
+"suitCount": 4
+}
+],
+"allSuit": [
+72136,
+72137,
+72138,
+72139
+]
+},
+{
+"ID": 114,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 1,
+"suitDes": 70985,
+"suitCount": 4
+}
+],
+"allSuit": [
+72140,
+72141,
+72142,
+72143
+]
+},
+{
+"ID": 115,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 1,
+"suitDes": 70987,
+"suitCount": 4
+}
+],
+"allSuit": [
+72144,
+72145,
+72146,
+72147
+]
+},
+{
+"ID": 116,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 1,
+"suitDes": 70989,
+"suitCount": 4
+}
+],
+"allSuit": [
+72148,
+72149,
+72150,
+72151
+]
+},
+{
+"ID": 117,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 1,
+"suitDes": 70991,
+"suitCount": 4
+}
+],
+"allSuit": [
+72152,
+72153,
+72154,
+72155
+]
+},
+{
+"ID": 118,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 1,
+"suitDes": 70993,
+"suitCount": 4
+}
+],
+"allSuit": [
+72156,
+72157,
+72158,
+72159
+]
+},
+{
+"ID": 119,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 1,
+"suitDes": 70995,
+"suitCount": 4
+}
+],
+"allSuit": [
+72160,
+72161,
+72162,
+72163
+]
+},
+{
+"ID": 120,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70031,
+"skillLevel": 1,
+"suitDes": 70997,
+"suitCount": 4
+}
+],
+"allSuit": [
+72164,
+72165,
+72166,
+72167
+]
+},
+{
+"ID": 121,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 1,
+"suitDes": 70999,
+"suitCount": 4
+}
+],
+"allSuit": [
+72168,
+72169,
+72170,
+72171
+]
+},
+{
+"ID": 122,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 1,
+"suitDes": 71001,
+"suitCount": 4
+}
+],
+"allSuit": [
+72172,
+72173,
+72174,
+72175
+]
+},
+{
+"ID": 123,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 1,
+"suitDes": 71003,
+"suitCount": 4
+}
+],
+"allSuit": [
+72176,
+72177,
+72178,
+72179
+]
+},
+{
+"ID": 124,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 1,
+"suitDes": 71005,
+"suitCount": 4
+}
+],
+"allSuit": [
+72180,
+72181,
+72182,
+72183
+]
+},
+{
+"ID": 125,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 1,
+"suitDes": 71007,
+"suitCount": 4
+}
+],
+"allSuit": [
+72184,
+72185,
+72186,
+72187
+]
+},
+{
+"ID": 126,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 1,
+"suitDes": 71009,
+"suitCount": 4
+}
+],
+"allSuit": [
+72188,
+72189,
+72190,
+72191
+]
+},
+{
+"ID": 127,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70038,
+"skillLevel": 1,
+"suitDes": 71011,
+"suitCount": 4
+}
+],
+"allSuit": [
+72192,
+72193,
+72194,
+72195
+]
+},
+{
+"ID": 128,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70040,
+"skillLevel": 1,
+"suitDes": 71013,
+"suitCount": 4
+}
+],
+"allSuit": [
+72196,
+72197,
+72198,
+72199
+]
+},
+{
+"ID": 129,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70042,
+"skillLevel": 1,
+"suitDes": 71015,
+"suitCount": 4
+}
+],
+"allSuit": [
+72200,
+72201,
+72202,
+72203
+]
+},
+{
+"ID": 130,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 2,
+"suitDes": 70938,
+"suitCount": 3
+}
+],
+"allSuit": [
+71984,
+71985,
+71986
+]
+},
+{
+"ID": 131,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 2,
+"suitDes": 70940,
+"suitCount": 3
+}
+],
+"allSuit": [
+71987,
+71988,
+71989
+]
+},
+{
+"ID": 132,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 2,
+"suitDes": 70942,
+"suitCount": 3
+}
+],
+"allSuit": [
+71990,
+71991,
+71992
+]
+},
+{
+"ID": 133,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70003,
+"skillLevel": 2,
+"suitDes": 70944,
+"suitCount": 3
+}
+],
+"allSuit": [
+71993,
+71994,
+71995
+]
+},
+{
+"ID": 134,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 2,
+"suitDes": 70946,
+"suitCount": 3
+}
+],
+"allSuit": [
+71996,
+71997,
+71998
+]
+},
+{
+"ID": 135,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 2,
+"suitDes": 70948,
+"suitCount": 3
+}
+],
+"allSuit": [
+71999,
+72000,
+72001
+]
+},
+{
+"ID": 136,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70005,
+"skillLevel": 2,
+"suitDes": 70950,
+"suitCount": 3
+}
+],
+"allSuit": [
+72002,
+72003,
+72004
+]
+},
+{
+"ID": 137,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 2,
+"suitDes": 70952,
+"suitCount": 3
+}
+],
+"allSuit": [
+72005,
+72006,
+72007
+]
+},
+{
+"ID": 138,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 2,
+"suitDes": 70954,
+"suitCount": 3
+}
+],
+"allSuit": [
+72008,
+72009,
+72010
+]
+},
+{
+"ID": 139,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 2,
+"suitDes": 70956,
+"suitCount": 3
+}
+],
+"allSuit": [
+72011,
+72012,
+72013
+]
+},
+{
+"ID": 140,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70008,
+"skillLevel": 2,
+"suitDes": 70958,
+"suitCount": 3
+}
+],
+"allSuit": [
+72014,
+72015,
+72016
+]
+},
+{
+"ID": 141,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 2,
+"suitDes": 70960,
+"suitCount": 3
+}
+],
+"allSuit": [
+72017,
+72018,
+72019
+]
+},
+{
+"ID": 142,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 2,
+"suitDes": 70962,
+"suitCount": 3
+}
+],
+"allSuit": [
+72020,
+72021,
+72022
+]
+},
+{
+"ID": 143,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 2,
+"suitDes": 70964,
+"suitCount": 3
+}
+],
+"allSuit": [
+72023,
+72024,
+72025
+]
+},
+{
+"ID": 144,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 2,
+"suitDes": 70966,
+"suitCount": 3
+}
+],
+"allSuit": [
+72026,
+72027,
+72028
+]
+},
+{
+"ID": 145,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70012,
+"skillLevel": 2,
+"suitDes": 70968,
+"suitCount": 3
+}
+],
+"allSuit": [
+72029,
+72030,
+72031
+]
+},
+{
+"ID": 146,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 2,
+"suitDes": 70970,
+"suitCount": 3
+}
+],
+"allSuit": [
+72032,
+72033,
+72034
+]
+},
+{
+"ID": 147,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 2,
+"suitDes": 70972,
+"suitCount": 3
+}
+],
+"allSuit": [
+72035,
+72036,
+72037
+]
+},
+{
+"ID": 148,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 2,
+"suitDes": 70974,
+"suitCount": 3
+}
+],
+"allSuit": [
+72038,
+72039,
+72040
+]
+},
+{
+"ID": 149,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 2,
+"suitDes": 70976,
+"suitCount": 3
+}
+],
+"allSuit": [
+72041,
+72042,
+72043
+]
+},
+{
+"ID": 150,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 2,
+"suitDes": 70978,
+"suitCount": 4
+}
+],
+"allSuit": [
+72204,
+72205,
+72206,
+72207
+]
+},
+{
+"ID": 151,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 2,
+"suitDes": 70980,
+"suitCount": 4
+}
+],
+"allSuit": [
+72208,
+72209,
+72210,
+72211
+]
+},
+{
+"ID": 152,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 2,
+"suitDes": 70982,
+"suitCount": 4
+}
+],
+"allSuit": [
+72212,
+72213,
+72214,
+72215
+]
+},
+{
+"ID": 153,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 2,
+"suitDes": 70984,
+"suitCount": 4
+}
+],
+"allSuit": [
+72216,
+72217,
+72218,
+72219
+]
+},
+{
+"ID": 154,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 2,
+"suitDes": 70986,
+"suitCount": 4
+}
+],
+"allSuit": [
+72220,
+72221,
+72222,
+72223
+]
+},
+{
+"ID": 155,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 2,
+"suitDes": 70988,
+"suitCount": 4
+}
+],
+"allSuit": [
+72224,
+72225,
+72226,
+72227
+]
+},
+{
+"ID": 156,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 2,
+"suitDes": 70990,
+"suitCount": 4
+}
+],
+"allSuit": [
+72228,
+72229,
+72230,
+72231
+]
+},
+{
+"ID": 157,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 2,
+"suitDes": 70992,
+"suitCount": 4
+}
+],
+"allSuit": [
+72232,
+72233,
+72234,
+72235
+]
+},
+{
+"ID": 158,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 2,
+"suitDes": 70994,
+"suitCount": 4
+}
+],
+"allSuit": [
+72236,
+72237,
+72238,
+72239
+]
+},
+{
+"ID": 159,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 2,
+"suitDes": 70996,
+"suitCount": 4
+}
+],
+"allSuit": [
+72240,
+72241,
+72242,
+72243
+]
+},
+{
+"ID": 160,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70031,
+"skillLevel": 2,
+"suitDes": 70998,
+"suitCount": 4
+}
+],
+"allSuit": [
+72244,
+72245,
+72246,
+72247
+]
+},
+{
+"ID": 161,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 2,
+"suitDes": 71000,
+"suitCount": 4
+}
+],
+"allSuit": [
+72248,
+72249,
+72250,
+72251
+]
+},
+{
+"ID": 162,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 2,
+"suitDes": 71002,
+"suitCount": 4
+}
+],
+"allSuit": [
+72252,
+72253,
+72254,
+72255
+]
+},
+{
+"ID": 163,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 2,
+"suitDes": 71004,
+"suitCount": 4
+}
+],
+"allSuit": [
+72256,
+72257,
+72258,
+72259
+]
+},
+{
+"ID": 164,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 2,
+"suitDes": 71006,
+"suitCount": 4
+}
+],
+"allSuit": [
+72260,
+72261,
+72262,
+72263
+]
+},
+{
+"ID": 165,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 2,
+"suitDes": 71008,
+"suitCount": 4
+}
+],
+"allSuit": [
+72264,
+72265,
+72266,
+72267
+]
+},
+{
+"ID": 166,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 2,
+"suitDes": 71010,
+"suitCount": 4
+}
+],
+"allSuit": [
+72268,
+72269,
+72270,
+72271
+]
+},
+{
+"ID": 167,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70039,
+"skillLevel": 1,
+"suitDes": 71012,
+"suitCount": 4
+}
+],
+"allSuit": [
+72272,
+72273,
+72274,
+72275
+]
+},
+{
+"ID": 168,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70041,
+"skillLevel": 1,
+"suitDes": 71014,
+"suitCount": 4
+}
+],
+"allSuit": [
+72276,
+72277,
+72278,
+72279
+]
+},
+{
+"ID": 169,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70043,
+"skillLevel": 1,
+"suitDes": 71016,
+"suitCount": 4
+}
+],
+"allSuit": [
+72280,
+72281,
+72282,
+72283
+]
+},
+{
+"ID": 170,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 1,
+"suitDes": 70937,
+"suitCount": 3
+}
+],
+"allSuit": [
+72586,
+72587,
+72588
+]
+},
+{
+"ID": 171,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 1,
+"suitDes": 70939,
+"suitCount": 3
+}
+],
+"allSuit": [
+72589,
+72590,
+72591
+]
+},
+{
+"ID": 172,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 1,
+"suitDes": 70941,
+"suitCount": 3
+}
+],
+"allSuit": [
+72592,
+72593,
+72594
+]
+},
+{
+"ID": 173,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70003,
+"skillLevel": 1,
+"suitDes": 70943,
+"suitCount": 3
+}
+],
+"allSuit": [
+72595,
+72596,
+72597
+]
+},
+{
+"ID": 174,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 1,
+"suitDes": 70945,
+"suitCount": 3
+}
+],
+"allSuit": [
+72598,
+72599,
+72600
+]
+},
+{
+"ID": 175,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 1,
+"suitDes": 70947,
+"suitCount": 3
+}
+],
+"allSuit": [
+72601,
+72602,
+72603
+]
+},
+{
+"ID": 176,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70005,
+"skillLevel": 1,
+"suitDes": 70949,
+"suitCount": 3
+}
+],
+"allSuit": [
+72604,
+72605,
+72606
+]
+},
+{
+"ID": 177,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 1,
+"suitDes": 70951,
+"suitCount": 3
+}
+],
+"allSuit": [
+72607,
+72608,
+72609
+]
+},
+{
+"ID": 178,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 1,
+"suitDes": 70953,
+"suitCount": 3
+}
+],
+"allSuit": [
+72610,
+72611,
+72612
+]
+},
+{
+"ID": 179,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70955,
+"suitCount": 3
+}
+],
+"allSuit": [
+72613,
+72614,
+72615
+]
+},
+{
+"ID": 180,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70008,
+"skillLevel": 1,
+"suitDes": 70957,
+"suitCount": 3
+}
+],
+"allSuit": [
+72616,
+72617,
+72618
+]
+},
+{
+"ID": 181,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 1,
+"suitDes": 70959,
+"suitCount": 3
+}
+],
+"allSuit": [
+72619,
+72620,
+72621
+]
+},
+{
+"ID": 182,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 1,
+"suitDes": 70961,
+"suitCount": 3
+}
+],
+"allSuit": [
+72622,
+72623,
+72624
+]
+},
+{
+"ID": 183,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 1,
+"suitDes": 70963,
+"suitCount": 3
+}
+],
+"allSuit": [
+72625,
+72626,
+72627
+]
+},
+{
+"ID": 184,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 1,
+"suitDes": 70965,
+"suitCount": 3
+}
+],
+"allSuit": [
+72628,
+72629,
+72630
+]
+},
+{
+"ID": 185,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70012,
+"skillLevel": 1,
+"suitDes": 70967,
+"suitCount": 3
+}
+],
+"allSuit": [
+72631,
+72632,
+72633
+]
+},
+{
+"ID": 186,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 1,
+"suitDes": 70969,
+"suitCount": 3
+}
+],
+"allSuit": [
+72634,
+72635,
+72636
+]
+},
+{
+"ID": 187,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 1,
+"suitDes": 70971,
+"suitCount": 3
+}
+],
+"allSuit": [
+72637,
+72638,
+72639
+]
+},
+{
+"ID": 188,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 1,
+"suitDes": 70973,
+"suitCount": 3
+}
+],
+"allSuit": [
+72640,
+72641,
+72642
+]
+},
+{
+"ID": 189,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 1,
+"suitDes": 70975,
+"suitCount": 3
+}
+],
+"allSuit": [
+72643,
+72644,
+72645
+]
+},
+{
+"ID": 190,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 1,
+"suitDes": 70977,
+"suitCount": 4
+}
+],
+"allSuit": [
+72646,
+72647,
+72648,
+72649
+]
+},
+{
+"ID": 191,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 1,
+"suitDes": 70979,
+"suitCount": 4
+}
+],
+"allSuit": [
+72650,
+72651,
+72652,
+72653
+]
+},
+{
+"ID": 192,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 1,
+"suitDes": 70981,
+"suitCount": 4
+}
+],
+"allSuit": [
+72654,
+72655,
+72656,
+72657
+]
+},
+{
+"ID": 193,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 1,
+"suitDes": 70983,
+"suitCount": 4
+}
+],
+"allSuit": [
+72658,
+72659,
+72660,
+72661
+]
+},
+{
+"ID": 194,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 1,
+"suitDes": 70985,
+"suitCount": 4
+}
+],
+"allSuit": [
+72662,
+72663,
+72664,
+72665
+]
+},
+{
+"ID": 195,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 1,
+"suitDes": 70987,
+"suitCount": 4
+}
+],
+"allSuit": [
+72666,
+72667,
+72668,
+72669
+]
+},
+{
+"ID": 196,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 1,
+"suitDes": 70989,
+"suitCount": 4
+}
+],
+"allSuit": [
+72670,
+72671,
+72672,
+72673
+]
+},
+{
+"ID": 197,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 1,
+"suitDes": 70991,
+"suitCount": 4
+}
+],
+"allSuit": [
+72674,
+72675,
+72676,
+72677
+]
+},
+{
+"ID": 198,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 1,
+"suitDes": 70993,
+"suitCount": 4
+}
+],
+"allSuit": [
+72678,
+72679,
+72680,
+72681
+]
+},
+{
+"ID": 199,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 1,
+"suitDes": 70995,
+"suitCount": 4
+}
+],
+"allSuit": [
+72682,
+72683,
+72684,
+72685
+]
+},
+{
+"ID": 200,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70031,
+"skillLevel": 1,
+"suitDes": 70997,
+"suitCount": 4
+}
+],
+"allSuit": [
+72686,
+72687,
+72688,
+72689
+]
+},
+{
+"ID": 201,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 1,
+"suitDes": 70999,
+"suitCount": 4
+}
+],
+"allSuit": [
+72690,
+72691,
+72692,
+72693
+]
+},
+{
+"ID": 202,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 1,
+"suitDes": 71001,
+"suitCount": 4
+}
+],
+"allSuit": [
+72694,
+72695,
+72696,
+72697
+]
+},
+{
+"ID": 203,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 1,
+"suitDes": 71003,
+"suitCount": 4
+}
+],
+"allSuit": [
+72698,
+72699,
+72700,
+72701
+]
+},
+{
+"ID": 204,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 1,
+"suitDes": 71005,
+"suitCount": 4
+}
+],
+"allSuit": [
+72702,
+72703,
+72704,
+72705
+]
+},
+{
+"ID": 205,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 1,
+"suitDes": 71007,
+"suitCount": 4
+}
+],
+"allSuit": [
+72706,
+72707,
+72708,
+72709
+]
+},
+{
+"ID": 206,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 1,
+"suitDes": 71009,
+"suitCount": 4
+}
+],
+"allSuit": [
+72710,
+72711,
+72712,
+72713
+]
+},
+{
+"ID": 207,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70038,
+"skillLevel": 1,
+"suitDes": 71011,
+"suitCount": 4
+}
+],
+"allSuit": [
+72714,
+72715,
+72716,
+72717
+]
+},
+{
+"ID": 208,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70040,
+"skillLevel": 1,
+"suitDes": 71013,
+"suitCount": 4
+}
+],
+"allSuit": [
+72718,
+72719,
+72720,
+72721
+]
+},
+{
+"ID": 209,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70042,
+"skillLevel": 1,
+"suitDes": 71015,
+"suitCount": 4
+}
+],
+"allSuit": [
+72722,
+72723,
+72724,
+72725
+]
+},
+{
+"ID": 210,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70955,
+"suitCount": 3
+}
+],
+"allSuit": [
+72827,
+72828,
+72829
+]
+},
+{
+"ID": 211,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 1,
+"suitDes": 70941,
+"suitCount": 3
+}
+],
+"allSuit": [
+72830,
+72831,
+72832
+]
+},
+{
+"ID": 212,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 1,
+"suitDes": 70939,
+"suitCount": 3
+}
+],
+"allSuit": [
+72833,
+72834,
+72835
+]
+},
+{
+"ID": 213,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 1,
+"suitDes": 70953,
+"suitCount": 3
+}
+],
+"allSuit": [
+72836,
+72837,
+72838
+]
+},
+{
+"ID": 214,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 1,
+"suitDes": 70961,
+"suitCount": 3
+}
+],
+"allSuit": [
+72839,
+72840,
+72841
+]
+},
+{
+"ID": 215,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 1,
+"suitDes": 70965,
+"suitCount": 3
+}
+],
+"allSuit": [
+72842,
+72843,
+72844
+]
+},
+{
+"ID": 216,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 1,
+"suitDes": 70973,
+"suitCount": 3
+}
+],
+"allSuit": [
+72845,
+72846,
+72847
+]
+},
+{
+"ID": 217,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 1,
+"suitDes": 70975,
+"suitCount": 3
+}
+],
+"allSuit": [
+72848,
+72849,
+72850
+]
+},
+{
+"ID": 218,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70955,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 1,
+"suitDes": 70959,
+"suitCount": 3
+}
+],
+"allSuit": [
+72851,
+72852,
+72853
+]
+},
+{
+"ID": 219,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 1,
+"suitDes": 70941,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 1,
+"suitDes": 70937,
+"suitCount": 3
+}
+],
+"allSuit": [
+72854,
+72855,
+72856
+]
+},
+{
+"ID": 220,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 1,
+"suitDes": 70939,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 1,
+"suitDes": 70947,
+"suitCount": 3
+}
+],
+"allSuit": [
+72857,
+72858,
+72859
+]
+},
+{
+"ID": 221,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 1,
+"suitDes": 70953,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 1,
+"suitDes": 70945,
+"suitCount": 3
+}
+],
+"allSuit": [
+72860,
+72861,
+72862
+]
+},
+{
+"ID": 222,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 1,
+"suitDes": 70961,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 1,
+"suitDes": 70963,
+"suitCount": 3
+}
+],
+"allSuit": [
+72863,
+72864,
+72865
+]
+},
+{
+"ID": 223,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 1,
+"suitDes": 70965,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 1,
+"suitDes": 70969,
+"suitCount": 3
+}
+],
+"allSuit": [
+72866,
+72867,
+72868
+]
+},
+{
+"ID": 224,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 1,
+"suitDes": 70973,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 1,
+"suitDes": 70971,
+"suitCount": 3
+}
+],
+"allSuit": [
+72869,
+72870,
+72871
+]
+},
+{
+"ID": 225,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 1,
+"suitDes": 70975,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 1,
+"suitDes": 70951,
+"suitCount": 3
+}
+],
+"allSuit": [
+72872,
+72873,
+72874
+]
+},
+{
+"ID": 226,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 2,
+"suitDes": 70956,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 2,
+"suitDes": 70960,
+"suitCount": 3
+}
+],
+"allSuit": [
+72875,
+72876,
+72877
+]
+},
+{
+"ID": 227,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 2,
+"suitDes": 70942,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 2,
+"suitDes": 70938,
+"suitCount": 3
+}
+],
+"allSuit": [
+72878,
+72879,
+72880
+]
+},
+{
+"ID": 228,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 2,
+"suitDes": 70940,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 2,
+"suitDes": 70948,
+"suitCount": 3
+}
+],
+"allSuit": [
+72881,
+72882,
+72883
+]
+},
+{
+"ID": 229,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 2,
+"suitDes": 70954,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 2,
+"suitDes": 70946,
+"suitCount": 3
+}
+],
+"allSuit": [
+72884,
+72885,
+72886
+]
+},
+{
+"ID": 230,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 2,
+"suitDes": 70962,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 2,
+"suitDes": 70964,
+"suitCount": 3
+}
+],
+"allSuit": [
+72887,
+72888,
+72889
+]
+},
+{
+"ID": 231,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 2,
+"suitDes": 70966,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 2,
+"suitDes": 70970,
+"suitCount": 3
+}
+],
+"allSuit": [
+72890,
+72891,
+72892
+]
+},
+{
+"ID": 232,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 2,
+"suitDes": 70974,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 2,
+"suitDes": 70972,
+"suitCount": 3
+}
+],
+"allSuit": [
+72893,
+72894,
+72895
+]
+},
+{
+"ID": 233,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 2,
+"suitDes": 70976,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 2,
+"suitDes": 70952,
+"suitCount": 3
+}
+],
+"allSuit": [
+72896,
+72897,
+72898
+]
+},
+{
+"ID": 234,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 1,
+"suitDes": 70977,
+"suitCount": 4
+}
+],
+"allSuit": [
+72899,
+72900,
+72901,
+72902
+]
+},
+{
+"ID": 235,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 1,
+"suitDes": 70979,
+"suitCount": 4
+}
+],
+"allSuit": [
+72903,
+72904,
+72905,
+72906
+]
+},
+{
+"ID": 236,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 1,
+"suitDes": 70981,
+"suitCount": 4
+}
+],
+"allSuit": [
+72907,
+72908,
+72909,
+72910
+]
+},
+{
+"ID": 237,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 1,
+"suitDes": 70983,
+"suitCount": 4
+}
+],
+"allSuit": [
+72911,
+72912,
+72913,
+72914
+]
+},
+{
+"ID": 238,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 1,
+"suitDes": 70991,
+"suitCount": 4
+}
+],
+"allSuit": [
+72915,
+72916,
+72917,
+72918
+]
+},
+{
+"ID": 239,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 1,
+"suitDes": 71001,
+"suitCount": 4
+}
+],
+"allSuit": [
+72919,
+72920,
+72921,
+72922
+]
+},
+{
+"ID": 240,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 1,
+"suitDes": 70999,
+"suitCount": 4
+}
+],
+"allSuit": [
+72923,
+72924,
+72925,
+72926
+]
+},
+{
+"ID": 241,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 1,
+"suitDes": 71009,
+"suitCount": 4
+}
+],
+"allSuit": [
+72927,
+72928,
+72929,
+72930
+]
+},
+{
+"ID": 242,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 1,
+"suitDes": 70977,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 1,
+"suitDes": 70985,
+"suitCount": 4
+}
+],
+"allSuit": [
+72931,
+72932,
+72933,
+72934
+]
+},
+{
+"ID": 243,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 1,
+"suitDes": 70979,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 1,
+"suitDes": 70987,
+"suitCount": 4
+}
+],
+"allSuit": [
+72935,
+72936,
+72937,
+72938
+]
+},
+{
+"ID": 244,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 1,
+"suitDes": 70981,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 1,
+"suitDes": 70989,
+"suitCount": 4
+}
+],
+"allSuit": [
+72939,
+72940,
+72941,
+72942
+]
+},
+{
+"ID": 245,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 1,
+"suitDes": 70983,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 1,
+"suitDes": 70993,
+"suitCount": 4
+}
+],
+"allSuit": [
+72943,
+72944,
+72945,
+72946
+]
+},
+{
+"ID": 246,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 1,
+"suitDes": 70991,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 1,
+"suitDes": 71003,
+"suitCount": 4
+}
+],
+"allSuit": [
+72947,
+72948,
+72949,
+72950
+]
+},
+{
+"ID": 247,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 1,
+"suitDes": 71001,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 1,
+"suitDes": 71005,
+"suitCount": 4
+}
+],
+"allSuit": [
+72951,
+72952,
+72953,
+72954
+]
+},
+{
+"ID": 248,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 1,
+"suitDes": 70999,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 1,
+"suitDes": 70995,
+"suitCount": 4
+}
+],
+"allSuit": [
+72955,
+72956,
+72957,
+72958
+]
+},
+{
+"ID": 249,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 1,
+"suitDes": 71009,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 1,
+"suitDes": 71007,
+"suitCount": 4
+}
+],
+"allSuit": [
+72959,
+72960,
+72961,
+72962
+]
+},
+{
+"ID": 250,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 2,
+"suitDes": 70978,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 2,
+"suitDes": 70986,
+"suitCount": 4
+}
+],
+"allSuit": [
+72963,
+72964,
+72965,
+72966
+]
+},
+{
+"ID": 251,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 2,
+"suitDes": 70980,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 2,
+"suitDes": 70988,
+"suitCount": 4
+}
+],
+"allSuit": [
+72967,
+72968,
+72969,
+72970
+]
+},
+{
+"ID": 252,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 2,
+"suitDes": 70982,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 2,
+"suitDes": 70990,
+"suitCount": 4
+}
+],
+"allSuit": [
+72971,
+72972,
+72973,
+72974
+]
+},
+{
+"ID": 253,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 2,
+"suitDes": 70984,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 2,
+"suitDes": 70994,
+"suitCount": 4
+}
+],
+"allSuit": [
+72975,
+72976,
+72977,
+72978
+]
+},
+{
+"ID": 254,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 2,
+"suitDes": 70992,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 2,
+"suitDes": 71004,
+"suitCount": 4
+}
+],
+"allSuit": [
+72979,
+72980,
+72981,
+72982
+]
+},
+{
+"ID": 255,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 2,
+"suitDes": 71002,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 2,
+"suitDes": 71006,
+"suitCount": 4
+}
+],
+"allSuit": [
+72983,
+72984,
+72985,
+72986
+]
+},
+{
+"ID": 256,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 2,
+"suitDes": 71000,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 2,
+"suitDes": 70996,
+"suitCount": 4
+}
+],
+"allSuit": [
+72987,
+72988,
+72989,
+72990
+]
+},
+{
+"ID": 257,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 2,
+"suitDes": 71010,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 2,
+"suitDes": 71008,
+"suitCount": 4
+}
+],
+"allSuit": [
+72991,
+72992,
+72993,
+72994
+]
+},
+{
+"ID": 258,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70955,
+"suitCount": 3
+},
+{
+"skillId": 70009,
+"skillLevel": 1,
+"suitDes": 70959,
+"suitCount": 3
+}
+],
+"allSuit": [
+72995,
+72996,
+72997
+]
+},
+{
+"ID": 259,
+"name": 70924,
+"effect": [
+{
+"skillId": 70007,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70002,
+"skillLevel": 1,
+"suitDes": 70939,
+"suitCount": 3
+},
+{
+"skillId": 70001,
+"skillLevel": 1,
+"suitDes": 70937,
+"suitCount": 3
+}
+],
+"allSuit": [
+72998,
+72999,
+73000
+]
+},
+{
+"ID": 260,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70019,
+"skillLevel": 1,
+"suitDes": 70941,
+"suitCount": 3
+},
+{
+"skillId": 70016,
+"skillLevel": 1,
+"suitDes": 70947,
+"suitCount": 3
+}
+],
+"allSuit": [
+73001,
+73002,
+73003
+]
+},
+{
+"ID": 261,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70020,
+"skillLevel": 1,
+"suitDes": 70953,
+"suitCount": 3
+},
+{
+"skillId": 70004,
+"skillLevel": 1,
+"suitDes": 70945,
+"suitCount": 3
+}
+],
+"allSuit": [
+73004,
+73005,
+73006
+]
+},
+{
+"ID": 262,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70010,
+"skillLevel": 1,
+"suitDes": 70961,
+"suitCount": 3
+},
+{
+"skillId": 70017,
+"skillLevel": 1,
+"suitDes": 70963,
+"suitCount": 3
+}
+],
+"allSuit": [
+73007,
+73008,
+73009
+]
+},
+{
+"ID": 263,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70011,
+"skillLevel": 1,
+"suitDes": 70965,
+"suitCount": 3
+},
+{
+"skillId": 70018,
+"skillLevel": 1,
+"suitDes": 70969,
+"suitCount": 3
+}
+],
+"allSuit": [
+73010,
+73011,
+73012
+]
+},
+{
+"ID": 264,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70014,
+"skillLevel": 1,
+"suitDes": 70973,
+"suitCount": 3
+},
+{
+"skillId": 70013,
+"skillLevel": 1,
+"suitDes": 70971,
+"suitCount": 3
+}
+],
+"allSuit": [
+73013,
+73014,
+73015
+]
+},
+{
+"ID": 265,
+"name": 70924,
+"effect": [
+{
+"skillId": 70044,
+"skillLevel": 1,
+"suitDes": 70922,
+"suitCount": 3
+},
+{
+"skillId": 70015,
+"skillLevel": 1,
+"suitDes": 70975,
+"suitCount": 3
+},
+{
+"skillId": 70006,
+"skillLevel": 1,
+"suitDes": 70951,
+"suitCount": 3
+}
+],
+"allSuit": [
+73016,
+73017,
+73018
+]
+},
+{
+"ID": 266,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70021,
+"skillLevel": 1,
+"suitDes": 70977,
+"suitCount": 4
+},
+{
+"skillId": 70025,
+"skillLevel": 1,
+"suitDes": 70985,
+"suitCount": 4
+}
+],
+"allSuit": [
+73019,
+73020,
+73021,
+73022
+]
+},
+{
+"ID": 267,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70022,
+"skillLevel": 1,
+"suitDes": 70979,
+"suitCount": 4
+},
+{
+"skillId": 70026,
+"skillLevel": 1,
+"suitDes": 70987,
+"suitCount": 4
+}
+],
+"allSuit": [
+73023,
+73024,
+73025,
+73026
+]
+},
+{
+"ID": 268,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70023,
+"skillLevel": 1,
+"suitDes": 70981,
+"suitCount": 4
+},
+{
+"skillId": 70027,
+"skillLevel": 1,
+"suitDes": 70989,
+"suitCount": 4
+}
+],
+"allSuit": [
+73027,
+73028,
+73029,
+73030
+]
+},
+{
+"ID": 269,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70024,
+"skillLevel": 1,
+"suitDes": 70983,
+"suitCount": 4
+},
+{
+"skillId": 70029,
+"skillLevel": 1,
+"suitDes": 70993,
+"suitCount": 4
+}
+],
+"allSuit": [
+73031,
+73032,
+73033,
+73034
+]
+},
+{
+"ID": 270,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70028,
+"skillLevel": 1,
+"suitDes": 70991,
+"suitCount": 4
+},
+{
+"skillId": 70034,
+"skillLevel": 1,
+"suitDes": 71003,
+"suitCount": 4
+}
+],
+"allSuit": [
+73035,
+73036,
+73037,
+73038
+]
+},
+{
+"ID": 271,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70033,
+"skillLevel": 1,
+"suitDes": 71001,
+"suitCount": 4
+},
+{
+"skillId": 70035,
+"skillLevel": 1,
+"suitDes": 71005,
+"suitCount": 4
+}
+],
+"allSuit": [
+73039,
+73040,
+73041,
+73042
+]
+},
+{
+"ID": 272,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70032,
+"skillLevel": 1,
+"suitDes": 70999,
+"suitCount": 4
+},
+{
+"skillId": 70030,
+"skillLevel": 1,
+"suitDes": 70995,
+"suitCount": 4
+}
+],
+"allSuit": [
+73043,
+73044,
+73045,
+73046
+]
+},
+{
+"ID": 273,
+"name": 70924,
+"effect": [
+{
+"skillId": 70045,
+"skillLevel": 1,
+"suitDes": 70923,
+"suitCount": 4
+},
+{
+"skillId": 70037,
+"skillLevel": 1,
+"suitDes": 71009,
+"suitCount": 4
+},
+{
+"skillId": 70036,
+"skillLevel": 1,
+"suitDes": 71007,
+"suitCount": 4
+}
+],
+"allSuit": [
+73047,
+73048,
+73049,
+73050
+]
+},
+{
+"ID": 274,
+"name": 70924,
+"effect": [
+{
+"skillId": 50007,
+"skillLevel": 1,
+"suitDes": 71317,
+"suitCount": 2
+},
+{
+"skillId": 50008,
+"skillLevel": 1,
+"suitDes": 71318,
+"suitCount": 3
+}
+],
+"allSuit": [
+90665,
+90666,
+90667
+]
+},
+{
+"ID": 275,
+"name": 70924,
+"effect": [
+{
+"skillId": 50009,
+"skillLevel": 1,
+"suitDes": 71317,
+"suitCount": 3
+},
+{
+"skillId": 50010,
+"skillLevel": 1,
+"suitDes": 71318,
+"suitCount": 3
+}
+],
+"allSuit": [
+71680,
+71681,
+71682
+]
+}
+]

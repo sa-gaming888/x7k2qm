@@ -1,0 +1,20 @@
+[
+{
+"ID": 3801,
+"goodsId": 380,
+"goodsType": 1,
+"mainGroup": 1,
+"subGroup": 1,
+"sellType": 7,
+"currency": 3
+},
+{
+"ID": 16102,
+"goodsId": 1610,
+"goodsType": 2,
+"mainGroup": 2,
+"subGroup": 1,
+"sellType": 6,
+"currency": 1
+}
+]

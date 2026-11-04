@@ -1,0 +1,410 @@
+[
+{
+"ID": 1,
+"icon": "skill_251",
+"nameCn": "月神守護Lv3",
+"nameTn": "月神守護Lv3",
+"nameKr": "달신의 수호 3",
+"desCn": "遇敵機率降低80",
+"desTn": "遇敵機率降低80",
+"desKr": "적을 만날 확률이 80 감소합니다.",
+"buffInfo": {
+"noWalkEnemyRate": 9700
+}
+},
+{
+"ID": 2,
+"icon": "exp_1_150",
+"nameCn": "經驗祝福LV1",
+"nameTn": "經驗祝福LV1",
+"nameKr": "경험치 축복 LV1",
+"desCn": "經驗+1000%",
+"desTn": "經驗+1000%",
+"desKr": "경험치 +1000%",
+"expBuffInfo": {
+"addeExp": 10
+}
+},
+{
+"ID": 3,
+"icon": "skill_593",
+"nameCn": "運勢：凶",
+"nameTn": "運勢：凶",
+"nameKr": "운세: 나쁨",
+"desCn": "小心行事，不然可會害人遭殃。",
+"desTn": "小心行事，不然可會害人遭殃。",
+"desKr": "조심하세요. 그렇지 않으면 재앙이 찾아올 수 있습니다.",
+"mutex": 1,
+"attrInfo": [
+55062001
+]
+},
+{
+"ID": 4,
+"icon": "exp_1_150",
+"nameCn": "智慧之果3",
+"nameTn": "智慧之果3",
+"nameKr": "도토리3",
+"desCn": "使用後獲得經驗+1倍",
+"desTn": "使用後獲得經驗+1倍",
+"desKr": "사용 후 경험치 +1배 획득",
+"expBuffInfo": {
+"addeExp": 34
+}
+},
+{
+"ID": 5,
+"icon": "exp_1_150",
+"nameCn": "2倍智慧果",
+"nameTn": "2倍智慧果",
+"nameKr": "2배도토리",
+"desCn": "使用後獲得經驗+2倍",
+"desTn": "使用後獲得經驗+2倍",
+"desKr": "사용 후 경험치 +2배 획득",
+"expBuffInfo": {
+"addeExp": 67
+}
+},
+{
+"ID": 6,
+"icon": "exp_1_150",
+"nameCn": "3倍智慧果",
+"nameTn": "3倍智慧果",
+"nameKr": "3배도토리",
+"desCn": "使用後獲得經驗+3倍",
+"desTn": "使用後獲得經驗+3倍",
+"desKr": "사용 후 경험치 +3배 획득",
+"expBuffInfo": {
+"addeExp": 100
+}
+},
+{
+"ID": 7,
+"icon": "exp_1_150",
+"nameCn": "智慧之果1",
+"nameTn": "智慧之果1",
+"nameKr": "도토리1",
+"desCn": "使用後獲得經驗+0.5倍",
+"desTn": "使用後獲得經驗+0.5倍",
+"desKr": "사용 후 경험치 +0.5배 획득",
+"expBuffInfo": {
+"addeExp": 10
+}
+},
+{
+"ID": 8,
+"icon": "skill_512",
+"nameCn": "運勢：小吉",
+"nameTn": "運勢：小吉",
+"nameKr": "운세: 소길",
+"desCn": "懷著誠心而努力會有加倍的回報。",
+"desTn": "懷著誠心而努力會有加倍的回報。",
+"desKr": "성실한 노력은 두 배의 보상을 받을 것입니다.",
+"mutex": 1,
+"attrInfo": [
+55063001
+]
+},
+{
+"ID": 9,
+"icon": "skill_525",
+"nameCn": "運勢：中吉",
+"nameTn": "運勢：中吉",
+"nameKr": "운세: 중길",
+"desCn": "身體健康一切平安。",
+"desTn": "身體健康一切平安。",
+"desKr": "괜찮습니다, 평안할 거예요.",
+"mutex": 1,
+"attrInfo": [
+55064001
+]
+},
+{
+"ID": 10,
+"icon": "skill_575",
+"nameCn": "運勢：大吉",
+"nameTn": "運勢：大吉",
+"nameKr": "운세: 대길",
+"desCn": "諸事順利，一帆風順。",
+"desTn": "諸事順利，一帆風順。",
+"desKr": "모든 일이 잘 진행되고 순조롭게 진행됩니다.",
+"mutex": 1,
+"attrInfo": [
+55065001
+]
+},
+{
+"ID": 11,
+"icon": "skill_251",
+"nameCn": "太陽神守護Lv1",
+"nameTn": "太陽神守護Lv1",
+"nameKr": "태양신의 수호 Lv1",
+"desCn": "遇敵機率降低30",
+"desTn": "遇敵機率降低30",
+"desKr": "적을 만날 확률이 30 감소합니다.",
+"buffInfo": {
+"noWalkEnemyRate": 8000
+}
+},
+{
+"ID": 12,
+"icon": "skill_251",
+"nameCn": "月神守護Lv2",
+"nameTn": "月神守護Lv2",
+"nameKr": "달신의 수호 Lv2",
+"desCn": "遇敵機率降低50",
+"desTn": "遇敵機率降低50",
+"desKr": "적을 만날 확률이 50 감소합니다.",
+"buffInfo": {
+"noWalkEnemyRate": 9000
+}
+},
+{
+"ID": 13,
+"icon": "skill_251",
+"nameCn": "龍王守護",
+"nameTn": "龍王守護",
+"nameKr": "용왕의 수호",
+"desCn": "可暫時驅散敵人",
+"desTn": "可暫時驅散敵人",
+"desKr": "잠시동안 적을 만나지 않습니다.",
+"buffInfo": {
+"noWalkEnemyRate": 10000
+}
+},
+{
+"ID": 14,
+"icon": "exp_30_100",
+"nameCn": "月卡祝福",
+"nameTn": "月卡祝福",
+"nameKr": "월카드 축복",
+"desCn": "經驗+3倍",
+"desTn": "經驗+3倍",
+"desKr": "경험치 +3배",
+"expBuffInfo": {
+"addeExp": 100
+}
+},
+{
+"ID": 15,
+"icon": "exp_50_100",
+"nameCn": "季卡祝福",
+"nameTn": "季卡祝福",
+"nameKr": "계절카드 축복",
+"desCn": "經驗+2倍",
+"desTn": "經驗+2倍",
+"desKr": "경험치 +2배",
+"expBuffInfo": {
+"addeExp": 67
+},
+"attrInfo": [
+55078001
+]
+},
+{
+"ID": 16,
+"icon": "exp_1_150",
+"nameCn": "5倍智慧果",
+"nameTn": "5倍智慧果",
+"nameKr": "5번 지혜의 열매",
+"desCn": "使用後獲得經驗+5倍",
+"desTn": "使用後獲得經驗+5倍",
+"desKr": "사용 후 경험치 +5배 획득",
+"expBuffInfo": {
+"addeExp": 167
+}
+},
+{
+"ID": 17,
+"icon": "skill_630",
+"nameCn": "離線時間",
+"nameTn": "離線時間",
+"nameKr": "오프라인 시간",
+"desCn": "離線時間",
+"desTn": "離線時間",
+"desKr": "오프라인 시간",
+"buffInfo": {
+"isAfkTime": true
+}
+},
+{
+"ID": 18,
+"icon": "skill_604",
+"nameCn": "每日委托",
+"nameTn": "每日委託",
+"nameKr": "일별임무",
+"desCn": "每日委托全部完成，經驗+2倍",
+"desTn": "每日委託全部完成，經驗+2倍",
+"desKr": "일별임무 모두 완료시, 경험치 2배 획득",
+"expBuffInfo": {
+"addeExp": 40
+}
+},
+{
+"ID": 19,
+"icon": "skill_251",
+"nameCn": "月神守護Lv4",
+"nameTn": "月神守護Lv4",
+"nameKr": "달신의 수호 4",
+"desCn": "遇敵機率降低至非常低",
+"desTn": "遇敵機率降低至非常低",
+"desKr": "적과 만날 확률이 매우 낮아집니다.",
+"buffInfo": {
+"noWalkEnemyRate": 10000
+}
+},
+{
+"ID": 20,
+"icon": "skill_18",
+"nameCn": "新手BUFF",
+"nameTn": "新手BUFF",
+"nameKr": "초보자 버프",
+"desCn": "當前人物基礎經驗+5倍",
+"desTn": "當前人物基礎經驗+5倍",
+"desKr": "현재 캐릭터 기본 경험치 +5배",
+"expBuffInfo": {
+"addeExp": 100
+}
+},
+{
+"ID": 21,
+"icon": "skill_242",
+"nameCn": "移動加速",
+"nameTn": "移動加速",
+"nameKr": "이동 가속",
+"desCn": "移動速度+30%",
+"desTn": "移動速度+30%",
+"desKr": "이동 속도 +30%",
+"attrInfo": [
+60000013
+]
+},
+{
+"ID": 22,
+"icon": "skill_251",
+"nameCn": "月神守護Lv3",
+"nameTn": "月神守護Lv3",
+"nameKr": "달신의 수호 3",
+"desCn": "遇敵機率降低60",
+"desTn": "遇敵機率降低60",
+"desKr": "적을 만날 확률이 60 감소합니다.",
+"buffInfo": {
+"noWalkEnemyRate": 8500
+}
+},
+{
+"ID": 23,
+"icon": "skill_603",
+"nameCn": "耕耘的祝福",
+"nameTn": "耕耘的祝福",
+"nameKr": "수확의 축복",
+"desCn": "野外怪物掉率+10%",
+"desTn": "野外怪物掉率+10%",
+"desKr": "아이템 드랍율 +10%",
+"attrInfo": [
+55077001
+]
+},
+{
+"ID": 24,
+"icon": "exp_1_150",
+"nameCn": "寵物經驗加速",
+"nameTn": "寵物經驗加速",
+"nameKr": "페트 경험치 가속",
+"desCn": "戰寵騎寵經驗+3倍",
+"desTn": "戰寵騎寵經驗+3倍",
+"desKr": "전투, 탑승 페트 경험치 +3배",
+"expBuffInfo": {
+"addeExp": 60
+}
+},
+{
+"ID": 25,
+"icon": "skill_524",
+"nameCn": "5千鑽儲值折扣",
+"nameTn": "5千鑽儲值折扣",
+"desCn": "享8折儲值5千鑽1次",
+"desTn": "享8折儲值5千鑽1次",
+"mutex": 10,
+"buffInfo": {
+"rechargeId": 2,
+"rechargeDiscount": 20
+}
+},
+{
+"ID": 26,
+"icon": "skill_524",
+"nameCn": "1萬鑽儲值折扣",
+"nameTn": "1萬鑽儲值折扣",
+"desCn": "享8折儲值1萬鑽1次",
+"desTn": "享8折儲值1萬鑽1次",
+"mutex": 11,
+"buffInfo": {
+"rechargeId": 3,
+"rechargeDiscount": 20
+}
+},
+{
+"ID": 27,
+"icon": "skill_524",
+"nameCn": "2萬鑽儲值折扣",
+"nameTn": "2萬鑽儲值折扣",
+"desCn": "享8折儲值2萬鑽1次",
+"desTn": "享8折儲值2萬鑽1次",
+"mutex": 12,
+"buffInfo": {
+"rechargeId": 4,
+"rechargeDiscount": 20
+}
+},
+{
+"ID": 28,
+"icon": "skill_524",
+"nameCn": "4萬鑽儲值折扣",
+"nameTn": "4萬鑽儲值折扣",
+"desCn": "享9折儲值4萬鑽1次",
+"desTn": "享9折儲值4萬鑽1次",
+"mutex": 13,
+"buffInfo": {
+"rechargeId": 5,
+"rechargeDiscount": 10
+}
+},
+{
+"ID": 29,
+"icon": "skill_524",
+"nameCn": "6萬鑽儲值折扣",
+"nameTn": "6萬鑽儲值折扣",
+"desCn": "享9折儲值6萬鑽1次",
+"desTn": "享9折儲值6萬鑽1次",
+"mutex": 14,
+"buffInfo": {
+"rechargeId": 6,
+"rechargeDiscount": 10
+}
+},
+{
+"ID": 30,
+"icon": "skill_524",
+"nameCn": "10萬鑽儲值折扣",
+"nameTn": "10萬鑽儲值折扣",
+"desCn": "享9折儲值10萬鑽1次",
+"desTn": "享9折儲值10萬鑽1次",
+"mutex": 15,
+"buffInfo": {
+"rechargeId": 7,
+"rechargeDiscount": 10
+}
+},
+{
+"ID": 31,
+"icon": "exp_1_150",
+"nameCn": "1亿倍智慧果",
+"nameTn": "1亿倍智慧果",
+"desCn": "使用後獲得經驗+N倍",
+"desTn": "使用後獲得經驗+N倍",
+"expBuffInfo": {
+"addeExp": 99999999
+}
+}
+]

@@ -1,0 +1,27 @@
+[
+{
+"ID": 1,
+"ipInfo": {
+"accountPort": 9999,
+"netPort": 80,
+"gamePort": 11000,
+"ip": "eologin.idealsa.org",
+"downPort": 20000
+},
+"nameCn": "正式",
+"nameTn": "正式"
+},
+{
+"ID": 2,
+"ipInfo": {
+"accountPort": 9999,
+"netPort": 89,
+"gamePort": 11000,
+"ip": "106.75.140.27",
+"downPort": 20000
+},
+"isTest": true,
+"nameCn": "test3",
+"nameTn": "test3"
+}
+]

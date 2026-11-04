@@ -1,0 +1,466 @@
+[
+{
+"ID": 1,
+"nameId": 600012,
+"point": {
+"map": 1000,
+"x": 92,
+"y": 99
+},
+"group": 1
+},
+{
+"ID": 2,
+"nameId": 600011,
+"point": {
+"map": 2000,
+"x": 65,
+"y": 58
+},
+"group": 1
+},
+{
+"ID": 3,
+"nameId": 600022,
+"point": {
+"map": 3000,
+"x": 94,
+"y": 97
+},
+"group": 1
+},
+{
+"ID": 4,
+"nameId": 600025,
+"point": {
+"map": 4000,
+"x": 66,
+"y": 55
+},
+"group": 1
+},
+{
+"ID": 5,
+"nameId": 600013,
+"point": {
+"map": 1400,
+"x": 74,
+"y": 104
+},
+"group": 1
+},
+{
+"ID": 6,
+"nameId": 600014,
+"point": {
+"map": 1100,
+"x": 48,
+"y": 91
+},
+"group": 1
+},
+{
+"ID": 7,
+"nameId": 600015,
+"point": {
+"map": 1300,
+"x": 27,
+"y": 23
+},
+"group": 1
+},
+{
+"ID": 8,
+"nameId": 600018,
+"point": {
+"map": 6000,
+"x": 33,
+"y": 74
+},
+"group": 1
+},
+{
+"ID": 9,
+"nameId": 600021,
+"point": {
+"map": 3100,
+"x": 81,
+"y": 70
+},
+"group": 1
+},
+{
+"ID": 10,
+"nameId": 600023,
+"point": {
+"map": 3200,
+"x": 47,
+"y": 60
+},
+"group": 1
+},
+{
+"ID": 11,
+"nameId": 600024,
+"point": {
+"map": 3300,
+"x": 69,
+"y": 51
+},
+"group": 1
+},
+{
+"ID": 12,
+"nameId": 600026,
+"point": {
+"map": 3400,
+"x": 63,
+"y": 48
+},
+"group": 1
+},
+{
+"ID": 13,
+"nameId": 600016,
+"point": {
+"map": 5000,
+"x": 45,
+"y": 53
+},
+"group": 1
+},
+{
+"ID": 14,
+"nameId": 600017,
+"point": {
+"map": 5106,
+"x": 20,
+"y": 17
+},
+"group": 1
+},
+{
+"ID": 16,
+"nameId": 600068,
+"point": {
+"map": 11001,
+"x": 3,
+"y": 43
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 17,
+"nameId": 600069,
+"point": {
+"map": 10001,
+"x": 40,
+"y": 6
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 18,
+"nameId": 600070,
+"point": {
+"map": 31401,
+"x": 91,
+"y": 29
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 19,
+"nameId": 600071,
+"point": {
+"map": 31706,
+"x": 35,
+"y": 20
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 20,
+"nameId": 600072,
+"point": {
+"map": 11004,
+"x": 7,
+"y": 8
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 21,
+"nameId": 600073,
+"point": {
+"map": 500,
+"x": 212,
+"y": 344
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 22,
+"nameId": 71340,
+"point": {
+"map": 60049,
+"x": 30,
+"y": 25
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 23,
+"nameId": 90000000478,
+"point": {
+"map": 502,
+"x": 212,
+"y": 344
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 24,
+"nameId": 200000113,
+"point": {
+"map": 32021,
+"x": 31,
+"y": 29
+},
+"group": 5
+},
+{
+"ID": 25,
+"nameId": 200000119,
+"point": {
+"map": 5510,
+"x": 50,
+"y": 17
+},
+"group": 5
+},
+{
+"ID": 26,
+"nameId": 600035,
+"point": {
+"map": 1040,
+"x": 28,
+"y": 41
+},
+"group": 5
+},
+{
+"ID": 27,
+"nameId": 600036,
+"point": {
+"map": 2030,
+"x": 61,
+"y": 61
+},
+"group": 5
+},
+{
+"ID": 28,
+"nameId": 600037,
+"point": {
+"map": 3030,
+"x": 17,
+"y": 42
+},
+"group": 5
+},
+{
+"ID": 29,
+"nameId": 600038,
+"point": {
+"map": 4030,
+"x": 53,
+"y": 35
+},
+"group": 5
+},
+{
+"ID": 30,
+"nameId": 700000164,
+"point": {
+"map": 889,
+"x": 52,
+"y": 38
+},
+"group": 5
+},
+{
+"ID": 31,
+"nameId": 71367,
+"point": {
+"map": 7402,
+"x": 147,
+"y": 72
+},
+"group": 5
+},
+{
+"ID": 32,
+"nameId": 90000000479,
+"point": {
+"map": 60050,
+"x": 30,
+"y": 25
+},
+"group": 3
+},
+{
+"ID": 33,
+"nameId": 71386,
+"point": {
+"map": 8201,
+"x": 93,
+"y": 66
+},
+"condtion": [
+{
+"rechargePrice": 500
+}
+],
+"group": 6
+},
+{
+"ID": 34,
+"nameId": 71387,
+"point": {
+"map": 8203,
+"x": 140,
+"y": 17
+},
+"condtion": [
+{
+"rechargePrice": 1000
+}
+],
+"group": 6
+},
+{
+"ID": 35,
+"nameId": 71388,
+"point": {
+"map": 8212,
+"x": 139,
+"y": 69
+},
+"condtion": [
+{
+"rechargePrice": 2000
+}
+],
+"group": 6
+},
+{
+"ID": 36,
+"nameId": 71389,
+"point": {
+"map": 8206,
+"x": 88,
+"y": 86
+},
+"condtion": [
+{
+"rechargePrice": 4000
+}
+],
+"group": 6
+},
+{
+"ID": 37,
+"nameId": 71390,
+"point": {
+"map": 8208,
+"x": 138,
+"y": 12
+},
+"condtion": [
+{
+"rechargePrice": 8000
+}
+],
+"group": 6
+},
+{
+"ID": 38,
+"nameId": 71391,
+"point": {
+"map": 8212,
+"x": 73,
+"y": 152
+},
+"condtion": [
+{
+"rechargePrice": 16000
+}
+],
+"group": 6
+},
+{
+"ID": 39,
+"nameId": 71392,
+"point": {
+"map": 8210,
+"x": 20,
+"y": 150
+},
+"condtion": [
+{
+"rechargePrice": 32000
+}
+],
+"group": 6
+},
+{
+"ID": 40,
+"nameId": 71402,
+"point": {
+"map": 300,
+"x": 81,
+"y": 270
+},
+"group": 3,
+"farTeam": true
+},
+{
+"ID": 9999,
+"condtion": [
+{
+"lanId": 20000000127,
+"groupId": 1
+},
+{
+"lanId": 20000000128,
+"groupId": 2
+},
+{
+"lanId": 20000000131,
+"groupId": 3
+},
+{
+"lanId": 20000000129,
+"groupId": 4
+},
+{
+"lanId": 20000000133,
+"groupId": 5
+},
+{
+"lanId": 20000000130,
+"groupId": 6
+}
+],
+"group": 9999
+}
+]

@@ -1,0 +1,13147 @@
+[
+{
+"ID": 1,
+"nameCn": "群魔之境",
+"nameTn": "群魔之境",
+"nameKrn": "악마의 영역",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 2,
+"nameCn": "群魔之境",
+"nameTn": "群魔之境",
+"nameKrn": "악마의 영역",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 3,
+"nameCn": "群魔之境",
+"nameTn": "群魔之境",
+"nameKrn": "악마의 영역",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 21,
+"nameCn": "加加大厦1F",
+"nameTn": "加加大廈1F",
+"nameKrn": "라토토대동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 22,
+"nameCn": "加加大厦2F",
+"nameTn": "加加大廈2F",
+"nameKrn": "라토토대동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 23,
+"nameCn": "加加大厦3F",
+"nameTn": "加加大廈3F",
+"nameKrn": "라토토대동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 24,
+"nameCn": "清洁公司",
+"nameTn": "清潔公司",
+"nameKrn": "청소회사",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 25,
+"nameCn": "加加村的庄园",
+"nameTn": "加加村的莊園",
+"nameKrn": "쟈쟈마을장원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 40,
+"nameCn": "奇努伊关卡",
+"nameTn": "奇努伊關卡",
+"nameKrn": "쿠르의 관문",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 41,
+"nameCn": "梦幻的洞窟",
+"nameTn": "夢幻的洞窟",
+"nameKrn": "몽환의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 42,
+"nameCn": "梦幻的洞窟",
+"nameTn": "夢幻的洞窟",
+"nameKrn": "몽환의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 80,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 81,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 82,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 83,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 84,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 85,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 86,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 87,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 88,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 89,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 90,
+"nameCn": "流冰回廊上层",
+"nameTn": "流冰回廊上層",
+"nameKrn": "얼음회랑 상층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 91,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 92,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 93,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 94,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 95,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 96,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 97,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 98,
+"nameCn": "流冰回廊下层",
+"nameTn": "流冰回廊下層",
+"nameKrn": "얼름회랑 하층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 99,
+"nameCn": "流冰回廊底层",
+"nameTn": "流冰回廊底層",
+"nameKrn": "얼름회랑 저층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 100,
+"nameCn": "萨伊那斯",
+"nameTn": "薩伊那斯",
+"nameKrn": "사이너스",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 100
+},
+{
+"ID": 101,
+"nameCn": "阿布的独栋房屋",
+"nameTn": "阿布的獨棟房屋",
+"nameKrn": "아부의 집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 102,
+"nameCn": "建构中的地下宫殿",
+"nameTn": "建構中的地下宮殿",
+"nameKrn": "건설중인 지하미궁",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 103,
+"nameCn": "建构中的地下宫殿",
+"nameTn": "建構中的地下宮殿",
+"nameKrn": "건설중인 지하미궁",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 104,
+"nameCn": "元神宫",
+"nameTn": "元神宮",
+"nameKrn": "원신궁",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 105,
+"nameCn": "魔印之境",
+"nameTn": "魔印之境",
+"nameKrn": "악마봉인의 영역",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 106,
+"nameCn": "魔印之境",
+"nameTn": "魔印之境",
+"nameKrn": "악마봉인의 영역",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 107,
+"nameCn": "魔印之境",
+"nameTn": "魔印之境",
+"nameKrn": "악마봉인의 영역",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 108,
+"nameCn": "群魔之境",
+"nameTn": "群魔之境",
+"nameKrn": "악마의 영역",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 109,
+"nameCn": "群魔之境",
+"nameTn": "群魔之境",
+"nameKrn": "악마의 영역",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 110,
+"nameCn": "聊天室",
+"nameTn": "聊天室",
+"nameKrn": "커뮤니티실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 111,
+"nameCn": "大广场",
+"nameTn": "大廣場",
+"nameKrn": "큰 광장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 112,
+"nameCn": "结婚会场",
+"nameTn": "結婚會場",
+"nameKrn": "예식장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 113,
+"nameCn": "小房间１",
+"nameTn": "小房間１",
+"nameKrn": "작은방1",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 114,
+"nameCn": "小房间２",
+"nameTn": "小房間２",
+"nameKrn": "작은방2",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 115,
+"nameCn": "小房间３",
+"nameTn": "小房間３",
+"nameKrn": "작은방3",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 116,
+"nameCn": "长毛象大厅",
+"nameTn": "長毛象大廳",
+"nameKrn": "맘모스 홀",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 117,
+"nameCn": "迷宫",
+"nameTn": "迷宮",
+"nameKrn": "미궁",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 118,
+"nameCn": "迷宫",
+"nameTn": "迷宮",
+"nameKrn": "미궁",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 119,
+"nameCn": "迷宫",
+"nameTn": "迷宮",
+"nameKrn": "미궁",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 120,
+"nameCn": "靠近水田的家",
+"nameTn": "靠近水田的家",
+"nameKrn": "논과 가까운 집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 121,
+"nameCn": "岬之家",
+"nameTn": "岬之家",
+"nameKrn": "산골집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 122,
+"nameCn": "迷宫",
+"nameTn": "迷宮",
+"nameKrn": "미궁",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 125,
+"nameCn": "狩猎场",
+"nameTn": "狩獵場",
+"nameKrn": "수렵장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 130,
+"nameCn": "竞技场",
+"nameTn": "競技場",
+"nameKrn": "투기장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 132,
+"nameCn": "结婚大礼堂",
+"nameTn": "結婚大禮堂",
+"nameKrn": "예식장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 141,
+"nameCn": "PK竞技聚会场",
+"nameTn": "PK競技聚會場",
+"nameKrn": "PK투기장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 142,
+"nameCn": "草原PK竞技场",
+"nameTn": "草原PK競技場",
+"nameKrn": "초원PK투기장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 143,
+"nameCn": "丛林PK竞技场",
+"nameTn": "叢林PK競技場",
+"nameKrn": "숲속PK투기장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 144,
+"nameCn": "武斗场PK竞技场",
+"nameTn": "武鬥場PK競技場",
+"nameKrn": "전투장PK투기장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 145,
+"nameCn": "水池PK竞技场",
+"nameTn": "水池PK競技場",
+"nameKrn": "늪지PK투기장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 146,
+"nameCn": "树洞PK竞技场",
+"nameTn": "樹洞PK競技場",
+"nameKrn": "나무동굴PK투기장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 147,
+"nameCn": "瑞尔亚斯大陆",
+"nameTn": "瑞爾亞斯大陸",
+"nameKrn": "에레보스대륙",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 148,
+"nameCn": "魔王秘境",
+"nameTn": "魔王秘境",
+"nameKrn": "마왕의 비경",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 150,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 151,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 152,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 153,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 154,
+"nameCn": "魔王竞技场1F",
+"nameTn": "魔王競技場1F",
+"nameKrn": "마왕투기장 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 155,
+"nameCn": "魔王竞技场2F",
+"nameTn": "魔王競技場2F",
+"nameKrn": "마왕투기장 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 156,
+"nameCn": "魔王竞技场3F",
+"nameTn": "魔王競技場3F",
+"nameKrn": "마왕투기장 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 157,
+"nameCn": "魔王竞技场4F",
+"nameTn": "魔王競技場4F",
+"nameKrn": "마왕투기장 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 158,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 159,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 160,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 161,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 162,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 163,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 164,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 165,
+"nameCn": "龙蜥洞窟",
+"nameTn": "龍蜥洞窟",
+"nameKrn": "도마뱀동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 200,
+"nameCn": "加鲁卡",
+"nameTn": "加魯卡",
+"nameKrn": "쟈루섬",
+"mapBgm": 10,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 201,
+"nameCn": "卡鲁它那牧场事务所",
+"nameTn": "卡魯它那牧場事務所",
+"nameKrn": "카루타나의 직업소개소",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 100
+},
+{
+"ID": 300,
+"nameCn": "吉鲁岛",
+"nameTn": "吉魯島",
+"nameKrn": "후르도섬",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 400,
+"nameCn": "沙姆岛",
+"nameTn": "沙姆島",
+"nameKrn": "세르노스섬",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 400
+},
+{
+"ID": 500,
+"nameCn": "五十年前波拉岛",
+"nameTn": "五十年前波拉島",
+"nameKrn": "오십년전의 해변섬",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 501,
+"nameCn": "501",
+"nameTn": "501",
+"nameKrn": "501",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 502,
+"nameCn": "练功波拉岛2",
+"nameTn": "練功波拉島2",
+"nameKrn": "해변섬수련 2",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 503,
+"nameCn": "练功波拉岛3",
+"nameTn": "練功波拉島3",
+"nameKrn": "해변섬수련 3",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 504,
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 505,
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 516,
+"nameCn": "516",
+"nameTn": "516",
+"nameKrn": "516",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 517,
+"nameCn": "517",
+"nameTn": "517",
+"nameKrn": "517",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 518,
+"nameCn": "518",
+"nameTn": "518",
+"nameKrn": "518",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 519,
+"nameCn": "519",
+"nameTn": "519",
+"nameKrn": "519",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 520,
+"nameCn": "520",
+"nameTn": "520",
+"nameKrn": "520",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 521,
+"nameCn": "521",
+"nameTn": "521",
+"nameKrn": "521",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 522,
+"nameCn": "522",
+"nameTn": "522",
+"nameKrn": "522",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 555,
+"nameCn": "神秘之境",
+"nameTn": "神秘之境",
+"nameKrn": "신비의 영역",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 556,
+"nameCn": "绝情谷底",
+"nameTn": "絕情穀底",
+"nameKrn": "무정한 계곡 밑",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 557,
+"nameCn": "绝情谷主房间",
+"nameTn": "絕情穀主房間",
+"nameKrn": "무정한계곡 곡주의방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 558,
+"nameCn": "法王巢穴",
+"nameTn": "法王巢穴",
+"nameKrn": "달마의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 559,
+"nameCn": "猥琐地狱大厅1F",
+"nameTn": "猥瑣地獄大廳1F",
+"nameKrn": "초라한 지옥홀 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 560,
+"nameCn": "猥琐地狱大厅2F",
+"nameTn": "猥瑣地獄大廳2F",
+"nameKrn": "초라한 지옥홀 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 561,
+"nameCn": "魔王NO.9房间",
+"nameTn": "魔王NO.9房間",
+"nameKrn": "마왕NO.9 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 562,
+"nameCn": "魔王NO.6房间",
+"nameTn": "魔王NO.6房間",
+"nameKrn": "마왕NO.6 방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 563,
+"nameCn": "界王神大殿",
+"nameTn": "界王神大殿",
+"nameKrn": "세계왕대전",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 564,
+"nameCn": "时空缝隙",
+"nameTn": "時空縫隙",
+"nameKrn": "시공의 틈새",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 565,
+"nameCn": "魔王NO.10房间",
+"nameTn": "魔王NO.10房間",
+"nameKrn": "마왕NO.10 방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 600,
+"nameCn": "寻宝之间",
+"nameTn": "尋寶之間",
+"nameKrn": "보물찾기중",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301,
+"specilInfo": {
+"selfAoiMode": true
+}
+},
+{
+"ID": 601,
+"nameCn": "缘分占卜师的房间",
+"nameTn": "緣分占蔔師的房間",
+"nameKrn": "연인점술사의 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 666,
+"nameCn": "海盗船内部",
+"nameTn": "海盜船內部",
+"nameKrn": "해적선 내부",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 667,
+"nameCn": "海盗头目房间",
+"nameTn": "海盜頭目房間",
+"nameKrn": "해적두목의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 668,
+"nameCn": "海盗头目房间",
+"nameTn": "海盜頭目房間",
+"nameKrn": "해적두목의 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 669,
+"nameCn": "海盗的宝藏库",
+"nameTn": "海盜的寶藏庫",
+"nameKrn": "해적의 보물창고",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 670,
+"nameCn": "海盗船内部",
+"nameTn": "海盜船內部",
+"nameKrn": "해적선 내부",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 700,
+"nameCn": "伊甸园区",
+"nameTn": "伊甸園區",
+"nameKrn": "에덴낙원지역",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 701,
+"nameCn": "伊甸大陆西方",
+"nameTn": "伊甸大陸西方",
+"nameKrn": "에덴대륙 서쪽",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 702,
+"nameCn": "尼克斯城区",
+"nameTn": "尼克斯城區",
+"nameKrn": "닉스성지역",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 703,
+"nameCn": "伊甸大陆南方",
+"nameTn": "伊甸大陸南方",
+"nameKrn": "에덴대륙 남쪽",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 704,
+"nameCn": "亚伊欧城区",
+"nameTn": "亞伊歐城區",
+"nameKrn": "하이하모성 지역",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 705,
+"nameCn": "伊甸大陆东方",
+"nameTn": "伊甸大陸東方",
+"nameKrn": "에덴대륙 동쪽",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 706,
+"nameCn": "弗烈顿城区",
+"nameTn": "弗烈頓城區",
+"nameKrn": "포우렌성 지역",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 707,
+"nameCn": "伊甸大陆北方",
+"nameTn": "伊甸大陸北方",
+"nameKrn": "에덴대륙 북쪽",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 708,
+"nameCn": "塔耳塔城区",
+"nameTn": "塔耳塔城區",
+"nameKrn": "타르타르성 지역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 777,
+"nameCn": "测试用地图",
+"nameTn": "測試用地圖",
+"nameKrn": "테스트 맵",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 800,
+"nameCn": "猜谜三兄弟的家２楼",
+"nameTn": "猜謎三兄弟的家２樓",
+"nameKrn": "퀴즈삼형제의 집 2층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 801,
+"nameCn": "猜谜三兄弟的家３楼",
+"nameTn": "猜謎三兄弟的家３樓",
+"nameKrn": "퀴즈삼형제의 집 3층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 802,
+"nameCn": "猜谜三兄弟的家４楼",
+"nameTn": "猜謎三兄弟的家４樓",
+"nameKrn": "퀴즈삼형제의 집 4층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 803,
+"nameCn": "猜谜三兄弟的家５楼",
+"nameTn": "猜謎三兄弟的家５樓",
+"nameKrn": "퀴즈삼형제의 집 5층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 804,
+"nameCn": "猜谜三兄弟的家６楼",
+"nameTn": "猜謎三兄弟的家６樓",
+"nameKrn": "퀴즈삼형제의 집 6층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 805,
+"nameCn": "猜谜三兄弟的家７楼",
+"nameTn": "猜謎三兄弟的家７樓",
+"nameKrn": "퀴즈삼형제의 집 7층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 806,
+"nameCn": "猜谜三兄弟的家８楼",
+"nameTn": "猜謎三兄弟的家８樓",
+"nameKrn": "퀴즈삼형제의 집 8층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 807,
+"nameCn": "猜谜三兄弟的家９楼",
+"nameTn": "猜謎三兄弟的家９樓",
+"nameKrn": "퀴즈삼형제의 집 9층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 808,
+"nameCn": "猜谜三兄弟的家１０楼",
+"nameTn": "猜謎三兄弟的家１０樓",
+"nameKrn": "퀴즈삼형제의 집 10층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 809,
+"nameCn": "猜谜三兄弟的家１１楼",
+"nameTn": "猜謎三兄弟的家１１樓",
+"nameKrn": "퀴즈삼형제의 집 11층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 810,
+"nameCn": "猜谜三兄弟的家１２楼",
+"nameTn": "猜謎三兄弟的家１２樓",
+"nameKrn": "퀴즈삼형제의 집 12층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 811,
+"nameCn": "猜谜三兄弟的家１楼",
+"nameTn": "猜謎三兄弟的家１樓",
+"nameKrn": "퀴즈삼형제의 집 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 812,
+"nameCn": "猜谜大师认定场",
+"nameTn": "猜謎大師認定場",
+"nameKrn": "퀴즈마스터실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 815,
+"nameCn": "新手村",
+"nameTn": "新手村",
+"nameKrn": "초보자마을",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 816,
+"nameCn": "新手岛",
+"nameTn": "新手島",
+"nameKrn": "초보자섬",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 817,
+"nameCn": "泪之海海底",
+"nameTn": "淚之海海底",
+"nameKrn": "눈물의 바다 해저",
+"mapBgm": 23,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 820,
+"nameCn": "猜谜三兄弟的家２楼",
+"nameTn": "猜謎三兄弟的家２樓",
+"nameKrn": "퀴즈삼형제의 집 2층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 821,
+"nameCn": "猜谜三兄弟的家３楼",
+"nameTn": "猜謎三兄弟的家３樓",
+"nameKrn": "퀴즈삼형제의 집 3층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 822,
+"nameCn": "猜谜三兄弟的家４楼",
+"nameTn": "猜謎三兄弟的家４樓",
+"nameKrn": "퀴즈삼형제의 집 4층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 823,
+"nameCn": "猜谜三兄弟的家５楼",
+"nameTn": "猜謎三兄弟的家５樓",
+"nameKrn": "퀴즈삼형제의 집 5층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 824,
+"nameCn": "猜谜三兄弟的家６楼",
+"nameTn": "猜謎三兄弟的家６樓",
+"nameKrn": "퀴즈삼형제의 집 6층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 825,
+"nameCn": "猜谜三兄弟的家７楼",
+"nameTn": "猜謎三兄弟的家７樓",
+"nameKrn": "퀴즈삼형제의 집 7층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 826,
+"nameCn": "猜谜三兄弟的家８楼",
+"nameTn": "猜謎三兄弟的家８樓",
+"nameKrn": "퀴즈삼형제의 집 8층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 827,
+"nameCn": "猜谜三兄弟的家９楼",
+"nameTn": "猜謎三兄弟的家９樓",
+"nameKrn": "퀴즈삼형제의 집 9층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 828,
+"nameCn": "猜谜三兄弟的家１０楼",
+"nameTn": "猜謎三兄弟的家１０樓",
+"nameKrn": "퀴즈삼형제의 집 10층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 829,
+"nameCn": "猜谜三兄弟的家１１楼",
+"nameTn": "猜謎三兄弟的家１１樓",
+"nameKrn": "퀴즈삼형제의 집 11층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 830,
+"nameCn": "猜谜三兄弟的家１２楼",
+"nameTn": "猜謎三兄弟的家１２樓",
+"nameKrn": "퀴즈삼형제의 집 12층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 831,
+"nameCn": "猜谜三兄弟的家１楼",
+"nameTn": "猜謎三兄弟的家１樓",
+"nameKrn": "퀴즈삼형제의 집 1층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 840,
+"nameCn": "猜谜三兄弟的家２楼",
+"nameTn": "猜謎三兄弟的家２樓",
+"nameKrn": "퀴즈삼형제의 집 2층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 841,
+"nameCn": "猜谜三兄弟的家３楼",
+"nameTn": "猜謎三兄弟的家３樓",
+"nameKrn": "퀴즈삼형제의 집 3층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 842,
+"nameCn": "猜谜三兄弟的家４楼",
+"nameTn": "猜謎三兄弟的家４樓",
+"nameKrn": "퀴즈삼형제의 집 4층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 843,
+"nameCn": "猜谜三兄弟的家５楼",
+"nameTn": "猜謎三兄弟的家５樓",
+"nameKrn": "퀴즈삼형제의 집 5층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 844,
+"nameCn": "猜谜三兄弟的家６楼",
+"nameTn": "猜謎三兄弟的家６樓",
+"nameKrn": "퀴즈삼형제의 집 6층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 845,
+"nameCn": "猜谜三兄弟的家７楼",
+"nameTn": "猜謎三兄弟的家７樓",
+"nameKrn": "퀴즈삼형제의 집 7층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 846,
+"nameCn": "猜谜三兄弟的家８楼",
+"nameTn": "猜謎三兄弟的家８樓",
+"nameKrn": "퀴즈삼형제의 집 8층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 847,
+"nameCn": "猜谜三兄弟的家９楼",
+"nameTn": "猜謎三兄弟的家９樓",
+"nameKrn": "퀴즈삼형제의 집 9층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 848,
+"nameCn": "猜谜三兄弟的家１０楼",
+"nameTn": "猜謎三兄弟的家１０樓",
+"nameKrn": "퀴즈삼형제의 집 10층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 849,
+"nameCn": "猜谜三兄弟的家１１楼",
+"nameTn": "猜謎三兄弟的家１１樓",
+"nameKrn": "퀴즈삼형제의 집 11층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 850,
+"nameCn": "猜谜三兄弟的家１２楼",
+"nameTn": "猜謎三兄弟的家１２樓",
+"nameKrn": "퀴즈삼형제의 집 12층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 851,
+"nameCn": "猜谜三兄弟的家１楼",
+"nameTn": "猜謎三兄弟的家１樓",
+"nameKrn": "퀴즈삼형제의 집 1층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 887,
+"nameCn": "接待中心",
+"nameTn": "接待中心",
+"nameKrn": "접객센터",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 888,
+"nameCn": "封印之洞",
+"nameTn": "封印之洞",
+"nameKrn": "봉인의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 889,
+"nameCn": "原始之境",
+"nameTn": "原始之境",
+"nameKrn": "원시의 영역",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 890,
+"nameCn": "神之领域",
+"nameTn": "神之領域",
+"nameKrn": "신들의 영역",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 899,
+"nameCn": "远古坟地",
+"nameTn": "遠古墳地",
+"nameKrn": "고대묘지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 900,
+"nameCn": "克隆人研究中心",
+"nameTn": "克隆人研究中心",
+"nameKrn": "인간복제연구센터",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 901,
+"nameCn": "精神结界【地】",
+"nameTn": "精神結界【地】",
+"nameKrn": "정신의 결계【지】",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 902,
+"nameCn": "精神结界【地】",
+"nameTn": "精神結界【地】",
+"nameKrn": "정신의 결계【지】",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 903,
+"nameCn": "精神结界【水】",
+"nameTn": "精神結界【水】",
+"nameKrn": "정신의 결계【수】",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 904,
+"nameCn": "精神结界【水】",
+"nameTn": "精神結界【水】",
+"nameKrn": "정신의 결계【수】",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 905,
+"nameCn": "精神结界【火】",
+"nameTn": "精神結界【火】",
+"nameKrn": "정신의 결계【화】",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 906,
+"nameCn": "精神结界【火】",
+"nameTn": "精神結界【火】",
+"nameKrn": "정신의 결계【화】",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 907,
+"nameCn": "精神结界【风】",
+"nameTn": "精神結界【風】",
+"nameKrn": "정신의 결계【풍】",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 908,
+"nameCn": "精神结界【风】",
+"nameTn": "精神結界【風】",
+"nameKrn": "정신의 결계【풍】",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 989,
+"nameCn": "麒麟之洞穴",
+"nameTn": "麒麟之洞穴",
+"nameKrn": "기린의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 990,
+"nameCn": "神秘之洞窟地下四楼",
+"nameTn": "神秘之洞窟地下四樓",
+"nameKrn": "신비한 동굴 지하 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 991,
+"nameCn": "神秘之洞窟地下四楼",
+"nameTn": "神秘之洞窟地下四樓",
+"nameKrn": "신비한 동굴 지하 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 992,
+"nameCn": "神秘之洞窟地下四楼",
+"nameTn": "神秘之洞窟地下四樓",
+"nameKrn": "신비한 동굴 지하 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 993,
+"nameCn": "神秘之洞窟地下三楼",
+"nameTn": "神秘之洞窟地下三樓",
+"nameKrn": "신비한 동굴 지하 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 994,
+"nameCn": "神秘之洞窟地下二楼",
+"nameTn": "神秘之洞窟地下二樓",
+"nameKrn": "신비한 동굴 지하 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 995,
+"nameCn": "神秘之洞窟地下一楼",
+"nameTn": "神秘之洞窟地下一樓",
+"nameKrn": "신비한 동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 996,
+"nameCn": "神秘之岛",
+"nameTn": "神秘之島",
+"nameKrn": "신비한 섬",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 100
+},
+{
+"ID": 997,
+"nameCn": "神秘之境",
+"nameTn": "神秘之境",
+"nameKrn": "신비한 영역",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 998,
+"nameCn": "神秘之境",
+"nameTn": "神秘之境",
+"nameKrn": "신비한 영역",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 999,
+"nameCn": "迷失之海",
+"nameTn": "迷失之海",
+"nameKrn": "망각의 바다",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1000,
+"nameCn": "萨姆吉尔村",
+"nameTn": "薩姆吉爾村",
+"nameKrn": "샴기르마을",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1001,
+"nameCn": "萨姆吉尔的武器店",
+"nameTn": "薩姆吉爾的武器店",
+"nameKrn": "샴기르의 무기점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1002,
+"nameCn": "萨姆吉尔的道具店",
+"nameTn": "薩姆吉爾的道具店",
+"nameKrn": "샴기르의 도구점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1003,
+"nameCn": "萨姆吉尔的宠物店",
+"nameTn": "薩姆吉爾的寵物店",
+"nameKrn": "샴기르의 페트상점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1004,
+"nameCn": "萨姆吉尔的肉店",
+"nameTn": "薩姆吉爾的肉店",
+"nameKrn": "샴기르의 정육점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1005,
+"nameCn": "萨姆吉尔的医院",
+"nameTn": "薩姆吉爾的醫院",
+"nameKrn": "샴기르의 병원",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 70003,
+"banPos": [
+{
+"x": 23,
+"y": 23
+},
+{
+"x": 24,
+"y": 23
+},
+{
+"x": 25,
+"y": 23
+},
+{
+"x": 26,
+"y": 23
+},
+{
+"x": 27,
+"y": 23
+},
+{
+"x": 27,
+"y": 22
+},
+{
+"x": 27,
+"y": 21
+},
+{
+"x": 27,
+"y": 20
+},
+{
+"x": 27,
+"y": 19
+}
+]
+},
+{
+"ID": 1006,
+"nameCn": "萨姆吉尔的村长家",
+"nameTn": "薩姆吉爾的村長家",
+"nameKrn": "샴기르의 촌장집",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1007,
+"nameCn": "萨姆吉尔竞技场",
+"nameTn": "薩姆吉爾競技場",
+"nameKrn": "샴기르의 투기장",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1008,
+"nameCn": "师傅的房间",
+"nameTn": "師傅的房間",
+"nameKrn": "대가의 방",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1009,
+"nameCn": "萨姆吉尔的便利商店",
+"nameTn": "薩姆吉爾的便利商店",
+"nameKrn": "샴기르의 편의점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1011,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1012,
+"nameCn": "聊天室柜台",
+"nameTn": "聊天室櫃檯",
+"nameKrn": "채팅방데스크",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1013,
+"nameCn": "老爷爷的家",
+"nameTn": "老爺爺的家",
+"nameKrn": "늙은 노인의 집",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1014,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1020,
+"nameCn": "萨姆吉尔道场柜台",
+"nameTn": "薩姆吉爾道場櫃檯",
+"nameKrn": "샴기르도장데스크",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1021,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 1022,
+"nameCn": "萨姆吉尔道场的医务室",
+"nameTn": "薩姆吉爾道場的醫務室",
+"nameKrn": "샴기르도장의 의무실",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1040,
+"nameCn": "萨姆吉尔庄园",
+"nameTn": "薩姆吉爾莊園",
+"nameKrn": "샴기르장원",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1041,
+"nameCn": "萨姆吉尔庄园族长家",
+"nameTn": "薩姆吉爾莊園族長家",
+"nameKrn": "샴기르장원 족장집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1042,
+"nameCn": "萨姆吉尔庄园竞技场",
+"nameTn": "薩姆吉爾莊園競技場",
+"nameKrn": "샴기르장원 투기장",
+"mapBgm": 14,
+"type": 6,
+"fightBg": 1042
+},
+{
+"ID": 1043,
+"nameCn": "萨姆吉尔庄园聊天柜台",
+"nameTn": "薩姆吉爾莊園聊天櫃檯",
+"nameKrn": "샴기르장원 채팅방데스크",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1044,
+"nameCn": "萨姆吉尔庄园聊天室",
+"nameTn": "薩姆吉爾莊園聊天室",
+"nameKrn": "샴기르장원 채팅방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1045,
+"nameCn": "庄园专用贩售店二",
+"nameTn": "莊園專用販售店二",
+"nameKrn": "장원전용 판매점1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1046,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1047,
+"nameCn": "庄园专用贩售店一",
+"nameTn": "莊園專用販售店一",
+"nameKrn": "장원정용 판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1048,
+"nameCn": "庄园素材贩售店",
+"nameTn": "莊園素材販售店",
+"nameKrn": "장원 소재상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1090,
+"nameCn": "市集",
+"nameTn": "市集",
+"nameKrn": "시장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1100,
+"nameCn": "柯奥村",
+"nameTn": "柯奧村",
+"nameKrn": "쿠오마을",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1101,
+"nameCn": "柯奥的武器店",
+"nameTn": "柯奧的武器店",
+"nameKrn": "쿠오의 무기점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1102,
+"nameCn": "柯奥的道具店",
+"nameTn": "柯奧的道具店",
+"nameKrn": "쿠오의 도구점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1103,
+"nameCn": "柯奥的宠物店",
+"nameTn": "柯奧的寵物店",
+"nameKrn": "쿠오의 페트상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1104,
+"nameCn": "柯奥的肉店",
+"nameTn": "柯奧的肉店",
+"nameKrn": "쿠오의 정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1105,
+"nameCn": "柯奥的医院",
+"nameTn": "柯奧的醫院",
+"nameKrn": "쿠오의 병원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1106,
+"nameCn": "柯奥的长老家",
+"nameTn": "柯奧的長老家",
+"nameKrn": "쿠오의 장로집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1108,
+"nameCn": "柯奥的道场",
+"nameTn": "柯奧的道場",
+"nameKrn": "쿠오의 도장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1112,
+"nameCn": "柯奥的民家",
+"nameTn": "柯奧的民家",
+"nameKrn": "쿠오의 민가",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1200,
+"nameCn": "柯尔克村",
+"nameTn": "柯爾克村",
+"nameKrn": "토토마을",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1201,
+"nameCn": "柯尔克的武器店",
+"nameTn": "柯爾克的武器店",
+"nameKrn": "토토의 무기점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1202,
+"nameCn": "柯尔克的道具店",
+"nameTn": "柯爾克的道具店",
+"nameKrn": "토토의 도구점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1203,
+"nameCn": "柯尔克的宠物店",
+"nameTn": "柯爾克的寵物店",
+"nameKrn": "토토의 페트상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1204,
+"nameCn": "柯尔克的肉店",
+"nameTn": "柯爾克的肉店",
+"nameKrn": "토토의 정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1205,
+"nameCn": "柯尔克的医院",
+"nameTn": "柯爾克的醫院",
+"nameKrn": "토토의 병원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1206,
+"nameCn": "柯尔克的村长家",
+"nameTn": "柯爾克的村長家",
+"nameKrn": "토토의 촌장집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1208,
+"nameCn": "柯尔克的道场",
+"nameTn": "柯爾克的道場",
+"nameKrn": "토토의 도장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1209,
+"nameCn": "柯尔克的便利商店",
+"nameTn": "柯爾克的便利商店",
+"nameKrn": "토토의 편의점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1210,
+"nameCn": "柯尔克的石屋",
+"nameTn": "柯爾克的石屋",
+"nameKrn": "토토의 돌집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1212,
+"nameCn": "柯尔克坑道管理事务所",
+"nameTn": "柯爾克坑道管理事務所",
+"nameKrn": "토토의 갱도관리소",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1214,
+"nameCn": "普拓洞穴地下一楼",
+"nameTn": "普拓洞穴地下一樓",
+"nameKrn": "개척동굴 지하 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1215,
+"nameCn": "斯特帕洞窑",
+"nameTn": "斯特帕洞窯",
+"nameKrn": "스테판동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1300,
+"nameCn": "霍尔特村",
+"nameTn": "霍爾特村",
+"nameKrn": "호토르마을",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1301,
+"nameCn": "霍尔特的武器店",
+"nameTn": "霍爾特的武器店",
+"nameKrn": "호토르의 무기상점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1302,
+"nameCn": "霍尔特的道具店",
+"nameTn": "霍爾特的道具店",
+"nameKrn": "호토르의 소품상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1303,
+"nameCn": "霍尔特的宠物店",
+"nameTn": "霍爾特的寵物店",
+"nameKrn": "호토르의 페트상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1304,
+"nameCn": "霍尔特的肉店",
+"nameTn": "霍爾特的肉店",
+"nameKrn": "호토르의 정육점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1305,
+"nameCn": "霍尔特的医院",
+"nameTn": "霍爾特的醫院",
+"nameKrn": "호토르의 병원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1306,
+"nameCn": "霍尔特的长老家",
+"nameTn": "霍爾特的長老家",
+"nameKrn": "호토르의 노인 집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1308,
+"nameCn": "霍尔特的道场",
+"nameTn": "霍爾特的道場",
+"nameKrn": "호토르의 도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1310,
+"nameCn": "营养剂名人的家",
+"nameTn": "營養劑名人的家",
+"nameKrn": "영양사의 집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1400,
+"nameCn": "卡坦村",
+"nameTn": "卡坦村",
+"nameKrn": "카탄마을",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1401,
+"nameCn": "卡坦的武器店",
+"nameTn": "卡坦的武器店",
+"nameKrn": "카탄의 무기점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1402,
+"nameCn": "卡坦的道具店",
+"nameTn": "卡坦的道具店",
+"nameKrn": "카탄의 도구점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1403,
+"nameCn": "卡坦的宠物店",
+"nameTn": "卡坦的寵物店",
+"nameKrn": "카탄의 페트상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1404,
+"nameCn": "卡坦的肉店",
+"nameTn": "卡坦的肉店",
+"nameKrn": "카탄의 정육점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1405,
+"nameCn": "卡坦的医院",
+"nameTn": "卡坦的醫院",
+"nameKrn": "카탄의 병원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1406,
+"nameCn": "卡坦的村长家",
+"nameTn": "卡坦的村長家",
+"nameKrn": "카탄의 촌장집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1408,
+"nameCn": "卡坦的道场",
+"nameTn": "卡坦的道場",
+"nameKrn": "카탄의 도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1987,
+"nameCn": "恶魔商店",
+"nameTn": "惡魔商店",
+"nameKrn": "악마상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1995,
+"nameCn": "老【Sa】-厨师的房间",
+"nameTn": "老【Sa】-廚師的房間",
+"nameKrn": "【Sa】요리사의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1996,
+"nameCn": "魔法道场冰窖",
+"nameTn": "魔法道場冰窖",
+"nameKrn": "마법도장 얼음창고",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1997,
+"nameCn": "融合宠研究中心",
+"nameTn": "融合寵研究中心",
+"nameKrn": "융합펫 연구센터",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1998,
+"nameCn": "玛丽娜丝的秘室",
+"nameTn": "瑪麗娜絲的秘室",
+"nameKrn": "마리너스의 밀실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 1999,
+"nameCn": "疗养屋",
+"nameTn": "療養屋",
+"nameKrn": "요양소",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2000,
+"nameCn": "玛丽娜丝村",
+"nameTn": "瑪麗娜絲村",
+"nameKrn": "마리너스마을",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2001,
+"nameCn": "玛丽娜丝的武器店",
+"nameTn": "瑪麗娜絲的武器店",
+"nameKrn": "마리너스의 무기점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2002,
+"nameCn": "玛丽娜丝的道具店",
+"nameTn": "瑪麗娜絲的道具店",
+"nameKrn": "마리너스의 도구점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2003,
+"nameCn": "玛丽娜丝的宠物店",
+"nameTn": "瑪麗娜絲的寵物店",
+"nameKrn": "마리너스의 페트상점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2004,
+"nameCn": "玛丽娜丝的肉店",
+"nameTn": "瑪麗娜絲的肉店",
+"nameKrn": "마리너스의 정육점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2005,
+"nameCn": "【Sa】医院",
+"nameTn": "【Sa】醫院",
+"nameKrn": "【Sa】병원",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2006,
+"nameCn": "渔村村长家",
+"nameTn": "漁村村長家",
+"nameKrn": "마리너스 촌장집",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2007,
+"nameCn": "玛丽娜丝竞技场",
+"nameTn": "瑪麗娜絲競技場",
+"nameKrn": "마리너스의 PK장",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2008,
+"nameCn": "玛丽娜丝的道场",
+"nameTn": "瑪麗娜絲的道場",
+"nameKrn": "마리너스의 도장",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2009,
+"nameCn": "玛丽娜丝的便利商店",
+"nameTn": "瑪麗娜絲的便利商店",
+"nameKrn": "마리너스의 편의점",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2010,
+"nameCn": "魔王NO.7房间",
+"nameTn": "魔王NO.7房間",
+"nameKrn": "마왕NO.7 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2011,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2012,
+"nameCn": "聊天室柜台",
+"nameTn": "聊天室櫃檯",
+"nameKrn": "채팅방데스크",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2013,
+"nameCn": "【Sa】会员室",
+"nameTn": "【Sa】會員室",
+"nameKrn": "【사】멤버룸",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2014,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2015,
+"nameCn": "魔王No,1",
+"nameTn": "魔王No,1",
+"nameKrn": "마왕No.1 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2016,
+"nameCn": "魔王NO.3的房间",
+"nameTn": "魔王NO.3的房間",
+"nameKrn": "마왕 NO.3 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2017,
+"nameCn": "魔王NO.8房间",
+"nameTn": "魔王NO.8房間",
+"nameKrn": "마왕NO.8 방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2018,
+"nameCn": "魔王NO.2房间",
+"nameTn": "魔王NO.2房間",
+"nameKrn": "마왕NO.2 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2019,
+"nameCn": "魔王NO.5房间",
+"nameTn": "魔王NO.5房間",
+"nameKrn": "마왕NO.5 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2020,
+"nameCn": "玛丽娜丝道场柜台",
+"nameTn": "瑪麗娜絲道場櫃檯",
+"nameKrn": "마리너스 도장데스크",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2021,
+"nameCn": "秘室内部",
+"nameTn": "秘室內部",
+"nameKrn": "밀실내부",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2022,
+"nameCn": "秘密通道",
+"nameTn": "秘密通道",
+"nameKrn": "비밀통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2023,
+"nameCn": "秘室内部",
+"nameTn": "秘室內部",
+"nameKrn": "밀실내부",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2024,
+"nameCn": "秘室内部",
+"nameTn": "秘室內部",
+"nameKrn": "밀실내부",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2025,
+"nameCn": "牛魔王的居室",
+"nameTn": "牛魔王的居室",
+"nameKrn": "우마왕의 거처",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2026,
+"nameCn": "阎王宫",
+"nameTn": "閻王宮",
+"nameKrn": "염라대왕궁",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2027,
+"nameCn": "太上老君的房间",
+"nameTn": "太上老君的房間",
+"nameKrn": "태상노군의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2028,
+"nameCn": "阎王宫",
+"nameTn": "閻王宮",
+"nameKrn": "염라대왕궁전",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2029,
+"nameCn": "阎王宫",
+"nameTn": "閻王宮",
+"nameKrn": "염라대왕궁전",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2030,
+"nameCn": "玛丽娜丝的庄园",
+"nameTn": "瑪麗娜絲的莊園",
+"nameKrn": "마리너스의 장원",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2031,
+"nameCn": "玛丽娜丝庄园族长家",
+"nameTn": "瑪麗娜絲莊園族長家",
+"nameKrn": "마리너스장원 족장집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2032,
+"nameCn": "玛丽娜丝庄园PK场",
+"nameTn": "瑪麗娜絲莊園PK場",
+"nameKrn": "마리너스장원 PK장",
+"mapBgm": 19,
+"type": 6,
+"fightBg": 1042
+},
+{
+"ID": 2033,
+"nameCn": "玛丽娜丝庄园聊天柜台",
+"nameTn": "瑪麗娜絲莊園聊天櫃檯",
+"nameKrn": "마리너스장원 채팅방데스크",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2034,
+"nameCn": "玛丽娜丝庄园聊天室",
+"nameTn": "瑪麗娜絲莊園聊天室",
+"nameKrn": "마리너스장원 채팅방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2035,
+"nameCn": "庄园素材贩售店",
+"nameTn": "莊園素材販售店",
+"nameKrn": "장원소재 매매점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2036,
+"nameCn": "庄园专用贩售店二",
+"nameTn": "莊園專用販售店二",
+"nameKrn": "장원전용 판매점1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2037,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2038,
+"nameCn": "庄园专用贩售店一",
+"nameTn": "莊園專用販售店一",
+"nameKrn": "장원정용 판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2039,
+"nameCn": "战斗地图",
+"nameTn": "戰鬥地圖",
+"nameKrn": "전투지도",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2040,
+"nameCn": "阎王宫",
+"nameTn": "閻王宮",
+"nameKrn": "염라대왕궁전",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2041,
+"nameCn": "至尊【Sa】-会员素材屋",
+"nameTn": "至尊【Sa】-會員素材屋",
+"nameKrn": "【Sa】-회원소재실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2042,
+"nameCn": "魔王NO.4房间",
+"nameTn": "魔王NO.4房間",
+"nameKrn": "마왕NO.4 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2051,
+"nameCn": "挑战阿布洞",
+"nameTn": "挑戰阿布洞",
+"nameKrn": "아부굴도전",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 2052,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 2053,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 2054,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 2055,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 2600,
+"nameCn": "合成工作室",
+"nameTn": "合成工作室",
+"nameKrn": "합성작업실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 2601,
+"nameCn": "狂妄低谷",
+"nameTn": "狂妄低穀",
+"nameKrn": "광망의 계곡",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3000,
+"nameCn": "加加村",
+"nameTn": "加加村",
+"nameKrn": "쟈쟈마을",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3001,
+"nameCn": "加加的武器店",
+"nameTn": "加加的武器店",
+"nameKrn": "쟈쟈의 무기점",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3002,
+"nameCn": "加加的道具店",
+"nameTn": "加加的道具店",
+"nameKrn": "쟈쟈의 도구점",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3003,
+"nameCn": "加加的宠物店",
+"nameTn": "加加的寵物店",
+"nameKrn": "쟈쟈의 페트상점",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3004,
+"nameCn": "加加的肉店",
+"nameTn": "加加的肉店",
+"nameKrn": "쟈쟈의 정육점",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3005,
+"nameCn": "加加的医院",
+"nameTn": "加加的醫院",
+"nameKrn": "쟈쟈의 병원",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3006,
+"nameCn": "加加的村长家",
+"nameTn": "加加的村長家",
+"nameKrn": "쟈쟈의 촌장집",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3007,
+"nameCn": "加加的竞技场",
+"nameTn": "加加的競技場",
+"nameKrn": "쟈쟈의 투기장",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3008,
+"nameCn": "师傅的房间",
+"nameTn": "師傅的房間",
+"nameKrn": "대가의 방",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3009,
+"nameCn": "加加的便利商店",
+"nameTn": "加加的便利商店",
+"nameKrn": "쟈쟈의 편의점",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3011,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3012,
+"nameCn": "聊天室柜台",
+"nameTn": "聊天室櫃檯",
+"nameKrn": "채팅방 데스크",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3014,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3015,
+"nameCn": "水井地下通道",
+"nameTn": "水井地下通道",
+"nameKrn": "우물의 지하통로",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3016,
+"nameCn": "水井地下洞窟",
+"nameTn": "水井地下洞窟",
+"nameKrn": "우물의 지하동굴",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3020,
+"nameCn": "加加的道场柜台",
+"nameTn": "加加的道場櫃檯",
+"nameKrn": "쟈쟈의 도장데스크",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3021,
+"nameCn": "百人联手道场",
+"nameTn": "百人聯手道場",
+"nameKrn": "백인도장",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 3022,
+"nameCn": "加加的道场医务室",
+"nameTn": "加加的道場醫務室",
+"nameKrn": "쟈쟈의 도장의무실",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3030,
+"nameCn": "加加村的庄园",
+"nameTn": "加加村的莊園",
+"nameKrn": "쟈쟈마을의 장원",
+"mapBgm": 22,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3031,
+"nameCn": "加加村庄园族长家",
+"nameTn": "加加村莊園族長家",
+"nameKrn": "쟈쟈마을장원 촌장집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3032,
+"nameCn": "加加村庄园PK场",
+"nameTn": "加加村莊園PK場",
+"nameKrn": "쟈쟈마을장원 PK장",
+"mapBgm": 14,
+"type": 6,
+"fightBg": 1042
+},
+{
+"ID": 3033,
+"nameCn": "加加村庄园聊天柜台",
+"nameTn": "加加村莊園聊天櫃檯",
+"nameKrn": "쟈쟈마을장원 채팅방데스크",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3034,
+"nameCn": "加加村庄园聊天室",
+"nameTn": "加加村莊園聊天室",
+"nameKrn": "쟈쟈마을장원 채팅방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3035,
+"nameCn": "通用物品贩卖店店",
+"nameTn": "通用物品販賣店店",
+"nameKrn": "일상용품 매매점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3036,
+"nameCn": "庄园专用贩售店一",
+"nameTn": "莊園專用販售店一",
+"nameKrn": "장원정용 판매점1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3037,
+"nameCn": "庄园专用贩售店二",
+"nameTn": "莊園專用販售店二",
+"nameKrn": "장원전용 판매점1",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3038,
+"nameCn": "庄园素材贩售店",
+"nameTn": "莊園素材販售店",
+"nameKrn": "장원소재 매매점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3100,
+"nameCn": "塔姆塔姆村",
+"nameTn": "塔姆塔姆村",
+"nameKrn": "타무타무마을",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3103,
+"nameCn": "塔姆塔姆的宠物店",
+"nameTn": "塔姆塔姆的寵物店",
+"nameKrn": "타무타무의 페트상점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3104,
+"nameCn": "塔姆塔姆的肉店",
+"nameTn": "塔姆塔姆的肉店",
+"nameKrn": "타무타무의 정육점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3105,
+"nameCn": "塔姆塔姆的医院",
+"nameTn": "塔姆塔姆的醫院",
+"nameKrn": "타무타무의 병원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3106,
+"nameCn": "塔姆塔姆的村长家",
+"nameTn": "塔姆塔姆的村長家",
+"nameKrn": "타무타무마을 촌장집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3109,
+"nameCn": "塔姆塔姆的便利商店",
+"nameTn": "塔姆塔姆的便利商店",
+"nameKrn": "타무타무의 편의점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3110,
+"nameCn": "塔姆塔姆的民家",
+"nameTn": "塔姆塔姆的民家",
+"nameKrn": "타무타무의 민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3200,
+"nameCn": "多多村",
+"nameTn": "多多村",
+"nameKrn": "토토마을",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3203,
+"nameCn": "多多的宠物店",
+"nameTn": "多多的寵物店",
+"nameKrn": "토토의 페트상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3204,
+"nameCn": "多多的肉店",
+"nameTn": "多多的肉店",
+"nameKrn": "토토의 정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3205,
+"nameCn": "多多的医院",
+"nameTn": "多多的醫院",
+"nameKrn": "토토의 병원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3206,
+"nameCn": "多多的村长家",
+"nameTn": "多多的村長家",
+"nameKrn": "토토의 촌장집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3208,
+"nameCn": "多多的道场",
+"nameTn": "多多的道場",
+"nameKrn": "토토의 도장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3209,
+"nameCn": "多多的便利商店",
+"nameTn": "多多的便利商店",
+"nameKrn": "토토의 편의점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3300,
+"nameCn": "乌鲁力村",
+"nameTn": "烏魯力村",
+"nameKrn": "우루리마을",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3303,
+"nameCn": "乌鲁力的宠物店",
+"nameTn": "烏魯力的寵物店",
+"nameKrn": "우루리의 페트상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3304,
+"nameCn": "乌鲁力的肉店",
+"nameTn": "烏魯力的肉店",
+"nameKrn": "우루리의 정육점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3305,
+"nameCn": "乌鲁力的医院",
+"nameTn": "烏魯力的醫院",
+"nameKrn": "우루리의 병원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3306,
+"nameCn": "乌鲁力的村长家",
+"nameTn": "烏魯力的村長家",
+"nameKrn": "우루리의 촌장집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3308,
+"nameCn": "乌鲁力的道场",
+"nameTn": "烏魯力的道場",
+"nameKrn": "우루리의 도장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3309,
+"nameCn": "乌鲁力的便利商店",
+"nameTn": "烏魯力的便利商店",
+"nameKrn": "우루리의 편의점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3400,
+"nameCn": "奇喀喀村",
+"nameTn": "奇喀喀村",
+"nameKrn": "쿠키마을",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3403,
+"nameCn": "奇喀喀的宠物店",
+"nameTn": "奇喀喀的寵物店",
+"nameKrn": "쿠키의 페트상점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3404,
+"nameCn": "奇喀喀的肉店",
+"nameTn": "奇喀喀的肉店",
+"nameKrn": "쿠키의 정육점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3405,
+"nameCn": "奇喀喀的医院",
+"nameTn": "奇喀喀的醫院",
+"nameKrn": "쿠키의 병원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3406,
+"nameCn": "奇喀喀的村长家",
+"nameTn": "奇喀喀的村長家",
+"nameKrn": "쿠키의 촌장집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3409,
+"nameCn": "奇喀喀的便利商店",
+"nameTn": "奇喀喀的便利商店",
+"nameKrn": "쿠키의 편의점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3412,
+"nameCn": "奇喀喀的民家",
+"nameTn": "奇喀喀的民家",
+"nameKrn": "쿠키의 민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 3413,
+"nameCn": "森林的独栋房屋",
+"nameTn": "森林的獨棟房屋",
+"nameKrn": "숲속의 집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4000,
+"nameCn": "卡鲁它那村",
+"nameTn": "卡魯它那村",
+"nameKrn": "카루타나마을",
+"mapBgm": 3,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4001,
+"nameCn": "卡鲁它那的武器店",
+"nameTn": "卡魯它那的武器店",
+"nameKrn": "카루타나의 무기점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4002,
+"nameCn": "卡鲁它那的道具店",
+"nameTn": "卡魯它那的道具店",
+"nameKrn": "카루타나의 도구점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4003,
+"nameCn": "卡鲁它那的宠物店",
+"nameTn": "卡魯它那的寵物店",
+"nameKrn": "카루타나의 페트상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4004,
+"nameCn": "卡鲁它那的肉店",
+"nameTn": "卡魯它那的肉店",
+"nameKrn": "카루타나의 정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4005,
+"nameCn": "卡鲁它那的医院",
+"nameTn": "卡魯它那的醫院",
+"nameKrn": "카루타나의 병원",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4006,
+"nameCn": "卡鲁它那的村长家",
+"nameTn": "卡魯它那的村長家",
+"nameKrn": "카루타나의 촌장집",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4007,
+"nameCn": "卡鲁它那的竞技场",
+"nameTn": "卡魯它那的競技場",
+"nameKrn": "카루타나의 투기장",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4008,
+"nameCn": "卡鲁它那的道场",
+"nameTn": "卡魯它那的道場",
+"nameKrn": "카루타나의 도장",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4009,
+"nameCn": "卡鲁它那的便利商店",
+"nameTn": "卡魯它那的便利商店",
+"nameKrn": "카루타나의 편의점",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4011,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4012,
+"nameCn": "聊天室柜台",
+"nameTn": "聊天室櫃檯",
+"nameKrn": "채팅방데스크",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4014,
+"nameCn": "长毛象快递",
+"nameTn": "長毛象快遞",
+"nameKrn": "맘모스택배",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4020,
+"nameCn": "卡鲁它那道场柜台",
+"nameTn": "卡魯它那道場櫃檯",
+"nameKrn": "카루타나 도장데스크",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4030,
+"nameCn": "卡鲁它那庄园",
+"nameTn": "卡魯它那莊園",
+"nameKrn": "카루타나 장원",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4031,
+"nameCn": "卡鲁它那庄园族长家",
+"nameTn": "卡魯它那莊園族長家",
+"nameKrn": "카루나타장원 족장집",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4032,
+"nameCn": "卡鲁它那庄园PK场",
+"nameTn": "卡魯它那莊園PK場",
+"nameKrn": "카루타나장원 PK장",
+"mapBgm": 19,
+"type": 6,
+"fightBg": 1042
+},
+{
+"ID": 4033,
+"nameCn": "卡鲁它那庄园聊天柜台",
+"nameTn": "卡魯它那莊園聊天櫃檯",
+"nameKrn": "카루타나장원 채팅방데스크",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4034,
+"nameCn": "卡鲁它那庄园聊天室",
+"nameTn": "卡魯它那莊園聊天室",
+"nameKrn": "카루타나장원 채팅방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4035,
+"nameCn": "庄园专用贩售店一",
+"nameTn": "莊園專用販售店一",
+"nameKrn": "장원정용 판매점1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4036,
+"nameCn": "庄园素材贩卖店",
+"nameTn": "莊園素材販賣店",
+"nameKrn": "장원소재 판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4037,
+"nameCn": "庄园专用贩售店二",
+"nameTn": "莊園專用販售店二",
+"nameKrn": "장원전용 판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 4038,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5000,
+"nameCn": "福尔德村",
+"nameTn": "福爾德村",
+"nameKrn": "후르도마을",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5001,
+"nameCn": "福尔德的杂货店",
+"nameTn": "福爾德的雜貨店",
+"nameKrn": "후르도의 잡화점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5003,
+"nameCn": "福尔德的宠物店兼肉店",
+"nameTn": "福爾德的寵物店兼肉店",
+"nameKrn": "후르도의 페트상점/정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5005,
+"nameCn": "福尔德的长老家",
+"nameTn": "福爾德的長老家",
+"nameKrn": "후르도의 촌장집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5030,
+"nameCn": "伊甸庄园",
+"nameTn": "伊甸莊園",
+"nameKrn": "에덴장원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5031,
+"nameCn": "伊甸庄园族长家",
+"nameTn": "伊甸莊園族長家",
+"nameKrn": "에덴장원 족장실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5032,
+"nameCn": "伊甸庄园竞技场",
+"nameTn": "伊甸莊園競技場",
+"nameKrn": "에덴장원 투기장",
+"mapBgm": 7,
+"type": 6,
+"fightBg": 40514
+},
+{
+"ID": 5033,
+"nameCn": "伊甸庄园聊天室柜台",
+"nameTn": "伊甸莊園聊天室櫃檯",
+"nameKrn": "에덴장원 채팅방데스크",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5034,
+"nameCn": "伊甸庄园聊天室",
+"nameTn": "伊甸莊園聊天室",
+"nameKrn": "에덴장원 채팅방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5035,
+"nameCn": "庄园专用贩售店一",
+"nameTn": "莊園專用販售店一",
+"nameKrn": "장원정용 판매점1",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5036,
+"nameCn": "庄园专用贩卖店二",
+"nameTn": "莊園專用販賣店二",
+"nameKrn": "장원전용 상점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5037,
+"nameCn": "庄园素材贩卖店",
+"nameTn": "莊園素材販賣店",
+"nameKrn": "장원소재 판매점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5038,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5100,
+"nameCn": "达那村",
+"nameTn": "達那村",
+"nameKrn": "다나마을",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5101,
+"nameCn": "大厅西",
+"nameTn": "大廳西",
+"nameKrn": "홀(동쪽)",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5103,
+"nameCn": "大厅东",
+"nameTn": "大廳東",
+"nameKrn": "홀(서쪽)",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5105,
+"nameCn": "达那的医院",
+"nameTn": "達那的醫院",
+"nameKrn": "다나의 병원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5106,
+"nameCn": "长老房间",
+"nameTn": "長老房間",
+"nameKrn": "장로의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5107,
+"nameCn": "长老房间",
+"nameTn": "長老房間",
+"nameKrn": "장로의 방",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 5500,
+"nameCn": "避难洞窟",
+"nameTn": "避難洞窟",
+"nameKrn": "피난의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5501,
+"nameCn": "水坝南方洞窟",
+"nameTn": "水壩南方洞窟",
+"nameKrn": "수베이남쪽동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5502,
+"nameCn": "水坝南方洞窟地下一楼",
+"nameTn": "水壩南方洞窟地下一樓",
+"nameKrn": "제방남쪽동굴 지하 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5503,
+"nameCn": "水坝南方洞窟地下二楼",
+"nameTn": "水壩南方洞窟地下二樓",
+"nameKrn": "제방남쪽동굴 지하 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5504,
+"nameCn": "水坝洞窟底层",
+"nameTn": "水壩洞窟底層",
+"nameKrn": "제방남동굴 지하",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5505,
+"nameCn": "水坝北方洞窟地下二楼",
+"nameTn": "水壩北方洞窟地下二樓",
+"nameKrn": "제방북쪽동굴 지하 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5506,
+"nameCn": "水坝北方洞窟地下一楼",
+"nameTn": "水壩北方洞窟地下一樓",
+"nameKrn": "제방북쪽동굴 지하 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5507,
+"nameCn": "波拉山谷",
+"nameTn": "波拉山穀",
+"nameKrn": "보라산 계곡",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5508,
+"nameCn": "波拉山顶通道",
+"nameTn": "波拉山頂通道",
+"nameKrn": "보라산 정상통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5509,
+"nameCn": "波拉山顶",
+"nameTn": "波拉山頂",
+"nameKrn": "보라산 정상",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5510,
+"nameCn": "龙穴门口",
+"nameTn": "龍穴門口",
+"nameKrn": "용의 동굴 입구",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 5511,
+"nameCn": "龙穴",
+"nameTn": "龍穴",
+"nameKrn": "용의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 5530,
+"nameCn": "海底洞窟",
+"nameTn": "海底洞窟",
+"nameKrn": "해저동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5532,
+"nameCn": "泰坦的部队驻地",
+"nameTn": "泰坦的部隊駐地",
+"nameKrn": "타이탄부대의 주둔지",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5533,
+"nameCn": "爱丽儿部队驻地峡",
+"nameTn": "愛麗兒部隊駐地峽",
+"nameKrn": "에리얼부대의 주둔지",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5534,
+"nameCn": "爱丽儿部队士兵房间",
+"nameTn": "愛麗兒部隊士兵房間",
+"nameKrn": "에리얼부대 전사공간",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5535,
+"nameCn": "爱丽儿房间",
+"nameTn": "愛麗兒房間",
+"nameKrn": "에리얼공간",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5536,
+"nameCn": "米兰达部队驻地峡",
+"nameTn": "米蘭達部隊駐地峽",
+"nameKrn": "미란다부대의 주둔지",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5537,
+"nameCn": "米兰达房间",
+"nameTn": "米蘭達房間",
+"nameKrn": "미란다공간",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5538,
+"nameCn": "米兰达部队士兵房间",
+"nameTn": "米蘭達部隊士兵房間",
+"nameKrn": "미란다부대 전사공간",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5540,
+"nameCn": "波拉岛",
+"nameTn": "波拉島",
+"nameKrn": "해변섬",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5541,
+"nameCn": "泰坦洞穴",
+"nameTn": "泰坦洞穴",
+"nameKrn": "타이탄 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5542,
+"nameCn": "爱丽考古队驻地峡",
+"nameTn": "愛麗考古隊駐地峽",
+"nameKrn": "에리얼 고고학팀의 주둔지",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5543,
+"nameCn": "米兰达机场",
+"nameTn": "米蘭達機場",
+"nameKrn": "미란다 공항",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5560,
+"nameCn": "迷失之海",
+"nameTn": "迷失之海",
+"nameKrn": "망각의 바다",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5561,
+"nameCn": "浩瀚之洋",
+"nameTn": "浩瀚之洋",
+"nameKrn": "광대한 바다",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5570,
+"nameCn": "水坝遗迹南方洞窟",
+"nameTn": "水壩遺跡南方洞窟",
+"nameKrn": "제방흔적 남쪽동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5571,
+"nameCn": "水坝遗迹南方洞窟地下一楼",
+"nameTn": "水壩遺跡南方洞窟地下一樓",
+"nameKrn": "제방흔적 남쪽동굴 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5572,
+"nameCn": "水坝遗迹南方洞窟地下二楼",
+"nameTn": "水壩遺跡南方洞窟地下二樓",
+"nameKrn": "제방흔적 남쪽동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5573,
+"nameCn": "水坝遗迹洞窟底层",
+"nameTn": "水壩遺跡洞窟底層",
+"nameKrn": "제방흔적동굴 저층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5574,
+"nameCn": "水坝遗迹北方洞窟地下二楼",
+"nameTn": "水壩遺跡北方洞窟地下二樓",
+"nameKrn": "제방흔적 북쪽동굴 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5575,
+"nameCn": "水坝遗迹北方洞窟地下一楼",
+"nameTn": "水壩遺跡北方洞窟地下一樓",
+"nameKrn": "제방흔적 북쪽동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5576,
+"nameCn": "波拉山谷",
+"nameTn": "波拉山穀",
+"nameKrn": "보라산 계곡",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 5577,
+"nameCn": "训练师的住所",
+"nameTn": "訓練師的住所",
+"nameKrn": "조련사의 집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 5578,
+"nameCn": "训练师的住所",
+"nameTn": "訓練師的住所",
+"nameKrn": "조련사의 집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 5579,
+"nameCn": "伊尼机场",
+"nameTn": "伊尼機場",
+"nameKrn": "에덴공항",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 5580,
+"nameCn": "波拉山谷",
+"nameTn": "波拉山穀",
+"nameKrn": "보라산 계곡",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 5581,
+"nameCn": "天空之境",
+"nameTn": "天空之境",
+"nameKrn": "천공의 영역",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40511,
+"fightBg": 301
+},
+{
+"ID": 5582,
+"nameCn": "波拉山谷",
+"nameTn": "波拉山穀",
+"nameKrn": "보라산 계곡",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 6000,
+"nameCn": "奇努伊村",
+"nameTn": "奇努伊村",
+"nameKrn": "쿠르마을",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6004,
+"nameCn": "奇努伊的肉店",
+"nameTn": "奇努伊的肉店",
+"nameKrn": "쿠르의 정육점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6005,
+"nameCn": "奇努伊的医院",
+"nameTn": "奇努伊的醫院",
+"nameKrn": "쿠르의 정육점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6006,
+"nameCn": "奇努伊的村长家",
+"nameTn": "奇努伊的村長家",
+"nameKrn": "쿠르의 촌장집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6009,
+"nameCn": "奇努伊的便利商店",
+"nameTn": "奇努伊的便利商店",
+"nameKrn": "쿠르의 편의점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6012,
+"nameCn": "奇努伊的民家",
+"nameTn": "奇努伊的民家",
+"nameKrn": "쿠르의 민가",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6030,
+"nameCn": "塔耳塔庄园",
+"nameTn": "塔耳塔莊園",
+"nameKrn": "타르타르장원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6031,
+"nameCn": "塔耳塔庄园族长家",
+"nameTn": "塔耳塔莊園族長家",
+"nameKrn": "타르타르장원 족장의집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6032,
+"nameCn": "塔耳塔庄园竞技场",
+"nameTn": "塔耳塔莊園競技場",
+"nameKrn": "타르타르장원 투기장",
+"mapBgm": 7,
+"type": 6,
+"fightBg": 40514
+},
+{
+"ID": 6033,
+"nameCn": "塔耳塔庄园聊天柜台",
+"nameTn": "塔耳塔莊園聊天櫃檯",
+"nameKrn": "타르타르장원 채팅데스크",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6034,
+"nameCn": "塔耳塔庄园聊天室",
+"nameTn": "塔耳塔莊園聊天室",
+"nameKrn": "타르타르장원 채팅실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6035,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6036,
+"nameCn": "庄园专用贩卖店一",
+"nameTn": "莊園專用販賣店一",
+"nameKrn": "장원 독점판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6037,
+"nameCn": "庄园专用贩卖店二",
+"nameTn": "莊園專用販賣店二",
+"nameKrn": "장원 독점판매점2",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6039,
+"nameCn": "庄园防具贩卖店",
+"nameTn": "莊園防具販賣店",
+"nameKrn": "장원 방어구판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6040,
+"nameCn": "庄园素材贩卖店",
+"nameTn": "莊園素材販賣店",
+"nameKrn": "장원 소재판매점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 6041,
+"nameCn": "塔耳塔庄园民房",
+"nameTn": "塔耳塔莊園民房",
+"nameKrn": "타르타르장원 민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7000,
+"nameCn": "伊甸园",
+"nameTn": "伊甸園",
+"nameKrn": "에덴 동물원",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7001,
+"nameCn": "动物园",
+"nameTn": "動物園",
+"nameKrn": "동물원",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7002,
+"nameCn": "伊甸游乐场",
+"nameTn": "伊甸遊樂場",
+"nameKrn": "에덴 놀이터",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7003,
+"nameCn": "轮盘游乐间",
+"nameTn": "輪盤遊樂間",
+"nameKrn": "카지노",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7005,
+"nameCn": "竞速场",
+"nameTn": "競速場",
+"nameKrn": "속도 겨루기장",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7006,
+"nameCn": "宠物竞技场",
+"nameTn": "寵物競技場",
+"nameKrn": "페트경기장",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7007,
+"nameCn": "格斗竞技场",
+"nameTn": "格鬥競技場",
+"nameKrn": "전투투기장",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7008,
+"nameCn": "骰子游乐间",
+"nameTn": "骰子遊樂間",
+"nameKrn": "주사위 놀이방",
+"mapBgm": 21,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7009,
+"nameCn": "宠物店",
+"nameTn": "寵物店",
+"nameKrn": "페트상점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7010,
+"nameCn": "医院",
+"nameTn": "醫院",
+"nameKrn": "병원",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7011,
+"nameCn": "肉店",
+"nameTn": "肉店",
+"nameKrn": "정육점",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7012,
+"nameCn": "旅馆",
+"nameTn": "旅館",
+"nameKrn": "여관",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7013,
+"nameCn": "伊甸员工宿舍",
+"nameTn": "伊甸員工宿舍",
+"nameKrn": "에덴 직원숙소",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7014,
+"nameCn": "伊甸员工宿舍",
+"nameTn": "伊甸員工宿舍",
+"nameKrn": "에덴 직원숙소",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7015,
+"nameCn": "林务局",
+"nameTn": "林務局",
+"nameKrn": "산림국",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7016,
+"nameCn": "伊甸训练所",
+"nameTn": "伊甸訓練所",
+"nameKrn": "에덴 훈련 시설",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7017,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7018,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7019,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7020,
+"nameCn": "王子的房间",
+"nameTn": "王子的房間",
+"nameKrn": "왕자의 방",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7021,
+"nameCn": "伊甸乐园主人官邸",
+"nameTn": "伊甸樂園主人官邸",
+"nameKrn": "에덴낙원 주인관저",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7022,
+"nameCn": "艾巴登地下宫殿",
+"nameTn": "艾巴登地下宮殿",
+"nameKrn": "엘바 지하궁전",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7023,
+"nameCn": "艾巴登地下宫殿",
+"nameTn": "艾巴登地下宮殿",
+"nameKrn": "엘바 지하궁전",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7024,
+"nameCn": "林务局",
+"nameTn": "林務局",
+"nameKrn": "산림국",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7025,
+"nameCn": "梦幻森林",
+"nameTn": "夢幻森林",
+"nameKrn": "몽환의 숲",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 7030,
+"nameCn": "尼克斯庄园",
+"nameTn": "尼克斯莊園",
+"nameKrn": "닉스장원",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7031,
+"nameCn": "尼克斯庄园族长家",
+"nameTn": "尼克斯莊園族長家",
+"nameKrn": "닉스장원 족장실",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7032,
+"nameCn": "尼克斯庄园竞技场",
+"nameTn": "尼克斯莊園競技場",
+"nameKrn": "닉스장원 투기장",
+"mapBgm": 18,
+"type": 6,
+"fightBg": 40514
+},
+{
+"ID": 7033,
+"nameCn": "尼克斯庄园聊天柜台",
+"nameTn": "尼克斯莊園聊天櫃檯",
+"nameKrn": "닉스장원 채팅데스크",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7034,
+"nameCn": "尼克斯庄园聊天室",
+"nameTn": "尼克斯莊園聊天室",
+"nameKrn": "닉스장원 채팅실",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7035,
+"nameCn": "庄园专用贩卖店二",
+"nameTn": "莊園專用販賣店二",
+"nameKrn": "장원 전용판매점2",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7036,
+"nameCn": "庄园素材贩卖店",
+"nameTn": "莊園素材販賣店",
+"nameKrn": "장원소재판매점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7037,
+"nameCn": "庄园专用贩卖店一",
+"nameTn": "莊園專用販賣店一",
+"nameKrn": "장원 전용판매점1",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7038,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7100,
+"nameCn": "塔耳塔地城入口",
+"nameTn": "塔耳塔地城入口",
+"nameKrn": "타르타르 땅의 성 입구",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7101,
+"nameCn": "道场柜台",
+"nameTn": "道場櫃檯",
+"nameKrn": "도장데스크",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7102,
+"nameCn": "道场的医务室",
+"nameTn": "道場的醫務室",
+"nameKrn": "도장의 의무실",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7103,
+"nameCn": "师傅的房间",
+"nameTn": "師傅的房間",
+"nameKrn": "대가의 방",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7104,
+"nameCn": "魔法道场",
+"nameTn": "魔法道場",
+"nameKrn": "마법도장 얼음창고",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7105,
+"nameCn": "塔耳塔地城东南区",
+"nameTn": "塔耳塔地城東南區",
+"nameKrn": "타르타르 땅의성 동남구역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7106,
+"nameCn": "塔耳塔地城东方通道",
+"nameTn": "塔耳塔地城東方通道",
+"nameKrn": "타르타르 땅의성 동쪽통로",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7107,
+"nameCn": "塔耳塔地城东北区",
+"nameTn": "塔耳塔地城東北區",
+"nameKrn": "타르타르 땅의성 동북구역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7108,
+"nameCn": "塔耳塔地城北方通道",
+"nameTn": "塔耳塔地城北方通道",
+"nameKrn": "타르타르 땅의성 동쪽통로",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7109,
+"nameCn": "塔耳塔地城西北区",
+"nameTn": "塔耳塔地城西北區",
+"nameKrn": "타르타르 땅의성 서북구역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7110,
+"nameCn": "塔耳塔地城西方通道",
+"nameTn": "塔耳塔地城西方通道",
+"nameKrn": "타르타르 땅의성 서쪽통로",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7111,
+"nameCn": "塔耳塔地城西南区",
+"nameTn": "塔耳塔地城西南區",
+"nameKrn": "타르타르 땅의성 서남구역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7112,
+"nameCn": "塔耳塔地城中央区",
+"nameTn": "塔耳塔地城中央區",
+"nameKrn": "타르타르 땅의성 중앙구역",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7116,
+"nameCn": "塔耳塔肉店",
+"nameTn": "塔耳塔肉店",
+"nameKrn": "타르타르 정육점",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7117,
+"nameCn": "塔耳塔武器店",
+"nameTn": "塔耳塔武器店",
+"nameKrn": "타르타르 무기상점",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7118,
+"nameCn": "塔耳塔便利商店",
+"nameTn": "塔耳塔便利商店",
+"nameKrn": "타르타 편의점",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7119,
+"nameCn": "塔耳塔旅馆",
+"nameTn": "塔耳塔旅館",
+"nameKrn": "타르타 여관",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7120,
+"nameCn": "塔耳塔医院",
+"nameTn": "塔耳塔醫院",
+"nameKrn": "타르타르 병원",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7121,
+"nameCn": "塔耳塔宠物店",
+"nameTn": "塔耳塔寵物店",
+"nameKrn": "타르타르 페트상점",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7122,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7123,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7124,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7125,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7126,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7127,
+"nameCn": "塔耳塔民房",
+"nameTn": "塔耳塔民房",
+"nameKrn": "타르타르 민가",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7129,
+"nameCn": "塔耳塔战士团",
+"nameTn": "塔耳塔戰士團",
+"nameKrn": "타르타르 전사단",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7130,
+"nameCn": "塔耳塔战士团餐厅",
+"nameTn": "塔耳塔戰士團餐廳",
+"nameKrn": "타르타르전사단 식당",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7131,
+"nameCn": "塔耳塔战士团餐厅",
+"nameTn": "塔耳塔戰士團餐廳",
+"nameKrn": "타르타르전사단 식당",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7132,
+"nameCn": "塔耳塔战士团餐厅",
+"nameTn": "塔耳塔戰士團餐廳",
+"nameKrn": "타르타르전사단 식당",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7133,
+"nameCn": "英嘉的房间",
+"nameTn": "英嘉的房間",
+"nameKrn": "잉카의 방",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7134,
+"nameCn": "贫民窟",
+"nameTn": "貧民窟",
+"nameKrn": "빈민굴",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7135,
+"nameCn": "贫民洞窟地下通道",
+"nameTn": "貧民洞窟地下通道",
+"nameKrn": "빈민굴 지하통로",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7136,
+"nameCn": "贫民窟",
+"nameTn": "貧民窟",
+"nameKrn": "빈민굴",
+"mapBgm": 17,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7200,
+"nameCn": "尼克斯水城",
+"nameTn": "尼克斯水城",
+"nameKrn": "닉스 물의 성",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7201,
+"nameCn": "尼克斯肉店",
+"nameTn": "尼克斯肉店",
+"nameKrn": "닉스 정육점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7202,
+"nameCn": "尼克斯便利商店",
+"nameTn": "尼克斯便利商店",
+"nameKrn": "닉스 편의점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7203,
+"nameCn": "尼克斯旅馆",
+"nameTn": "尼克斯旅館",
+"nameKrn": "닉스 여관",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7204,
+"nameCn": "尼克斯医院",
+"nameTn": "尼克斯醫院",
+"nameKrn": "닉스 병원",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7205,
+"nameCn": "尼克斯宠物店",
+"nameTn": "尼克斯寵物店",
+"nameKrn": "닉스 페트상점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7206,
+"nameCn": "尼克斯特产店",
+"nameTn": "尼克斯特產店",
+"nameKrn": "닉스 특산물점",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7207,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7208,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7209,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7210,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7211,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7212,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7213,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7214,
+"nameCn": "尼克斯民房",
+"nameTn": "尼克斯民房",
+"nameKrn": "닉스 민가",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7215,
+"nameCn": "尼克斯王宫",
+"nameTn": "尼克斯王宮",
+"nameKrn": "닉스 궁전",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7217,
+"nameCn": "水灵神殿",
+"nameTn": "水靈神殿",
+"nameKrn": "물의정령 사원",
+"mapBgm": 18,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7300,
+"nameCn": "弗烈顿火城",
+"nameTn": "弗烈頓火城",
+"nameKrn": "포우렌 불의 성",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7301,
+"nameCn": "火山道场",
+"nameTn": "火山道場",
+"nameKrn": "화산도장",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7302,
+"nameCn": "火山祭坛",
+"nameTn": "火山祭壇",
+"nameKrn": "화산제단",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7303,
+"nameCn": "弗烈顿火城的民房",
+"nameTn": "弗烈頓火城的民房",
+"nameKrn": "포우렌 불의성 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7304,
+"nameCn": "弗烈顿火城的武器店",
+"nameTn": "弗烈頓火城的武器店",
+"nameKrn": "포우렌 불의성 무기점",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7305,
+"nameCn": "弗烈顿火城的旅馆",
+"nameTn": "弗烈頓火城的旅館",
+"nameKrn": "포우렌 불의성 여관",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7306,
+"nameCn": "弗烈顿火城的宠物店",
+"nameTn": "弗烈頓火城的寵物店",
+"nameKrn": "포우렌 불의성 페트상점",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7307,
+"nameCn": "弗烈顿火城的民房",
+"nameTn": "弗烈頓火城的民房",
+"nameKrn": "포우렌 불의성 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7308,
+"nameCn": "弗烈顿火城的肉店",
+"nameTn": "弗烈頓火城的肉店",
+"nameKrn": "포우렌 불의성 정육점",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7309,
+"nameCn": "弗烈顿火城的便利店",
+"nameTn": "弗烈頓火城的便利店",
+"nameKrn": "포우렌 불의성 편의점",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7310,
+"nameCn": "弗烈顿火城的医院",
+"nameTn": "弗烈頓火城的醫院",
+"nameKrn": "포우렌 불의성 병원",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7350,
+"nameCn": "蒙达村",
+"nameTn": "蒙達村",
+"nameKrn": "문다마을",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7351,
+"nameCn": "12年前蒙达村",
+"nameTn": "12年前蒙達村",
+"nameKrn": "12년전 문다마을",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7352,
+"nameCn": "蒙达山",
+"nameTn": "蒙達山",
+"nameKrn": "문다산 해저 수로",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7353,
+"nameCn": "蒙达村村长家",
+"nameTn": "蒙達村村長家",
+"nameKrn": "문다마을 촌장집",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7354,
+"nameCn": "蒙达村的花店",
+"nameTn": "蒙達村的花店",
+"nameKrn": "문다마을 꽃집",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7355,
+"nameCn": "蒙达村肉店",
+"nameTn": "蒙達村肉店",
+"nameKrn": "문다마을 정육점",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7356,
+"nameCn": "蒙达村的民房",
+"nameTn": "蒙達村的民房",
+"nameKrn": "문다마을 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7357,
+"nameCn": "蒙达村的民房",
+"nameTn": "蒙達村的民房",
+"nameKrn": "문다마을 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7358,
+"nameCn": "蒙达村的民房",
+"nameTn": "蒙達村的民房",
+"nameKrn": "문다마을 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7359,
+"nameCn": "蒙达村的民房",
+"nameTn": "蒙達村的民房",
+"nameKrn": "문다마을 민가",
+"mapBgm": 19,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7400,
+"nameCn": "亚伊欧风城",
+"nameTn": "亞伊歐風城",
+"nameKrn": "하이하모 바람의 성",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7401,
+"nameCn": "亚伊欧王宫",
+"nameTn": "亞伊歐王宮",
+"nameKrn": "하이하모궁전",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7402,
+"nameCn": "凯菈村",
+"nameTn": "凱菈村",
+"nameKrn": "카일라마을",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7403,
+"nameCn": "亚伊欧的民房",
+"nameTn": "亞伊歐的民房",
+"nameKrn": "하이하모 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7404,
+"nameCn": "亚伊欧的民房",
+"nameTn": "亞伊歐的民房",
+"nameKrn": "하이하모 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7405,
+"nameCn": "亚伊欧风城的宠物店",
+"nameTn": "亞伊歐風城的寵物店",
+"nameKrn": "하이하모 페트상점",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7406,
+"nameCn": "亚伊欧风城的医院",
+"nameTn": "亞伊歐風城的醫院",
+"nameKrn": "하이하모 바람의성 병원",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7407,
+"nameCn": "亚伊欧风城的旅馆",
+"nameTn": "亞伊歐風城的旅館",
+"nameKrn": "하이하모 바람의성 여관",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7408,
+"nameCn": "亚伊欧风城的武器店",
+"nameTn": "亞伊歐風城的武器店",
+"nameKrn": "하이하모 바람의성 무기점",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7409,
+"nameCn": "亚伊欧风城便利店",
+"nameTn": "亞伊歐風城便利店",
+"nameKrn": "하이하모 바람의성 편의점",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7410,
+"nameCn": "亚伊欧风城的肉店",
+"nameTn": "亞伊歐風城的肉店",
+"nameKrn": "하이하모 바람의성 정육점",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7411,
+"nameCn": "亚伊欧王宫",
+"nameTn": "亞伊歐王宮",
+"nameKrn": "하이하모궁전",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7412,
+"nameCn": "亚伊欧王宫",
+"nameTn": "亞伊歐王宮",
+"nameKrn": "하이하모궁전",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7420,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7421,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7422,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7423,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7424,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7425,
+"nameCn": "凯菈村的民房",
+"nameTn": "凱菈村的民房",
+"nameKrn": "카일라마을 민가",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 7450,
+"nameCn": "迷雾森林芽",
+"nameTn": "迷霧森林芽",
+"nameKrn": "안개의 숲 새싹",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 7451,
+"nameCn": "迷雾森林芽",
+"nameTn": "迷霧森林芽",
+"nameKrn": "안개의 숲 새싹",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 7452,
+"nameCn": "小猪森林",
+"nameTn": "小豬森林",
+"nameKrn": "작은돼지의 숲",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 7453,
+"nameCn": "伐木工头的房间",
+"nameTn": "伐木工頭的房間",
+"nameKrn": "목재공 두목의 방",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7454,
+"nameCn": "伐木工头的房间",
+"nameTn": "伐木工頭的房間",
+"nameKrn": "목재공 두목의 방",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7455,
+"nameCn": "十二年前凯菈村",
+"nameTn": "十二年前凱菈村",
+"nameKrn": "12년전 카일라마을",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7456,
+"nameCn": "海盗船底层",
+"nameTn": "海盜船底層",
+"nameKrn": "해적선 저층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7457,
+"nameCn": "海盗船底层",
+"nameTn": "海盜船底層",
+"nameKrn": "해적선 저층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7458,
+"nameCn": "海盗船底层",
+"nameTn": "海盜船底層",
+"nameKrn": "해적선 저층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7459,
+"nameCn": "海盗船上层",
+"nameTn": "海盜船上層",
+"nameKrn": "해적선 상층",
+"mapBgm": 10,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7460,
+"nameCn": "海盗船上层",
+"nameTn": "海盜船上層",
+"nameKrn": "해적선 상층",
+"mapBgm": 11,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7461,
+"nameCn": "海盗船上层",
+"nameTn": "海盜船上層",
+"nameKrn": "해적선 상층",
+"mapBgm": 12,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7462,
+"nameCn": "海盗船上层",
+"nameTn": "海盜船上層",
+"nameKrn": "해적선 상층",
+"mapBgm": 13,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7463,
+"nameCn": "海盗船上层",
+"nameTn": "海盜船上層",
+"nameKrn": "해적선 상층",
+"mapBgm": 14,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7500,
+"nameCn": "瑞尔亚斯之都",
+"nameTn": "瑞爾亞斯之都",
+"nameKrn": "에레보스의 수도",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7501,
+"nameCn": "瑞尔亚斯的武器店",
+"nameTn": "瑞爾亞斯的武器店",
+"nameKrn": "에레보스의 무기상점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7502,
+"nameCn": "瑞尔亚斯的道具店",
+"nameTn": "瑞爾亞斯的道具店",
+"nameKrn": "에레보스의 도구점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7503,
+"nameCn": "瑞尔亚斯的训练所",
+"nameTn": "瑞爾亞斯的訓練所",
+"nameKrn": "에레보스의 수련소",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7504,
+"nameCn": "瑞尔亚斯的肉店",
+"nameTn": "瑞爾亞斯的肉店",
+"nameKrn": "에레보스의 정육점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7505,
+"nameCn": "瑞尔亚斯的医院",
+"nameTn": "瑞爾亞斯的醫院",
+"nameKrn": "에레보스의 병원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7506,
+"nameCn": "瑞尔亚斯的首长家",
+"nameTn": "瑞爾亞斯的首長家",
+"nameKrn": "에레보스의 수장실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7507,
+"nameCn": "瑞尔亚斯的学习厅",
+"nameTn": "瑞爾亞斯的學習廳",
+"nameKrn": "에레보스의 의회홀",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7508,
+"nameCn": "瑞尔亚斯的议会厅",
+"nameTn": "瑞爾亞斯的議會廳",
+"nameKrn": "에레보스의 협회홀",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7509,
+"nameCn": "瑞尔亚斯的便利商店",
+"nameTn": "瑞爾亞斯的便利商店",
+"nameKrn": "에레보스의 편의점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7511,
+"nameCn": "瑞尔亚斯的研究院",
+"nameTn": "瑞爾亞斯的研究院",
+"nameKrn": "에레보스의 연구원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7512,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7513,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7514,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7515,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7516,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7517,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7518,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7519,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7520,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7521,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7530,
+"nameCn": "瑞尔亚斯庄园",
+"nameTn": "瑞爾亞斯莊園",
+"nameKrn": "에레보스장원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7531,
+"nameCn": "瑞尔亚斯庄园族长家",
+"nameTn": "瑞爾亞斯莊園族長家",
+"nameKrn": "에레보스장원 족장실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7532,
+"nameCn": "瑞尔亚斯庄园竞技场",
+"nameTn": "瑞爾亞斯莊園競技場",
+"nameKrn": "에레보스장원 투기장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7535,
+"nameCn": "庄园素材贩售店",
+"nameTn": "莊園素材販售店",
+"nameKrn": "장원 소재매매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7536,
+"nameCn": "庄园专卖店一",
+"nameTn": "莊園專賣店一",
+"nameKrn": "장원 독점판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7537,
+"nameCn": "庄园素通用售店",
+"nameTn": "莊園素通用售店",
+"nameKrn": "장원 일반판매점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7538,
+"nameCn": "庄园专卖店二",
+"nameTn": "莊園專賣店二",
+"nameKrn": "장원 독점판매점2",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 7600,
+"nameCn": "无息之境",
+"nameTn": "無息之境",
+"nameKrn": "숨멎는 경계",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514,
+"specilInfo": {
+"selfAoiMode": true
+}
+},
+{
+"ID": 8000,
+"nameCn": "史东尔换气道",
+"nameTn": "史東爾換氣道",
+"nameKrn": "스라인 환기로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8001,
+"nameCn": "史东尔洞窟地下一楼",
+"nameTn": "史東爾洞窟地下一樓",
+"nameKrn": "스라인동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8002,
+"nameCn": "史东尔洞窟地下二楼",
+"nameTn": "史東爾洞窟地下二樓",
+"nameKrn": "스라인동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8003,
+"nameCn": "史东尔洞窟地下三楼",
+"nameTn": "史東爾洞窟地下三樓",
+"nameKrn": "스라인동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8004,
+"nameCn": "史东尔洞窟地下四楼",
+"nameTn": "史東爾洞窟地下四樓",
+"nameKrn": "스라인동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8005,
+"nameCn": "史东尔洞窟地下五楼",
+"nameTn": "史東爾洞窟地下五樓",
+"nameKrn": "스라인동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8006,
+"nameCn": "史东尔洞窟地下六楼",
+"nameTn": "史東爾洞窟地下六樓",
+"nameKrn": "스라인동굴 지하6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8007,
+"nameCn": "沉船",
+"nameTn": "沉船",
+"nameKrn": "난파선",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8008,
+"nameCn": "动物园",
+"nameTn": "動物園",
+"nameKrn": "동물원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8009,
+"nameCn": "沙己夫换气道",
+"nameTn": "沙己夫換氣道",
+"nameKrn": "사지프 환기로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8010,
+"nameCn": "沙己夫洞窟地下一楼",
+"nameTn": "沙己夫洞窟地下一樓",
+"nameKrn": "사지프동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8011,
+"nameCn": "沙己夫洞窟地下二楼",
+"nameTn": "沙己夫洞窟地下二樓",
+"nameKrn": "사지프동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8012,
+"nameCn": "沙己夫洞窟地下三楼",
+"nameTn": "沙己夫洞窟地下三樓",
+"nameKrn": "사지프동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8013,
+"nameCn": "沙己夫洞窟地下四楼",
+"nameTn": "沙己夫洞窟地下四樓",
+"nameKrn": "사지프동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8014,
+"nameCn": "沙己夫洞窟地下五楼",
+"nameTn": "沙己夫洞窟地下五樓",
+"nameKrn": "사지프동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8015,
+"nameCn": "海底洞窟",
+"nameTn": "海底洞窟",
+"nameKrn": "해저동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8016,
+"nameCn": "新手试练洞窟地下一楼",
+"nameTn": "新手試練洞窟地下一樓",
+"nameKrn": "초보자수련동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8017,
+"nameCn": "新手试练洞窟地下二楼",
+"nameTn": "新手試練洞窟地下二樓",
+"nameKrn": "초보자수련동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 817
+},
+{
+"ID": 8018,
+"nameCn": "新手村的宠物店",
+"nameTn": "新手村的寵物店",
+"nameKrn": "초보자마을의 페트상점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8019,
+"nameCn": "大妈的家",
+"nameTn": "大媽的家",
+"nameKrn": "이모의 집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8020,
+"nameCn": "VIP房间",
+"nameTn": "VIP房間",
+"nameKrn": "VIP룸",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8021,
+"nameCn": "战斗训练场",
+"nameTn": "戰鬥訓練場",
+"nameKrn": "전투훈련장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8022,
+"nameCn": "工匠的家",
+"nameTn": "工匠的家",
+"nameKrn": "장인의 집",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8023,
+"nameCn": "恶霸居",
+"nameTn": "惡霸居",
+"nameKrn": "악인의 거처",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8024,
+"nameCn": "组队交友训练房间",
+"nameTn": "組隊交友訓練房間",
+"nameKrn": "파티수련실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8025,
+"nameCn": "恶霸居",
+"nameTn": "惡霸居",
+"nameKrn": "악인의 거처",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8027,
+"nameCn": "海底洞窟",
+"nameTn": "海底洞窟",
+"nameKrn": "해저동굴",
+"mapBgm": 23,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8028,
+"nameCn": "海底洞窟",
+"nameTn": "海底洞窟",
+"nameKrn": "해저동굴",
+"mapBgm": 23,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8029,
+"nameCn": "海底洞窟",
+"nameTn": "海底洞窟",
+"nameKrn": "해저동굴",
+"mapBgm": 23,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8030,
+"nameCn": "弗烈顿庄园",
+"nameTn": "弗烈頓莊園",
+"nameKrn": "포우렌장원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8031,
+"nameCn": "弗烈顿庄园族长家",
+"nameTn": "弗烈頓莊園族長家",
+"nameKrn": "포우렌장원 족장실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8032,
+"nameCn": "弗烈顿庄园竞技场",
+"nameTn": "弗烈頓莊園競技場",
+"nameKrn": "포우렌장원 투기장",
+"mapBgm": 9,
+"type": 6,
+"fightBg": 40514
+},
+{
+"ID": 8033,
+"nameCn": "弗烈顿庄园聊天室柜台",
+"nameTn": "弗烈頓莊園聊天室櫃檯",
+"nameKrn": "포우렌장원 채팅데스크",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8034,
+"nameCn": "弗烈顿庄园聊天室",
+"nameTn": "弗烈頓莊園聊天室",
+"nameKrn": "포우렌장원 채팅실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8035,
+"nameCn": "庄园专属贩卖店二",
+"nameTn": "莊園專屬販賣店二",
+"nameKrn": "장원 독점판매점2",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8036,
+"nameCn": "庄园专属贩卖店一",
+"nameTn": "莊園專屬販賣店一",
+"nameKrn": "장원 독점판매점1",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8037,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품판매점",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8038,
+"nameCn": "武器贩卖店",
+"nameTn": "武器販賣店",
+"nameKrn": "무기판매점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8100,
+"nameCn": "沉船",
+"nameTn": "沉船",
+"nameKrn": "난파선",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8101,
+"nameCn": "沉船",
+"nameTn": "沉船",
+"nameKrn": "난파선",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8102,
+"nameCn": "深海通道",
+"nameTn": "深海通道",
+"nameKrn": "심해통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8103,
+"nameCn": "深海通道",
+"nameTn": "深海通道",
+"nameKrn": "심해통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8104,
+"nameCn": "深海通道",
+"nameTn": "深海通道",
+"nameKrn": "심해통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8105,
+"nameCn": "深海通道",
+"nameTn": "深海通道",
+"nameKrn": "심해통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8106,
+"nameCn": "浅海通道",
+"nameTn": "淺海通道",
+"nameKrn": "얕은바다 통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8107,
+"nameCn": "浅冰通道",
+"nameTn": "淺冰通道",
+"nameKrn": "살얼음낀 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8108,
+"nameCn": "冰颤通道",
+"nameTn": "冰顫通道",
+"nameKrn": "얼름진동 통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8109,
+"nameCn": "冰颤通道",
+"nameTn": "冰顫通道",
+"nameKrn": "얼름진동 통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8110,
+"nameCn": "冰颤通道",
+"nameTn": "冰顫通道",
+"nameKrn": "얼름진동 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8111,
+"nameCn": "冰颤通道",
+"nameTn": "冰顫通道",
+"nameKrn": "얼름진동 통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8112,
+"nameCn": "冰封通道",
+"nameTn": "冰封通道",
+"nameKrn": "빙하봉인 통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8113,
+"nameCn": "旋涡通道",
+"nameTn": "旋渦通道",
+"nameKrn": "소용돌이 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8116,
+"nameCn": "沉睡洞窟-东",
+"nameTn": "沉睡洞窟-東",
+"nameKrn": "침묵동굴-동쪽",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8117,
+"nameCn": "沉睡洞窟-北",
+"nameTn": "沉睡洞窟-北",
+"nameKrn": "침묵동굴-북쪽",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8118,
+"nameCn": "沉睡洞窟-南",
+"nameTn": "沉睡洞窟-南",
+"nameKrn": "침묵동굴-남쪽",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8119,
+"nameCn": "沉睡洞窟-西",
+"nameTn": "沉睡洞窟-西",
+"nameKrn": "침묵동굴-서쪽",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8120,
+"nameCn": "沉睡洞窟-中",
+"nameTn": "沉睡洞窟-中",
+"nameKrn": "침묵동굴-중앙",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 499
+},
+{
+"ID": 8121,
+"nameCn": "黄泉之境",
+"nameTn": "黃泉之境",
+"nameKrn": "저승의 영역",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8122,
+"nameCn": "黄泉之境",
+"nameTn": "黃泉之境",
+"nameKrn": "저승의 영역",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8123,
+"nameCn": "黄泉之境底层",
+"nameTn": "黃泉之境底層",
+"nameKrn": "저승의영역 저층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8124,
+"nameCn": "沉睡洞窟-中一",
+"nameTn": "沉睡洞窟-中一",
+"nameKrn": "침묵동굴-중앙1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8125,
+"nameCn": "沉睡洞窟-中二",
+"nameTn": "沉睡洞窟-中二",
+"nameKrn": "침묵동굴-중앙2",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8126,
+"nameCn": "沉睡洞窟-中三",
+"nameTn": "沉睡洞窟-中三",
+"nameKrn": "침묵동굴-중앙3",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8127,
+"nameCn": "黄泉之境底层",
+"nameTn": "黃泉之境底層",
+"nameKrn": "지옥의영역 저층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8128,
+"nameCn": "黄泉之境贼窝",
+"nameTn": "黃泉之境賊窩",
+"nameKrn": "지옥의영역 도둑굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 8200,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8201,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8202,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8203,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8204,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8205,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8206,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8207,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8208,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8209,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8210,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8211,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8212,
+"nameCn": "英雄战场2",
+"nameTn": "英雄戰場2",
+"nameKrn": "영웅전장 2",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8213,
+"nameCn": "英雄战场",
+"nameTn": "英雄戰場",
+"nameKrn": "영웅전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 8201
+},
+{
+"ID": 8215,
+"nameCn": "秘密花园",
+"nameTn": "秘密花園",
+"nameKrn": "비밀화원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8216,
+"nameCn": "白狼勇士公会",
+"nameTn": "白狼勇士公會",
+"nameKrn": "백랑용사길드",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8217,
+"nameCn": "追猎者公会",
+"nameTn": "追獵者公會",
+"nameKrn": "추적자길드",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8218,
+"nameCn": "暗灵法师公会",
+"nameTn": "暗靈法師公會",
+"nameKrn": "암흑정령사길드",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8219,
+"nameCn": "白狼勇士试练洞窟",
+"nameTn": "白狼勇士試練洞窟",
+"nameKrn": "백랑전사수련동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 8220,
+"nameCn": "追猎者试练洞窟",
+"nameTn": "追獵者試練洞窟",
+"nameKrn": "수렵자수련동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 8221,
+"nameCn": "暗灵法师试练洞窟",
+"nameTn": "暗靈法師試練洞窟",
+"nameKrn": "암흑정령사수련동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 8230,
+"nameCn": "香普尔山山洞第一层",
+"nameTn": "香普爾山山洞第一層",
+"nameKrn": "샴푸산통로 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8231,
+"nameCn": "香普尔山山洞第二层",
+"nameTn": "香普爾山山洞第二層",
+"nameKrn": "샴푸산통로 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8232,
+"nameCn": "香普尔山山洞第三层",
+"nameTn": "香普爾山山洞第三層",
+"nameKrn": "샴푸산통로 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8233,
+"nameCn": "香普尔山山洞第三层",
+"nameTn": "香普爾山山洞第三層",
+"nameKrn": "샴푸산통로 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8253,
+"nameCn": "月之幻境地下第二层",
+"nameTn": "月之幻境地下第二層",
+"nameKrn": "달의경계 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 8254,
+"nameCn": "月之幻境地下第一层",
+"nameTn": "月之幻境地下第一層",
+"nameKrn": "달의경계 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 8255,
+"nameCn": "月之幻境",
+"nameTn": "月之幻境",
+"nameKrn": "달의 경계",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40512,
+"fightBg": 888
+},
+{
+"ID": 8256,
+"nameCn": "皓月之境",
+"nameTn": "皓月之境",
+"nameKrn": "밝은달의 경계",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40512,
+"fightBg": 70006
+},
+{
+"ID": 8257,
+"nameCn": "魔法都市",
+"nameTn": "魔法都市",
+"nameKrn": "마법수도",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8258,
+"nameCn": "狼人一族的栖息地",
+"nameTn": "狼人一族的棲息地",
+"nameKrn": "늑인일족의 서식지",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8259,
+"nameCn": "迷宫",
+"nameTn": "迷宮",
+"nameKrn": "미궁",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8260,
+"nameCn": "封印的迷宫",
+"nameTn": "封印的迷宮",
+"nameKrn": "봉인된 미궁",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8261,
+"nameCn": "封印的迷宫",
+"nameTn": "封印的迷宮",
+"nameKrn": "봉인된 미궁",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8262,
+"nameCn": "魔法都市市长家",
+"nameTn": "魔法都市市長家",
+"nameKrn": "마법수도 수도장실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8263,
+"nameCn": "市民家",
+"nameTn": "市民家",
+"nameKrn": "민가",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8264,
+"nameCn": "魔法商店",
+"nameTn": "魔法商店",
+"nameKrn": "마법상점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8265,
+"nameCn": "魔法之家",
+"nameTn": "魔法之家",
+"nameKrn": "마법의집",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8268,
+"nameCn": "天塔通道",
+"nameTn": "天塔通道",
+"nameKrn": "하늘탑 통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8269,
+"nameCn": "天塔塔顶",
+"nameTn": "天塔塔頂",
+"nameKrn": "하늘탑 정상",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8270,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8271,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8272,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8273,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8274,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8275,
+"nameCn": "结界层",
+"nameTn": "結界層",
+"nameKrn": "경계층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8276,
+"nameCn": "瑞尔亚斯之都",
+"nameTn": "瑞爾亞斯之都",
+"nameKrn": "에레보스 수도",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8277,
+"nameCn": "天塔塔顶",
+"nameTn": "天塔塔頂",
+"nameKrn": "하늘탑 정상",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8278,
+"nameCn": "魔法饲育屋",
+"nameTn": "魔法飼育屋",
+"nameKrn": "마법사육실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8504,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 8505,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8506,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8507,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8508,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8509,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8510,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8511,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8512,
+"nameCn": "地牢",
+"nameTn": "地牢",
+"nameKrn": "지하감옥",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8513,
+"nameCn": "牢房",
+"nameTn": "牢房",
+"nameKrn": "감방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8514,
+"nameCn": "地精灵洞窟",
+"nameTn": "地精靈洞窟",
+"nameKrn": "땅정령의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8515,
+"nameCn": "水精灵洞窟",
+"nameTn": "水精靈洞窟",
+"nameKrn": "물정령의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8516,
+"nameCn": "火精灵火山洞窟",
+"nameTn": "火精靈火山洞窟",
+"nameKrn": "불정령의산 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8517,
+"nameCn": "风精灵住所",
+"nameTn": "風精靈住所",
+"nameKrn": "바람정령의 거처",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8518,
+"nameCn": "伊甸乐园主人官邸",
+"nameTn": "伊甸樂園主人官邸",
+"nameKrn": "에덴낙원 주인관저",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8519,
+"nameCn": "伊甸乐园主人官邸",
+"nameTn": "伊甸樂園主人官邸",
+"nameKrn": "에덴낙원 주인관저",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8520,
+"nameCn": "伊甸乐园主人官邸",
+"nameTn": "伊甸樂園主人官邸",
+"nameKrn": "에덴낙원 주인관저",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8521,
+"nameCn": "伊甸乐园主人官邸",
+"nameTn": "伊甸樂園主人官邸",
+"nameKrn": "에덴낙원 주인관저",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 8522,
+"nameCn": "民房",
+"nameTn": "民房",
+"nameKrn": "민가",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9030,
+"nameCn": "亚伊欧庄园",
+"nameTn": "亞伊歐莊園",
+"nameKrn": "하이하모장원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9031,
+"nameCn": "亚伊欧庄园族长家",
+"nameTn": "亞伊歐莊園族長家",
+"nameKrn": "하이하모장원 족장실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9032,
+"nameCn": "亚伊欧庄园竞技场",
+"nameTn": "亞伊歐莊園競技場",
+"nameKrn": "하이하모장원 투기장",
+"mapBgm": 8,
+"type": 6,
+"fightBg": 40514
+},
+{
+"ID": 9033,
+"nameCn": "亚伊欧庄园聊天室柜台",
+"nameTn": "亞伊歐莊園聊天室櫃檯",
+"nameKrn": "하이하모장원 채팅데스크",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9034,
+"nameCn": "亚伊欧庄园聊天室",
+"nameTn": "亞伊歐莊園聊天室",
+"nameKrn": "하이하모장원 채팅실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9035,
+"nameCn": "庄园专用贩卖店一",
+"nameTn": "莊園專用販賣店一",
+"nameKrn": "장원 독점판매점1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9036,
+"nameCn": "通用物品贩卖店",
+"nameTn": "通用物品販賣店",
+"nameKrn": "일상용품 판매점",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9037,
+"nameCn": "庄园素材贩卖店",
+"nameTn": "莊園素材販賣店",
+"nameKrn": "장원 소재판매점",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9038,
+"nameCn": "庄园专用贩卖店二",
+"nameTn": "莊園專用販賣店二",
+"nameKrn": "장원 독점판매점2",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 9355,
+"nameCn": "达那密道",
+"nameTn": "達那密道",
+"nameKrn": "다나의 비밀통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 9356,
+"nameCn": "蛇王巢穴",
+"nameTn": "蛇王巢穴",
+"nameKrn": "뱀왕의 거저",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 9357,
+"nameCn": "达那密道",
+"nameTn": "達那密道",
+"nameKrn": "다나의 비밀통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10001,
+"nameCn": "阿布的洞窟地下１楼",
+"nameTn": "阿布的洞窟地下１樓",
+"nameKrn": "아부동굴 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10002,
+"nameCn": "阿布的洞窟地下２楼",
+"nameTn": "阿布的洞窟地下２樓",
+"nameKrn": "아부동굴 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10003,
+"nameCn": "阿布的洞窟地下３楼",
+"nameTn": "阿布的洞窟地下３樓",
+"nameKrn": "아부동굴 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10004,
+"nameCn": "阿布的洞窟地下４楼",
+"nameTn": "阿布的洞窟地下４樓",
+"nameKrn": "아부동굴 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10005,
+"nameCn": "阿布的洞窟地下５楼",
+"nameTn": "阿布的洞窟地下５樓",
+"nameKrn": "아부동굴 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10006,
+"nameCn": "阿布的洞窟地下６楼",
+"nameTn": "阿布的洞窟地下６樓",
+"nameKrn": "아부동굴 지하6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10007,
+"nameCn": "阿布的洞窟地下７楼",
+"nameTn": "阿布的洞窟地下７樓",
+"nameKrn": "아부동굴 지하7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 10008,
+"nameCn": "阿布的洞窟",
+"nameTn": "阿布的洞窟",
+"nameKrn": "아부동굴",
+"mapBgm": 9,
+"type": 2,
+"fightBg": 10002
+},
+{
+"ID": 10030,
+"nameCn": "瑞尔亚斯－新手村",
+"nameTn": "瑞爾亞斯－新手村",
+"nameKrn": "에레보스-초보자마을",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10032,
+"nameCn": "瑞尔亚斯族战场",
+"nameTn": "瑞爾亞斯族戰場",
+"nameKrn": "에레보스 족전장",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10101,
+"nameCn": "往柯尔克的道路１楼",
+"nameTn": "往柯爾克的道路１樓",
+"nameKrn": "토토마을로 가는 통로1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10102,
+"nameCn": "往柯尔克的道路２楼",
+"nameTn": "往柯爾克的道路２樓",
+"nameKrn": "토토마을로 가는 통로2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10103,
+"nameCn": "往柯尔克的道路３楼",
+"nameTn": "往柯爾克的道路３樓",
+"nameKrn": "토토마을로 가는 통로3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10201,
+"nameCn": "海底通路地下１楼",
+"nameTn": "海底通路地下１樓",
+"nameKrn": "해저통로 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10202,
+"nameCn": "海底通路地下２楼",
+"nameTn": "海底通路地下２樓",
+"nameKrn": "해저통로 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10203,
+"nameCn": "海底通路地下１楼",
+"nameTn": "海底通路地下１樓",
+"nameKrn": "해저통로 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10204,
+"nameCn": "海底通路地下２楼",
+"nameTn": "海底通路地下２樓",
+"nameKrn": "해저통로 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10301,
+"nameCn": "柯奥的洞窟１楼",
+"nameTn": "柯奧的洞窟１樓",
+"nameKrn": "쿠오동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10302,
+"nameCn": "柯奥的洞窟２楼",
+"nameTn": "柯奧的洞窟２樓",
+"nameKrn": "쿠오동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10303,
+"nameCn": "柯奥的洞窟３楼",
+"nameTn": "柯奧的洞窟３樓",
+"nameKrn": "쿠오동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10304,
+"nameCn": "柯奥的洞窟４楼",
+"nameTn": "柯奧的洞窟４樓",
+"nameKrn": "쿠오동굴 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10305,
+"nameCn": "柯奥的洞窟５楼",
+"nameTn": "柯奧的洞窟５樓",
+"nameKrn": "쿠오동굴 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10306,
+"nameCn": "柯奥的洞窟６楼",
+"nameTn": "柯奧的洞窟６樓",
+"nameKrn": "쿠오동굴 6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10307,
+"nameCn": "柯奥的洞窟７楼",
+"nameTn": "柯奧的洞窟７樓",
+"nameKrn": "쿠오동굴 7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10308,
+"nameCn": "柯奥的洞窟８楼",
+"nameTn": "柯奧的洞窟８樓",
+"nameKrn": "쿠오동굴 8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10402,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10403,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10404,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10405,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10406,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10407,
+"nameCn": "迷幻洞窟",
+"nameTn": "迷幻洞窟",
+"nameKrn": "속임수의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10408,
+"nameCn": "迷幻洞窟最底层",
+"nameTn": "迷幻洞窟最底層",
+"nameKrn": "속임수의동굴 최저층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10601,
+"nameCn": "东柯尔克的坑道１楼",
+"nameTn": "東柯爾克的坑道１樓",
+"nameKrn": "토토 동쪽갱도 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10602,
+"nameCn": "东柯尔克的坑道２楼",
+"nameTn": "東柯爾克的坑道２樓",
+"nameKrn": "토토 동쪽갱도 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10603,
+"nameCn": "东柯尔克的坑道３楼",
+"nameTn": "東柯爾克的坑道３樓",
+"nameKrn": "토토 동쪽갱도 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10604,
+"nameCn": "东柯尔克的坑道４楼",
+"nameTn": "東柯爾克的坑道４樓",
+"nameKrn": "토토 동쪽갱도 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10605,
+"nameCn": "东柯尔克的坑道５楼",
+"nameTn": "東柯爾克的坑道５樓",
+"nameKrn": "토토 동쪽갱도 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10701,
+"nameCn": "盗贼的洞窟地下１楼",
+"nameTn": "盜賊的洞窟地下１樓",
+"nameKrn": "도적동굴 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10702,
+"nameCn": "盗贼的洞窟地下２楼",
+"nameTn": "盜賊的洞窟地下２樓",
+"nameKrn": "도적동굴 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10703,
+"nameCn": "盗贼的洞窟地下３楼",
+"nameTn": "盜賊的洞窟地下３樓",
+"nameKrn": "도적동굴 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10704,
+"nameCn": "盗贼的洞窟地下４楼",
+"nameTn": "盜賊的洞窟地下４樓",
+"nameKrn": "도적동굴 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10705,
+"nameCn": "盗贼的洞窟地下５楼",
+"nameTn": "盜賊的洞窟地下５樓",
+"nameKrn": "도적동굴 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10801,
+"nameCn": "霍尔特的洞窟１楼",
+"nameTn": "霍爾特的洞窟１樓",
+"nameKrn": "호토르의 동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10802,
+"nameCn": "霍尔特的洞窟２楼",
+"nameTn": "霍爾特的洞窟２樓",
+"nameKrn": "호토르의 동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10803,
+"nameCn": "霍尔特的洞窟２楼",
+"nameTn": "霍爾特的洞窟２樓",
+"nameKrn": "호토르의 동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10804,
+"nameCn": "霍尔特的洞窟３楼",
+"nameTn": "霍爾特的洞窟３樓",
+"nameKrn": "호토르의 동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10805,
+"nameCn": "霍尔特的洞窟４楼",
+"nameTn": "霍爾特的洞窟４樓",
+"nameKrn": "호토르의 동굴 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10806,
+"nameCn": "霍尔特的洞窟５楼",
+"nameTn": "霍爾特的洞窟５樓",
+"nameKrn": "호토르의 동굴 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10807,
+"nameCn": "霍尔特的洞窟６楼",
+"nameTn": "霍爾特的洞窟６樓",
+"nameKrn": "호토르의 동굴 6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10808,
+"nameCn": "霍尔特的洞窟７楼",
+"nameTn": "霍爾特的洞窟７樓",
+"nameKrn": "호토르의 동굴 7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10809,
+"nameCn": "霍尔特的洞窟８楼",
+"nameTn": "霍爾特的洞窟８樓",
+"nameKrn": "호토르의 동굴 8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 10901,
+"nameCn": "柯尔克的大坑道１楼",
+"nameTn": "柯爾克的大坑道１樓",
+"nameKrn": "토토의 큰갱도 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10902,
+"nameCn": "柯尔克的大坑道地下１楼",
+"nameTn": "柯爾克的大坑道地下１樓",
+"nameKrn": "토토의 큰갱도 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10903,
+"nameCn": "柯尔克的大坑道地下２楼",
+"nameTn": "柯爾克的大坑道地下２樓",
+"nameKrn": "토토의 큰갱도 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10904,
+"nameCn": "柯尔克的大坑道地下３楼",
+"nameTn": "柯爾克的大坑道地下３樓",
+"nameKrn": "토토의 큰갱도 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10905,
+"nameCn": "柯尔克的大坑道地下４楼",
+"nameTn": "柯爾克的大坑道地下４樓",
+"nameKrn": "토토의 큰갱도 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10906,
+"nameCn": "柯尔克的大坑道地下５楼",
+"nameTn": "柯爾克的大坑道地下５樓",
+"nameKrn": "토토의 큰갱도 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10907,
+"nameCn": "柯尔克的大坑道地下６楼",
+"nameTn": "柯爾克的大坑道地下６樓",
+"nameKrn": "토토의 큰갱도 지하6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10908,
+"nameCn": "柯尔克的大坑道地下７楼",
+"nameTn": "柯爾克的大坑道地下７樓",
+"nameKrn": "토토의 큰갱도 지하7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10909,
+"nameCn": "柯尔克的大坑道地下８楼",
+"nameTn": "柯爾克的大坑道地下８樓",
+"nameKrn": "토토의 큰갱도 지하8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10910,
+"nameCn": "柯尔克的大坑道地下９楼",
+"nameTn": "柯爾克的大坑道地下９樓",
+"nameKrn": "토토의 큰갱도 지하9층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10911,
+"nameCn": "柯尔克的大坑道地下１０楼",
+"nameTn": "柯爾克的大坑道地下１０樓",
+"nameKrn": "토토의 큰갱도 지하10층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10912,
+"nameCn": "柯尔克的大坑道２楼",
+"nameTn": "柯爾克的大坑道２樓",
+"nameKrn": "토토의 큰갱도 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10913,
+"nameCn": "柯尔克的大坑道３楼",
+"nameTn": "柯爾克的大坑道３樓",
+"nameKrn": "토토의 큰갱도 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10914,
+"nameCn": "柯尔克的大坑道４楼",
+"nameTn": "柯爾克的大坑道４樓",
+"nameKrn": "토토의 큰갱도 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10915,
+"nameCn": "柯尔克的大坑道５楼",
+"nameTn": "柯爾克的大坑道５樓",
+"nameKrn": "토토의 큰갱도 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10916,
+"nameCn": "柯尔克的大坑道６楼",
+"nameTn": "柯爾克的大坑道６樓",
+"nameKrn": "토토의 큰갱도 6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10917,
+"nameCn": "柯尔克的大坑道７楼",
+"nameTn": "柯爾克的大坑道７樓",
+"nameKrn": "토토의 큰갱도 7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10918,
+"nameCn": "柯尔克的大坑道８楼",
+"nameTn": "柯爾克的大坑道８樓",
+"nameKrn": "토토의 큰갱도 8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10919,
+"nameCn": "审查室",
+"nameTn": "審查室",
+"nameKrn": "조사실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 10920,
+"nameCn": "SBC本部",
+"nameTn": "SBC本部",
+"nameKrn": "SBC 본부",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11001,
+"nameCn": "柯奥山的小洞窟１楼",
+"nameTn": "柯奧山的小洞窟１樓",
+"nameKrn": "쿠오산의 소동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11002,
+"nameCn": "柯奥山的小洞窟２楼",
+"nameTn": "柯奧山的小洞窟２樓",
+"nameKrn": "쿠오산의 소동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11003,
+"nameCn": "柯奥山的小洞窟３楼",
+"nameTn": "柯奧山的小洞窟３樓",
+"nameKrn": "쿠오산의 소동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11004,
+"nameCn": "柯奥山的小洞窟４楼",
+"nameTn": "柯奧山的小洞窟４樓",
+"nameKrn": "쿠오산의 소동굴 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11005,
+"nameCn": "柯奥山的小洞窟５楼",
+"nameTn": "柯奧山的小洞窟５樓",
+"nameKrn": "쿠오산의 소동굴 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11006,
+"nameCn": "博士的研究所",
+"nameTn": "博士的研究所",
+"nameKrn": "박사의 연구실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11101,
+"nameCn": "盗贼的基地地下１楼",
+"nameTn": "盜賊的基地地下１樓",
+"nameKrn": "도적동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11102,
+"nameCn": "盗贼的基地地下２楼",
+"nameTn": "盜賊的基地地下２樓",
+"nameKrn": "도적동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11103,
+"nameCn": "盗贼的基地地下３楼",
+"nameTn": "盜賊的基地地下３樓",
+"nameKrn": "도적동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11104,
+"nameCn": "盗贼的基地地下４楼",
+"nameTn": "盜賊的基地地下４樓",
+"nameKrn": "도적동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11105,
+"nameCn": "盗贼的基地地下５楼",
+"nameTn": "盜賊的基地地下５樓",
+"nameKrn": "도적동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11106,
+"nameCn": "盗贼的基地地下６楼",
+"nameTn": "盜賊的基地地下６樓",
+"nameKrn": "도적동굴 지하6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 11107,
+"nameCn": "盗贼的基地最底层",
+"nameTn": "盜賊的基地最底層",
+"nameKrn": "도적동굴 최하층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11201,
+"nameCn": "玄黄的洞窟地下１楼",
+"nameTn": "玄黃的洞窟地下１樓",
+"nameKrn": "천지의 동굴 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11202,
+"nameCn": "玄黄的洞窟地下２楼",
+"nameTn": "玄黃的洞窟地下２樓",
+"nameKrn": "천지의 동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11203,
+"nameCn": "玄黄的洞窟地下３楼",
+"nameTn": "玄黃的洞窟地下３樓",
+"nameKrn": "천지의 동굴 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11204,
+"nameCn": "玄黄的洞窟地下４楼",
+"nameTn": "玄黃的洞窟地下４樓",
+"nameKrn": "천지의 동굴 지하4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11205,
+"nameCn": "玄黄的洞窟地下５楼",
+"nameTn": "玄黃的洞窟地下５樓",
+"nameKrn": "천지의 동굴 지하5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11206,
+"nameCn": "玄黄的洞窟地下６楼",
+"nameTn": "玄黃的洞窟地下６樓",
+"nameKrn": "천지의 동굴 지하6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11207,
+"nameCn": "玄黄的洞窟地下７楼",
+"nameTn": "玄黃的洞窟地下７樓",
+"nameKrn": "천지의 동굴 지하7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11208,
+"nameCn": "玄黄的洞窟地下８楼",
+"nameTn": "玄黃的洞窟地下８樓",
+"nameKrn": "천지의 동굴 지하8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11209,
+"nameCn": "玄黄的洞窟地下９楼",
+"nameTn": "玄黃的洞窟地下９樓",
+"nameKrn": "천지의 동굴 지하9층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11210,
+"nameCn": "玄黄的洞窟地下１０楼",
+"nameTn": "玄黃的洞窟地下１０樓",
+"nameKrn": "천지의 동굴 지하10층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11211,
+"nameCn": "玄黄的洞窟地下１１楼",
+"nameTn": "玄黃的洞窟地下１１樓",
+"nameKrn": "천지의 동굴 지하11층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11212,
+"nameCn": "玄黄的洞窟地下１２楼",
+"nameTn": "玄黃的洞窟地下１２樓",
+"nameKrn": "천지의 동굴 지하12층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11213,
+"nameCn": "玄黄的洞窟地下１３楼",
+"nameTn": "玄黃的洞窟地下１３樓",
+"nameKrn": "천지의 동굴 지하13층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11214,
+"nameCn": "玄黄的洞窟地下１４楼",
+"nameTn": "玄黃的洞窟地下１４樓",
+"nameKrn": "천지의 동굴 지하14층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11215,
+"nameCn": "玄黄的洞窟地下１５楼",
+"nameTn": "玄黃的洞窟地下１５樓",
+"nameKrn": "천지의 동굴 지하15층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11300,
+"nameCn": "ＰＣ团本部１楼",
+"nameTn": "ＰＣ團本部１樓",
+"nameKrn": "PC 그룹 본사 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11301,
+"nameCn": "ＰＣ团本部１楼",
+"nameTn": "ＰＣ團本部１樓",
+"nameKrn": "PC 그룹 본사 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11302,
+"nameCn": "ＰＣ团本部地下１楼",
+"nameTn": "ＰＣ團本部地下１樓",
+"nameKrn": "PC 그룹 본사 지하 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11303,
+"nameCn": "ＰＣ团本部地下２楼",
+"nameTn": "ＰＣ團本部地下２樓",
+"nameKrn": "PC 그룹 본사 지하 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11304,
+"nameCn": "ＰＣ团本部地下３楼",
+"nameTn": "ＰＣ團本部地下３樓",
+"nameKrn": "PC 그룹 본사 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 11305,
+"nameCn": "ＰＣ团本部地下３楼",
+"nameTn": "ＰＣ團本部地下３樓",
+"nameKrn": "PC 그룹 본사 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20001,
+"nameCn": "拉多拉山岭洞窟１楼",
+"nameTn": "拉多拉山嶺洞窟１樓",
+"nameKrn": "라토라산 동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20002,
+"nameCn": "拉多拉山岭洞窟２楼",
+"nameTn": "拉多拉山嶺洞窟２樓",
+"nameKrn": "라토라산 동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20003,
+"nameCn": "拉多拉山岭洞窟３楼",
+"nameTn": "拉多拉山嶺洞窟３樓",
+"nameKrn": "라토라산 동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20004,
+"nameCn": "拉多拉山岭洞窟４楼",
+"nameTn": "拉多拉山嶺洞窟４樓",
+"nameKrn": "라토라산 동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20005,
+"nameCn": "拉多拉山岭洞窟５楼",
+"nameTn": "拉多拉山嶺洞窟５樓",
+"nameKrn": "라토라산 동굴 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20006,
+"nameCn": "拉多拉山岭洞窟６楼",
+"nameTn": "拉多拉山嶺洞窟６樓",
+"nameKrn": "라토라산 동굴 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20007,
+"nameCn": "拉多拉山岭洞窟７楼",
+"nameTn": "拉多拉山嶺洞窟７樓",
+"nameKrn": "라토라산 동굴 7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20008,
+"nameCn": "拉多拉山岭洞窟８楼",
+"nameTn": "拉多拉山嶺洞窟８樓",
+"nameKrn": "라토라산 동굴 8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20009,
+"nameCn": "拉多拉山岭洞窟９楼",
+"nameTn": "拉多拉山嶺洞窟９樓",
+"nameKrn": "라토라산 동굴 9층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20010,
+"nameCn": "拉多拉山岭洞窟１０楼",
+"nameTn": "拉多拉山嶺洞窟１０樓",
+"nameKrn": "라토라산 동굴 10층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20011,
+"nameCn": "拉多拉山岭洞窟１０楼",
+"nameTn": "拉多拉山嶺洞窟１０樓",
+"nameKrn": "라토라산 동굴 10층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20012,
+"nameCn": "拉多拉山岭洞窟１０楼",
+"nameTn": "拉多拉山嶺洞窟１０樓",
+"nameKrn": "라토라산 동굴 10층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20013,
+"nameCn": "拉多拉山岭洞窟１０楼",
+"nameTn": "拉多拉山嶺洞窟１０樓",
+"nameKrn": "라토라산 동굴 10층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20101,
+"nameCn": "森林洞窟１楼",
+"nameTn": "森林洞窟１樓",
+"nameKrn": "숲속의 동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20102,
+"nameCn": "森林洞窟２楼",
+"nameTn": "森林洞窟２樓",
+"nameKrn": "숲속의 동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20103,
+"nameCn": "森林洞窟３楼",
+"nameTn": "森林洞窟３樓",
+"nameKrn": "숲속의 동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20104,
+"nameCn": "森林洞窟４楼",
+"nameTn": "森林洞窟４樓",
+"nameKrn": "숲속의 동굴 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20105,
+"nameCn": "森林洞窟山顶",
+"nameTn": "森林洞窟山頂",
+"nameKrn": "숲속의 동굴 정상",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 20301,
+"nameCn": "拉多拉的回廊",
+"nameTn": "拉多拉的回廊",
+"nameKrn": "라토라의 회랑",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20302,
+"nameCn": "拉多拉洞窟１楼",
+"nameTn": "拉多拉洞窟１樓",
+"nameKrn": "라토라동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20303,
+"nameCn": "拉多拉洞窟２楼",
+"nameTn": "拉多拉洞窟２樓",
+"nameKrn": "라토라동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20304,
+"nameCn": "拉多拉洞窟３楼",
+"nameTn": "拉多拉洞窟３樓",
+"nameKrn": "라토라동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20305,
+"nameCn": "拉多拉洞窟３楼",
+"nameTn": "拉多拉洞窟３樓",
+"nameKrn": "라토라동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20306,
+"nameCn": "拉多拉洞窟２楼",
+"nameTn": "拉多拉洞窟２樓",
+"nameKrn": "라토라동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20307,
+"nameCn": "拉多拉洞窟３楼",
+"nameTn": "拉多拉洞窟３樓",
+"nameKrn": "라토라동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20308,
+"nameCn": "拉多拉洞窟３楼",
+"nameTn": "拉多拉洞窟３樓",
+"nameKrn": "라토라동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20309,
+"nameCn": "拉多拉山山顶",
+"nameTn": "拉多拉山山頂",
+"nameKrn": "라토라산 정상",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20401,
+"nameCn": "哥亚山洞窟１楼",
+"nameTn": "哥亞山洞窟１樓",
+"nameKrn": "고야산 동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20402,
+"nameCn": "哥亚山洞窟２楼",
+"nameTn": "哥亞山洞窟２樓",
+"nameKrn": "고야산 동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20403,
+"nameCn": "哥亚山洞窟３楼",
+"nameTn": "哥亞山洞窟３樓",
+"nameKrn": "고야산 동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20404,
+"nameCn": "哥亚山洞窟４楼",
+"nameTn": "哥亞山洞窟４樓",
+"nameKrn": "고야산 동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20405,
+"nameCn": "哥亚山洞窟５楼",
+"nameTn": "哥亞山洞窟５樓",
+"nameKrn": "고야산 동굴 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20406,
+"nameCn": "哥亚山的洞窟山顶",
+"nameTn": "哥亞山的洞窟山頂",
+"nameKrn": "고야산의 동굴 정상",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20501,
+"nameCn": "阿鲁姆山的洞窟地下１楼",
+"nameTn": "阿魯姆山的洞窟地下１樓",
+"nameKrn": "하루산의 동굴 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20502,
+"nameCn": "阿鲁姆山的洞窟地下２楼",
+"nameTn": "阿魯姆山的洞窟地下２樓",
+"nameKrn": "하루산의 동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20503,
+"nameCn": "阿鲁姆山的洞窟地下３楼",
+"nameTn": "阿魯姆山的洞窟地下３樓",
+"nameKrn": "하루산의 동굴 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20504,
+"nameCn": "阿鲁姆山的洞窟地下４楼",
+"nameTn": "阿魯姆山的洞窟地下４樓",
+"nameKrn": "하루산의 동굴 지하4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20505,
+"nameCn": "阿鲁姆山的洞窟地下５楼",
+"nameTn": "阿魯姆山的洞窟地下５樓",
+"nameKrn": "하루산의 동굴 지하5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20506,
+"nameCn": "阿鲁姆山的洞窟地下６楼",
+"nameTn": "阿魯姆山的洞窟地下６樓",
+"nameKrn": "하루산의 동굴 지하6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20507,
+"nameCn": "阿鲁姆山的洞窟地下７楼",
+"nameTn": "阿魯姆山的洞窟地下７樓",
+"nameKrn": "하루산의 동굴 지하7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20508,
+"nameCn": "哈恩的锻冶场",
+"nameTn": "哈恩的鍛冶場",
+"nameKrn": "한의 대장간",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20601,
+"nameCn": "强恩一族的洞窟１楼",
+"nameTn": "強恩一族的洞窟１樓",
+"nameKrn": "강은일족의 동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20602,
+"nameCn": "强恩一族的洞窟２楼",
+"nameTn": "強恩一族的洞窟２樓",
+"nameKrn": "강은일족의 동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20603,
+"nameCn": "强恩一族的洞窟３楼",
+"nameTn": "強恩一族的洞窟３樓",
+"nameKrn": "강은일족의 동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20604,
+"nameCn": "强恩一族的洞窟４楼",
+"nameTn": "強恩一族的洞窟４樓",
+"nameKrn": "강은일족의 동굴 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20605,
+"nameCn": "强恩一族的洞窟５楼",
+"nameTn": "強恩一族的洞窟５樓",
+"nameKrn": "강은일족의 동굴 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20606,
+"nameCn": "强恩一族的洞窟６楼",
+"nameTn": "強恩一族的洞窟６樓",
+"nameKrn": "강은일족의 동굴 6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20607,
+"nameCn": "强恩一族的洞窟７楼",
+"nameTn": "強恩一族的洞窟７樓",
+"nameKrn": "강은일족의 동굴 7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20608,
+"nameCn": "沙拉的房间",
+"nameTn": "沙拉的房間",
+"nameKrn": "사라의 방",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20701,
+"nameCn": "拉多拉的大洞窟１楼",
+"nameTn": "拉多拉的大洞窟１樓",
+"nameKrn": "라토라의 대동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20702,
+"nameCn": "拉多拉的大洞窟２楼",
+"nameTn": "拉多拉的大洞窟２樓",
+"nameKrn": "라토라의 대동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20703,
+"nameCn": "拉多拉的大洞窟３楼",
+"nameTn": "拉多拉的大洞窟３樓",
+"nameKrn": "라토라의 대동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20704,
+"nameCn": "拉多拉的大洞窟３楼",
+"nameTn": "拉多拉的大洞窟３樓",
+"nameKrn": "라토라의 대동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20705,
+"nameCn": "拉多拉的大洞窟３楼",
+"nameTn": "拉多拉的大洞窟３樓",
+"nameKrn": "라토라의 대동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20706,
+"nameCn": "拉多拉的大洞窟４楼",
+"nameTn": "拉多拉的大洞窟４樓",
+"nameKrn": "라토라의 대동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20707,
+"nameCn": "拉多拉的大洞窟５楼",
+"nameTn": "拉多拉的大洞窟５樓",
+"nameKrn": "라토라의 대동굴 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20708,
+"nameCn": "拉多拉的大洞窟６楼",
+"nameTn": "拉多拉的大洞窟６樓",
+"nameKrn": "라토라의 대동굴 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20709,
+"nameCn": "拉多拉的大洞窟７楼",
+"nameTn": "拉多拉的大洞窟７樓",
+"nameKrn": "라토라의 대동굴 7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20710,
+"nameCn": "拉多拉的大洞窟８楼",
+"nameTn": "拉多拉的大洞窟８樓",
+"nameKrn": "라토라의 대동굴 8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20711,
+"nameCn": "审查室",
+"nameTn": "審查室",
+"nameKrn": "조사실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20712,
+"nameCn": "JBA本部",
+"nameTn": "JBA本部",
+"nameKrn": "JBA 본부",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20801,
+"nameCn": "龙的巢穴１楼",
+"nameTn": "龍的巢穴１樓",
+"nameKrn": "용의 동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20802,
+"nameCn": "龙的巢穴２楼",
+"nameTn": "龍的巢穴２樓",
+"nameKrn": "용의 동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20803,
+"nameCn": "龙的巢穴３楼",
+"nameTn": "龍的巢穴３樓",
+"nameKrn": "용의 동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20804,
+"nameCn": "龙的巢穴４楼",
+"nameTn": "龍的巢穴４樓",
+"nameKrn": "용의 동굴 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20805,
+"nameCn": "龙的巢穴５楼",
+"nameTn": "龍的巢穴５樓",
+"nameKrn": "용의 동굴 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20806,
+"nameCn": "龙的巢穴６楼",
+"nameTn": "龍的巢穴６樓",
+"nameKrn": "용의 동굴 6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20807,
+"nameCn": "龙的巢穴７楼",
+"nameTn": "龍的巢穴７樓",
+"nameKrn": "용의 동굴 7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20901,
+"nameCn": "卡鲁它那的洞窟１楼",
+"nameTn": "卡魯它那的洞窟１樓",
+"nameKrn": "카루타나의 동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20902,
+"nameCn": "卡鲁它那的洞窟２楼",
+"nameTn": "卡魯它那的洞窟２樓",
+"nameKrn": "카루타나의 동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 20903,
+"nameCn": "卡鲁它那的洞窟２楼",
+"nameTn": "卡魯它那的洞窟２樓",
+"nameKrn": "카루타나의 동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 21001,
+"nameCn": "琉璃的洞窟１楼",
+"nameTn": "琉璃的洞窟１樓",
+"nameKrn": "유리의 동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21002,
+"nameCn": "琉璃的洞窟２楼",
+"nameTn": "琉璃的洞窟２樓",
+"nameKrn": "유리의 동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21003,
+"nameCn": "琉璃的洞窟３楼",
+"nameTn": "琉璃的洞窟３樓",
+"nameKrn": "유리의 동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21004,
+"nameCn": "琉璃的洞窟４楼",
+"nameTn": "琉璃的洞窟４樓",
+"nameKrn": "유리의 동굴 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21005,
+"nameCn": "琉璃的洞窟５楼",
+"nameTn": "琉璃的洞窟５樓",
+"nameKrn": "유리의 동굴 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21006,
+"nameCn": "琉璃的洞窟６楼",
+"nameTn": "琉璃的洞窟６樓",
+"nameKrn": "유리의 동굴 6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21007,
+"nameCn": "琉璃的洞窟７楼",
+"nameTn": "琉璃的洞窟７樓",
+"nameKrn": "유리의 동굴 7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21008,
+"nameCn": "琉璃的洞窟８楼",
+"nameTn": "琉璃的洞窟８樓",
+"nameKrn": "유리의 동굴 8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21009,
+"nameCn": "琉璃的洞窟９楼",
+"nameTn": "琉璃的洞窟９樓",
+"nameKrn": "유리의 동굴 9층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21010,
+"nameCn": "琉璃的洞窟１０楼",
+"nameTn": "琉璃的洞窟１０樓",
+"nameKrn": "유리의 동굴 10층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21011,
+"nameCn": "琉璃的洞窟１１楼",
+"nameTn": "琉璃的洞窟１１樓",
+"nameKrn": "유리의 동굴 11층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21012,
+"nameCn": "琉璃的洞窟１２楼",
+"nameTn": "琉璃的洞窟１２樓",
+"nameKrn": "유리의 동굴 12층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21013,
+"nameCn": "琉璃的洞窟１３楼",
+"nameTn": "琉璃的洞窟１３樓",
+"nameKrn": "유리의 동굴 13층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21014,
+"nameCn": "琉璃的洞窟１４楼",
+"nameTn": "琉璃的洞窟１４樓",
+"nameKrn": "유리의 동굴 14층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21015,
+"nameCn": "琉璃的洞窟１５楼",
+"nameTn": "琉璃的洞窟１５樓",
+"nameKrn": "유리의 동굴 15층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21016,
+"nameCn": "琉璃的洞窟１２楼",
+"nameTn": "琉璃的洞窟１２樓",
+"nameKrn": "유리의 동굴 12층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21103,
+"nameCn": "拉多拉洞窟山顶壕淇",
+"nameTn": "拉多拉洞窟山頂壕淇",
+"nameKrn": "라토라산동굴 정상 참호",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21106,
+"nameCn": "拉多拉洞窟山顶壕淇",
+"nameTn": "拉多拉洞窟山頂壕淇",
+"nameKrn": "라토라산동굴 정상 참호",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 10002
+},
+{
+"ID": 21108,
+"nameCn": "碧青的洞窟地下８楼",
+"nameTn": "碧青的洞窟地下８樓",
+"nameKrn": "벽청의 동굴 지하8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21109,
+"nameCn": "拉多拉洞窟山顶壕淇",
+"nameTn": "拉多拉洞窟山頂壕淇",
+"nameKrn": "라토라산동굴 정상 참호",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 21110,
+"nameCn": "碧青的洞窟地下１０楼",
+"nameTn": "碧青的洞窟地下１０樓",
+"nameKrn": "벽청의 동굴 지하10층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21111,
+"nameCn": "碧青的洞窟地下１１楼",
+"nameTn": "碧青的洞窟地下１１樓",
+"nameKrn": "벽청의 동굴 지하11층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21112,
+"nameCn": "拉多拉洞窟山顶壕淇",
+"nameTn": "拉多拉洞窟山頂壕淇",
+"nameKrn": "라토라산동굴 정상 참호",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 21113,
+"nameCn": "碧青的洞窟地下１３楼",
+"nameTn": "碧青的洞窟地下１３樓",
+"nameKrn": "벽청의 동굴 지하13층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21201,
+"nameCn": "碧青的洞窟地下１楼",
+"nameTn": "碧青的洞窟地下１樓",
+"nameKrn": "벽청의 동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21202,
+"nameCn": "碧青的洞窟地下２楼",
+"nameTn": "碧青的洞窟地下２樓",
+"nameKrn": "벽청의 동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21203,
+"nameCn": "碧青的洞窟地下３楼",
+"nameTn": "碧青的洞窟地下３樓",
+"nameKrn": "벽청의 동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21204,
+"nameCn": "碧青的洞窟地下４楼",
+"nameTn": "碧青的洞窟地下４樓",
+"nameKrn": "벽청의 동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21205,
+"nameCn": "碧青的洞窟地下５楼",
+"nameTn": "碧青的洞窟地下５樓",
+"nameKrn": "벽청의 동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21206,
+"nameCn": "碧青的洞窟地下６楼",
+"nameTn": "碧青的洞窟地下６樓",
+"nameKrn": "벽청의 동굴 지하6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21207,
+"nameCn": "碧青的洞窟地下７楼",
+"nameTn": "碧青的洞窟地下７樓",
+"nameKrn": "벽청의 동굴 지하7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21208,
+"nameCn": "碧青的洞窟地下８楼",
+"nameTn": "碧青的洞窟地下８樓",
+"nameKrn": "벽청의 동굴 지하8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21209,
+"nameCn": "碧青的洞窟地下９楼",
+"nameTn": "碧青的洞窟地下９樓",
+"nameKrn": "벽청의 동굴 지하9층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21210,
+"nameCn": "碧青的洞窟地下１０楼",
+"nameTn": "碧青的洞窟地下１０樓",
+"nameKrn": "벽청의 동굴 지하10층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21211,
+"nameCn": "碧青的洞窟地下１１楼",
+"nameTn": "碧青的洞窟地下１１樓",
+"nameKrn": "벽청의 동굴 지하11층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21212,
+"nameCn": "碧青的洞窟地下１２楼",
+"nameTn": "碧青的洞窟地下１２樓",
+"nameKrn": "벽청의 동굴 지하12층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21213,
+"nameCn": "碧青的洞窟地下１３楼",
+"nameTn": "碧青的洞窟地下１３樓",
+"nameKrn": "벽청의 동굴 지하13층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21214,
+"nameCn": "碧青的洞窟地下１４楼",
+"nameTn": "碧青的洞窟地下１４樓",
+"nameKrn": "벽청의 동굴 지하14층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21215,
+"nameCn": "碧青的洞窟地下１５楼",
+"nameTn": "碧青的洞窟地下１５樓",
+"nameKrn": "벽청의 동굴 지하15층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21301,
+"nameCn": "水苍的洞窟地下1楼",
+"nameTn": "水蒼的洞窟地下1樓",
+"nameKrn": "수창동굴 지하 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21302,
+"nameCn": "水苍的洞窟地下2楼",
+"nameTn": "水蒼的洞窟地下2樓",
+"nameKrn": "수창동굴 지하 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21303,
+"nameCn": "水苍的洞窟地下3楼",
+"nameTn": "水蒼的洞窟地下3樓",
+"nameKrn": "물강동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21304,
+"nameCn": "水苍的洞窟地下4楼",
+"nameTn": "水蒼的洞窟地下4樓",
+"nameKrn": "수창동굴 지하 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21305,
+"nameCn": "水苍的洞窟地下5楼",
+"nameTn": "水蒼的洞窟地下5樓",
+"nameKrn": "수창동굴 지하 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21306,
+"nameCn": "水苍的洞窟地下6楼",
+"nameTn": "水蒼的洞窟地下6樓",
+"nameKrn": "수창동굴 지하 6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21307,
+"nameCn": "水苍的洞窟地下7楼",
+"nameTn": "水蒼的洞窟地下7樓",
+"nameKrn": "수창동굴 지하 7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21308,
+"nameCn": "水苍的洞窟地下8楼",
+"nameTn": "水蒼的洞窟地下8樓",
+"nameKrn": "수창동굴 지하 8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21309,
+"nameCn": "水苍的洞窟地下9楼",
+"nameTn": "水蒼的洞窟地下9樓",
+"nameKrn": "수창동굴 지하 9층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21310,
+"nameCn": "水苍的洞窟地下10楼",
+"nameTn": "水蒼的洞窟地下10樓",
+"nameKrn": "수창동굴 지하 10층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21311,
+"nameCn": "水苍的洞窟地下11楼",
+"nameTn": "水蒼的洞窟地下11樓",
+"nameKrn": "수창동굴 지하 11층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21312,
+"nameCn": "水苍的洞窟地下12楼",
+"nameTn": "水蒼的洞窟地下12樓",
+"nameKrn": "수창동굴 지하 12층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21313,
+"nameCn": "水苍的洞窟地下13楼",
+"nameTn": "水蒼的洞窟地下13樓",
+"nameKrn": "수창동굴 지하 13층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21314,
+"nameCn": "水苍的洞窟地下14楼",
+"nameTn": "水蒼的洞窟地下14樓",
+"nameKrn": "수창동굴 지하 14층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 21315,
+"nameCn": "水苍的洞窟地下15楼",
+"nameTn": "水蒼的洞窟地下15樓",
+"nameKrn": "수창동굴 지하 15층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30001,
+"nameCn": "深红的洞窟地下１楼",
+"nameTn": "深紅的洞窟地下１樓",
+"nameKrn": "진홍의 동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30002,
+"nameCn": "深红的洞窟地下２楼",
+"nameTn": "深紅的洞窟地下２樓",
+"nameKrn": "진홍의 동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30003,
+"nameCn": "深红的洞窟地下３楼",
+"nameTn": "深紅的洞窟地下３樓",
+"nameKrn": "진홍의 동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30004,
+"nameCn": "深红的洞窟地下４楼",
+"nameTn": "深紅的洞窟地下４樓",
+"nameKrn": "진홍의 동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30005,
+"nameCn": "深红的洞窟地下５楼",
+"nameTn": "深紅的洞窟地下５樓",
+"nameKrn": "진홍의 동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30006,
+"nameCn": "深红的洞窟地下６楼",
+"nameTn": "深紅的洞窟地下６樓",
+"nameKrn": "진홍의 동굴 지하6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30007,
+"nameCn": "深红的洞窟地下７楼",
+"nameTn": "深紅的洞窟地下７樓",
+"nameKrn": "진홍의 동굴 지하7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30008,
+"nameCn": "深红的洞窟地下８楼",
+"nameTn": "深紅的洞窟地下８樓",
+"nameKrn": "진홍의 동굴 지하8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30009,
+"nameCn": "深红的洞窟地下７楼",
+"nameTn": "深紅的洞窟地下７樓",
+"nameKrn": "진홍의 동굴 지하7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30010,
+"nameCn": "深红的洞窟地下６楼",
+"nameTn": "深紅的洞窟地下６樓",
+"nameKrn": "진홍의 동굴 지하6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30011,
+"nameCn": "深红的洞窟地下５楼",
+"nameTn": "深紅的洞窟地下５樓",
+"nameKrn": "진홍의 동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30012,
+"nameCn": "深红的洞窟地下４楼",
+"nameTn": "深紅的洞窟地下４樓",
+"nameKrn": "진홍의 동굴 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30013,
+"nameCn": "深红的洞窟地下３楼",
+"nameTn": "深紅的洞窟地下３樓",
+"nameKrn": "진홍의 동굴 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30014,
+"nameCn": "深红的洞窟地下２楼",
+"nameTn": "深紅的洞窟地下２樓",
+"nameKrn": "진홍의 동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30015,
+"nameCn": "深红的洞窟地下１楼",
+"nameTn": "深紅的洞窟地下１樓",
+"nameKrn": "진홍의 동굴 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30016,
+"nameCn": "深红的洞窟地下９楼",
+"nameTn": "深紅的洞窟地下９樓",
+"nameKrn": "진홍의 동굴 지하9층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 30017,
+"nameCn": "火山裂缝通道",
+"nameTn": "火山裂縫通道",
+"nameKrn": "화산균열의 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30022,
+"nameCn": "水晶洞窟",
+"nameTn": "水晶洞窟",
+"nameKrn": "수정동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30023,
+"nameCn": "水晶洞窟",
+"nameTn": "水晶洞窟",
+"nameKrn": "수정동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30024,
+"nameCn": "水晶洞窟",
+"nameTn": "水晶洞窟",
+"nameKrn": "수정동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30025,
+"nameCn": "水晶洞窟",
+"nameTn": "水晶洞窟",
+"nameKrn": "수정동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30026,
+"nameCn": "水晶洞窟核心",
+"nameTn": "水晶洞窟核心",
+"nameKrn": "수정동굴의 핵심",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30101,
+"nameCn": "东吉鲁山岭１楼",
+"nameTn": "東吉魯山嶺１樓",
+"nameKrn": "지로산 동쪽 1충",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30102,
+"nameCn": "东吉鲁山岭２楼",
+"nameTn": "東吉魯山嶺２樓",
+"nameKrn": "지로산 동쪽 2충",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30103,
+"nameCn": "东吉鲁山岭地下１楼",
+"nameTn": "東吉魯山嶺地下１樓",
+"nameKrn": "지로산 동쪽 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30104,
+"nameCn": "东吉鲁山岭１楼",
+"nameTn": "東吉魯山嶺１樓",
+"nameKrn": "지로산 동쪽 1충",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30105,
+"nameCn": "东吉鲁山岭１楼",
+"nameTn": "東吉魯山嶺１樓",
+"nameKrn": "지로산 동쪽 1충",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30106,
+"nameCn": "东吉鲁山岭１楼",
+"nameTn": "東吉魯山嶺１樓",
+"nameKrn": "지로산 동쪽 1충",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30107,
+"nameCn": "东吉鲁山岭地下１楼",
+"nameTn": "東吉魯山嶺地下１樓",
+"nameKrn": "지로산 동쪽 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30108,
+"nameCn": "东吉鲁山岭１楼",
+"nameTn": "東吉魯山嶺１樓",
+"nameKrn": "지로산 동쪽 1충",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30201,
+"nameCn": "北吉鲁的通路地下１楼",
+"nameTn": "北吉魯的通路地下１樓",
+"nameKrn": "북가우린 동굴 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30202,
+"nameCn": "北吉鲁的通路地下2楼",
+"nameTn": "北吉魯的通路地下2樓",
+"nameKrn": "기타지로 거리 지하 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30203,
+"nameCn": "北吉鲁的通路地下３楼",
+"nameTn": "北吉魯的通路地下３樓",
+"nameKrn": "북가우린 동굴 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30204,
+"nameCn": "北吉鲁的通路地下２楼",
+"nameTn": "北吉魯的通路地下２樓",
+"nameKrn": "북가우린 동굴 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30205,
+"nameCn": "北吉鲁的通路地下１楼",
+"nameTn": "北吉魯的通路地下１樓",
+"nameKrn": "북가우린 동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30301,
+"nameCn": "地下1楼",
+"nameTn": "地下1樓",
+"nameKrn": "지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30302,
+"nameCn": "地下2楼",
+"nameTn": "地下2樓",
+"nameKrn": "지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30303,
+"nameCn": "地下1楼",
+"nameTn": "地下1樓",
+"nameKrn": "지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30304,
+"nameCn": "地下2楼",
+"nameTn": "地下2樓",
+"nameKrn": "지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30305,
+"nameCn": "地下3楼",
+"nameTn": "地下3樓",
+"nameKrn": "지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30306,
+"nameCn": "地下2楼",
+"nameTn": "地下2樓",
+"nameKrn": "지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30307,
+"nameCn": "地下1楼",
+"nameTn": "地下1樓",
+"nameKrn": "지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30401,
+"nameCn": "北吉鲁山岭地下１楼",
+"nameTn": "北吉魯山嶺地下１樓",
+"nameKrn": "북가우린산 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30402,
+"nameCn": "北吉鲁山岭地下２楼",
+"nameTn": "北吉魯山嶺地下２樓",
+"nameKrn": "북가우린산 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30403,
+"nameCn": "北吉鲁山岭地下１楼",
+"nameTn": "北吉魯山嶺地下１樓",
+"nameKrn": "북가우린산 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30501,
+"nameCn": "巴那姆的洞窟地下１楼",
+"nameTn": "巴那姆的洞窟地下１樓",
+"nameKrn": "바남의 동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30502,
+"nameCn": "巴那姆的洞窟地下２楼",
+"nameTn": "巴那姆的洞窟地下２樓",
+"nameKrn": "바남의 동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30503,
+"nameCn": "巴那姆的洞窟地下２楼",
+"nameTn": "巴那姆的洞窟地下２樓",
+"nameKrn": "바남의 동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30504,
+"nameCn": "巴那姆的洞窟地下１楼",
+"nameTn": "巴那姆的洞窟地下１樓",
+"nameKrn": "바남의 동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30505,
+"nameCn": "巴那姆的洞窟１楼",
+"nameTn": "巴那姆的洞窟１樓",
+"nameKrn": "바남의 동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30506,
+"nameCn": "巴那姆的洞窟地下１楼",
+"nameTn": "巴那姆的洞窟地下１樓",
+"nameKrn": "바남의 동굴 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30507,
+"nameCn": "巴那姆的洞窟地下２楼",
+"nameTn": "巴那姆的洞窟地下２樓",
+"nameKrn": "바남의 동굴 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30508,
+"nameCn": "巴那姆的洞窟地下３楼",
+"nameTn": "巴那姆的洞窟地下３樓",
+"nameKrn": "바남의 동굴 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30509,
+"nameCn": "巴那姆的洞窟地下２楼",
+"nameTn": "巴那姆的洞窟地下２樓",
+"nameKrn": "바남의 동굴 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30510,
+"nameCn": "巴那姆的洞窟地下３楼",
+"nameTn": "巴那姆的洞窟地下３樓",
+"nameKrn": "바남의 동굴 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30511,
+"nameCn": "巴那姆的洞窟地下３楼",
+"nameTn": "巴那姆的洞窟地下３樓",
+"nameKrn": "바남의 동굴 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30600,
+"nameCn": "库伊爷的家",
+"nameTn": "庫伊爺的家",
+"nameKrn": "쿠이영감의 집",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30601,
+"nameCn": "蛙洞地下1楼",
+"nameTn": "蛙洞地下1樓",
+"nameKrn": "개구리동굴 지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30602,
+"nameCn": "蛙洞地下2楼",
+"nameTn": "蛙洞地下2樓",
+"nameKrn": "개구리동굴 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30603,
+"nameCn": "蛙洞地下3楼",
+"nameTn": "蛙洞地下3樓",
+"nameKrn": "개구리동굴 지하3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30604,
+"nameCn": "蛙洞地下4楼",
+"nameTn": "蛙洞地下4樓",
+"nameKrn": "개구리동굴 지하4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30605,
+"nameCn": "蛙洞地下5楼",
+"nameTn": "蛙洞地下5樓",
+"nameKrn": "개구리동굴 지하5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30606,
+"nameCn": "蛙洞通道",
+"nameTn": "蛙洞通道",
+"nameKrn": "개구리 동굴 통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30607,
+"nameCn": "蛙洞地下5楼",
+"nameTn": "蛙洞地下5樓",
+"nameKrn": "개구리동굴 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30611,
+"nameCn": "封印迷宫地下一楼",
+"nameTn": "封印迷宮地下一樓",
+"nameKrn": "봉인미궁의 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30612,
+"nameCn": "封印迷宫地下二楼",
+"nameTn": "封印迷宮地下二樓",
+"nameKrn": "봉인미궁의 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30613,
+"nameCn": "封印迷宫地下三楼",
+"nameTn": "封印迷宮地下三樓",
+"nameKrn": "봉인미궁의 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30614,
+"nameCn": "封印迷宫地下四楼",
+"nameTn": "封印迷宮地下四樓",
+"nameKrn": "봉인미궁의 지하4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30615,
+"nameCn": "封印迷宫地下五楼",
+"nameTn": "封印迷宮地下五樓",
+"nameKrn": "봉인미궁의 지하5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30616,
+"nameCn": "封印迷宫地下六楼",
+"nameTn": "封印迷宮地下六樓",
+"nameKrn": "봉인미궁의 지하6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30617,
+"nameCn": "封印迷宫地下七楼",
+"nameTn": "封印迷宮地下七樓",
+"nameKrn": "봉인미궁의 지하7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30618,
+"nameCn": "封印迷宫地下八楼",
+"nameTn": "封印迷宮地下八樓",
+"nameKrn": "봉인미궁의 지하8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30619,
+"nameCn": "封印之间",
+"nameTn": "封印之間",
+"nameKrn": "봉인의 공간",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 30620,
+"nameCn": "封印之间",
+"nameTn": "封印之間",
+"nameKrn": "봉인의 공간",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 30621,
+"nameCn": "封印迷宫地下一楼",
+"nameTn": "封印迷宮地下一樓",
+"nameKrn": "봉인미궁의 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30622,
+"nameCn": "封印迷宫地下二楼",
+"nameTn": "封印迷宮地下二樓",
+"nameKrn": "봉인미궁의 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30623,
+"nameCn": "封印迷宫地下三楼",
+"nameTn": "封印迷宮地下三樓",
+"nameKrn": "봉인미궁의 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30624,
+"nameCn": "封印迷宫地下四楼",
+"nameTn": "封印迷宮地下四樓",
+"nameKrn": "봉인미궁의 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30625,
+"nameCn": "封印迷宫地下五楼",
+"nameTn": "封印迷宮地下五樓",
+"nameKrn": "봉인미궁의 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30626,
+"nameCn": "封印迷宫地下六楼",
+"nameTn": "封印迷宮地下六樓",
+"nameKrn": "봉인미궁의 지하6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30627,
+"nameCn": "封印迷宫地下七楼",
+"nameTn": "封印迷宮地下七樓",
+"nameKrn": "봉인미궁의 지하7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30628,
+"nameCn": "封印迷宫地下八楼",
+"nameTn": "封印迷宮地下八樓",
+"nameKrn": "봉인미궁의 지하8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30669,
+"nameCn": "天空之岛暗之间",
+"nameTn": "天空之島暗之間",
+"nameKrn": "천공섬의 숨겨진 공간",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30670,
+"nameCn": "天空之岛暗之间",
+"nameTn": "天空之島暗之間",
+"nameKrn": "천공섬의 숨겨진 공간",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30689,
+"nameCn": "虚空之界",
+"nameTn": "虛空之界",
+"nameKrn": "공허의 공간",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30691,
+"nameCn": "天空之岛地之界",
+"nameTn": "天空之島地之界",
+"nameKrn": "천공섬 땅의 세계",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30692,
+"nameCn": "天空之岛水之界",
+"nameTn": "天空之島水之界",
+"nameKrn": "천공섬 물의 세계",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30693,
+"nameCn": "天空之岛火之界",
+"nameTn": "天空之島火之界",
+"nameKrn": "천공섬 불의 세계",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30694,
+"nameCn": "天空之岛风之界",
+"nameTn": "天空之島風之界",
+"nameKrn": "천공섬 바람의 세계",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30695,
+"nameCn": "天空之岛暗之界",
+"nameTn": "天空之島暗之界",
+"nameKrn": "천공섬의 숨겨진 장소",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30696,
+"nameCn": "天空之岛地之间",
+"nameTn": "天空之島地之間",
+"nameKrn": "천공섬 땅의 공간",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30697,
+"nameCn": "天空之岛水之间",
+"nameTn": "天空之島水之間",
+"nameKrn": "천공섬 물의 공간",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30698,
+"nameCn": "天空之岛火之间",
+"nameTn": "天空之島火之間",
+"nameKrn": "천공섬 불의 공간",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30699,
+"nameCn": "天空之岛风之间",
+"nameTn": "天空之島風之間",
+"nameKrn": "천공섬 바람의 공간",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 888
+},
+{
+"ID": 30701,
+"nameCn": "地下１楼",
+"nameTn": "地下１樓",
+"nameKrn": "지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30702,
+"nameCn": "地下２楼",
+"nameTn": "地下２樓",
+"nameKrn": "지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30703,
+"nameCn": "地下１楼",
+"nameTn": "地下１樓",
+"nameKrn": "지하1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30823,
+"nameCn": "PK大赛场地",
+"nameTn": "PK大賽場地",
+"nameKrn": "PK 대회 경기장"
+},
+{
+"ID": 30901,
+"nameCn": "地下１楼",
+"nameTn": "地下１樓",
+"nameKrn": "지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30902,
+"nameCn": "地下２楼",
+"nameTn": "地下２樓",
+"nameKrn": "지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30903,
+"nameCn": "地下３楼",
+"nameTn": "地下３樓",
+"nameKrn": "지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30904,
+"nameCn": "地下２楼",
+"nameTn": "地下２樓",
+"nameKrn": "지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 30905,
+"nameCn": "地下１楼",
+"nameTn": "地下１樓",
+"nameKrn": "지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31001,
+"nameCn": "加都洛的洞窟１楼",
+"nameTn": "加都洛的洞窟１樓",
+"nameKrn": "가트로의 동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31002,
+"nameCn": "加特洛的洞窟２楼",
+"nameTn": "加特洛的洞窟２樓",
+"nameKrn": "가트로의 동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31003,
+"nameCn": "族长的房间",
+"nameTn": "族長的房間",
+"nameKrn": "족장의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31101,
+"nameCn": "美鲁娜的洞窟１楼",
+"nameTn": "美魯娜的洞窟１樓",
+"nameKrn": "메루나의 동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31102,
+"nameCn": "美鲁娜的洞窟２楼",
+"nameTn": "美魯娜的洞窟２樓",
+"nameKrn": "메루나의 동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31103,
+"nameCn": "族长的房间",
+"nameTn": "族長的房間",
+"nameKrn": "서장의 방",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31201,
+"nameCn": "没落的矿坑１楼",
+"nameTn": "沒落的礦坑１樓",
+"nameKrn": "몰락한 광산 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31202,
+"nameCn": "没落的矿坑２楼",
+"nameTn": "沒落的礦坑２樓",
+"nameKrn": "몰락한 광산 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31203,
+"nameCn": "没落的矿坑３楼",
+"nameTn": "沒落的礦坑３樓",
+"nameKrn": "몰락한 광산 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31204,
+"nameCn": "没落的矿坑４楼",
+"nameTn": "沒落的礦坑４樓",
+"nameKrn": "몰락한 광산 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31205,
+"nameCn": "没落的矿坑５楼",
+"nameTn": "沒落的礦坑５樓",
+"nameKrn": "몰락한 광산 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31301,
+"nameCn": "吉鲁的海底通路",
+"nameTn": "吉魯的海底通路",
+"nameKrn": "가우린 해저터널",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31302,
+"nameCn": "吉鲁的海底通道",
+"nameTn": "吉魯的海底通道",
+"nameKrn": "가우린 해저터널",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31401,
+"nameCn": "奇努伊的海底通路",
+"nameTn": "奇努伊的海底通路",
+"nameKrn": "쿠르 해저터널",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31501,
+"nameCn": "奇努伊的海底通路",
+"nameTn": "奇努伊的海底通路",
+"nameKrn": "쿠르 해저처널",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31601,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31602,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31603,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31604,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31605,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31606,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31607,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31608,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31609,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31610,
+"nameCn": "方位的祠",
+"nameTn": "方位的祠",
+"nameKrn": "방향의 사원",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31701,
+"nameCn": "五兄弟的山寨地下１楼",
+"nameTn": "五兄弟的山寨地下１樓",
+"nameKrn": "오형제의산장 지하1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31702,
+"nameCn": "五兄弟的山寨地下２楼",
+"nameTn": "五兄弟的山寨地下２樓",
+"nameKrn": "오형제의산장 지하2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31703,
+"nameCn": "五兄弟的山寨地下３楼",
+"nameTn": "五兄弟的山寨地下３樓",
+"nameKrn": "오형제의산장 지하3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31704,
+"nameCn": "五兄弟的山寨地下４楼",
+"nameTn": "五兄弟的山寨地下４樓",
+"nameKrn": "오형제의산장 지하4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31705,
+"nameCn": "五兄弟的山寨地下５楼",
+"nameTn": "五兄弟的山寨地下５樓",
+"nameKrn": "오형제의산장 지하5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31706,
+"nameCn": "五兄弟的山寨地下６楼",
+"nameTn": "五兄弟的山寨地下６樓",
+"nameKrn": "오형제의산장 지하6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31801,
+"nameCn": "阿斯玛鲁矿山１楼",
+"nameTn": "阿斯瑪魯礦山１樓",
+"nameKrn": "아스마르광산 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31802,
+"nameCn": "阿斯玛鲁矿山２楼",
+"nameTn": "阿斯瑪魯礦山２樓",
+"nameKrn": "아스마르광산 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31803,
+"nameCn": "阿斯玛鲁矿山３楼",
+"nameTn": "阿斯瑪魯礦山３樓",
+"nameKrn": "아스마르광산 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31804,
+"nameCn": "阿斯玛鲁矿山４楼",
+"nameTn": "阿斯瑪魯礦山４樓",
+"nameKrn": "아스마르광산 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31805,
+"nameCn": "阿斯玛鲁矿山５楼",
+"nameTn": "阿斯瑪魯礦山５樓",
+"nameKrn": "아스마르광산 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31806,
+"nameCn": "阿斯玛鲁矿山６楼",
+"nameTn": "阿斯瑪魯礦山６樓",
+"nameKrn": "아스마르광산 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31901,
+"nameCn": "吉鲁采石场１楼",
+"nameTn": "吉魯採石場１樓",
+"nameKrn": "후르도채석장 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31902,
+"nameCn": "采石场事务所",
+"nameTn": "採石場事務所",
+"nameKrn": "채석장 사무소",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31903,
+"nameCn": "吉鲁采石场２楼",
+"nameTn": "吉魯採石場２樓",
+"nameKrn": "후르도채석장 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31904,
+"nameCn": "吉鲁采石场３楼",
+"nameTn": "吉魯採石場３樓",
+"nameKrn": "후르도채석장 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31905,
+"nameCn": "吉鲁采石场４楼",
+"nameTn": "吉魯採石場４樓",
+"nameKrn": "후르도채석장 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31906,
+"nameCn": "吉鲁采石场５楼",
+"nameTn": "吉魯採石場５樓",
+"nameKrn": "후르도채석장 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31907,
+"nameCn": "吉鲁采石场６楼",
+"nameTn": "吉魯採石場６樓",
+"nameKrn": "후르도채석장 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31908,
+"nameCn": "吉鲁采石场７楼",
+"nameTn": "吉魯採石場７樓",
+"nameKrn": "후르도채석장 7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31909,
+"nameCn": "吉鲁采石场８楼",
+"nameTn": "吉魯採石場８樓",
+"nameKrn": "후르도채석장 8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31910,
+"nameCn": "真知之间",
+"nameTn": "真知之間",
+"nameKrn": "진실의 공간",
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31911,
+"nameCn": "精灵之间",
+"nameTn": "精靈之間",
+"nameKrn": "정령의 공간",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 31912,
+"nameCn": "not found:34415",
+"nameTn": "not found:34415",
+"nameKrn": "not 층ound:34415",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 201
+},
+{
+"ID": 32001,
+"nameCn": "漆黑的洞窟地下1楼",
+"nameTn": "漆黑的洞窟地下1樓",
+"nameKrn": "칠흑동굴 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32002,
+"nameCn": "漆黑的洞窟地下2楼",
+"nameTn": "漆黑的洞窟地下2樓",
+"nameKrn": "칠흑동굴 지하2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32003,
+"nameCn": "漆黑的洞窟地下3楼",
+"nameTn": "漆黑的洞窟地下3樓",
+"nameKrn": "칠흑동굴 지하3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32004,
+"nameCn": "漆黑的洞窟地下4楼",
+"nameTn": "漆黑的洞窟地下4樓",
+"nameKrn": "칠흑동굴 지하4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32005,
+"nameCn": "漆黑的洞窟地下5楼",
+"nameTn": "漆黑的洞窟地下5樓",
+"nameKrn": "칠흑동굴 지하5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32006,
+"nameCn": "漆黑的洞窟地下6楼",
+"nameTn": "漆黑的洞窟地下6樓",
+"nameKrn": "칠흑동굴 지하6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32007,
+"nameCn": "漆黑的洞窟地下7楼",
+"nameTn": "漆黑的洞窟地下7樓",
+"nameKrn": "칠흑동굴 지하7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32008,
+"nameCn": "漆黑的洞窟地下8楼",
+"nameTn": "漆黑的洞窟地下8樓",
+"nameKrn": "칠흑동굴 지하8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32009,
+"nameCn": "漆黑的洞窟地下9楼",
+"nameTn": "漆黑的洞窟地下9樓",
+"nameKrn": "칠흑동굴 지하9층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32010,
+"nameCn": "漆黑的洞窟地下10楼",
+"nameTn": "漆黑的洞窟地下10樓",
+"nameKrn": "칠흑동굴 지하10층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32011,
+"nameCn": "漆黑的洞窟地下11楼",
+"nameTn": "漆黑的洞窟地下11樓",
+"nameKrn": "칠흑동굴 지하11층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32012,
+"nameCn": "漆黑的洞窟地下12楼",
+"nameTn": "漆黑的洞窟地下12樓",
+"nameKrn": "칠흑동굴 지하12층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32013,
+"nameCn": "漆黑的洞窟地下13楼",
+"nameTn": "漆黑的洞窟地下13樓",
+"nameKrn": "칠흑동굴 지하13층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32014,
+"nameCn": "漆黑的洞窟地下14楼",
+"nameTn": "漆黑的洞窟地下14樓",
+"nameKrn": "칠흑동굴 지하14층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32015,
+"nameCn": "漆黑的洞窟地下15楼",
+"nameTn": "漆黑的洞窟地下15樓",
+"nameKrn": "칠흑동굴 지하15층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32016,
+"nameCn": "漆黑的洞窟地下16楼",
+"nameTn": "漆黑的洞窟地下16樓",
+"nameKrn": "칠흑동굴 지하16층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32017,
+"nameCn": "漆黑的洞窟地下17楼",
+"nameTn": "漆黑的洞窟地下17樓",
+"nameKrn": "칠흑동굴 지하17층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 32018,
+"nameCn": "漆黑的洞窟地下18楼",
+"nameTn": "漆黑的洞窟地下18樓",
+"nameKrn": "칠흑동굴 지하18층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 32019,
+"nameCn": "漆黑的洞窟地下19楼",
+"nameTn": "漆黑的洞窟地下19樓",
+"nameKrn": "칠흑동굴 지하19층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 32020,
+"nameCn": "漆黑的洞窟地下20楼",
+"nameTn": "漆黑的洞窟地下20樓",
+"nameKrn": "칠흑동굴 지하20층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 32021,
+"nameCn": "漆黑的洞窟地下20楼",
+"nameTn": "漆黑的洞窟地下20樓",
+"nameKrn": "칠흑동굴 지하20층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 40001,
+"nameCn": "五人阎罗殿1F",
+"nameTn": "五人閻羅殿1F",
+"nameKrn": "5인 염라대전 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40002,
+"nameCn": "五人阎罗殿2F",
+"nameTn": "五人閻羅殿2F",
+"nameKrn": "5인 염라대전 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40003,
+"nameCn": "五人阎罗殿3F",
+"nameTn": "五人閻羅殿3F",
+"nameKrn": "5인 염라대전 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40004,
+"nameCn": "五人阎罗殿4F",
+"nameTn": "五人閻羅殿4F",
+"nameKrn": "5인 염라대전 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40005,
+"nameCn": "五人阎罗殿5F",
+"nameTn": "五人閻羅殿5F",
+"nameKrn": "5인 염라대전 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40006,
+"nameCn": "五人阎罗殿6F",
+"nameTn": "五人閻羅殿6F",
+"nameKrn": "5인 염라대전 6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40007,
+"nameCn": "五人阎罗殿7F",
+"nameTn": "五人閻羅殿7F",
+"nameKrn": "5인 염라대전 7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40008,
+"nameCn": "五人阎罗殿8F",
+"nameTn": "五人閻羅殿8F",
+"nameKrn": "5인 염라대전 8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40009,
+"nameCn": "五人阎罗殿9F",
+"nameTn": "五人閻羅殿9F",
+"nameKrn": "5인 염라대전 9층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40010,
+"nameCn": "五人阎罗殿10F",
+"nameTn": "五人閻羅殿10F",
+"nameKrn": "5인 염라대전 10층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40011,
+"nameCn": "双人阎罗殿1F",
+"nameTn": "雙人閻羅殿1F",
+"nameKrn": "2인 염라대전 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40012,
+"nameCn": "双人阎罗殿2F",
+"nameTn": "雙人閻羅殿2F",
+"nameKrn": "2인 염라대전 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40013,
+"nameCn": "双人阎罗殿3F",
+"nameTn": "雙人閻羅殿3F",
+"nameKrn": "2인 염라대전 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40014,
+"nameCn": "双人阎罗殿4F",
+"nameTn": "雙人閻羅殿4F",
+"nameKrn": "2인 염라대전 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40015,
+"nameCn": "双人阎罗殿5F",
+"nameTn": "雙人閻羅殿5F",
+"nameKrn": "2인 염라대전 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40016,
+"nameCn": "双人阎罗殿6F",
+"nameTn": "雙人閻羅殿6F",
+"nameKrn": "2인 염라대전 6층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40017,
+"nameCn": "双人阎罗殿7F",
+"nameTn": "雙人閻羅殿7F",
+"nameKrn": "2인 염라대전 7층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 40018,
+"nameCn": "双人阎罗殿8F",
+"nameTn": "雙人閻羅殿8F",
+"nameKrn": "2인 염라대전 8층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40002
+},
+{
+"ID": 41001,
+"nameCn": "东皇天",
+"nameTn": "東皇天",
+"nameKrn": "동황천",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 70005,
+"banSkillList": [
+84007001,
+84008001,
+84009001
+]
+},
+{
+"ID": 41002,
+"nameCn": "墨云天",
+"nameTn": "墨雲天",
+"nameKrn": "묵운천",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 70011,
+"banSkillList": [
+84007001,
+84008001,
+84009001
+]
+},
+{
+"ID": 41003,
+"nameCn": "紫霄天",
+"nameTn": "紫霄天",
+"nameKrn": "자색천",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 70004,
+"banSkillList": [
+84007001,
+84008001,
+84009001
+]
+},
+{
+"ID": 41004,
+"nameCn": "中极天",
+"nameTn": "中極天",
+"nameKrn": "중급천",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 41005,
+"nameCn": "青霄天",
+"nameTn": "青霄天",
+"nameKrn": "청색천",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 41006,
+"nameCn": "大罗天",
+"nameTn": "大羅天",
+"nameKrn": "대염천",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 41007,
+"nameCn": "南极天",
+"nameTn": "南極天",
+"nameKrn": "남극천",
+"mapBgm": 9,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 41008,
+"nameCn": "赤北天",
+"nameTn": "赤北天",
+"nameKrn": "적북천",
+"mapBgm": 7,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 41009,
+"nameCn": "妖皇天",
+"nameTn": "妖皇天",
+"nameKrn": "야황천",
+"mapBgm": 8,
+"type": 1,
+"mapBg": 40510,
+"fightBg": 40514
+},
+{
+"ID": 42000,
+"nameCn": "拉斯维加斯",
+"nameTn": "拉斯維加斯",
+"nameKrn": "라스베가스",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 50000,
+"nameCn": "史前玛丽那丝",
+"nameTn": "史前瑪麗那絲",
+"nameKrn": "선사시대 마리너스",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 50001,
+"nameCn": "史前萨姆吉尔",
+"nameTn": "史前薩姆吉爾",
+"nameKrn": "선사시대 샴기르",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 100
+},
+{
+"ID": 50002,
+"nameCn": "史前加加村",
+"nameTn": "史前加加村",
+"nameKrn": "선사시대 쟈쟈",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 50007,
+"nameCn": "尼斯湖水底",
+"nameTn": "尼斯湖水底",
+"nameKrn": "닉스호수 해저",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 50008,
+"nameCn": "雅典娜的寝室",
+"nameTn": "雅典娜的寢室",
+"nameKrn": "아테나의 침실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 51000,
+"nameCn": "家族领地",
+"nameTn": "家族領地",
+"nameKrn": "가족영지",
+"mapBgm": 20,
+"type": 5,
+"fightBg": 701
+},
+{
+"ID": 60001,
+"nameCn": "北方沙漠洞穴内通道",
+"nameTn": "北方沙漠洞穴內通道",
+"nameKrn": "북부사막동굴 내부통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60002,
+"nameCn": "北方沙漠洞穴外通道",
+"nameTn": "北方沙漠洞穴外通道",
+"nameKrn": "북부사막동굴 외부통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60003,
+"nameCn": "西方沙漠洞穴内通道",
+"nameTn": "西方沙漠洞穴內通道",
+"nameKrn": "서부사막동굴 내부통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60004,
+"nameCn": "西方沙漠洞穴外通道",
+"nameTn": "西方沙漠洞穴外通道",
+"nameKrn": "서부사막동굴 외부통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60005,
+"nameCn": "东方沙漠洞穴内通道",
+"nameTn": "東方沙漠洞穴內通道",
+"nameKrn": "동부사막동굴 내부통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60006,
+"nameCn": "东方沙漠洞穴外通道",
+"nameTn": "東方沙漠洞穴外通道",
+"nameKrn": "동부사막동굴 외부통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60007,
+"nameCn": "南方沙漠洞穴内通道",
+"nameTn": "南方沙漠洞穴內通道",
+"nameKrn": "남부사막동굴 내부통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60008,
+"nameCn": "南方沙漠洞穴外通道",
+"nameTn": "南方沙漠洞穴外通道",
+"nameKrn": "남부사막동굴 외부통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60009,
+"nameCn": "水龙洞窟",
+"nameTn": "水龍洞窟",
+"nameKrn": "수룡동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60010,
+"nameCn": "水龙洞窟之一",
+"nameTn": "水龍洞窟之一",
+"nameKrn": "수룡동굴 1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60011,
+"nameCn": "幻影之界第一层",
+"nameTn": "幻影之界第一層",
+"nameKrn": "환영의경계 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60012,
+"nameCn": "幻影之界第二层",
+"nameTn": "幻影之界第二層",
+"nameKrn": "환영의경계 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60013,
+"nameCn": "幻影之界第二层",
+"nameTn": "幻影之界第二層",
+"nameKrn": "환영의경계 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60014,
+"nameCn": "幻影之界第二层",
+"nameTn": "幻影之界第二層",
+"nameKrn": "환영의경계 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60015,
+"nameCn": "幻影之界第二层",
+"nameTn": "幻影之界第二層",
+"nameKrn": "환영의경계 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60016,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60017,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60018,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60019,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60020,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60021,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60022,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60023,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60024,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60025,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60026,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60027,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60028,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60029,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60030,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60031,
+"nameCn": "幻影之界第三层",
+"nameTn": "幻影之界第三層",
+"nameKrn": "환영의경계 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60032,
+"nameCn": "幻影之界第四层",
+"nameTn": "幻影之界第四層",
+"nameKrn": "환영의경계 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60033,
+"nameCn": "幻影之界第五层",
+"nameTn": "幻影之界第五層",
+"nameKrn": "환영의경계 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60034,
+"nameCn": "幻影之界第五层",
+"nameTn": "幻影之界第五層",
+"nameKrn": "환영의경계 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60035,
+"nameCn": "水龙洞窟之三",
+"nameTn": "水龍洞窟之三",
+"nameKrn": "수룡동굴 3",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60036,
+"nameCn": "水龙洞窟之二",
+"nameTn": "水龍洞窟之二",
+"nameKrn": "수룡동굴 2",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60037,
+"nameCn": "碧霄洞窟第一层",
+"nameTn": "碧霄洞窟第一層",
+"nameKrn": "벽천동굴 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60038,
+"nameCn": "碧霄洞窟第二层",
+"nameTn": "碧霄洞窟第二層",
+"nameKrn": "벽천동굴 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60039,
+"nameCn": "碧霄洞窟第三层",
+"nameTn": "碧霄洞窟第三層",
+"nameKrn": "벽천동굴 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60040,
+"nameCn": "伊甸地下通道第一层",
+"nameTn": "伊甸地下通道第一層",
+"nameKrn": "에덴지하통로 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60041,
+"nameCn": "伊甸地下通道第二层",
+"nameTn": "伊甸地下通道第二層",
+"nameKrn": "에덴지하통로 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60042,
+"nameCn": "伊甸地下通道第三层",
+"nameTn": "伊甸地下通道第三層",
+"nameKrn": "에덴지하통로 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60043,
+"nameCn": "伊甸地下通道第四层",
+"nameTn": "伊甸地下通道第四層",
+"nameKrn": "에덴지하통로 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60044,
+"nameCn": "伊甸地下通道第五层",
+"nameTn": "伊甸地下通道第五層",
+"nameKrn": "에덴지하통로 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60045,
+"nameCn": "伊甸地下通道第五层",
+"nameTn": "伊甸地下通道第五層",
+"nameKrn": "에덴지하통로 5층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60046,
+"nameCn": "伊甸地牢",
+"nameTn": "伊甸地牢",
+"nameKrn": "에덴지하감옥",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60047,
+"nameCn": "地下秘密通道",
+"nameTn": "地下秘密通道",
+"nameKrn": "지하 비밀통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60048,
+"nameCn": "碧霄洞窟第四层",
+"nameTn": "碧霄洞窟第四層",
+"nameKrn": "벽천동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60049,
+"nameCn": "库塔伊洞窟地下一楼",
+"nameTn": "庫塔伊洞窟地下一樓",
+"nameKrn": "쿠타이동굴 지하 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40516
+},
+{
+"ID": 60050,
+"nameCn": "库塔伊洞窟地下二楼",
+"nameTn": "庫塔伊洞窟地下二樓",
+"nameKrn": "지룡동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40516
+},
+{
+"ID": 60051,
+"nameCn": "库塔伊洞窟地下三楼",
+"nameTn": "庫塔伊洞窟地下三樓",
+"nameKrn": "쿠타이동굴 지하 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40516
+},
+{
+"ID": 60052,
+"nameCn": "库塔伊洞窟地下四楼",
+"nameTn": "庫塔伊洞窟地下四樓",
+"nameKrn": "쿠타이동굴 지하 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40516
+},
+{
+"ID": 60053,
+"nameCn": "帕拉火洞窟",
+"nameTn": "帕拉火洞窟",
+"nameKrn": "파라불동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60054,
+"nameCn": "帕拉火之眼",
+"nameTn": "帕拉火之眼",
+"nameKrn": "파라불의 눈",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60055,
+"nameCn": "帕拉火之星洞窟",
+"nameTn": "帕拉火之星洞窟",
+"nameKrn": "파라불의 별동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60056,
+"nameCn": "帕拉火之流洞窟",
+"nameTn": "帕拉火之流洞窟",
+"nameKrn": "파라불의 유성동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60057,
+"nameCn": "斯洛克洞窟第一层",
+"nameTn": "斯洛克洞窟第一層",
+"nameKrn": "슬로크동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60058,
+"nameCn": "斯洛克洞窟第二层",
+"nameTn": "斯洛克洞窟第二層",
+"nameKrn": "슬로크동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60059,
+"nameCn": "斯洛克洞窟第三层",
+"nameTn": "斯洛克洞窟第三層",
+"nameKrn": "슬로크동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60060,
+"nameCn": "斯洛克洞窟第四层",
+"nameTn": "斯洛克洞窟第四層",
+"nameKrn": "슬로크동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60061,
+"nameCn": "斯洛克洞窟第四层之一",
+"nameTn": "斯洛克洞窟第四層之一",
+"nameKrn": "슬로크동굴 4층 1",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60062,
+"nameCn": "斯洛克洞窟第五层",
+"nameTn": "斯洛克洞窟第五層",
+"nameKrn": "슬로크동굴 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60063,
+"nameCn": "萨伊洛山洞第一层",
+"nameTn": "薩伊洛山洞第一層",
+"nameKrn": "샴기르산동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60064,
+"nameCn": "萨伊洛山洞第二层",
+"nameTn": "薩伊洛山洞第二層",
+"nameKrn": "샴기르산동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60065,
+"nameCn": "萨伊洛山洞第三层",
+"nameTn": "薩伊洛山洞第三層",
+"nameKrn": "샴기르산동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60066,
+"nameCn": "萨伊洛山洞第四层",
+"nameTn": "薩伊洛山洞第四層",
+"nameKrn": "샴기르산동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60067,
+"nameCn": "萨伊洛山洞第五层",
+"nameTn": "薩伊洛山洞第五層",
+"nameKrn": "샴기르산동굴 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60068,
+"nameCn": "萨伊洛山顶嚎淇",
+"nameTn": "薩伊洛山頂嚎淇",
+"nameKrn": "샴기르산정상 소리치기",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60069,
+"nameCn": "萨伊洛山洞第四层",
+"nameTn": "薩伊洛山洞第四層",
+"nameKrn": "샴기르산동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60070,
+"nameCn": "斯洛克洞窟第五层之二",
+"nameTn": "斯洛克洞窟第五層之二",
+"nameKrn": "슬로크동굴 5층 2",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60071,
+"nameCn": "斯洛克洞窟第六层",
+"nameTn": "斯洛克洞窟第六層",
+"nameKrn": "슬로크동굴 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60072,
+"nameCn": "库沙达洞窟第一层",
+"nameTn": "庫沙達洞窟第一層",
+"nameKrn": "쿠사다동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60073,
+"nameCn": "库沙达洞窟第二层",
+"nameTn": "庫沙達洞窟第二層",
+"nameKrn": "쿠사다동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60074,
+"nameCn": "库沙达洞窟第三层",
+"nameTn": "庫沙達洞窟第三層",
+"nameKrn": "쿠사다동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60075,
+"nameCn": "库沙达洞窟第四层",
+"nameTn": "庫沙達洞窟第四層",
+"nameKrn": "쿠사다동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60076,
+"nameCn": "库沙达洞窟第五层",
+"nameTn": "庫沙達洞窟第五層",
+"nameKrn": "쿠사다동굴 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60077,
+"nameCn": "库沙达洞窟第四层",
+"nameTn": "庫沙達洞窟第四層",
+"nameKrn": "쿠사다동굴 4층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60078,
+"nameCn": "水龙洞窟之一",
+"nameTn": "水龍洞窟之一",
+"nameKrn": "수룡동굴 1",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60079,
+"nameCn": "水龙洞窟之三",
+"nameTn": "水龍洞窟之三",
+"nameKrn": "수룡동굴 3",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60080,
+"nameCn": "监牢通道",
+"nameTn": "監牢通道",
+"nameKrn": "감옥통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60081,
+"nameCn": "监牢通道",
+"nameTn": "監牢通道",
+"nameKrn": "감옥통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60082,
+"nameCn": "监牢",
+"nameTn": "監牢",
+"nameKrn": "감옥",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60083,
+"nameCn": "监牢",
+"nameTn": "監牢",
+"nameKrn": "감옥",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60084,
+"nameCn": "伊甸地下通道",
+"nameTn": "伊甸地下通道",
+"nameKrn": "에덴지하도",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60085,
+"nameCn": "伊甸地下通道",
+"nameTn": "伊甸地下通道",
+"nameKrn": "에덴지하도",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60086,
+"nameCn": "伊甸地下通道",
+"nameTn": "伊甸地下通道",
+"nameKrn": "에덴지하도",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60087,
+"nameCn": "伊甸地下通道",
+"nameTn": "伊甸地下通道",
+"nameKrn": "에덴지하도",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60088,
+"nameCn": "伊甸通道底层",
+"nameTn": "伊甸通道底層",
+"nameKrn": "에덴통로 저층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60089,
+"nameCn": "魔军伊甸仓库",
+"nameTn": "魔軍伊甸倉庫",
+"nameKrn": "마군에덴 창고",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60100,
+"nameCn": "塔耳塔盐矿",
+"nameTn": "塔耳塔鹽礦",
+"nameKrn": "타르타르 소금광산",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60101,
+"nameCn": "地精灵洞窟",
+"nameTn": "地精靈洞窟",
+"nameKrn": "땅정령의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60102,
+"nameCn": "地精灵洞窟",
+"nameTn": "地精靈洞窟",
+"nameKrn": "땅정령의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60103,
+"nameCn": "地精灵洞窟",
+"nameTn": "地精靈洞窟",
+"nameKrn": "땅정령의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60201,
+"nameCn": "地下水路第1层",
+"nameTn": "地下水路第1層",
+"nameKrn": "지하수로 1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60202,
+"nameCn": "地下水路第2层",
+"nameTn": "地下水路第2層",
+"nameKrn": "지하수로 2층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60203,
+"nameCn": "地下水路第3层",
+"nameTn": "地下水路第3層",
+"nameKrn": "지하수로 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60204,
+"nameCn": "地下水路第4层",
+"nameTn": "地下水路第4層",
+"nameKrn": "지하수로 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 701
+},
+{
+"ID": 60205,
+"nameCn": "地下水路第5层",
+"nameTn": "地下水路第5層",
+"nameKrn": "지하수로 5층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60206,
+"nameCn": "地下水路第6层",
+"nameTn": "地下水路第6層",
+"nameKrn": "지하수로 6층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60207,
+"nameCn": "地下水路第7层",
+"nameTn": "地下水路第7層",
+"nameKrn": "지하수로 7층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60208,
+"nameCn": "地下水路第八层",
+"nameTn": "地下水路第八層",
+"nameKrn": "지하수로 8층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60209,
+"nameCn": "动物园仓库",
+"nameTn": "動物園倉庫",
+"nameKrn": "동물원 창고",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60210,
+"nameCn": "动物园仓库",
+"nameTn": "動物園倉庫",
+"nameKrn": "동물원 창고",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60211,
+"nameCn": "动物园仓库",
+"nameTn": "動物園倉庫",
+"nameKrn": "동물원 창고",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60212,
+"nameCn": "动物园仓库",
+"nameTn": "動物園倉庫",
+"nameKrn": "동물원 창고",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60213,
+"nameCn": "地下水路第八层",
+"nameTn": "地下水路第八層",
+"nameKrn": "지하수로 8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60215,
+"nameCn": "水精灵洞窟",
+"nameTn": "水精靈洞窟",
+"nameKrn": "물정령의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60216,
+"nameCn": "水精灵洞窟",
+"nameTn": "水精靈洞窟",
+"nameKrn": "물정령의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60300,
+"nameCn": "蒙达村地下通路",
+"nameTn": "蒙達村地下通路",
+"nameKrn": "문다마을 지하통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60301,
+"nameCn": "蒙达山海底通道",
+"nameTn": "蒙達山海底通道",
+"nameKrn": "문다산 해저통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60302,
+"nameCn": "蒙达山洞窟",
+"nameTn": "蒙達山洞窟",
+"nameKrn": "문다산 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60303,
+"nameCn": "蒙达山山洞通道",
+"nameTn": "蒙達山山洞通道",
+"nameKrn": "문다산 동굴통로",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60304,
+"nameCn": "蒙达山山洞通道",
+"nameTn": "蒙達山山洞通道",
+"nameKrn": "문다산 동굴통로",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60305,
+"nameCn": "蒙达山洞窟",
+"nameTn": "蒙達山洞窟",
+"nameKrn": "문다산동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60306,
+"nameCn": "伊塔工作室",
+"nameTn": "伊塔工作室",
+"nameKrn": "이타작업실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60307,
+"nameCn": "卡罗的精神结界",
+"nameTn": "卡羅的精神結界",
+"nameKrn": "카로의 정신경계",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60308,
+"nameCn": "试炼洞窟第一层",
+"nameTn": "試煉洞窟第一層",
+"nameKrn": "시험동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60309,
+"nameCn": "试炼洞窟第二层",
+"nameTn": "試煉洞窟第二層",
+"nameKrn": "시험동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60310,
+"nameCn": "试炼洞窟第三层",
+"nameTn": "試煉洞窟第三層",
+"nameKrn": "시험동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60311,
+"nameCn": "试炼洞窟第四层",
+"nameTn": "試煉洞窟第四層",
+"nameKrn": "시험동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60312,
+"nameCn": "伊塔工作室",
+"nameTn": "伊塔工作室",
+"nameKrn": "이타작업실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 301
+},
+{
+"ID": 60313,
+"nameCn": "火精灵火山洞窟",
+"nameTn": "火精靈火山洞窟",
+"nameKrn": "화정령의 화산동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60314,
+"nameCn": "火山道场通道",
+"nameTn": "火山道場通道",
+"nameKrn": "화산도장 통로",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60315,
+"nameCn": "火精灵火山洞窟",
+"nameTn": "火精靈火山洞窟",
+"nameKrn": "화정령의 화산동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60316,
+"nameCn": "火精灵火山洞窟",
+"nameTn": "火精靈火山洞窟",
+"nameKrn": "화정령의 화산동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60317,
+"nameCn": "火山道场第一层",
+"nameTn": "火山道場第一層",
+"nameKrn": "화산도장 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60318,
+"nameCn": "火山道场第二层",
+"nameTn": "火山道場第二層",
+"nameKrn": "화산도장 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60319,
+"nameCn": "火山道场第三层",
+"nameTn": "火山道場第三層",
+"nameKrn": "화산도장 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60320,
+"nameCn": "火山道场第四层",
+"nameTn": "火山道場第四層",
+"nameKrn": "화산도장 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60321,
+"nameCn": "火山道场第五层",
+"nameTn": "火山道場第五層",
+"nameKrn": "화산도장 5층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60322,
+"nameCn": "火山道场第六层",
+"nameTn": "火山道場第六層",
+"nameKrn": "화산도장 6층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60323,
+"nameCn": "火山道场第七层",
+"nameTn": "火山道場第七層",
+"nameKrn": "화산도장 7층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60324,
+"nameCn": "火山道场第八层",
+"nameTn": "火山道場第八層",
+"nameKrn": "화산도장 8층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60325,
+"nameCn": "火山道场第九层",
+"nameTn": "火山道場第九層",
+"nameKrn": "화산도장 9층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60326,
+"nameCn": "火山道场第十层",
+"nameTn": "火山道場第十層",
+"nameKrn": "화산도장 10층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60327,
+"nameCn": "火山道场第十一层",
+"nameTn": "火山道場第十一層",
+"nameKrn": "화산도장 11층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60328,
+"nameCn": "火山道场第十二层",
+"nameTn": "火山道場第十二層",
+"nameKrn": "화산도장 12층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60329,
+"nameCn": "火山道场第十三层",
+"nameTn": "火山道場第十三層",
+"nameKrn": "화산도장 13층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60330,
+"nameCn": "火山道场第十四层",
+"nameTn": "火山道場第十四層",
+"nameKrn": "화산도장 14층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60331,
+"nameCn": "火山道场第十五层",
+"nameTn": "火山道場第十五層",
+"nameKrn": "화산도장 15층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60332,
+"nameCn": "火山道场第十六层",
+"nameTn": "火山道場第十六層",
+"nameKrn": "화산도장 16층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60333,
+"nameCn": "火山道场第十七层",
+"nameTn": "火山道場第十七層",
+"nameKrn": "화산도장 17층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60334,
+"nameCn": "火山道场第十八层",
+"nameTn": "火山道場第十八層",
+"nameKrn": "화산도장 18층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60335,
+"nameCn": "火山道场第十九层",
+"nameTn": "火山道場第十九層",
+"nameKrn": "화산도장 19층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60336,
+"nameCn": "火山道场第二十层",
+"nameTn": "火山道場第二十層",
+"nameKrn": "화산도장 20층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60337,
+"nameCn": "火灵道场柜台",
+"nameTn": "火靈道場櫃檯",
+"nameKrn": "화정령의 도장데스크",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60338,
+"nameCn": "火山洞窟第一层",
+"nameTn": "火山洞窟第一層",
+"nameKrn": "화산동굴 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60339,
+"nameCn": "火山洞窟第二层",
+"nameTn": "火山洞窟第二層",
+"nameKrn": "화산동굴 2층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60340,
+"nameCn": "火山洞窟第三层",
+"nameTn": "火山洞窟第三層",
+"nameKrn": "화산동굴 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60341,
+"nameCn": "火山洞窟第四层",
+"nameTn": "火山洞窟第四層",
+"nameKrn": "화산동굴 4층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60342,
+"nameCn": "火山道场第二十一层",
+"nameTn": "火山道場第二十一層",
+"nameKrn": "화산도장 21층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60343,
+"nameCn": "伊塔工作室",
+"nameTn": "伊塔工作室",
+"nameKrn": "이타작업실",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 60344,
+"nameCn": "火山道场医务室",
+"nameTn": "火山道場醫務室",
+"nameKrn": "화산도장의무실",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61000,
+"nameCn": "焦热之地",
+"nameTn": "焦熱之地",
+"nameKrn": "뜨거운 땅",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61001,
+"nameCn": "魔域前哨营地",
+"nameTn": "魔域前哨營地",
+"nameKrn": "악마성전초기지",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61002,
+"nameCn": "炙热洞窟",
+"nameTn": "炙熱洞窟",
+"nameKrn": "뜨거운 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61003,
+"nameCn": "炙热洞窟",
+"nameTn": "炙熱洞窟",
+"nameKrn": "뜨거운 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61004,
+"nameCn": "炙热洞窟",
+"nameTn": "炙熱洞窟",
+"nameKrn": "뜨거운 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61005,
+"nameCn": "熔核洞窟",
+"nameTn": "熔核洞窟",
+"nameKrn": "용핵동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61006,
+"nameCn": "魔域前哨营地医院",
+"nameTn": "魔域前哨營地醫院",
+"nameKrn": "악마성전초기지 병원",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61007,
+"nameCn": "炙热洞窟",
+"nameTn": "炙熱洞窟",
+"nameKrn": "뜨거운 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61008,
+"nameCn": "诡异洞窟",
+"nameTn": "詭異洞窟",
+"nameKrn": "이상한 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61009,
+"nameCn": "诡异洞窟",
+"nameTn": "詭異洞窟",
+"nameKrn": "이상한 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61010,
+"nameCn": "诡异洞窟",
+"nameTn": "詭異洞窟",
+"nameKrn": "이상한 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61011,
+"nameCn": "神秘的铁匠铺",
+"nameTn": "神秘的鐵匠鋪",
+"nameKrn": "신비의 대장간",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61100,
+"nameCn": "魔域边境",
+"nameTn": "魔域邊境",
+"nameKrn": "악마성국경",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61101,
+"nameCn": "结界塔一楼",
+"nameTn": "結界塔一樓",
+"nameKrn": "경계의탑 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61102,
+"nameCn": "结界塔二楼",
+"nameTn": "結界塔二樓",
+"nameKrn": "경계의탑 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61103,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61104,
+"nameCn": "结界塔一楼",
+"nameTn": "結界塔一樓",
+"nameKrn": "경계의탑 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61105,
+"nameCn": "结界塔二楼",
+"nameTn": "結界塔二樓",
+"nameKrn": "경계의탑 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61106,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61107,
+"nameCn": "结界塔一楼",
+"nameTn": "結界塔一樓",
+"nameKrn": "경계의탑 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61108,
+"nameCn": "结界塔二楼",
+"nameTn": "結界塔二樓",
+"nameKrn": "경계의탑 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61109,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61110,
+"nameCn": "结界塔一楼",
+"nameTn": "結界塔一樓",
+"nameKrn": "경계의탑 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61111,
+"nameCn": "结界塔二楼",
+"nameTn": "結界塔二樓",
+"nameKrn": "경계의탑 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61112,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61113,
+"nameCn": "营地管理处",
+"nameTn": "營地管理處",
+"nameKrn": "영지관리소",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61114,
+"nameCn": "艾巴登魔城大厅",
+"nameTn": "艾巴登魔城大廳",
+"nameKrn": "에바덴악마성대홀",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61115,
+"nameCn": "营地战务室",
+"nameTn": "營地戰務室",
+"nameKrn": "영지전투업무실",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61116,
+"nameCn": "艾巴登魔城大厅",
+"nameTn": "艾巴登魔城大廳",
+"nameKrn": "에바덴악마성대홀",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61117,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61118,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61119,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 61120,
+"nameCn": "结界塔三楼",
+"nameTn": "結界塔三樓",
+"nameKrn": "경계의탑 3층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65501,
+"nameCn": "西风群岛",
+"nameTn": "西風群島",
+"nameKrn": "서풍제도",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65502,
+"nameCn": "西风地穴一层",
+"nameTn": "西風地穴一層",
+"nameKrn": "서풍동굴 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65503,
+"nameCn": "西风地穴二层",
+"nameTn": "西風地穴二層",
+"nameKrn": "서풍동굴 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65504,
+"nameCn": "西风地穴三层",
+"nameTn": "西風地穴三層",
+"nameKrn": "서풍동굴 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65505,
+"nameCn": "西风神秘洞穴",
+"nameTn": "西風神秘洞穴",
+"nameKrn": "서풍 신비의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65506,
+"nameCn": "西风神秘洞穴",
+"nameTn": "西風神秘洞穴",
+"nameKrn": "서풍 신비의 동굴",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65507,
+"nameCn": "西风神秘洞穴",
+"nameTn": "西風神秘洞穴",
+"nameKrn": "서풍 신비의 동굴",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65508,
+"nameCn": "西风神秘洞穴",
+"nameTn": "西風神秘洞穴",
+"nameKrn": "서풍 신비의 동굴",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 60053
+},
+{
+"ID": 65509,
+"nameCn": "西风冰原",
+"nameTn": "西風冰原",
+"nameKrn": "서풍빙천",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66001,
+"nameCn": "异界魔王一殿",
+"nameTn": "異界魔王一殿",
+"nameKrn": "이계마왕 1대전",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66002,
+"nameCn": "异界魔王二殿",
+"nameTn": "異界魔王二殿",
+"nameKrn": "이계마왕 2대전",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66003,
+"nameCn": "异界魔王三殿",
+"nameTn": "異界魔王三殿",
+"nameKrn": "이계마왕 3대전",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66004,
+"nameCn": "异界魔王四殿",
+"nameTn": "異界魔王四殿",
+"nameKrn": "이계마왕 4대전",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66005,
+"nameCn": "异界魔王五殿",
+"nameTn": "異界魔王五殿",
+"nameKrn": "이계마왕 5대전",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66011,
+"nameCn": "精灵王的藏匿空间",
+"nameTn": "精靈王的藏匿空間",
+"nameKrn": "정령왕의 은신처",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 40516
+},
+{
+"ID": 66012,
+"nameCn": "勇者空间2F",
+"nameTn": "勇者空間2F",
+"nameKrn": "용사의 공간 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66013,
+"nameCn": "勇者空间3F",
+"nameTn": "勇者空間3F",
+"nameKrn": "용사의 공간 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66014,
+"nameCn": "勇者空间4F",
+"nameTn": "勇者空間4F",
+"nameKrn": "용사의 공간 4층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66015,
+"nameCn": "勇者空间5F",
+"nameTn": "勇者空間5F",
+"nameKrn": "용사의 공간 5층",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66021,
+"nameCn": "领主殿堂1F",
+"nameTn": "領主殿堂1F",
+"nameKrn": "영주전당 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 70024
+},
+{
+"ID": 66022,
+"nameCn": "领主殿堂2F",
+"nameTn": "領主殿堂2F",
+"nameKrn": "영주전당 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 70024
+},
+{
+"ID": 66023,
+"nameCn": "领主殿堂3F",
+"nameTn": "領主殿堂3F",
+"nameKrn": "영주전당 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 70024
+},
+{
+"ID": 66024,
+"nameCn": "领主殿堂4F",
+"nameTn": "領主殿堂4F",
+"nameKrn": "영주전당 4층",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 66025,
+"nameCn": "领主殿堂5F",
+"nameTn": "領主殿堂5F",
+"nameKrn": "영주전당 5층",
+"mapBgm": 20,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 67001,
+"nameCn": "灵石之间",
+"nameTn": "靈石之間",
+"nameKrn": "영석의 경계",
+"mapBgm": 15,
+"type": 1,
+"fightBg": 31402
+},
+{
+"ID": 67002,
+"nameCn": "乱斗竞技场",
+"nameTn": "亂鬥競技場",
+"nameKrn": "난무투기장",
+"mapBgm": 14,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 80001,
+"nameCn": "萨姆吉尔的医院",
+"nameTn": "薩姆吉爾的醫院",
+"nameKrn": "샴기르의 병원",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 80002,
+"nameCn": "萨姆吉尔的村长家",
+"nameTn": "薩姆吉爾的村長家",
+"nameKrn": "샴기르의 촌장집",
+"mapBgm": 16,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 80003,
+"nameCn": "玛丽娜丝村",
+"nameTn": "瑪麗娜絲村",
+"nameKrn": "마리너스마을",
+"mapBgm": 4,
+"type": 1,
+"fightBg": 40514
+},
+{
+"ID": 81001,
+"nameCn": "阎罗魔城一殿",
+"nameTn": "閻羅魔城一殿",
+"nameKrn": "지옥 악마의 성 1층",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 70028
+},
+{
+"ID": 81002,
+"nameCn": "阎罗魔城二殿",
+"nameTn": "閻羅魔城二殿",
+"nameKrn": "지옥 악마의 성 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 70010
+},
+{
+"ID": 81003,
+"nameCn": "阎罗魔城三殿",
+"nameTn": "閻羅魔城三殿",
+"nameKrn": "지옥 악마의 성 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 70016
+},
+{
+"ID": 81004,
+"nameCn": "阎罗魔城四殿",
+"nameTn": "閻羅魔城四殿",
+"nameKrn": "지옥 악마의 성 4층",
+"mapBgm": 14,
+"type": 1,
+"fightBg": 70027
+},
+{
+"ID": 81005,
+"nameCn": "阎罗魔城五殿",
+"nameTn": "閻羅魔城五殿",
+"nameKrn": "지옥 악마의 성 5층",
+"mapBgm": 14,
+"type": 1,
+"fightBg": 40000
+},
+{
+"ID": 82001,
+"nameCn": "无息之境",
+"nameTn": "無息之境",
+"nameKrn": "숨멎는 경계",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40513
+},
+{
+"ID": 82004,
+"nameCn": "无息之境",
+"nameTn": "無息之境",
+"nameKrn": "숨멎는 경계",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 40513
+},
+{
+"ID": 82005,
+"nameCn": "恭贺新禧",
+"nameTn": "恭賀新禧",
+"nameKrn": "새해축하",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82006,
+"nameCn": "魔域恶霸的住宅",
+"nameTn": "魔域惡霸的住宅",
+"nameKrn": "마왕성 악마의 거주지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 70008
+},
+{
+"ID": 82007,
+"nameCn": "魔域恶霸的住宅",
+"nameTn": "魔域惡霸的住宅",
+"nameKrn": "마왕성 악마의 거주지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82008,
+"nameCn": "魔域恶霸的住宅",
+"nameTn": "魔域惡霸的住宅",
+"nameKrn": "마왕성 악마의 거주지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82009,
+"nameCn": "魔域恶霸的住宅",
+"nameTn": "魔域惡霸的住宅",
+"nameKrn": "마왕성 악마의 거주지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82010,
+"nameCn": "魔域恶霸的住宅",
+"nameTn": "魔域惡霸的住宅",
+"nameKrn": "마왕성 악마의 거주지",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82011,
+"nameCn": "中秋素材一楼",
+"nameTn": "中秋素材一樓",
+"nameKrn": "추석 행사 소재 1층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 888
+},
+{
+"ID": 82012,
+"nameCn": "中秋素材二楼",
+"nameTn": "中秋素材二樓",
+"nameKrn": "추석 행사 소재 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 70022
+},
+{
+"ID": 82013,
+"nameCn": "130地雷練級",
+"nameTn": "130地雷練級"
+},
+{
+"ID": 82016,
+"nameCn": "熔岩秘境",
+"nameTn": "熔岩秘境",
+"mapBgm": 7,
+"type": 1,
+"fightBg": 70016
+},
+{
+"ID": 82017,
+"nameCn": "无尽炼狱二层",
+"nameTn": "無盡煉獄二層",
+"nameKrn": "끝없는 지옥 2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 70016
+},
+{
+"ID": 82018,
+"nameCn": "无尽炼狱三层",
+"nameTn": "無盡煉獄三層",
+"nameKrn": "끝없는 지옥 3층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 70016
+},
+{
+"ID": 82019,
+"nameCn": "月之幻境地下第一层",
+"nameTn": "月之幻境地下第一層",
+"nameKrn": "달의경계 지하1층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 300
+},
+{
+"ID": 82020,
+"nameCn": "月之幻境地下第二层",
+"nameTn": "月之幻境地下第二層",
+"nameKrn": "달의경계 지하2층",
+"mapBgm": 8,
+"type": 1,
+"fightBg": 300
+},
+{
+"ID": 82021,
+"nameCn": "无尽炼狱四层",
+"nameTn": "無盡煉獄四層",
+"nameKrn": "끝없는 지옥 4층",
+"mapBgm": 9,
+"type": 1,
+"fightBg": 70016
+}
+]

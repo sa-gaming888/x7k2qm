@@ -1,0 +1,93 @@
+[
+{
+"ID": "LotteryUI",
+"abname": "lottery2",
+"EAssetsType": 26
+},
+{
+"ID": "UILoading",
+"rankStringList": [
+"mapbg60067"
+]
+},
+{
+"ID": "UILogin",
+"abname": "mapbg60067"
+},
+{
+"ID": "UIVersionName",
+"abname": "_yhkrn"
+},
+{
+"ID": "RandPkBtn",
+"showFlg": false
+},
+{
+"ID": "ActivtyBtn",
+"showFlg": false
+},
+{
+"ID": "WTaskOneKeyBtn",
+"showFlg": false
+},
+{
+"ID": "ShopBoothUpBtn",
+"showFlg": true
+},
+{
+"ID": "ShopBoothDownBtn",
+"showFlg": false
+},
+{
+"ID": "PetGrowWin",
+"abname": "UINewPetGrowScreen"
+},
+{
+"ID": "EverydayRechargeBtn",
+"showFlg": true
+},
+{
+"ID": "UIPetNewHuiLu",
+"showFlg": true,
+"abname": "UIPetNewHuiLuScreen"
+},
+{
+"ID": "wgFunctionOpen",
+"showFlg": true
+},
+{
+"ID": "wtaskMarketFunctionOpen",
+"showFlg": false
+},
+{
+"ID": "NewRolePanel",
+"showFlg": true
+},
+{
+"ID": "NewPetPanel",
+"showFlg": true
+},
+{
+"ID": "PetXSOpen",
+"showFlg": true
+},
+{
+"ID": "PetGroupIcon"
+},
+{
+"ID": "RoleBattleUI",
+"abname": "_yhkrn"
+},
+{
+"ID": "FastBattleSkillSelect",
+"showFlg": true
+},
+{
+"ID": "BattleDieIcon",
+"EAssetsType": 302
+},
+{
+"ID": "fontAbName",
+"abname": "fontskorean"
+}
+]

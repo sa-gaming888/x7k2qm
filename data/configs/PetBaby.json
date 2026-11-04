@@ -1,0 +1,452 @@
+[
+{
+"ID": 1,
+"petId": 55,
+"point": {
+"map": 300,
+"x": 526,
+"y": 101
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 2,
+"petId": 321,
+"point": {
+"map": 10203,
+"x": 11,
+"y": 32
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 3,
+"petId": 194,
+"point": {
+"map": 100,
+"x": 608,
+"y": 206
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 4,
+"petId": 354,
+"point": {
+"map": 5510,
+"x": 34,
+"y": 14
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 5,
+"petId": 45,
+"point": {
+"map": 100,
+"x": 290,
+"y": 184
+}
+},
+{
+"ID": 6,
+"petId": 660,
+"point": {
+"map": 10007,
+"x": 26,
+"y": 48
+}
+},
+{
+"ID": 7,
+"petId": 318,
+"point": {
+"map": 200,
+"x": 479,
+"y": 495
+}
+},
+{
+"ID": 8,
+"petId": 49,
+"point": {
+"map": 100,
+"x": 526,
+"y": 144
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 9,
+"petId": 50,
+"point": {
+"map": 10601,
+"x": 29,
+"y": 46
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 10,
+"petId": 340,
+"point": {
+"map": 30701,
+"x": 30,
+"y": 29
+}
+},
+{
+"ID": 11,
+"petId": 323,
+"point": {
+"map": 31806,
+"x": 5,
+"y": 5
+}
+},
+{
+"ID": 12,
+"petId": 1037,
+"point": {
+"map": 500,
+"x": 270,
+"y": 355
+}
+},
+{
+"ID": 13,
+"petId": 410,
+"point": {
+"map": 200,
+"x": 358,
+"y": 673
+}
+},
+{
+"ID": 14,
+"petId": 1557,
+"point": {
+"map": 5507,
+"x": 46,
+"y": 24
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 15,
+"petId": 1397,
+"point": {
+"map": 32018,
+"x": 47,
+"y": 53
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 16,
+"petId": 1065,
+"point": {
+"map": 400,
+"x": 24,
+"y": 98
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 17,
+"petId": 1451,
+"point": {
+"map": 500,
+"x": 500,
+"y": 517
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 18,
+"petId": 307,
+"point": {
+"map": 200,
+"x": 477,
+"y": 634
+}
+},
+{
+"ID": 19,
+"petId": 308,
+"point": {
+"map": 200,
+"x": 358,
+"y": 673
+}
+},
+{
+"ID": 20,
+"petId": 309,
+"point": {
+"map": 300,
+"x": 229,
+"y": 354
+}
+},
+{
+"ID": 21,
+"petId": 1642,
+"point": {
+"map": 60071,
+"x": 25,
+"y": 8
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 22,
+"petId": 1660,
+"point": {
+"map": 60341,
+"x": 29,
+"y": 14
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 23,
+"petId": 1601,
+"point": {
+"map": 11210,
+"x": 43,
+"y": 33
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 24,
+"petId": 2347,
+"point": {
+"map": 30008,
+"x": 81,
+"y": 17
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 25,
+"petId": 2348,
+"point": {
+"map": 21007,
+"x": 56,
+"y": 51
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 26,
+"petId": 2417,
+"point": {
+"map": 817,
+"x": 55,
+"y": 161
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 27,
+"petId": 2418,
+"point": {
+"map": 817,
+"x": 159,
+"y": 83
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 28,
+"petId": 2119,
+"point": {
+"map": 817,
+"x": 324,
+"y": 28
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 29,
+"petId": 2120,
+"point": {
+"map": 817,
+"x": 151,
+"y": 439
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 30,
+"petId": 2099,
+"point": {
+"map": 8014,
+"x": 7,
+"y": 13
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 31,
+"petId": 2083,
+"point": {
+"map": 817,
+"x": 210,
+"y": 388
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 32,
+"petId": 2084,
+"point": {
+"map": 8009,
+"x": 38,
+"y": 33
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 33,
+"petId": 2409,
+"point": {
+"map": 817,
+"x": 358,
+"y": 167
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 34,
+"petId": 2410,
+"point": {
+"map": 817,
+"x": 326,
+"y": 26
+},
+"condtion": [
+{
+"currencyType": 3,
+"currencyValue": 2000
+}
+]
+}
+]

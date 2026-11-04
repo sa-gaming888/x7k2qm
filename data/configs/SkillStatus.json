@@ -1,0 +1,11835 @@
+[
+{
+"ID": 10001001,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_618",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10002001,
+"nameCn": "猛毒",
+"nameTn": "猛毒",
+"nameKr": "맹독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_618",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10004001,
+"nameCn": "混乱",
+"nameTn": "混亂",
+"nameKr": "혼란",
+"descCn": "一定几率随机选择技能和目标",
+"descTn": "一定幾率隨機選擇技能和目標",
+"icon": "skill_27",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "일정 확률로 무작위 기능 사용 및 대상 공격",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10004002,
+"nameCn": "混乱",
+"nameTn": "混亂",
+"nameKr": "혼란",
+"descCn": "一定几率随机选择技能和目标",
+"descTn": "一定幾率隨機選擇技能和目標",
+"icon": "skill_27",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "일정 확률로 무작위 기능 사용 및 대상 공격",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10004003,
+"nameCn": "混乱",
+"nameTn": "混亂",
+"nameKr": "혼란",
+"descCn": "一定几率随机选择技能和目标",
+"descTn": "一定幾率隨機選擇技能和目標",
+"icon": "skill_27",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "일정 확률로 무작위 기능 사용 및 대상 공격",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10004004,
+"nameCn": "混乱",
+"nameTn": "混亂",
+"nameKr": "혼란",
+"descCn": "一定几率随机选择技能和目标",
+"descTn": "一定幾率隨機選擇技能和目標",
+"icon": "skill_27",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "일정 확률로 무작위 기능 사용 및 대상 공격",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10004005,
+"nameCn": "混乱",
+"nameTn": "混亂",
+"nameKr": "혼란",
+"descCn": "一定几率随机选择技能和目标",
+"descTn": "一定幾率隨機選擇技能和目標",
+"icon": "skill_27",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "일정 확률로 무작위 기능 사용 및 대상 공격",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10005001,
+"nameCn": "酒醉",
+"nameTn": "酒醉",
+"nameKr": "만취",
+"descCn": "物理攻击-30%,物理防御-30%,敏捷-30%",
+"descTn": "物理攻擊-30%,物理防禦-30%,敏捷-30%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -30%, 물리 방어력 -30%, 민첩 -30%",
+"statusEffect": [
+{
+"statusType": 2106,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10005002,
+"nameCn": "酒醉",
+"nameTn": "酒醉",
+"nameKr": "만취",
+"descCn": "物理攻击-30%,物理防御-30%,敏捷-30%",
+"descTn": "物理攻擊-30%,物理防禦-30%,敏捷-30%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -30%, 물리 방어력 -30%, 민첩 -30%",
+"statusEffect": [
+{
+"statusType": 2106,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10005003,
+"nameCn": "酒醉",
+"nameTn": "酒醉",
+"nameKr": "만취",
+"descCn": "物理攻击-30%,物理防御-30%,敏捷-30%",
+"descTn": "物理攻擊-30%,物理防禦-30%,敏捷-30%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -30%, 물리 방어력 -30%, 민첩 -30%",
+"statusEffect": [
+{
+"statusType": 2106,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10005004,
+"nameCn": "酒醉",
+"nameTn": "酒醉",
+"nameKr": "만취",
+"descCn": "物理攻击-30%,物理防御-30%,敏捷-30%",
+"descTn": "物理攻擊-30%,物理防禦-30%,敏捷-30%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -30%, 물리 방어력 -30%, 민첩 -30%",
+"statusEffect": [
+{
+"statusType": 2106,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10005005,
+"nameCn": "酒醉",
+"nameTn": "酒醉",
+"nameKr": "만취",
+"descCn": "物理攻击-30%,物理防御-30%,敏捷-30%",
+"descTn": "物理攻擊-30%,物理防禦-30%,敏捷-30%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -30%, 물리 방어력 -30%, 민첩 -30%",
+"statusEffect": [
+{
+"statusType": 2106,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10006001,
+"nameCn": "睡眠",
+"nameTn": "睡眠",
+"nameKr": "수면",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_80",
+"effect": {
+"effectId": 100553,
+"type": 1
+},
+"buffType": 2,
+"descKr": "동작 불가",
+"statusEffect": [
+{
+"statusType": 2104,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10006002,
+"nameCn": "睡眠",
+"nameTn": "睡眠",
+"nameKr": "수면",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_80",
+"effect": {
+"effectId": 100553,
+"type": 1
+},
+"buffType": 2,
+"descKr": "동작 불가",
+"statusEffect": [
+{
+"statusType": 2104,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10006003,
+"nameCn": "睡眠",
+"nameTn": "睡眠",
+"nameKr": "수면",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_80",
+"effect": {
+"effectId": 100553,
+"type": 1
+},
+"buffType": 2,
+"descKr": "동작 불가",
+"statusEffect": [
+{
+"statusType": 2104,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10006004,
+"nameCn": "睡眠",
+"nameTn": "睡眠",
+"nameKr": "수면",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_80",
+"effect": {
+"effectId": 100553,
+"type": 1
+},
+"buffType": 2,
+"descKr": "동작 불가",
+"statusEffect": [
+{
+"statusType": 2104,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10006005,
+"nameCn": "睡眠",
+"nameTn": "睡眠",
+"nameKr": "수면",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_80",
+"effect": {
+"effectId": 100553,
+"type": 1
+},
+"buffType": 2,
+"descKr": "동작 불가",
+"statusEffect": [
+{
+"statusType": 2104,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10007001,
+"nameCn": "潜伏",
+"nameTn": "潛伏",
+"nameKr": "잠복",
+"descCn": "隐身(无法被攻击),并使物理攻击提高150",
+"descTn": "隱身(無法被攻擊),並使物理攻擊提高150",
+"icon": "skill_117",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투명화(공격불가), 물리 공격력 150 증가",
+"statusEffect": [
+{
+"statusType": 3001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10008001,
+"nameCn": "灵魂链接",
+"nameTn": "靈魂鏈接",
+"nameKr": "영혼의 연결",
+"descCn": "受到伤害由施法方共同承担",
+"descTn": "受到傷害由施法方共同承擔",
+"icon": "skill_94",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "입은 피해를 공동으로 분담",
+"statusEffect": [
+{
+"statusType": 4005,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10009001,
+"nameCn": "集中",
+"nameTn": "集中",
+"nameKr": "집중",
+"descCn": "物理命中提高10",
+"descTn": "物理命中提高10",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 10 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10010001,
+"nameCn": "怒急攻心",
+"nameTn": "怒急攻心",
+"nameKr": "조급한 마음",
+"descCn": "物理命中降低30",
+"descTn": "物理命中降低30",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 -30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10010002,
+"nameCn": "怒急攻心",
+"nameTn": "怒急攻心",
+"nameKr": "조급한 마음",
+"descCn": "物理命中降低30",
+"descTn": "物理命中降低30",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 -30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10010003,
+"nameCn": "飞膝踢",
+"nameTn": "飛膝踢",
+"nameKr": "날아차기",
+"descCn": "防御力下降30%",
+"descTn": "防禦力下降30%",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10011001,
+"nameCn": "背水之战1",
+"nameTn": "背水之戰1",
+"nameKr": "배수의 진 1",
+"descCn": "物理防御-30%,物理攻击+30%",
+"descTn": "物理防禦-30%,物理攻擊+30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -30%, 물리 공격력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10011002,
+"nameCn": "背水之战2",
+"nameTn": "背水之戰2",
+"nameKr": "배수의 진 2",
+"descCn": "物理防御-50%,物理攻击+50%",
+"descTn": "物理防禦-50%,物理攻擊+50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10011003,
+"nameCn": "T背水之战3",
+"nameTn": "T背水之戰3",
+"nameKr": "T배수의 진 3",
+"descCn": "物理防御-50%,物理攻击+80%",
+"descTn": "物理防禦-50%,物理攻擊+80%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +80%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10011004,
+"nameCn": "T背水之战3",
+"nameTn": "T背水之戰3",
+"nameKr": "T배수의 진 3",
+"descCn": "物理防御-50%,物理攻击+80%",
+"descTn": "物理防禦-50%,物理攻擊+80%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +80%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10011005,
+"nameCn": "T背水之战3",
+"nameTn": "T背水之戰3",
+"nameKr": "T배수의 진 3",
+"descCn": "物理防御-50%,物理攻击+80%",
+"descTn": "物理防禦-50%,物理攻擊+80%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +80%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10012001,
+"nameCn": "火线猎杀",
+"nameTn": "火線獵殺",
+"nameKr": "전쟁사냥",
+"descCn": "攻击力+20%",
+"descTn": "攻擊力+20%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10013001,
+"nameCn": "使用落马术",
+"nameTn": "使用落馬術",
+"nameKr": "낙마술 사용",
+"descCn": "攻击力-30%",
+"descTn": "攻擊力-30%",
+"icon": "skill_427",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10014001,
+"nameCn": "狂暴",
+"nameTn": "狂暴",
+"nameKr": "광폭",
+"descCn": "物理防御-30%,物理攻击+100%",
+"descTn": "物理防禦-30%,物理攻擊+100%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -30%, 물리 공격력 +100%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10015001,
+"nameCn": "疾速",
+"nameTn": "疾速",
+"nameKr": "질풍",
+"descCn": "物理防御-50%，攻击 +50% 敏+100",
+"descTn": "物理防禦-50%，攻擊 +50% 敏+100",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 공격력 +50%, 민첩 +100",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10016001,
+"nameCn": "铁壁",
+"nameTn": "鐵壁",
+"nameKr": "철벽",
+"descCn": "友方全体物理防御+30%",
+"descTn": "友方全體物理防禦+30%",
+"icon": "skill_254",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체의 물리 방어력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10017001,
+"nameCn": "圣光",
+"nameTn": "聖光",
+"nameKr": "성스러운 빛",
+"descCn": "结束时治疗目标,并施加复活效果",
+"descTn": "結束時治療目標,並施加復活效果",
+"icon": "skill_148",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "종료 후 대상을 치유하고 부활 효과 적용",
+"statusEffect": [
+{
+"statusType": 1501,
+"para1": 1000,
+"para2": 1000,
+"para3": 100,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10018001,
+"nameCn": "虚弱",
+"nameTn": "虛弱",
+"nameKr": "허약",
+"descCn": "物理攻击-20%,物理防御-20% 敏-20%",
+"descTn": "物理攻擊-20%,物理防禦-20% 敏-20%",
+"icon": "skill_95",
+"imageId": "7",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -20%, 물리 방어력 -20%, 민첩 -20%",
+"statusEffect": [
+{
+"statusType": 2111,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10019001,
+"nameCn": "剧毒",
+"nameTn": "劇毒",
+"nameKr": "극독",
+"descCn": "中毒5回合，第六回合前未解则阵亡",
+"descTn": "中毒5回合，第六回合前未解則陣亡",
+"icon": "skill_56",
+"imageId": "24",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "5턴 동안 중독되며, 6턴까지 해결되지 않으면 사망",
+"statusEffect": [
+{
+"statusType": 1102,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 1,
+"para7": 6
+}
+]
+},
+{
+"ID": 10020001,
+"nameCn": "魔障",
+"nameTn": "魔障",
+"nameKr": "마의 장벽",
+"descCn": "无法行动,且附带中毒效果",
+"descTn": "無法行動,且附帶中毒效果",
+"icon": "skill_6",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동불가, 중독 효과",
+"statusEffect": [
+{
+"statusType": 1102,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 1,
+"para7": 0
+},
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10021001,
+"nameCn": "沉默",
+"nameTn": "沉默",
+"nameKr": "침묵",
+"descCn": "无法使用法术",
+"descTn": "無法使用法術",
+"icon": "skill_221",
+"imageId": "10",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "마법사용 불가",
+"statusEffect": [
+{
+"statusType": 2003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10022001,
+"nameCn": "祝福",
+"nameTn": "祝福",
+"nameKr": "축복",
+"descCn": "防御提高85点",
+"descTn": "防禦提高85點",
+"icon": "skill_60",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 85포인트 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10023001,
+"nameCn": "风之速",
+"nameTn": "風之速",
+"nameKr": "바람의 속도",
+"descCn": "物理闪避提高30%",
+"descTn": "物理閃避提高30%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 회피가 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10024001,
+"nameCn": "暗月变身",
+"nameTn": "暗月變身",
+"nameKr": "암월변신",
+"descCn": "变身后增加30%的攻击力跟敏捷,魔防减半有效时间五回合",
+"descTn": "變身後增加30%的攻擊力跟敏捷,魔防減半有效時間五回合",
+"icon": "skill_4",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "변신 후 공격력과 민첩 30% 증가, 마법 방어력 50% 감소, 지속 시간 5턴",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 111428,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10024002,
+"nameCn": "暗月变身",
+"nameTn": "暗月變身",
+"nameKr": "암월변신",
+"descCn": "攻+25%、敏+5%, 受到远程攻击伤害+5%",
+"descTn": "攻+25%、敏+5%, 受到遠程攻擊傷害+5%",
+"icon": "skill_4",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +25%, 민첩 +5%, 원거리 공격으로 받는 데미지 +5%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 111428,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10025001,
+"nameCn": "大地铠甲",
+"nameTn": "大地鎧甲",
+"nameKr": "대지의 갑옷",
+"descCn": "物理防御+15%",
+"descTn": "物理防禦+15%",
+"icon": "skill_58",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10025002,
+"nameCn": "坚守",
+"nameTn": "堅守",
+"nameKr": "수성",
+"descCn": "防御+100%三回合",
+"descTn": "防禦+100%三回合",
+"icon": "skill_254",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "3턴 동안 방어력 +100%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10025003,
+"nameCn": "大地铠甲Ex",
+"nameTn": "大地鎧甲Ex",
+"nameKr": "대지의 갑옷 Ex",
+"descCn": "物理防御+25%",
+"descTn": "物理防禦+25%",
+"icon": "skill_58",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 +25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10026001,
+"nameCn": "水灵滋润",
+"nameTn": "水靈滋潤",
+"nameKr": "물 정령의 윤택",
+"descCn": "恢复300生命值",
+"descTn": "恢復300生命值",
+"icon": "skill_148",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "HP 300 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 300000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10027001,
+"nameCn": "火焰威能",
+"nameTn": "火焰威能",
+"nameKr": "화염의 위력",
+"descCn": "物理攻击+15%",
+"descTn": "物理攻擊+15%",
+"icon": "skill_207",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10027002,
+"nameCn": "火焰威能Ex",
+"nameTn": "火焰威能Ex",
+"nameKr": "화염의 위력Ex",
+"descCn": "物理攻击+25%",
+"descTn": "物理攻擊+25%",
+"icon": "skill_207",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10028001,
+"nameCn": "风之吹息",
+"nameTn": "風之吹息",
+"nameKr": "바람의 숨결",
+"descCn": "敏捷+15%",
+"descTn": "敏捷+15%",
+"icon": "skill_212",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10028002,
+"nameCn": "风之吹息Ex",
+"nameTn": "風之吹息Ex",
+"nameKr": "바람의 숨결 Ex",
+"descCn": "敏捷+25%",
+"descTn": "敏捷+25%",
+"icon": "skill_212",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10029001,
+"nameCn": "胆怯",
+"nameTn": "膽怯",
+"nameKr": "위축",
+"descCn": "物理攻击降低20%,胆怯无法动弹",
+"descTn": "物理攻擊降低20%,膽怯無法動彈",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 20%감소, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10030001,
+"nameCn": "振奋",
+"nameTn": "振奮",
+"nameKr": "활력을 불어넣다",
+"descCn": "物理攻击-20%,物理防御-30%",
+"descTn": "物理攻擊-20%,物理防禦-30%",
+"icon": "skill_167",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 -20%, 물리 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10031001,
+"nameCn": "耳鸣",
+"nameTn": "耳鳴",
+"nameKr": "이명",
+"descCn": "物理闪避-5%",
+"descTn": "物理閃避-5%",
+"icon": "skill_119",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 회피 -5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10032001,
+"nameCn": "残废",
+"nameTn": "殘廢",
+"nameKr": "불구",
+"descCn": "物理攻击-10%",
+"descTn": "物理攻擊-10%",
+"icon": "skill_147",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10033001,
+"nameCn": "筋疲力尽",
+"nameTn": "筋疲力盡",
+"nameKr": "탈진한",
+"descCn": "物理攻击-20%",
+"descTn": "物理攻擊-20%",
+"icon": "skill_147",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10034001,
+"nameCn": "麻痹",
+"nameTn": "麻痹",
+"nameKr": "마비",
+"descCn": "麻痹,无法行动",
+"descTn": "麻痹,無法行動",
+"icon": "skill_429",
+"imageId": "19",
+"effect": {
+"effectId": 200043,
+"type": 1
+},
+"buffType": 2,
+"descKr": "마비, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2103,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10034002,
+"nameCn": "麻痹",
+"nameTn": "麻痹",
+"nameKr": "마비",
+"descCn": "麻痹,无法行动",
+"descTn": "麻痹,無法行動",
+"icon": "skill_429",
+"imageId": "19",
+"effect": {
+"effectId": 200043,
+"type": 1
+},
+"buffType": 2,
+"descKr": "마비, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2103,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10035001,
+"nameCn": "反震",
+"nameTn": "反震",
+"nameKr": "반사공격",
+"descCn": "反射150%物理伤害一次",
+"descTn": "反射150%物理傷害一次",
+"icon": "skill_120",
+"effect": {
+"effectId": 200044,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 피해의 150%를 1회 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1700,
+"para3": 10209001,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 10036001,
+"nameCn": "流血",
+"nameTn": "流血",
+"nameKr": "출혈",
+"descCn": "每回合受到10%攻击+35物理伤害",
+"descTn": "每回合受到10%攻擊+35物理傷害",
+"icon": "skill_454",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "매 턴마다 공격력 10% + 물리 피해 35를 입음",
+"statusEffect": [
+{
+"statusType": 1102,
+"para1": 10,
+"para2": 10,
+"para3": 35,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10037001,
+"nameCn": "灼烧",
+"nameTn": "灼燒",
+"nameKr": "작열",
+"descCn": "每回合受到5%攻击+5魔法伤害,损失5点魔法值",
+"descTn": "每回合受到5%攻擊+5魔法傷害,損失5點魔法值",
+"icon": "skill_421",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "매 턴마다 공격력 5% + 마법 피해 5를 입고 마법치 5 손실",
+"statusEffect": [
+{
+"statusType": 1112,
+"para1": 5,
+"para2": 5,
+"para3": 5,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+},
+{
+"statusType": 1202,
+"para1": 5,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10038001,
+"nameCn": "反转",
+"nameTn": "反轉",
+"nameKr": "반전",
+"descCn": "属性被反转",
+"descTn": "屬性被反轉",
+"icon": "skill_316",
+"imageId": "11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "속성 반전을 입음",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10039001,
+"nameCn": "憾甲",
+"nameTn": "憾甲",
+"nameKr": "아쉬운 공격",
+"descCn": "攻击力上升30%防御下降30%，对敌人造成伤害",
+"descTn": "攻擊力上升30%防禦下降30%，對敵人造成傷害",
+"icon": "skill_105",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 30% 증가 방어력 30% 감소 적에게 피해를 줍니다.",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10040001,
+"nameCn": "觉醒",
+"nameTn": "覺醒",
+"nameKr": "각성",
+"descCn": "物理命中+20,物理闪避+20,物理攻击+5%,敏捷+5%，持续10回合",
+"descTn": "物理命中+20,物理閃避+20,物理攻擊+5%,敏捷+5%，持續10回合",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 +20, 물리 회피 +20, 물리 공격력 +5%, 민첩 +5%, 10턴 지속",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10041001,
+"nameCn": "元气盾",
+"nameTn": "元氣盾",
+"nameKr": "원기의 방패",
+"descCn": "吸收伤害",
+"descTn": "吸收傷害",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "데미지 흡수",
+"statusEffect": [
+{
+"statusType": 4003,
+"para1": 300,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10042001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "物理攻击+70%,物理防御-40%",
+"descTn": "物理攻擊+70%,物理防禦-40%",
+"icon": "skill_110",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +70%, 물리 방어력 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10042002,
+"nameCn": "愤怒改",
+"nameTn": "憤怒改",
+"nameKr": "분노의 변화",
+"descCn": "命中上升,敏捷上升,对敌人随机造成200%-500%的物理伤害",
+"descTn": "命中上升,敏捷上升,對敵人隨機造成200%-500%的物理傷害",
+"icon": "skill_110",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "명중과 민첩 증가, 적에게 무작위로 200%~500%의 물리 피해",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10042003,
+"nameCn": "旋风斩",
+"nameTn": "旋風斬",
+"nameKr": "회오리베기",
+"descCn": "物理攻击+70%,物理防御-40%",
+"descTn": "物理攻擊+70%,物理防禦-40%",
+"icon": "skill_110",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +70%, 물리 방어력 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10042004,
+"nameCn": "卧虎腾龙",
+"nameTn": "臥虎騰龍",
+"nameKr": "와호장룡",
+"descCn": "物理攻击+70%,物理防御-40%",
+"descTn": "物理攻擊+70%,物理防禦-40%",
+"icon": "skill_110",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +70%, 물리 방어력 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10043001,
+"nameCn": "浴血狂狼",
+"nameTn": "浴血狂狼",
+"nameKr": "유혈광랑",
+"descCn": "物理攻击+20%,敏捷+20%,物理暴击+30",
+"descTn": "物理攻擊+20%,敏捷+20%,物理暴擊+30",
+"icon": "skill_94",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +20%, 민첩 +20%, 물리치명타 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10044001,
+"nameCn": "狂乱2",
+"nameTn": "狂亂2",
+"nameKr": "광란 2",
+"descCn": "物理攻击+20%，物理防御-50%",
+"descTn": "物理攻擊+20%，物理防禦-50%",
+"icon": "skill_404",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +20%, 물리 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10045001,
+"nameCn": "狂犬病",
+"nameTn": "狂犬病",
+"nameKr": "광견병",
+"descCn": "病入膏肓,混乱",
+"descTn": "病入膏肓,混亂",
+"icon": "skill_404",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "불치병, 혼란",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10046001,
+"nameCn": "暴怒",
+"nameTn": "暴怒",
+"nameKr": "격노",
+"descCn": "物理攻击+80%,物理防御-70%,物理命中-20",
+"descTn": "物理攻擊+80%,物理防禦-70%,物理命中-20",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +80%, 물리 방어력 -70%, 물리 명중 -20",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10047001,
+"nameCn": "狂暴撕裂",
+"nameTn": "狂暴撕裂",
+"nameKr": "광폭찢기",
+"descCn": "物理攻击-20%,物理防御-30%,物理命中+30",
+"descTn": "物理攻擊-20%,物理防禦-30%,物理命中+30",
+"icon": "skill_310",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 -20%, 물리 방어력 -30%, 물리 명중 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10048001,
+"nameCn": "必杀",
+"nameTn": "必殺",
+"nameKr": "필살",
+"descCn": "人物攻击力上升100%,命中提升",
+"descTn": "人物攻擊力上升100%,命中提升",
+"icon": "skill_124",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "캐릭터의 공격력 100% 증가, 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10049001,
+"nameCn": "破甲",
+"nameTn": "破甲",
+"nameKr": "갑옷파괴",
+"descCn": "物理防御-30%",
+"descTn": "物理防禦-30%",
+"icon": "skill_105",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 방어력 -30%",
+"statusEffect": [
+{
+"statusType": 2111,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10050001,
+"nameCn": "眩晕",
+"nameTn": "眩暈",
+"nameKr": "현기증",
+"descCn": "眩晕,无法行动",
+"descTn": "眩暈,無法行動",
+"icon": "skill_352",
+"effect": {
+"effectId": 101626,
+"type": 1
+},
+"buffType": 2,
+"descKr": "현기증, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10051001,
+"nameCn": "迷乱",
+"nameTn": "迷亂",
+"nameKr": "착란",
+"descCn": "物理攻击-60%,物理防御-30%",
+"descTn": "物理攻擊-60%,物理防禦-30%",
+"icon": "skill_27",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 공격력 -60%, 물리 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10052001,
+"nameCn": "冲击",
+"nameTn": "衝擊",
+"nameKr": "충격",
+"descCn": "魔障,无法行动",
+"descTn": "魔障,無法行動",
+"icon": "skill_6",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "악마의 장벽, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2108,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10053001,
+"nameCn": "暴走",
+"nameTn": "暴走",
+"nameKr": "폭주",
+"descCn": "物理防御-25%,物理命中-15",
+"descTn": "物理防禦-25%,物理命中-15",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 방어력 -25%, 물리 명중 -15",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10054001,
+"nameCn": "神经剧毒",
+"nameTn": "神經劇毒",
+"nameKr": "신경극독",
+"descCn": "麻痹,无法行动",
+"descTn": "麻痹,無法行動",
+"icon": "skill_498",
+"imageId": "19",
+"effect": {
+"effectId": 100551,
+"type": 1
+},
+"buffType": 2,
+"descKr": "마비, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10055001,
+"nameCn": "大地护盾",
+"nameTn": "大地護盾",
+"nameKr": "대지의 방패",
+"descCn": "吸收伤害",
+"descTn": "吸收傷害",
+"icon": "skill_77",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "데미지 흡수",
+"statusEffect": [
+{
+"statusType": 4003,
+"para1": 150,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10056001,
+"nameCn": "精灵王护盾",
+"nameTn": "精靈王護盾",
+"nameKr": "정령왕의 방패",
+"descCn": "吸收伤害",
+"descTn": "吸收傷害",
+"icon": "skill_77",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "데미지 흡수",
+"statusEffect": [
+{
+"statusType": 4003,
+"para1": 500,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10057001,
+"nameCn": "大地神符",
+"nameTn": "大地神符",
+"nameKr": "대지의 부적",
+"descCn": "物理防御+15%",
+"descTn": "物理防禦+15%",
+"icon": "skill_77",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10058001,
+"nameCn": "火神威能",
+"nameTn": "火神威能",
+"nameKr": "화신의 위력",
+"descCn": "物理攻击+15%",
+"descTn": "物理攻擊+15%",
+"icon": "skill_125",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10059001,
+"nameCn": "风神护体",
+"nameTn": "風神護體",
+"nameKr": "풍신의 보호",
+"descCn": "敏捷+15%",
+"descTn": "敏捷+15%",
+"icon": "skill_125",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10060001,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10060002,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10060003,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10060004,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10060005,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10060006,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害",
+"descTn": "中毒，每回合受到一定物理傷害",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독 상태, 매턴 일정량의 물리 데미지 피해",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 100,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10061001,
+"nameCn": "石化",
+"nameTn": "石化",
+"nameKr": "석화",
+"descCn": "无法行动,物理防御提高",
+"descTn": "無法行動,物理防禦提高",
+"icon": "skill_249",
+"effect": {
+"effectId": 100550,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가, 물리 방어력 증가",
+"statusEffect": [
+{
+"statusType": 2105,
+"para1": 2,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10061002,
+"nameCn": "石化",
+"nameTn": "石化",
+"nameKr": "석화",
+"descCn": "无法行动,物理防御提高",
+"descTn": "無法行動,物理防禦提高",
+"icon": "skill_249",
+"effect": {
+"effectId": 100550,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가, 물리 방어력 증가",
+"statusEffect": [
+{
+"statusType": 2105,
+"para1": 2,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10061003,
+"nameCn": "石化",
+"nameTn": "石化",
+"nameKr": "석화",
+"descCn": "无法行动,物理防御提高",
+"descTn": "無法行動,物理防禦提高",
+"icon": "skill_249",
+"effect": {
+"effectId": 100550,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가, 물리 방어력 증가",
+"statusEffect": [
+{
+"statusType": 2105,
+"para1": 2,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10061004,
+"nameCn": "石化",
+"nameTn": "石化",
+"nameKr": "석화",
+"descCn": "无法行动,物理防御提高",
+"descTn": "無法行動,物理防禦提高",
+"icon": "skill_249",
+"effect": {
+"effectId": 100550,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가, 물리 방어력 증가",
+"statusEffect": [
+{
+"statusType": 2105,
+"para1": 2,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10061005,
+"nameCn": "石化",
+"nameTn": "石化",
+"nameKr": "석화",
+"descCn": "无法行动,物理防御提高",
+"descTn": "無法行動,物理防禦提高",
+"icon": "skill_249",
+"effect": {
+"effectId": 100550,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가, 물리 방어력 증가",
+"statusEffect": [
+{
+"statusType": 2105,
+"para1": 2,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 10062001,
+"nameCn": "光吸收",
+"nameTn": "光吸收",
+"nameKr": "빛흡수",
+"descCn": "吸收100%攻击,转换为生命值",
+"descTn": "吸收100%攻擊,轉換為生命值",
+"icon": "skill_278",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격을 100% 흡수하고 HP로 전환",
+"statusEffect": [
+{
+"statusType": 7501,
+"para1": 1000,
+"para2": 1000,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 10062002,
+"nameCn": "光吸收*3",
+"nameTn": "光吸收*3",
+"nameKr": "빛흡수*3",
+"descCn": "吸收100%攻击,转换为生命值",
+"descTn": "吸收100%攻擊,轉換為生命值",
+"icon": "skill_278",
+"effect": {
+"effectId": 200081,
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격을 100% 흡수하고 HP로 전환",
+"statusEffect": [
+{
+"statusType": 7501,
+"para1": 1000,
+"para2": 1000,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 3
+}
+]
+},
+{
+"ID": 10063001,
+"nameCn": "镜反射",
+"nameTn": "鏡反射",
+"nameKr": "거울반사",
+"descCn": "反射100%伤害给施法者",
+"descTn": "反射100%傷害給施法者",
+"icon": "skill_34",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 100% 시전자에게 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 10209001,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 10063002,
+"nameCn": "镜反射*3",
+"nameTn": "鏡反射*3",
+"nameKr": "거울반사*3",
+"descCn": "反射100%伤害给施法者",
+"descTn": "反射100%傷害給施法者",
+"icon": "skill_34",
+"effect": {
+"effectId": 200044,
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 100% 시전자에게 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 10209001,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 3
+}
+]
+},
+{
+"ID": 10064001,
+"nameCn": "守护",
+"nameTn": "守護",
+"nameKr": "수호",
+"descCn": "完全抵消伤害",
+"descTn": "完全抵消傷害",
+"icon": "skill_120",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 완전히 무효화",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 2
+}
+]
+},
+{
+"ID": 10064002,
+"nameCn": "守护*5",
+"nameTn": "守護*5",
+"nameKr": "수호*5",
+"descCn": "完全抵消伤害",
+"descTn": "完全抵消傷害",
+"icon": "skill_120",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 완전히 무효화",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 5
+}
+]
+},
+{
+"ID": 10064003,
+"nameCn": "守护*3",
+"nameTn": "守護*3",
+"nameKr": "수호*3",
+"descCn": "完全抵消伤害",
+"descTn": "完全抵消傷害",
+"icon": "skill_120",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 완전히 무효화",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 3
+}
+]
+},
+{
+"ID": 10064004,
+"nameCn": "神奇串烧",
+"nameTn": "神奇串燒",
+"nameKr": "신비한 꼬치",
+"descCn": "敏捷+300点,守护1个单位3次,2回合有效",
+"descTn": "敏捷+300點,守護1個單位3次,2回合有效",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +300, 단일 수호 3회, 2턴 간 지속",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10064005,
+"nameCn": "守护",
+"nameTn": "守護",
+"nameKr": "수호",
+"descCn": "完全抵消伤害",
+"descTn": "完全抵消傷害",
+"icon": "skill_120",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 완전히 무효화",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 99
+}
+]
+},
+{
+"ID": 10064006,
+"nameCn": "守护",
+"nameTn": "守護",
+"nameKr": "수호",
+"descCn": "完全抵消伤害",
+"descTn": "完全抵消傷害",
+"icon": "skill_120",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해를 완전히 무효화",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 10065001,
+"nameCn": "浸湿",
+"nameTn": "浸濕",
+"nameKr": "젖은 상태",
+"descCn": "全身湿透,极易导电",
+"descTn": "全身濕透,極易導電",
+"icon": "skill_229",
+"effect": {
+"effectId": 101680,
+"type": 1
+},
+"buffType": 2,
+"descKr": "젖은 상태, 전기가 통하기 쉬움",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10066001,
+"nameCn": "嗜血蛊",
+"nameTn": "嗜血蠱",
+"nameKr": "호혈구",
+"descCn": "每回合损失13点怒气",
+"descTn": "每回合損失13點怒氣",
+"icon": "skill_404",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "매 턴마다 분노 -13",
+"statusEffect": [
+{
+"statusType": 1302,
+"para1": 13,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10067001,
+"nameCn": "冰镜",
+"nameTn": "冰鏡",
+"nameKr": "얼음거울",
+"descCn": "防御-100点",
+"descTn": "防禦-100點",
+"icon": "skill_388",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "방어 -100",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10068001,
+"nameCn": "魔力附体",
+"nameTn": "魔力附體",
+"nameKr": "마력빙의",
+"descCn": "攻击+10%",
+"descTn": "攻擊+10%",
+"icon": "skill_396",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10069001,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "物理闪避+30",
+"descTn": "物理閃避+30",
+"icon": "skill_251",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리회피 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10070001,
+"nameCn": "畏惧",
+"nameTn": "畏懼",
+"nameKr": "두려움",
+"descCn": "物理命中-40,物理暴击-50",
+"descTn": "物理命中-40,物理暴擊-50",
+"icon": "skill_268",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 명중 -40, 물리 크리티컬 -50",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10071001,
+"nameCn": "激化",
+"nameTn": "激化",
+"nameKr": "격화",
+"descCn": "物理攻击+50%,物理防御-20%",
+"descTn": "物理攻擊+50%,物理防禦-20%",
+"icon": "skill_261",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +50%, 물리 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10072001,
+"nameCn": "能量汇聚",
+"nameTn": "能量彙聚",
+"nameKr": "원기융합",
+"descCn": "防御上升30%,攻击力上升30%",
+"descTn": "防禦上升30%,攻擊力上升30%",
+"icon": "skill_261",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 30% 증가, 공격력 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10073001,
+"nameCn": "专注",
+"nameTn": "專注",
+"nameKr": "집중",
+"descCn": "物理命中+30",
+"descTn": "物理命中+30",
+"icon": "skill_124",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10074001,
+"nameCn": "破甲",
+"nameTn": "破甲",
+"nameKr": "갑옷파괴",
+"descCn": "物理防御-50%",
+"descTn": "物理防禦-50%",
+"icon": "skill_246",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10075001,
+"nameCn": "迷失",
+"nameTn": "迷失",
+"nameKr": "분실",
+"descCn": "物理命中-25",
+"descTn": "物理命中-25",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 명중 -25",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10076001,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-20%",
+"descTn": "敏捷-20%",
+"icon": "skill_401",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10077001,
+"nameCn": "网",
+"nameTn": "網",
+"nameKr": "그물",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_114",
+"effect": {
+"effectId": 200083,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10078001,
+"nameCn": "挑拨",
+"nameTn": "挑撥",
+"nameKr": "도발",
+"descCn": "混乱,物理攻击-20%",
+"descTn": "混亂,物理攻擊-20%",
+"icon": "skill_119",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "혼란, 물리 공격력 -20%",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10079001,
+"nameCn": "自然生长",
+"nameTn": "自然生長",
+"nameKr": "자연성장",
+"descCn": "每回合恢复300生命值",
+"descTn": "每回合恢復300生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "매 턴마다 HP 300을 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 300000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10080001,
+"nameCn": "地结界",
+"nameTn": "地結界",
+"nameKr": "땅의 결계",
+"descCn": "受到的地魔法伤害减少30%",
+"descTn": "受到的地魔法傷害減少30%",
+"icon": "skill_215",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 대지 마법 피해가 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10081001,
+"nameCn": "水结界",
+"nameTn": "水結界",
+"nameKr": "물의 결계",
+"descCn": "受到的水魔法伤害减少30%",
+"descTn": "受到的水魔法傷害減少30%",
+"icon": "skill_229",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 물 마법 피해가 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10082001,
+"nameCn": "火结界",
+"nameTn": "火結界",
+"nameKr": "불의 결계",
+"descCn": "受到的火魔法伤害减少30%",
+"descTn": "受到的火魔法傷害減少30%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 화염 마법 피해가 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10083001,
+"nameCn": "风结界",
+"nameTn": "風結界",
+"nameKr": "바람의 결계",
+"descCn": "受到的风魔法伤害减少30%",
+"descTn": "受到的風魔法傷害減少30%",
+"icon": "skill_226",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 바람 마법 피해가 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10084001,
+"nameCn": "暗藏杀机",
+"nameTn": "暗藏殺機",
+"nameKr": "숨겨진 살의",
+"descCn": "攻+50% 防-35% 命中-1",
+"descTn": "攻+50% 防-35% 命中-1",
+"icon": "skill_317",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -35%, 명중 -1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10085001,
+"nameCn": "反击",
+"nameTn": "反擊",
+"nameKr": "역습",
+"descCn": "受到攻击时触发反击,每回合只能触发3次",
+"descTn": "受到攻擊時觸發反擊,每回合只能觸發3次",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격을 받으면 반격, 턴당 3회 발동",
+"statusEffect": [
+{
+"statusType": 7201,
+"para1": 1000,
+"para2": 3,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10086001,
+"nameCn": "分裂",
+"nameTn": "分裂",
+"nameKr": "분열",
+"descCn": "物理攻击额外对2个目标造成30%伤害",
+"descTn": "物理攻擊額外對2個目標造成30%傷害",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "2개의 대상에 물리 공격 30% 추가 데미지",
+"statusEffect": [
+{
+"statusType": 7401,
+"para1": 102,
+"para2": 2,
+"para3": 300,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10089001,
+"nameCn": "精灵庇护",
+"nameTn": "精靈庇護",
+"nameKr": "정령의 비호",
+"descCn": "受到精灵的庇护,不会受到任何伤害",
+"descTn": "受到精靈的庇護,不會受到任何傷害",
+"icon": "skill_120",
+"effect": {
+"effectId": 200012,
+"type": 1
+},
+"buffType": 1,
+"descKr": "정령을 비호, 어떠한 피해도 입지 않음",
+"statusEffect": [
+{
+"statusType": 4001,
+"para1": 999,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 99999
+}
+]
+},
+{
+"ID": 10090001,
+"nameCn": "地球一周",
+"nameTn": "地球一周",
+"nameKr": "지구일주",
+"descCn": "绕地球一周，一回合从背后攻击敌人",
+"descTn": "繞地球一周，一回合從背後攻擊敵人",
+"icon": "skill_74",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지구를 한 바퀴 돌고 뒤에서 적을 공격",
+"statusEffect": [
+{
+"statusType": 2109,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10090002,
+"nameCn": "地球一周",
+"nameTn": "地球一周",
+"nameKr": "지구일주",
+"descCn": "绕地球一周，一回合从背后攻击敌人",
+"descTn": "繞地球一周，一回合從背後攻擊敵人",
+"icon": "skill_74",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지구를 한 바퀴 돌고  뒤에서 적을 공격",
+"statusEffect": [
+{
+"statusType": 2109,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10091001,
+"nameCn": "突击",
+"nameTn": "突擊",
+"nameKr": "모아치기",
+"descCn": "一回合储存力量，下次攻击时就会有两倍的攻击力",
+"descTn": "一回合儲存力量，下次攻擊時就會有兩倍的攻擊力",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "1턴 간 힘을 모아 다음 턴 공격 시 공격력 2배",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10091002,
+"nameCn": "双重突击",
+"nameTn": "雙重突擊",
+"nameKr": "더블모아치기",
+"descCn": "二回合储存力量，下次攻击时就会有两倍以上的攻击力",
+"descTn": "二回合儲存力量，下次攻擊時就會有兩倍以上的攻擊力",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "2턴 간 힘을 모아 다음 턴 공격 시 공격력 2배 이상",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10091003,
+"nameCn": "突击2",
+"nameTn": "突擊2",
+"nameKr": "모아치기2",
+"descCn": "一回合储存力量，下次攻击时就会有2.5倍攻击力",
+"descTn": "一回合儲存力量，下次攻擊時就會有2.5倍攻擊力",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "1턴 간 힘을 모아 다음 턴 공격 시 공격력 2.5배",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10092001,
+"nameCn": "忠犬",
+"nameTn": "忠犬",
+"nameKr": "충견진돗개",
+"descCn": "保护主人不受到敌人的直接攻击",
+"descTn": "保護主人不受到敵人的直接攻擊",
+"icon": "skill_224",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적의 직접적인 공격으로부터 주인을 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 10093001,
+"nameCn": "缠绕",
+"nameTn": "纏繞",
+"nameKr": "감기",
+"descCn": "被缠绕,无法行动",
+"descTn": "被纏繞,無法行動",
+"icon": "skill_429",
+"effect": {
+"effectId": 101682,
+"type": 2
+},
+"buffType": 2,
+"descKr": "갇힘, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2004,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 10094001,
+"nameCn": "乌力化",
+"nameTn": "烏力化",
+"nameKr": "우리화",
+"descCn": "乌力化,无法使用技能",
+"descTn": "烏力化,無法使用技能",
+"icon": "skill_571",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "우리로 변신, 스킬 사용 불가",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 100250,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+},
+{
+"statusType": 2003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 90001001,
+"nameCn": "精灵守护",
+"nameTn": "精靈守護",
+"nameKr": "정령의 수호",
+"descCn": "不再遇敌",
+"descTn": "不再遇敵",
+"icon": "skill_459",
+"effect": {
+"type": 1
+},
+"descKr": "적을 만나지 않음",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 90002001,
+"nameCn": "原地守护",
+"nameTn": "原地守護",
+"nameKr": "제자리 수호",
+"descCn": "原地遇敌",
+"descTn": "原地遇敵",
+"icon": "skill_564",
+"effect": {
+"type": 1
+},
+"descKr": "제자리에서 적을 만남",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 90004001,
+"nameCn": "驯兽师",
+"nameTn": "馴獸師",
+"nameKr": "조련사",
+"descCn": "捕捉成功率+30",
+"descTn": "捕捉成功率+30",
+"icon": "skill_261",
+"effect": {
+"type": 1
+},
+"descKr": "포획 성공률 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 90005001,
+"nameCn": "水下呼吸",
+"nameTn": "水下呼吸",
+"nameKr": "수중호흡",
+"descCn": "可以在水下呼吸",
+"descTn": "可以在水下呼吸",
+"icon": "skill_227",
+"effect": {
+"type": 1
+},
+"descKr": "물 속에서도 숨을 쉴 수 있다",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3001001,
+"nameCn": "马不停蹄",
+"nameTn": "馬不停蹄",
+"nameKr": "쉼없는 공격",
+"descCn": "物理攻击10%,物理防御-10%",
+"descTn": "物理攻擊10%,物理防禦-10%",
+"icon": "skill_167",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 10%, 물리 방어력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3002001,
+"nameCn": "负荆请罪",
+"nameTn": "負荊請罪",
+"nameKr": "석고대죄",
+"descCn": "防御力降低50%，给与敌人2.5倍伤害",
+"descTn": "防禦力降低50%，給與敵人2.5倍傷害",
+"icon": "skill_120",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력을 50% 감소, 적에게 2.5배의 데미지",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3003001,
+"nameCn": "白熊变身",
+"nameTn": "白熊變身",
+"nameKr": "백곰변신",
+"descCn": "物理攻击+30%,敏捷+30%",
+"descTn": "物理攻擊+30%,敏捷+30%",
+"icon": "skill_4",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +30%, 민첩 +30%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 102011,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3004001,
+"nameCn": "棕熊变身",
+"nameTn": "棕熊變身",
+"nameKr": "불곰별신",
+"descCn": "物理攻击+30%,敏捷+30%",
+"descTn": "物理攻擊+30%,敏捷+30%",
+"icon": "skill_4",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +30%, 민첩 +30%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 102012,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3005001,
+"nameCn": "撕裂",
+"nameTn": "撕裂",
+"nameKr": "찢기",
+"descCn": "撕裂旧伤口",
+"descTn": "撕裂舊傷口",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "오래된 상처를 찢기",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3005002,
+"nameCn": "撕裂",
+"nameTn": "撕裂",
+"nameKr": "찢기",
+"descCn": "撕裂旧伤口",
+"descTn": "撕裂舊傷口",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "오래된 상처를 찢기",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3006001,
+"nameCn": "马不停蹄",
+"nameTn": "馬不停蹄",
+"nameKr": "쉼없는 공격",
+"descCn": "物理攻击10%,物理防御-10%",
+"descTn": "物理攻擊10%,物理防禦-10%",
+"icon": "skill_167",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 10%, 물리 방어력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3007001,
+"nameCn": "魔之诅咒",
+"nameTn": "魔之詛咒",
+"nameKr": "악마의 저주",
+"descCn": "受到物理伤害+30%  变成克制敌人的属性",
+"descTn": "受到物理傷害+30%  變成克制敵人的屬性",
+"icon": "skill_421",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3008001,
+"nameCn": "魔纹",
+"nameTn": "魔紋",
+"nameKr": "마법주문",
+"descCn": "金光附体",
+"descTn": "金光附體",
+"icon": "skill_421",
+"effect": {
+"effectId": 200043,
+"type": 1
+},
+"buffType": 1,
+"descKr": "황금빛 빙의",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3009001,
+"nameCn": "榜1加成",
+"nameTn": "榜1加成",
+"nameKr": "1위 보너스",
+"descCn": "攻击+6%",
+"descTn": "攻擊+6%",
+"icon": "skill_429",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +6%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3010001,
+"nameCn": "榜2加成",
+"nameTn": "榜2加成",
+"nameKr": "2위 보너스",
+"descCn": "攻击+4%",
+"descTn": "攻擊+4%",
+"icon": "skill_429",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +4%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3011001,
+"nameCn": "榜3加成",
+"nameTn": "榜3加成",
+"nameKr": "3위 보너스",
+"descCn": "攻击+3%",
+"descTn": "攻擊+3%",
+"icon": "skill_429",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +3%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3012001,
+"nameCn": "榜4-10加成",
+"nameTn": "榜4-10加成",
+"nameKr": "4-6위 보너스",
+"descCn": "攻击+1%",
+"descTn": "攻擊+1%",
+"icon": "skill_429",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +1%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3013001,
+"nameCn": "犬化",
+"nameTn": "犬化",
+"nameKr": "견화",
+"descCn": "攻击力上升30%,PK击中敌人高概率会把其变成幼犬,下骑且无法使用技能",
+"descTn": "攻擊力上升30%,PK擊中敵人高概率會把其變成幼犬,下騎且無法使用技能",
+"icon": "skill_571",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "공격력 30% 증가하며, PK때 적 명중 시 높은 확률로 강아지로 변신, 낙마 후 스킬 사용 불가",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 125230,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+},
+{
+"statusType": 2003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3013002,
+"nameCn": "海胆化",
+"nameTn": "海膽化",
+"nameKr": "성게화",
+"descCn": "被海胆化，无法使用技能",
+"descTn": "被海膽化，無法使用技能",
+"icon": "skill_571",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "성게로 변신, 스킬 사용 불가",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 101482,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+},
+{
+"statusType": 2003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3014001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻+70%、敏+20%、防-80%",
+"descTn": "攻+70%、敏+20%、防-80%",
+"icon": "skill_110",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%, 민첩 +20%, 방어력 -80%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3014002,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻+60%、防-50%",
+"descTn": "攻+60%、防-50%",
+"icon": "skill_110",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3015001,
+"nameCn": "克克连击",
+"nameTn": "克克連擊",
+"nameKr": "쿠쿠연격",
+"descCn": "攻击力上升5%，连续攻击敌人四次",
+"descTn": "攻擊力上升5%，連續攻擊敵人四次",
+"icon": "skill_110",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 5% 증가, 적을 4회 연속 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3016001,
+"nameCn": "致命撕咬",
+"nameTn": "致命撕咬",
+"nameKr": "절명물기",
+"descCn": "攻+50% 防-50%，对敌人进行致命打击，并根据目标损血量成正比提高攻击加成",
+"descTn": "攻+50% 防-50%，對敵人進行致命打擊，並根據目標損血量成正比提高攻擊加成",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -50%, 적에게 치명적인 일격을 가하고, 대상의 데미지에 비례하여 공격 보너스가 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3017001,
+"nameCn": "MP攻击",
+"nameTn": "MP攻擊",
+"nameKr": "MP공격",
+"descCn": "物理防御-30%,物理攻击+50%",
+"descTn": "物理防禦-30%,物理攻擊+50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -30%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3018001,
+"nameCn": "双重攻击",
+"nameTn": "雙重攻擊",
+"nameKr": "이중공격",
+"descCn": "物理防御-50%,物理攻击+50%",
+"descTn": "物理防禦-50%,物理攻擊+50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3019001,
+"nameCn": "冰冻",
+"nameTn": "冰凍",
+"nameKr": "동결",
+"descCn": "冰冻，无法行动",
+"descTn": "冰凍，無法行動",
+"icon": "skill_383",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "동결,  행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3020001,
+"nameCn": "呼风唤雨",
+"nameTn": "呼風喚雨",
+"nameKr": "비바람 소환",
+"descCn": "吟唱技能随机降低20%-40%敏",
+"descTn": "吟唱技能隨機降低20%-40%敏",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "무작위로 민첩 20-40% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3021001,
+"nameCn": "马不停蹄",
+"nameTn": "馬不停蹄",
+"nameKr": "쉼없는 공격",
+"descCn": "物理防御-50%,物理攻击+50%",
+"descTn": "物理防禦-50%,物理攻擊+50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3022001,
+"nameCn": "虎虎生威",
+"nameTn": "虎虎生威",
+"nameKr": "용맹한 위협",
+"descCn": "防御降低50%,敏捷提高30%",
+"descTn": "防禦降低50%,敏捷提高30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 50% 감소, 민첩 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3023001,
+"nameCn": "全狮搏兔",
+"nameTn": "全獅搏兔",
+"nameKr": "사자와 토끼",
+"descCn": "攻击力上升5%,防御力下降70%",
+"descTn": "攻擊力上升5%,防禦力下降70%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 5% 증가, 방어력 70% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3024001,
+"nameCn": "反震",
+"nameTn": "反震",
+"nameKr": "역충격",
+"descCn": "反射150%物理伤害一次",
+"descTn": "反射150%物理傷害一次",
+"icon": "skill_120",
+"effect": {
+"effectId": 200044,
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 피해의 150%를 1회 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 600,
+"para2": 1500,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 3025001,
+"nameCn": "全狮搏兔",
+"nameTn": "全獅搏兔",
+"nameKr": "사자와 토끼",
+"descCn": "攻击力上升5%,防御力下降70%,乱数攻击敌人4次,并有一定几率使其坠骑",
+"descTn": "攻擊力上升5%,防禦力下降70%,亂數攻擊敵人4次,並有一定幾率使其墜騎",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 5% 증가 방어력 70% 감소, 적을 무작위로 4회 공격하고 일정 확률로 낙마",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3026001,
+"nameCn": "幽暗陷阱",
+"nameTn": "幽暗陷阱",
+"nameKr": "암흑함정",
+"descCn": "反射150%物理伤害给近战施术者",
+"descTn": "反射150%物理傷害給近戰施術者",
+"icon": "skill_120",
+"effect": {
+"effectId": 200044,
+"type": 1
+},
+"buffType": 1,
+"descKr": "근접 시전자에게 물리 피해의 150%를 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1500,
+"para3": 10209001,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 1
+}
+]
+},
+{
+"ID": 3027001,
+"nameCn": "风之乱舞",
+"nameTn": "風之亂舞",
+"nameKr": "바람의 춤",
+"descCn": "攻击、敏捷上升20%，防御下降30%，对敌人进行射杀",
+"descTn": "攻擊、敏捷上升20%，防禦下降30%，對敵人進行射殺",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력, 민첩 20% 증가, 방어력 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3028001,
+"nameCn": "火之乱舞",
+"nameTn": "火之亂舞",
+"nameKr": "불의 춤",
+"descCn": "攻击上升50%，防御下降70%，对敌人进行射杀",
+"descTn": "攻擊上升50%，防禦下降70%，對敵人進行射殺",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 50% 증가, 방어력 70% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3029001,
+"nameCn": "殊死搏斗",
+"nameTn": "殊死搏鬥",
+"nameKr": "임전무퇴",
+"descCn": "消耗50%HP ,提升命中，对敌人造成150%伤害",
+"descTn": "消耗50%HP ,提升命中，對敵人造成150%傷害",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "HP 50% 소모, 명중률 증가, 적에게 150% 데미지를 준다.",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3030001,
+"nameCn": "蓄力",
+"nameTn": "蓄力",
+"nameKr": "축적",
+"descCn": "一回合储存力量",
+"descTn": "一回合儲存力量",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "한턴 간 힘을 축적",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3031001,
+"nameCn": "缠绕",
+"nameTn": "纏繞",
+"nameKr": "감기",
+"descCn": "被树根阻挡,当前回合不能行动",
+"descTn": "被樹根阻擋,當前回合不能行動",
+"icon": "skill_401",
+"imageId": "23-50-50",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "나무 뿌리에 감겨 현재 턴 행동 불가",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 3032001,
+"nameCn": "集中",
+"nameTn": "集中",
+"nameKr": "집중",
+"descCn": "物理命中提高10",
+"descTn": "物理命中提高10",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 10 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3033001,
+"nameCn": "集中",
+"nameTn": "集中",
+"nameKr": "집중",
+"descCn": "物理命中提高10",
+"descTn": "物理命中提高10",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 10 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3034001,
+"nameCn": "蹦蹦跳跳",
+"nameTn": "蹦蹦跳跳",
+"nameKr": "깡충깡충",
+"descCn": "攻击力上升5%,防御力下降70%,乱数攻击敌人4次,并有一定几率使其坠骑",
+"descTn": "攻擊力上升5%,防禦力下降70%,亂數攻擊敵人4次,並有一定幾率使其墜騎",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 5% 증가 방어력 70% 감소, 적을 무작위로 4회 공격하고 일정 확률로 낙마",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3035001,
+"nameCn": "精灵守护",
+"nameTn": "精靈守護",
+"nameKr": "정령의 수호",
+"descCn": "精灵抗性+30",
+"descTn": "精靈抗性+30",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "주술 저항력 +30",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3036001,
+"nameCn": "物理减伤",
+"nameTn": "物理減傷",
+"nameKr": "물리감소",
+"descCn": "物理减伤30%",
+"descTn": "物理減傷30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 피해 감소 30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3037001,
+"nameCn": "法术减伤",
+"nameTn": "法術減傷",
+"nameKr": "마법감소",
+"descCn": "法术减伤30%",
+"descTn": "法術減傷30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "마법 피해 감소 30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3038001,
+"nameCn": "减伤",
+"nameTn": "減傷",
+"nameKr": "데미지감소",
+"descCn": "减伤30%",
+"descTn": "減傷30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "피해량 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3039001,
+"nameCn": "物攻加伤",
+"nameTn": "物攻加傷",
+"nameKr": "물리공격+추가데미지",
+"descCn": "物攻加伤30%",
+"descTn": "物攻加傷30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 데미지 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3040001,
+"nameCn": "法攻加伤",
+"nameTn": "法攻加傷",
+"nameKr": "마법공격+추가데미지",
+"descCn": "法攻加伤30%",
+"descTn": "法攻加傷30%",
+"icon": "skill_7",
+"effect": {
+"effectId": 160007,
+"type": 1
+},
+"buffType": 1,
+"descKr": "마법 공격 데미지 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3041001,
+"nameCn": "加伤",
+"nameTn": "加傷",
+"nameKr": "추가데미지",
+"descCn": "加伤30%",
+"descTn": "加傷30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "추가 데미지 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3042001,
+"nameCn": "自然威能",
+"nameTn": "自然威能",
+"nameKr": "자연의 힘",
+"descCn": "汇聚自然威能,提升30点精灵抗性,回避上升,持续4回合",
+"descTn": "彙聚自然威能,提升30點精靈抗性,回避上升,持續4回合",
+"icon": "skill_261",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "자연의 힘을 모아 주술 저항력을 30포인트 증가, 회피율을 증가시키며 4턴 간 지속",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3043001,
+"nameCn": "铁壁",
+"nameTn": "鐵壁",
+"nameKr": "철벽",
+"descCn": "我方全体减伤15%",
+"descTn": "我方全體減傷15%",
+"icon": "skill_215",
+"effect": {
+"effectId": 101416,
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체의 피해를 15% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3044001,
+"nameCn": "大冰镜术",
+"nameTn": "大冰鏡術",
+"nameKr": "큰 얼음거울술",
+"descCn": "物理防御-50%",
+"descTn": "物理防禦-50%",
+"icon": "skill_383",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "물리 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3045001,
+"nameCn": "野蛮冲撞",
+"nameTn": "野蠻衝撞",
+"nameKr": "맹렬한 충돌",
+"descCn": "攻+100%,防-70%  对一个单位,狂暴攻击5次,击中每次损伤20点MP值",
+"descTn": "攻+100%,防-70%  對一個單位,狂暴攻擊5次,擊中每次損傷20點MP值",
+"icon": "skill_383",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "공격력 +100%, 방어력 -70% 단일을 상대로 맹렬한 공격을 5회, 공격할 때마다 MP 20 데미지",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3046001,
+"nameCn": "T风之吹息",
+"nameTn": "T風之吹息",
+"nameKr": "T바람의 숨결",
+"descCn": "敏捷+25%",
+"descTn": "敏捷+25%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3047001,
+"nameCn": "迅猛",
+"nameTn": "迅猛",
+"nameKr": "맹렬",
+"descCn": "出手敏捷+200,命中下降",
+"descTn": "出手敏捷+200,命中下降",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "출수 민첩 +200, 명중률 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3048001,
+"nameCn": "地之祝福Lv1(被动)",
+"nameTn": "地之祝福Lv1(被動)",
+"nameKr": "대지의 축복 Lv1 (패시브)",
+"descCn": "物理防御全体上升20%，持续5回合",
+"descTn": "物理防禦全體上升20%，持續5回合",
+"icon": "skill_254",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체 물리 방어력 20% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3048002,
+"nameCn": "地之祝福Lv2(被动)",
+"nameTn": "地之祝福Lv2(被動)",
+"nameKr": "대지의 축복 Lv2 (패시브)",
+"descCn": "物理防御全体上升40%，持续5回合",
+"descTn": "物理防禦全體上升40%，持續5回合",
+"icon": "skill_254",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체 물리 방어력 40% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3048003,
+"nameCn": "地之祝福Lv3(被动)",
+"nameTn": "地之祝福Lv3(被動)",
+"nameKr": "대지의 축복 Lv3 (패시브)",
+"descCn": "物理防御全体上升40%，持续5回合",
+"descTn": "物理防禦全體上升40%，持續5回合",
+"icon": "skill_254",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체 물리 방어력 40% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3049001,
+"nameCn": "水之祝福Lv1(被动)",
+"nameTn": "水之祝福Lv1(被動)",
+"nameKr": "물의 축복 Lv1 (패시브)",
+"descCn": "我方全体每回合恢复500生命值",
+"descTn": "我方全體每回合恢復500生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체 매 턴마다 500 HP 포인트를 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 500000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3049002,
+"nameCn": "水之祝福Lv2(被动)",
+"nameTn": "水之祝福Lv2(被動)",
+"nameKr": "물의 축복 Lv2 (패시브)",
+"descCn": "我方全体每回合恢复800生命值",
+"descTn": "我方全體每回合恢復800生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체 매 턴마다 800 HP 포인트를 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 800000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3049003,
+"nameCn": "水之祝福Lv3(被动)",
+"nameTn": "水之祝福Lv3(被動)",
+"nameKr": "물의 축복 Lv3 (패시브)",
+"descCn": "我方全体每回合恢复1000生命值",
+"descTn": "我方全體每回合恢復1000生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체 매 턴마다 1000 HP 포인트를 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 1000000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3050001,
+"nameCn": "火之祝福Lv1(被动)",
+"nameTn": "火之祝福Lv1(被動)",
+"nameKr": "불의 축복 Lv1 (패시브)",
+"descCn": "提升自身伤害20% 持续5回合",
+"descTn": "提升自身傷害20% 持續5回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 자신의 데미지가 20% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3050002,
+"nameCn": "火之祝福Lv2(被动)",
+"nameTn": "火之祝福Lv2(被動)",
+"nameKr": "불의 축복 Lv2 (패시브)",
+"descCn": "提升自身伤害30% 持续5回合",
+"descTn": "提升自身傷害30% 持續5回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 자신의 데미지가 30% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3050003,
+"nameCn": "火之祝福Lv3(被动)",
+"nameTn": "火之祝福Lv3(被動)",
+"nameKr": "불의 축복 Lv3 (패시브)",
+"descCn": "提升自身伤害40% 持续5回合",
+"descTn": "提升自身傷害40% 持續5回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 자신의 데미지가 40% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3051001,
+"nameCn": "风之祝福Lv1(被动)",
+"nameTn": "風之祝福Lv1(被動)",
+"nameKr": "바람의 축복 Lv1 (패시브)",
+"descCn": "我方全体敏捷上升50点 持续5回合",
+"descTn": "我方全體敏捷上升50點 持續5回合",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체의 민첩 50 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3051002,
+"nameCn": "风之祝福Lv2(被动)",
+"nameTn": "風之祝福Lv2(被動)",
+"nameKr": "바람의 축복 Lv2 (패시브)",
+"descCn": "我方全体敏捷上升100点 持续5回合",
+"descTn": "我方全體敏捷上升100點 持續5回合",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체의 민첩 100 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3051003,
+"nameCn": "风之祝福Lv3(被动)",
+"nameTn": "風之祝福Lv3(被動)",
+"nameKr": "바람의 축복 Lv3 (패시브)",
+"descCn": "我方全体敏捷上升150点 持续5回合",
+"descTn": "我方全體敏捷上升150點 持續5回合",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5턴 간 아군 전체의 민첩 150 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3052001,
+"nameCn": "奥义携伴",
+"nameTn": "奧義攜伴",
+"nameKr": "신비한 동행",
+"descCn": "敏捷上升50%,很高几率将目标一起带离战场",
+"descTn": "敏捷上升50%,很高幾率將目標一起帶離戰場",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 50% 증가, 높은 확률로 대상을 전장에서 이탈",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3053001,
+"nameCn": "樱花‧刻蹄",
+"nameTn": "櫻花‧刻蹄",
+"nameKr": "벚꽃‧조각굽",
+"descCn": "敏捷,命中提升,进行普攻,并无视物理防御附加1000点额外伤害",
+"descTn": "敏捷,命中提升,進行普攻,並無視物理防禦附加1000點額外傷害",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩, HP 증가, 일반 공격, 물리 방어력 무시 및 1000 추가 데미지 추가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3054001,
+"nameCn": "麋鹿的祝福",
+"nameTn": "麋鹿的祝福",
+"nameKr": "엘크의 축복",
+"descCn": "恢复500生命值",
+"descTn": "恢復500生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "HP 500 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 500000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 3055001,
+"nameCn": "T狂暴",
+"nameTn": "T狂暴",
+"nameKr": "T광폭",
+"descCn": "敏捷上升30%,防御下降50%,乱数攻击敌人3次,附带很高概率晕眩敌人3回合",
+"descTn": "敏捷上升30%,防禦下降50%,亂數攻擊敵人3次,附帶很高概率暈眩敵人3回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 30% 증가, 방어력 50% 감소, 적을 무작위로 3회 공격, 높은 확률로 적을 3턴 동안 기절",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3056001,
+"nameCn": "大炎戒·炎帝",
+"nameTn": "大炎戒·炎帝",
+"nameKr": "화염반지·황제",
+"descCn": "命中敏捷上升 ,造成300%的绝对[火]属性伤害",
+"descTn": "命中敏捷上升 ,造成300%的絕對[火]屬性傷害",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "명중 민첩 증가, 300% 절대 [불]속성 데미지",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3057001,
+"nameCn": "伪盖亚炮Lv1",
+"nameTn": "偽蓋亞炮Lv1",
+"nameKr": "거짓 대지의 힘 폭발Lv1",
+"descCn": "物理防御-50%,物理攻击+60%",
+"descTn": "物理防禦-50%,物理攻擊+60%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +60%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3057002,
+"nameCn": "伪盖亚炮Lv2",
+"nameTn": "偽蓋亞炮Lv2",
+"nameKr": "거짓 대지의 힘 폭발Lv2",
+"descCn": "物理防御-50%,物理攻击+80%",
+"descTn": "物理防禦-50%,物理攻擊+80%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +80%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3057003,
+"nameCn": "伪盖亚炮Lv3",
+"nameTn": "偽蓋亞炮Lv3",
+"nameKr": "거짓 대지의 힘 폭발Lv3",
+"descCn": "物理防御-50%,物理攻击+100%",
+"descTn": "物理防禦-50%,物理攻擊+100%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +100%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3058001,
+"nameCn": "伪暴走Lv1",
+"nameTn": "偽暴走Lv1",
+"nameKr": "유사 광란 레벨 1",
+"descCn": "敏捷上升20%,防御下降50%,乱数攻击敌人3次,附带很高概率晕眩敌人3回合",
+"descTn": "敏捷上升20%,防禦下降50%,亂數攻擊敵人3次,附帶很高概率暈眩敵人3回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 20% 증가, 방어력 50% 감소, 무작위로 적을 3회 공격하고, 높은 확률로 적을 3턴 동안 기절",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3058002,
+"nameCn": "伪暴走Lv2",
+"nameTn": "偽暴走Lv2",
+"nameKr": "유사 광란 레벨 2",
+"descCn": "敏捷上升30%,防御下降50%,乱数攻击敌人3次,附带很高概率晕眩敌人3回合",
+"descTn": "敏捷上升30%,防禦下降50%,亂數攻擊敵人3次,附帶很高概率暈眩敵人3回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 30% 증가, 방어력 50% 감소, 적을 무작위로 3회 공격하고, 높은 확률로 적을 3턴 동안 기절",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3058003,
+"nameCn": "伪暴走Lv3",
+"nameTn": "偽暴走Lv3",
+"nameKr": "유사 광란 레벨 3",
+"descCn": "敏捷上升40%,防御下降50%,乱数攻击敌人3次,附带很高概率晕眩敌人3回合",
+"descTn": "敏捷上升40%,防禦下降50%,亂數攻擊敵人3次,附帶很高概率暈眩敵人3回合",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 40% 증가, 방어력 50% 감소, 적을 무작위로 3회 공격하고, 높은 확률로 적을 3턴 동안 기절",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3059001,
+"nameCn": "护主",
+"nameTn": "護主",
+"nameKr": "주인보호",
+"descCn": "攻击力上升50%",
+"descTn": "攻擊力上升50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 50% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 3060001,
+"nameCn": "怪力",
+"nameTn": "怪力",
+"nameKr": "괴력",
+"descCn": "敏捷,命中提升",
+"descTn": "敏捷,命中提升",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩, 명중 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4001001,
+"nameCn": "突击",
+"nameTn": "突擊",
+"nameKr": "모아치기",
+"descCn": "待机一回合蓄力；下次攻击时攻击力上升90%",
+"descTn": "待機一回合蓄力；下次攻擊時攻擊力上升90%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "1턴 간 힘을 모아 다음 공격 시 공격력 90% 증가",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4002001,
+"nameCn": "激化",
+"nameTn": "激化",
+"nameKr": "격화",
+"descCn": "物理防御-20%,物理攻击+5%",
+"descTn": "物理防禦-20%,物理攻擊+5%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 물리 공격력 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4002002,
+"nameCn": "背水2",
+"nameTn": "背水2",
+"nameKr": "배수2",
+"descCn": "物理防御-20%,物理攻击+50%",
+"descTn": "物理防禦-20%,物理攻擊+50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4003001,
+"nameCn": "疾速1",
+"nameTn": "疾速1",
+"nameKr": "질풍1",
+"descCn": "物理防御-20%，敏捷+30%",
+"descTn": "物理防禦-20%，敏捷+30%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 민첩 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4003002,
+"nameCn": "疾速2",
+"nameTn": "疾速2",
+"nameKr": "질풍2",
+"descCn": "物理防御-20%，攻击、敏捷+30%",
+"descTn": "物理防禦-20%，攻擊、敏捷+30%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 공격력, 민첩 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4004001,
+"nameCn": "连弩",
+"nameTn": "連弩",
+"nameKr": "연발",
+"descCn": "对一个单位进行多次攻击",
+"descTn": "對一個單位進行多次攻擊",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "단일을 여러 번 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4004002,
+"nameCn": "毒素武器",
+"nameTn": "毒素武器",
+"nameKr": "독무기",
+"descCn": "攻击敌人有概率致敌中毒",
+"descTn": "攻擊敵人有概率致敵中毒",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적을 공격하면 일정 확률로 중독",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4004003,
+"nameCn": "回旋之刃1",
+"nameTn": "迴旋之刃1",
+"nameKr": "소용돌이 칼1",
+"descCn": "攻击敌人有概率致敌落马",
+"descTn": "攻擊敵人有概率致敵落馬",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적을 공격하면 일정 확률로 낙마",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4004004,
+"nameCn": "回旋之刃2",
+"nameTn": "迴旋之刃2",
+"nameKr": "소용돌이 칼2",
+"descCn": "攻击敌人有概率致敌落马",
+"descTn": "攻擊敵人有概率致敵落馬",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적을 공격하면 일정 확률로 낙마",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4005001,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害（不可净化）",
+"descTn": "中毒，每回合受到一定物理傷害（不可淨化）",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독, 매 턴마다 일정량의 물리 피해를 입음(정화 불가)",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 120,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4005002,
+"nameCn": "毒",
+"nameTn": "毒",
+"nameKr": "독",
+"descCn": "中毒，每回合受到一定物理伤害（不可净化）",
+"descTn": "中毒，每回合受到一定物理傷害（不可淨化）",
+"icon": "skill_498",
+"imageId": "4",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "중독, 매 턴마다 일정량의 물리 피해를 입음(정화 불가)",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 130,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4006001,
+"nameCn": "连环1",
+"nameTn": "連環1",
+"nameKr": "연환1",
+"descCn": "物理防御-20%,物理攻击+20%",
+"descTn": "物理防禦-20%,物理攻擊+20%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 물리 공격력 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4006002,
+"nameCn": "连环2",
+"nameTn": "連環2",
+"nameKr": "연환2",
+"descCn": "物理防御-20%,物理攻击+30%",
+"descTn": "物理防禦-20%,物理攻擊+30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -20%, 물리 공격력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4007001,
+"nameCn": "撕裂旧伤1",
+"nameTn": "撕裂舊傷1",
+"nameKr": "상처공격1",
+"descCn": "攻击力上升20%，防御力下降20%，随敌人损血正比提升攻击力",
+"descTn": "攻擊力上升20%，防禦力下降20%，隨敵人損血正比提升攻擊力",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 20% 증가, 방어력 20% 감소, 적의 출혈량에 비례하여 공격력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4007002,
+"nameCn": "撕裂旧伤2",
+"nameTn": "撕裂舊傷2",
+"nameKr": "상처공격2",
+"descCn": "攻击力上升30%，防御力下降20%，随敌人损血正比提升攻击力",
+"descTn": "攻擊力上升30%，防禦力下降20%，隨敵人損血正比提升攻擊力",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 30% 증가, 방어력 20% 감소, 적의 출혈량에 비례하여 공격력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4008001,
+"nameCn": "干坤一掷1",
+"nameTn": "乾坤一擲1",
+"nameKr": "건곤일척1",
+"descCn": "攻+30%，敏-20%，会心+20%",
+"descTn": "攻+30%，敏-20%，會心+20%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 민첩 -20%, 크리티컬 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4008002,
+"nameCn": "干坤一掷2",
+"nameTn": "乾坤一擲2",
+"nameKr": "건곤일척2",
+"descCn": "攻+50%，敏-20%，会心+30%",
+"descTn": "攻+50%，敏-20%，會心+30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 민첩 -20%, 크리티컬 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4009001,
+"nameCn": "混乱攻击",
+"nameTn": "混亂攻擊",
+"nameKr": "혼란공격",
+"descCn": "命中、防御下降30%",
+"descTn": "命中、防禦下降30%",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "명중률과 방어력 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4009002,
+"nameCn": "混乱攻击",
+"nameTn": "混亂攻擊",
+"nameKr": "혼란공격",
+"descCn": "命中、防御下降30%",
+"descTn": "命中、防禦下降30%",
+"icon": "skill_232",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "명중률과 방어력 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4010001,
+"nameCn": "冰冻",
+"nameTn": "冰凍",
+"nameKr": "동결",
+"descCn": "冰冻，敏捷下降25%，无法净化",
+"descTn": "冰凍，敏捷下降25%，無法淨化",
+"icon": "skill_383",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "동결, 민첩 25% 감소, 정화 불가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4010002,
+"nameCn": "冰冻",
+"nameTn": "冰凍",
+"nameKr": "동결",
+"descCn": "冰冻，敏捷下降25%，无法净化",
+"descTn": "冰凍，敏捷下降25%，無法淨化",
+"icon": "skill_383",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "동결, 민첩 25% 감소, 정화 불가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4011001,
+"nameCn": "麻痹",
+"nameTn": "麻痹",
+"nameKr": "마비",
+"descCn": "麻痹,无法行动",
+"descTn": "麻痹,無法行動",
+"icon": "skill_429",
+"imageId": "19",
+"effect": {
+"effectId": 200043,
+"type": 1
+},
+"buffType": 2,
+"descKr": "마비, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2103,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 4012001,
+"nameCn": "冰镜",
+"nameTn": "冰鏡",
+"nameKr": "얼음거울",
+"descCn": "防御-100点",
+"descTn": "防禦-100點",
+"icon": "skill_383",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "방어력 -100",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4012002,
+"nameCn": "冰镜",
+"nameTn": "冰鏡",
+"nameKr": "얼음거울",
+"descCn": "防御-100点，无法净化",
+"descTn": "防禦-100點，無法淨化",
+"icon": "skill_383",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "방어력 -100, 정화 불가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4013001,
+"nameCn": "火龙枪",
+"nameTn": "火龍槍",
+"nameKr": "화룡의 창",
+"descCn": "一回合储存力量",
+"descTn": "一回合儲存力量",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "한 턴간 힘을 축적",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4014001,
+"nameCn": "铁壁",
+"nameTn": "鐵壁",
+"nameKr": "철벽",
+"descCn": "受到物理伤害减免50%",
+"descTn": "受到物理傷害減免50%",
+"icon": "skill_119",
+"effect": {
+"effectId": 101416,
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 물리 데미지 50% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4014002,
+"nameCn": "铁壁",
+"nameTn": "鐵壁",
+"nameKr": "철벽",
+"descCn": "受到物理伤害减免50%",
+"descTn": "受到物理傷害減免50%",
+"icon": "skill_119",
+"effect": {
+"effectId": 101416,
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 물리 데미지 50% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4015001,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "物理闪避上升3回合",
+"descTn": "物理閃避上升3回合",
+"icon": "skill_251",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 회피 3턴 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4015002,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "物理闪避上升5回合",
+"descTn": "物理閃避上升5回合",
+"icon": "skill_251",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 회피 5턴 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4016001,
+"nameCn": "挑拨",
+"nameTn": "挑撥",
+"nameKr": "도발",
+"descCn": "混乱,攻击、防御、敏捷-15%",
+"descTn": "混亂,攻擊、防禦、敏捷-15%",
+"icon": "skill_119",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "혼란, 공격, 방어, 민첩 -15%",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4016002,
+"nameCn": "挑拨",
+"nameTn": "挑撥",
+"nameKr": "도발",
+"descCn": "混乱,攻击、防御、敏捷-15%，不可净化",
+"descTn": "混亂,攻擊、防禦、敏捷-15%，不可淨化",
+"icon": "skill_119",
+"imageId": "6",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "혼란, 공격, 방어, 민첩 -15%, 정화 불가",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4017001,
+"nameCn": "网",
+"nameTn": "網",
+"nameKr": "그물",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_114",
+"effect": {
+"effectId": 200083,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4017002,
+"nameCn": "网",
+"nameTn": "網",
+"nameKr": "그물",
+"descCn": "无法行动",
+"descTn": "無法行動",
+"icon": "skill_114",
+"effect": {
+"effectId": 200083,
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4018001,
+"nameCn": "缠绕",
+"nameTn": "纏繞",
+"nameKr": "감기",
+"descCn": "被缠绕,无法行动",
+"descTn": "被纏繞,無法行動",
+"icon": "skill_429",
+"imageId": "60",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "행동 불가",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 4019001,
+"nameCn": "专注",
+"nameTn": "專注",
+"nameKr": "집중공격",
+"descCn": "物理命中上升",
+"descTn": "物理命中上升",
+"icon": "skill_253",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4019002,
+"nameCn": "专注",
+"nameTn": "專注",
+"nameKr": "집중공격",
+"descCn": "物理命中上升",
+"descTn": "物理命中上升",
+"icon": "skill_253",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 명중 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4020001,
+"nameCn": "自然生长",
+"nameTn": "自然生長",
+"nameKr": "자연성장",
+"descCn": "恢复200生命值",
+"descTn": "每回合恢復200生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "HP 200 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 500000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4020002,
+"nameCn": "自然生长",
+"nameTn": "自然生長",
+"nameKr": "자연성장",
+"descCn": "恢复350生命值",
+"descTn": "恢復350生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "350 HP 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 700000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 4021001,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-100点",
+"descTn": "敏捷-100點",
+"icon": "skill_401",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -100",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4022001,
+"nameCn": "精准",
+"nameTn": "精准",
+"nameKr": "정조준",
+"descCn": "PVE技能效果必中",
+"descTn": "PVE技能效果必中",
+"icon": "skill_124",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "PVE 스킬 효과 정확하게 명중",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 4023001,
+"nameCn": "魅惑",
+"nameTn": "魅惑",
+"nameKr": "매혹",
+"descCn": "物理攻击-30%,物理防御-50%",
+"descTn": "物理攻擊-30%,物理防禦-50%",
+"icon": "skill_147",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 -30%, 물리 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5001001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻击力+65%,防御-50%",
+"descTn": "攻擊力+65%,防禦-50%",
+"icon": "skill_110",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +65%, 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5002001,
+"nameCn": "暴龙愤怒",
+"nameTn": "暴龍憤怒",
+"nameKr": "오르곤의 분노",
+"descCn": "攻击+20%,防御+5%",
+"descTn": "攻擊+20%,防禦+5%",
+"icon": "skill_182",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +20%, 방어력 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5003001,
+"nameCn": "疾速",
+"nameTn": "疾速",
+"nameKr": "질풍",
+"descCn": "攻+40% 防-10% 敏+10%",
+"descTn": "攻+40% 防-10% 敏+10%",
+"icon": "skill_163",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -10%, 민첩 +10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5004001,
+"nameCn": "狂暴",
+"nameTn": "狂暴",
+"nameKr": "광폭",
+"descCn": "攻+25% 防-40% 随机攻击两个目标",
+"descTn": "攻+20% 防-40% 隨機攻擊兩個目標",
+"icon": "skill_519",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +25%, 방어력 -40%, 두 대상을 무작위로 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5005001,
+"nameCn": "石化攻击",
+"nameTn": "石化攻擊",
+"nameKr": "석화공격",
+"descCn": "攻击力+45%",
+"descTn": "攻擊力+45%",
+"icon": "skill_249",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5006001,
+"nameCn": "混乱攻击",
+"nameTn": "混亂攻擊",
+"nameKr": "혼란공격",
+"descCn": "攻击力+45%",
+"descTn": "攻擊力+45%",
+"icon": "skill_27",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5007001,
+"nameCn": "催眠攻击",
+"nameTn": "催眠攻擊",
+"nameKr": "수면공격",
+"descCn": "攻击力+45%",
+"descTn": "攻擊力+45%",
+"icon": "skill_80",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5008001,
+"nameCn": "落马",
+"nameTn": "落馬",
+"nameKr": "낙마",
+"descCn": "攻+20% 防-30%",
+"descTn": "攻+20% 防-30%",
+"icon": "skill_608",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +20%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5009001,
+"nameCn": "嗜血",
+"nameTn": "嗜血",
+"nameKr": "흡혈",
+"descCn": "攻+40%",
+"descTn": "攻+40%",
+"icon": "skill_455",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5010001,
+"nameCn": "凯比一击",
+"nameTn": "凱比一擊",
+"nameKr": "카비트의 일격",
+"descCn": "攻+50% 防-10% 敏+5%",
+"descTn": "攻+50% 防-10% 敏+5%",
+"icon": "skill_500",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -10%, 민첩 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5011001,
+"nameCn": "破防",
+"nameTn": "破防",
+"nameKr": "방어파괴",
+"descCn": "敌防御时攻+50% 敌非防御时攻+20%",
+"descTn": "攻+50% 防-10% 敏+5%",
+"icon": "skill_538",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적이 방어할 때 공격력 +50%, 적이 방어하지 않을 때 공격력 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5012001,
+"nameCn": "怯战",
+"nameTn": "怯戰",
+"nameKr": "겁주기",
+"descCn": "攻+40% 防-10%",
+"descTn": "攻+40% 防-10%",
+"icon": "skill_490",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5013001,
+"nameCn": "回旋攻击",
+"nameTn": "迴旋攻擊",
+"nameKr": "회오리공격",
+"descCn": "攻+5% 命中-5",
+"descTn": "攻+5% 命中-5",
+"icon": "skill_484",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +5%, 명중 -5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5014001,
+"nameCn": "舌吻",
+"nameTn": "舌吻",
+"nameKr": "입맞춤",
+"descCn": "攻-20%",
+"descTn": "攻-20%",
+"icon": "skill_516",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5014002,
+"nameCn": "麻痹",
+"nameTn": "麻痹",
+"nameKr": "마비",
+"descCn": "麻痹,无法行动",
+"descTn": "麻痹,無法行動",
+"icon": "skill_429",
+"imageId": "19",
+"effect": {
+"effectId": 200043,
+"type": 1
+},
+"buffType": 2,
+"descKr": "마비, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2103,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 5015001,
+"nameCn": "乌力撞击",
+"nameTn": "烏力撞擊",
+"nameKr": "우리의 돌격",
+"descCn": "攻+60% 命中+2",
+"descTn": "攻+60% 命中+2",
+"icon": "skill_526",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 명중 +2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5019001,
+"nameCn": "水压",
+"nameTn": "水壓",
+"nameKr": "수압",
+"descCn": "魔障,无法行动",
+"descTn": "魔障,無法行動",
+"icon": "skill_584",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "악마의 장벽, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2108,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5020001,
+"nameCn": "沉默",
+"nameTn": "沉默",
+"nameKr": "침묵",
+"descCn": "无法使用法术",
+"descTn": "無法使用法術",
+"icon": "skill_120",
+"imageId": "10",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "마법사용 불가",
+"statusEffect": [
+{
+"statusType": 2003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5023001,
+"nameCn": "舍身",
+"nameTn": "捨身",
+"nameKr": "희생",
+"descCn": "防+15%",
+"descTn": "防+15%",
+"icon": "skill_574",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5024001,
+"nameCn": "祝福",
+"nameTn": "祝福",
+"nameKr": "축복",
+"descCn": "恢复100生命值",
+"descTn": "恢復100生命值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "HP 100 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 100000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5025001,
+"nameCn": "祝福",
+"nameTn": "祝福",
+"nameKr": "축복",
+"descCn": "恢复5MP值",
+"descTn": "恢復5MP值",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "5MP 회복",
+"statusEffect": [
+{
+"statusType": 1201,
+"para1": 5,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5026001,
+"nameCn": "浴血狂袭",
+"nameTn": "浴血狂襲",
+"nameKr": "피의 습격",
+"descCn": "攻+50% 敏+20%",
+"descTn": "攻+50% 敏+20%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 민첩 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5026002,
+"nameCn": "待机",
+"nameTn": "待機",
+"nameKr": "대기",
+"descCn": "待机",
+"descTn": "待機",
+"icon": "skill_511",
+"effect": {
+"effectId": 200082,
+"type": 1
+},
+"buffType": 2,
+"descKr": "대기",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 5026003,
+"nameCn": "浴血狂袭Ex",
+"nameTn": "浴血狂襲Ex",
+"nameKr": "피의 습격Ex",
+"descCn": "攻+70% 敏+20%",
+"descTn": "攻+70% 敏+20%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%, 민첩 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5027001,
+"nameCn": "MP攻击",
+"nameTn": "MP攻擊",
+"nameKr": "MP 공격",
+"descCn": "攻+20% 损害对方50%的MP",
+"descTn": "攻+20% 損害對方50%的MP",
+"icon": "skill_500",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +20%, 상대 MP 50% 데미지",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5028001,
+"nameCn": "铜墻铁壁",
+"nameTn": "銅墻鐵壁",
+"nameKr": "강철의 성",
+"descCn": "攻+35% 防+25%",
+"descTn": "攻+35% 防+25%",
+"icon": "skill_544",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 +25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5029001,
+"nameCn": "蛮力冲撞",
+"nameTn": "蠻力衝撞",
+"nameKr": "맹렬한 돌진",
+"descCn": "攻击力+65% 防-38%",
+"descTn": "攻擊力+65% 防-38%",
+"icon": "skill_113",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +65%, 방어력 -38%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5030001,
+"nameCn": "愤怒爪击",
+"nameTn": "憤怒爪擊",
+"nameKr": "분노의 손톱",
+"descCn": "攻击力+75% 防-25% 命中+1",
+"descTn": "攻擊力+75% 防-25% 命中+1",
+"icon": "skill_583",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +75%, 방어력 -25%, 명중 +1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5031001,
+"nameCn": "振奋",
+"nameTn": "振奮",
+"nameKr": "분기",
+"descCn": "攻+35% 防-40% 命中-1",
+"descTn": "攻+35% 防-40% 命中-1",
+"icon": "skill_540",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -40%, 명중 -1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5032001,
+"nameCn": "蛮牛撞击",
+"nameTn": "蠻牛撞擊",
+"nameKr": "황소의 돌격",
+"descCn": "攻+55% 防-5% 命中+5",
+"descTn": "攻+55% 防-5% 命中+5",
+"icon": "skill_433",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +55%, 방어력 -5%, 명중 +5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5033001,
+"nameCn": "机械飞踢",
+"nameTn": "機械飛踢",
+"nameKr": "기계 날아차기",
+"descCn": "攻+60% 防+15% 命中+2",
+"descTn": "攻+60% 防+15% 命中+2",
+"icon": "skill_464",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 +15%, 명중 +2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5034001,
+"nameCn": "浴血狂袭Ex",
+"nameTn": "浴血狂襲Ex",
+"nameKr": "피의 습격Ex",
+"descCn": "召唤五只白虎攻击一排敌人",
+"descTn": "召喚五只白虎攻擊一排敵人",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "백호 5마리를 소환해 적 일렬 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5035001,
+"nameCn": "MP攻击3",
+"nameTn": "MP攻擊3",
+"nameKr": "MP 공격 3",
+"descCn": "攻+40% 敏+5% 损害对方70%的MP",
+"descTn": "攻+40% 敏+5% 損害對方70%的MP",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 민첩 +5%, 상대 MP의 70% 데미지",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5036001,
+"nameCn": "疾速改",
+"nameTn": "疾速改",
+"nameKr": "질풍의 변화",
+"descCn": "攻+60% 防-10% 敏+10% 命中+3",
+"descTn": "攻+60% 防-10% 敏+10% 命中+3",
+"icon": "skill_244",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -10%, 민첩 +10%, 명중 +3",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5037001,
+"nameCn": "乱狗狂袭",
+"nameTn": "亂狗狂襲",
+"nameKr": "혼란스러운 개",
+"descCn": "攻+60% 防-20%",
+"descTn": "攻+60% 防-20%",
+"icon": "skill_435",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5038001,
+"nameCn": "魔之一击",
+"nameTn": "魔之一擊",
+"nameKr": "악마의 일격",
+"descCn": "攻+50% 防-13% 命中+2",
+"descTn": "攻+50% 防-13% 命中+2",
+"icon": "skill_437",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -13%, 명중 +2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5039001,
+"nameCn": "爆裂攻击",
+"nameTn": "爆裂攻擊",
+"nameKr": "폭발적인 공격",
+"descCn": "攻+48% 防-8% 命中+1",
+"descTn": "攻+48% 防-8% 命中+1",
+"icon": "skill_479",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +48%, 방어력 -8%, 명중 +1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5040001,
+"nameCn": "抓狂",
+"nameTn": "抓狂",
+"nameKr": "흥분",
+"descCn": "攻+25% 防-35% 命中-1",
+"descTn": "攻+25% 防-35% 命中-1",
+"icon": "skill_495",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +25%, 방어력 -35%, 명중 -1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5041001,
+"nameCn": "振奋",
+"nameTn": "振奮",
+"nameKr": "분기",
+"descCn": "攻+40% 防-20%",
+"descTn": "攻+40% 防-20%",
+"icon": "skill_540",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5042001,
+"nameCn": "深海一击",
+"nameTn": "深海一擊",
+"nameKr": "심해의 일격",
+"descCn": "攻击力+45% 防+5% 命中+1",
+"descTn": "攻擊力+45% 防+5% 命中+1",
+"icon": "skill_553",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 +5%, 명중 +1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5043001,
+"nameCn": "海峡攻击",
+"nameTn": "海峽攻擊",
+"nameKr": "해협공격",
+"descCn": "攻击力+55% 防-5%",
+"descTn": "攻擊力+55% 防-5%",
+"icon": "skill_553",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +55%, 방어력 -5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5044001,
+"nameCn": "神龙一击",
+"nameTn": "神龍一擊",
+"nameKr": "신룡의 일격",
+"descCn": "攻+58% 防-25% 敏+5%",
+"descTn": "攻+58% 防-25% 敏+5%",
+"icon": "skill_162",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +58%, 방어력 -25%, 민첩 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5045001,
+"nameCn": "恶狼强袭",
+"nameTn": "惡狼強襲",
+"nameKr": "늑대의 공격",
+"descCn": "攻+50% 防-10% 命中+1",
+"descTn": "攻+50% 防-10% 命中+1",
+"icon": "skill_94",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -10%, 명중 +1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5046001,
+"nameCn": "猛虎出征",
+"nameTn": "猛虎出征",
+"nameKr": "호랑이는 전쟁에 나간다",
+"descCn": "攻+40% 防-20%",
+"descTn": "攻+40% 防-20%",
+"icon": "skill_163",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5047001,
+"nameCn": "风之吹息Ex",
+"nameTn": "風之吹息Ex",
+"nameKr": "바람의 숨결 Ex",
+"descCn": "敏捷+25% 回避8%",
+"descTn": "敏捷+25% 回避8%",
+"icon": "skill_212",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +25%, 회피 8%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5048001,
+"nameCn": "神龙群袭",
+"nameTn": "神龍群襲",
+"nameKr": "신룡의 집단공격",
+"descCn": "防+5% 命中-10 召唤五只神龙龙打一排敌人造成物理伤害",
+"descTn": "防+5% 命中-10 召喚五只神龍龍打一排敵人造成物理傷害",
+"icon": "skill_167",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 +5%, 명중 -10 신룡 5마리를 소환해 일렬의 적을 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5049001,
+"nameCn": "多奇强袭",
+"nameTn": "多奇強襲",
+"nameKr": "암중습격",
+"descCn": "攻+30% 防-5%",
+"descTn": "攻+30% 防-5%",
+"icon": "skill_388",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5050001,
+"nameCn": "机雷强袭",
+"nameTn": "機雷強襲",
+"nameKr": "번개공격",
+"descCn": "攻+25% 防-15% 命中-5",
+"descTn": "攻+25% 防-15% 命中-5",
+"icon": "skill_450",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +25%, 방어력 -15%, 명중 -5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5051001,
+"nameCn": "剥夺灵魂",
+"nameTn": "剝奪靈魂",
+"nameKr": "영혼강탈",
+"descCn": "防御下降20%",
+"descTn": "防禦下降20%",
+"icon": "skill_478",
+"imageId": "60",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 20% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5051002,
+"nameCn": "剥夺灵魂Ex",
+"nameTn": "剝奪靈魂Ex",
+"nameKr": "영혼강탈Ex",
+"descCn": "防御下降25%",
+"descTn": "防禦下降25%",
+"icon": "skill_478",
+"imageId": "60",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 25% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5052001,
+"nameCn": "追击攻击",
+"nameTn": "追擊攻擊",
+"nameKr": "추적공격",
+"descCn": "攻+50%",
+"descTn": "攻+50%",
+"icon": "skill_229",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5053001,
+"nameCn": "暗黑攻击",
+"nameTn": "暗黑攻擊",
+"nameKr": "어둠의 공격",
+"descCn": "攻+30% 防-45% 命中-2",
+"descTn": "攻+30% 防-45% 命中-2",
+"icon": "skill_439",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -45%, 명중 -2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5054001,
+"nameCn": "无瑕攻击",
+"nameTn": "無瑕攻擊",
+"nameKr": "완벽한 공격",
+"descCn": "攻击+50% 命中+2",
+"descTn": "攻擊+50% 命中+2",
+"icon": "skill_547",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50% 명중 +2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5055001,
+"nameCn": "破绽攻击",
+"nameTn": "破綻攻擊",
+"nameKr": "약점공격",
+"descCn": "攻击+55% 防-10% 命中+2",
+"descTn": "攻擊+55% 防-10% 命中+2",
+"icon": "skill_470",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +55%, 방어력 -10%, 명중 +2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5056001,
+"nameCn": "火线猎杀Ex",
+"nameTn": "火線獵殺Ex",
+"nameKr": "전쟁사냥 Ex",
+"descCn": "攻+40% 防-20%",
+"descTn": "攻+40% 防-20%",
+"icon": "skill_365",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5057001,
+"nameCn": "贯穿攻击",
+"nameTn": "貫穿攻擊",
+"nameKr": "관통공격",
+"descCn": "攻+40% 防-35% 命中-1",
+"descTn": "攻+40% 防-35% 命中-1",
+"icon": "skill_413",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -35%, 명중 -1",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5058001,
+"nameCn": "后发制人",
+"nameTn": "後發制人",
+"nameKr": "후발제인",
+"descCn": "攻+60% 防及敏捷-15%",
+"descTn": "攻+60% 防及敏捷-15%",
+"icon": "skill_541",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력과 민첩 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5059001,
+"nameCn": "落马",
+"nameTn": "落馬",
+"nameKr": "낙마",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_608",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5060001,
+"nameCn": "石化攻击Ex",
+"nameTn": "石化攻擊Ex",
+"nameKr": "석화공격Ex",
+"descCn": "攻+35% 防-10%",
+"descTn": "攻+35% 防-10%",
+"icon": "skill_249",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5061001,
+"nameCn": "回旋攻击Ex",
+"nameTn": "迴旋攻擊Ex",
+"nameKr": "회오리공격 Ex",
+"descCn": "攻+8% 命中-5",
+"descTn": "攻+8% 命中-5",
+"icon": "skill_484",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +8%, 명중 -5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5062001,
+"nameCn": "邪灵附体",
+"nameTn": "邪靈附體",
+"nameKr": "악령빙의",
+"descCn": "受到伤害加35%",
+"descTn": "受到傷害加35%",
+"icon": "skill_253",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "받는 데미지 35% 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5063001,
+"nameCn": "方固四方",
+"nameTn": "方固四方",
+"nameKr": "동방불패",
+"descCn": "异常抗性+5",
+"descTn": "異常抗性+5",
+"icon": "skill_37",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상태 이상 저항 +5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5064001,
+"nameCn": "地狱炮弹",
+"nameTn": "地獄炮彈",
+"nameKr": "지옥폭탄",
+"descCn": "攻+20% 防-35%",
+"descTn": "攻+20% 防-35%",
+"icon": "skill_147",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +20%, 방어력 -35%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5065001,
+"nameCn": "S背水之战",
+"nameTn": "S背水之戰",
+"nameKr": "S배수의 진",
+"descCn": "防-50% 攻+78%",
+"descTn": "防-50% 攻+78%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 -50%, 공격력 +78%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5066001,
+"nameCn": "帝皇攻击",
+"nameTn": "帝皇攻擊",
+"nameKr": "황제의 공격",
+"descCn": "攻+30% 防-50%",
+"descTn": "攻+30% 防-50%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5067001,
+"nameCn": "邪皇攻击",
+"nameTn": "邪皇攻擊",
+"nameKr": "사악한 황제의 공격",
+"descCn": "攻+40% 防-30%",
+"descTn": "攻+40% 防-30%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5068001,
+"nameCn": "圣光之气",
+"nameTn": "聖光之氣",
+"nameKr": "성스러운 기운",
+"descCn": "补气25",
+"descTn": "補氣25",
+"icon": "skill_204",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "MP25 회복",
+"statusEffect": [
+{
+"statusType": 1201,
+"para1": 25,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5069001,
+"nameCn": "龙马精神",
+"nameTn": "龍馬精神",
+"nameKr": "용마 정신",
+"descCn": "攻+38% 防+5%",
+"descTn": "攻+38% 防+5%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +38%, 방어력 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5070001,
+"nameCn": "邪气充天",
+"nameTn": "邪氣充天",
+"nameKr": "악령충천",
+"descCn": "攻防敏-10%",
+"descTn": "攻防敏-10%",
+"icon": "skill_478",
+"imageId": "9",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 및 방어 민첩 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5071001,
+"nameCn": "机械乱射",
+"nameTn": "機械亂射",
+"nameKr": "기계 사격",
+"descCn": "攻+35% 防+5%",
+"descTn": "攻+35% 防+5%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5072001,
+"nameCn": "石化攻击",
+"nameTn": "石化攻擊",
+"nameKr": "후발제인",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_541",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력과 민첩 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5073001,
+"nameCn": "落马",
+"nameTn": "落馬",
+"nameKr": "낙마",
+"descCn": "攻+40% 防-30%",
+"descTn": "攻+40% 防-30%",
+"icon": "skill_608",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5074001,
+"nameCn": "怯战",
+"nameTn": "怯戰",
+"nameKr": "겁주기",
+"descCn": "攻+40% 防-20%",
+"descTn": "攻+40% 防-20%",
+"icon": "skill_490",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5075001,
+"nameCn": "命中一击",
+"nameTn": "命中一擊",
+"nameKr": "우리의 돌격",
+"descCn": "攻+45% 命中+10",
+"descTn": "攻+45% 命中+10",
+"icon": "skill_526",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 명중 +10",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5076001,
+"nameCn": "背水之战3",
+"nameTn": "背水之戰3",
+"nameKr": "배수의 진 3",
+"descCn": "物理防御-50%,物理攻击+70%",
+"descTn": "物理防禦-50%,物理攻擊+70%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -50%, 물리 공격력 +70%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5077001,
+"nameCn": "铜墻铁壁",
+"nameTn": "銅墻鐵壁",
+"nameKr": "강철의 성",
+"descCn": "攻+10% 防+40%",
+"descTn": "攻+10% 防+40%",
+"icon": "skill_544",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 +10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5078001,
+"nameCn": "针对攻击",
+"nameTn": "針對攻擊",
+"nameKr": "약점공격",
+"descCn": "攻+45% 防-20%",
+"descTn": "攻+45% 防-20%",
+"icon": "skill_470",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5079001,
+"nameCn": "护主一击",
+"nameTn": "護主一擊",
+"nameKr": "보호 일격",
+"descCn": "攻+10% 防+30%",
+"descTn": "攻+10% 防+30%",
+"icon": "skill_182",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+10% 방어+30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5080001,
+"nameCn": "一击必杀改",
+"nameTn": "一擊必殺改",
+"nameKr": "일격필살[改]",
+"descCn": "物理命中降低10",
+"descTn": "物理命中降低10",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "명중률 감소-10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5081001,
+"nameCn": "绝地一击",
+"nameTn": "絕地一擊",
+"nameKr": "회오리공격",
+"descCn": "攻-10%",
+"descTn": "攻-10%",
+"icon": "skill_484",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 -10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5082001,
+"nameCn": "MP攻击",
+"nameTn": "MP攻擊",
+"nameKr": "MP공격",
+"descCn": "物理防御-10%,物理攻击+60%",
+"descTn": "物理防禦-10%,物理攻擊+60%",
+"icon": "skill_500",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+50% 방어-10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5083001,
+"nameCn": "火焰威能",
+"nameTn": "火焰威能",
+"nameKr": "화염의 위력",
+"descCn": "物理攻击+15%",
+"descTn": "物理攻擊+15%",
+"icon": "skill_207",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5084001,
+"nameCn": "大地铠甲",
+"nameTn": "大地鎧甲",
+"nameKr": "대지의 갑옷",
+"descCn": "物理防御+15%",
+"descTn": "物理防禦+15%",
+"icon": "skill_58",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어+15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5085001,
+"nameCn": "浴血狂袭",
+"nameTn": "浴血狂襲",
+"nameKr": "피의 습격",
+"descCn": "攻+50% 会心+30%",
+"descTn": "攻+50% 會心+30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+50% 크리티컬+30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5086001,
+"nameCn": "风之吹息",
+"nameTn": "風之吹息",
+"nameKr": "바람의 숨결",
+"descCn": "敏捷+15%",
+"descTn": "敏捷+15%",
+"icon": "skill_128",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5087006,
+"nameCn": "火线猎杀",
+"nameTn": "火線獵殺",
+"nameKr": "전쟁사냥",
+"descCn": "攻+40% 防-15%",
+"descTn": "攻+40% 防-15%",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5088001,
+"nameCn": "飞膝暴击",
+"nameTn": "飛膝暴擊",
+"nameKr": "무릎공격",
+"descCn": "攻+50%",
+"descTn": "攻+50%",
+"icon": "skill_544",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5089001,
+"nameCn": "嗜血",
+"nameTn": "嗜血",
+"nameKr": "흡혈",
+"descCn": "攻+40%",
+"descTn": "攻+40%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5090001,
+"nameCn": "撕裂",
+"nameTn": "撕裂",
+"nameKr": "찢기",
+"descCn": "撕裂旧伤口",
+"descTn": "撕裂舊傷口",
+"icon": "skill_7",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "오래된 상처를 찢기",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5091001,
+"nameCn": "狂暴石击",
+"nameTn": "狂暴石擊",
+"nameKr": "광폭공격",
+"descCn": "攻+60% 防-30%",
+"descTn": "攻+60% 防-30%",
+"icon": "skill_541",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력과 민첩 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5092001,
+"nameCn": "恶狼强袭",
+"nameTn": "惡狼強襲",
+"nameKr": "늑대의 공격",
+"descCn": "攻+65% 防-30%",
+"descTn": "攻+65% 防-30%",
+"icon": "skill_528",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +65%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5093001,
+"nameCn": "飞膝暴击",
+"nameTn": "飛膝暴擊",
+"nameKr": "무릎공격",
+"descCn": "攻+40% 防+5%",
+"descTn": "攻+40% 防+5%",
+"icon": "skill_141",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5094002,
+"nameCn": "暗月变身",
+"nameTn": "暗月變身",
+"nameKr": "암월변신",
+"descCn": "攻+25%、敏+5%, 受到远程攻击伤害+8%",
+"descTn": "攻+25%、敏+5%, 受到遠程攻擊傷害+8%",
+"icon": "skill_4",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +25%, 민첩 +5%, 원거리 공격으로 받는 데미지 +8%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 111428,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5095001,
+"nameCn": "机械破击",
+"nameTn": "機械破擊",
+"nameKr": "기계 습격",
+"descCn": "攻+65% 防-30%",
+"descTn": "攻+65% 防-30%",
+"icon": "skill_527",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5096001,
+"nameCn": "狮子咆哮",
+"nameTn": "獅子咆哮",
+"nameKr": "사자 포효",
+"descCn": "攻+40% 防-25% 敏+5%",
+"descTn": "攻+40% 防-25% 敏+5%",
+"icon": "skill_244",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -25%，민첩 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5097001,
+"nameCn": "混乱攻击",
+"nameTn": "混亂攻擊",
+"nameKr": "후발제인",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_27",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5098001,
+"nameCn": "催眠攻击",
+"nameTn": "催眠攻擊",
+"nameKr": "후발제인",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_80",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5099001,
+"nameCn": "虚弱攻击",
+"nameTn": "虛弱攻擊",
+"nameKr": "허약공격",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_95",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5100001,
+"nameCn": "独角冲击",
+"nameTn": "獨角衝擊",
+"nameKr": "외뿔공격",
+"descCn": "攻+40% 防+5%敏+5%",
+"descTn": "攻+40% 防+5%敏+5%",
+"icon": "skill_508",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5101001,
+"nameCn": "火焰威能改",
+"nameTn": "火焰威能改",
+"nameKr": "화염의 위력[改]",
+"descCn": "物理攻击+20% 命中+2",
+"descTn": "物理攻擊+20% 命中+2",
+"icon": "skill_207",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+20%，명중+2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5102001,
+"nameCn": "猛虎出闸",
+"nameTn": "猛虎出閘",
+"nameKr": "맹호공격",
+"descCn": "物理防御+30%",
+"descTn": "物理防禦+30%",
+"icon": "skill_163",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5103001,
+"nameCn": "灵魂缠绕",
+"nameTn": "靈魂纏繞",
+"nameKr": "영혼속박",
+"descCn": "闪避率下降8%",
+"descTn": "閃避率下降8%",
+"icon": "skill_64",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적 전체 회피율 8% 하락",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5104001,
+"nameCn": "冰雹之术",
+"nameTn": "冰雹之術",
+"nameKr": "빙뢰의 술",
+"descCn": "攻+40% 防-15%",
+"descTn": "攻+40% 防-15%",
+"icon": "skill_444",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5105001,
+"nameCn": "蓄力一击",
+"nameTn": "蓄力一擊",
+"nameKr": "응축일격",
+"descCn": "攻+70% 防-50% 敏+20%",
+"descTn": "攻+70% 防-50% 敏+20%",
+"icon": "skill_141",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%, 방어력 -50%, 민첩 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5106001,
+"nameCn": "风之吹息改",
+"nameTn": "風之吹息改",
+"nameKr": "바람의 숨결[改]",
+"descCn": "敏捷+20% 回避+2",
+"descTn": "敏捷+20% 回避+2",
+"icon": "skill_212",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +20%, 회피+2",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5107001,
+"nameCn": "高能威压",
+"nameTn": "高能威壓",
+"nameKr": "고등압력",
+"descCn": "攻击下降15%",
+"descTn": "攻擊下降15%",
+"icon": "skill_425",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 15% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5108001,
+"nameCn": "狼吼袭击",
+"nameTn": "狼吼襲擊",
+"nameKr": "늑대의 돌격",
+"descCn": "攻+60% 防-30%",
+"descTn": "攻+60% 防-30%",
+"icon": "skill_94",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력과 민첩 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5109001,
+"nameCn": "龙之重击",
+"nameTn": "龍之重擊",
+"nameKr": "용의 펀치",
+"descCn": "攻+45% 防+15%",
+"descTn": "攻+45% 防+15%",
+"icon": "skill_620",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5110001,
+"nameCn": "龙之恐惧",
+"nameTn": "龍之恐懼",
+"nameKr": "용의 공포",
+"descCn": "攻+60% 防-30%",
+"descTn": "攻+60% 防-30%",
+"icon": "skill_624",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5111001,
+"nameCn": "浴血狂袭",
+"nameTn": "浴血狂襲",
+"nameKr": "피의 습격",
+"descCn": "攻+60% 会心+35%",
+"descTn": "攻+60% 會心+35%",
+"icon": "skill_190",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격+60% 크리티컬+35%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5112001,
+"nameCn": "葬术",
+"nameTn": "葬術",
+"nameKr": "장례술",
+"descCn": "敏捷+20%",
+"descTn": "敏捷+20%",
+"icon": "skill_565",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5113001,
+"nameCn": "净化之舞",
+"nameTn": "淨化之舞",
+"nameKr": "정화의 춤",
+"descCn": "防+20% 敏+5%",
+"descTn": "防+20% 敏+5%",
+"icon": "skill_523",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 +20%, 민첩 +5%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5114001,
+"nameCn": "机械撕咬",
+"nameTn": "機械撕咬",
+"nameKr": "기계 물기",
+"descCn": "攻+35% 防-35% 命中-10",
+"descTn": "攻+35% 防-35% 命中-10",
+"icon": "skill_300",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -35%,명중 -5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5115001,
+"nameCn": "龙影破斩",
+"nameTn": "龍影破斬",
+"nameKr": "용영파참",
+"descCn": "攻+65% 防-30%",
+"descTn": "攻+65% 防-30%",
+"icon": "skill_528",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +65%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5116001,
+"nameCn": "破甲之力",
+"nameTn": "破甲之力",
+"nameKr": "파격의힘",
+"descCn": "攻+55% 防-25%",
+"descTn": "攻+55% 防-25%",
+"icon": "skill_460",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +55%, 방어력 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5117001,
+"nameCn": "水灵滋润改",
+"nameTn": "水靈滋潤改",
+"nameKr": "물정령의 윤택[改]",
+"descCn": "每回合恢复600生命值",
+"descTn": "每回合恢復600生命值",
+"icon": "skill_599",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "매 턴마다 HP 600을 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 600000,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5118001,
+"nameCn": "白熊变身",
+"nameTn": "白熊變身",
+"nameKr": "백곰변신",
+"descCn": "物理攻击+30%,",
+"descTn": "物理攻擊+30%",
+"icon": "skill_134",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +30%, 원거리 공격으로 받는 데미지 +8%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 102011,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5119001,
+"nameCn": "棕熊变身",
+"nameTn": "棕熊變身",
+"nameKr": "불곰별신",
+"descCn": "物理攻击+30%，受到远程攻击伤害+8%",
+"descTn": "物理攻擊+30%，受到遠程攻擊傷害+8%",
+"icon": "skill_134",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +30%, 원거리 공격으로 받는 데미지 +8%",
+"statusEffect": [
+{
+"statusType": 9002,
+"para1": 102012,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5120001,
+"nameCn": "方固四方",
+"nameTn": "方固四方",
+"nameKr": "동방불패",
+"descCn": "异常抗性+10",
+"descTn": "異常抗性+10",
+"icon": "skill_37",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상태 이상 저항 +10",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5121001,
+"nameCn": "狂蜂乱舞",
+"nameTn": "狂蜂亂舞",
+"nameKr": "광란혼무",
+"descCn": "攻+50% 防-25%",
+"descTn": "攻+50% 防-25%",
+"icon": "skill_479",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력과 민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5122001,
+"nameCn": "炎凤之击",
+"nameTn": "炎鳳之擊",
+"nameKr": "염풍의 공격",
+"descCn": "攻+55% 防-30%",
+"descTn": "攻+55% 防-30%",
+"icon": "skill_473",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공+55%,방-30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5123001,
+"nameCn": "远程减伤[被动]",
+"nameTn": "遠程減傷[被動]",
+"nameKr": "원거리감소[수동]",
+"descCn": "受到远程物理伤害减少30%",
+"descTn": "受到遠程物理傷害減少30%",
+"icon": "skill_41",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "원거리 데미지 30% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5124001,
+"nameCn": "狂暴攻击",
+"nameTn": "狂暴攻擊",
+"nameKr": "광폭공격",
+"descCn": "攻+35% 防-30% 随机攻击2-3个目标",
+"descTn": "攻+35% 防-30% 隨機攻擊2-3個目標",
+"icon": "skill_456",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -30%, 두 대상을 무작위로 공격",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5125001,
+"nameCn": "大地铠甲改",
+"nameTn": "大地鎧甲改",
+"nameKr": "대지의 갑옷[改]",
+"descCn": "物理防御+20% 减伤2%",
+"descTn": "物理防禦+20% 減傷2%",
+"icon": "skill_215",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어+20%,피해량 2% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5126001,
+"nameCn": "浴血连击",
+"nameTn": "浴血連擊",
+"nameKr": "흡혈연격",
+"descCn": "攻+30% 防-30%",
+"descTn": "攻+30% 防-30%",
+"icon": "skill_601",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5127001,
+"nameCn": "火线猎杀改",
+"nameTn": "火線獵殺改",
+"nameKr": "전쟁사냥[改]",
+"descCn": "攻+35% 防-15% 命中-5",
+"descTn": "攻+35% 防-15% 命中-5",
+"icon": "skill_308",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -15%，명중-5",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5128001,
+"nameCn": "乌力一击",
+"nameTn": "烏力一擊",
+"nameKr": "우리일격",
+"descCn": "攻+60% 防-25%",
+"descTn": "攻+60% 防-25%",
+"icon": "skill_8",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5129001,
+"nameCn": "萝卜连击",
+"nameTn": "蘿蔔連擊",
+"nameKr": "무연격",
+"descCn": "攻+40% 防-15%",
+"descTn": "攻+40% 防-15%",
+"icon": "skill_414",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5130001,
+"nameCn": "干坤一掷",
+"nameTn": "乾坤一擲",
+"nameKr": "건곤일척",
+"descCn": "攻+60%，防-30%，会心+30%",
+"descTn": "攻+60%，防-30%，會心+30%",
+"icon": "skill_462",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +60%, 방어력 -30%, 크리티컬 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5131001,
+"nameCn": "狼神连击",
+"nameTn": "狼神連擊",
+"nameKr": "늑신연격",
+"descCn": "攻+30% 防-30%",
+"descTn": "攻+30% 防-30%",
+"icon": "skill_435",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5132001,
+"nameCn": "栗子连击",
+"nameTn": "栗子連擊",
+"nameKr": "무연격",
+"descCn": "攻+45% 防-15%",
+"descTn": "攻+45% 防-15%",
+"icon": "skill_397",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5133001,
+"nameCn": "虎啸龙吟",
+"nameTn": "虎嘯龍吟",
+"nameKr": "맹호포효",
+"descCn": "物理攻击+40%,物理防御-30%",
+"descTn": "物理攻擊+40%,物理防禦-30%",
+"icon": "skill_619",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +40%, 물리 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5134001,
+"nameCn": "野蛮攻击",
+"nameTn": "野蠻攻擊",
+"nameKr": "야만적 공격",
+"descCn": "攻+80% 防-25% 敏+10%",
+"descTn": "攻+80% 防-25% 敏+10%",
+"icon": "skill_302",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +80%, 방어력 -25%, 민첩 +10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5135001,
+"nameCn": "虎啸龙吟",
+"nameTn": "虎嘯龍吟",
+"nameKr": "맹호포효",
+"descCn": "攻+55% 防-30%",
+"descTn": "攻+55% 防-30%",
+"icon": "skill_619",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공+55%,방-30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5136001,
+"nameCn": "虎啸龙吟",
+"nameTn": "虎嘯龍吟",
+"nameKr": "맹호포효",
+"descCn": "攻+55% 防-30%",
+"descTn": "攻+55% 防-30%",
+"icon": "skill_619",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공+55%,방-30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5137001,
+"nameCn": "怒急攻心",
+"nameTn": "怒急攻心",
+"nameKr": "조급한 마음",
+"descCn": "物理命中降低30",
+"descTn": "物理命中降低30",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "명중률 감소-30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5138001,
+"nameCn": "怒急攻心",
+"nameTn": "怒急攻心",
+"nameKr": "조급한 마음",
+"descCn": "物理命中降低15",
+"descTn": "物理命中降低15",
+"icon": "skill_618",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "명중률 감소-15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5139001,
+"nameCn": "龙龟连击",
+"nameTn": "龍龜連擊",
+"nameKr": "용거북 연격",
+"descCn": "攻+30% 防-30%",
+"descTn": "攻+30% 防-30%",
+"icon": "skill_388",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5140001,
+"nameCn": "机械一击",
+"nameTn": "機械一擊",
+"nameKr": "기계일격",
+"descCn": "攻+70%，防-35%，会心+30%",
+"descTn": "攻+70%，防-35%，會心+30%",
+"icon": "skill_317",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%, 방어력 -35%, 크리티컬 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5141001,
+"nameCn": "圣·MP连击",
+"nameTn": "聖·MP連擊",
+"nameKr": "MP연격",
+"descCn": "攻+40% 防-30% 击中每次损伤45点MP值",
+"descTn": "攻+40% 防-30% 擊中每次損傷45點MP值",
+"icon": "skill_584",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "공+40% 방-30%，매 공격 시 상대방 MP 45 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5142001,
+"nameCn": "恶魔飞行",
+"nameTn": "惡魔飛行",
+"nameKr": "악마비행",
+"descCn": "攻+75%、防-35%、敏+10%",
+"descTn": "攻+75%、防-35%、敏+10%",
+"icon": "skill_422",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +75%, 방어력 -35%, 민첩 +10%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5143001,
+"nameCn": "憾甲一击改",
+"nameTn": "憾甲一擊改",
+"nameKr": "아쉬운일격",
+"descCn": "攻+50% 防-30% 随机攻击2个目标",
+"descTn": "攻+50% 防-30% 隨機攻擊2個目標",
+"icon": "skill_153",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5144001,
+"nameCn": "机械攻击",
+"nameTn": "機械攻擊",
+"nameKr": "기계적 기습",
+"descCn": "攻+55% 防-35%",
+"descTn": "攻+55% 防-35%",
+"icon": "skill_568",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +55%, 방어력 -35%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5145001,
+"nameCn": "神圣攻击",
+"nameTn": "神聖攻擊",
+"nameKr": "신성한 일격",
+"descCn": "攻+35% 防-35%",
+"descTn": "攻+45% 防-35%",
+"icon": "skill_530",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공+45%,방-35%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5146001,
+"nameCn": "圣甲护主",
+"nameTn": "聖甲護主",
+"nameKr": "암흑함정",
+"descCn": "反射150%物理伤害给近战施术者",
+"descTn": "反射150%物理傷害給近戰施術者",
+"icon": "skill_266",
+"effect": {
+"effectId": 200044,
+"type": 1
+},
+"buffType": 1,
+"descKr": "근접 시전자에게 물리 피해의 150%를 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 400,
+"para2": 1500,
+"para3": 0,
+"para4": 1,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5147001,
+"nameCn": "气功弹",
+"nameTn": "氣功彈",
+"nameKr": "기공탄",
+"descCn": "攻+35% 防-15%",
+"descTn": "攻+35% 防-15%",
+"icon": "skill_431",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +35%, 방어력 -15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5148001,
+"nameCn": "肆无忌蛋",
+"nameTn": "肆無忌蛋",
+"nameKr": "계란 공격",
+"descCn": "攻+45% 防-35%",
+"descTn": "攻+45% 防-35%",
+"icon": "skill_88",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 -35%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5149001,
+"nameCn": "异空连击",
+"nameTn": "異空連擊",
+"nameKr": "호신연격",
+"descCn": "攻+45% 防-35% 命中-10",
+"descTn": "攻+45% 防-35% 命中-10",
+"icon": "skill_302",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +45%, 방어력 -35%,명중 -10",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5150001,
+"nameCn": "蛊虫",
+"nameTn": "蠱蟲",
+"nameKr": "고충",
+"descCn": "每回合吸取60点HP",
+"descTn": "每回合吸取60點HP",
+"icon": "skill_689",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "매 턴 HP 60 흡수",
+"statusEffect": [
+{
+"statusType": 2102,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 1,
+"para5": 1,
+"para6": 60,
+"para7": 0
+}
+]
+},
+{
+"ID": 5151001,
+"nameCn": "冰冻",
+"nameTn": "冰凍",
+"nameKr": "빙결",
+"descCn": "敏捷下降25%，无法净化",
+"descTn": "敏捷下降25%，無法淨化",
+"icon": "skill_685",
+"effect": {
+"effectId": 101654,
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -25%, 정화 불가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5152001,
+"nameCn": "暴击",
+"nameTn": "暴擊",
+"nameKr": "치명타",
+"descCn": "攻+50%",
+"descTn": "攻+50%",
+"icon": "skill_637",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5153001,
+"nameCn": "双重攻击",
+"nameTn": "雙重攻擊",
+"nameKr": "이중공격",
+"descCn": "攻+30%",
+"descTn": "攻+30%",
+"icon": "skill_638",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5154001,
+"nameCn": "盾击",
+"nameTn": "盾擊",
+"nameKr": "방패공격",
+"descCn": "眩晕,无法行动",
+"descTn": "眩暈,無法行動",
+"icon": "skill_643",
+"imageId": "20",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "기절, 행동 불가",
+"statusEffect": [
+{
+"statusType": 2107,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 5155001,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155002,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155003,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155004,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155005,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155006,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155007,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155008,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155009,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5155010,
+"nameCn": "濒死攻击",
+"nameTn": "瀕死攻擊",
+"nameKr": "죽음공격",
+"descCn": "以身上的伤口痛楚逼迫自己专注以提升命中率",
+"descTn": "以身上的傷口痛楚逼迫自己專注以提升命中率",
+"icon": "skill_648",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "상처의 고통으로 집중하여 명중률 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156001,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156002,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156003,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156004,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156005,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156006,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156007,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156008,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156009,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5156010,
+"nameCn": "能量聚集",
+"nameTn": "能量聚集",
+"nameKr": "힘의 축적",
+"descCn": "集中身上的能量以提升防御力",
+"descTn": "集中身上的能量以提升防禦力",
+"icon": "skill_641",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "에너지를 집중해 방어력 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157001,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157002,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157003,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157004,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157005,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157006,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157007,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157008,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157009,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5157010,
+"nameCn": "专注战斗",
+"nameTn": "專注戰鬥",
+"nameKr": "집중전투",
+"descCn": "集中精神于战斗中，强化自身命中率",
+"descTn": "集中精神於戰鬥中，強化自身命中率",
+"icon": "skill_642",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "전투에 집중하여 명중률 강화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158001,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158002,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158003,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158004,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158005,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158006,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158007,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158008,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158009,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5158010,
+"nameCn": "激化攻击",
+"nameTn": "激化攻擊",
+"nameKr": "격화공격",
+"descCn": "瞬间提升攻击力并下降些许防御力",
+"descTn": "瞬間提升攻擊力並下降些許防禦力",
+"icon": "skill_640",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 순간 증가, 방어력 소폭 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159001,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159002,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159003,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159004,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159005,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159006,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159007,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159008,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159009,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5159010,
+"nameCn": "移形换位",
+"nameTn": "移形換位",
+"nameKr": "이형환위",
+"descCn": "利用地形闪躲攻击",
+"descTn": "利用地形閃躲攻擊",
+"icon": "skill_698",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "지형을 이용해 공격 회피",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160001,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160002,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160003,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160004,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160005,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160006,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160007,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160008,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160009,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5160010,
+"nameCn": "回避",
+"nameTn": "回避",
+"nameKr": "회피술",
+"descCn": "增加人物物理攻击回避率",
+"descTn": "增加人物物理攻擊回避率",
+"icon": "skill_632",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격 회피율 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5161001,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 200,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161002,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 220,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161003,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 240,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161004,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 260,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161005,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 280,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161006,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 300,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161007,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 320,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161008,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 340,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161009,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 360,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5161010,
+"nameCn": "状态回复",
+"nameTn": "狀態回復",
+"nameKr": "상태회복",
+"descCn": "人物处于非正常情况下待机(昏睡,石化等)自动回复体力",
+"descTn": "人物處於非正常情況下待機(昏睡,石化等)自動回復體力",
+"icon": "skill_636",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "이상 상태(수면, 석화 등) 대기 시 자동 체력 회복",
+"statusEffect": [
+{
+"statusType": 1101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 380,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5162001,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001001,
+"para4": 1,
+"para5": 400,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162002,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001002,
+"para4": 1,
+"para5": 430,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162003,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001003,
+"para4": 1,
+"para5": 460,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162004,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001004,
+"para4": 1,
+"para5": 490,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162005,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001005,
+"para4": 1,
+"para5": 520,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162006,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001006,
+"para4": 1,
+"para5": 550,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162007,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001007,
+"para4": 1,
+"para5": 580,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162008,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001008,
+"para4": 1,
+"para5": 610,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162009,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001009,
+"para4": 1,
+"para5": 640,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5162010,
+"nameCn": "陷阱",
+"nameTn": "陷阱",
+"nameKr": "함정",
+"descCn": "以陷阱反伤害物理攻击",
+"descTn": "以陷阱反傷害物理攻擊",
+"icon": "skill_654",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "함정으로 물리 공격 반사",
+"statusEffect": [
+{
+"statusType": 7101,
+"para1": 1000,
+"para2": 1000,
+"para3": 83001010,
+"para4": 1,
+"para5": 670,
+"para6": 1,
+"para7": 101630,
+"effectCount": 999
+}
+]
+},
+{
+"ID": 5163001,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-21%",
+"descTn": "敏捷-21%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -21%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163002,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-22%",
+"descTn": "敏捷-22%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -22%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163003,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-23%",
+"descTn": "敏捷-23%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -23%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163004,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-24%",
+"descTn": "敏捷-24%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -24%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163005,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-25%",
+"descTn": "敏捷-25%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -25%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163006,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-26%",
+"descTn": "敏捷-26%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -26%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163007,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-27%",
+"descTn": "敏捷-27%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -27%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163008,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-28%",
+"descTn": "敏捷-28%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -28%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163009,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-29%",
+"descTn": "敏捷-29%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -29%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5163010,
+"nameCn": "树根寄生",
+"nameTn": "樹根寄生",
+"nameKr": "뿌리기생",
+"descCn": "敏捷-30%",
+"descTn": "敏捷-30%",
+"icon": "skill_657",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "민첩 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5164001,
+"nameCn": "缠绕",
+"nameTn": "纏繞",
+"nameKr": "감기",
+"descCn": "被树根阻挡,当前回合不能行动",
+"descTn": "被樹根阻擋,當前回合不能行動",
+"icon": "skill_657",
+"imageId": "23-50-50",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "나무 뿌리에 감겨 현재 턴 행동 불가",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0,
+"setStandby": true
+}
+]
+},
+{
+"ID": 5165001,
+"nameCn": "迷失",
+"nameTn": "迷失",
+"nameKr": "분실",
+"descCn": "被挑拨后不听使唤（无法净化）",
+"descTn": "被挑撥後不聽使喚（無法淨化）",
+"icon": "skill_670",
+"effect": {
+"effectId": 101643,
+"type": 1
+},
+"buffType": 2,
+"descKr": "도발 상태, 명령 불가(정화 불가)",
+"statusEffect": [
+{
+"statusType": 2101,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5166001,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166002,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166003,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166004,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166005,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166006,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166007,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166008,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166009,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5166010,
+"nameCn": "弓熟练度",
+"nameTn": "弓熟練度",
+"nameKr": "활 숙련도",
+"descCn": "增加装备弓的伤害力",
+"descTn": "增加裝備弓的傷害力",
+"icon": "skill_663",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "활 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167001,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167002,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167003,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167004,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167005,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167006,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167007,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167008,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167009,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5167010,
+"nameCn": "精通回力镖",
+"nameTn": "精通回力鏢",
+"nameKr": "부메랑 숙련도",
+"descCn": "增加装备回旋标的伤害力",
+"descTn": "增加裝備迴旋標的傷害力",
+"icon": "skill_664",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "부메랑 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168001,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168002,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168003,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168004,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168005,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168006,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168007,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168008,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168009,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5168010,
+"nameCn": "精通投掷石",
+"nameTn": "精通投擲石",
+"nameKr": "투석 숙련도",
+"descCn": "增加装备投掷石的伤害力",
+"descTn": "增加裝備投擲石的傷害力",
+"icon": "skill_661",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "투척석 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169001,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169002,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169003,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169004,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169005,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169006,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169007,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169008,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169009,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5169010,
+"nameCn": "精通投掷斧",
+"nameTn": "精通投擲斧",
+"nameKr": "스로잉 숙련도",
+"descCn": "增加装备投掷斧的伤害力",
+"descTn": "增加裝備投擲斧的傷害力",
+"icon": "skill_662",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "스로잉 장착 시 피해 증가",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5170001,
+"nameCn": "遗忘",
+"nameTn": "遺忘",
+"nameKr": "망각",
+"descCn": "使宠物暂时忘却所学习的技能",
+"descTn": "使寵物暫時忘卻所學習的技能",
+"icon": "skill_671",
+"effect": {
+"effectId": 101643,
+"type": 1
+},
+"buffType": 2,
+"descKr": "펫이 배운 스킬을 일시적으로 잊게 함",
+"statusEffect": [
+{
+"statusType": 9003,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5171001,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171002,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171003,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171004,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171005,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171006,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171007,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171008,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171009,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5171010,
+"nameCn": "舍己为友",
+"nameTn": "舍己為友",
+"nameKr": "자기희생",
+"descCn": "回避上升；保护受到近战伤害且血量低于自身的角色",
+"descTn": "回避上升；保護受到近戰傷害且血量低於自身的角色",
+"icon": "skill_639",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "회피 상승, 자신보다 체력이 낮은 근접 피해 아군 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5172001,
+"nameCn": "破除铁壁",
+"nameTn": "破除鐵壁",
+"nameKr": "철벽파괴",
+"descCn": "防御力20%下降",
+"descTn": "防禦力20%下降",
+"icon": "skill_499",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5173001,
+"nameCn": "致命打击",
+"nameTn": "致命打擊",
+"nameKr": "치명적일격",
+"descCn": "攻击力上升90% 防御力40%下降",
+"descTn": "攻擊力上升90% 防禦力40%下降",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +90%, 방어력 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5174001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻击力及敏捷上升40%   防御力60%下降",
+"descTn": "攻擊力及敏捷上升40%   防禦力60%下降",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력·민첩 +40%, 방어력 -60%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5175001,
+"nameCn": "挑衅",
+"nameTn": "挑釁",
+"nameKr": "도발",
+"descCn": "攻击上升40% 防御20%下降",
+"descTn": "攻擊上升40% 防禦20%下降",
+"icon": "skill_130",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5176001,
+"nameCn": "旋风击",
+"nameTn": "旋風擊",
+"nameKr": "회오리 공격",
+"descCn": "攻击上升20% 防御30%下降",
+"descTn": "攻擊上升20% 防禦30%下降",
+"icon": "skill_507",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +20%, 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5177001,
+"nameCn": "全体逆转EX",
+"nameTn": "全體逆轉EX",
+"nameKr": "전체역전 EX",
+"descCn": "防御力-30% 敏捷+15%",
+"descTn": "防禦力-30% 敏捷+15%",
+"icon": "skill_216",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어력 -30%, 민첩 +15%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5178001,
+"nameCn": "鹰击",
+"nameTn": "鷹擊",
+"nameKr": "독수리 타격",
+"descCn": "攻击上升40% 防御20%下降",
+"descTn": "攻擊上升40% 防禦20%下降",
+"icon": "skill_307",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +40%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5179001,
+"nameCn": "机械飞踢",
+"nameTn": "機械飛踢",
+"nameKr": "무릎공격",
+"descCn": "攻+70%",
+"descTn": "攻+70%",
+"icon": "skill_464",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +70%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5180001,
+"nameCn": "机械压制",
+"nameTn": "機械壓制",
+"nameKr": "기계제압",
+"descCn": "敌方全体攻击力三回合内下降10%",
+"descTn": "敵方全體攻擊力三回合內下降10%",
+"icon": "skill_450",
+"effect": {
+"effectId": 200052,
+"type": 1
+},
+"buffType": 2,
+"descKr": "적 전체 공격력 3턴간 10% 감소",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5181001,
+"nameCn": "沉默",
+"nameTn": "沉默",
+"nameKr": "침묵",
+"descCn": "宠物低几率沉默1回合",
+"descTn": "寵物低幾率沉默1回合",
+"icon": "skill_221",
+"imageId": "10",
+"effect": {
+"type": 1
+},
+"buffType": 2,
+"descKr": "펫은 낮은 확률로 1턴 침묵",
+"statusEffect": [
+{
+"statusType": 2001,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5182001,
+"nameCn": "吃老孙五棒",
+"nameTn": "吃老孫五棒",
+"nameKr": "손오공의 오연타",
+"descCn": "攻+50% 防-20% 五段攻击 攻击增幅随敌人损血比成正比递增",
+"descTn": "攻+50% 防-20% 五段攻擊 攻擊增幅隨敵人損血比成正比遞增",
+"icon": "skill_521",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50%, 방어 -20%, 5연속 공격  적의 잃은 HP 비율에 비례해 공격 증가폭 상승",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5183001,
+"nameCn": "旋风击Ex",
+"nameTn": "旋風擊Ex",
+"nameKr": "회오리 공격 Ex",
+"descCn": "攻击上升30% 防御20%下降",
+"descTn": "攻擊上升30% 防禦20%下降",
+"icon": "skill_507",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +30%, 방어력 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5184001,
+"nameCn": "一击必杀EX",
+"nameTn": "一擊必殺EX",
+"nameKr": "일격필살EX",
+"descCn": "敏捷+15% 对敌人造成2倍伤害",
+"descTn": "敏捷+15% 對敵人造成2倍傷害",
+"icon": "skill_507",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩 +15%, 적에게 2배 피해를 줌",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5185001,
+"nameCn": "噬魂巨舔",
+"nameTn": "噬魂巨舔",
+"nameKr": "식혼거설",
+"descCn": "攻击+50% 攻击敌人，有50%几率触发连击一次",
+"descTn": "攻擊+50% 攻擊敵人，有50%幾率觸發連擊一次",
+"icon": "skill_507",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50%, 적을 공격하며 50% 확률로 연격 1회 발동",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5186001,
+"nameCn": "调和攻击",
+"nameTn": "調和攻擊",
+"nameKr": "조화 공격",
+"descCn": "攻击40%  防-40% 敏+20%  出手时消除场地属性",
+"descTn": "攻擊40%  防-40% 敏+20%  出手時消除場地屬性",
+"icon": "skill_562",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +40%, 방어 -40%, 민첩 +20%, 행동 시 전장 속성 우대 효과 무효화",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5187001,
+"nameCn": "忠诚",
+"nameTn": "忠誠",
+"nameKr": "충성",
+"descCn": "攻+20% 防+20%攻击敌人 并保护主人不受到近战攻击",
+"descTn": "攻+20% 防+20%攻擊敵人 並保護主人不受到近戰攻擊",
+"icon": "skill_561",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +20%, 방어 +20% 적을 공격하며 주인이 근접 공격을 받지 않도록 보호",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5188001,
+"nameCn": "印记",
+"nameTn": "印記",
+"nameKr": "표식",
+"descCn": "对携带印记目标100%命中，命中后印记消失",
+"descTn": "對攜帶印記目標100%命中，命中後印記消失",
+"icon": "skill_510",
+"effect": {
+"effectId": 200029,
+"type": 1
+},
+"buffType": 1,
+"descKr": "표식이 있는 대상에게 100% 명중, 명중 후 표식 제거",
+"statusEffect": [
+{
+"statusType": 9004,
+"para1": 84036,
+"para2": 1000,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5189001,
+"nameCn": "猛豹过江",
+"nameTn": "猛豹過江",
+"nameKr": "맹표 강습",
+"descCn": "防-20%  敏+30%",
+"descTn": "防-20%  敏+30%",
+"icon": "skill_510",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -20% 민첩 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5190001,
+"nameCn": "猛豹出海",
+"nameTn": "猛豹出海",
+"nameKr": "맹표 출격",
+"descCn": "攻+50% 防-20%",
+"descTn": "攻+50% 防-20%",
+"icon": "skill_583",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50% 방어 -20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5191001,
+"nameCn": "机甲一击",
+"nameTn": "機甲一擊",
+"nameKr": "기갑 일격",
+"descCn": "攻+50% 防+20%",
+"descTn": "攻+50% 防+20%",
+"icon": "skill_544",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50% 방어 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5192001,
+"nameCn": "横行天下",
+"nameTn": "橫行天下",
+"nameKr": "천하 횡행",
+"descCn": "攻击一排敌人 无视防御造成500点伤害",
+"descTn": "攻擊一排敵人 無視防禦造成500點傷害",
+"icon": "skill_573",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적 한 줄 공격, 방어 무시 500 피해",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5193001,
+"nameCn": "冰焰攻击",
+"nameTn": "冰焰攻擊",
+"nameKr": "빙염 공격",
+"descCn": "攻击力上升90% 防御力40%下降 几率使对手待机一回合",
+"descTn": "攻擊力上升90% 防禦力40%下降 幾率使對手待機一回合",
+"icon": "skill_600",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +90% 방어력 -40% 확률로 상대 1턴 대기",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5194001,
+"nameCn": "冰龙阵",
+"nameTn": "冰龍陣",
+"nameKr": "빙룡진",
+"descCn": "攻+20%",
+"descTn": "攻+20%",
+"icon": "skill_568",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5195001,
+"nameCn": "暴龙咆哮",
+"nameTn": "暴龍咆哮",
+"nameKr": "폭룡의 포효",
+"descCn": "攻+20% 敏+20%",
+"descTn": "攻+20% 敏+20%",
+"icon": "skill_619",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +20% 민첩 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5196001,
+"nameCn": "飞天一击",
+"nameTn": "飛天一擊",
+"nameKr": "비천 일격",
+"descCn": "对敌人造成3倍普攻伤害",
+"descTn": "對敵人造成3倍普攻傷害",
+"icon": "skill_620",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "적에게 일반 공격의 3배 피해",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5197001,
+"nameCn": "魔龙压制",
+"nameTn": "魔龍壓制",
+"nameKr": "마룡 제압",
+"descCn": "敌方全体敏捷4回内下降20%（不可净化）",
+"descTn": "敵方全體敏捷4回內下降20%（不可淨化）",
+"icon": "skill_571",
+"effect": {
+"effectId": 200055,
+"type": 1
+},
+"buffType": 1,
+"descKr": "적 전체 민첩 4턴 동안 20% 감소 (정화 불가)",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5198001,
+"nameCn": "炫鸟阵",
+"nameTn": "炫鳥陣",
+"nameKr": "현조진",
+"descCn": "攻+20%",
+"descTn": "攻+20%",
+"icon": "skill_422",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5199001,
+"nameCn": "抗性威能",
+"nameTn": "抗性威能",
+"nameKr": "저항 위능",
+"descCn": "提升我方全体石化、睡眠、混乱10点，持续3回合",
+"descTn": "提升我方全體石化、睡眠、混亂10點，持續3回合",
+"icon": "skill_37",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "아군 전체의 석화, 수면, 혼란 저항 10 증가, 3턴 지속",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5200001,
+"nameCn": "飞虎阵",
+"nameTn": "飛虎陣",
+"nameKr": "비호진",
+"descCn": "敏+20%",
+"descTn": "敏+20%",
+"icon": "skill_453",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "민첩+20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5201001,
+"nameCn": "肆无忌蛋",
+"nameTn": "肆無忌蛋",
+"nameKr": "계란 공격",
+"descCn": "防-30%",
+"descTn": "防-30%",
+"icon": "skill_88",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5202001,
+"nameCn": "印记",
+"nameTn": "印記",
+"nameKr": "표식",
+"descCn": "携带印记目标受到人物远程物理攻击伤害增加50%",
+"descTn": "攜帶印記目標受到人物遠程物理攻擊傷害增加50%",
+"icon": "skill_510",
+"effect": {
+"effectId": 200048,
+"type": 1
+},
+"buffType": 1,
+"descKr": "무작위로 3~5회 공격, 적중 대상에게 특수 표식 부여, 2턴 지속",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5203001,
+"nameCn": "独角冲击",
+"nameTn": "獨角衝擊",
+"nameKr": "외뿔공격",
+"descCn": "攻+50% 防-50%",
+"descTn": "攻+50% 防-50%",
+"icon": "skill_508",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50% 방어 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5204001,
+"nameCn": "六目印记",
+"nameTn": "六目印記",
+"nameKr": "육목 인장",
+"descCn": "对携带印记目标100%命中，命中后印记消失",
+"descTn": "對攜帶印記目標100%命中，命中後印記消失",
+"icon": "skill_510",
+"effect": {
+"effectId": 200029,
+"type": 1
+},
+"buffType": 1,
+"descKr": "표식이 있는 대상에게 100% 명중, 명중 후 표식 제거",
+"statusEffect": [
+{
+"statusType": 9004,
+"para1": 84055,
+"para2": 1000,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+},
+{
+"ID": 5205001,
+"nameCn": "迷失",
+"nameTn": "迷失",
+"nameKr": "분실",
+"descCn": "攻击力+20% 防-50%",
+"descTn": "攻擊力+20% 防-50%",
+"icon": "skill_528",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +20% 물리 방어력 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5206001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻+20% 防-50%",
+"descTn": "攻+20% 防-50%",
+"icon": "skill_64",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +20% 방어 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 5207001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻+50% 防-50%",
+"descTn": "攻+50% 防-50%",
+"icon": "skill_491",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +50% 방어 -50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6001001,
+"nameCn": "浴血狂袭",
+"nameTn": "浴血狂襲",
+"nameKr": "피의 습격",
+"descCn": "攻+70% 防-30%",
+"descTn": "攻+70% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +70% 방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6002001,
+"nameCn": "火线猎杀",
+"nameTn": "火線獵殺",
+"nameKr": "전쟁사냥",
+"descCn": "攻+70% 防-30%",
+"descTn": "攻+70% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +70% 방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6003001,
+"nameCn": "玄甲一击",
+"nameTn": "玄甲一擊",
+"nameKr": "현갑일격",
+"descCn": "攻+70% 防-30%",
+"descTn": "攻+70% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +70% 방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6004001,
+"nameCn": "MP攻击",
+"nameTn": "MP攻擊",
+"nameKr": "MP공격",
+"descCn": "攻+70% 防-30%",
+"descTn": "攻+70% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +70% 방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6005001,
+"nameCn": "飞膝踢",
+"nameTn": "飛膝踢",
+"nameKr": "날아차기",
+"descCn": "防-40%",
+"descTn": "防-40%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6006001,
+"nameCn": "狂暴攻击",
+"nameTn": "狂暴攻擊",
+"nameKr": "광폭공격",
+"descCn": "攻+70% 防-30%",
+"descTn": "攻+70% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +70% 방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6007001,
+"nameCn": "愤怒",
+"nameTn": "憤怒",
+"nameKr": "분노",
+"descCn": "攻+60% 防-70% 敏+30%",
+"descTn": "攻+60% 防-70% 敏+30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격 +60% 방어 -70% 민첩+20%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6008001,
+"nameCn": "圣辉加佑",
+"nameTn": "聖輝加佑",
+"nameKr": "성휘의 보호",
+"descCn": "攻+10% 免伤+10%（骑乘状态人物也有效）",
+"descTn": "攻+10% 免傷+10%（騎乘狀態人物也有效）",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +10%, 피해 감소 +10% (탑승 상태 캐릭터에게도 적용)",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6009001,
+"nameCn": "灵辉庇护",
+"nameTn": "靈輝庇護",
+"nameKr": "영휘의 보호",
+"descCn": "攻+5% 免伤+5%（骑乘状态人物也有效）",
+"descTn": "攻+5% 免傷+5%（騎乘狀態人物也有效）",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +5%, 피해 감소 +5% (탑승 상태 캐릭터에게도 적용)",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6010001,
+"nameCn": "天辉守护",
+"nameTn": "天輝守護",
+"nameKr": "천휘의 수호",
+"descCn": "攻+3% 免伤+3%（骑乘状态人物也有效）",
+"descTn": "攻+3% 免傷+3%（騎乘狀態人物也有效）",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "공격력 +3%, 피해 감소 +3% (탑승 상태 캐릭터에게도 적용)",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6011001,
+"nameCn": "S背水之战1",
+"nameTn": "S背水之戰1",
+"nameKr": "S 배수의 전투 1",
+"descCn": "攻+50% 防-30%",
+"descTn": "攻+50% 防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -30%, 물리 공격력 +50%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6012001,
+"nameCn": "S背水之战2",
+"nameTn": "S背水之戰2",
+"nameKr": "S 배수의 전투 2",
+"descCn": "攻+55% 防-35%",
+"descTn": "攻+55% 防-35%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -35%, 물리 공격력 +55%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6013001,
+"nameCn": "S背水之战3",
+"nameTn": "S背水之戰3",
+"nameKr": "S 배수의 전투 3",
+"descCn": "攻+60% 防-45%",
+"descTn": "攻+60% 防-45%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -45%, 물리 공격력 +60%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6014001,
+"nameCn": "S背水之战4",
+"nameTn": "S背水之戰4",
+"nameKr": "S 배수의 전투 4",
+"descCn": "攻+65% 防-45%",
+"descTn": "攻+65% 防-45%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 -45%, 물리 공격력 +65%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6015001,
+"nameCn": "S一击必杀1",
+"nameTn": "S一擊必殺1",
+"nameKr": "S 일격필살 1",
+"descCn": "防-40%",
+"descTn": "防-40%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6016001,
+"nameCn": "S一击必杀2",
+"nameTn": "S一擊必殺2",
+"nameKr": "S 일격필살 2",
+"descCn": "防-40%",
+"descTn": "防-40%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -40%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6017001,
+"nameCn": "S一击必杀3",
+"nameTn": "S一擊必殺3",
+"nameKr": "S 일격필살 3",
+"descCn": "防-30%",
+"descTn": "防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6018001,
+"nameCn": "S一击必杀4",
+"nameTn": "S一擊必殺4",
+"nameKr": "S 일격필살 4",
+"descCn": "防-30%",
+"descTn": "防-30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "방어 -30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6019001,
+"nameCn": "S忠犬",
+"nameTn": "S忠犬",
+"nameKr": "S 충견",
+"descCn": "攻-70% 防+50%",
+"descTn": "攻-70% 防+50%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 방어력 +50%, 물리 공격력 -70%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6020001,
+"nameCn": "S三段攻击",
+"nameTn": "S三段攻擊",
+"nameKr": "S 3단 공격",
+"descCn": "攻+30%",
+"descTn": "攻+30%",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "물리 공격력 +30%",
+"statusEffect": [
+{}
+]
+},
+{
+"ID": 6021001,
+"nameCn": "伏击",
+"nameTn": "伏擊",
+"nameKr": "기습",
+"descCn": "一回合储存力量,下次攻击时+130%攻击",
+"descTn": "一回合儲存力量,下次攻擊時+130%攻擊",
+"icon": "skill_11",
+"effect": {
+"type": 1
+},
+"buffType": 1,
+"descKr": "1턴 동안 힘을 모은 후, 다음 공격 시 공격력 130% 증가",
+"statusEffect": [
+{
+"statusType": 2110,
+"para1": 0,
+"para2": 0,
+"para3": 0,
+"para4": 0,
+"para5": 0,
+"para6": 0,
+"para7": 0
+}
+]
+}
+]

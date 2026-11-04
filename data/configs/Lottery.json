@@ -1,0 +1,652 @@
+[
+{
+"ID": 0,
+"extraRule": [
+{
+"itemId": 93032,
+"guessCount": 3
+},
+{
+"itemId": 93033,
+"guessCount": 5
+},
+{
+"itemId": 93034,
+"guessCount": 10
+}
+]
+},
+{
+"ID": 1001,
+"nameCn": "魔兽系",
+"descriptionCn": "随机获得火魔兽蛋、风魔兽蛋x1（概率≈1%）",
+"nameKr": "악마류",
+"descriptionKr": "랜덤으로 화악마 알, 풍악마 알 ×1 획득 (확률 약 1%)",
+"imageId": 250267,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93019
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93020
+}
+],
+"nameTn": "魔獸系",
+"descriptionTn": "隨機獲得火魔獸蛋、風魔獸蛋x1（概率≈1%）"
+},
+{
+"ID": 1002,
+"nameCn": "魔兽骑证",
+"descriptionCn": "随机获得火魔骑证、风魔骑证x1（概率≈1%）",
+"nameKr": "악마류 탑승권",
+"descriptionKr": "랜덤으로 화악마 탑승권, 풍악마 탑승권 ×1 획득 (확률 약 1%)",
+"imageId": 250266,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 90736
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 90737
+}
+],
+"nameTn": "魔獸騎證",
+"descriptionTn": "隨機獲得火魔騎證、風魔騎證x1（概率≈1%）"
+},
+{
+"ID": 1003,
+"nameCn": "2D人龙进化石",
+"descriptionCn": "获得2D人龙进化石x1（概率≈2%）",
+"nameKr": "2D 얀기로류 진화석",
+"descriptionKr": "2D 얀기로류 진화석 ×1 획득 (확률 약 2%)",
+"imageId": 250268,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93022
+}
+],
+"nameTn": "2D人龍進化石",
+"descriptionTn": "獲得2D人龍進化石x1（概率≈2%）"
+},
+{
+"ID": 1004,
+"nameCn": "圣兽蛋",
+"descriptionCn": "随机获得白虎蛋、朱雀蛋x1（概率≈0.5%）",
+"nameKr": "사신수 알",
+"descriptionKr": "랜덤으로 백호 알, 주작 알 ×1 획득 (확률 약 0.5%)",
+"imageId": 250271,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92037
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92038
+}
+],
+"nameTn": "聖獸蛋",
+"descriptionTn": "隨機獲得白虎蛋、朱雀蛋x1（概率≈0.5%）"
+},
+{
+"ID": 1005,
+"nameCn": "圣兽骑证",
+"descriptionCn": "随机获得白虎骑证、朱雀骑证x1（概率≈1%）",
+"nameKr": "사신수 탑승권",
+"descriptionKr": "랜덤으로 백호 탑승권, 주작 탑승권 ×1 획득 (확률 약 1%)",
+"imageId": 250260,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 90625
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 90626
+}
+],
+"nameTn": "聖獸騎證",
+"descriptionTn": "隨機獲得白虎騎證、朱雀騎證x1（概率≈1%）"
+},
+{
+"ID": 1006,
+"nameCn": "2D虎进化石",
+"descriptionCn": "获得2D虎进化石x1（概率≈2%）",
+"nameKr": "2D 호랑이류 진화석",
+"descriptionKr": "2D 호랑이류 진화석 ×1 획득 (확률 약 2%)",
+"imageId": 250249,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93021
+}
+],
+"nameTn": "2D虎進化石",
+"descriptionTn": "獲得2D虎進化石x1（概率≈2%）"
+},
+{
+"ID": 1007,
+"nameCn": "合成武器12-14",
+"descriptionCn": "随机获得合成12~14等级武器随机包x1（概率≈8%）",
+"nameKr": "합성 무기 12~14",
+"descriptionKr": "랜덤 12~14레벨 합성 무기 상자 ×1 획득 (확률 약 8%)",
+"imageId": 250218,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93001
+},
+{
+"itemNumStr": "1",
+"rate": 5000,
+"itemId": 93002
+},
+{
+"itemNumStr": "1",
+"rate": 2000,
+"itemId": 93003
+}
+],
+"nameTn": "合成武器12-14",
+"descriptionTn": "隨機獲得合成12~14等級武器隨機包x1（概率≈8%）"
+},
+{
+"ID": 1008,
+"nameCn": "合成头饰12-14",
+"descriptionCn": "随机获得合成12~14等级头饰随机包x1（概率≈5%）",
+"nameKr": "합성 투구 12~14",
+"descriptionKr": "랜덤 12~14레벨 합성 투구 상자 ×1 획득 (확률 약 5%)",
+"imageId": 250238,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93006
+},
+{
+"itemNumStr": "1",
+"rate": 5000,
+"itemId": 93007
+},
+{
+"itemNumStr": "1",
+"rate": 2000,
+"itemId": 93008
+}
+],
+"nameTn": "合成頭飾12-14",
+"descriptionTn": "隨機獲得合成12~14等級頭飾隨機包x1（概率≈5%）"
+},
+{
+"ID": 1009,
+"nameCn": "合成护甲12-14",
+"descriptionCn": "随机获得合成12~14等级护甲随机包x1（概率≈5%）",
+"nameKr": "합성 갑옷 12~14",
+"descriptionKr": "랜덤 12~14레벨 합성 갑옷 상자 ×1 획득 (확률 약 5%)",
+"imageId": 250239,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93011
+},
+{
+"itemNumStr": "1",
+"rate": 5000,
+"itemId": 93012
+},
+{
+"itemNumStr": "1",
+"rate": 2000,
+"itemId": 93013
+}
+],
+"nameTn": "合成護甲12-14",
+"descriptionTn": "隨機獲得合成12~14等級護甲隨機包x1（概率≈5%）"
+},
+{
+"ID": 1010,
+"nameCn": "暴龙系",
+"descriptionCn": "随机获得朵巴奈特、斑尼迪克、阿米朵、邦司凉朵蛋x1（概率≈3%）",
+"nameKr": "모가류",
+"descriptionKr": "랜덤으로 푸룡. 지가로스, 칼로스, 노르곤 알 중 ×1 획득 (확률 약 3%)",
+"imageId": 250270,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92418
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92419
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92420
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92421
+}
+],
+"nameTn": "暴龍系",
+"descriptionTn": "隨機獲得朵巴奈特、斑尼迪克、阿米朵、邦司涼朵蛋x1（概率≈3%）"
+},
+{
+"ID": 1011,
+"nameCn": "79爆女礼盒",
+"descriptionCn": "获得79爆女礼盒（概率≈5%）",
+"nameKr": "레벨79 MM 선물상자",
+"descriptionKr": "레벨79 MM 선물상자 획득 (확률 약 5%)",
+"imageId": 250220,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92119
+}
+],
+"nameTn": "79爆女禮盒",
+"descriptionTn": "獲得79爆女禮盒（概率≈5%）"
+},
+{
+"ID": 1012,
+"nameCn": "1级MM礼盒",
+"descriptionCn": "获得1级MM礼盒（概率≈8%）",
+"nameKr": "레벨1 MM 선물상자",
+"descriptionKr": "레벨1 MM 선물상자 획득 (확률 약 8%)",
+"imageId": 250219,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 90401
+}
+],
+"nameTn": "1級MM禮盒",
+"descriptionTn": "獲得1級MM禮盒（概率≈8%）"
+},
+{
+"ID": 1013,
+"nameCn": "角色光环",
+"descriptionCn": "随机获得恶魔之眼、佛怒火莲、寒霜冰雪、星星之火（概率≈2%）",
+"nameKr": "캐릭터 오로라",
+"descriptionKr": "랜덤으로 케릭터 오로라 중 1개 획득 (확률 약 2%)",
+"imageId": 250273,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92139
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92140
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92141
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92142
+}
+],
+"nameTn": "角色光環",
+"descriptionTn": "隨機獲得惡魔之眼、佛怒火蓮、寒霜冰雪、星星之火（概率≈2%）"
+},
+{
+"ID": 1014,
+"nameCn": "角色皮肤",
+"descriptionCn": "随机获得精灵吉米、精灵罗伦斯、精灵希希亚、精灵菲莉雅皮肤x1（概率≈2%）",
+"nameKr": "캐릭터 스킨",
+"descriptionKr": "랜덤으로 정령 케릭터 스킨 중 ×1 획득 (확률 약 2%)",
+"imageId": 250274,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 91263
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 91264
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 91265
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 91266
+}
+],
+"nameTn": "角色皮膚",
+"descriptionTn": "隨機獲得精靈吉米、精靈羅倫斯、精靈希希亞、精靈菲莉雅皮膚x1（概率≈2%）"
+},
+{
+"ID": 1015,
+"nameCn": "极品灵石项链礼包",
+"descriptionCn": "获得极品地灵项链X5、极品水灵项链X5、极品火灵项链X5、极品风灵项链X5（概率≈7%）",
+"nameKr": "최고급 영석 목걸이 선물상자",
+"descriptionKr": "최고급 지령 목걸이 ×5, 최고급 수령 목걸이 ×5, 최고급 화령 목걸이 ×5, 최고급 풍령 목걸이 ×5 획득 (확률 약 7%)",
+"imageId": 250221,
+"Item": [
+{
+"itemNumStr": "5",
+"rate": 10000,
+"itemId": 92101
+},
+{
+"itemNumStr": "5",
+"rate": 10000,
+"itemId": 92102
+},
+{
+"itemNumStr": "5",
+"rate": 10000,
+"itemId": 92103
+},
+{
+"itemNumStr": "5",
+"rate": 10000,
+"itemId": 92104
+}
+],
+"nameTn": "極品靈石項鏈禮包",
+"descriptionTn": "獲得極品地靈項鏈X5、極品水靈項鏈X5、極品火靈項鏈X5、極品風靈項鏈X5（概率≈7%）"
+},
+{
+"ID": 1016,
+"nameCn": "猩猩系系",
+"descriptionCn": "随机获得司尔顿、格尔希洛、梅尔顿、戈登尔顿x1（概率≈3%）",
+"nameKr": "고르돈류",
+"descriptionKr": "랜덤으로 철기돈, 실버고르돈, 고라돈, 노라돈 알 중 ×1 획득 (확률 약 3%)",
+"imageId": 250229,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93038
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93039
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93040
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93041
+}
+],
+"nameTn": "猩猩系系",
+"descriptionTn": "隨機獲得司爾頓、格爾希洛、梅爾頓、戈登爾頓x1（概率≈3%）"
+},
+{
+"ID": 1017,
+"nameCn": "雷龙系",
+"descriptionCn": "随机获得嘎吱拉、哥斯哥斯、蒙哥拉斯蛋x1（概率≈3%）",
+"nameKr": "프라키류",
+"descriptionKr": "랜덤으로 푸비토스, 브라키오스, 노라키토스 알 중 ×1 획득 (확률 약 3%)",
+"imageId": 250269,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93035
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93036
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 93037
+}
+],
+"nameTn": "雷龍系",
+"descriptionTn": "隨機獲得嘎吱拉、哥斯哥斯、蒙哥拉斯蛋x1（概率≈3%）"
+},
+{
+"ID": 1018,
+"nameCn": "回炉水晶X5",
+"descriptionCn": "获得回炉水晶X5（概率≈5%）",
+"nameKr": "초기화 수정 ×5",
+"descriptionKr": "초기화 수정 ×5 획득 (확률 약 5%)",
+"imageId": 250224,
+"Item": [
+{
+"itemNumStr": "5",
+"rate": 10000,
+"itemId": 90627
+}
+],
+"nameTn": "回爐水晶X5",
+"descriptionTn": "獲得回爐水晶X5（概率≈5%）"
+},
+{
+"ID": 1019,
+"nameCn": "回炉水晶X10",
+"descriptionCn": "获得回炉水晶X10（概率≈3%）",
+"nameKr": "초기화 수정 ×10",
+"descriptionKr": "초기화 수정 ×10 획득 (확률 약 3%)",
+"imageId": 250209,
+"Item": [
+{
+"itemNumStr": "10",
+"rate": 10000,
+"itemId": 90627
+}
+],
+"nameTn": "回爐水晶X10",
+"descriptionTn": "獲得回爐水晶X10（概率≈3%）"
+},
+{
+"ID": 1020,
+"nameCn": "回炉水晶X20",
+"descriptionCn": "获得回炉水晶X20（概率≈2%）",
+"nameKr": "초기화 수정 ×20",
+"descriptionKr": "초기화 수정 ×20 획득 (확률 약 2%)",
+"imageId": 250231,
+"Item": [
+{
+"itemNumStr": "20",
+"rate": 10000,
+"itemId": 90627
+}
+],
+"nameTn": "回爐水晶X20",
+"descriptionTn": "獲得回爐水晶X20（概率≈2%）"
+},
+{
+"ID": 1021,
+"nameCn": "回炉水晶X30",
+"descriptionCn": "获得回炉水晶X30（概率≈1%）",
+"nameKr": "초기화 수정 ×30",
+"descriptionKr": "초기화 수정 ×30 획득 (확률 약 1%)",
+"imageId": 250272,
+"Item": [
+{
+"itemNumStr": "30",
+"rate": 10000,
+"itemId": 90627
+}
+],
+"nameTn": "回爐水晶X30",
+"descriptionTn": "獲得回爐水晶X30（概率≈1%）"
+},
+{
+"ID": 1022,
+"nameCn": "合成首饰B2",
+"descriptionCn": "获得合成首饰B2一个（概率≈7%）",
+"nameKr": "합성 악세서리 B2",
+"descriptionKr": "합성 액세서리 B2 ×1 획득 (확률 약 7%)",
+"imageId": 250226,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11125
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11126
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11127
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11128
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11129
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11130
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11131
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11132
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11133
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11134
+}
+],
+"nameTn": "合成首飾B2",
+"descriptionTn": "獲得合成首飾B2一個（概率≈7%）"
+},
+{
+"ID": 1023,
+"nameCn": "合成首饰B1",
+"descriptionCn": "获得合成首饰B1一个（概率≈7%）",
+"nameKr": "합성 악세서리 B1",
+"descriptionKr": "합성 액세서리 B1 ×1 획득 (확률 약 7%)",
+"imageId": 250276,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11075
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11076
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11077
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11078
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11079
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11080
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11081
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11082
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11083
+},
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 11084
+}
+],
+"nameTn": "合成首飾B1",
+"descriptionTn": "獲得合成首飾B1一個（概率≈7%）"
+},
+{
+"ID": 1024,
+"nameCn": "1000万经验果",
+"descriptionCn": "获得宠物使用1000万经验果x1（概率≈6%）",
+"nameKr": "1,000만 경험 열매",
+"descriptionKr": "페트용 1,000만 경험 열매 ×1 획득 (확률 약 6%)",
+"imageId": 250275,
+"Item": [
+{
+"itemNumStr": "1",
+"rate": 10000,
+"itemId": 92105
+}
+],
+"nameTn": "1000萬經驗果",
+"descriptionTn": "獲得寵物使用1000萬經驗果x1（概率≈6%）"
+}
+]

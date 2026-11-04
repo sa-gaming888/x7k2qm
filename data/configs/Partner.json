@@ -1,0 +1,33 @@
+[
+{
+"ID": 1000,
+"partnerType": 4,
+"name": 300000000,
+"attrGroup": 1000,
+"isPlayerAttr": true,
+"growArg": {
+"initArg": 100,
+"levelUpArg": 5.0,
+"vitArg": 50,
+"atkArg": 50,
+"matkArg": 0,
+"defArg": 50,
+"dexArg": 50
+},
+"property": {
+"earth": 100,
+"water": 0,
+"fire": 0,
+"wind": 0
+},
+"skills": [
+{
+"skillId": 60004,
+"skillLevel": 1
+}
+],
+"ai": 20000,
+"imageId": 112876,
+"headId": 112876
+}
+]

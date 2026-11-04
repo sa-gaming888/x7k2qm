@@ -1,0 +1,134 @@
+[
+{
+"ID": 92116,
+"aList": [
+91916,
+91917,
+91918,
+91919
+],
+"getRate": [
+100,
+0,
+0
+],
+"needInfo": [
+{
+"currencyType": 3,
+"currencyValue": 100000
+}
+]
+},
+{
+"ID": 92117,
+"aList": [
+91920,
+91921,
+91922,
+91923
+],
+"getRate": [
+100,
+0,
+0
+],
+"needInfo": [
+{
+"currencyType": 3,
+"currencyValue": 200000
+},
+{
+"itemId": 92115,
+"itemNum": 1
+}
+]
+},
+{
+"ID": 92118,
+"aList": [
+91924,
+91925,
+91926,
+91927
+],
+"getRate": [
+100,
+0,
+0
+],
+"needInfo": [
+{
+"currencyType": 3,
+"currencyValue": 300000
+},
+{
+"itemId": 92115,
+"itemNum": 2
+}
+]
+},
+{
+"ID": 92034,
+"aList": [
+91916,
+91917,
+91918,
+91919
+],
+"bList": [
+91916,
+91917,
+91918,
+91919
+],
+"getRate": [
+100,
+0,
+0
+],
+"needInfo": [
+{
+"currencyType": 3,
+"currencyValue": 100000
+},
+{
+"itemId": 92115,
+"itemNum": 3
+}
+],
+"smCn": "祝福",
+"smTn": "祝福"
+},
+{
+"ID": 92035,
+"aList": [
+91920,
+91921,
+91922,
+91923
+],
+"bList": [
+91920,
+91921,
+91922,
+91923
+],
+"getRate": [
+100,
+0,
+0
+],
+"needInfo": [
+{
+"currencyType": 3,
+"currencyValue": 200000
+},
+{
+"itemId": 92115,
+"itemNum": 6
+}
+],
+"smCn": "祝福",
+"smTn": "祝福"
+}
+]

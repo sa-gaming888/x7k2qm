@@ -1,0 +1,557 @@
+[
+{
+"ID": 1,
+"price": 200.0,
+"buyUrlList": [
+"https://pr.kuaifaka.net/item/PKuzE1",
+"https://yjdfaka.com/snkxat",
+"http://mtw.so/5t5Dx5"
+],
+"name": 10000431,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 2000
+}
+]
+},
+{
+"ID": 2,
+"price": 500.0,
+"name": 10000432,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 5200
+}
+]
+},
+{
+"ID": 3,
+"price": 1000.0,
+"name": 10000433,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 10500
+}
+]
+},
+{
+"ID": 4,
+"price": 2000.0,
+"name": 10000434,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 22000
+}
+]
+},
+{
+"ID": 5,
+"price": 5000.0,
+"name": 10000435,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 60000
+}
+]
+},
+{
+"ID": 6,
+"price": 8000.0,
+"name": 10000436,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 100000
+}
+]
+},
+{
+"ID": 7,
+"price": 888.0,
+"name": 10000437,
+"reward": [
+{
+"currencyType": 1,
+"currencyValue": 120
+}
+],
+"isWeekCard": true
+},
+{
+"ID": 8,
+"price": 280.0,
+"name": 10000439,
+"reward": [
+{
+"currencyType": 8,
+"currencyValue": 3888
+}
+],
+"isMonthCard": true
+},
+{
+"ID": 9,
+"price": 1520.0,
+"name": 10000440,
+"reward": [
+{
+"currencyType": 8,
+"currencyValue": 18888
+}
+],
+"isJiCard": true
+},
+{
+"ID": 10,
+"price": 520.0,
+"name": 10000441,
+"isGrow": true
+},
+{
+"ID": 11,
+"price": 998.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 30000
+},
+{
+"itemId": 71840,
+"itemNum": 1
+},
+{
+"currencyType": 1,
+"currencyValue": 998
+}
+],
+"type": 1,
+"order": 1,
+"name": 33092
+},
+{
+"ID": 12,
+"price": 1288.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 100000
+},
+{
+"itemId": 71840,
+"itemNum": 1
+},
+{
+"currencyType": 1,
+"currencyValue": 1288
+}
+],
+"type": 1,
+"order": 2,
+"name": 33092
+},
+{
+"ID": 13,
+"price": 1688.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 150000
+},
+{
+"itemId": 71840,
+"itemNum": 1
+},
+{
+"currencyType": 1,
+"currencyValue": 1388
+}
+],
+"type": 1,
+"order": 3,
+"name": 33092
+},
+{
+"ID": 14,
+"price": 1988.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 100000
+},
+{
+"itemId": 71840,
+"itemNum": 2
+},
+{
+"currencyType": 1,
+"currencyValue": 1988
+}
+],
+"type": 1,
+"order": 4,
+"name": 33092
+},
+{
+"ID": 15,
+"price": 2800.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 200000
+},
+{
+"itemId": 71840,
+"itemNum": 3
+},
+{
+"currencyType": 1,
+"currencyValue": 2800
+}
+],
+"type": 1,
+"order": 5,
+"name": 33092
+},
+{
+"ID": 16,
+"price": 4000.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 150000
+},
+{
+"itemId": 71840,
+"itemNum": 4
+},
+{
+"currencyType": 1,
+"currencyValue": 4000
+}
+],
+"type": 1,
+"order": 6,
+"name": 33092
+},
+{
+"ID": 17,
+"price": 5000.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 150000
+},
+{
+"itemId": 71840,
+"itemNum": 5
+},
+{
+"currencyType": 1,
+"currencyValue": 5000
+}
+],
+"type": 1,
+"order": 7,
+"name": 33092
+},
+{
+"ID": 18,
+"price": 6800.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 400000
+},
+{
+"itemId": 71840,
+"itemNum": 7
+},
+{
+"currencyType": 1,
+"currencyValue": 6800
+}
+],
+"type": 1,
+"order": 8,
+"name": 33092
+},
+{
+"ID": 19,
+"price": 8800.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 600000
+},
+{
+"itemId": 71840,
+"itemNum": 9
+},
+{
+"currencyType": 1,
+"currencyValue": 8800
+}
+],
+"type": 1,
+"order": 9,
+"name": 33092
+},
+{
+"ID": 20,
+"price": 11200.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 1000000
+},
+{
+"itemId": 71840,
+"itemNum": 15
+},
+{
+"currencyType": 1,
+"currencyValue": 11200
+}
+],
+"type": 1,
+"order": 10,
+"name": 33092
+},
+{
+"ID": 21,
+"price": 16500.0,
+"extraReward": [
+{
+"currencyType": 8,
+"currencyValue": 1000000
+},
+{
+"itemId": 71840,
+"itemNum": 20
+},
+{
+"currencyType": 1,
+"currencyValue": 16500
+}
+],
+"type": 1,
+"order": 11,
+"name": 33092
+},
+{
+"ID": 22,
+"price": 328.0,
+"extraReward": [
+{
+"itemId": 30000,
+"itemNum": 20
+},
+{
+"currencyType": 2,
+"currencyValue": 2000
+},
+{
+"currencyType": 1,
+"currencyValue": 328
+}
+],
+"type": 2,
+"order": 1,
+"name": 33094
+},
+{
+"ID": 23,
+"price": 528.0,
+"extraReward": [
+{
+"itemId": 30000,
+"itemNum": 30
+},
+{
+"currencyType": 2,
+"currencyValue": 4000
+},
+{
+"currencyType": 1,
+"currencyValue": 528
+}
+],
+"type": 2,
+"order": 2,
+"name": 33094
+},
+{
+"ID": 24,
+"price": 666.0,
+"extraReward": [
+{
+"itemId": 30000,
+"itemNum": 50
+},
+{
+"currencyType": 2,
+"currencyValue": 5000
+},
+{
+"currencyType": 1,
+"currencyValue": 666
+}
+],
+"type": 2,
+"order": 3,
+"name": 33094
+},
+{
+"ID": 25,
+"price": 999.0,
+"extraReward": [
+{
+"itemId": 30000,
+"itemNum": 80
+},
+{
+"currencyType": 2,
+"currencyValue": 8000
+},
+{
+"currencyType": 1,
+"currencyValue": 999
+}
+],
+"type": 2,
+"order": 4,
+"name": 33094
+},
+{
+"ID": 26,
+"price": 1480.0,
+"extraReward": [
+{
+"itemId": 30000,
+"itemNum": 138
+},
+{
+"currencyType": 2,
+"currencyValue": 15000
+},
+{
+"currencyType": 1,
+"currencyValue": 1480
+}
+],
+"type": 2,
+"order": 5,
+"name": 33094
+},
+{
+"ID": 27,
+"price": 0.0,
+"extraReward": [
+{
+"itemId": 71485,
+"itemNum": 1
+},
+{
+"currencyType": 3,
+"currencyValue": 1000000
+}
+],
+"type": 3,
+"order": 1,
+"name": 33094
+},
+{
+"ID": 28,
+"price": 300.0,
+"extraReward": [
+{
+"itemId": 71783,
+"itemNum": 1
+},
+{
+"itemId": 71499,
+"itemNum": 1
+},
+{
+"currencyType": 8,
+"currencyValue": 10000
+},
+{
+"currencyType": 1,
+"currencyValue": 300
+}
+],
+"type": 3,
+"order": 2,
+"name": 33094
+},
+{
+"ID": 29,
+"price": 500.0,
+"extraReward": [
+{
+"itemId": 71783,
+"itemNum": 1
+},
+{
+"itemId": 71499,
+"itemNum": 1
+},
+{
+"currencyType": 8,
+"currencyValue": 10000
+},
+{
+"vipExp": 5000
+}
+],
+"type": 3,
+"order": 3,
+"name": 33094
+},
+{
+"ID": 30,
+"price": 1000.0,
+"extraReward": [
+{
+"itemId": 71804,
+"itemNum": 1
+},
+{
+"currencyType": 8,
+"currencyValue": 50000
+},
+{
+"vipExp": 10000
+}
+],
+"type": 3,
+"order": 4,
+"name": 33094
+},
+{
+"ID": 31,
+"price": 1200.0,
+"extraReward": [
+{
+"itemId": 71804,
+"itemNum": 1
+},
+{
+"currencyType": 8,
+"currencyValue": 60000
+},
+{
+"vipExp": 12000
+}
+],
+"type": 3,
+"order": 5,
+"name": 33094
+}
+]

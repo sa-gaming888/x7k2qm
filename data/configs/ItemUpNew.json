@@ -1,0 +1,13832 @@
+[
+{
+"ID": 91890,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 81001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81011,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81012,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81012,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81012,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81012,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81012,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81012,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81012,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81012,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81012,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"hp": 4,
+"mj": 1
+},
+{
+"upLevel": 2,
+"hp": 8,
+"mj": 2
+},
+{
+"upLevel": 3,
+"hp": 12,
+"mj": 3
+},
+{
+"upLevel": 4,
+"hp": 16,
+"mj": 4
+},
+{
+"upLevel": 5,
+"hp": 20,
+"mj": 5
+},
+{
+"upLevel": 6,
+"hp": 24,
+"mj": 6
+},
+{
+"upLevel": 7,
+"hp": 28,
+"mj": 7
+},
+{
+"upLevel": 8,
+"hp": 32,
+"mj": 8
+},
+{
+"upLevel": 9,
+"hp": 36,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91908
+},
+{
+"needItemNum": 1,
+"needItemId": 91913
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91908
+},
+{
+"needItemNum": 2,
+"needItemId": 91913
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91908
+},
+{
+"needItemNum": 3,
+"needItemId": 91913
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91908
+},
+{
+"needItemNum": 4,
+"needItemId": 91913
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91908
+},
+{
+"needItemNum": 5,
+"needItemId": 91913
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91908
+},
+{
+"needItemNum": 6,
+"needItemId": 91913
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91908
+},
+{
+"needItemNum": 7,
+"needItemId": 91913
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91908
+},
+{
+"needItemNum": 8,
+"needItemId": 91913
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91908
+},
+{
+"needItemNum": 9,
+"needItemId": 91913
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+}
+]
+},
+{
+"ID": 91891,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 81001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81011,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81012,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81012,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81012,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81012,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81012,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81012,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81012,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81012,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81012,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"hp": 4,
+"mj": 1
+},
+{
+"upLevel": 2,
+"hp": 8,
+"mj": 2
+},
+{
+"upLevel": 3,
+"hp": 12,
+"mj": 3
+},
+{
+"upLevel": 4,
+"hp": 16,
+"mj": 4
+},
+{
+"upLevel": 5,
+"hp": 20,
+"mj": 5
+},
+{
+"upLevel": 6,
+"hp": 24,
+"mj": 6
+},
+{
+"upLevel": 7,
+"hp": 28,
+"mj": 7
+},
+{
+"upLevel": 8,
+"hp": 32,
+"mj": 8
+},
+{
+"upLevel": 9,
+"hp": 36,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91908
+},
+{
+"needItemNum": 1,
+"needItemId": 91913
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91908
+},
+{
+"needItemNum": 2,
+"needItemId": 91913
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91908
+},
+{
+"needItemNum": 3,
+"needItemId": 91913
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91908
+},
+{
+"needItemNum": 4,
+"needItemId": 91913
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91908
+},
+{
+"needItemNum": 5,
+"needItemId": 91913
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91908
+},
+{
+"needItemNum": 6,
+"needItemId": 91913
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91908
+},
+{
+"needItemNum": 7,
+"needItemId": 91913
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91908
+},
+{
+"needItemNum": 8,
+"needItemId": 91913
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91908
+},
+{
+"needItemNum": 9,
+"needItemId": 91913
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+}
+]
+},
+{
+"ID": 91892,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 81001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81011,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81012,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81012,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81012,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81012,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81012,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81012,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81012,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81012,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81012,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"hp": 4,
+"mj": 1
+},
+{
+"upLevel": 2,
+"hp": 8,
+"mj": 2
+},
+{
+"upLevel": 3,
+"hp": 12,
+"mj": 3
+},
+{
+"upLevel": 4,
+"hp": 16,
+"mj": 4
+},
+{
+"upLevel": 5,
+"hp": 20,
+"mj": 5
+},
+{
+"upLevel": 6,
+"hp": 24,
+"mj": 6
+},
+{
+"upLevel": 7,
+"hp": 28,
+"mj": 7
+},
+{
+"upLevel": 8,
+"hp": 32,
+"mj": 8
+},
+{
+"upLevel": 9,
+"hp": 36,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91908
+},
+{
+"needItemNum": 1,
+"needItemId": 91913
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91908
+},
+{
+"needItemNum": 2,
+"needItemId": 91913
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91908
+},
+{
+"needItemNum": 3,
+"needItemId": 91913
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91908
+},
+{
+"needItemNum": 4,
+"needItemId": 91913
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91908
+},
+{
+"needItemNum": 5,
+"needItemId": 91913
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91908
+},
+{
+"needItemNum": 6,
+"needItemId": 91913
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91908
+},
+{
+"needItemNum": 7,
+"needItemId": 91913
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91908
+},
+{
+"needItemNum": 8,
+"needItemId": 91913
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91908
+},
+{
+"needItemNum": 9,
+"needItemId": 91913
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+}
+]
+},
+{
+"ID": 91893,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 81001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81011,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81012,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81012,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81012,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81012,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81012,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81012,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81012,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81012,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81012,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"hp": 4,
+"mj": 1
+},
+{
+"upLevel": 2,
+"hp": 8,
+"mj": 2
+},
+{
+"upLevel": 3,
+"hp": 12,
+"mj": 3
+},
+{
+"upLevel": 4,
+"hp": 16,
+"mj": 4
+},
+{
+"upLevel": 5,
+"hp": 20,
+"mj": 5
+},
+{
+"upLevel": 6,
+"hp": 24,
+"mj": 6
+},
+{
+"upLevel": 7,
+"hp": 28,
+"mj": 7
+},
+{
+"upLevel": 8,
+"hp": 32,
+"mj": 8
+},
+{
+"upLevel": 9,
+"hp": 36,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91908
+},
+{
+"needItemNum": 1,
+"needItemId": 91913
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91908
+},
+{
+"needItemNum": 2,
+"needItemId": 91913
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91908
+},
+{
+"needItemNum": 3,
+"needItemId": 91913
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91908
+},
+{
+"needItemNum": 4,
+"needItemId": 91913
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91908
+},
+{
+"needItemNum": 5,
+"needItemId": 91913
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91908
+},
+{
+"needItemNum": 6,
+"needItemId": 91913
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91908
+},
+{
+"needItemNum": 7,
+"needItemId": 91913
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91908
+},
+{
+"needItemNum": 8,
+"needItemId": 91913
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91908
+},
+{
+"needItemNum": 9,
+"needItemId": 91913
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+}
+]
+},
+{
+"ID": 91894,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 81001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81011,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 81012,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 81012,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 81012,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 81012,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 81012,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 81012,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 81012,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 81012,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 81012,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"hp": 4,
+"mj": 1
+},
+{
+"upLevel": 2,
+"hp": 8,
+"mj": 2
+},
+{
+"upLevel": 3,
+"hp": 12,
+"mj": 3
+},
+{
+"upLevel": 4,
+"hp": 16,
+"mj": 4
+},
+{
+"upLevel": 5,
+"hp": 20,
+"mj": 5
+},
+{
+"upLevel": 6,
+"hp": 24,
+"mj": 6
+},
+{
+"upLevel": 7,
+"hp": 28,
+"mj": 7
+},
+{
+"upLevel": 8,
+"hp": 32,
+"mj": 8
+},
+{
+"upLevel": 9,
+"hp": 36,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91908
+},
+{
+"needItemNum": 1,
+"needItemId": 91913
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91908
+},
+{
+"needItemNum": 2,
+"needItemId": 91913
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91908
+},
+{
+"needItemNum": 3,
+"needItemId": 91913
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91908
+},
+{
+"needItemNum": 4,
+"needItemId": 91913
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91908
+},
+{
+"needItemNum": 5,
+"needItemId": 91913
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91908
+},
+{
+"needItemNum": 6,
+"needItemId": 91913
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91908
+},
+{
+"needItemNum": 7,
+"needItemId": 91913
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91908
+},
+{
+"needItemNum": 8,
+"needItemId": 91913
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91908
+},
+{
+"needItemNum": 9,
+"needItemId": 91913
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+}
+]
+},
+{
+"ID": 91895,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 82001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91910
+},
+{
+"needItemNum": 1,
+"needItemId": 91914
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91910
+},
+{
+"needItemNum": 2,
+"needItemId": 91914
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91910
+},
+{
+"needItemNum": 3,
+"needItemId": 91914
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91910
+},
+{
+"needItemNum": 4,
+"needItemId": 91914
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91910
+},
+{
+"needItemNum": 5,
+"needItemId": 91914
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91910
+},
+{
+"needItemNum": 6,
+"needItemId": 91914
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91910
+},
+{
+"needItemNum": 7,
+"needItemId": 91914
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91910
+},
+{
+"needItemNum": 8,
+"needItemId": 91914
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91910
+},
+{
+"needItemNum": 9,
+"needItemId": 91914
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+}
+]
+},
+{
+"ID": 91896,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 82001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91910
+},
+{
+"needItemNum": 1,
+"needItemId": 91914
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91910
+},
+{
+"needItemNum": 2,
+"needItemId": 91914
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91910
+},
+{
+"needItemNum": 3,
+"needItemId": 91914
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91910
+},
+{
+"needItemNum": 4,
+"needItemId": 91914
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91910
+},
+{
+"needItemNum": 5,
+"needItemId": 91914
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91910
+},
+{
+"needItemNum": 6,
+"needItemId": 91914
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91910
+},
+{
+"needItemNum": 7,
+"needItemId": 91914
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91910
+},
+{
+"needItemNum": 8,
+"needItemId": 91914
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91910
+},
+{
+"needItemNum": 9,
+"needItemId": 91914
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+}
+]
+},
+{
+"ID": 91897,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 82001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91910
+},
+{
+"needItemNum": 1,
+"needItemId": 91914
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91910
+},
+{
+"needItemNum": 2,
+"needItemId": 91914
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91910
+},
+{
+"needItemNum": 3,
+"needItemId": 91914
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91910
+},
+{
+"needItemNum": 4,
+"needItemId": 91914
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91910
+},
+{
+"needItemNum": 5,
+"needItemId": 91914
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91910
+},
+{
+"needItemNum": 6,
+"needItemId": 91914
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91910
+},
+{
+"needItemNum": 7,
+"needItemId": 91914
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91910
+},
+{
+"needItemNum": 8,
+"needItemId": 91914
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91910
+},
+{
+"needItemNum": 9,
+"needItemId": 91914
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+}
+]
+},
+{
+"ID": 91898,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 82001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91910
+},
+{
+"needItemNum": 1,
+"needItemId": 91914
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91910
+},
+{
+"needItemNum": 2,
+"needItemId": 91914
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91910
+},
+{
+"needItemNum": 3,
+"needItemId": 91914
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91910
+},
+{
+"needItemNum": 4,
+"needItemId": 91914
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91910
+},
+{
+"needItemNum": 5,
+"needItemId": 91914
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91910
+},
+{
+"needItemNum": 6,
+"needItemId": 91914
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91910
+},
+{
+"needItemNum": 7,
+"needItemId": 91914
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91910
+},
+{
+"needItemNum": 8,
+"needItemId": 91914
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91910
+},
+{
+"needItemNum": 9,
+"needItemId": 91914
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+}
+]
+},
+{
+"ID": 91899,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 82001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 82011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 82011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 82011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 82011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 82011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 82011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 82011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 82011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 82011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91910
+},
+{
+"needItemNum": 1,
+"needItemId": 91914
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91910
+},
+{
+"needItemNum": 2,
+"needItemId": 91914
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91910
+},
+{
+"needItemNum": 3,
+"needItemId": 91914
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91910
+},
+{
+"needItemNum": 4,
+"needItemId": 91914
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91910
+},
+{
+"needItemNum": 5,
+"needItemId": 91914
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91910
+},
+{
+"needItemNum": 6,
+"needItemId": 91914
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91910
+},
+{
+"needItemNum": 7,
+"needItemId": 91914
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91910
+},
+{
+"needItemNum": 8,
+"needItemId": 91914
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91910
+},
+{
+"needItemNum": 9,
+"needItemId": 91914
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+}
+]
+},
+{
+"ID": 91900,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 83001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"fy": 1,
+"mj": 1
+},
+{
+"upLevel": 2,
+"fy": 2,
+"mj": 2
+},
+{
+"upLevel": 3,
+"fy": 3,
+"mj": 3
+},
+{
+"upLevel": 4,
+"fy": 4,
+"mj": 4
+},
+{
+"upLevel": 5,
+"fy": 5,
+"mj": 5
+},
+{
+"upLevel": 6,
+"fy": 6,
+"mj": 6
+},
+{
+"upLevel": 7,
+"fy": 7,
+"mj": 7
+},
+{
+"upLevel": 8,
+"fy": 8,
+"mj": 8
+},
+{
+"upLevel": 9,
+"fy": 9,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91912
+},
+{
+"needItemNum": 1,
+"needItemId": 91915
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91911
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91912
+},
+{
+"needItemNum": 2,
+"needItemId": 91915
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91911
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91912
+},
+{
+"needItemNum": 3,
+"needItemId": 91915
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91911
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91912
+},
+{
+"needItemNum": 4,
+"needItemId": 91915
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91911
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91912
+},
+{
+"needItemNum": 5,
+"needItemId": 91915
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91911
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91912
+},
+{
+"needItemNum": 6,
+"needItemId": 91915
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91911
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91912
+},
+{
+"needItemNum": 7,
+"needItemId": 91915
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91911
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91912
+},
+{
+"needItemNum": 8,
+"needItemId": 91915
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91911
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91912
+},
+{
+"needItemNum": 9,
+"needItemId": 91915
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91911
+}
+]
+},
+{
+"ID": 91901,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 83001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"fy": 1,
+"mj": 1
+},
+{
+"upLevel": 2,
+"fy": 2,
+"mj": 2
+},
+{
+"upLevel": 3,
+"fy": 3,
+"mj": 3
+},
+{
+"upLevel": 4,
+"fy": 4,
+"mj": 4
+},
+{
+"upLevel": 5,
+"fy": 5,
+"mj": 5
+},
+{
+"upLevel": 6,
+"fy": 6,
+"mj": 6
+},
+{
+"upLevel": 7,
+"fy": 7,
+"mj": 7
+},
+{
+"upLevel": 8,
+"fy": 8,
+"mj": 8
+},
+{
+"upLevel": 9,
+"fy": 9,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91912
+},
+{
+"needItemNum": 1,
+"needItemId": 91915
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91911
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91912
+},
+{
+"needItemNum": 2,
+"needItemId": 91915
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91911
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91912
+},
+{
+"needItemNum": 3,
+"needItemId": 91915
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91911
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91912
+},
+{
+"needItemNum": 4,
+"needItemId": 91915
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91911
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91912
+},
+{
+"needItemNum": 5,
+"needItemId": 91915
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91911
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91912
+},
+{
+"needItemNum": 6,
+"needItemId": 91915
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91911
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91912
+},
+{
+"needItemNum": 7,
+"needItemId": 91915
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91911
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91912
+},
+{
+"needItemNum": 8,
+"needItemId": 91915
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91911
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91912
+},
+{
+"needItemNum": 9,
+"needItemId": 91915
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91911
+}
+]
+},
+{
+"ID": 91902,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 83001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"fy": 1,
+"mj": 1
+},
+{
+"upLevel": 2,
+"fy": 2,
+"mj": 2
+},
+{
+"upLevel": 3,
+"fy": 3,
+"mj": 3
+},
+{
+"upLevel": 4,
+"fy": 4,
+"mj": 4
+},
+{
+"upLevel": 5,
+"fy": 5,
+"mj": 5
+},
+{
+"upLevel": 6,
+"fy": 6,
+"mj": 6
+},
+{
+"upLevel": 7,
+"fy": 7,
+"mj": 7
+},
+{
+"upLevel": 8,
+"fy": 8,
+"mj": 8
+},
+{
+"upLevel": 9,
+"fy": 9,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91912
+},
+{
+"needItemNum": 1,
+"needItemId": 91915
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91911
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91912
+},
+{
+"needItemNum": 2,
+"needItemId": 91915
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91911
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91912
+},
+{
+"needItemNum": 3,
+"needItemId": 91915
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91911
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91912
+},
+{
+"needItemNum": 4,
+"needItemId": 91915
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91911
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91912
+},
+{
+"needItemNum": 5,
+"needItemId": 91915
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91911
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91912
+},
+{
+"needItemNum": 6,
+"needItemId": 91915
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91911
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91912
+},
+{
+"needItemNum": 7,
+"needItemId": 91915
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91911
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91912
+},
+{
+"needItemNum": 8,
+"needItemId": 91915
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91911
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91912
+},
+{
+"needItemNum": 9,
+"needItemId": 91915
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91911
+}
+]
+},
+{
+"ID": 91903,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 83001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"fy": 1,
+"mj": 1
+},
+{
+"upLevel": 2,
+"fy": 2,
+"mj": 2
+},
+{
+"upLevel": 3,
+"fy": 3,
+"mj": 3
+},
+{
+"upLevel": 4,
+"fy": 4,
+"mj": 4
+},
+{
+"upLevel": 5,
+"fy": 5,
+"mj": 5
+},
+{
+"upLevel": 6,
+"fy": 6,
+"mj": 6
+},
+{
+"upLevel": 7,
+"fy": 7,
+"mj": 7
+},
+{
+"upLevel": 8,
+"fy": 8,
+"mj": 8
+},
+{
+"upLevel": 9,
+"fy": 9,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91912
+},
+{
+"needItemNum": 1,
+"needItemId": 91915
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91911
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91912
+},
+{
+"needItemNum": 2,
+"needItemId": 91915
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91911
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91912
+},
+{
+"needItemNum": 3,
+"needItemId": 91915
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91911
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91912
+},
+{
+"needItemNum": 4,
+"needItemId": 91915
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91911
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91912
+},
+{
+"needItemNum": 5,
+"needItemId": 91915
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91911
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91912
+},
+{
+"needItemNum": 6,
+"needItemId": 91915
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91911
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91912
+},
+{
+"needItemNum": 7,
+"needItemId": 91915
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91911
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91912
+},
+{
+"needItemNum": 8,
+"needItemId": 91915
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91911
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91912
+},
+{
+"needItemNum": 9,
+"needItemId": 91915
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91911
+}
+]
+},
+{
+"ID": 91904,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"skillLevelUpInfo": [
+{
+"upLevel": 1,
+"skillId": 83001,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83001,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83001,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83001,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83001,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83001,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83001,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83001,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83001,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83002,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83002,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83002,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83002,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83002,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83002,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83002,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83002,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83002,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83003,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83003,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83003,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83003,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83003,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83003,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83003,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83003,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83003,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83004,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83004,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83004,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83004,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83004,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83004,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83004,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83004,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83004,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83005,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83005,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83005,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83005,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83005,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83005,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83005,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83005,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83005,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83006,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83006,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83006,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83006,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83006,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83006,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83006,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83006,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83006,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83007,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83007,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83007,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83007,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83007,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83007,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83007,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83007,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83007,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83008,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83008,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83008,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83008,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83008,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83008,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83008,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83008,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83008,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83009,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83009,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83009,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83009,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83009,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83009,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83009,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83009,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83009,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83010,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83010,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83010,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83010,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83010,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83010,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83010,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83010,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83010,
+"skillLevel": 10
+},
+{
+"upLevel": 1,
+"skillId": 83011,
+"skillLevel": 2
+},
+{
+"upLevel": 2,
+"skillId": 83011,
+"skillLevel": 3
+},
+{
+"upLevel": 3,
+"skillId": 83011,
+"skillLevel": 4
+},
+{
+"upLevel": 4,
+"skillId": 83011,
+"skillLevel": 5
+},
+{
+"upLevel": 5,
+"skillId": 83011,
+"skillLevel": 6
+},
+{
+"upLevel": 6,
+"skillId": 83011,
+"skillLevel": 7
+},
+{
+"upLevel": 7,
+"skillId": 83011,
+"skillLevel": 8
+},
+{
+"upLevel": 8,
+"skillId": 83011,
+"skillLevel": 9
+},
+{
+"upLevel": 9,
+"skillId": 83011,
+"skillLevel": 10
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"fy": 1,
+"mj": 1
+},
+{
+"upLevel": 2,
+"fy": 2,
+"mj": 2
+},
+{
+"upLevel": 3,
+"fy": 3,
+"mj": 3
+},
+{
+"upLevel": 4,
+"fy": 4,
+"mj": 4
+},
+{
+"upLevel": 5,
+"fy": 5,
+"mj": 5
+},
+{
+"upLevel": 6,
+"fy": 6,
+"mj": 6
+},
+{
+"upLevel": 7,
+"fy": 7,
+"mj": 7
+},
+{
+"upLevel": 8,
+"fy": 8,
+"mj": 8
+},
+{
+"upLevel": 9,
+"fy": 9,
+"mj": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 3,
+"needItemId": 91912
+},
+{
+"needItemNum": 1,
+"needItemId": 91915
+},
+{
+"currecyValue": 2000,
+"currecy": 8
+},
+{
+"needItemNum": 1,
+"needItemId": 91906
+},
+{
+"needItemNum": 1,
+"needItemId": 91911
+}
+],
+"needInfo2": [
+{
+"needItemNum": 6,
+"needItemId": 91912
+},
+{
+"needItemNum": 2,
+"needItemId": 91915
+},
+{
+"currecyValue": 3000,
+"currecy": 8
+},
+{
+"needItemNum": 2,
+"needItemId": 91906
+},
+{
+"needItemNum": 2,
+"needItemId": 91911
+}
+],
+"needInfo3": [
+{
+"needItemNum": 9,
+"needItemId": 91912
+},
+{
+"needItemNum": 3,
+"needItemId": 91915
+},
+{
+"currecyValue": 4000,
+"currecy": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 91906
+},
+{
+"needItemNum": 3,
+"needItemId": 91911
+}
+],
+"needInfo4": [
+{
+"needItemNum": 12,
+"needItemId": 91912
+},
+{
+"needItemNum": 4,
+"needItemId": 91915
+},
+{
+"currecyValue": 5000,
+"currecy": 8
+},
+{
+"needItemNum": 4,
+"needItemId": 91906
+},
+{
+"needItemNum": 4,
+"needItemId": 91911
+}
+],
+"needInfo5": [
+{
+"needItemNum": 15,
+"needItemId": 91912
+},
+{
+"needItemNum": 5,
+"needItemId": 91915
+},
+{
+"currecyValue": 6000,
+"currecy": 8
+},
+{
+"needItemNum": 5,
+"needItemId": 91906
+},
+{
+"needItemNum": 5,
+"needItemId": 91911
+}
+],
+"needInfo6": [
+{
+"needItemNum": 18,
+"needItemId": 91912
+},
+{
+"needItemNum": 6,
+"needItemId": 91915
+},
+{
+"currecyValue": 7000,
+"currecy": 8
+},
+{
+"needItemNum": 6,
+"needItemId": 91906
+},
+{
+"needItemNum": 6,
+"needItemId": 91911
+}
+],
+"needInfo7": [
+{
+"needItemNum": 21,
+"needItemId": 91912
+},
+{
+"needItemNum": 7,
+"needItemId": 91915
+},
+{
+"currecyValue": 8000,
+"currecy": 8
+},
+{
+"needItemNum": 7,
+"needItemId": 91906
+},
+{
+"needItemNum": 7,
+"needItemId": 91911
+}
+],
+"needInfo8": [
+{
+"needItemNum": 24,
+"needItemId": 91912
+},
+{
+"needItemNum": 8,
+"needItemId": 91915
+},
+{
+"currecyValue": 9000,
+"currecy": 8
+},
+{
+"needItemNum": 8,
+"needItemId": 91906
+},
+{
+"needItemNum": 8,
+"needItemId": 91911
+}
+],
+"needInfo9": [
+{
+"needItemNum": 27,
+"needItemId": 91912
+},
+{
+"needItemNum": 9,
+"needItemId": 91915
+},
+{
+"currecyValue": 10000,
+"currecy": 8
+},
+{
+"needItemNum": 9,
+"needItemId": 91906
+},
+{
+"needItemNum": 9,
+"needItemId": 91911
+}
+]
+},
+{
+"ID": 92108,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92108
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92109,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92109
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92110,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92110
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92111,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92111
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92112,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92112
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92113,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92113
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+},
+{
+"ID": 92114,
+"maxLevel": 5,
+"rateInfo": [
+{
+"rate": 100,
+"upLevel": 1
+},
+{
+"rate": 100,
+"upLevel": 2
+},
+{
+"rate": 100,
+"upLevel": 3
+},
+{
+"rate": 100,
+"upLevel": 4
+},
+{
+"rate": 100,
+"upLevel": 5
+},
+{
+"rate": 100,
+"upLevel": 6
+},
+{
+"rate": 100,
+"upLevel": 7
+},
+{
+"rate": 100,
+"upLevel": 8
+},
+{
+"rate": 100,
+"upLevel": 9
+},
+{
+"rate": 100,
+"upLevel": 9
+}
+],
+"attrLevelUpInfo": [
+{
+"upLevel": 1,
+"gj": 1,
+"fy": 1
+},
+{
+"upLevel": 2,
+"gj": 2,
+"fy": 2
+},
+{
+"upLevel": 3,
+"gj": 3,
+"fy": 3
+},
+{
+"upLevel": 4,
+"gj": 4,
+"fy": 4
+},
+{
+"upLevel": 5,
+"gj": 5,
+"fy": 5
+},
+{
+"upLevel": 6,
+"gj": 6,
+"fy": 6
+},
+{
+"upLevel": 7,
+"gj": 7,
+"fy": 7
+},
+{
+"upLevel": 8,
+"gj": 8,
+"fy": 8
+},
+{
+"upLevel": 9,
+"gj": 9,
+"fy": 9
+}
+],
+"needInfo1": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 1,
+"needItemId": 91907
+},
+{
+"needItemNum": 1,
+"needItemId": 91909
+},
+{
+"needItemNum": 1,
+"needItemId": 92124
+}
+],
+"needInfo2": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 2,
+"needItemId": 91907
+},
+{
+"needItemNum": 2,
+"needItemId": 91909
+},
+{
+"needItemNum": 2,
+"needItemId": 92124
+}
+],
+"needInfo3": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 3,
+"needItemId": 91907
+},
+{
+"needItemNum": 3,
+"needItemId": 91909
+},
+{
+"needItemNum": 3,
+"needItemId": 92124
+}
+],
+"needInfo4": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 4,
+"needItemId": 91907
+},
+{
+"needItemNum": 4,
+"needItemId": 91909
+},
+{
+"needItemNum": 4,
+"needItemId": 92124
+}
+],
+"needInfo5": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 5,
+"needItemId": 91907
+},
+{
+"needItemNum": 5,
+"needItemId": 91909
+},
+{
+"needItemNum": 5,
+"needItemId": 92124
+}
+],
+"needInfo6": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 6,
+"needItemId": 91907
+},
+{
+"needItemNum": 6,
+"needItemId": 91909
+},
+{
+"needItemNum": 6,
+"needItemId": 92124
+}
+],
+"needInfo7": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 7,
+"needItemId": 91907
+},
+{
+"needItemNum": 7,
+"needItemId": 91909
+},
+{
+"needItemNum": 7,
+"needItemId": 92124
+}
+],
+"needInfo8": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 8,
+"needItemId": 91907
+},
+{
+"needItemNum": 8,
+"needItemId": 91909
+},
+{
+"needItemNum": 8,
+"needItemId": 92124
+}
+],
+"needInfo9": [
+{
+"needItemNum": 1,
+"needItemId": 92114
+},
+{
+"needItemNum": 9,
+"needItemId": 91907
+},
+{
+"needItemNum": 9,
+"needItemId": 91909
+},
+{
+"needItemNum": 9,
+"needItemId": 92124
+}
+]
+}
+]

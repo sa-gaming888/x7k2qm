@@ -1,0 +1,1168 @@
+[
+{
+"ID": 0,
+"mainRank": {
+"rankName": 200000018
+}
+},
+{
+"ID": 1,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 35,
+"rankName": 31094
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 2,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 36,
+"rankName": 31095
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 3,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 37,
+"rankName": 31096
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 4,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 32,
+"rankName": 31097
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 5,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 30,
+"rankName": 31098
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 6,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 34,
+"rankName": 31099
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 7,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 29,
+"rankName": 31100
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 8,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 31,
+"rankName": 31101
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 9,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 33,
+"rankName": 31102
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 10,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 38,
+"rankName": 31103
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 11,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 0,
+"rankName": 200000019
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 12,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 1,
+"rankName": 200000020
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 13,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 2,
+"rankName": 200000021
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 14,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 3,
+"rankName": 200000022
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 15,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 4,
+"rankName": 200000023
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 16,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 5,
+"rankName": 200000024
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 17,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 6,
+"rankName": 200000025
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 18,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 7,
+"rankName": 200000026
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 19,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 8,
+"rankName": 200000027
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 20,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 9,
+"rankName": 200000028
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 21,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 10,
+"rankName": 200000029
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 22,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 11,
+"rankName": 200000030
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 23,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 12,
+"rankName": 200000031
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 24,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 13,
+"rankName": 200000032
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 25,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 14,
+"rankName": 200000033
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 26,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 15,
+"rankName": 200000034
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 27,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 16,
+"rankName": 200000035
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 28,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 17,
+"rankName": 200000036
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 29,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 18,
+"rankName": 200000037
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 30,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 19,
+"rankName": 200000038
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 31,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 20,
+"rankName": 200000039
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 32,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 21,
+"rankName": 200000040
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 33,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 22,
+"rankName": 200000041
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 34,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 23,
+"rankName": 200000042
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 35,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 24,
+"rankName": 200000043
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 36,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 25,
+"rankName": 200000044
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 37,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 26,
+"rankName": 200000045
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 38,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 27,
+"rankName": 200000046
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 39,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 28,
+"rankName": 31172
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+},
+{
+"ID": 40,
+"mainRank": {
+"rankType": 2,
+"rankName": 200000008
+},
+"subRank": {
+"rankType": 100,
+"rankName": 200000047
+},
+"rankInfo": [
+{
+"name": 200000000,
+"width": 60
+},
+{
+"name": 200000001,
+"width": 200
+},
+{
+"name": 200000012,
+"width": 200
+},
+{
+"name": 200000011,
+"width": 120
+}
+]
+}
+]

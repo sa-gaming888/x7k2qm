@@ -1,0 +1,201 @@
+[
+{
+"ID": 1,
+"price": 90,
+"priceHKD": 90,
+"priceTWD": 360,
+"priceKRD": 15750,
+"priceRMB": 76,
+"xsollaName": "monthcard",
+"explanCn": "月卡：购买即得2200钻，每日领取150钻及15万石币",
+"explanTn": "月卡：購買即得2200鑽，每日領取150鑽及15萬石幣",
+"explanKr": "월카드: 구매하면 2200다이아를 획득, 매일 150다이아 및 15만 석화 수령",
+"rechargeType": 2,
+"payType": "paypal",
+"getDenar": 2200,
+"hbType": "HKD",
+"krnType": "₩",
+"getEveryDayReward": [
+{
+"itemId": 90377,
+"itemNum": 150
+},
+{
+"itemId": 90373,
+"itemNum": 150000
+}
+],
+"extraReward": [
+{
+"buffId": 14,
+"buffTime": 2592000
+},
+{
+"buffId": 23,
+"buffTime": 2592000
+},
+{
+"unlockItemDepotPage": 1
+},
+{
+"unlockItemPubDepotPage": 1
+}
+],
+"img": "img_pay_yueka"
+},
+{
+"ID": 2,
+"price": 125,
+"priceHKD": 125,
+"priceTWD": 500,
+"priceKRD": 21875,
+"priceRMB": 106,
+"xsollaName": "5000denar",
+"explanCn": "5000denar：5000钻",
+"explanTn": "5000denar：5000鑽",
+"explanKr": "5000denar: 5000 다이아",
+"payType": "paypal",
+"getDenar": 5000,
+"hbType": "HKD",
+"krnType": "₩",
+"img": "img_pay_zhuanshi1"
+},
+{
+"ID": 3,
+"price": 250,
+"priceHKD": 250,
+"priceTWD": 1000,
+"priceKRD": 43750,
+"priceRMB": 212,
+"xsollaName": "10000denar",
+"explanCn": "10000denar：10000钻+赠送10%钻1000共11000钻",
+"explanTn": "10000denar：10000鑽+贈送10%鑽1000共11000鑽",
+"explanKr": "10000denar: 10000 다이아+ 10% 다이아 증정 1000 총 11000 다이아",
+"payType": "paypal",
+"getDenar": 10000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 1000
+}
+],
+"img": "img_pay_zhuanshi2"
+},
+{
+"ID": 4,
+"price": 500,
+"priceHKD": 500,
+"priceTWD": 2000,
+"priceKRD": 87500,
+"priceRMB": 425,
+"xsollaName": "20000denar",
+"explanCn": "20000denar：20000钻+赠送15%钻3000共23000钻",
+"explanTn": "20000denar：20000鑽+贈送15%鑽3000共23000鑽",
+"explanKr": "20000denar: 20000 다이아 + 15% 다이아 증정 3000 총 23000 다이아",
+"payType": "paypal",
+"getDenar": 20000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 3000
+}
+],
+"img": "img_pay_zhuanshi3"
+},
+{
+"ID": 5,
+"price": 1000,
+"priceHKD": 1000,
+"priceTWD": 4000,
+"priceKRD": 175000,
+"priceRMB": 850,
+"xsollaName": "36000denar",
+"explanCn": "40000denar：40000钻+赠送20%钻8000共48000钻",
+"explanTn": "40000denar：40000鑽+贈送20%鑽8000共48000鑽",
+"explanKr": "40000denar: 40000 다이아 + 20% 다이아 증정 8000 총 48000 다이아",
+"payType": "paypal",
+"getDenar": 40000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 8000
+}
+],
+"img": "img_pay_zhuanshi4"
+},
+{
+"ID": 6,
+"price": 1500,
+"priceHKD": 1500,
+"priceTWD": 6000,
+"priceKRD": 262500,
+"priceRMB": 1275,
+"xsollaName": "60000denar",
+"explanCn": "60000denar：60000钻+赠送25%钻15000共75000钻",
+"explanTn": "60000denar：60000鑽+贈送25%鑽15000共75000鑽",
+"explanKr": "60000denar: 60000 다이아 + 25% 다이아 증정 15000 총 75000 다이아",
+"payType": "paypal",
+"getDenar": 60000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 15000
+}
+],
+"img": "img_pay_zhuanshi5"
+},
+{
+"ID": 7,
+"price": 2500,
+"priceHKD": 2500,
+"priceTWD": 10000,
+"priceKRD": 437500,
+"priceRMB": 2125,
+"xsollaName": "100000denar",
+"explanCn": "100000denar：100000钻+赠送25%钻25000共125000钻",
+"explanTn": "100000denar：100000鑽+贈送25%鑽25000共125000鑽",
+"explanKr": "100000 denar: 100000 다이아 + 25% 다이아 증정 25000 총 125000 다이아",
+"payType": "paypal",
+"getDenar": 100000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 25000
+}
+],
+"img": "img_pay_zhuanshi6"
+},
+{
+"ID": 8,
+"price": 5000,
+"priceHKD": 5000,
+"priceTWD": 20000,
+"priceKRD": 875000,
+"priceRMB": 4250,
+"xsollaName": "200000denar",
+"explanCn": "200000denar：200000钻+赠送25%钻50000共250000钻",
+"explanTn": "200000denar：200000鑽+贈送25%鑽50000共250000鑽",
+"explanKr": "200000 denar: 200000 다이아 + 25% 다이아 증정 50000 총 250000 다이아",
+"payType": "paypal",
+"getDenar": 200000,
+"hbType": "HKD",
+"krnType": "₩",
+"extraReward": [
+{
+"currencyType": 1,
+"currencyValue": 50000
+}
+],
+"img": "img_pay_zhuanshi6"
+}
+]

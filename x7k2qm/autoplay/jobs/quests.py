@@ -1,0 +1,548 @@
+"""quests：依序無畫面解任務，每個任務完成後照處置規則表清背包（取代一次性的 quest_seq.py）。
+
+    python -X utf8 -m x7k2qm.autoplay.jobs quests --profile 2 --discover                    # 只列每個任務的完成狀態
+    python -X utf8 -m x7k2qm.autoplay.jobs quests --profile 2 --discover --apply            # 照預設順序跑
+    ... --apply --groups 2012,2028,2024,2010 --start 2028 --free 3
+
+- 一次登入、依序跑：組隊 → 關遇敵 → 前置 hook → `quest.headless` 執行器 → 後置 hook → clean（只做道具：
+  刪除／存倉／穿上；寵物放生、存倉要另外跑 `clean`）。
+- **任何一步失敗就停，後面的任務不跑**（規範第 2 點）；失敗時後置 hook 也不做，日誌會寫要手動補什麼。
+- 已經全隊完成的任務，執行器自己會略過（日誌「全隊都已完成」）。
+- 每個任務的前／後置動作寫在 `HOOKS`：四寶玉 2010 打地守護獸前關隊長外掛首次動作（大地的精靈打地沒用），
+  打完開回（LESSONS #68）。
+"""
+
+from typing import Callable, Dict, List, Optional, Tuple
+
+from . import JobError, JobHold
+from . import clean
+
+RECORD_DIR = "captures/quests/battles"          # 戰鬥型步驟錄檔（使用者 2026-10-31「你錄製」）
+NAME = "quests"
+HELP = "依序無畫面解任務（--groups、--start、--free）；每個任務後清背包；不加 --apply 只列狀態"
+PAUSE = lambda a: bool(getattr(a, "apply", False))    # noqa: E731
+
+# 預設順序（2026-10-23 第二組 1 轉後重解 1.82 的實際順序；runbook §6）。要寵物的 3003／2016／2019 不在預設裡。
+ORDER = [2999, 2017, 2015, 2023, 2027, 2018, 2021, 2025, 2014, 2013, 2020, 2011, 2012, 2028, 2024, 2010]
+FREE = {2999: 15}               # 開始前每隻背包要空幾格（成人儀式 15 格全空），其他預設 DEFAULT_FREE
+# 前置任務：設定表的 condition 沒寫，但伺服器會擋（提示 40000000069「隊中[X]條件不滿足，請檢查郵件，背包，寵物欄」）。
+# 2026-11-03 第七、八組（11-02 新開、直接練上 131）新手任務 1000 初入沒做，成人儀式接不起來，劇本停在 1.82；
+# 第六組做過 1000 就能接。有人沒做就先自動補做（兩步都是跟薩村村長對話，不用寵物、不打怪）。
+PREREQ = {2999: [1000]}
+
+
+def with_prereq(p, groups: List[int]) -> List[int]:
+    """在需要前置任務的群組前面補上「還有人沒做」的前置群組（已經全隊做完就不補，也不重複補）。"""
+    out: List[int] = []
+    for g in groups:
+        for pre in PREREQ.get(g, []):
+            if pre in out or pre in groups:
+                continue
+            todo = [n for _, n in p.party if pre not in (p.finished.get(n) or [])]
+            if todo:
+                p.log(f"任務 {g} 的前置任務 {pre} 有人沒做（{'、'.join(todo)}），先補做 {pre}")
+                out.append(pre)
+        out.append(g)
+    return out
+DEFAULT_FREE = 3
+FIRST_CMD_OFF = {"firstRoleCmdFlg": False}
+# 首次動作要開回什麼**不寫死**：照隊長身上那枚精靈金幣（Party.ensure_first_cmd）。
+# 原本寫死 "10185"（大地）是第二組地隊的值，水隊跑完 2010 會被設成放不出來的大地精靈。
+FIRST_CMD_KEYS = ("firstRoleCmdFlg", "firstRoleCmd", "firstRoleCmdArg", "firstRoleCmdArgEx",
+                  "firstRoleCmdArgTargetRule")
+
+
+def add_args(ap) -> None:
+    ap.add_argument("--groups", default=None, help="任務群組，逗號分隔（預設 ORDER）")
+    ap.add_argument("--leader", default=None,
+                    help="指定誰帶隊（預設隊伍第一位）。執行器從**隊長**目前進行到的步驟開跑，"
+                         "所以某個隊員落後時（別人在第 2 步、他還在第 1 步）要指定他當隊長才補得到")
+    ap.add_argument("--start", type=int, default=None, help="從清單裡哪個群組開始（之前的不跑）")
+    ap.add_argument("--free", type=int, default=None, help="每個任務開始前每隻背包至少空幾格（預設 2999 要 15、其他 3）")
+    ap.add_argument("--stop-after", type=int, default=None,
+                    help="做完這個步驟（taskId，例 201900001）就停；只套用在它所屬的群組，停了後面的群組也不跑")
+    ap.add_argument("--give-up", default=None,
+                    help="放棄這些任務群組（逗號分隔），讓全隊回到同一個狀態重接；要加 --apply。"
+                         "有人中途陣亡後任務狀態會分岔，再跑就卡「隊員任務狀態不一致」")
+    # 戰鬥型步驟（type 4「通過守護者」「挑戰機暴」…）打很久：2026-10-25 第三組劇本跑 1.82，
+    # 2012 的 201200007 等 180 秒沒翻成 2 就判失敗停手，和轉生 10 樓／機暴同一個病（LESSONS）。
+    ap.add_argument("--battle-timeout", type=float, default=None,
+                    help="戰鬥型步驟等任務狀態翻面的秒數（預設 180；守護者、機暴這類建議 420）")
+    ap.add_argument("--retry", type=int, default=0,
+                    help="有人被打死時回薩村醫院補血、直接重打同一關幾次（0～20，不回練功；預設 0＝照舊停）")
+    ap.add_argument("--water", type=int, default=0,
+                    help="每次開打（含 --retry 重打）前每隻阿布的水補到幾瓶（商城石幣 1 萬／瓶，0～13；預設 0＝不補）")
+    ap.add_argument("--record", default=RECORD_DIR,
+                    help=f"戰鬥型步驟每次互動錄一個 jsonl（隊長收到的封包），放這個目錄（預設 {RECORD_DIR}）")
+    ap.add_argument("--no-record", dest="record", action="store_const", const=None, help="不錄")
+    ap.add_argument("--no-preclean", action="store_true",
+                    help="每個任務開始前不先整理背包（預設會照規則表五隻同時整理一次，只動道具）")
+
+
+def groups_of(args) -> List[int]:
+    if getattr(args, "groups", None):
+        try:
+            gs = [int(x) for x in str(args.groups).replace("，", ",").split(",") if x.strip()]
+        except ValueError:
+            raise JobError(f"--groups 要是逗號分隔的數字：{args.groups}")
+    else:
+        gs = list(ORDER)
+    start = getattr(args, "start", None)
+    if start is not None:
+        if start not in gs:
+            raise JobError(f"--start {start} 不在任務清單 {gs} 裡")
+        gs = gs[gs.index(start):]
+    if not gs:
+        raise JobError("任務清單是空的")
+    return gs
+
+
+def stop_group(args):
+    """--stop-after 的 taskId 屬於哪個群組（taskId＝群組×100000＋步驟）；沒給回 None。"""
+    sa = getattr(args, "stop_after", None)
+    return None if sa is None else int(sa) // 100000
+
+
+WATER = 2400               # 阿布的水
+WATER_MALL = 44            # 商城石幣分頁：阿布的水 10,000 石幣
+
+
+def refill_water(p, want: int) -> None:
+    """每次開打（含 --retry 重打）前每隻背包的阿布的水補到 want 瓶（商城石幣，jobs/mall 同一套核對）。
+    使用者 2026-10-31：BOSS 長期戰一場要喝約 60 瓶，重打不補水第二次就沒 MP（LESSONS #122）。want 0＝不補。"""
+    if want <= 0:
+        return
+    from types import SimpleNamespace
+    from . import mall
+    for _, n in p.party:
+        have = sum(it.get("overlay", 1) for it in p.bag(n) if it.get("itemId") == WATER)
+        need = want - have
+        while need > 0:
+            k = min(need, mall.MAX_COUNT)
+            mall.run(p, SimpleNamespace(apply=True, id=WATER_MALL, count=k, who=n))
+            need -= k
+        p.log(f"補水：{n} 阿布的水 {want} 瓶")
+
+
+def check(args) -> None:
+    gs = groups_of(args)
+    g = stop_group(args)
+    if g is not None and g not in gs:
+        raise JobError(f"--stop-after {args.stop_after} 屬於群組 {g}，不在任務清單 {gs} 裡")
+    if not 0 <= int(getattr(args, "retry", 0) or 0) <= 20:
+        raise JobError("--retry 要在 0～20")
+    if not 0 <= int(getattr(args, "water", 0) or 0) <= 13:
+        raise JobError("--water 要在 0～13（背包 15 格）")
+
+
+# ---- 前／後置 hook：fn(party) → None，失敗丟 JobError ----
+def _first_cmd(p, setting: dict, what: str) -> None:
+    lead = p.party[0][1]
+    r = p.clients[lead].request("WaiGua_FastBattleSettingChange", dict(setting)) or {}
+    if not r.get("isOK"):
+        raise JobError(f"{lead} {what}隊長外掛首次動作沒確認：{r}")
+    # 送成功就同步快取：不更新的話，關掉之後 `p.battle` 仍停在「開著而且正確」，
+    # 後置 ensure_first_cmd 比對快取會以為不用送 → 首次動作一直關著
+    # （primaljason-home 2026-10-25 審出；伺服器會不會自己推新的 battleSetting 沒驗證過，不能賭）。
+    with p.lock:
+        p.battle.setdefault(lead, {}).update(setting)
+    p.log(f"{lead} {what}隊長外掛首次動作：{setting}")
+
+
+def first_cmd_off(p) -> None:
+    """關掉前先記住原本的設定，沒戴精靈金幣的隊長才有東西可以還原。"""
+    lead = p.party[0][1]
+    with p.lock:
+        p.saved_first_cmd = {k: p.battle.get(lead, {}).get(k) for k in FIRST_CMD_KEYS}
+    _first_cmd(p, FIRST_CMD_OFF, "關掉")
+
+
+def first_cmd_on(p) -> None:
+    """照隊長身上那枚精靈金幣開回（地隊→大地、水隊→水）；沒戴金幣就還原關掉前記住的設定。"""
+    lead = p.party[0][1]
+    if p.spirit_coin(lead) is not None:
+        if not p.ensure_first_cmd(lead):
+            raise JobError(f"{lead} 首次動作沒照金幣設回")
+        return
+    saved = getattr(p, "saved_first_cmd", None) or {}
+    if not saved.get("firstRoleCmdFlg"):
+        p.log(f"{lead} 沒戴精靈金幣、原本也沒開首次動作 → 不設回")
+        return
+    _first_cmd(p, {k: v for k, v in saved.items() if v is not None}, "照原本設定開回")
+
+
+SPIRIT_ARMOR = 19646                 # 靈力鎧：天空之島第 12 步交四色寶石給的鎧甲（防+48 敏−12、附恩惠 Lv4）
+
+
+def wear_spirit_armor(p) -> None:
+    """天空之島 2034 第 13 步「打敗黑暗精靈王」前，背包有靈力鎧的人都穿上（不脫回）。
+    2026-10-31 第二組：靈力鎧只放背包、穿新手鎧甲去打，連輸 8 場（抗性練到 70 也一樣）；
+    參考專案 攻略寫「製作靈力鎧，並擊敗黑暗精靈王」（LESSONS #118）。穿不上就停，不硬打。"""
+    for _, n in p.party:
+        with p.lock:
+            worn = any(it.get("itemId") == SPIRIT_ARMOR and it.get("itemStorge", 0) != 0
+                       for it in p.items[n].values() if it.get("overlay", 1) > 0)
+        if worn:
+            continue
+        it = next((x for x in p.bag(n) if x.get("itemId") == SPIRIT_ARMOR), None)
+        if it is None:
+            continue                                  # 還沒拿到（前面步驟還沒做）或已經交掉：不管
+        r = p.clients[n].request("ItemHandle_itemEquipOn", {"itemIndex": it["itemIndex"]}) or {}
+        if not r.get("isOK"):
+            raise JobError(f"{n} 穿不上靈力鎧：{r}")
+        p.log(f"{n} 穿上靈力鎧（打黑暗精靈王用）")
+
+
+HOOKS: Dict[int, Tuple[List[Callable], List[Callable]]] = {
+    2010: ([first_cmd_off], [first_cmd_on]),         # 四寶玉：守護獸有地屬性，隊長首次動作大地的精靈沒用（LESSONS #68）
+    2034: ([wear_spirit_armor], []),                 # 天空之島：打黑暗精靈王要穿靈力鎧（LESSONS #118）
+}
+
+
+def _grid_loader():
+    from ..pathing import load_grid
+    cache: Dict[int, object] = {}
+
+    def grid(m):
+        if m not in cache:
+            cache[m] = load_grid(m)
+        return cache[m]
+    return grid
+
+
+def build_quest(p, group: int, log, grid_fn, need_free: int, stop_after=None, battle_timeout=None):
+    """另外包一層，測試可以換成假的執行器。"""
+    from ..quest.headless import build_quest as real
+    kw = {} if battle_timeout is None else {"battle_timeout": battle_timeout}
+    rec = getattr(p, "quest_record_dir", None)       # run() 照 --record 設定；None＝不錄
+    if rec:
+        kw["record_dir"] = rec
+    return real(p, group, log, grid_fn, need_free=need_free, stop_after=stop_after, **kw)
+
+
+PET_MAX = 5
+
+
+def pet_slots_needed(steps) -> int:
+    """這個群組跑完的途中，寵物欄最多會多出幾隻（任務給的寵物 − 交出去的寵物，取過程中的最大值）。
+    交寵物的算法跟執行器 check_pets 一致：該步條件裡的寵物視為交出、空出格子。"""
+    cur = need = 0
+    for s in steps:
+        cur -= len(s.pets)
+        cur += s.reward_pets
+        need = max(need, cur)
+    return need
+
+
+def preflight_pets(p, group: int, steps=None) -> None:
+    """使用者 2026-10-25「我就是不希望人物跑到一半空間不夠、寵物不夠」：任務**開始前**先算寵物欄要空幾格，
+    不夠就把可以收的寵物存個人寵物倉（不是戰寵／騎寵、不是這個任務條件要的那種，等級低的先存）；
+    存完還是不夠就在**開始前**停（JobError），不要跑到給獎勵那一步才停。"""
+    from ..quest.spec import load_steps
+    steps = steps if steps is not None else load_steps(group)
+    need = pet_slots_needed(steps)
+    if need <= 0:
+        return
+    wanted = {pid for s in steps for pid, _ in s.pets}
+    short = {}
+    for _, name in p.party:
+        fight, ride = p.locks(name)
+        with p.lock:
+            pets = {k: dict(v) for k, v in p.petinfo.get(name, {}).items() if (v.get("petId") or 0) > 0}
+        free = PET_MAX - len(pets)
+        movable = sorted(((k, v) for k, v in pets.items()
+                          if v.get("status") not in (2, 3) and v.get("uniqueIndex") not in (fight, ride)
+                          and v.get("petId") not in wanted), key=lambda kv: kv[1].get("level") or 0)
+        while free < need and movable:
+            k, v = movable.pop(0)
+            clean.do_store_pet(p, name, k, v["petId"])
+            free += 1
+        if free < need:
+            short[name] = free
+    if short:
+        raise JobError(f"{group}：任務途中寵物欄要空 {need} 格，存倉後還是不夠（目前空格 {short}），開始前停下")
+
+
+def _tidy_after_reward(p, group: int, s) -> None:
+    """給寵物的步驟一做完就照規則表整理寵物欄（五隻同時；藍暴、金飛存倉，修寶、布克布克放生…）。
+    失敗丟 JobError → 執行器停（不帶著滿的寵物欄往下跑）。"""
+    from ..quest.headless import QuestStop
+    p.nap(1)                                           # 讓獎勵的 Pet_PetInfo 推完
+    p.log(f"[{group}] 步驟 {s.task_id} 給了寵物：馬上照規則表整理寵物欄")
+    try:
+        clean.clean_all(p, apply=True, confirm_release=True, parallel=True)
+    except JobError as e:
+        raise QuestStop(f"步驟 {s.task_id} 給寵物後整理沒完成：{e}")
+
+
+def _forget_team_if_dismissed(p, q) -> None:
+    """交寵物型（type 7）的步驟，伺服器會**自己解散隊伍**（提示 33109「系統幫你解散團隊單獨操作」）。
+    解散後的 Team_TeamInfo 被 Party 當局部更新略過 → 隊伍快取還是 5 人 → 回練功只有隊長傳送、失敗、常駐停
+    （2026-10-25 第二組劇本恐龍博士後，LESSONS #77 同一類，#83）。有這種步驟就清快取，之後 form_team 真的重組。"""
+    steps = getattr(q, "steps", None) or []
+    if any(getattr(s, "type", None) == 7 for s in steps) and hasattr(p, "s"):
+        with p.lock:
+            p.s.team = []
+        p.log("這個任務有交寵物步驟（伺服器會解散隊伍）：清掉隊伍快取，之後真的重組")
+
+
+def lead_actor(p, group: int):
+    """隊長已經完成這個群組（已完成的任務放棄指令清不掉）→ 換第一個沒完成的人帶隊，原隊長跟隊幫忙打。
+    接任務、跳點、NPC 互動都是隊長送的，已完成的人送會被伺服器拒（第四組 2010，使用者 2026-10-28 同意
+    「有人已完成就自動續跑」）。回傳原本的順序（要還原）；不用換就回 None。"""
+    with p.lock:
+        done = [n for _, n in p.party if group in (p.finished.get(n) or [])]
+    if not done or len(done) == len(p.party) or p.party[0][1] not in done:
+        return None
+    old = list(p.party)
+    p.party = sorted(old, key=lambda rn: rn[1] in done)      # 沒完成的排前面（穩定排序，其餘順序不變）
+    try:
+        p.dismiss_team()                                     # 換隊長一定要重組（組隊協定由隊長發起）
+    except Exception:                                        # noqa: BLE001  解散失敗要先換回來再往上丟：
+        p.party = old                                        # old 還沒回傳給 run_one，p.party 會停在
+        raise                                                # 換過的順序，之後回練功／下一個群組用錯隊長
+    p.log(f"隊長 {old[0][1]} 已經完成 {group}，改由 {p.party[0][1]} 帶隊（原隊長跟隊幫忙打，不接任務）")
+    return old
+
+
+def _back_to_leader(p, old_party) -> None:
+    """把換掉的隊長換回來（換過才做，重複呼叫沒事）。**一定要在 `_restore(p, post)` 之前**：
+    後置動作 `first_cmd_on` 讀的是 `p.party[0]`，還原之前跑會把原隊長的設定開到臨時隊長身上，
+    原隊長的首次動作就一直關著（2026-10-24 那個「打到一半有人死、精靈沒開回」的坑）。"""
+    if not old_party or p.party == old_party:
+        return
+    p.party = list(old_party)
+    p.dismiss_team()
+
+
+def set_leader(p, name: Optional[str]):
+    """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
+
+    執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色11的狗當時在出戰沒交成，
+    隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
+    if not name:
+        return None
+    everyone = [n for _, n in p.party]
+    if name not in everyone:
+        raise JobError(f"--leader 不在這組隊伍裡：{name}（有 {everyone}）")
+    if p.party[0][1] == name:
+        return None
+    old = list(p.party)
+    p.party = sorted(old, key=lambda rn: rn[1] != name)      # 指定的排第一（穩定排序，其餘順序不變）
+    try:
+        p.dismiss_team()                                     # 換隊長一定要重組（組隊協定由隊長發起）
+    except Exception:                                        # noqa: BLE001  解散失敗先換回來再往上丟
+        p.party = old
+        raise
+    p.log(f"改由 {name} 帶隊（原隊長 {old[0][1]} 跟隊）")
+    return old
+
+
+def run_one(p, group: int, free: int, grid_fn, stop_after=None, battle_timeout=None, leader=None) -> bool:
+    """跑一個任務群組；回傳是不是照 --stop-after 提早停。"""
+    from ..quest.headless import QuestStop
+    pre, post = HOOKS.get(group, ([], []))
+    if not p.form_team():
+        raise JobError(f"{group}：組隊失敗")
+    # 關遇敵、前置動作都要在**換隊長之前**用原隊長做：2010 的 first_cmd_off／first_cmd_on 讀的是
+    # `p.party[0]`，換了之後關到的會是臨時隊長、原隊長的大地的精靈還開著跟著打（LESSONS #68 那個坑），
+    # 收尾還原隊長後 post 又開回原隊長 → 臨時隊長的設定沒人補。原隊長的原地遇敵也在這裡先關掉。
+    if not p.set_loop(False):
+        raise JobError(f"{group}：關不了原地遇敵")
+    for h in pre:
+        h(p)
+    before = {n: list(getattr(c, "listeners", [])) for n, c in p.clients.items()}
+    old_party = None
+    try:
+        old_party = set_leader(p, leader) or lead_actor(p, group)   # --leader 指定、或隊長已完成就換人帶隊
+        if old_party and not p.form_team():
+            _back_to_leader(p, old_party)
+            raise JobError(f"{group}：換隊長後組隊失敗{_restore(p, post)}")
+        q = build_quest(p, group, lambda m: p.log(f"[{group}] {m}"), grid_fn, free, stop_after=stop_after,
+                        battle_timeout=battle_timeout)
+        q.after_reward = lambda s: _tidy_after_reward(p, group, s)
+        q.run()
+        early = bool(getattr(q, "stopped_early", False))
+        _forget_team_if_dismissed(p, q)
+    except QuestStop as e:
+        _forget_team_if_dismissed(p, q if "q" in locals() else None)
+        # 後置動作是「把前置動作改掉的設定還原」，**失敗也一定要補回去**：
+        # 2026-10-24 四寶玉打到一半有人被打死就停手，隊長首次動作（大地的精靈）一直關著，
+        # 回去練功每 5 分鐘從 48～49 勝掉到 43 勝，過了 20 分鐘才被發現。
+        _back_to_leader(p, old_party)
+        with p.lock:
+            fighting = any(p.fighting.values())
+        if fighting:
+            # 戰鬥型步驟等滿 battle_timeout 時還在打：回練功要傳送，戰鬥中一定被拒 → 常駐「回練功失敗」停止並登出＝放棄這場
+            # （2026-10-31 第二組柯黑穆肯打到第 54 回合、BOSS 剩一半，就這樣被中斷）。使用者：「斷線不要重回練功區」
+            # → 還在戰鬥中就 hold 停在原地，打完由使用者決定（LESSONS #121）
+            raise JobHold(f"{group}：{e}（還在戰鬥中，停在原地不回練功）{_restore(p, post)}")
+        raise JobError(f"{group}：{e}{_restore(p, post)}")
+    finally:
+        for n, c in p.clients.items():           # 拿掉這個任務掛上的監聽器（下一個任務重新掛）
+            if hasattr(c, "listeners"):
+                c.listeners[:] = [f for f in c.listeners if f in before[n]]
+        _back_to_leader(p, old_party)            # 換過隊長就還原，下一個群組／回練功照原本的隊長
+    for h in post:
+        h(p)
+    return early
+
+
+def _restore(p, post: List[Callable]) -> str:
+    """任務失敗後還原設定；還原本身再失敗只記在訊息裡，不蓋掉原本的失敗原因。"""
+    if not post:
+        return ""
+    done, bad = [], []
+    for h in post:
+        try:
+            h(p)
+            done.append(h.__name__)
+        except Exception as e:                   # noqa: BLE001  還原失敗要講，但不能蓋掉原因
+            bad.append(f"{h.__name__}({type(e).__name__})")
+    out = "；已還原：" + "、".join(done) if done else ""
+    return out + ("；還原失敗（要手動補）：" + "、".join(bad) if bad else "")
+
+
+# ---- 放棄任務（使用者 2026-10-26 第四組實機：四寶玉有人陣亡後狀態分岔，只能全隊放棄重接）----
+IN_PROGRESS = (1, 4)             # Task_TaskInfo.taskStatus：1 進行中、4 可交付
+
+
+def doing(p, name: str, group: int) -> Dict[int, int]:
+    """這隻角色在這個群組裡還在進行中的步驟。"""
+    with p.lock:
+        st = dict(p.task_status.get(name) or {})
+    return {tid: v for tid, v in st.items() if tid // 100000 == group and v in IN_PROGRESS}
+
+
+def give_up(p, group: int) -> Dict[str, str]:
+    """全隊放棄一個任務群組。`Task_NewTaskGiveUp{taskGroup}` **沒有 response**（用 request 會逾時），
+    只能送出去再看 `Task_TaskInfo` 推回的狀態（2026-10-26 實機確認）。
+    五隻都沒有進行中的步驟才算成功；有人沒清掉就丟 JobError（規範第 2 點，不重送）。
+    """
+    out = {}
+    for _, name in p.party:
+        before = doing(p, name, group)
+        if not before:
+            out[name] = "本來就沒有進行中的步驟"
+            continue
+        p.clients[name].send("Task_NewTaskGiveUp", {"taskGroup": group})
+        ok = p.wait(lambda: not {t: v for t, v in (p.task_status.get(name) or {}).items()
+                                 if t // 100000 == group and v in IN_PROGRESS}, 8)
+        after = doing(p, name, group)
+        out[name] = f"放棄 {sorted(before)}" if ok else f"沒清掉：{after}"
+        if not ok:
+            raise JobError(f"{name} 放棄任務 {group} 沒確認（還在進行中：{after}）")
+        p.log(f"{name} 放棄任務 {group}：原本進行中 {sorted(before)}")
+    left = {n: doing(p, n, group) for _, n in p.party}
+    bad = {n: v for n, v in left.items() if v}
+    if bad:
+        raise JobError(f"放棄任務 {group} 後還有人卡著：{bad}")
+    return out
+
+
+def status_lines(p, groups: List[int]) -> List[str]:
+    out = []
+    for g in groups:
+        with p.lock:
+            done = [n for _, n in p.party if g in (p.finished.get(n) or [])]
+        mark = "全隊完成" if len(done) == len(p.party) else (f"部分完成 {done}" if done else "未完成")
+        out.append(f"{g}：{mark}" + ("（有前／後置動作）" if g in HOOKS else ""))
+    return out
+
+
+def stash_shells(p, free: int) -> None:
+    """有人背包空格不到 free、背包裡又有千年龜的殼 → 全隊的殼先存共倉（規則表 11879：平常留背包、存共倉換石幣）。
+    2026-10-26 第二組四轉後跑 1.82：clean 不動殼（規則是 sell），成人儀式 2999 要 15 格全空 → 停在
+    「背包空格不足 15」。存不進去就停（JobError），不開始任務。"""
+    from ..shell_exchange import SHELL
+    sh = getattr(p, "shells", None)
+    if sh is None:
+        return
+    with p.lock:
+        short = [n for _, n in p.party if sh.bag_free(n) < free and sh._count(n, (SHELL,)) > 0]
+    if not short:
+        return
+    p.log(f"背包空格不到 {free} 而且有龜殼（{'、'.join(short)}）：全隊的殼先存共倉")
+    if not sh.store_all():
+        raise JobError("任務開始前龜殼存不進共倉（可能滿了），不開始任務")
+
+
+def stash_bag(p, free: int) -> None:
+    """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
+    11-04 一天三次停在「背包空格不足 15」：角色49的 2D人龍進化石、角色51的 2D老虎自選蛋、角色29的鑽石道具——
+    規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
+    只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
+    from ..shell_exchange import BAG_SIZE
+    from .clean import do_store
+    if free < BAG_SIZE:
+        return
+    table = p.item_table()
+    for _, n in p.party:
+        cells = sorted(((it["itemIndex"], it["itemId"]) for it in p.bag(n)), key=lambda x: x[0])
+        if not cells:
+            continue
+        p.log(f"任務要背包 {free} 格全空：{n} 背包剩的 {[(table.get(i, {}) or {}).get('nameTn') or i for _, i in cells]} 存個倉")
+        for idx, iid in cells:
+            do_store(p, n, idx, iid, False)
+            p.nap(0.4)
+
+
+def run(p, args) -> Tuple[str, dict]:
+    p.quest_record_dir =getattr(args, "record", None)      # 測試的 Args 沒這欄＝不錄（不寫真實路徑，規範 13）
+    if getattr(args, "give_up", None):
+        gs = [int(x) for x in str(args.give_up).replace("，", ",").split(",") if x.strip()]
+        if not getattr(args, "apply", False):
+            for g in gs:
+                p.log(f"{g}：進行中的步驟 " + str({n: sorted(doing(p, n, g)) for _, n in p.party}))
+            return "只列狀態（沒加 --apply，沒有放棄任何任務）", {"give_up": gs}
+        done = {g: give_up(p, g) for g in gs}
+        return f"放棄任務完成：{gs}", {"give_up": gs, "detail": done}
+    groups = with_prereq(p, groups_of(args))
+    if not getattr(args, "apply", False):
+        for line in status_lines(p, groups):
+            p.log(line)
+        return "只列狀態（沒加 --apply，沒有送任何動作）", {"groups": groups}
+    grid_fn = getattr(args, "grid_fn", None) or _grid_loader()
+    done = []
+    sg = stop_group(args)
+    for g in groups:
+        free = args.free if getattr(args, "free", None) is not None else FREE.get(g, DEFAULT_FREE)
+        sa = args.stop_after if g == sg else None
+        # 使用者 2026-10-25「1.82 四大 英雄島 所有任務執行前 先平行快速整理一次」：
+        # 背包被練功掉落塞滿會讓執行器停在「背包至少空 N 格」，先照規則表整理（只動道具、五隻同時）
+        # 「寵物不夠」：寵物也照規則表處理（存倉、放生——放生清單是使用者核准過的規則表），再算這個任務要空幾格
+        if not getattr(args, "no_preclean", False):
+            p.log(f"任務 {g} 開始前：五隻同時整理背包與寵物欄")
+            clean.clean_all(p, apply=True, confirm_release=True, parallel=True)
+            p.nap(1)
+        preflight_pets(p, g, getattr(args, "steps_of", lambda g: None)(g))
+        stash_shells(p, free)
+        stash_bag(p, free)
+        p.log(f"開始任務 {g}（背包至少空 {free} 格）" + (f"，做完 {sa} 就停" if sa else ""))
+        retry, tries = int(getattr(args, "retry", 0) or 0), 0
+        while True:
+            refill_water(p, int(getattr(args, "water", 0) or 0))
+            try:
+                early = run_one(p, g, free, grid_fn, stop_after=sa,
+                                battle_timeout=getattr(args, "battle_timeout", None),
+                                leader=getattr(args, "leader", None))
+                break
+            except JobError as e:
+                # 使用者 2026-10-31：「為什麼一直回去練功，浪費時間」——打輸（有人被打死）就回薩村醫院補血、
+                # 直接回來重打同一關，不回練功地圖；只有 --retry 次數用完才照舊失敗（LESSONS #122）
+                if isinstance(e, JobHold) or "被打死" not in str(e) or tries >= retry:
+                    raise
+                tries += 1
+                p.log(f"任務 {g}：有人被打死，回村補血後直接重打（第 {tries}/{retry} 次，不回練功）")
+                if not p.heal_at_samugil():
+                    raise JobError(f"{g}：重打前回村補血失敗（第 {tries} 次）")
+                p.nap(2)
+        p.log(f"任務 {g} {'停在 ' + str(sa) + '（--stop-after）' if early else '完成'}，清背包")
+        p.nap(getattr(args, "settle", 3.0))          # 讓獎勵的 Item_ItemInfo 推完
+        clean.clean_all(p, apply=True, items_only=True)
+        if early:
+            return (f"任務 {g} 停在 {sa}（--stop-after），後面不跑；之前完成 {done}",
+                    {"done": done, "stopped_at": sa})
+        done.append(g)
+    return f"完成 {len(done)} 個任務：{done}", {"done": done}

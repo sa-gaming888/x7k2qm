@@ -1,0 +1,34 @@
+[
+{
+"ID": 1,
+"nameCn": "xxx",
+"nameTn": "xx",
+"nameKrn": "xxx",
+"ShuoMingCn": "aaa",
+"ShuoMingTn": "bbb",
+"ShuoMingKrn": "ccc",
+"openUI": "UICaiLiaoHeChengScreen",
+"imageName": "img_huodong_zhuangyuan"
+},
+{
+"ID": 2,
+"nameCn": "yyy",
+"nameTn": "yy",
+"nameKrn": "yyy",
+"ShuoMingCn": "ddd",
+"ShuoMingTn": "eee",
+"ShuoMingKrn": "fff",
+"openUI": "UICaiLiaoHeChengScreen",
+"imageName": "img_huodong_luncky"
+},
+{
+"nameCn": "zzz",
+"nameTn": "zz",
+"nameKrn": "zzz",
+"ShuoMingCn": "ggg",
+"ShuoMingTn": "hhh",
+"ShuoMingKrn": "iii",
+"openUI": "UICaiLiaoHeChengScreen",
+"imageName": "img_huodong_xinshou"
+}
+]

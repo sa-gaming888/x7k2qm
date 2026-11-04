@@ -1,0 +1,138 @@
+[
+{
+"ID": 1,
+"name": 1800000027,
+"spawnTimeval": [
+0.1,
+0.05
+],
+"scale": [
+1.0,
+1.0
+],
+"durationTime": [
+1.5,
+2.0
+],
+"prefebName": "Snow",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 2,
+"name": 1800000028,
+"spawnTimeval": [
+0.2,
+0.1
+],
+"scale": [
+1.0,
+1.0
+],
+"durationTime": [
+1.5,
+2.0
+],
+"prefebName": "fx_line_rotate_hit_a",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 3,
+"name": 1800000029,
+"spawnTimeval": [
+0.2,
+0.1
+],
+"scale": [
+1.0,
+1.0
+],
+"durationTime": [
+1.5,
+2.0
+],
+"prefebName": "fx_Summoner_break_a",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 4,
+"name": 1800000030,
+"spawnTimeval": [
+0.2,
+0.1
+],
+"scale": [
+1.0,
+1.0
+],
+"durationTime": [
+2.0,
+3.0
+],
+"prefebName": "fx_Summoner_z_c",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 5,
+"name": 1800000031,
+"spawnTimeval": [
+0.2,
+0.1
+],
+"scale": [
+0.7,
+0.7
+],
+"durationTime": [
+1.5,
+3.0
+],
+"prefebName": "fx_Summoner_body_a",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 6,
+"name": 1800000032,
+"spawnTimeval": [
+0.2,
+0.1
+],
+"scale": [
+0.6,
+0.6
+],
+"durationTime": [
+1.5,
+3.0
+],
+"prefebName": "fx_Summoner_box_a",
+"iconId": 50028,
+"attrId": 60000008,
+"useful": true
+},
+{
+"ID": 7,
+"name": 1800000032,
+"isNew": true,
+"prefebName": "newtail_01",
+"iconId": 50028,
+"useful": true
+},
+{
+"ID": 8,
+"name": 1800000032,
+"isNew": true,
+"prefebName": "newtail_02",
+"iconId": 50028,
+"useful": true
+}
+]

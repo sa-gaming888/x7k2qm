@@ -1,0 +1,122 @@
+[
+{
+"ID": 1001,
+"nameCn": "钻石200",
+"descriptionCn": "获得钻石200",
+"imageId": 240001,
+"nameTn": "鑽石200",
+"descriptionTn": "獲得鑽石200"
+},
+{
+"ID": 1002,
+"nameCn": "钻石300",
+"descriptionCn": "获得钻石300",
+"imageId": 240002,
+"nameTn": "鑽石300",
+"descriptionTn": "獲得鑽石300"
+},
+{
+"ID": 1003,
+"nameCn": "钻石400",
+"descriptionCn": "获得钻石400",
+"imageId": 240003,
+"nameTn": "鑽石400",
+"descriptionTn": "獲得鑽石400"
+},
+{
+"ID": 1004,
+"nameCn": "11级装备",
+"descriptionCn": "80%概率11级装备",
+"imageId": 240004,
+"nameTn": "11級裝備",
+"descriptionTn": "80%概率11級裝備"
+},
+{
+"ID": 1005,
+"nameCn": "12级装备",
+"descriptionCn": "80%概率12级装备",
+"imageId": 240005,
+"nameTn": "12級裝備",
+"descriptionTn": "80%概率12級裝備"
+},
+{
+"ID": 1006,
+"nameCn": "13级装备",
+"descriptionCn": "79%概率13级装备",
+"imageId": 240006,
+"nameTn": "13級裝備",
+"descriptionTn": "79%概率13級裝備"
+},
+{
+"ID": 1007,
+"nameCn": "14级装备",
+"descriptionCn": "78%概率14级装备",
+"imageId": 240007,
+"nameTn": "14級裝備",
+"descriptionTn": "78%概率14級裝備"
+},
+{
+"ID": 1008,
+"nameCn": "15级装备",
+"descriptionCn": "77%概率15级装备",
+"imageId": 240008,
+"nameTn": "15級裝備",
+"descriptionTn": "77%概率15級裝備"
+},
+{
+"ID": 1009,
+"nameCn": "抽奖卷*1",
+"descriptionCn": "20%概率抽奖卷*1",
+"imageId": 240009,
+"nameTn": "抽獎卷*1",
+"descriptionTn": "20%概率抽獎卷*1"
+},
+{
+"ID": 1010,
+"nameCn": "抽奖卷*2",
+"descriptionCn": "20%概率抽奖卷*2",
+"imageId": 240010,
+"nameTn": "抽獎卷*2",
+"descriptionTn": "20%概率抽獎卷*2"
+},
+{
+"ID": 1011,
+"nameCn": "抽奖卷*3",
+"descriptionCn": "20%概率抽奖卷*3",
+"imageId": 240011,
+"nameTn": "抽獎卷*3",
+"descriptionTn": "20%概率抽獎卷*3"
+},
+{
+"ID": 1012,
+"nameCn": "抽奖卷*4",
+"descriptionCn": "20%概率抽奖卷*4",
+"imageId": 240012,
+"nameTn": "抽獎卷*4",
+"descriptionTn": "20%概率抽獎卷*4"
+},
+{
+"ID": 1013,
+"nameCn": "宠物碎块",
+"descriptionCn": "1%概率获得：圣兽碎块、兔年碎块、魔兽碎块",
+"imageId": 240013,
+"nameTn": "寵物碎塊",
+"descriptionTn": "1%概率獲得：聖獸碎塊、兔年碎塊、魔獸碎塊"
+},
+{
+"ID": 1014,
+"nameCn": "宠物碎块",
+"descriptionCn": "2%概率获得：圣兽碎块、兔年碎块、魔兽碎块",
+"imageId": 240014,
+"nameTn": "寵物碎塊",
+"descriptionTn": "2%概率獲得：聖獸碎塊、兔年碎塊、魔獸碎塊"
+},
+{
+"ID": 1015,
+"nameCn": "宠物碎块",
+"descriptionCn": "3%概率获得：圣兽碎块、兔年碎块、魔兽碎块",
+"imageId": 240015,
+"nameTn": "寵物碎塊",
+"descriptionTn": "3%概率獲得：聖獸碎塊、兔年碎塊、魔獸碎塊"
+}
+]

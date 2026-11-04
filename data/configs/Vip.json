@@ -1,0 +1,341 @@
+[
+{
+"ID": 1,
+"name": 31908,
+"need": {
+"needExp": 10000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 20
+},
+{
+"itemId": 71245,
+"itemNum": 1
+}
+],
+"setup": {
+"rmb": 0,
+"act": 0
+},
+"vipPower": {
+"damgeProtect": 2,
+"damgeAdd": 10
+}
+},
+{
+"ID": 2,
+"name": 31909,
+"need": {
+"needExp": 20000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 40
+},
+{
+"itemId": 71245,
+"itemNum": 2
+}
+],
+"vipPower": {
+"damgeProtect": 4,
+"damgeAdd": 15
+}
+},
+{
+"ID": 3,
+"name": 31910,
+"need": {
+"needExp": 30000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 60
+},
+{
+"itemId": 71245,
+"itemNum": 3
+}
+],
+"vipPower": {
+"damgeProtect": 6,
+"damgeAdd": 20
+}
+},
+{
+"ID": 4,
+"name": 31911,
+"need": {
+"needExp": 40000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 80
+},
+{
+"itemId": 71245,
+"itemNum": 4
+}
+],
+"vipPower": {
+"damgeProtect": 8,
+"damgeAdd": 25
+}
+},
+{
+"ID": 5,
+"name": 31912,
+"need": {
+"needExp": 50000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 100
+},
+{
+"itemId": 71245,
+"itemNum": 5
+}
+],
+"vipPower": {
+"damgeProtect": 10,
+"damgeAdd": 30
+}
+},
+{
+"ID": 6,
+"name": 31913,
+"need": {
+"needExp": 70000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 140
+},
+{
+"itemId": 71245,
+"itemNum": 7
+}
+],
+"vipPower": {
+"damgeProtect": 15,
+"damgeAdd": 40
+}
+},
+{
+"ID": 7,
+"name": 31914,
+"need": {
+"needExp": 100000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 200
+},
+{
+"itemId": 71245,
+"itemNum": 10
+}
+],
+"vipPower": {
+"damgeProtect": 20,
+"damgeAdd": 60
+}
+},
+{
+"ID": 8,
+"name": 31915,
+"need": {
+"needExp": 150000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 300
+},
+{
+"itemId": 71245,
+"itemNum": 15
+}
+],
+"vipPower": {
+"damgeProtect": 30,
+"damgeAdd": 80
+}
+},
+{
+"ID": 9,
+"name": 31916,
+"need": {
+"needExp": 200000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 400
+},
+{
+"itemId": 71245,
+"itemNum": 20
+}
+],
+"vipPower": {
+"damgeProtect": 40,
+"damgeAdd": 120
+}
+},
+{
+"ID": 10,
+"name": 31917,
+"need": {
+"needExp": 300000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 600
+},
+{
+"itemId": 71460,
+"itemNum": 3
+}
+],
+"vipPower": {
+"damgeProtect": 50,
+"damgeAdd": 200
+}
+},
+{
+"ID": 11,
+"name": 33881,
+"need": {
+"needExp": 450000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 1000
+},
+{
+"itemId": 71460,
+"itemNum": 6
+}
+],
+"vipPower": {
+"damgeProtect": 60,
+"damgeAdd": 200
+}
+},
+{
+"ID": 12,
+"name": 33882,
+"need": {
+"needExp": 600000
+},
+"reward": [
+{
+"currencyType": 2,
+"currencyValue": 2000
+},
+{
+"itemId": 71460,
+"itemNum": 10
+}
+],
+"vipPower": {
+"damgeProtect": 70,
+"damgeAdd": 200
+}
+},
+{
+"ID": 13,
+"name": 60069,
+"need": {
+"needExp": 750000
+},
+"reward": [
+{
+"currencyType": 10,
+"currencyValue": 100
+},
+{
+"currencyType": 2,
+"currencyValue": 2000
+},
+{
+"itemId": 71460,
+"itemNum": 12
+}
+],
+"vipPower": {
+"damgeProtect": 70,
+"damgeAdd": 200
+}
+},
+{
+"ID": 14,
+"name": 60070,
+"need": {
+"needExp": 900000
+},
+"reward": [
+{
+"currencyType": 10,
+"currencyValue": 100
+},
+{
+"currencyType": 2,
+"currencyValue": 2000
+},
+{
+"currencyType": 8,
+"currencyValue": 5000
+},
+{
+"itemId": 71460,
+"itemNum": 15
+}
+],
+"vipPower": {
+"damgeProtect": 70,
+"damgeAdd": 200
+}
+},
+{
+"ID": 15,
+"name": 60071,
+"need": {
+"needExp": 1050000
+},
+"reward": [
+{
+"currencyType": 10,
+"currencyValue": 100
+},
+{
+"currencyType": 2,
+"currencyValue": 2000
+},
+{
+"currencyType": 8,
+"currencyValue": 10000
+},
+{
+"itemId": 71460,
+"itemNum": 20
+}
+],
+"vipPower": {
+"damgeProtect": 70,
+"damgeAdd": 200
+}
+}
+]

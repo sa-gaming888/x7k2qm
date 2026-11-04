@@ -1,0 +1,86 @@
+[
+{
+"ID": 1,
+"needRechargeDenar": 1000,
+"items": [
+{
+"itemId": 92119,
+"num": 1
+},
+{
+"itemId": 90399,
+"num": 2
+}
+]
+},
+{
+"ID": 2,
+"needRechargeDenar": 3000,
+"items": [
+{
+"itemId": 92119,
+"num": 2
+},
+{
+"itemId": 90750,
+"num": 1
+}
+]
+},
+{
+"ID": 3,
+"needRechargeDenar": 5000,
+"items": [
+{
+"itemId": 92119,
+"num": 3
+},
+{
+"itemId": 90727,
+"num": 1
+}
+]
+},
+{
+"ID": 4,
+"needRechargeDenar": 8000,
+"items": [
+{
+"itemId": 92119,
+"num": 5
+},
+{
+"itemId": 90726,
+"num": 1
+}
+]
+},
+{
+"ID": 5,
+"needRechargeDenar": 14000,
+"items": [
+{
+"itemId": 92119,
+"num": 5
+},
+{
+"itemId": 90726,
+"num": 2
+}
+]
+},
+{
+"ID": 6,
+"needRechargeDenar": 20000,
+"items": [
+{
+"itemId": 92119,
+"num": 10
+},
+{
+"itemId": 90726,
+"num": 2
+}
+]
+}
+]

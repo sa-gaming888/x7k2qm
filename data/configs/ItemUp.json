@@ -1,0 +1,2558 @@
+[
+{
+"ID": 73652,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"gold": 100,
+"denar": 100,
+"upLevel": 1,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"gold": 100,
+"denar": 100,
+"upLevel": 2,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"gold": 100,
+"denar": 100,
+"upLevel": 3,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"gold": 100,
+"denar": 100,
+"upLevel": 4,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 5,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 6,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 7,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 8,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 9,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 10,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73653,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"gold": 100,
+"denar": 100,
+"upLevel": 1,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"gold": 100,
+"denar": 100,
+"upLevel": 2,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"gold": 100,
+"denar": 100,
+"upLevel": 3,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"gold": 100,
+"denar": 100,
+"upLevel": 4,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 5,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 6,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 7,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 8,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 9,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 10,
+"mjPVP": 1,
+"hpPVE": 10,
+"mjPVE": 3
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73654,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"gold": 100,
+"denar": 100,
+"upLevel": 1,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"gold": 100,
+"denar": 100,
+"upLevel": 2,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"gold": 100,
+"denar": 100,
+"upLevel": 3,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"gold": 100,
+"denar": 100,
+"upLevel": 4,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 5,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 6,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 7,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 8,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 9,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 10,
+"gjPVP": 1,
+"hpPVE": 10,
+"gjPVE": 3
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73655,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"gold": 100,
+"denar": 100,
+"upLevel": 1,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"gold": 100,
+"denar": 100,
+"upLevel": 2,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"gold": 100,
+"denar": 100,
+"upLevel": 3,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"gold": 100,
+"denar": 100,
+"upLevel": 4,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 5,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"gold": 100,
+"denar": 100,
+"upLevel": 6,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 7,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"gold": 100,
+"denar": 100,
+"upLevel": 8,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 9,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"gold": 100,
+"denar": 100,
+"upLevel": 10,
+"fyPVP": 1,
+"hpPVE": 10,
+"fyPVE": 3
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73656,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 1,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 2,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 3,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 4,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 5,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 6,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 7,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 8,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 9,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 10,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73657,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 1,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 2,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 3,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 4,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 5,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 6,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 7,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 8,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 9,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 10,
+"mjPVP": 2,
+"hpPVE": 10,
+"mjPVE": 6
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73658,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 1,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 2,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 3,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 4,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 5,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 6,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 7,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 8,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 9,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 10,
+"gjPVP": 2,
+"hpPVE": 10,
+"gjPVE": 6
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73659,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 1,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 2,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 3,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 4,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 5,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 6,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 7,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 8,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 9,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 200,
+"lockdenar": 200,
+"upLevel": 10,
+"fyPVP": 2,
+"hpPVE": 10,
+"fyPVE": 6
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73660,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 1,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 2,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 3,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 4,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 5,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 6,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 7,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 8,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 9,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 10,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73661,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 1,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 2,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 3,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 4,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 5,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 6,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 7,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 8,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 9,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 10,
+"mjPVP": 3,
+"hpPVE": 10,
+"mjPVE": 9
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73662,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 1,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 2,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 3,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 4,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 5,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 6,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 7,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 8,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 9,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 10,
+"gjPVP": 3,
+"hpPVE": 10,
+"gjPVE": 9
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+},
+{
+"ID": 73663,
+"scId": 3521,
+"upNeedInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 100,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 1,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 90,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 2,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 80,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 3,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 70,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 4,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 1,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 5,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 60,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 6,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 7,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 50,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 8,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 9,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+},
+{
+"needItemNum": 2,
+"needItemId": 73635,
+"rate": 40,
+"denar": 300,
+"lockdenar": 300,
+"upLevel": 10,
+"fyPVP": 3,
+"hpPVE": 10,
+"fyPVE": 9
+}
+],
+"delInfo": [
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 5,
+"upLevel": 3
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 8,
+"upLevel": 4
+},
+{
+"needItemNum": 1,
+"needItemId": 73668,
+"rate": 10,
+"upLevel": 5
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 15,
+"upLevel": 6
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 20,
+"upLevel": 7
+},
+{
+"needItemNum": 2,
+"needItemId": 73668,
+"rate": 25,
+"upLevel": 8
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 30,
+"upLevel": 9
+},
+{
+"needItemNum": 3,
+"needItemId": 73668,
+"rate": 35,
+"upLevel": 10
+}
+],
+"downLevelInfo": [
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 2
+},
+{
+"rate": 100,
+"delLevel": "0-1",
+"upLevel": 3
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 4
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 5
+},
+{
+"rate": 100,
+"delLevel": "0-2",
+"upLevel": 6
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 7
+},
+{
+"rate": 100,
+"delLevel": "1-2",
+"upLevel": 8
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 9
+},
+{
+"rate": 100,
+"delLevel": "1-3",
+"upLevel": 10
+}
+]
+}
+]

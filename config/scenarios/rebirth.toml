@@ -1,0 +1,101 @@
+# 轉生劇本（草稿 2026-10-25，使用者「劇本同步」同意）
+# 來源：第二組 10-24 二轉、10-25 三轉實際走過的流程（對話紀錄＋captures/jobs.log）。
+# 兩組都照這份走，進度各記在 captures/scenario/<組>.json；改這份推上去，兩組一起照新的。
+#
+# 每一步的欄位：
+#   name   顯示名稱（日誌、Telegram、jobs status）
+#   until  條件成立才往下（練功照常；例 "level>=need"，need＝本轉門檻：0～4 轉 131、5 轉 140）
+#   job    排進佇列的工作（就是 jobs add 後面那串）；失敗就停在這一步，不往下
+#   jobs   同上，依序做的多個工作（任一失敗就停）
+#   gate   "approve"：停下來等使用者同意（jobs scenario approve --profile N）才往下
+#   pet_train  quests 停在「步驟 X 要寵物 P 練到 N 級」時：自動 train P:N 再重跑同一個 quests（最多 3 次）
+#   skip_if    條件成立就跳過這一步（例 "done=3003"：全隊都完成了）
+#
+# 規則：轉生（不可逆）前一定有 gate；任一步失敗停在原地、送 Telegram；不自動重試同一步（pet_train 例外，上限 3 次）。
+
+[scenario]
+name = "轉生"
+loop = true            # 最後一步做完回到第一步（下一轉）
+
+[[step]]
+name = "練到轉生等級"
+until = "level>=need"
+
+[[step]]
+name = "整理背包與寵物欄"
+job = "clean --apply --confirm-release"
+
+[[step]]
+name = "1.82（不用寵物的 16 個）"
+job = "quests --apply"
+skip_if = "done=2999,2017,2015,2023,2027,2018,2021,2025,2014,2013,2020,2011,2012,2028,2024,2010"
+
+[[step]]
+name = "猜謎三兄弟 3003（金豬練到 77）"
+job = "quests --apply --groups 3003 --free 1"
+pet_train = true                   # 第 2 步要金豬 14 練到 77 → 自動 train 14:77（從海主人隧道跳圖）
+skip_if = "done=3003"
+
+[[step]]
+name = "藍暴存倉"
+job = "clean --apply"
+
+[[step]]
+name = "恐龍博士 2016（狗 18、虎 30）"
+jobs = ["catch --apply --pets 49:1,307:1",
+        "train --pets 49:18,307:30 --start 海主人隧道Lv30",
+        "quests --apply --groups 2016 --free 0",
+        "clean --apply --confirm-release"]          # 布克布克放生
+skip_if = "done=2016"
+
+[[step]]
+name = "卡坦 2019 第 1 步（4 色鯊魚 25）"
+jobs = ["pets --apply --mode park",                  # 金虎存倉，空出格子
+        "catch --apply --allow-full --pets 319:1,320:1,321:1,322:1",
+        "train --pets 319:25,320:25,321:25,322:25 --start 海主人隧道Lv30",
+        "pets --apply --mode rest",                  # 交之前全部休息、解鎖
+        "quests --apply --groups 2019 --free 0 --stop-after 201900001",
+        "clean --apply --confirm-release"]          # 修寶放生
+skip_if = "done=2019"
+
+[[step]]
+name = "卡坦 2019 第 2 步（4 色雞 25）"
+jobs = ["catch --apply --allow-full --pets 346:1,347:1,348:1,349:1",
+        "train --pets 346:25,347:25,348:25,349:25 --start 海主人隧道Lv30",
+        "pets --apply --mode rest",
+        "quests --apply --groups 2019 --free 0",
+        "clean --apply",                             # 金飛存倉
+        "pets --apply --mode restore"]               # 金虎領回、鎖戰寵人龍＋騎寵金虎
+skip_if = "done=2019"
+
+[[step]]
+name = "英雄島前傳 2031、後傳 2032"
+jobs = ["buy --apply --item 1501 --count 1",          # 前傳接任務條件；500 石幣／隻
+        "quests --apply --groups 2031,2032"]
+pet_train = true                   # 後傳第 7／10／14 步要 1483:30、1481:30、1482:33
+skip_if = "done=2031,2032"
+
+[[step]]
+name = "英雄島後整理"
+job = "clean --apply"
+
+[[step]]
+name = "四大 2000～2003"
+job = "quests --apply --groups 2000,2001,2002,2003"
+skip_if = "done=2000,2001,2002,2003"
+
+[[step]]
+name = "轉生前檢查"
+job = "rebirth"                    # 唯讀：任務、點數 0、寵物欄有空、四大證明、等級；不通過就停
+
+[[step]]
+name = "等使用者同意轉生"
+gate = "approve"
+
+[[step]]
+name = "轉生"
+job = "rebirth --apply --confirm-rebirth"   # 打完機暴全部寵物存倉 → 守護人 → 精靈王
+
+[[step]]
+name = "轉生後規範、從低等圖開練"
+job = "after-trans --apply --start 柯奧龜洞Lv10"     # init_after_trans：禮盒、吃果、寵物、首次動作、自訂加點、隱藏、快戰

@@ -1,0 +1,455 @@
+[
+{
+"ID": 1,
+"name": 70913,
+"des": 70913,
+"isShow": false,
+"animaName": "twname_xintan",
+"attrId": 58000001,
+"iconId": 50335
+},
+{
+"ID": 2,
+"name": 70909,
+"des": 70909,
+"isShow": false,
+"animaName": "twname_jiche",
+"attrId": 58000003,
+"iconId": 50331
+},
+{
+"ID": 3,
+"name": 70905,
+"des": 70905,
+"isShow": false,
+"animaName": "twname_dandan",
+"attrId": 58000004,
+"iconId": 50327
+},
+{
+"ID": 4,
+"name": 70911,
+"des": 70911,
+"isShow": false,
+"animaName": "twname_ouliouqi",
+"attrId": 58000009,
+"iconId": 50333
+},
+{
+"ID": 5,
+"name": 70907,
+"des": 70907,
+"isShow": false,
+"animaName": "twname_fujuli",
+"attrId": 58000005,
+"iconId": 50329
+},
+{
+"ID": 6,
+"name": 70904,
+"des": 70904,
+"isShow": false,
+"animaName": "twname_aoshi",
+"attrId": 58000006,
+"iconId": 50326
+},
+{
+"ID": 7,
+"name": 70906,
+"des": 70906,
+"isShow": false,
+"animaName": "twname_fugui",
+"attrId": 58000007,
+"iconId": 50328
+},
+{
+"ID": 8,
+"name": 70912,
+"des": 70912,
+"isShow": false,
+"animaName": "twname_peiluxia",
+"attrId": 56000001,
+"iconId": 160795
+},
+{
+"ID": 9,
+"name": 70910,
+"des": 70910,
+"isShow": false,
+"animaName": "twname_linbei",
+"attrId": 58000008,
+"iconId": 50332
+},
+{
+"ID": 10,
+"name": 70908,
+"des": 70908,
+"isShow": false,
+"animaName": "twname_heiren",
+"attrId": 58000002,
+"iconId": 50330
+},
+{
+"ID": 11,
+"name": 71314,
+"des": 71314,
+"useMask": true,
+"isShow": false,
+"animaName": "chname_tuhao",
+"attrId": 56000001,
+"iconId": 160642
+},
+{
+"ID": 12,
+"name": 71315,
+"des": 71315,
+"isShow": false,
+"animaName": "chname_tuhao",
+"attrId": 56000001,
+"iconId": 160643
+},
+{
+"ID": 13,
+"name": 71316,
+"des": 71316,
+"useMask": true,
+"isShow": false,
+"animaName": "chname_tuhao",
+"attrId": 56000001,
+"iconId": 160644,
+"offsetY": 20.0
+},
+{
+"ID": 14,
+"name": 71349,
+"des": 71349,
+"isShow": false,
+"animaName": "chname_dihao",
+"attrId": 56000001,
+"iconId": 160749
+},
+{
+"ID": 15,
+"name": 71350,
+"des": 71350,
+"isShow": false,
+"animaName": "chname_shenghao",
+"attrId": 56000001,
+"iconId": 160750
+},
+{
+"ID": 16,
+"name": 71351,
+"des": 71351,
+"isShow": false,
+"animaName": "chname_tuhao",
+"attrId": 56000001,
+"iconId": 160751
+},
+{
+"ID": 17,
+"name": 71352,
+"des": 71352,
+"isShow": false,
+"animaName": "chname_youtube",
+"attrId": 56000001,
+"iconId": 160758
+},
+{
+"ID": 18,
+"name": 70912,
+"des": 70912,
+"isShow": false,
+"animaName": "twname_peiluxia",
+"attrId": 56000001,
+"iconId": 160795
+},
+{
+"ID": 19,
+"name": 70911,
+"des": 70911,
+"isShow": false,
+"animaName": "twname_ouliouqi",
+"attrId": 56000001,
+"iconId": 160796
+},
+{
+"ID": 20,
+"name": 70905,
+"des": 70905,
+"isShow": false,
+"animaName": "twname_dandan",
+"attrId": 56000001,
+"iconId": 160797
+},
+{
+"ID": 21,
+"name": 70906,
+"des": 70906,
+"isShow": false,
+"animaName": "twname_fugui",
+"attrId": 56000001,
+"iconId": 160848
+},
+{
+"ID": 22,
+"name": 71377,
+"des": 71377,
+"isShow": false,
+"animaName": "chname_longteng",
+"attrId": 56000001,
+"iconId": 160990
+},
+{
+"ID": 23,
+"name": 80074,
+"des": 80074,
+"isShow": true,
+"animaName": "chname_xinshou",
+"attrId": 56000001,
+"iconId": 161134
+},
+{
+"ID": 24,
+"name": 80075,
+"des": 80075,
+"isShow": false,
+"animaName": "chname_shashou",
+"attrId": 56000004,
+"iconId": 161135
+},
+{
+"ID": 25,
+"name": 80076,
+"des": 80076,
+"isShow": true,
+"animaName": "chname_lucky",
+"attrId": 56000002,
+"iconId": 161136
+},
+{
+"ID": 26,
+"name": 80077,
+"des": 80077,
+"isShow": true,
+"animaName": "chname_chuanshuozhisheng",
+"attrId": 56000003,
+"iconId": 161137
+},
+{
+"ID": 27,
+"name": 80078,
+"des": 80078,
+"isShow": true,
+"animaName": "chname_xinshou_krn",
+"attrId": 56000001,
+"iconId": 161138
+},
+{
+"ID": 28,
+"name": 80079,
+"des": 80079,
+"isShow": false,
+"animaName": "chname_shashou_krn",
+"attrId": 56000004,
+"iconId": 161139
+},
+{
+"ID": 29,
+"name": 80080,
+"des": 80080,
+"isShow": true,
+"animaName": "chname_lucky_krn",
+"attrId": 56000002,
+"iconId": 161140
+},
+{
+"ID": 30,
+"name": 80081,
+"des": 80081,
+"isShow": true,
+"animaName": "chname_chuanshuozhisheng_krn",
+"attrId": 56000003,
+"iconId": 161141
+},
+{
+"ID": 31,
+"name": 80096,
+"des": 80096,
+"isShow": false,
+"animaName": "chname_hunzhanzhiwang",
+"attrId": 80000007,
+"iconId": 230131
+},
+{
+"ID": 32,
+"name": 80097,
+"des": 80097,
+"isShow": false,
+"animaName": "chname_hunzhanzhiwang_krn",
+"attrId": 80000007,
+"iconId": 230132
+},
+{
+"ID": 33,
+"name": 80098,
+"des": 80098,
+"isShow": false,
+"animaName": "chname_caishen",
+"attrId": 80000007,
+"iconId": 230147
+},
+{
+"ID": 34,
+"name": 80099,
+"des": 80099,
+"isShow": false,
+"animaName": "chname_caishen_krn",
+"attrId": 80000007,
+"iconId": 230148
+},
+{
+"ID": 35,
+"name": 70907,
+"des": 70907,
+"isShow": false,
+"animaName": "chname_fujuli",
+"attrId": 80000007,
+"iconId": 230175
+},
+{
+"ID": 36,
+"name": 80101,
+"des": 80101,
+"isShow": false,
+"animaName": "chname_fujuli_krn",
+"attrId": 80000007,
+"iconId": 230176
+},
+{
+"ID": 37,
+"name": 80102,
+"des": 80102,
+"isShow": false,
+"animaName": "chname_feilong",
+"attrId": 80000007,
+"iconId": 230196
+},
+{
+"ID": 38,
+"name": 80103,
+"des": 80103,
+"isShow": false,
+"animaName": "chname_feilong_krn",
+"attrId": 80000007,
+"iconId": 230197
+},
+{
+"ID": 39,
+"name": 80128,
+"des": 80128,
+"isShow": false,
+"animaName": "chname_xuanwu",
+"attrId": 80000007,
+"iconId": 230260
+},
+{
+"ID": 40,
+"name": 80129,
+"des": 80129,
+"isShow": false,
+"animaName": "chname_xuanwu_krn",
+"attrId": 80000007,
+"iconId": 230261
+},
+{
+"ID": 41,
+"name": 80131,
+"des": 80131,
+"isShow": false,
+"animaName": "chname_aoshi2",
+"attrId": 80000007,
+"iconId": 230266
+},
+{
+"ID": 42,
+"name": 80132,
+"des": 80132,
+"isShow": false,
+"animaName": "chname_aoshi_krn",
+"attrId": 80000007,
+"iconId": 230267
+},
+{
+"ID": 43,
+"name": 80133,
+"des": 80133,
+"isShow": false,
+"animaName": "chname_zhongqiu",
+"attrId": 80000007,
+"iconId": 230268
+},
+{
+"ID": 44,
+"name": 80134,
+"des": 80134,
+"isShow": false,
+"animaName": "chname_zhongqiu_krn",
+"attrId": 80000007,
+"iconId": 230269
+},
+{
+"ID": 45,
+"name": 80145,
+"des": 80145,
+"isShow": false,
+"animaName": "chname_peiluxia",
+"attrId": 80000007,
+"iconId": 230295
+},
+{
+"ID": 46,
+"name": 80146,
+"des": 80146,
+"isShow": false,
+"animaName": "chname_peiluxia_krn",
+"attrId": 80000007,
+"iconId": 230296
+},
+{
+"ID": 47,
+"name": 80152,
+"des": 80152,
+"isShow": false,
+"animaName": "chname_langsheng",
+"attrId": 80000007,
+"iconId": 230323
+},
+{
+"ID": 48,
+"name": 80153,
+"des": 80153,
+"isShow": false,
+"animaName": "chname_langsheng_krn",
+"attrId": 80000007,
+"iconId": 230324
+},
+{
+"ID": 49,
+"name": 80159,
+"des": 80159,
+"isShow": false,
+"animaName": "chname_xiee",
+"attrId": 80000007,
+"iconId": 230353
+},
+{
+"ID": 50,
+"name": 80160,
+"des": 80160,
+"isShow": false,
+"animaName": "chname_xiee_krn",
+"attrId": 80000007,
+"iconId": 230354
+}
+]

@@ -1,0 +1,1345 @@
+[
+{
+"ID": 1,
+"name": 60001,
+"particleId": 16,
+"iconId": 42206
+},
+{
+"ID": 2,
+"name": 60002,
+"imageId": 200109,
+"iconId": 50018
+},
+{
+"ID": 3,
+"name": 60003,
+"imageId": 200105,
+"iconId": 50016
+},
+{
+"ID": 4,
+"name": 60004,
+"imageId": 200101,
+"iconId": 50015
+},
+{
+"ID": 5,
+"name": 60005,
+"imageId": 200123,
+"iconId": 50033
+},
+{
+"ID": 6,
+"name": 60006,
+"imageId": 200126,
+"iconId": 50032
+},
+{
+"ID": 7,
+"name": 60007,
+"imageId": 200121,
+"iconId": 50011
+},
+{
+"ID": 8,
+"name": 60008,
+"imageId": 200121,
+"iconId": 50011
+},
+{
+"ID": 9,
+"name": 60009,
+"imageId": 200121,
+"iconId": 50011
+},
+{
+"ID": 10,
+"name": 60010,
+"imageId": 200135,
+"iconId": 50028
+},
+{
+"ID": 11,
+"name": 60011,
+"imageId": 190006,
+"iconId": 50028
+},
+{
+"ID": 12,
+"name": 60012,
+"imageId": 190004,
+"iconId": 50028
+},
+{
+"ID": 13,
+"name": 60013,
+"imageId": 190007,
+"iconId": 50028
+},
+{
+"ID": 14,
+"name": 60014,
+"imageId": 190005,
+"iconId": 50028
+},
+{
+"ID": 15,
+"name": 60015,
+"imageId": 190003,
+"iconId": 50028
+},
+{
+"ID": 16,
+"name": 60016,
+"imageId": 200125,
+"iconId": 50028
+},
+{
+"ID": 17,
+"name": 60017,
+"imageId": 200104,
+"iconId": 50028
+},
+{
+"ID": 18,
+"name": 60018,
+"imageId": 200103,
+"iconId": 50028
+},
+{
+"ID": 19,
+"name": 60019,
+"imageId": 200115,
+"iconId": 50028
+},
+{
+"ID": 20,
+"name": 60020,
+"imageId": 200113,
+"iconId": 50028
+},
+{
+"ID": 21,
+"name": 60021,
+"imageId": 200114,
+"iconId": 50028
+},
+{
+"ID": 22,
+"name": 60022,
+"imageId": 180111,
+"iconId": 50028
+},
+{
+"ID": 23,
+"name": 60023,
+"imageId": 180112,
+"iconId": 50028
+},
+{
+"ID": 24,
+"name": 60024,
+"imageId": 180113,
+"iconId": 50028
+},
+{
+"ID": 25,
+"name": 60025,
+"imageId": 180115,
+"iconId": 50028
+},
+{
+"ID": 26,
+"name": 60026,
+"imageId": 180116,
+"iconId": 50028
+},
+{
+"ID": 27,
+"name": 60027,
+"imageId": 180117,
+"iconId": 50028
+},
+{
+"ID": 28,
+"name": 60028,
+"imageId": 190000,
+"iconId": 50028
+},
+{
+"ID": 29,
+"name": 60029,
+"imageId": 190003,
+"iconId": 50028
+},
+{
+"ID": 30,
+"name": 60030,
+"imageId": 190002,
+"iconId": 160849,
+"attrId": 56000002
+},
+{
+"ID": 31,
+"name": 60031,
+"imageId": 190010,
+"iconId": 50028
+},
+{
+"ID": 32,
+"name": 60032,
+"imageId": 190005,
+"iconId": 160800,
+"attrId": 56000002
+},
+{
+"ID": 33,
+"name": 60033,
+"imageId": 190006,
+"iconId": 50028
+},
+{
+"ID": 34,
+"name": 60034,
+"imageId": 190007,
+"iconId": 160801,
+"attrId": 56000002
+},
+{
+"ID": 35,
+"name": 60035,
+"imageId": 190008,
+"iconId": 50028
+},
+{
+"ID": 36,
+"name": 60036,
+"imageId": 190009,
+"iconId": 50028
+},
+{
+"ID": 37,
+"name": 60037,
+"imageId": 190004,
+"iconId": 50028
+},
+{
+"ID": 38,
+"name": 60038,
+"imageId": 101147,
+"iconId": 50028
+},
+{
+"ID": 39,
+"name": 60039,
+"imageId": 200101,
+"iconId": 50018
+},
+{
+"ID": 40,
+"name": 60040,
+"imageId": 200103,
+"iconId": 50018
+},
+{
+"ID": 41,
+"name": 60041,
+"imageId": 200104,
+"iconId": 50018
+},
+{
+"ID": 42,
+"name": 60042,
+"imageId": 200105,
+"iconId": 50018
+},
+{
+"ID": 43,
+"name": 60043,
+"imageId": 200106,
+"iconId": 50018
+},
+{
+"ID": 44,
+"name": 60044,
+"imageId": 200107,
+"iconId": 50018
+},
+{
+"ID": 45,
+"name": 60045,
+"imageId": 200108,
+"iconId": 50018
+},
+{
+"ID": 46,
+"name": 60046,
+"imageId": 200109,
+"iconId": 50018
+},
+{
+"ID": 47,
+"name": 60047,
+"imageId": 200110,
+"iconId": 50018
+},
+{
+"ID": 48,
+"name": 60048,
+"imageId": 200111,
+"iconId": 50018
+},
+{
+"ID": 49,
+"name": 60049,
+"imageId": 200112,
+"iconId": 50018
+},
+{
+"ID": 50,
+"name": 60050,
+"imageId": 200113,
+"iconId": 50018
+},
+{
+"ID": 51,
+"name": 60051,
+"imageId": 200114,
+"iconId": 50018
+},
+{
+"ID": 52,
+"name": 60052,
+"imageId": 200115,
+"iconId": 50018
+},
+{
+"ID": 53,
+"name": 60053,
+"imageId": 200118,
+"iconId": 50018
+},
+{
+"ID": 54,
+"name": 60054,
+"imageId": 200121,
+"iconId": 50018
+},
+{
+"ID": 55,
+"name": 60055,
+"imageId": 200123,
+"iconId": 50018
+},
+{
+"ID": 56,
+"name": 60056,
+"imageId": 200125,
+"iconId": 50018
+},
+{
+"ID": 57,
+"name": 60057,
+"imageId": 200126,
+"iconId": 50018
+},
+{
+"ID": 58,
+"name": 60058,
+"imageId": 200134,
+"iconId": 50018
+},
+{
+"ID": 59,
+"name": 60059,
+"imageId": 200136,
+"iconId": 50011
+},
+{
+"ID": 60,
+"name": 60060,
+"imageId": 200141,
+"iconId": 50011
+},
+{
+"ID": 61,
+"name": 60061,
+"imageId": 200139,
+"iconId": 50011
+},
+{
+"ID": 62,
+"name": 60062,
+"imageId": 200140,
+"iconId": 50011
+},
+{
+"ID": 63,
+"name": 60063,
+"imageId": 200146,
+"iconId": 50011
+},
+{
+"ID": 64,
+"name": 60064,
+"imageId": 200138,
+"iconId": 50011
+},
+{
+"ID": 65,
+"name": 60065,
+"imageId": 200147,
+"iconId": 50011
+},
+{
+"ID": 66,
+"name": 60066,
+"imageId": 200137,
+"iconId": 50011
+},
+{
+"ID": 67,
+"name": 60067,
+"imageId": 200145,
+"iconId": 50011
+},
+{
+"ID": 68,
+"name": 60068,
+"imageId": 200143,
+"iconId": 50011
+},
+{
+"ID": 69,
+"name": 60069,
+"imageId": 200144,
+"iconId": 50011
+},
+{
+"ID": 70,
+"name": 60070,
+"imageId": 200148,
+"iconId": 50011
+},
+{
+"ID": 71,
+"name": 60071,
+"imageId": 200142,
+"iconId": 50011
+},
+{
+"ID": 72,
+"name": 60072,
+"des": "异常抗性：+5\\n閃避：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "異常抗性：+5\\n閃避：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"frontImageId": 200149,
+"imageId": 200150,
+"iconId": 50011
+},
+{
+"ID": 73,
+"name": 60073,
+"imageId": 200151,
+"iconId": 50011
+},
+{
+"ID": 74,
+"name": 60074,
+"imageId": 200153,
+"iconId": 50011
+},
+{
+"ID": 75,
+"name": 60075,
+"imageId": 200155,
+"iconId": 50011
+},
+{
+"ID": 76,
+"name": 60076,
+"imageId": 200157,
+"iconId": 50011
+},
+{
+"ID": 77,
+"name": 60077,
+"frontImageId": 200152,
+"imageId": 200151,
+"iconId": 50011
+},
+{
+"ID": 78,
+"name": 60078,
+"frontImageId": 200154,
+"imageId": 200153,
+"iconId": 50011
+},
+{
+"ID": 79,
+"name": 60079,
+"frontImageId": 200156,
+"imageId": 200155,
+"iconId": 50011
+},
+{
+"ID": 80,
+"name": 60080,
+"frontImageId": 200158,
+"imageId": 200157,
+"iconId": 50011
+},
+{
+"ID": 81,
+"name": 60081,
+"frontImageId": 200160,
+"imageId": 200159,
+"iconId": 50011
+},
+{
+"ID": 82,
+"name": 60082,
+"frontImageId": 200162,
+"imageId": 200161,
+"iconId": 50011
+},
+{
+"ID": 83,
+"name": 60083,
+"frontImageId": 200164,
+"imageId": 200163,
+"iconId": 50011
+},
+{
+"ID": 84,
+"name": 60084,
+"frontImageId": 200166,
+"imageId": 200165,
+"iconId": 50011
+},
+{
+"ID": 85,
+"name": 60085,
+"imageId": 200183,
+"iconId": 50011
+},
+{
+"ID": 86,
+"name": 60086,
+"imageId": 200185,
+"iconId": 50011
+},
+{
+"ID": 87,
+"name": 60087,
+"imageId": 200187,
+"iconId": 50011
+},
+{
+"ID": 88,
+"name": 60088,
+"imageId": 200189,
+"iconId": 50011
+},
+{
+"ID": 89,
+"name": 60089,
+"frontImageId": 200184,
+"imageId": 200183,
+"iconId": 50011
+},
+{
+"ID": 90,
+"name": 60090,
+"frontImageId": 200186,
+"imageId": 200185,
+"iconId": 50011
+},
+{
+"ID": 91,
+"name": 60091,
+"frontImageId": 200188,
+"imageId": 200187,
+"iconId": 50011
+},
+{
+"ID": 92,
+"name": 60092,
+"frontImageId": 200190,
+"imageId": 200189,
+"iconId": 50011
+},
+{
+"ID": 93,
+"name": 60093,
+"frontImageId": 200192,
+"imageId": 200191,
+"iconId": 50011
+},
+{
+"ID": 94,
+"name": 60094,
+"frontImageId": 200194,
+"imageId": 200193,
+"iconId": 50011
+},
+{
+"ID": 95,
+"name": 60095,
+"frontImageId": 200196,
+"imageId": 200195,
+"iconId": 50011
+},
+{
+"ID": 96,
+"name": 60096,
+"frontImageId": 200198,
+"imageId": 200197,
+"iconId": 50011
+},
+{
+"ID": 97,
+"name": 60097,
+"imageId": 200167,
+"iconId": 50011
+},
+{
+"ID": 98,
+"name": 60098,
+"imageId": 200169,
+"iconId": 50011
+},
+{
+"ID": 99,
+"name": 60099,
+"imageId": 200171,
+"iconId": 50011
+},
+{
+"ID": 100,
+"name": 60100,
+"imageId": 200173,
+"iconId": 50011
+},
+{
+"ID": 101,
+"name": 60101,
+"frontImageId": 200168,
+"imageId": 200167,
+"iconId": 50011
+},
+{
+"ID": 102,
+"name": 60102,
+"frontImageId": 200170,
+"imageId": 200169,
+"iconId": 50011
+},
+{
+"ID": 103,
+"name": 60103,
+"frontImageId": 200172,
+"imageId": 200171,
+"iconId": 50011
+},
+{
+"ID": 104,
+"name": 60104,
+"frontImageId": 200174,
+"imageId": 200173,
+"iconId": 50011
+},
+{
+"ID": 105,
+"name": 60105,
+"frontImageId": 200176,
+"imageId": 200175,
+"iconId": 50011
+},
+{
+"ID": 106,
+"name": 60106,
+"frontImageId": 200178,
+"imageId": 200177,
+"iconId": 50011
+},
+{
+"ID": 107,
+"name": 60107,
+"frontImageId": 200180,
+"imageId": 200179,
+"iconId": 50011
+},
+{
+"ID": 108,
+"name": 60108,
+"frontImageId": 200182,
+"imageId": 200181,
+"iconId": 50011
+},
+{
+"ID": 109,
+"name": 60109,
+"imageId": 200199,
+"iconId": 50011
+},
+{
+"ID": 110,
+"name": 60110,
+"imageId": 200201,
+"iconId": 50011
+},
+{
+"ID": 111,
+"name": 60111,
+"imageId": 200203,
+"iconId": 50011
+},
+{
+"ID": 112,
+"name": 60112,
+"imageId": 200205,
+"iconId": 50011
+},
+{
+"ID": 113,
+"name": 60113,
+"frontImageId": 200200,
+"imageId": 200199,
+"iconId": 50011
+},
+{
+"ID": 114,
+"name": 60114,
+"frontImageId": 200202,
+"imageId": 200201,
+"iconId": 50011
+},
+{
+"ID": 115,
+"name": 60115,
+"frontImageId": 200204,
+"imageId": 200203,
+"iconId": 50011
+},
+{
+"ID": 116,
+"name": 60116,
+"frontImageId": 200206,
+"imageId": 200205,
+"iconId": 50011
+},
+{
+"ID": 117,
+"name": 60117,
+"des": "异常抗性：+5\\n命中：+3%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "異常抗性：+5\\n命中：+3%\\n寵物特效外觀及能力在騎乘時無效",
+"frontImageId": 200208,
+"imageId": 200207,
+"iconId": 50011
+},
+{
+"ID": 118,
+"name": 60118,
+"frontImageId": 200210,
+"imageId": 200209,
+"iconId": 50011
+},
+{
+"ID": 119,
+"name": 60119,
+"frontImageId": 200212,
+"imageId": 200211,
+"iconId": 50011
+},
+{
+"ID": 120,
+"name": 60120,
+"frontImageId": 200214,
+"imageId": 200213,
+"iconId": 50011
+},
+{
+"ID": 121,
+"name": 60121,
+"frontImageId": 200223,
+"imageId": 200222,
+"iconId": 50011
+},
+{
+"ID": 122,
+"name": 60122,
+"frontImageId": 200225,
+"imageId": 200224,
+"iconId": 50011
+},
+{
+"ID": 123,
+"name": 60123,
+"frontImageId": 200227,
+"imageId": 200226,
+"iconId": 50011
+},
+{
+"ID": 124,
+"name": 60124,
+"frontImageId": 200229,
+"imageId": 200228,
+"iconId": 50011
+},
+{
+"ID": 125,
+"name": 71195,
+"particleName": 201210,
+"iconId": 50011,
+"attrId": 56000001
+},
+{
+"ID": 126,
+"name": 71196,
+"particleName": 201213,
+"iconId": 50011,
+"attrId": 56000002
+},
+{
+"ID": 127,
+"name": 71197,
+"particleName": 201211,
+"iconId": 50011,
+"attrId": 56000003
+},
+{
+"ID": 128,
+"name": 71198,
+"particleName": 201212,
+"iconId": 50011,
+"attrId": 56000004
+},
+{
+"ID": 129,
+"name": 71200,
+"frontparticleName": 201216,
+"particleName": 201217,
+"iconId": 50011,
+"attrId": 56000005
+},
+{
+"ID": 130,
+"name": 71202,
+"frontparticleName": 201220,
+"particleName": 201221,
+"iconId": 50011,
+"attrId": 56000006
+},
+{
+"ID": 131,
+"name": 71203,
+"particleName": 201222,
+"iconId": 50011,
+"attrId": 56000008
+},
+{
+"ID": 132,
+"name": 71201,
+"frontparticleName": 201218,
+"particleName": 201219,
+"iconId": 50011,
+"attrId": 56000007
+},
+{
+"ID": 133,
+"name": 71204,
+"frontparticleName": 201224,
+"particleName": 201223,
+"iconId": 160905,
+"attrId": 56000009
+},
+{
+"ID": 134,
+"name": 71199,
+"frontparticleName": 201214,
+"particleName": 201215,
+"iconId": 50011
+},
+{
+"ID": 135,
+"name": 71319,
+"frontparticleName": 201302,
+"particleName": 201301,
+"iconId": 160645,
+"attrId": 56000002
+},
+{
+"ID": 136,
+"name": 71320,
+"frontparticleName": 201304,
+"particleName": 201303,
+"iconId": 160646,
+"attrId": 56000001
+},
+{
+"ID": 137,
+"name": 71321,
+"frontparticleName": 201306,
+"particleName": 201305,
+"iconId": 160647,
+"attrId": 56000010
+},
+{
+"ID": 138,
+"name": 71322,
+"frontparticleName": 201308,
+"particleName": 201307,
+"iconId": 160648,
+"attrId": 56000003
+},
+{
+"ID": 139,
+"name": 71323,
+"frontparticleName": 201310,
+"particleName": 201309,
+"iconId": 160649,
+"attrId": 56000003
+},
+{
+"ID": 140,
+"name": 71328,
+"particleName": 201313,
+"iconId": 160655
+},
+{
+"ID": 141,
+"name": 71329,
+"frontparticleName": 201317,
+"particleName": 201316,
+"iconId": 160657
+},
+{
+"ID": 142,
+"name": 71330,
+"frontparticleName": 201319,
+"particleName": 201318,
+"iconId": 160658
+},
+{
+"ID": 143,
+"name": 71331,
+"des": "敏：+5%\\n闪避：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "敏：+5%\\n閃避：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"frontparticleName": 201312,
+"particleName": 201311,
+"iconId": 160654
+},
+{
+"ID": 144,
+"name": 71332,
+"des": "爆击：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "爆擊：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"frontparticleName": 201315,
+"particleName": 201314,
+"iconId": 160656
+},
+{
+"ID": 145,
+"name": 71333,
+"des": "减伤：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "減傷：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"particleName": 201320,
+"iconId": 160659
+},
+{
+"ID": 146,
+"name": 71334,
+"des": "攻：+5%\\n命中：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "攻：+5%\\n命中：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"particleName": 201321,
+"iconId": 160660
+},
+{
+"ID": 147,
+"name": 71335,
+"des": "防：+5%\\n闪避：+5%\\n宠物特效外观及能力在骑乘时无效",
+"destn": "防：+5%\\n閃避：+5%\\n寵物特效外觀及能力在騎乘時無效",
+"particleName": 201322,
+"iconId": 160661
+},
+{
+"ID": 148,
+"name": 71362,
+"frontparticleName": 201323,
+"attrId": 60000006
+},
+{
+"ID": 149,
+"name": 71362,
+"frontparticleName": 201324,
+"attrId": 60000008
+},
+{
+"ID": 150,
+"name": 71204,
+"frontparticleName": 201224,
+"particleName": 201223,
+"iconId": 160905,
+"attrId": 56000002
+},
+{
+"ID": 151,
+"name": 71200,
+"frontparticleName": 201216,
+"particleName": 201217,
+"iconId": 160914,
+"attrId": 56000002
+},
+{
+"ID": 152,
+"name": 71202,
+"frontparticleName": 201220,
+"particleName": 201221,
+"iconId": 160648,
+"attrId": 56000002
+},
+{
+"ID": 153,
+"name": 71362,
+"frontparticleName": 201225,
+"particleName": 201226,
+"attrId": 60000011
+},
+{
+"ID": 154,
+"name": 71362,
+"frontparticleName": 201227,
+"particleName": 201228,
+"attrId": 60000012
+},
+{
+"ID": 155,
+"name": 71378,
+"imageId": 190010,
+"iconId": 160989,
+"attrId": 56000002
+},
+{
+"ID": 156,
+"name": 60006,
+"frontparticleName": 201225,
+"particleName": 201226,
+"iconId": 50032,
+"attrId": 56000002
+},
+{
+"ID": 157,
+"name": 60006,
+"frontparticleName": 201227,
+"particleName": 201228,
+"iconId": 50032,
+"attrId": 56000002
+},
+{
+"ID": 158,
+"name": 71383,
+"frontImageId": 200214,
+"imageId": 200213,
+"iconId": 161024,
+"attrId": 56000003
+},
+{
+"ID": 159,
+"name": 71384,
+"imageId": 200203,
+"iconId": 161025,
+"attrId": 56000002
+},
+{
+"ID": 160,
+"name": 71385,
+"imageId": 200201,
+"iconId": 161026,
+"attrId": 56000001
+},
+{
+"ID": 161,
+"name": 80082,
+"imageId": 190006,
+"iconId": 161142,
+"attrId": 58000001
+},
+{
+"ID": 162,
+"name": 80083,
+"imageId": 200101,
+"iconId": 161143,
+"attrId": 58000001
+},
+{
+"ID": 163,
+"name": 80084,
+"imageId": 200104,
+"iconId": 161144,
+"attrId": 58000001
+},
+{
+"ID": 164,
+"name": 80085,
+"des": "减伤15%\\n闪避+5%",
+"destn": "減傷15%\\n閃避+5%",
+"desKr": "데미지감소15%\\n회피+5%",
+"imageId": 200140,
+"iconId": 50011
+},
+{
+"ID": 165,
+"name": 80086,
+"des": "减伤10%\\n命中+5%",
+"destn": "減傷10%\\n命中+5%",
+"desKr": "데미지감소10%\\n명중+5%",
+"imageId": 190007,
+"iconId": 50028
+},
+{
+"ID": 166,
+"name": 80087,
+"des": "防+10%\\n闪避+3%",
+"destn": "防+10%\\n閃避+3%",
+"desKr": "방어+10%\\n회피+3%",
+"imageId": 200103,
+"iconId": 50018
+},
+{
+"ID": 167,
+"name": 80088,
+"des": "防+5%",
+"destn": "防+5%",
+"desKr": "방어+5%",
+"imageId": 200145,
+"iconId": 50011
+},
+{
+"ID": 168,
+"name": 80089,
+"imageId": 200105,
+"iconId": 230123,
+"attrId": 80000001
+},
+{
+"ID": 169,
+"name": 80090,
+"imageId": 200121,
+"iconId": 230124,
+"attrId": 80000002
+},
+{
+"ID": 170,
+"name": 80091,
+"imageId": 200135,
+"iconId": 230125,
+"attrId": 80000003
+},
+{
+"ID": 171,
+"name": 80092,
+"imageId": 190004,
+"iconId": 230126,
+"attrId": 80000004
+},
+{
+"ID": 172,
+"name": 80093,
+"imageId": 190000,
+"iconId": 230127,
+"attrId": 80000005
+},
+{
+"ID": 173,
+"name": 80094,
+"imageId": 200126,
+"iconId": 230128,
+"attrId": 80000006
+},
+{
+"ID": 174,
+"name": 80095,
+"imageId": 190008,
+"iconId": 230130,
+"attrId": 80000005
+},
+{
+"ID": 175,
+"name": 80100,
+"frontparticleName": 201310,
+"particleName": 201309,
+"iconId": 230160,
+"attrId": 80000008
+},
+{
+"ID": 176,
+"frontparticleName": 201325
+},
+{
+"ID": 177,
+"frontparticleName": 201326
+},
+{
+"ID": 178,
+"name": 80115,
+"imageId": 190003,
+"iconId": 230224,
+"attrId": 80000008
+},
+{
+"ID": 179,
+"frontparticleName": 201328
+},
+{
+"ID": 180,
+"frontparticleName": 201329
+},
+{
+"ID": 181,
+"name": 80137,
+"imageId": 200115,
+"iconId": 230265,
+"attrId": 80000014
+},
+{
+"ID": 182,
+"name": 80138,
+"frontparticleName": 201317,
+"particleName": 201316,
+"iconId": 230270,
+"attrId": 80000008
+},
+{
+"ID": 183,
+"des": "异常抗性+10\\n减伤10%",
+"destn": "異常抗性+10\\n減傷10%",
+"desKr": "상태 이상 저항+10\\n데미지감소10%",
+"imageId": 190010,
+"iconId": 160989
+},
+{
+"ID": 184,
+"name": 80150,
+"imageId": 190009,
+"iconId": 230314,
+"attrId": 80000008
+},
+{
+"ID": 185,
+"name": 80155,
+"frontparticleName": 201308,
+"particleName": 201307,
+"iconId": 230341,
+"attrId": 80000008
+},
+{
+"ID": 186,
+"frontparticleName": 201330
+},
+{
+"ID": 187,
+"name": 80161,
+"frontImageId": 200208,
+"imageId": 200207,
+"iconId": 230356,
+"attrId": 80000016
+},
+{
+"ID": 188,
+"name": 80163,
+"imageId": 180117,
+"iconId": 230358,
+"attrId": 80000017
+},
+{
+"ID": 189,
+"name": 80115,
+"frontparticleName": 201315,
+"particleName": 201314,
+"imageId": 119743,
+"iconId": 230224,
+"attrId": 80000008
+},
+{
+"ID": 190,
+"name": 80115,
+"frontparticleName": 201308,
+"imageId": 119745,
+"iconId": 230224,
+"attrId": 80000008
+},
+{
+"ID": 191,
+"name": 80115,
+"frontparticleName": 201308,
+"imageId": 119746,
+"iconId": 230224,
+"attrId": 80000008
+},
+{
+"ID": 192,
+"frontparticleName": 201323
+},
+{
+"ID": 193,
+"frontparticleName": 201324
+},
+{
+"ID": 194,
+"particleName": 201307,
+"imageId": 119744
+},
+{
+"ID": 195,
+"frontparticleName": 201325,
+"particleName": 201313,
+"particleSize": 2.0
+},
+{
+"ID": 196,
+"particleName": 201331,
+"particleSize": 0.4
+},
+{
+"ID": 197,
+"name": 71398,
+"particleName": 201332,
+"particleSize": 1.2,
+"iconId": 161142,
+"attrId": 80000008,
+"useful": true
+},
+{
+"ID": 198,
+"name": 71399,
+"particleName": 201333,
+"particleSize": 0.5,
+"iconId": 230358,
+"attrId": 80000008,
+"useful": true
+},
+{
+"ID": 199,
+"name": 71400,
+"particleName": 201334,
+"particleSize": 0.4,
+"iconId": 161143,
+"attrId": 80000008,
+"useful": true
+},
+{
+"ID": 200,
+"name": 71401,
+"particleName": 201335,
+"particleSize": 0.4,
+"iconId": 161144,
+"attrId": 80000008,
+"useful": true
+},
+{
+"ID": 201,
+"particleName": 201336,
+"particleSize": 0.4
+}
+]

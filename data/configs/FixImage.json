@@ -1,0 +1,954 @@
+[
+{
+"ID": 100287,
+"fixAttackSound": [
+{
+"textureId": 85,
+"soundId": 10000
+},
+{
+"textureId": 193,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100288,
+"fixAttackSound": [
+{
+"textureId": 94,
+"soundId": 10001
+},
+{
+"textureId": 210,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100289,
+"fixAttackSound": [
+{
+"textureId": 94,
+"soundId": 10001
+},
+{
+"textureId": 210,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100290,
+"fixAttackSound": [
+{
+"textureId": 85,
+"soundId": 10000
+},
+{
+"textureId": 193,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100394,
+"fixAttackSound": [
+{
+"textureId": 85,
+"soundId": 10000
+},
+{
+"textureId": 193,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100849,
+"fixAttackSound": [
+{
+"textureId": 94,
+"soundId": 10001
+},
+{
+"textureId": 210,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100851,
+"fixAttackSound": [
+{
+"textureId": 94,
+"soundId": 10001
+},
+{
+"textureId": 210,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100850,
+"fixAttackSound": [
+{
+"textureId": 85,
+"soundId": 10000
+},
+{
+"textureId": 193,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100271,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100272,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100273,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100274,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 125165,
+"fixAttackSound": [
+{
+"textureId": 104,
+"soundId": 10001
+},
+{
+"textureId": 233,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 125166,
+"fixAttackSound": [
+{
+"textureId": 104,
+"soundId": 10001
+},
+{
+"textureId": 233,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 125167,
+"fixAttackSound": [
+{
+"textureId": 41,
+"soundId": 10001
+},
+{
+"textureId": 169,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 125168,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 125169,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100359,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100360,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100361,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100362,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100898,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100899,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100900,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100901,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 64
+},
+{
+"textureId": 95,
+"soundId": 10001
+},
+{
+"textureId": 209,
+"soundId": 64
+},
+{
+"textureId": 211,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100283,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100284,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100285,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100286,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100389,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100390,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100391,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100392,
+"fixAttackSound": [
+{
+"textureId": 117,
+"soundId": 10000
+},
+{
+"textureId": 116,
+"soundId": 71
+},
+{
+"textureId": 265,
+"soundId": 10000
+},
+{
+"textureId": 264,
+"soundId": 71
+}
+]
+},
+{
+"ID": 100259,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100260,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100261,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100262,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100826,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100827,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100828,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100829,
+"fixAttackSound": [
+{
+"textureId": 109,
+"soundId": 10001
+},
+{
+"textureId": 249,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100430,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10001
+}
+]
+},
+{
+"ID": 100375,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100376,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100377,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100378,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100910,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100911,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100912,
+"fixAttackSound": [
+{
+"textureId": 90,
+"soundId": 10000
+},
+{
+"textureId": 206,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100323,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100324,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100325,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100326,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100867,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100868,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100869,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100870,
+"fixAttackSound": [
+{
+"textureId": 93,
+"soundId": 10000
+},
+{
+"textureId": 209,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100838,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100839,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100840,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 100841,
+"fixAttackSound": [
+{
+"textureId": 91,
+"soundId": 10000
+},
+{
+"textureId": 207,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 101501,
+"fixAttackSound": [
+{
+"textureId": 137,
+"soundId": 2
+},
+{
+"textureId": 138,
+"soundId": 10000
+},
+{
+"textureId": 313,
+"soundId": 2
+},
+{
+"textureId": 314,
+"soundId": 10000
+}
+]
+},
+{
+"ID": 200057,
+"fixAttackSound": [
+{
+"textureId": 2,
+"soundId": 309
+}
+],
+"mustFix": true
+}
+]

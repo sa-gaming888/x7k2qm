@@ -1,0 +1,38 @@
+# syntax=docker/dockerfile:1
+# 基底映像（base.yml 建、推 ghcr.io/<owner>/x7k2qm-base）：只有 Python 與 CA 憑證，最後一層從 scratch 開始。
+# - 沒有 shell、沒有套件管理器，以非 root（65532）執行。
+# - 拿掉用不到的 sqlite（2026-11-04 掃描：sqlite-libs 有 High CVE，程式沒用 sqlite3）；套件紀錄一起刪，
+#   掃描器看到的就是實際裝了什麼。
+# 程式映像（Dockerfile）FROM 這個，只放程式，不用每次重建 Python。
+
+ARG PYTHON_PKG=python-3.15
+
+FROM cgr.dev/chainguard/wolfi-base:latest AS rootfs
+ARG PYTHON_PKG
+RUN apk add --no-cache --root /rootfs --initdb --keys-dir /etc/apk/keys \
+        --repositories-file /etc/apk/repositories \
+        "${PYTHON_PKG}" ca-certificates-bundle \
+ && rm -f /rootfs/usr/lib/libsqlite3.so* \
+ && find /rootfs/usr/lib -path '*/lib-dynload/_sqlite3*' -delete \
+ && rm -rf /rootfs/usr/lib/python3*/sqlite3 /rootfs/usr/lib/python3*/test /rootfs/usr/lib/python3*/ensurepip \
+           /rootfs/usr/lib/python3*/idlelib /rootfs/usr/lib/python3*/tkinter /rootfs/usr/lib/python3*/turtledemo \
+ && awk 'BEGIN{RS=""; ORS="\n\n"} !/(^|\n)P:sqlite-libs(\n|$)/' /rootfs/lib/apk/db/installed > /tmp/installed \
+ && mv /tmp/installed /rootfs/lib/apk/db/installed \
+ && rm -rf /rootfs/sbin/apk /rootfs/usr/bin/apk /rootfs/etc/apk /rootfs/var/cache/apk \
+ && ln -sf "$(ls /rootfs/usr/bin/ | grep -E '^python3\.[0-9]+$' | head -1)" /rootfs/usr/bin/python \
+ && mkdir -p /rootfs/data /rootfs/app /rootfs/tmp \
+ && chown 65532:65532 /rootfs/data /rootfs/app \
+ && chmod 1777 /rootfs/tmp \
+ && echo 'nonroot:x:65532:65532::/data:/sbin/nologin' > /rootfs/etc/passwd \
+ && echo 'nonroot:x:65532:' > /rootfs/etc/group
+
+FROM scratch
+COPY --from=rootfs /rootfs/ /
+WORKDIR /app
+ENV PATH=/usr/bin \
+    PYTHONPATH=/app \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt \
+    DATA_DIR=/data
+USER 65532:65532

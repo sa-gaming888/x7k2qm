@@ -1,0 +1,1178 @@
+[
+{
+"ID": 9999001,
+"group": 9999,
+"level": 1
+},
+{
+"ID": 10000001,
+"group": 10000,
+"level": 1,
+"physicalDodgeFix": 80
+},
+{
+"ID": 10001001,
+"group": 10001,
+"level": 1,
+"hpRecoverFix": 150
+},
+{
+"ID": 10002001,
+"group": 10002,
+"level": 1
+},
+{
+"ID": 10003001,
+"group": 10003,
+"level": 1,
+"physicalDefenseFix": 90
+},
+{
+"ID": 10004001,
+"group": 10004,
+"level": 1,
+"hpMaxFix": 300
+},
+{
+"ID": 10005001,
+"group": 10005,
+"level": 1,
+"mpMaxFix": 200
+},
+{
+"ID": 20000001,
+"group": 20000,
+"level": 1,
+"physicalDefenseFix": 20
+},
+{
+"ID": 20000002,
+"group": 20000,
+"level": 2,
+"physicalAttackFix": 10
+},
+{
+"ID": 20000003,
+"group": 20000,
+"level": 3,
+"physicalDefenseFix": 20
+},
+{
+"ID": 20000004,
+"group": 20000,
+"level": 4,
+"physicalDefenseFix": 30
+},
+{
+"ID": 20000005,
+"group": 20000,
+"level": 5,
+"physicalDefenseFix": 40
+},
+{
+"ID": 20000006,
+"group": 20000,
+"level": 6,
+"physicalDefenseFix": 50
+},
+{
+"ID": 20000007,
+"group": 20000,
+"level": 7,
+"physicalDefenseFix": 60
+},
+{
+"ID": 20000008,
+"group": 20000,
+"level": 8,
+"physicalDefenseFix": 80
+},
+{
+"ID": 50001001,
+"group": 50001,
+"level": 1,
+"hpMaxFix": 50
+},
+{
+"ID": 50002001,
+"group": 50002,
+"level": 1,
+"physicalAttackFix": 30
+},
+{
+"ID": 50003001,
+"group": 50003,
+"level": 1,
+"hpMaxFix": 50
+},
+{
+"ID": 50004001,
+"group": 50004,
+"level": 1,
+"physicalDefenseFix": 30
+},
+{
+"ID": 55001001,
+"group": 55001,
+"level": 1,
+"hpMaxFix": 20
+},
+{
+"ID": 55002001,
+"group": 55002,
+"level": 1,
+"hpMaxFix": 60
+},
+{
+"ID": 55003001,
+"group": 55003,
+"level": 1,
+"hpMaxFix": 100
+},
+{
+"ID": 55004001,
+"group": 55004,
+"level": 1,
+"hpMaxFix": 180
+},
+{
+"ID": 55005001,
+"group": 55005,
+"level": 1,
+"physicalAttackFix": 5
+},
+{
+"ID": 55006001,
+"group": 55006,
+"level": 1,
+"physicalAttackFix": 15
+},
+{
+"ID": 55007001,
+"group": 55007,
+"level": 1,
+"physicalAttackFix": 25
+},
+{
+"ID": 55008001,
+"group": 55008,
+"level": 1,
+"physicalAttackFix": 45
+},
+{
+"ID": 55009001,
+"group": 55009,
+"level": 1,
+"agileFix": 5
+},
+{
+"ID": 55010001,
+"group": 55010,
+"level": 1,
+"agileFix": 15
+},
+{
+"ID": 55011001,
+"group": 55011,
+"level": 1,
+"agileFix": 25
+},
+{
+"ID": 55012001,
+"group": 55012,
+"level": 1,
+"agileFix": 45
+},
+{
+"ID": 55013001,
+"group": 55013,
+"level": 1,
+"physicalDefenseFix": 5
+},
+{
+"ID": 55014001,
+"group": 55014,
+"level": 1,
+"physicalDefenseFix": 15
+},
+{
+"ID": 55015001,
+"group": 55015,
+"level": 1,
+"physicalDefenseFix": 25
+},
+{
+"ID": 55016001,
+"group": 55016,
+"level": 1,
+"physicalDefenseFix": 45
+},
+{
+"ID": 55018001,
+"group": 55018,
+"level": 1,
+"hpMaxFix": 100
+},
+{
+"ID": 40000001,
+"group": 40000,
+"level": 1,
+"physicalDefenseFix": 15,
+"agileFix": 15,
+"chaosResistFix": 5,
+"sleepResistFix": 5,
+"stoneResistFix": 5
+},
+{
+"ID": 40000002,
+"group": 40000,
+"level": 2,
+"physicalDefenseFix": 30,
+"agileFix": 30,
+"chaosResistFix": 5,
+"sleepResistFix": 5,
+"stoneResistFix": 5
+},
+{
+"ID": 40000003,
+"group": 40000,
+"level": 3,
+"physicalDefenseFix": 80
+},
+{
+"ID": 40000004,
+"group": 40000,
+"level": 4,
+"hpMaxFix": 250
+},
+{
+"ID": 40000005,
+"group": 40000,
+"level": 5,
+"physicalAttackFix": 80
+},
+{
+"ID": 40000006,
+"group": 40000,
+"level": 6,
+"agileFix": 80
+},
+{
+"ID": 40000007,
+"group": 40000,
+"level": 7,
+"physicalAttackFix": 15,
+"agileFix": 15,
+"sleepResistFix": 10
+},
+{
+"ID": 40000008,
+"group": 40000,
+"level": 8,
+"physicalDefenseFix": 15,
+"agileFix": 15,
+"stoneResistFix": 10
+},
+{
+"ID": 40000009,
+"group": 40000,
+"level": 9,
+"physicalDefenseFix": 35
+},
+{
+"ID": 40000010,
+"group": 40000,
+"level": 10,
+"hpMaxFix": 110
+},
+{
+"ID": 40000011,
+"group": 40000,
+"level": 11,
+"physicalAttackFix": 35
+},
+{
+"ID": 40000012,
+"group": 40000,
+"level": 12,
+"agileFix": 35
+},
+{
+"ID": 40000013,
+"group": 40000,
+"level": 13
+},
+{
+"ID": 40000014,
+"group": 40000,
+"level": 14
+},
+{
+"ID": 40000015,
+"group": 40000,
+"level": 15
+},
+{
+"ID": 40000016,
+"group": 40000,
+"level": 16
+},
+{
+"ID": 40000017,
+"group": 40000,
+"level": 17,
+"physicalDefenseFix": 35
+},
+{
+"ID": 40000018,
+"group": 40000,
+"level": 18,
+"hpMaxFix": 110
+},
+{
+"ID": 40000019,
+"group": 40000,
+"level": 19,
+"physicalAttackFix": 35
+},
+{
+"ID": 40000020,
+"group": 40000,
+"level": 20,
+"physicalDefenseFix": 35
+},
+{
+"ID": 40000021,
+"group": 40000,
+"level": 21,
+"physicalAttackFix": 12,
+"physicalDefenseFix": 12,
+"agileFix": 12
+},
+{
+"ID": 40000022,
+"group": 40000,
+"level": 22,
+"physicalDefenseFix": 50,
+"agileFix": 50
+},
+{
+"ID": 40000023,
+"group": 40000,
+"level": 23,
+"physicalDefenseFix": 30
+},
+{
+"ID": 40000024,
+"group": 40000,
+"level": 24,
+"hpMaxFix": 100
+},
+{
+"ID": 40000025,
+"group": 40000,
+"level": 25,
+"physicalAttackFix": 30
+},
+{
+"ID": 40000026,
+"group": 40000,
+"level": 26,
+"agileFix": 30
+},
+{
+"ID": 40000027,
+"group": 40000,
+"level": 27,
+"physicalAttackFix": 8,
+"physicalDefenseFix": 8,
+"agileFix": 8
+},
+{
+"ID": 40000028,
+"group": 40000,
+"level": 28,
+"physicalAttackFix": 8,
+"physicalDefenseFix": 8,
+"agileFix": 8
+},
+{
+"ID": 40000029,
+"group": 40000,
+"level": 29,
+"physicalAttackFix": 8,
+"physicalDefenseFix": 8,
+"agileFix": 8
+},
+{
+"ID": 40000030,
+"group": 40000,
+"level": 30,
+"physicalAttackFix": 8,
+"physicalDefenseFix": 8,
+"agileFix": 8
+},
+{
+"ID": 40000031,
+"group": 40000,
+"level": 31,
+"physicalAttackFix": 20,
+"physicalDefenseFix": 20,
+"agileFix": 20
+},
+{
+"ID": 40000032,
+"group": 40000,
+"level": 32,
+"physicalAttackFix": 20,
+"physicalDefenseFix": 20,
+"agileFix": 20
+},
+{
+"ID": 40000033,
+"group": 40000,
+"level": 33,
+"physicalDefenseFix": 30,
+"agileFix": 30
+},
+{
+"ID": 40000034,
+"group": 40000,
+"level": 34,
+"physicalDefenseFix": 30,
+"agileFix": 30
+},
+{
+"ID": 40000035,
+"group": 40000,
+"level": 35,
+"physicalDefenseFix": 60
+},
+{
+"ID": 40000036,
+"group": 40000,
+"level": 36,
+"agileFix": 60
+},
+{
+"ID": 40000037,
+"group": 40000,
+"level": 37,
+"physicalAttackFix": 35,
+"agileFix": 35
+},
+{
+"ID": 40000038,
+"group": 40000,
+"level": 38,
+"physicalDefenseFix": 35,
+"agileFix": 35
+},
+{
+"ID": 40000039,
+"group": 40000,
+"level": 39,
+"agileFix": 65
+},
+{
+"ID": 40000040,
+"group": 40000,
+"level": 40,
+"agileFix": 70
+},
+{
+"ID": 55040001,
+"group": 55040,
+"level": 1,
+"agileFix": 10
+},
+{
+"ID": 55041001,
+"group": 55041,
+"level": 1,
+"agileFix": 20
+},
+{
+"ID": 55042001,
+"group": 55042,
+"level": 1,
+"agileFix": 40
+},
+{
+"ID": 55043001,
+"group": 55043,
+"level": 1,
+"physicalAttackFix": 10
+},
+{
+"ID": 55044001,
+"group": 55044,
+"level": 1,
+"physicalAttackFix": 20
+},
+{
+"ID": 55045001,
+"group": 55045,
+"level": 1,
+"physicalAttackFix": 40
+},
+{
+"ID": 55046001,
+"group": 55046,
+"level": 1,
+"physicalDefenseFix": 10
+},
+{
+"ID": 55047001,
+"group": 55047,
+"level": 1,
+"physicalDefenseFix": 20
+},
+{
+"ID": 55048001,
+"group": 55048,
+"level": 1,
+"physicalDefenseFix": 40
+},
+{
+"ID": 55049001,
+"group": 55049,
+"level": 1,
+"agileFix": 10
+},
+{
+"ID": 55050001,
+"group": 55050,
+"level": 1,
+"agileFix": 20
+},
+{
+"ID": 55051001,
+"group": 55051,
+"level": 1,
+"agileFix": 40
+},
+{
+"ID": 55052001,
+"group": 55052,
+"level": 1,
+"physicalDefenseFix": 10
+},
+{
+"ID": 55053001,
+"group": 55053,
+"level": 1,
+"physicalDefenseFix": 20
+},
+{
+"ID": 55054001,
+"group": 55054,
+"level": 1,
+"physicalDefenseFix": 40
+},
+{
+"ID": 55055001,
+"group": 55055,
+"level": 1,
+"physicalAttackFix": 10
+},
+{
+"ID": 55056001,
+"group": 55056,
+"level": 1,
+"physicalAttackFix": 20
+},
+{
+"ID": 55057001,
+"group": 55057,
+"level": 1,
+"physicalAttackFix": 40
+},
+{
+"ID": 55058001,
+"group": 55058,
+"level": 1,
+"hpMaxFix": 30
+},
+{
+"ID": 55059001,
+"group": 55059,
+"level": 1,
+"hpMaxFix": 60
+},
+{
+"ID": 55060001,
+"group": 55060,
+"level": 1,
+"hpMaxFix": 120
+},
+{
+"ID": 55061001,
+"group": 55061,
+"level": 1,
+"agileFix": 100
+},
+{
+"ID": 55062001,
+"group": 55062,
+"level": 1,
+"luckFix": -2
+},
+{
+"ID": 55063001,
+"group": 55063,
+"level": 1,
+"luckFix": 1
+},
+{
+"ID": 55064001,
+"group": 55064,
+"level": 1,
+"luckFix": 3
+},
+{
+"ID": 55065001,
+"group": 55065,
+"level": 1,
+"luckFix": 5
+},
+{
+"ID": 55066001,
+"group": 55066,
+"level": 1,
+"hpMaxFix": 200,
+"physicalDefenseFix": 20
+},
+{
+"ID": 55067001,
+"group": 55067,
+"level": 1,
+"hpMaxFix": 300,
+"physicalDefenseFix": 35
+},
+{
+"ID": 55068001,
+"group": 55068,
+"level": 1,
+"hpMaxFix": 150,
+"agileFix": 25
+},
+{
+"ID": 55069001,
+"group": 55069,
+"level": 1,
+"hpMaxFix": 250,
+"agileFix": 40
+},
+{
+"ID": 55070001,
+"group": 55070,
+"level": 1,
+"hpMaxFix": 200,
+"agileFix": 15
+},
+{
+"ID": 55071001,
+"group": 55071,
+"level": 1,
+"hpMaxFix": 300,
+"agileFix": 25
+},
+{
+"ID": 55072001,
+"group": 55072,
+"level": 1,
+"hpMaxFix": 100
+},
+{
+"ID": 55073001,
+"group": 55073,
+"level": 1,
+"hpMaxFix": 50
+},
+{
+"ID": 55074001,
+"group": 55074,
+"level": 1,
+"physicalAttackFix": 10,
+"mpMaxFix": 5
+},
+{
+"ID": 55075001,
+"group": 55075,
+"level": 1,
+"hpMaxFix": 10,
+"agileFix": 10
+},
+{
+"ID": 55076001,
+"group": 55076,
+"level": 1,
+"physicalDefenseFix": 15,
+"mpMaxFix": 5,
+"chaosResistFix": 1,
+"sleepResistFix": 1,
+"stoneResistFix": 1
+},
+{
+"ID": 55077001,
+"group": 55077,
+"level": 1,
+"dropRateFix": 10000
+},
+{
+"ID": 55078001,
+"group": 55078,
+"level": 1,
+"dropRateFix": 10000
+},
+{
+"ID": 56000001,
+"group": 56000,
+"level": 1,
+"agileFix": 2
+},
+{
+"ID": 56000002,
+"group": 56000,
+"level": 2,
+"agileFix": 5
+},
+{
+"ID": 56000003,
+"group": 56000,
+"level": 3,
+"agileFix": 10
+},
+{
+"ID": 56000004,
+"group": 56000,
+"level": 4,
+"physicalAttackFix": 2
+},
+{
+"ID": 56000005,
+"group": 56000,
+"level": 5,
+"physicalAttackFix": 3
+},
+{
+"ID": 56000006,
+"group": 56000,
+"level": 6,
+"physicalAttackFix": 4
+},
+{
+"ID": 56000007,
+"group": 56000,
+"level": 7,
+"physicalAttackFix": -2,
+"physicalDefenseFix": 2,
+"agileFix": 2
+},
+{
+"ID": 56000008,
+"group": 56000,
+"level": 8,
+"physicalAttackFix": -3,
+"physicalDefenseFix": 3,
+"agileFix": 3
+},
+{
+"ID": 56000009,
+"group": 56000,
+"level": 9,
+"physicalAttackFix": -4,
+"physicalDefenseFix": 4,
+"agileFix": 4
+},
+{
+"ID": 56000010,
+"group": 56000,
+"level": 10,
+"physicalDefenseFix": 2
+},
+{
+"ID": 57000001,
+"group": 57000,
+"level": 1,
+"hpMaxFix": 1
+},
+{
+"ID": 57000002,
+"group": 57000,
+"level": 2
+},
+{
+"ID": 57000003,
+"group": 57000,
+"level": 3
+},
+{
+"ID": 57000004,
+"group": 57000,
+"level": 4,
+"physicalAttackFix": 1
+},
+{
+"ID": 57000005,
+"group": 57000,
+"level": 5,
+"physicalAttackFix": 2
+},
+{
+"ID": 57000006,
+"group": 57000,
+"level": 6,
+"physicalAttackFix": 3
+},
+{
+"ID": 57000007,
+"group": 57000,
+"level": 7,
+"agileFix": 1
+},
+{
+"ID": 57000008,
+"group": 57000,
+"level": 8,
+"agileFix": 2
+},
+{
+"ID": 57000009,
+"group": 57000,
+"level": 9,
+"agileFix": 3
+},
+{
+"ID": 57000010,
+"group": 57000,
+"level": 10,
+"agileFix": 4
+},
+{
+"ID": 57000011,
+"group": 57000,
+"level": 11,
+"physicalDefenseFix": 10
+},
+{
+"ID": 58000001,
+"group": 58000,
+"level": 1,
+"hpMaxFix": 10
+},
+{
+"ID": 58000002,
+"group": 58000,
+"level": 2,
+"hpMaxFix": 10
+},
+{
+"ID": 58000003,
+"group": 58000,
+"level": 3,
+"hpMaxFix": 10
+},
+{
+"ID": 58000004,
+"group": 58000,
+"level": 4,
+"hpMaxFix": 10
+},
+{
+"ID": 58000005,
+"group": 58000,
+"level": 5,
+"hpMaxFix": 10
+},
+{
+"ID": 58000006,
+"group": 58000,
+"level": 6,
+"hpMaxFix": 10
+},
+{
+"ID": 58000007,
+"group": 58000,
+"level": 7,
+"hpMaxFix": 10
+},
+{
+"ID": 58000008,
+"group": 58000,
+"level": 8,
+"hpMaxFix": 10
+},
+{
+"ID": 58000009,
+"group": 58000,
+"level": 9,
+"hpMaxFix": 10
+},
+{
+"ID": 58000010,
+"group": 58000,
+"level": 10,
+"hpMaxFix": 10
+},
+{
+"ID": 59000001,
+"group": 59000,
+"level": 1,
+"physicalAttackFix": 30
+},
+{
+"ID": 59000002,
+"group": 59000,
+"level": 2,
+"physicalAttackFix": 25
+},
+{
+"ID": 59000003,
+"group": 59000,
+"level": 3,
+"physicalAttackFix": 20
+},
+{
+"ID": 60000001,
+"group": 60000,
+"level": 1,
+"agileMultiFix": 50,
+"physicalDodgeFix": 50
+},
+{
+"ID": 60000002,
+"group": 60000,
+"level": 2,
+"physicalAttackMultiFix": 50,
+"physicalHitFix": 300
+},
+{
+"ID": 60000003,
+"group": 60000,
+"level": 3,
+"physicalDefenseMultiFix": 50,
+"physicalDodgeFix": 50
+},
+{
+"ID": 60000004,
+"group": 60000,
+"level": 4
+},
+{
+"ID": 60000005,
+"group": 60000,
+"level": 5,
+"physicalCritFix": 500
+},
+{
+"ID": 60000006,
+"group": 60000,
+"level": 6,
+"blockFix": 5
+},
+{
+"ID": 60000007,
+"group": 60000,
+"level": 7,
+"physicalHitFix": 200
+},
+{
+"ID": 60000008,
+"group": 60000,
+"level": 8,
+"blockFix": 3
+},
+{
+"ID": 60000009,
+"group": 60000,
+"level": 9,
+"blockFix": 3
+},
+{
+"ID": 60000010,
+"group": 60000,
+"level": 10,
+"physicalDodgeFix": 30
+},
+{
+"ID": 60000011,
+"group": 60000,
+"level": 11,
+"physicalDodgeFix": 30
+},
+{
+"ID": 60000012,
+"group": 60000,
+"level": 12,
+"physicalHitFix": 200
+},
+{
+"ID": 60000013,
+"group": 60000,
+"level": 13
+},
+{
+"ID": 60000014,
+"group": 60000,
+"level": 14
+},
+{
+"ID": 70000001,
+"group": 70000,
+"level": 1,
+"hpMaxFix": 1000,
+"physicalAttackFix": 100,
+"physicalDefenseFix": 100,
+"agileFix": 100,
+"physicalHitFix": 888,
+"physicalCritFix": 500
+},
+{
+"ID": 80000001,
+"group": 80000,
+"level": 1,
+"hpMaxFix": 5
+},
+{
+"ID": 80000002,
+"group": 80000,
+"level": 2,
+"hpMaxFix": 5
+},
+{
+"ID": 80000003,
+"group": 80000,
+"level": 3,
+"physicalAttackFix": 5
+},
+{
+"ID": 80000004,
+"group": 80000,
+"level": 4,
+"physicalDefenseFix": 5
+},
+{
+"ID": 80000005,
+"group": 80000,
+"level": 5,
+"agileFix": 5
+},
+{
+"ID": 80000006,
+"group": 80000,
+"level": 6,
+"hpMaxFix": 5
+},
+{
+"ID": 80000007,
+"group": 80000,
+"level": 7,
+"agileFix": 2
+},
+{
+"ID": 80000008,
+"group": 80000,
+"level": 8,
+"agileFix": 2
+},
+{
+"ID": 80000009,
+"group": 80000,
+"level": 9,
+"agileFix": 1
+},
+{
+"ID": 80000010,
+"group": 80000,
+"level": 10,
+"physicalDefenseFix": 1
+},
+{
+"ID": 80000011,
+"group": 80000,
+"level": 11,
+"physicalDefenseFix": 2
+},
+{
+"ID": 80000012,
+"group": 80000,
+"level": 12,
+"physicalAttackFix": 1
+},
+{
+"ID": 80000013,
+"group": 80000,
+"level": 13,
+"physicalDefenseFix": 1
+},
+{
+"ID": 80000014,
+"group": 80000,
+"level": 14,
+"physicalDefenseFix": 3
+},
+{
+"ID": 80000015,
+"group": 80000,
+"level": 15,
+"physicalDefenseFix": 1,
+"agileFix": 1
+},
+{
+"ID": 80000016,
+"group": 80000,
+"level": 16,
+"physicalDefenseFix": 1,
+"agileFix": 2
+},
+{
+"ID": 80000017,
+"group": 80000,
+"level": 17,
+"hpMaxFix": 2,
+"agileFix": 2
+},
+{
+"ID": 90000001,
+"group": 90000,
+"level": 1,
+"agileFix": 1,
+"mpMaxFix": 100
+},
+{
+"ID": 90000002,
+"group": 90000,
+"level": 2,
+"agileFix": 2,
+"mpMaxFix": 200
+},
+{
+"ID": 90000003,
+"group": 90000,
+"level": 3,
+"agileFix": 3,
+"mpMaxFix": 300
+},
+{
+"ID": 90000004,
+"group": 90000,
+"level": 4,
+"agileFix": 4,
+"mpMaxFix": 400
+},
+{
+"ID": 90000005,
+"group": 90000,
+"level": 5,
+"agileFix": 5,
+"mpMaxFix": 500
+},
+{
+"ID": 90000006,
+"group": 90000,
+"level": 6,
+"agileFix": 5
+}
+]

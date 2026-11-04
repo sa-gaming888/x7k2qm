@@ -1,0 +1,1766 @@
+[
+{
+"ID": 2474,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1610,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 2258,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1845,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1979,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1980,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 2057,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 2058,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1975,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1976,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1977,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1978,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1794,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1795,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1796,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1797,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 20032,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 20033,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 20034,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 20035,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 20036,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 10075,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 10076,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 10077,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 10078,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 24150,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 24151,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 24152,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 24153,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 9,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 10,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 11,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 12,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1558,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1559,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 1560,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 475,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 7
+},
+{
+"ID": 13,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 14,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 15,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 16,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 17,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 1561,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 1562,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 1563,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 8
+},
+{
+"ID": 21,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 25,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 26,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 27,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 1564,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 1565,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 1566,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 1568,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 9
+},
+{
+"ID": 28,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 29,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 30,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 31,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 1569,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 1570,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 1571,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 1572,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 10
+},
+{
+"ID": 32,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 33,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 34,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 35,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 1573,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 1574,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 1575,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 1576,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 11
+},
+{
+"ID": 36,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 37,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 38,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 39,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 1577,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 1578,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 1579,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 1580,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 12
+},
+{
+"ID": 42,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 43,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 44,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 45,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 476,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 1581,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 1582,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 1583,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 13
+},
+{
+"ID": 46,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 47,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 48,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 49,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 1584,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 1585,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 1586,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 1587,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 14
+},
+{
+"ID": 50,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 51,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 52,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 53,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 477,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 478,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 479,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 480,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 15
+},
+{
+"ID": 54,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 55,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 56,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 57,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 481,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 1660,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 1588,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 1589,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 16
+},
+{
+"ID": 58,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 59,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 60,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 61,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 1590,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 1591,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 1592,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 1593,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 17
+},
+{
+"ID": 62,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 63,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 64,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 65,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 1594,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 1595,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 1596,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 1597,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 18
+},
+{
+"ID": 75,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 76,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 77,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 78,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 1598,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 1599,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 1600,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 1601,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 19
+},
+{
+"ID": 93,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 94,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 95,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 96,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 482,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 1602,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 1603,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 1604,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 20
+},
+{
+"ID": 303,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 304,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 305,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 306,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 1605,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 1606,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 1607,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 1608,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 21
+},
+{
+"ID": 307,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 308,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 309,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 310,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 1609,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 1611,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 1612,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 22
+},
+{
+"ID": 315,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 316,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 317,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 318,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 1613,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 1614,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 1615,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 1616,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 23
+},
+{
+"ID": 319,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 320,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 321,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 322,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 1617,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 1618,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 1619,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 1620,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 24
+},
+{
+"ID": 323,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 324,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 325,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 367,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 1621,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 1622,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 1623,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 1624,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 25
+},
+{
+"ID": 326,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 327,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 328,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 329,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 1625,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 1626,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 1627,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 1628,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 26
+},
+{
+"ID": 330,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 331,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 332,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 333,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 483,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 1629,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 1630,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 1631,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 27
+},
+{
+"ID": 334,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 335,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 336,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 337,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 1632,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 1633,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 1634,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 1635,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 28
+},
+{
+"ID": 338,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 339,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 340,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 341,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 1636,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 1637,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 1638,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 1639,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 29
+},
+{
+"ID": 346,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 347,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 348,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 349,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 1640,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 1641,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 1642,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 1643,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 30
+},
+{
+"ID": 350,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 351,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 352,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 1381,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 1644,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 1645,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 1646,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 1647,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 31
+},
+{
+"ID": 354,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 355,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 356,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 357,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 484,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 1648,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 1649,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 1650,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 32
+},
+{
+"ID": 358,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 359,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 360,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 361,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 362,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 1651,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 1652,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 1653,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 33
+},
+{
+"ID": 363,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 364,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 365,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 366,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 1654,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 1655,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 1656,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+},
+{
+"ID": 1657,
+"lanCn": "<color=#ff0000>第一名:</color>宠物造成伤害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>宠物造成伤害+8% 命中+5%\\n<color=#fff000>第三名:</color>宠物造成伤害+5% 闪避+5%\\n<color=#36ff00>第四名:</color>宠物造成伤害+5% 闪避+3%\\n<color=#0096ff>第五名:</color>宠物造成伤害+8%",
+"lanTn": "<color=#ff0000>第一名:</color>寵物造成傷害+10% 命中+5%\\n<color=#ff9c00>第二名:</color>寵物造成傷害+8% 命中+5%\\n<color=#fff000>第三名:</color>寵物造成傷害+5% 閃避+5%\\n<color=#36ff00>第四名:</color>寵物造成傷害+5% 閃避+3%\\n<color=#0096ff>第五名:</color>寵物造成傷害+8%",
+"lanKrn": "<color=#ff0000>1위:</color>페트 데미지+10% 명중+5%\\n<color=#ff9c00>2등:</color>페트 데미지+8% 명중+5%\\n<color=#fff000>3등:</color>페트 데미지+5% 회피+5%\\n<color=#36ff00>4등:</color>페트 데미지+5% 회피+3%\\n<color=#0096ff>5등:</color>페트 데미지+8%",
+"petDataId": 34
+}
+]

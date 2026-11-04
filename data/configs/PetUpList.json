@@ -1,0 +1,104 @@
+[
+{
+"ID": 1,
+"eatItemId": 71879,
+"petUpInfo": {
+"physicalAttackPVPFix": 10,
+"physicalAttackPVEFix": 3
+}
+},
+{
+"ID": 2,
+"eatItemId": 71880,
+"petUpInfo": {
+"physicalAttackPVPFix": 20,
+"physicalAttackPVEFix": 6
+}
+},
+{
+"ID": 3,
+"eatItemId": 71881,
+"petUpInfo": {
+"physicalAttackPVPFix": 30,
+"physicalAttackPVEFix": 10
+}
+},
+{
+"ID": 4,
+"eatItemId": 71882,
+"petUpInfo": {
+"physicalDefensePVPFix": 10,
+"physicalDefensePVEFix": 3
+}
+},
+{
+"ID": 5,
+"eatItemId": 71883,
+"petUpInfo": {
+"physicalDefensePVPFix": 20,
+"physicalDefensePVEFix": 6
+}
+},
+{
+"ID": 6,
+"eatItemId": 71884,
+"petUpInfo": {
+"physicalDefensePVPFix": 30,
+"physicalDefensePVEFix": 10
+}
+},
+{
+"ID": 7,
+"eatItemId": 71885,
+"petUpInfo": {
+"hpMaxPVPFix": 30,
+"hpMaxPVEFix": 10
+}
+},
+{
+"ID": 8,
+"eatItemId": 71886,
+"petUpInfo": {
+"hpMaxPVPFix": 60,
+"hpMaxPVEFix": 20
+}
+},
+{
+"ID": 9,
+"eatItemId": 71887,
+"petUpInfo": {
+"hpMaxPVPFix": 90,
+"hpMaxPVEFix": 30
+}
+},
+{
+"ID": 10,
+"eatItemId": 71888,
+"petUpInfo": {
+"physicalAttackPVPFix": 40,
+"hpMaxPVPFix": 100,
+"physicalAttackPVEFix": 10,
+"hpMaxPVEFix": 30
+}
+},
+{
+"ID": 11,
+"eatItemId": 71889,
+"petUpInfo": {
+"hpMaxPVPFix": 100,
+"physicalDefensePVPFix": 40,
+"hpMaxPVEFix": 30,
+"physicalDefensePVEFix": 10
+}
+},
+{
+"ID": 12,
+"eatItemId": 71890,
+"petUpInfo": {
+"physicalAttackPVPFix": 40,
+"physicalDefensePVPFix": 40,
+"physicalAttackPVEFix": 10,
+"physicalDefensePVEFix": 10
+}
+}
+]

@@ -1,0 +1,55 @@
+name: register
+
+# 隨機註冊遊戲帳號：Actions → register → Run workflow，填要建幾組（1～20）、選角色屬性（預設地）。
+# 帳號（單字＋數字）、密碼（英文＋數字）、台灣手機號碼全部隨機產生；每個帳號註冊完接著建五隻角色（名字隨機、敏 20）。
+# 結果（帳密、電話、角色名）只推到 Telegram，日誌不印。
+# 要先設的 secrets（Settings → Secrets and variables → Actions）：
+#   GAME_LOGIN_HOST   HTTP 登入伺服器（選填，沒設用 eologin.idealsa.org）
+#   TG_BOT_TOKEN      Telegram 機器人 token
+#   TG_CHAT_ID        要推送的群組 id
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "要建幾組帳號（1～20）"
+        required: true
+        default: "1"
+        type: string
+      element:
+        description: "五隻角色的屬性（10 點全加這一種；基礎點數敏 20）"
+        required: true
+        default: "地"
+        type: choice
+        options: ["地", "水", "火", "風"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: register                 # 同一時間只跑一個，不重複送
+  cancel-in-progress: false
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 隨機註冊並推 Telegram
+        env:
+          COUNT: ${{ inputs.count }}
+          ELEMENT: ${{ inputs.element }}
+          LOGIN_HOST: ${{ secrets.GAME_LOGIN_HOST }}
+          BOT_TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          BOT_TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          if [ -z "$BOT_TG_TOKEN" ] || [ -z "$BOT_TG_CHAT_ID" ]; then
+            echo "停止：先設 secrets TG_BOT_TOKEN、TG_CHAT_ID"; exit 1
+          fi
+          python -X utf8 -m x7k2qm.client.reg_random --count "$COUNT" --element "$ELEMENT" --host "${LOGIN_HOST:-eologin.idealsa.org}"

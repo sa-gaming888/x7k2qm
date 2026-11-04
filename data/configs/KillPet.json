@@ -1,0 +1,742 @@
+[
+{
+"ID": 92033,
+"killForAllInfo": [
+{
+"point": 1250,
+"targetNum": 1,
+"star": 0
+}
+]
+},
+{
+"ID": 92034,
+"killForAllInfo": [
+{
+"point": 1350,
+"targetNum": 1,
+"star": 6
+}
+]
+},
+{
+"ID": 92035,
+"killForAllInfo": [
+{
+"point": 1400,
+"targetNum": 1,
+"star": 7
+}
+]
+},
+{
+"ID": 92138,
+"killForAllInfo": [
+{
+"point": 10,
+"targetNum": 10,
+"star": 6
+}
+]
+},
+{
+"ID": 92320,
+"killInfo": [
+{
+"petId": 1979,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1980,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2057,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2058,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1975,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1976,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1977,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1978,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1794,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1795,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1796,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 1797,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2486,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2487,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2488,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 2489,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24147,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24148,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24149,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24150,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24151,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24152,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 24153,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 20146,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 20147,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 20148,
+"point": 1350,
+"targetNum": 1
+},
+{
+"petId": 20149,
+"point": 1350,
+"targetNum": 1
+}
+]
+},
+{
+"ID": 92321,
+"killInfo": [
+{
+"petId": 2474,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 1610,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 2258,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 1845,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24143,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24144,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24145,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24146,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24133,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24134,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24135,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24136,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24137,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24138,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24139,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24140,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 2503,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 2504,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24123,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24124,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24125,
+"point": 1400,
+"targetNum": 1
+},
+{
+"petId": 24126,
+"point": 1400,
+"targetNum": 1
+}
+]
+},
+{
+"ID": 90377,
+"killInfo": [
+{
+"petId": 2474,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 1610,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 2258,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 1845,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20426,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20427,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20428,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20429,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24168,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24169,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24170,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24171,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24127,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24128,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24129,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24130,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24131,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24132,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24164,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24165,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24166,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24167,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24174,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24175,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24176,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24177,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24178,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24179,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24180,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24181,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24143,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24144,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24145,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24146,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24133,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24134,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24135,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24136,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24137,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24138,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24139,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24140,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 2503,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 2504,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24123,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24124,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24125,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24126,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24193,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24194,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24195,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24196,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24197,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24198,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24199,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24200,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 2080,
+"point": 1,
+"targetNum": 24000
+},
+{
+"petId": 24182,
+"point": 1,
+"targetNum": 40000
+},
+{
+"petId": 24183,
+"point": 1,
+"targetNum": 40000
+},
+{
+"petId": 24184,
+"point": 1,
+"targetNum": 40000
+},
+{
+"petId": 24185,
+"point": 1,
+"targetNum": 40000
+},
+{
+"petId": 20405,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20406,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20407,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 20408,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24231,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24232,
+"point": 1,
+"targetNum": 40000
+},
+{
+"petId": 24233,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24234,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24235,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24236,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24237,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24238,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24239,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24240,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24241,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24242,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24243,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24248,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24249,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24250,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24251,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24252,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24253,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24244,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24245,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24246,
+"point": 1,
+"targetNum": 15000
+},
+{
+"petId": 24247,
+"point": 1,
+"targetNum": 15000
+}
+]
+}
+]
