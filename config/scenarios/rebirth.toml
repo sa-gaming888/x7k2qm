@@ -9,6 +9,7 @@
 #   jobs   同上，依序做的多個工作（任一失敗就停）
 #   gate   "approve"：停下來等使用者同意（jobs scenario approve --profile N）才往下
 #   pet_train  quests 停在「步驟 X 要寵物 P 練到 N 級」時：自動 train P:N 再重跑同一個 quests（最多 3 次）
+#   pet_start  自動練寵在哪張圖（練功路線上的地點；沒寫＝海主人隧道Lv30，照寵物等級往前跳圖）
 #   skip_if    條件成立就跳過這一步（例 "done=3003"：全隊都完成了）
 #
 # 規則：轉生（不可逆）前一定有 gate；任一步失敗停在原地、送 Telegram；不自動重試同一步（pet_train 例外，上限 3 次）。
@@ -23,7 +24,7 @@ until = "level>=need"
 
 [[step]]
 name = "整理背包與寵物欄"
-job = "clean --apply --confirm-release"
+job = "clean --apply --confirm-release --stash-private"   # 使用者 11-05：每一轉解完美人任務前，道具欄所有物品存個倉（任務條件道具不動）
 
 [[step]]
 name = "1.82（不用寵物的 16 個）"
@@ -33,7 +34,8 @@ skip_if = "done=2999,2017,2015,2023,2027,2018,2021,2025,2014,2013,2020,2011,2012
 [[step]]
 name = "猜謎三兄弟 3003（金豬練到 77）"
 job = "quests --apply --groups 3003 --free 1"
-pet_train = true                   # 第 2 步要金豬 14 練到 77 → 自動 train 14:77（從海主人隧道跳圖）
+pet_train = true                   # 第 2 步要金豬 14 練到 77 → 自動 train 14:77
+pet_start = "波拉島Lv120"           # 使用者 11-05：金豬強制鎖在波拉島練（77 < 120，pet_route 不會再往前換圖）
 skip_if = "done=3003"
 
 [[step]]
@@ -95,6 +97,10 @@ gate = "approve"
 [[step]]
 name = "轉生"
 job = "rebirth --apply --confirm-rebirth"   # 打完機暴全部寵物存倉 → 守護人 → 精靈王
+
+[[step]]
+name = "轉生後整理寵物欄"
+job = "clean --apply --confirm-release"     # 使用者 11-05：轉生一結束馬上看寵物欄，照規則表存倉／放生（戰寵騎寵不動、放生只丟 30 級以下）
 
 [[step]]
 name = "轉生後規範、從低等圖開練"

@@ -9,7 +9,8 @@
 - `until = "level>=need"`（或 `level>=131`）：條件不成立就照常練功；成立才往下。
 - `job = "..."`／`jobs = ["...", ...]`：依序排進自己的工作佇列，一件 ok 才排下一件；任一失敗＝劇本停在這一步。
   可加 `skip_if = "done=群組,..."`（全隊都完成就跳過）、`pet_train = true`
-  （quests 失敗訊息是「要寵物 P 練到 N 級」→ 自動排 train P:N 再重跑同一個 quests，同一步最多 3 次）。
+  （quests 失敗訊息是「要寵物 P 練到 N 級」→ 自動排 train P:N 再重跑同一個 quests，同一步最多 3 次）；
+  `pet_start = "練級點"` 改這一步自動練寵的地圖（預設 PET_START）。
 - `gate = "approve"`：停下來等人 `jobs scenario approve --profile N`（只對目前這個 gate 有效）。
 
 進度檔 `<dir>/<組>.json`（dir＝環境變數 `BOT_SCENARIO_DIR`，沒有才用 `captures/scenario`；測試一律暫存目錄）：
@@ -32,7 +33,7 @@ PET_START = "海主人隧道Lv30"       # 自動練寵的起點（使用者：�
 PET_TRAIN_MAX = 3                  # 同一步自動練寵最多幾次（使用者同意的例外）
 HISTORY_MAX = 300                  # 進度檔保留幾筆結果
 SCENARIO_KEYS = {"name", "loop"}
-STEP_KEYS = {"name", "until", "job", "jobs", "gate", "pet_train", "skip_if"}
+STEP_KEYS = {"name", "until", "job", "jobs", "gate", "pet_train", "pet_start", "skip_if"}
 GATES = ("approve",)
 FORBIDDEN_ARGS = ("--profile", "--jobs-dir", "--owner-dir", "--wait", "--no-wait")
 FORBIDDEN_JOBS = ("resume",)       # 清 hold 是人的決定，不放進劇本
@@ -62,12 +63,13 @@ def default_dir() -> str:
 
 class Step:
     def __init__(self, i: int, name: str, kind: str, until=None, jobs=(), gate=None, pet_train=False,
-                 skip_if=None):
+                 skip_if=None, pet_start=None):
         self.i, self.name, self.kind = i, name, kind
         self.until = until            # ("level", "need" | int)
         self.jobs: List[List[str]] = [list(a) for a in jobs]   # 每件工作的 argv（不含 --profile）
         self.gate = gate
         self.pet_train = pet_train
+        self.pet_start = pet_start or PET_START   # 自動練寵的地圖（使用者 11-05：金豬鎖定波拉島）
         self.skip_if = skip_if        # ("done", [群組…])
 
 
@@ -163,8 +165,8 @@ def parse(data: dict, path: str = "", registry=None) -> Scenario:
         if len(kinds) != 1:
             raise ScenarioError(f"{where}：until／job／jobs／gate 要剛好一個（現在 {kinds or '沒有'}）")
         kind = kinds[0]
-        if kind in ("until", "gate") and ({"pet_train", "skip_if"} & set(st)):
-            raise ScenarioError(f"{where}：{kind} 步驟不能加 pet_train／skip_if")
+        if kind in ("until", "gate") and ({"pet_train", "pet_start", "skip_if"} & set(st)):
+            raise ScenarioError(f"{where}：{kind} 步驟不能加 pet_train／pet_start／skip_if")
         until = gate = None
         argvs: List[List[str]] = []
         if kind == "until":
@@ -184,8 +186,16 @@ def parse(data: dict, path: str = "", registry=None) -> Scenario:
             raise ScenarioError(f"{where}：pet_train 要是 true／false")
         if pet and not any(a[0] == "quests" for a in argvs):
             raise ScenarioError(f"{where}：pet_train 只用在有 quests 的步驟")
+        pstart = st.get("pet_start")
+        if pstart is not None:
+            if not pet:
+                raise ScenarioError(f"{where}：pet_start 要搭配 pet_train = true")
+            from .supervisor import ROUTE
+            if pstart not in {n for n, _, _ in ROUTE}:      # 同 jobs/train.check：練寵要在練功路線上
+                raise ScenarioError(f"{where}：pet_start 不是練功路線上的地點：{pstart!r}")
         skip = parse_skip(st["skip_if"]) if "skip_if" in st else None
-        steps.append(Step(i, sname, kind, until=until, jobs=argvs, gate=gate, pet_train=pet, skip_if=skip))
+        steps.append(Step(i, sname, kind, until=until, jobs=argvs, gate=gate, pet_train=pet, skip_if=skip,
+                          pet_start=pstart))
     # 轉生不可逆：--confirm-rebirth 一定要是那一步的第一件工作，而且前一步是 gate（不能預先同意、不能藏在中間）
     for s in steps:
         for k, a in enumerate(s.jobs):
@@ -489,7 +499,7 @@ class Runner:
             self._hist(d, "need_pet", detail)
             self.log(f"劇本：{self._where(d)} 要寵物 {m.group(1)} 練到 {m.group(2)} 級 → 自動練寵"
                      f"（第 {d['pet_tries']}/{PET_TRAIN_MAX} 次）")
-            self._enqueue(d, ["train", "--pets", pet, "--start", PET_START], "pet_train")
+            self._enqueue(d, ["train", "--pets", pet, "--start", st.pet_start], "pet_train")
             return
         self._stop(d, f"工作 {' '.join(argv)} {status}：{detail}")
 

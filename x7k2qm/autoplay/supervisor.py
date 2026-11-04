@@ -194,9 +194,9 @@ def carry_over(s: State, prev: State) -> State:
 
 def run(interval: float, log) -> int:
     from .ops import LEADER_CONN, SWITCH_SLOTS, TELEPORT_BTN, TELEPORT_TRAIN_TAB, TRAIN_POINTS, game_ops
-    conns = {"61466": "角色27", "61467": "角色20", "61468": "角色45", "61469": "角色24", "61470": "角色31"}
+    conns = {"61466": "角色51", "61467": "角色21", "61468": "角色52", "61469": "角色24", "61470": "角色47"}
     slots = {n: i for i, n in enumerate(conns.values())}
-    leader, leader_rid = "角色27", 10003754
+    leader, leader_rid = "角色51", 10003754
     members = [n for n in conns.values() if n != leader]
     o = game_ops()
     o.log = log

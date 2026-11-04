@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色27,角色20   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色51,角色21   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色27、角色20領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色51、角色21領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -39,7 +39,8 @@ NAME = "pets"
 HELP = ("寵物欄整理（--mode list|grade|park|rest|restore|store-all|swap-tiger|refresh|store|release-public|"
         "release-private；不加 --apply 只列；grade 只讀：每隻寵物滿檔／缺 n 檔；info 只讀：每隻完整資訊）")
 MODES = ("list", "grade", "info", "park", "rest", "restore", "store-all", "swap-tiger", "ride-train", "refresh", "equip-fight", "take", "withdraw", "deposit", "store", "release-worst", "release-public",
-         "release-private", "release-below", "dragons", "share")
+         "release-private", "release-below", "dragons", "share", "graduate")
+GRADUATE_SCORE = 1000                  # 使用者 11-05：分數滿 1000 的寵物改名成分數、存倉、換寵
 FIVE_DRAGONS = (54, 55, 56, 57, 481)   # 五色人龍（利則諾頓、揚奇洛斯、邦浦洛斯、邦奇諾、布魯頓）
 KEEP_DIFF = 3                          # 使用者 2026-11-01：五色人龍留 +3 檔以上練，練到有機會 1000 分
 READ_ONLY = ("list", "grade", "info")
@@ -64,6 +65,8 @@ def add_args(ap) -> None:
                     help="take：滿級（140）的寵物也拿（預設只拿未滿 140）")
     ap.add_argument("--pet-uid", dest="pet_uid", default=None, help="share、withdraw：寵物唯一編號（withdraw 同種多隻時指定）")
     ap.add_argument("--pet-name", dest="pet_name", default=None, help="share：改成這個名字")
+    ap.add_argument("--min-score", dest="min_score", type=int, default=GRADUATE_SCORE,
+                    help=f"graduate：評分到這個分數就改名存倉（預設 {GRADUATE_SCORE}）")
     ap.add_argument("--confirm-release", action="store_true",
                     help="release-public／release-private 要明確加（放生不可逆）")
     ap.add_argument("--exception", default=None,
@@ -276,7 +279,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色51，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色29，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -539,7 +542,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色27等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色51等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
@@ -704,6 +707,45 @@ def share_pet(p, names: List[str], args) -> Tuple[str, dict]:
         rename_pet(p, who, uid, name)
     to_public(p, who, uid)
     return f"{who} 的寵物 {uid} 已改名存共倉", {"mode": "share", "done": [who]}
+
+
+def graduate(p, names: List[str], args) -> Tuple[str, dict]:
+    """分數滿門檻的寵物「畢業」（使用者 11-05「分數滿1000 將寵物改名，存倉換寵」，選「個倉評分最高、未滿 1000 的金虎」）：
+    身上未滿 140、評分 ≥ 門檻、不是騎寵的 → 改名成評分數字、存倉；牠是戰寵就先從個倉領評分最高、未滿門檻、
+    2～139 級的金虎鎖成戰寵（騎寵不動）。140 級的不算（不是在練的）；個倉沒有合適金虎就停、不動任何寵物。"""
+    need = int(getattr(args, "min_score", None) or GRADUATE_SCORE)
+    plan = []
+    for n in names:
+        fight_u, ride_u = p.locks(n)
+        grads = [v for v in slots(p, n).values() if (v.get("score") or 0) >= need
+                 and (v.get("level") or 0) < MAX_PET_LV and v.get("uniqueIndex") != ride_u]
+        if not grads:
+            continue
+        new = None
+        if fight_u in {v.get("uniqueIndex") for v in grads}:
+            pool = [r for r in p.pet_depot(n) if r.get("petId") == TIGER and 1 < (r.get("level") or 0) < MAX_PET_LV
+                    and (r.get("score") or 0) < need]
+            if not pool:
+                raise JobError(f"{n} 個倉沒有 2～139 級、評分未滿 {need} 的金虎可以換戰寵，停（還沒動任何寵物）")
+            new = max(pool, key=lambda r: (r.get("score") or 0, r.get("level") or 0))
+        plan.append((n, grads, new))
+    show = [(n, [(p.pet_name(v), v.get("level"), v.get("score")) for v in g],
+             new and (p.pet_name(new), new.get("level"), new.get("score"))) for n, g, new in plan]
+    p.log(f"寵物畢業（評分 ≥ {need}）：{show}")
+    data = {"mode": "graduate", "plan": show, "done": []}
+    if not getattr(args, "apply", False):
+        return f"只列（沒加 --apply）：{len(plan)} 隻角色有寵物滿 {need} 分", data
+    for n, grads, new in plan:          # 一隻角色出錯就停（JobError 往上丟）
+        fight_u, ride_u = p.locks(n)
+        if new is not None:
+            got = take_pet(p, n, new)
+            lock(p, n, got["uniqueIndex"], ride_u)
+        for v in grads:
+            rename_pet(p, n, v["uniqueIndex"], str(v.get("score")))
+            idx = next(k for k, x in slots(p, n).items() if x.get("uniqueIndex") == v["uniqueIndex"])
+            store_pet(p, n, idx)
+        data["done"].append(n)
+    return f"寵物畢業完成：{data['done']}（評分 ≥ {need} 改名存倉）", data
 
 
 def assign_dragons(p, names: List[str], args) -> Tuple[str, dict]:
@@ -886,6 +928,8 @@ def run(p, args) -> Tuple[str, dict]:
         return share_pet(p, names, args)
     if mode == "dragons":
         return assign_dragons(p, names, args)
+    if mode == "graduate":
+        return graduate(p, names, args)
     if mode == "list" or not getattr(args, "apply", False):
         for line in list_lines(p, names):
             p.log(line)
