@@ -30,7 +30,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色37"), (10003796, "角色25"), (10003799, "角色41"), (10003803, "角色21"), (10003804, "角色30")]
+PARTY = [(10003754, "角色50"), (10003796, "角色20"), (10003799, "角色28"), (10003803, "角色21"), (10003804, "角色37")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -389,6 +389,8 @@ class Party:
                         self.fast[name] = bool(a["fastBattleFlg"])
                     if "autoSetPointType" in a:
                         self.point_type[name] = a["autoSetPointType"]
+                    if "autoPointDiyList" in a:
+                        self.plan_sent.pop(name, None)          # 伺服器推了真正的值：之後照它比，不再看當初送的
                     if "hideMode" in a:
                         self.hide[name] = bool(a["hideMode"])
                     if "status" in a:
@@ -712,12 +714,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色34在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色45在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色41 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色28 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1085,7 +1087,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色37個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色50個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1180,14 +1182,20 @@ class Party:
             fight = next(u for _, u, _ in pets if u != ride)
         return self.set_fight_pet(name, fight, ride)
 
-    def ensure_hidden(self, name: str) -> bool:
+    def ensure_hidden(self, name: str, need_state: bool = False) -> bool:
         """規範 5：外掛全部隱藏（`NewRole_RealHideMode` 是切換開關，只在 hideMode 還沒開時送）。
-        設定檔 [waigua] hide = false：不動。"""
+        設定檔 [waigua] hide = false：不動。
+        need_state：一筆角色狀態（RoleAttr）都還沒收到就不送（切換開關，盲送可能反而關掉）、回 False。
+        收到過狀態但沒有 hideMode＝伺服器沒帶預設值＝沒開 → 送。"""
         if self.waigua is not None and not self.waigua.hide:
             return True
         with self.lock:
             if self.hide.get(name):
                 return True
+            seen = name in self.attrs
+        if need_state and not seen:
+            self.log(f"{name} 還沒收到角色狀態，不知道隱藏開了沒，不送")
+            return False
         r = self.clients[name].request("NewRole_RealHideMode", {}) or {}
         ok = bool(r.get("isOK")) and self.wait(lambda: bool(self.hide.get(name)), 5)
         self.log(f"{name} 全部隱藏{'' if ok else f'（沒確認到：{r}）'}")
@@ -1310,9 +1318,9 @@ class Party:
         sid = next((s for s in self.HEAL_SKILLS if s in found), None)
         return (sid, found[sid]) if sid else None
 
-    def ensure_battle_heal(self, names: List[str]) -> List[str]:
+    def ensure_battle_heal(self, names: List[str], failed: Optional[List[str]] = None) -> List[str]:
         """`WaiGua_FastBattleSettingHpChange`：人物、寵物、騎寵血量低於 battle_heal % 就放補血技能。
-        沒有補血技能的角色跳過（記日誌）；被拒記日誌、不重試。已經是同樣設定的不送。"""
+        沒有補血技能的角色跳過（記日誌，不算失敗）；被拒記日誌、不重試，有給 failed 就記進去。已經是同樣設定的不送。"""
         per = int(self.battle_heal)
         done = []
         for n in names:
@@ -1330,6 +1338,8 @@ class Party:
             r = self.clients[n].request("WaiGua_FastBattleSettingHpChange", dict(want)) or {}
             if not r.get("isOK"):
                 self.log(f"{n} 外掛補血設定被拒：{r}")
+                if failed is not None:
+                    failed.append(n)
                 continue
             with self.lock:
                 self.battle.setdefault(n, {}).update(want)
@@ -1355,11 +1365,8 @@ class Party:
         hide_if_unknown：隱藏是切換開關，平常現值不知道不送（免得反而關掉）；開局／轉生流程照舊直接設。
         全部設成的角色記進 waigua_aligned；回傳沒設成的「角色：項目」（不重試，呼叫端停止）。"""
         bad: List[str] = []
-        w = self.waigua
         for n in names:
-            with self.lock:
-                known = n in self.hide
-            if (w is None or w.hide) and (known or hide_if_unknown) and not self.ensure_hidden(n):
+            if not self.ensure_hidden(n, need_state=not hide_if_unknown):   # hide = false 回 True
                 bad.append(f"{n}：隱藏")
             if not self.ensure_first_cmd(n):              # first_cmd = "none" 或沒戴精靈金幣都回 True
                 bad.append(f"{n}：首次動作")
@@ -1369,10 +1376,15 @@ class Party:
                 done = set(self.set_plan_points(todo))
                 bad += [f"{n}：自訂加點" for n in todo if n not in done]
         elif trans_points:
-            self.set_trans_points(names)
+            done = set(self.set_trans_points(names))
+            bad += [f"{n}：轉生加點" for n in names if n not in done]
         if self.battle_heal:
-            self.ensure_battle_heal(names)
-        self.ensure_auto_points(names)                    # 已經有加點模式的不動
+            failed: List[str] = []
+            self.ensure_battle_heal(names, failed)
+            bad += [f"{n}：戰鬥中補血" for n in failed]
+        failed = []
+        self.ensure_auto_points(names, failed)            # 已經有加點模式的不動
+        bad += [f"{n}：自動加點" for n in failed]
         bad += self.apply_raw(names)
         self.waigua_aligned.update(n for n in names if not any(b.startswith(f"{n}：") for b in bad))
         if bad:
@@ -1396,7 +1408,7 @@ class Party:
                 if store is not None:
                     with self.lock:
                         now = dict(store.get(n, {}))
-                    if all(str(now.get(k, type(v)())) == str(v) for k, v in fields.items()):
+                    if all(_same_value(now.get(k, type(v)()), v) for k, v in fields.items()):
                         continue
                 try:
                     r = self.clients[n].request(proto, dict(fields)) or {}
@@ -1526,10 +1538,10 @@ class Party:
         return not self.align_waigua(names, hide_if_unknown=True, trans_points=True) and ok
 
     # ---- 新角色：自動加點 ----
-    def ensure_auto_points(self, names: Optional[List[str]] = None) -> List[str]:
+    def ensure_auto_points(self, names: Optional[List[str]] = None, failed: Optional[List[str]] = None) -> List[str]:
         """沒設過自動加點的角色設成推薦加點（新角色不設的話升級點數不分配、血量一直很低）。
         已經設過的（例如第 2 組隊長自訂加點、敏捷要高）不動。回傳這次設定的角色。names＝只看這些角色。
-        設定檔 [waigua] auto_points = "none"：不動。"""
+        被拒的有給 failed 就記進去。設定檔 [waigua] auto_points = "none"：不動。"""
         if self.waigua is not None and self.waigua.auto_points == "none":
             return []
         done = []
@@ -1541,7 +1553,11 @@ class Party:
             r = self.clients[name].request("WaiGua_AutoRolePointSet", {"autoSetPointType": 2}) or {}
             if not r.get("isOK"):
                 self.log(f"{name} 設定推薦加點被拒：{r}")
+                if failed is not None:
+                    failed.append(name)
                 continue
+            with self.lock:
+                self.point_type[name] = 2
             done.append(name)
             self.log(f"{name} 自動加點設成推薦加點")
         return done
@@ -1728,7 +1744,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色20的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色25的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -2283,6 +2299,20 @@ class Party:
                 c.close()
             except Exception:  # noqa: BLE001
                 pass
+
+
+def _same_value(now, want) -> bool:
+    """設定檔 raw 的值跟伺服器推送的現值一不一樣。sproto 陣列推來是 {索引: 值}（見 autoPointDiyList），
+    照索引順序轉成串列再比；布林只跟布林／0、1 比（不用 str，免得 True 對 "True" 這類巧合）。"""
+    if isinstance(want, list):
+        if isinstance(now, dict):
+            now = [now[k] for k in sorted(now, key=lambda k: int(k))]
+        return isinstance(now, (list, tuple)) and [int(x) for x in now] == [int(x) for x in want]
+    if isinstance(want, bool):
+        return now in (True, 1) if want else now in (False, 0, None)
+    if isinstance(want, int):
+        return not isinstance(now, bool) and isinstance(now, int) and now == want
+    return str(now) == str(want)
 
 
 def parse_point_plan(text: str) -> dict:

@@ -108,7 +108,7 @@ def env_sets(env: Mapping[str, str]) -> List[str]:
         sc = env["SCENARIO"].strip()
         if sc and sc.lower() not in ("builtin", "none") and not os.path.isabs(sc):
             # 舊用法的相對路徑：練功程式是在資料目錄（/data）跑的，照它算（設定檔裡寫的才相對設定檔）
-            sc = os.path.join(env.get("DATA_DIR") or "/data", sc)
+            sc = os.path.abspath(os.path.join(env.get("DATA_DIR") or "/data", sc))   # DATA_DIR 本身相對也要轉絕對
         out.append(f"files.scenario={q(sc or 'builtin')}")
     if "AUTO_SPIRIT" in env:
         out.append(f"bot.auto_spirit={'true' if env['AUTO_SPIRIT'].strip() == '1' else 'false'}")
@@ -169,6 +169,9 @@ def check(env: Mapping[str, str]) -> List[str]:
     path = botconfig.find(env) or botconfig.BUILTIN
     try:                                       # 跟實際啟動同一條路（同樣的參數、同樣的檢查；也會解析掛載的規則表）
         _, cfg = load_config(build_parser(), party_argv(env, "/dev/null"), set_env=False)
+    except SetupError as e:                    # API_TOKEN_FILE 讀不到等
+        problems.append(str(e))
+        cfg = None
     except botconfig.ConfigError as e:
         problems.append(f"設定檔 {path}：{e}")
         cfg = None
