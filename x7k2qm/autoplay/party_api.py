@@ -170,6 +170,7 @@ class Views:
         return {"equip": out}
 
     def pets(self) -> dict:
+        """寵物一覽＋忠誠度、檔次、評分（使用者 11-05「查寵物資訊時要包含忠誠度及檔次、分數資訊」）。"""
         p = self.p
         out = {}
         with p.lock:
@@ -185,7 +186,7 @@ class Views:
                                  "hp": x.get("hp"), "hpMax": x.get("hpMax"),
                                  "status": STATUS_NAMES.get(x.get("status"), "休息"), "statusCode": x.get("status"),
                                  "uniqueIndex": u, "lockedFight": u is not None and u == fight,
-                                 "lockedRide": u is not None and u == ride})
+                                 "lockedRide": u is not None and u == ride, **pet_extra(x)})
                 out[n] = {"pets": rows, "fightPetIndex": fight, "ridePetIndex": ride}
         return {"pets": out}
 
@@ -205,7 +206,7 @@ class Views:
                     rows.append({"index": idx, "species": p.pet_name(x), "nickname": x.get("name") or None,
                                  "status": STATUS_NAMES.get(x.get("status"), "休息"),
                                  "lockedFight": u is not None and u == fight, "lockedRide": u is not None and u == ride,
-                                 "info": json.loads(json.dumps(x, default=str))})
+                                 **pet_extra(x), "info": json.loads(json.dumps(x, default=str))})
                 out[n] = rows
         return {"pet": out}
 
@@ -375,7 +376,22 @@ class DepotQuery:
                     or str(x.get("itemId")), "count": x.get("overlay", 1), "page": page,
                     "uniqueIndex": x.get("uniqueIndex"), "bind": x.get("bind")}
         return {"petId": x.get("petId"), "name": self.p.pet_name(x), "lv": x.get("level"), "page": page,
-                "hp": x.get("hp"), "hpMax": x.get("hpMax"), "uniqueIndex": x.get("uniqueIndex")}
+                "hp": x.get("hp"), "hpMax": x.get("hpMax"), "uniqueIndex": x.get("uniqueIndex"), **pet_extra(x)}
+
+
+def pet_extra(x: dict) -> dict:
+    """寵物的忠誠度、檔次、評分（/pets、/pet、/petdepot 共用；只讀設定表，不送封包）。
+    - loyalty：PetInfo.allegiance（忠誠度）
+    - grade：檔次標籤（滿檔／-n／轉生寵／餵石寵／異常／無資料，同 jobs pets --mode grade、petgrade.grade）
+    - gradeDiff：檔差（只有 0 轉、資料齊全才有值）；growth：體腕耐速四項成長檔 [vit, atk, def, dex]
+    - score：伺服器評分（PetInfo.score）"""
+    from .petgrade import ARGS, grade
+    try:
+        label, diff = grade(x)
+    except Exception as e:  # noqa: BLE001  設定表讀不到也不要讓整個查詢 500
+        label, diff = f"無資料（{type(e).__name__}）", None
+    return {"loyalty": x.get("allegiance"), "grade": label, "gradeDiff": diff,
+            "growth": [x.get(k) for k in ARGS], "score": x.get("score")}
 
 
 class _Stop(Exception):
@@ -392,14 +408,14 @@ DOCS = {   # 端點 → 說明（/openapi.json 用）
     "role": "人物完整屬性（經驗、四圍、剩餘點數、屬性、倉庫頁數…；attr 是伺服器全部欄位）",
     "bag": "道具欄（不含身上裝備）",
     "equip": "身上裝備與部位",
-    "pets": "寵物一覽：等級、血量、出戰／騎乘／休息",
-    "pet": "寵物完整資料：攻防敏、屬性、暴擊等戰鬥數值、技能、伺服器評分 score",
+    "pets": "寵物一覽：等級、血量、出戰／騎乘／休息、忠誠度 loyalty、檔次 grade／gradeDiff／growth、評分 score",
+    "pet": "寵物完整資料：攻防敏、屬性、暴擊等戰鬥數值、技能；同 /pets 的忠誠度、檔次、評分",
     "tasks": "任務：已完成的任務組、進行中的步驟（?groups=2000,2031 只看這些組）",
     "buffs": "經驗加成與到期時間",
     "battle": "近 5 分鐘勝敗、遇敵、快速戰鬥",
     "waigua": "外掛設定全部：遇敵、快戰、隱藏、自動加點、鎖定戰寵騎寵、首次動作、技能補血、抓寵；bot＝練功程式的開關",
     "depot": "道具倉庫（個人每隻＋公共；會送查詢請求，結果快取 60 秒）",
-    "petdepot": "寵物倉庫（同上）",
+    "petdepot": "寵物倉庫（同上；每隻也有忠誠度、檔次、評分）",
     "scenario": "劇本進度：第幾步、狀態、最近結果",
     "jobs": "工作佇列：排隊中、執行中、最近完成",
     "health": "連線狀態（不需要 token；容器健康檢查用）",

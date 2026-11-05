@@ -109,7 +109,8 @@ def fmt_pets(d: dict) -> List[str]:
         for p in v.get("pets") or []:
             lock = "（鎖定戰寵）" if p.get("lockedFight") else "（鎖定騎寵）" if p.get("lockedRide") else ""
             out.append(f"  第 {p.get('index')} 格｜{p['name']}｜{_v(p.get('lv'))} 級｜hp {_hp(p.get('hp'), p.get('hpMax'))}"
-                       f"｜{p.get('status')}{lock}")
+                       f"｜{p.get('status')}{lock}"
+                       f"｜忠誠 {_v(p.get('loyalty'))}｜檔次 {_v(p.get('grade'))}｜評分 {_v(p.get('score'))}")
     return out
 
 
