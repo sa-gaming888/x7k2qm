@@ -212,10 +212,12 @@ def _grid_loader():
     return grid
 
 
-def build_quest(p, group: int, log, grid_fn, need_free: int, stop_after=None, battle_timeout=None):
+def build_quest(p, group: int, log, grid_fn, need_free: int, stop_after=None, battle_timeout=None, only=None):
     """另外包一層，測試可以換成假的執行器。"""
     from ..quest.headless import build_quest as real
     kw = {} if battle_timeout is None else {"battle_timeout": battle_timeout}
+    if only is not None:
+        kw["only"] = only
     rec = getattr(p, "quest_record_dir", None)       # run() 照 --record 設定；None＝不錄
     if rec:
         kw["record_dir"] = rec
@@ -358,7 +360,8 @@ def set_leader(p, name: Optional[str]):
     return old
 
 
-def run_one(p, group: int, free: int, grid_fn, stop_after=None, battle_timeout=None, leader=None) -> bool:
+def run_one(p, group: int, free: int, grid_fn, stop_after=None, battle_timeout=None, leader=None,
+            only=None) -> bool:
     """跑一個任務群組；回傳是不是照 --stop-after 提早停。"""
     from ..quest.headless import QuestStop
     pre, post = HOOKS.get(group, ([], []))
@@ -374,12 +377,15 @@ def run_one(p, group: int, free: int, grid_fn, stop_after=None, battle_timeout=N
     before = {n: list(getattr(c, "listeners", [])) for n, c in p.clients.items()}
     old_party = None
     try:
+        if only and not leader and p.party[0][1] not in only:
+            leader = only[0]                                        # 補進度：由落後的人帶隊（接任務、互動都是隊長送的）
         old_party = set_leader(p, leader) or lead_actor(p, group)   # --leader 指定、或隊長已完成就換人帶隊
         if old_party and not p.form_team():
             _back_to_leader(p, old_party)
             raise JobError(f"{group}：換隊長後組隊失敗{_restore(p, post)}")
+        kw = {} if only is None else {"only": only}
         q = build_quest(p, group, lambda m: p.log(f"[{group}] {m}"), grid_fn, free, stop_after=stop_after,
-                        battle_timeout=battle_timeout)
+                        battle_timeout=battle_timeout, **kw)
         q.after_reward = lambda s: _tidy_after_reward(p, group, s)
         q.run()
         early = bool(getattr(q, "stopped_early", False))
@@ -440,6 +446,23 @@ def split_members(p, group: int) -> bool:
     with p.lock:
         todo = [n for _, n in p.party if group not in (p.finished.get(n) or [])]
     return len({tuple(sorted(doing(p, n, group))) for n in todo}) > 1
+
+
+def laggards(p, group: int) -> Optional[Tuple[List[str], int]]:
+    """分岔時落後的人能不能補做追上：還沒做完的人**都有**進行中的步驟、只是停在不同步 →
+    回傳（停在最前面那一步的人, 補到哪一步就停＝領先的人那一步的前一步）；有人整個沒有進行中的步驟就回 None（只能放棄重接）。
+    11-05 2010 風的寶玉陣亡：三隻已經在第 5 步（交寶玉），陣亡那隻還在第 4 步；放棄第 5 步伺服器不清，整組停住。"""
+    with p.lock:
+        todo = [n for _, n in p.party if group not in (p.finished.get(n) or [])]
+    cur = {n: min(doing(p, n, group) or [0]) for n in todo}
+    if not cur or 0 in cur.values() or len(set(cur.values())) < 2:
+        return None
+    low = min(cur.values())
+    ahead = min(v for v in cur.values() if v != low)
+    before = [t for t in sorted(t["ID"] for t in task_table().values() if t.get("group") == group) if t < ahead]
+    if not before or before[-1] < low:
+        return None
+    return [n for n in todo if cur[n] == low], before[-1]
 
 
 GIVE_UP_SENDS = 2                # 放棄任務最多送幾次（沒看到清掉才重送）
@@ -606,7 +629,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色56的 2D人龍進化石、角色109的 2D老虎自選蛋、角色59的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色103的 2D人龍進化石、角色63的 2D老虎自選蛋、角色102的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -691,7 +714,19 @@ def run(p, args) -> Tuple[str, dict]:
                         raise JobError(f"{g}：重打前重新組隊失敗（第 {tries} 次）")
                     if not p.heal_at_samugil():
                         raise JobError(f"{g}：重打前回村補血失敗（第 {tries} 次）")
-                if split_members(p, g):
+                lag = laggards(p, g) if split_members(p, g) else None
+                if lag:
+                    # 大家都還在做、只是停在不同步：落後的人補到領先的人那一步之前，其他人跟隊（不放棄已經拿到的進度）
+                    behind, upto = lag
+                    p.log(f"任務 {g}：隊員進度分岔，{behind} 先補做到 {upto}，其他人跟隊（第 {tries}/{retry} 次）")
+                    try:
+                        run_one(p, g, free, grid_fn, stop_after=upto,
+                                battle_timeout=getattr(args, "battle_timeout", None), only=behind)
+                    except JobHold:
+                        raise
+                    except JobError as e2:
+                        p.log(f"任務 {g}：補進度沒成功（{e2}），下一輪再看")
+                elif split_members(p, g):
                     # 陣亡的人任務狀態跟其他人分岔（別人在第 N 步、他是 None），再打只會卡「隊員任務狀態不一致」：
                     # 全隊放棄重接（LESSONS #94；11-05 兩組 2010 都這樣停住）
                     p.log(f"任務 {g}：隊員進度分岔，全隊放棄後重接（第 {tries}/{retry} 次）")

@@ -38,9 +38,11 @@ class HeadlessQuest:
                  clock: Callable[[], float] = time.time, need_free: int = 1, battle_timeout: float = 180.0,
                  history: Optional[List[tuple]] = None, collect_limit: float = 1800.0,
                  stop_after: Optional[int] = None, after_reward: Optional[Callable[[Step], None]] = None,
-                 record_dir: Optional[str] = None, before_step: Optional[Callable[[Step], None]] = None) -> None:
+                 record_dir: Optional[str] = None, before_step: Optional[Callable[[Step], None]] = None,
+                 only: Optional[List[str]] = None) -> None:
         self.clients, self.leader, self.steps, self.npc_pos = clients, leader, steps, npc_pos
         self.actors = list(clients)          # 這個群組真的要接／交任務的人（run() 會排除已完成的）
+        self.only = only                     # 只讓這些人接／交（落後的人補進度，其他人跟隊；None＝全隊）
         self.after_reward = after_reward         # 給寵物的步驟做完後呼叫（jobs/quests 用來馬上照規則表整理寵物欄）
         self.before_step = before_step           # 每一步開始、跳點之前呼叫（jobs/quests 用來在血量低時先回村補血）
         self.log, self.grid_fn, self.clock = log, grid_fn, clock
@@ -137,7 +139,7 @@ class HeadlessQuest:
     def dead(self) -> List[str]:
         """**目前** hp 剩 1 的人。看最新血量，不是「歷史上出現過 hp=1」——建立執行器時會重播
         `Party.history`（登入後的所有事件），舊的 hp=1 會讓人永遠被當成死亡：2026-10-30 第五組
-        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色44']」，要重啟常駐清掉
+        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色39']」，要重啟常駐清掉
         history 才會好。"""
         return [n for n, hp in self.hp.items() if hp == 1]
 
@@ -514,7 +516,7 @@ class HeadlessQuest:
             self.log(f"任務群組 {group} 全隊都已完成")
             return                                  # 已完成就直接跳過，不檢查空格
         if done:
-            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色91完成，
+            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色106完成，
             # 已完成的任務放棄指令清不掉，整組就永遠卡著、轉生做不了）。已完成的人留在隊伍裡跟著打，
             # 但不接任務、不交付、不列入狀態檢查。步驟不一致（大家都在做、停在不同步）仍然停，見下面。
             self.actors = [n for n in self.clients if n not in done]
@@ -523,6 +525,13 @@ class HeadlessQuest:
                 # （`jobs/quests.py` 的 `lead_actor`），這裡只擋住誤用。
                 raise QuestStop(f"隊長 {self.leader} 已經完成任務 {group}，要先換沒完成的人帶隊")
             self.log(f"任務群組 {group} 已完成的隊員 {done} 跟隊但不接任務，其他 {self.actors} 照跑")
+        if self.only is not None:
+            # 陣亡後進度分岔：落後的人補做到領先的人那一步之前，領先的人跟隊幫忙打、不接不交
+            # （11-05 2010 風的寶玉陣亡，放棄第 5 步伺服器不清，整組卡住；jobs/quests.py 的 laggards）
+            self.actors = [n for n in self.actors if n in self.only]
+            if self.leader not in self.actors:
+                raise QuestStop(f"隊長 {self.leader} 不在補進度的人 {self.only} 裡，要先換人帶隊")
+            self.log(f"任務群組 {group} 只有 {self.actors} 補進度，其他人跟隊")
         # 空格檢查要在「已完成就跳過」之後：2026-10-24 第三組只剩 2010 沒做完，收集到的四寶玉
         # 還在身上（任務道具不能丟），整批重跑卻先卡在早就完成的 2999「要 15 空格」。
         short = {n: self.bag_free(n) for n in self.actors if self.bag_free(n) < self.need_free}
@@ -605,14 +614,15 @@ def build_quest(p, group: int, log: Callable[[str], None], grid_fn, need_free: i
                 stop_after: Optional[int] = None, battle_timeout: float = 180.0,
                 after_reward: Optional[Callable[[Step], None]] = None,
                 record_dir: Optional[str] = None,
-                before_step: Optional[Callable[[Step], None]] = None) -> "HeadlessQuest":
+                before_step: Optional[Callable[[Step], None]] = None,
+                only: Optional[List[str]] = None) -> "HeadlessQuest":
     """隊長＝這組實際登入的第一個角色（p.party[0]），不是寫死的第 2 組 PARTY（2026-10-22 Mac 回報：
     寫死會讓第三組的任務去登第 2 組、把 Windows 練功的 5 隻擠下線）。"""
     return HeadlessQuest(p.clients, p.party[0][1], load_steps(group), npc_positions(), log=log,
                          grid_fn=grid_fn, idle=p.nap, need_free=need_free,
                          history=list(p.history) + (p.snapshot_events() if hasattr(p, "snapshot_events") else []),
                          stop_after=stop_after, battle_timeout=battle_timeout, after_reward=after_reward,
-                         record_dir=record_dir, before_step=before_step)
+                         record_dir=record_dir, before_step=before_step, only=only)
 
 
 def main(argv=None) -> int:
