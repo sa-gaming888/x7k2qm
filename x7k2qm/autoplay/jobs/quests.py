@@ -321,7 +321,7 @@ def set_leader(p, name: Optional[str]):
     """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
 
     執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
-    （2026-10-30 第五組 2016：四隻交完第 1 步，角色26的狗當時在出戰沒交成，
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色24的狗當時在出戰沒交成，
     隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
     if not name:
         return None
@@ -417,6 +417,14 @@ def doing(p, name: str, group: int) -> Dict[int, int]:
     return {tid: v for tid, v in st.items() if tid // 100000 == group and v in IN_PROGRESS}
 
 
+def split_members(p, group: int) -> bool:
+    """還沒做完這個群組的隊員，進行中的步驟不一樣（有人陣亡後狀態分岔：別人在第 N 步、他沒有進行中的步驟）。
+    已經做完的人不算（本來就沒有進行中的步驟，LESSONS #101 由執行器只帶還沒做完的人）。"""
+    with p.lock:
+        todo = [n for _, n in p.party if group not in (p.finished.get(n) or [])]
+    return len({tuple(sorted(doing(p, n, group))) for n in todo}) > 1
+
+
 def give_up(p, group: int) -> Dict[str, str]:
     """全隊放棄一個任務群組。`Task_NewTaskGiveUp{taskGroup}` **沒有 response**（用 request 會逾時），
     只能送出去再看 `Task_TaskInfo` 推回的狀態（2026-10-26 實機確認）。
@@ -472,7 +480,7 @@ def stash_shells(p, free: int) -> None:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色86的 2D人龍進化石、角色104的 2D老虎自選蛋、角色77的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色78的 2D人龍進化石、角色104的 2D老虎自選蛋、角色94的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -533,12 +541,26 @@ def run(p, args) -> Tuple[str, dict]:
             except JobError as e:
                 # 使用者 2026-10-31：「為什麼一直回去練功，浪費時間」——打輸（有人被打死）就回薩村醫院補血、
                 # 直接回來重打同一關，不回練功地圖；只有 --retry 次數用完才照舊失敗（LESSONS #122）
-                if isinstance(e, JobHold) or "被打死" not in str(e) or tries >= retry:
+                msg = str(e)
+                dead, split = "被打死" in msg, "隊員任務狀態不一致" in msg
+                if isinstance(e, JobHold) or not (dead or split) or tries >= retry:
                     raise
                 tries += 1
-                p.log(f"任務 {g}：有人被打死，回村補血後直接重打（第 {tries}/{retry} 次，不回練功）")
-                if not p.heal_at_samugil():
-                    raise JobError(f"{g}：重打前回村補血失敗（第 {tries} 次）")
+                if dead:
+                    p.log(f"任務 {g}：有人被打死，重新集合組隊、回村補血後直接重打（第 {tries}/{retry} 次，不回練功）")
+                    # 陣亡的人被送回記錄點、隊伍散了，但隊伍快取還是 5 人 → form_team 不重組、補血只傳走一部分
+                    # （11-05 第一次跑完整劇本：2010 風的寶玉陣亡後「傳到薩姆吉爾村失敗 isOK True」、回練功也傳不回去）
+                    with p.lock:
+                        p.s.team = []
+                    if not p.form_team():
+                        raise JobError(f"{g}：重打前重新組隊失敗（第 {tries} 次）")
+                    if not p.heal_at_samugil():
+                        raise JobError(f"{g}：重打前回村補血失敗（第 {tries} 次）")
+                if split_members(p, g):
+                    # 陣亡的人任務狀態跟其他人分岔（別人在第 N 步、他是 None），再打只會卡「隊員任務狀態不一致」：
+                    # 全隊放棄重接（LESSONS #94；11-05 兩組 2010 都這樣停住）
+                    p.log(f"任務 {g}：隊員進度分岔，全隊放棄後重接（第 {tries}/{retry} 次）")
+                    give_up(p, g)
                 p.nap(2)
         p.log(f"任務 {g} {'停在 ' + str(sa) + '（--stop-after）' if early else '完成'}，清背包")
         p.nap(getattr(args, "settle", 3.0))          # 讓獎勵的 Item_ItemInfo 推完

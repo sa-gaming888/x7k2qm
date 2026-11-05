@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色57"), (10003796, "角色43"), (10003799, "角色96"), (10003803, "角色48"), (10003804, "角色70")]
+PARTY = [(10003754, "角色109"), (10003796, "角色49"), (10003799, "角色82"), (10003803, "角色32"), (10003804, "角色62")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -739,12 +739,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色80在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色101在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色96 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色82 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -767,7 +767,10 @@ class Party:
         if not r.get("isOK"):
             self.log(f"{name} 傳送 {point} 被拒：{r}")
             return False
-        return self.wait(lambda: self.s.member_maps.get(name) == mapid, 15)
+        ok = self.wait(lambda: self.s.member_maps.get(name) == mapid, 15)
+        if ok and point == 1 and mapid == 1000:
+            self.set_pos(name, (1000,) + HEAL_PATH_VILLAGE[0])   # 傳回薩村固定落在 (92,99)；伺服器不一定推座標
+        return ok
 
     def teleport_team(self, place: str) -> bool:
         mapid = NAME_TO_MAP[place]
@@ -845,6 +848,17 @@ class Party:
         """傳到薩姆吉爾村 → 走到醫院門口踩傳送 → 走到小護士旁 → 恢復氣血（全隊人物＋寵物回滿）。
         醫院裡 A* 算不出路，路徑用 2026-10-21 遊戲實際走的格子。"""
         lead = self.party[0][1]
+        with self.lock:
+            maps = {self.s.member_maps.get(n) for _, n in self.party}
+            pos = self.leader_pos
+        if maps == {1000} and pos and pos[0] == 1000:
+            # 全隊已經在薩村（例：任務陣亡後各自傳回村重新組隊）：同一張圖傳送會被拒，從隊長現在的位置直接走到醫院門口
+            from .pathing import astar, load_grid
+            path = astar(load_grid(1000), (pos[1], pos[2]), HEAL_PATH_VILLAGE[-1]) or []
+            if not path:
+                self.log(f"補血：人在薩村 {pos[1:]}，算不出到醫院的路"); return False
+            self.walk(1000, path)
+            return self._heal_from_hospital_door(lead)
         r = self.leader().request("Transfer_TransferTo", {"point": 1})
         if not (r or {}).get("isOK"):
             # 被拒等一下重送一次：11-05 16:00（台灣 00:00 每日重置）第一次傳送被拒，舊版直接停掉整組、等容器重開
@@ -855,6 +869,10 @@ class Party:
         if not (r or {}).get("isOK") or not self.wait(lambda: all(self.s.member_maps.get(n) == 1000 for _, n in self.party), 15):
             self.log(f"補血：傳到薩姆吉爾村失敗 {r}"); return False
         self.walk(1000, HEAL_PATH_VILLAGE)
+        return self._heal_from_hospital_door(lead)
+
+    def _heal_from_hospital_door(self, lead: str) -> bool:
+        """（隊長已在薩村醫院門口）踩傳送進醫院 → 走到小護士旁 → 恢復氣血。"""
         r = self.leader().request("Role_RoleWarp", {"map": 1000, "x": 80, "y": 66})
         if not self.wait(lambda: self.s.member_maps.get(lead) == 1005, 8):
             self.log(f"補血：進不了醫院 {r}"); return False
@@ -1118,7 +1136,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色57個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色109個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1775,7 +1793,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色30的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色29的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
