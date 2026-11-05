@@ -189,7 +189,9 @@ def task_requirements(tasks: list) -> Tuple[Set[int], Set[int]]:
     return items, pets
 
 
-def load(path: str = RULES_MD, tasks: Optional[list] = None) -> Rules:
+def load(path: Optional[str] = None, tasks: Optional[list] = None) -> Rules:
+    """path 沒給：環境變數 BOT_ITEM_RULES（設定檔 [files] item_rules，容器可掛載自己的規則表）＞內建 RULES_MD。"""
+    path = path or os.environ.get("BOT_ITEM_RULES") or RULES_MD
     with open(path, encoding="utf-8") as fp:
         rules, protect = parse(fp.read())
     if tasks is None:

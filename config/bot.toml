@@ -1,0 +1,46 @@
+# 練功設定檔（使用者 2026-11-05「每次加配置都要改代碼不合理，能不能用掛載的」「把外掛設定全部拉成配置檔」）
+#
+# 容器：複製這份改好，掛載到 /config/bot.toml（或用環境變數 CONFIG_FILE 指定路徑），重開容器生效：
+#   docker run ... -v ./bot.toml:/config/bot.toml:ro <映像>
+# 沒掛載就用映像內建的這份（＝下面的預設值）。環境變數 START、SCENARIO、AUTO_SPIRIT、POINT_PLAN、
+# BATTLE_HEAL、NO_RETREAT 有設的話蓋過這裡。
+# 格式錯、不認得的欄位、練功程式沒有的參數：一律不登入，日誌寫「停止：設定檔：…」。
+
+[bot]
+# 練功程式參數（headless_party --help 的長選項，- 換成 _）。以後新增的參數直接加在這裡，不用改容器。
+start = "柯奧龜洞Lv10"     # 登入後先傳到哪個練級點；"" ＝留在原地
+auto_spirit = true         # 隊長依屬性去競技場買精靈 Lv5 金幣、60 級自動穿
+no_retreat = false         # true＝不退回上一張圖（前進、回村補血照舊）
+# stay = false             # true＝鎖在 start 那張圖：不退也不前進
+# keep_pets = false        # true＝戰寵／騎寵不自動換
+# shell_exchange = true    # 龜殼存共倉、滿 10 兌換、石幣券用掉
+
+[files]
+# 路徑可以寫絕對路徑，或相對於這個設定檔（例："rebirth.toml" ＝ /config/rebirth.toml）。
+scenario = "builtin"       # 劇本："builtin"＝內建轉生劇本；"none"＝只練功、不解任務不轉生
+item_rules = "builtin"     # 道具處置規則表（.md，格式同 doc/autoplay/game/item-rules.md）
+
+[waigua]
+# 外掛設定：每次登入（轉生後也會）檢查，跟伺服器現在的不一樣才送；沒設成只記日誌、照常練功。
+hide = true                          # 全部隱藏
+fast_battle = true                   # 快速戰鬥（到練功地圖才開）
+first_cmd = "spirit"                 # 首次動作："spirit"＝放身上精靈金幣的技能、目標隨機敵人；"none"＝不動
+auto_points = "recommend"            # 沒設 point_plan 時：沒設過加點的角色設成系統推薦；"none"＝不動
+point_plan = "100,100,999/80,80,999" # 自訂加點 隊長體,敏,攻/隊員體,敏,攻（攻 999＝剩下全加攻擊）；"none"＝不設
+battle_heal = 50                     # 戰鬥中技能補血：人物／寵物／騎寵血量低於幾 % 放身上的補血技能；false＝不設
+
+# 進階：直接寫外掛協定的欄位（欄位名照 data/sproto_schema.json；查詢 API /waigua 看得到現在的值）。
+# 可以寫的協定：FastBattleSettingChange、FastBattleSettingHpChange、FastBattleSettingMpChange、
+# FastBattleSettingMpSkillChange、FastBattleSettingReviveSkillChange、CatchPetSetting、
+# NomalSettingEatExpItem、NomalSettingHandleHeal、AutoEatOffLineItem、NomalSettingHandlePet
+# （鎖定戰寵／騎寵 fightPetIndex、ridePetIndex 由寵物流程管，不能寫）。
+#
+# [waigua.raw.FastBattleSettingMpChange]   # 魔力低於 30% 自動吃藥
+# MpRoleItemFlg = true
+# MpRoleItemPer = 30
+#
+# [waigua.raw.FastBattleSettingChange]     # 打不贏自動逃跑
+# isAutoEscape = true
+#
+# [waigua.raw.AutoEatOffLineItem]          # 自動吃離線掛機道具
+# flg = true

@@ -46,6 +46,29 @@ docker stop -t 300 bot      # 等這場戰鬥打完再登出（docker 預設只�
 本機也可以跑：`BOT_TG_TOKEN=… BOT_TG_CHAT_ID=… python -m x7k2qm.client.reg_random --count 3 --element 地 --host <登入伺服器>`（`--no-roles` 只註冊）；
 指定帳密的單筆註冊：`GAME_PW=… python -m x7k2qm.client.reg_account --account <帳號> --phone <電話> --password-env GAME_PW --host <登入伺服器>`。
 
+## 設定檔（掛載）
+
+練功參數、劇本、道具處置規則表、外掛設定全部寫在一個設定檔，改設定不用改程式、不用重建映像：
+
+```bash
+curl -fsSLo bot.toml https://raw.githubusercontent.com/sa-gaming888/x7k2qm/main/config/bot.toml   # 拿一份預設的來改
+docker run -d --name bot -e GAME_ACCOUNT=… -e GAME_PASSWORD=… \
+  -v ./bot.toml:/config/bot.toml:ro -v bot-data:/data ghcr.io/sa-gaming888/x7k2qm:latest
+docker restart bot          # 改完設定檔重開生效（會等這場戰鬥打完再登出）
+```
+
+沒掛載就用映像內建的 [`config/bot.toml`](config/bot.toml)（內容＝預設值，每一項都有註解）。也可以用 `CONFIG_FILE` 指定別的路徑。
+
+| 區塊 | 內容 |
+| :-- | :-- |
+| `[bot]` | 練功程式參數：`start` 起始練功點、`auto_spirit`、`no_retreat`、`stay`、`keep_pets`、`shell_exchange`…（練功程式 `--help` 的長選項，`-` 換 `_`；新參數直接加，不用改容器） |
+| `[files]` | `scenario` 劇本檔（`builtin`／`none`／路徑）、`item_rules` 道具處置規則表（`builtin`／路徑）；路徑可以相對設定檔，例 `scenario = "rebirth.toml"` ＝ `/config/rebirth.toml` |
+| `[waigua]` | 外掛設定，**每次登入（轉生後也會）檢查**，跟現在不一樣才送：`hide` 全部隱藏、`fast_battle` 快速戰鬥、`first_cmd` 首次動作、`auto_points` 推薦加點、`point_plan` 自訂加點、`battle_heal` 戰鬥中技能補血 |
+| `[waigua.raw.<協定>]` | 進階：直接寫外掛協定的欄位（例 `[waigua.raw.FastBattleSettingMpChange]` `MpRoleItemFlg = true`、`MpRoleItemPer = 30` 魔力低於 30% 吃藥）；`/waigua` 查得到現值。鎖定戰寵／騎寵由寵物流程管，不能寫 |
+
+設定檔格式錯、有不認得的欄位、寫了練功程式沒有的參數：**一律不登入**，日誌寫 `停止：設定檔：…`。
+`docker run --rm -v ./bot.toml:/config/bot.toml:ro <映像> --check` 可以先檢查。
+
 ## 環境變數
 
 | 變數 | 必填 | 說明 |
@@ -55,14 +78,20 @@ docker stop -t 300 bot      # 等這場戰鬥打完再登出（docker 預設只�
 | `GAME_LOGIN_HOST` | | HTTP 登入伺服器，預設 `eologin.idealsa.org` |
 | `GAME_NODE` | | 伺服器節點，預設 `game1` |
 | `GAME_CLIENT_VER` | | 客戶端版本；遊戲改版後帶新版本號 |
-| `START` | | 起始練功點，預設 `柯奧龜洞Lv10`；空字串＝留在原地（已在練功點的角色） |
-| `SCENARIO` | | 劇本路徑，預設內建轉生劇本；`none`＝只練功 |
+| `CONFIG_FILE` | | 設定檔路徑；預設有掛載 `/config/bot.toml` 就用，沒有用內建的 |
 | `AUTO_REBIRTH` | | `1`＝轉生關卡自動通過；其他值停在關卡 |
-| `AUTO_SPIRIT` | | `1`（預設）＝隊長依屬性買精靈金幣、60 級自動穿；`0`＝不買 |
-| `POINT_PLAN` | | 外掛自訂加點 `隊長體,敏,攻/隊員體,敏,攻`，預設 `100,100,999/80,80,999`；`none`＝系統推薦 |
-| `BATTLE_HEAL` | | 外掛戰鬥中技能補血門檻 %（人物／寵物／騎寵），預設 `50`；`none`＝不設 |
-| `NO_RETREAT` | | `1`＝不退回上一張圖（補血太頻繁、輸太多都不退；前進、回村補血照舊）；預設 `0` |
 | `API_TOKEN` | | 查詢 API 的 token（至少 16 字元，或 `API_TOKEN_FILE`）；有設才對外開 8790 埠 |
+
+下面這幾個**有設才蓋過設定檔**（舊的啟動方式照樣能用）：
+
+| 變數 | 對應設定檔 | 說明 |
+| :-- | :-- | :-- |
+| `START` | `bot.start` | 起始練功點；空字串＝留在原地 |
+| `SCENARIO` | `files.scenario` | 劇本路徑；`none`＝只練功 |
+| `AUTO_SPIRIT` | `bot.auto_spirit` | `1`＝隊長買精靈金幣、60 級自動穿；其他值＝不買 |
+| `NO_RETREAT` | `bot.no_retreat` | `1`＝不退回上一張圖；其他值＝照常 |
+| `POINT_PLAN` | `waigua.point_plan` | 自訂加點 `隊長體,敏,攻/隊員體,敏,攻`；`none`＝不設 |
+| `BATTLE_HEAL` | `waigua.battle_heal` | 戰鬥中技能補血門檻 %；`none`＝不設 |
 
 帳號下要先有角色（程式登入帳號底下的全部角色，最多五個）。密碼只放在行程的環境變數，不寫檔、不進日誌。
 

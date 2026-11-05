@@ -82,6 +82,11 @@ GATE_HEAD = frozenset({
     "WaiGua_FastBattleSettingReviveSkillChange",  # 外掛技能復活（jobs/revive）：我方無樣本，照 WaiGua_* 同系列帶 head
     "WaiGua_FastBattleSettingMpChange",  # 外掛物品補氣（jobs/mpitem）：我方無樣本，照 WaiGua_* 同系列帶 head
     "WaiGua_FastBattleSettingHpChange",  # 外掛人物技能補血（jobs/wgheal）：我方無樣本，照 WaiGua_* 同系列帶 head
+    # 設定檔 [waigua.raw]（使用者 2026-11-05「把外掛設定全部拉成配置檔」）可以直設的：我方無樣本，照 WaiGua_* 同系列帶 head
+    "WaiGua_FastBattleSettingMpSkillChange",
+    "WaiGua_NomalSettingEatExpItem",
+    "WaiGua_NomalSettingHandleHeal",
+    "WaiGua_AutoEatOffLineItem",
     "WaiGua_CatchPetSetting",         # 外掛自動抓寵：primaljason-home 2026-10-24 第二組實機（request 有回 isOK）；與其他 WaiGua_* 同系列都帶 head
     "Item_oneKeyBuyItem",             # 抓寵「+」買誘餌：參考專案 錄檔 psa_20261022_165938 逐位元組核對 A 級（session、rid→head）；我方 2026-10-25 首次用
     # 大亂鬥（jobs/melee）：我方實機 2026-10-22～24 第二／三組照預設帶 head，報名、查狀態、下指令、讀系統信都成功（無官方樣本）

@@ -9,14 +9,18 @@
   GAME_LOGIN_HOST       HTTP 登入伺服器（選填，預設 eologin.idealsa.org；使用者 11-04 指定）
   GAME_NODE             伺服器節點（選填，預設 game1）
   GAME_CLIENT_VER       客戶端版本（選填；遊戲改版時帶新版本號）
-  START                 起始練功點（預設 柯奧龜洞Lv10；空字串＝留在原地，已經在練功點的角色用）
-  SCENARIO              劇本（預設內建轉生劇本；none＝只練功、不解任務不轉生）
+  CONFIG_FILE           設定檔路徑（預設：有掛載 /config/bot.toml 就用，沒有用映像內建 config/bot.toml）。
+                        練功參數、劇本、規則表、外掛設定全部在設定檔（使用者 2026-11-05「能不能用掛載的」
+                        「把外掛設定全部拉成配置檔」；格式見 config/bot.toml、botconfig.py）。
   AUTO_REBIRTH          1＝轉生前的同意關卡自動通過；其他值（預設 0）停在關卡只練功
-  AUTO_SPIRIT           1（預設）＝隊長依屬性去競技場買精靈金幣、60 級自動穿；0＝不買
-  POINT_PLAN            外掛自訂加點「隊長體,敏,攻/隊員體,敏,攻」，預設 100,100,999/80,80,999；none＝照舊（推薦加點）
-  BATTLE_HEAL           外掛戰鬥中技能補血門檻 %（人物／寵物／騎寵），預設 50；none＝不設
-  NO_RETREAT            1＝不退回上一張圖（補血太頻繁、輸太多都不退；前進、回村補血照舊）；預設 0
-                        （使用者 2026-11-05「不退圖」）
+
+以下環境變數**有設才**蓋過設定檔（舊的啟動方式照樣能用；沒設照設定檔）：
+  START                 起始練功點（空字串＝留在原地）                       → bot.start
+  SCENARIO              劇本檔路徑；none＝只練功、不解任務不轉生              → files.scenario
+  AUTO_SPIRIT           1＝隊長買精靈金幣、60 級自動穿；其他值＝不買          → bot.auto_spirit
+  NO_RETREAT            1＝不退回上一張圖；其他值＝照常退                     → bot.no_retreat
+  POINT_PLAN            外掛自訂加點「隊長體,敏,攻/隊員體,敏,攻」；none＝不設 → waigua.point_plan
+  BATTLE_HEAL           外掛戰鬥中技能補血門檻 %；none＝不設                  → waigua.battle_heal
   API_TOKEN             查詢 API 的 token（至少 16 字元；或 API_TOKEN_FILE）。有設才對外開 8790 埠，
                         沒設只能在容器裡查（docker exec … status_api）
   DATA_DIR              劇本進度、工作佇列、鎖、停止檔的目錄（預設 /data）
@@ -30,6 +34,7 @@
 
 import argparse
 import collections
+import json
 import os
 import signal
 import subprocess
@@ -37,17 +42,13 @@ import sys
 import time
 from typing import Callable, Dict, List, Mapping, TextIO, Tuple
 
-from . import keepalive
+from . import botconfig, keepalive
 from ..client.http_login import LOGIN_HOST as DEFAULT_LOGIN_HOST
 
 PROFILE = "1"
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DEFAULT_SCENARIO = os.path.join(ROOT, "config", "scenarios", "rebirth.toml")
-DEFAULT_START = "柯奧龜洞Lv10"
 API_PORT = 8790
 MIN_TOKEN = 16
-DEFAULT_POINT_PLAN = "100,100,999/80,80,999"   # 使用者 11-04：隊長 體敏 100 攻 999、隊員 體敏 80 攻 999
-DEFAULT_BATTLE_HEAL = "50"                       # 使用者 11-04「你要設定上去，預設 50% 補血」
 TAIL_LINES = 2000                              # 每次執行只留最後這些行（判斷「停止：…」用），不會越跑越吃記憶體
 
 
@@ -97,26 +98,35 @@ def child_env(env: Mapping[str, str]) -> Dict[str, str]:
     return out
 
 
+def env_sets(env: Mapping[str, str]) -> List[str]:
+    """**有設的**環境變數 → 設定檔覆寫（`--set`）。沒設的不給，照設定檔（預設值在 config/bot.toml）。"""
+    q = json.dumps                                       # JSON 字串也是合法的 TOML 字串
+    out = []
+    if "START" in env:
+        out.append(f"bot.start={q(env['START'].strip())}")
+    if "SCENARIO" in env:
+        sc = env["SCENARIO"].strip()
+        out.append(f"files.scenario={q(sc or 'builtin')}")
+    if "AUTO_SPIRIT" in env:
+        out.append(f"bot.auto_spirit={'true' if env['AUTO_SPIRIT'].strip() == '1' else 'false'}")
+    if "NO_RETREAT" in env:
+        out.append(f"bot.no_retreat={'true' if env['NO_RETREAT'].strip() == '1' else 'false'}")
+    if "POINT_PLAN" in env:
+        plan = env["POINT_PLAN"].strip()
+        out.append(f"waigua.point_plan={q(plan or 'none')}")
+    if "BATTLE_HEAL" in env:
+        heal = env["BATTLE_HEAL"].strip()
+        out.append(f"waigua.battle_heal={heal if heal.isdigit() else 'false'}")
+    return out
+
+
 def party_argv(env: Mapping[str, str], stop_file: str) -> List[str]:
     argv = ["--log", "-", "--stop-file", stop_file, "--profile", PROFILE, "--discover", "--api-port", str(API_PORT)]
     if _secret(env, "API_TOKEN"):             # 有 token 才對外聽（-p 8790:8790 連得到）；沒有只在容器內
         argv += ["--api-host", "0.0.0.0"]
-    start = env.get("START", DEFAULT_START).strip()
-    if start:
-        argv += ["--start", start]
-    sc = env.get("SCENARIO", "").strip()
-    if sc.lower() != "none":
-        argv += ["--scenario", sc or DEFAULT_SCENARIO]
-    if env.get("AUTO_SPIRIT", "1").strip() == "1":
-        argv.append("--auto-spirit")
-    plan = env.get("POINT_PLAN", DEFAULT_POINT_PLAN).strip()
-    if plan and plan.lower() != "none":
-        argv += ["--point-plan", plan]
-    heal = env.get("BATTLE_HEAL", DEFAULT_BATTLE_HEAL).strip()
-    if heal and heal.lower() != "none":
-        argv += ["--battle-heal", heal]
-    if env.get("NO_RETREAT", "0").strip() == "1":
-        argv.append("--no-retreat")
+    argv += ["--config", botconfig.find(env) or botconfig.BUILTIN]
+    for s in env_sets(env):
+        argv += ["--set", s]
     return argv
 
 
@@ -147,11 +157,17 @@ def run_tee(cmd: List[str], env: Mapping[str, str], cwd: str, out: TextIO = None
 def check(env: Mapping[str, str]) -> List[str]:
     """不登入的自我檢查：劇本能載入、工作都認得、地圖格子與設定表在。回傳問題清單（空＝通過）。"""
     problems = []
+    from .headless_party import build_parser
     from .scenario import ScenarioError, load
-    sc = env.get("SCENARIO", "").strip()
-    if sc.lower() != "none":
+    path = botconfig.find(env) or botconfig.BUILTIN
+    try:
+        cfg = botconfig.load(path, build_parser(), env_sets(env))
+    except botconfig.ConfigError as e:
+        problems.append(f"設定檔 {path}：{e}")
+        cfg = None
+    if cfg is not None and cfg.scenario:
         try:
-            load(sc or DEFAULT_SCENARIO)
+            load(cfg.scenario)
         except ScenarioError as e:
             problems.append(f"劇本：{e}")
     from .jobs import registry
