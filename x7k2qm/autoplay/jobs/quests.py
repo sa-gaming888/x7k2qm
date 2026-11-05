@@ -338,7 +338,7 @@ def set_leader(p, name: Optional[str]):
     """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
 
     執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
-    （2026-10-30 第五組 2016：四隻交完第 1 步，角色21的狗當時在出戰沒交成，
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色20的狗當時在出戰沒交成，
     隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
     if not name:
         return None
@@ -563,9 +563,50 @@ def restore_task_items(p, group: int) -> Dict[str, Dict[int, int]]:
     return took
 
 
+def _group_items(group: int) -> Dict[int, int]:
+    """這個群組的步驟用到的道具（要交的、獎勵發的）→ 最多要留幾個；別的群組也用到的不算（不能亂刪）。"""
+    own: Dict[int, int] = {}
+    other = set()
+    for t in task_table().values():
+        ids = [(c["itemId"], int(c.get("itemNum") or 1)) for c in t.get("condition") or []
+               if isinstance(c, dict) and c.get("itemId")]
+        ids += [(r["itemId"], 0) for r in t.get("reward") or [] if isinstance(r, dict) and r.get("itemId")]
+        for iid, k in ids:
+            if t.get("group") == group:
+                own[iid] = max(own.get(iid, 0), k)
+            else:
+                other.add(iid)
+    return {i: max(k, 1) for i, k in own.items() if i not in other}
+
+
+def trim_task_items(p, group: int) -> Dict[str, List[int]]:
+    """這個群組專用的道具，背包裡多過要交的數量就刪掉多的。
+    11-05 2010 陣亡重打 3 次：每次放棄重接又發一套四寶玉（第 1～4 步的獎勵），舊的留在背包，
+    隊長身上三套結晶石＋四寶玉塞滿 15 格 → 停在「背包空格不足 3」；clean 把它們當任務道具不動。
+    回傳 {角色: [刪掉的 itemId]}；刪除沒確認由 clean.do_delete 丟 JobError。"""
+    keep = _group_items(group)
+    if not keep:
+        return {}
+    out: Dict[str, List[int]] = {}
+    for _, n in p.party:
+        cells = sorted((it["itemIndex"], it["itemId"], int(it.get("overlay") or 1))
+                       for it in p.bag(n) if it.get("itemId") in keep)
+        seen: Dict[int, int] = {}
+        extra = []
+        for idx, iid, k in cells:
+            seen[iid] = seen.get(iid, 0) + k
+            if seen[iid] - k >= keep[iid]:            # 前面的格子已經夠交了，這格整格多餘
+                extra.append((idx, iid))
+        if extra:
+            p.log(f"任務 {group}：{n} 身上重複的任務道具 {[i for _, i in extra]} 刪掉（只留要交的）")
+            clean.do_delete(p, n, extra)
+            out[n] = [i for _, i in extra]
+    return out
+
+
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色63的 2D人龍進化石、角色95的 2D老虎自選蛋、角色88的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色56的 2D人龍進化石、角色109的 2D老虎自選蛋、角色59的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -622,6 +663,7 @@ def run(p, args) -> Tuple[str, dict]:
         stash_shells(p, free)
         stash_bag(p, free)
         restore_task_items(p, g)
+        trim_task_items(p, g)
         p.log(f"開始任務 {g}（背包至少空 {free} 格）" + (f"，做完 {sa} 就停" if sa else ""))
         retry, tries = int(getattr(args, "retry", 0) or 0), 0
         while True:
@@ -654,6 +696,7 @@ def run(p, args) -> Tuple[str, dict]:
                     # 全隊放棄重接（LESSONS #94；11-05 兩組 2010 都這樣停住）
                     p.log(f"任務 {g}：隊員進度分岔，全隊放棄後重接（第 {tries}/{retry} 次）")
                     give_up(p, g)
+                    trim_task_items(p, g)
                 p.nap(2)
         p.log(f"任務 {g} {'停在 ' + str(sa) + '（--stop-after）' if early else '完成'}，清背包")
         p.nap(getattr(args, "settle", 3.0))          # 讓獎勵的 Item_ItemInfo 推完
