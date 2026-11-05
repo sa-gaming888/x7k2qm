@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色58"), (10003796, "角色33"), (10003799, "角色72"), (10003803, "角色29"), (10003804, "角色71")]
+PARTY = [(10003754, "角色57"), (10003796, "角色43"), (10003799, "角色96"), (10003803, "角色48"), (10003804, "角色70")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -163,6 +163,7 @@ class Party:
         self.petinfo: Dict[str, Dict[int, dict]] = {}   # 寵物欄（petId、level、status）；角色登入後才有
         self.train_pet: Optional[Tuple[int, int]] = None   # 練寵模式：(petId, 目標等級)
         self.orig_fight: Dict[str, Tuple[int, int]] = {}   # 練寵中的角色 → 原本的（戰寵, 騎寵）唯一編號
+        self.train_skip: set = set()     # 練寵時不換戰寵的角色（jobs petgoal：這輪沒有寵物可練的人照常用原本戰寵）
         self.wg: Dict[str, dict] = {}            # 角色 → 外掛一般設定（wgNomalSetting）
         self.battle: Dict[str, dict] = {}        # 角色 → 外掛戰鬥設定（battleSetting；首次動作等）
         self.catch: Dict[str, dict] = {}         # 角色 → 外掛抓寵設定（catchPetSetting；設定檔 raw 比對用）
@@ -738,12 +739,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色109在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色80在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色72 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色96 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1117,7 +1118,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色58個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色57個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1774,7 +1775,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色51的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色30的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -1829,6 +1830,8 @@ class Party:
         """5 隻的戰寵都改成要練的寵物，記住原本的戰寵；已經夠等級的不改。"""
         pid, lv = self.train_pet
         for _, name in self.party:
+            if name in self.train_skip:
+                continue
             idx = self.pet_index(name, pid, below=lv)
             if idx is None:
                 self.log(f"{name} 身上沒有寵物 {pid}"); return False
