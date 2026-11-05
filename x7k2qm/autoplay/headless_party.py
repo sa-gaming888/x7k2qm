@@ -30,7 +30,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色49"), (10003796, "角色20"), (10003799, "角色52"), (10003803, "角色22"), (10003804, "角色29")]
+PARTY = [(10003754, "角色37"), (10003796, "角色25"), (10003799, "角色41"), (10003803, "角色21"), (10003804, "角色30")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -171,7 +171,8 @@ class Party:
         self.battle_heal: Optional[int] = None   # 外掛戰鬥中技能補血門檻 %（--battle-heal；None＝不動）
         self.waigua = None                       # 設定檔 [waigua]（botconfig.Waigua）；None＝沒用設定檔，照舊
         self.waigua_done = False                 # 這次登入已經照設定檔檢查過外掛設定
-        self.waigua_aligned: set = set()         # 開局／轉生流程已經照設定檔對齊過的角色（apply_waigua 不再重做）
+        self.waigua_aligned: set = set()         # 這次登入已經成功對齊外掛的角色（align_waigua 記；apply_waigua 不再重做）
+        self.plan_sent: Dict[str, dict] = {}     # 角色 → 這次送成功的自訂加點 {type: value}（伺服器還沒推新值時比對用）
         self.info_until = 0.0                    # 印人物寵物到這個時間（查詢 API POST /infolog 打開；0＝關，預設關）
         self.info_next = 0.0                     # 下一次印人物寵物的時間
         self.no_retreat = False                  # 只擋退圖、前進照舊（--no-retreat，使用者 2026-10-23「不允許退回」）
@@ -711,12 +712,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色35在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色34在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色52 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色41 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1084,7 +1085,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色49個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色37個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1287,15 +1288,8 @@ class Party:
             self.equip_all(name, level)
             self.store_bound_items(name)                  # 穿完、吃完才存剩下的綁定道具
             ok = self.ensure_pets(name) and ok
-            ok = self.ensure_hidden(name) and ok
-        if self.point_plan:
-            self.set_plan_points(fresh)                   # 容器版：外掛自訂加點（體／敏／攻）
-        if self.battle_heal:
-            self.ensure_battle_heal(fresh)                # 容器版：外掛戰鬥中技能補血（穿完裝才有技能）
-        self.ensure_auto_points(fresh)
-        self.apply_raw(fresh)                             # 設定檔 [waigua.raw]
-        self.waigua_aligned.update(fresh)                 # 上面已照設定檔對齊，apply_waigua 不再重做
-        return ok
+        # 隱藏、首次動作、加點、戰鬥中補血（穿完裝才有技能）、設定檔 raw：跟登入、轉生同一套
+        return not self.align_waigua(fresh, hide_if_unknown=True) and ok
 
     # ---- 外掛戰鬥中技能補血（--battle-heal，使用者 2026-11-04「你要設定上去，預設 50% 補血」）----
     HEAL_SKILLS = (10119, 10111)                 # 恩惠的精靈（靈力鎧）優先，再來滋潤的精靈（新手鎧甲 Lv3，單體補 450）
@@ -1345,42 +1339,51 @@ class Party:
 
     # ---- 設定檔 [waigua]：每次登入照設定檔檢查外掛（使用者 2026-11-05「把外掛設定全部拉成配置檔」）----
     def apply_waigua(self) -> List[str]:
-        """照設定檔把外掛設定對齊：隱藏、首次動作、加點（自訂計畫或推薦）、戰鬥中補血、`[waigua.raw]` 直設的協定欄位。
-        跟伺服器推來的現值一樣就不送；被拒記日誌、不重試、不停練功（回傳有被拒的「角色：項目」）。
-        沒用設定檔（waigua None）什麼都不做。一次登入只做一次；開局／轉生流程剛對齊過的角色（waigua_aligned）跳過，
-        其餘隊員照樣檢查（只有部分隊員轉生時，其他人也要對齊）。"""
-        w = self.waigua
-        if w is None or self.waigua_done:
+        """登入時照設定檔對齊外掛（一次登入一次）。開局／轉生流程這次已經**成功**對齊過的角色（waigua_aligned）跳過，
+        其餘隊員照樣檢查（只有部分隊員轉生時，其他人也要對齊）。沒用設定檔（waigua None）什麼都不做。
+        回傳沒設成的「角色：項目」；呼叫端照規範第 2 點停止。"""
+        if self.waigua is None or self.waigua_done:
             return []
         self.waigua_done = True
         names = [n for _, n in self.party if n not in self.waigua_aligned]
-        if not names:
-            return []
+        return self.align_waigua(names) if names else []
+
+    def align_waigua(self, names: List[str], hide_if_unknown: bool = False, trans_points: bool = False) -> List[str]:
+        """外掛設定對齊的**唯一**一份（開局、轉生後、登入都呼叫這裡，新增設定只改這裡）：
+        隱藏、首次動作、加點（自訂計畫；沒有就轉生加點 trans_points／推薦）、戰鬥中補血、`[waigua.raw]`。
+        各項都照設定檔開關（沒用設定檔＝內建預設），跟伺服器現值一樣就不送。
+        hide_if_unknown：隱藏是切換開關，平常現值不知道不送（免得反而關掉）；開局／轉生流程照舊直接設。
+        全部設成的角色記進 waigua_aligned；回傳沒設成的「角色：項目」（不重試，呼叫端停止）。"""
         bad: List[str] = []
+        w = self.waigua
         for n in names:
             with self.lock:
                 known = n in self.hide
-            if w.hide and known and not self.ensure_hidden(n):       # 隱藏是切換開關：現值不知道就不送，免得反而關掉
+            if (w is None or w.hide) and (known or hide_if_unknown) and not self.ensure_hidden(n):
                 bad.append(f"{n}：隱藏")
-            if w.first_cmd == "spirit" and not self.ensure_first_cmd(n):
+            if not self.ensure_first_cmd(n):              # first_cmd = "none" 或沒戴精靈金幣都回 True
                 bad.append(f"{n}：首次動作")
         if self.point_plan:
             todo = [n for n in names if not self.plan_points_match(n)]
             if todo:
-                bad += [f"{n}：自訂加點" for n in set(todo) - set(self.set_plan_points(todo))]
-        else:
-            self.ensure_auto_points(names)
+                done = set(self.set_plan_points(todo))
+                bad += [f"{n}：自訂加點" for n in todo if n not in done]
+        elif trans_points:
+            self.set_trans_points(names)
         if self.battle_heal:
             self.ensure_battle_heal(names)
-        bad += self.apply_raw(names, report=False)
+        self.ensure_auto_points(names)                    # 已經有加點模式的不動
+        bad += self.apply_raw(names)
+        self.waigua_aligned.update(n for n in names if not any(b.startswith(f"{n}：") for b in bad))
         if bad:
-            self.log(f"設定檔外掛設定有沒設成的：{'、'.join(bad)}（照常練功）")
+            self.log(f"外掛設定沒設成：{'、'.join(bad)}")
         return bad
 
-    def apply_raw(self, names: List[str], report: bool = True) -> List[str]:
+    def apply_raw(self, names: List[str]) -> List[str]:
         """設定檔 `[waigua.raw]`：每個協定只跟**它自己那份**伺服器推送的現值比（battleSetting／catchPetSetting／
         wgNomalSetting，見 botconfig.RAW_SOURCE；不跟 RoleAttr 的 hp 之類撞名欄位混在一起）。一樣就不送。
-        伺服器不推現值的協定（AutoEatOffLineItem）每次登入送一次。逾時、編碼錯誤、被拒都只記日誌、不停練功。"""
+        推送裡沒有的欄位當 sproto 預設值（false／0／空字串／空陣列：伺服器不送預設值）。
+        伺服器不推現值的協定（AutoEatOffLineItem）每次登入送一次。逾時、編碼錯誤、被拒回傳「角色：協定」。"""
         from .botconfig import RAW_SOURCE
         w = self.waigua
         if w is None or not w.raw:
@@ -1388,16 +1391,16 @@ class Party:
         stores = {"battleSetting": self.battle, "catchPetSetting": self.catch, "wgNomalSetting": self.wg}
         bad: List[str] = []
         for proto, fields in w.raw.items():
-            store = stores.get(RAW_SOURCE.get(proto[7:]) or "")
+            store = stores.get(RAW_SOURCE[proto[7:]] or "")
             for n in names:
                 if store is not None:
                     with self.lock:
                         now = dict(store.get(n, {}))
-                    if all(k in now and str(now[k]) == str(v) for k, v in fields.items()):
+                    if all(str(now.get(k, type(v)())) == str(v) for k, v in fields.items()):
                         continue
                 try:
                     r = self.clients[n].request(proto, dict(fields)) or {}
-                except Exception as e:  # noqa: BLE001  逾時／編碼錯誤：外掛設定沒設成不該停練功
+                except Exception as e:  # noqa: BLE001  逾時／編碼錯誤：記下原因交給呼叫端停止
                     r = {"error": f"{type(e).__name__}: {e}"}
                 if not r.get("isOK"):
                     self.log(f"{n} 設定檔外掛 {proto} 沒設成：{r}")
@@ -1407,8 +1410,6 @@ class Party:
                     with self.lock:
                         store.setdefault(n, {}).update(fields)
                 self.log(f"{n} 設定檔外掛 {proto[7:]} → {fields}")
-        if bad and report:
-            self.log(f"設定檔外掛設定有沒設成的：{'、'.join(bad)}（照常練功）")
         return bad
 
     def plan_points_match(self, name: str) -> bool:
@@ -1419,9 +1420,11 @@ class Party:
             a = self.attrs.get(name, {})
             mode = self.point_type.get(name, a.get("autoSetPointType"))
             diy = a.get("autoPointDiyList")
+            sent = self.plan_sent.get(name)
         rows = list(diy.values()) if isinstance(diy, dict) else list(diy or [])
         have = {int(d.get("type") or 0): int(d.get("value") or 0) for d in rows if isinstance(d, dict)}
-        return mode == 1 and have == want
+        # 剛設完、伺服器還沒推新的 RoleAttr：看這次送成功的（不然馬上又判斷不一致重送）
+        return mode == 1 and (have == want or sent == want)
 
     # ---- 外掛自訂加點目標（--point-plan，使用者 2026-11-04「隊長 體敏 100 攻擊力 999、隊員 體敏 80 攻擊力 999」）----
     def plan_for(self, name: str) -> Tuple[int, int, int]:
@@ -1443,10 +1446,7 @@ class Party:
             if r1.get("isOK") and r2.get("isOK"):
                 with self.lock:
                     self.point_type[n] = 1
-                    # 伺服器推新的 RoleAttr 之前 plan_points_match 也要看得到（不然馬上又判斷不一致重送）
-                    a = self.attrs.setdefault(n, {})
-                    a["autoSetPointType"] = 1
-                    a["autoPointDiyList"] = {i: dict(d) for i, d in enumerate(diy)}
+                    self.plan_sent[n] = {d["type"]: d["value"] for d in diy}
                 done.append(n)
                 self.log(f"{n} 外掛自訂加點：體 {vit}、敏 {spd}、攻 {atk}")
             else:
@@ -1522,18 +1522,8 @@ class Party:
             self.open_boxes(name)
             self.eat_exp_fruit(name)
             ok = self.reset_pets_after_trans(name) and ok   # 騎寵金虎＋戰寵「未滿 140 最高等」
-            ok = self.ensure_hidden(name) and ok
-            ok = self.ensure_first_cmd(name) and ok     # 轉生會洗掉首次動作，照身上的精靈金幣設回
-        if self.point_plan:
-            self.set_plan_points(names)                 # 容器版：外掛自訂加點照 --point-plan
-        else:
-            self.set_trans_points(names)
-        if self.battle_heal:
-            self.ensure_battle_heal(names)              # 轉生會洗掉外掛設定（同首次動作），設回來
-        self.ensure_auto_points(names)
-        self.apply_raw(names)                           # 設定檔 [waigua.raw] 也被轉生洗掉，再對齊一次
-        self.waigua_aligned.update(names)               # 上面已照設定檔對齊，apply_waigua 不再重做
-        return ok
+        # 轉生會洗掉外掛設定（首次動作、補血、raw…），照登入同一套設回；沒有自訂加點計畫就用轉生加點
+        return not self.align_waigua(names, hide_if_unknown=True, trans_points=True) and ok
 
     # ---- 新角色：自動加點 ----
     def ensure_auto_points(self, names: Optional[List[str]] = None) -> List[str]:
@@ -1738,7 +1728,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色21的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色20的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -2118,7 +2108,9 @@ class Party:
             self.shells.on_village()                     # 人在村裡（剛補完血）：順便存殼／兌換／用券
         if not self.init_baseline():                     # 開局基礎規範 1～5、7；戰寵騎寵設不齊等就停
             self.log("停止：開局基礎規範沒做完"); return 1
-        self.apply_waigua()                              # 設定檔的外掛設定（沒用設定檔不做；沒設成只記日誌）
+        bad = self.apply_waigua()                        # 設定檔的外掛設定（沒用設定檔不做）
+        if bad:                                          # 規範第 2 點：出錯就停，不跳過繼續
+            self.log(f"停止：外掛設定沒設成 {bad}"); return 1
         if start_place and not self.teleport_team(start_place):
             self.log(f"停止：傳送到 {start_place} 失敗"); return 1
         # 順序（使用者）：先到練功地圖 → 5 隻都開快速戰鬥並確認 → 才開隊長原地遇敵
@@ -2366,9 +2358,9 @@ def build_parser() -> argparse.ArgumentParser:
     return ap
 
 
-def load_config(ap: argparse.ArgumentParser, argv=None):
+def load_config(ap: argparse.ArgumentParser, argv=None, set_env: bool = True):
     """解析命令列；有 --config 就讀設定檔、當成參數預設值再解析一次（命令列照樣優先）。回傳 (args, Config 或 None)。
-    設定檔不合法丟 botconfig.ConfigError（還沒登入、什麼都沒送）。"""
+    設定檔不合法丟 botconfig.ConfigError（還沒登入、什麼都沒送）。set_env=False：只檢查（容器 --check），不改環境變數。"""
     from . import botconfig
     args = ap.parse_args(argv)
     cfg = None
@@ -2377,7 +2369,7 @@ def load_config(ap: argparse.ArgumentParser, argv=None):
         ap.set_defaults(**cfg.bot, scenario=cfg.scenario)
         args = ap.parse_args(argv)
         botconfig.check_overlap(cfg, args.battle_heal, cfg.waigua.first_cmd)
-        if cfg.item_rules:
+        if cfg.item_rules and set_env:
             os.environ[botconfig.RULES_ENV] = cfg.item_rules       # 工作在同一個行程裡讀規則表
     elif args.set:
         raise botconfig.ConfigError("--set 要搭配 --config")

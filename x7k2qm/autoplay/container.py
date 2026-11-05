@@ -107,7 +107,8 @@ def env_sets(env: Mapping[str, str]) -> List[str]:
     if "SCENARIO" in env:
         sc = env["SCENARIO"].strip()
         if sc and sc.lower() not in ("builtin", "none") and not os.path.isabs(sc):
-            sc = os.path.abspath(sc)           # 舊用法的相對路徑照工作目錄算（設定檔裡的才相對設定檔）
+            # 舊用法的相對路徑：練功程式是在資料目錄（/data）跑的，照它算（設定檔裡寫的才相對設定檔）
+            sc = os.path.join(env.get("DATA_DIR") or "/data", sc)
         out.append(f"files.scenario={q(sc or 'builtin')}")
     if "AUTO_SPIRIT" in env:
         out.append(f"bot.auto_spirit={'true' if env['AUTO_SPIRIT'].strip() == '1' else 'false'}")
@@ -163,13 +164,11 @@ def run_tee(cmd: List[str], env: Mapping[str, str], cwd: str, out: TextIO = None
 def check(env: Mapping[str, str]) -> List[str]:
     """不登入的自我檢查：劇本能載入、工作都認得、地圖格子與設定表在。回傳問題清單（空＝通過）。"""
     problems = []
-    from .headless_party import build_parser
+    from .headless_party import build_parser, load_config
     from .scenario import ScenarioError, load
     path = botconfig.find(env) or botconfig.BUILTIN
-    try:
-        ap = build_parser()
-        cfg = botconfig.load(path, ap, env_sets(env))       # 也會解析掛載的規則表
-        botconfig.check_overlap(cfg, cfg.bot.get("battle_heal", ap.get_default("battle_heal")), cfg.waigua.first_cmd)
+    try:                                       # 跟實際啟動同一條路（同樣的參數、同樣的檢查；也會解析掛載的規則表）
+        _, cfg = load_config(build_parser(), party_argv(env, "/dev/null"), set_env=False)
     except botconfig.ConfigError as e:
         problems.append(f"設定檔 {path}：{e}")
         cfg = None

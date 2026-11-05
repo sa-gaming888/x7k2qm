@@ -21,7 +21,7 @@ scenario = "builtin"       # 劇本："builtin"＝內建轉生劇本；"none"＝
 item_rules = "builtin"     # 道具處置規則表（.md，格式同 doc/autoplay/game/item-rules.md）
 
 [waigua]
-# 外掛設定：每次登入（轉生後也會）檢查，跟伺服器現在的不一樣才送；沒設成只記日誌、照常練功。
+# 外掛設定：每次登入（轉生後也會）檢查，跟伺服器現在的不一樣才送；沒設成（被拒、逾時）就停止練功，看日誌修設定。
 hide = true                          # 全部隱藏
 fast_battle = true                   # 快速戰鬥（到練功地圖才開）
 first_cmd = "spirit"                 # 首次動作："spirit"＝放身上精靈金幣的技能、目標隨機敵人；"none"＝不動

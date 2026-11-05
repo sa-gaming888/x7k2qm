@@ -36,15 +36,17 @@ FILE_KEYS = {"scenario", "item_rules"}
 RESERVED = {"log", "stop_file", "profile", "discover", "api_port", "api_host", "jobs_dir", "owner_dir",
             "scenario_dir", "config", "scenario"}
 WAIGUA_KEYS = {"hide", "fast_battle", "first_cmd", "auto_points", "point_plan", "battle_heal", "raw"}
-RAW_PROTOS = ("FastBattleSettingChange", "FastBattleSettingHpChange", "FastBattleSettingMpChange",
-              "FastBattleSettingMpSkillChange", "FastBattleSettingReviveSkillChange", "CatchPetSetting",
-              "NomalSettingEatExpItem", "NomalSettingHandleHeal", "AutoEatOffLineItem", "NomalSettingHandlePet")
+# 可以直設的協定（去掉 WaiGua_）→ 現值在 RoleAttr 哪一份推送裡（只跟那份比；None＝伺服器不推，每次登入送一次）。
+# 新增協定只改這張表：一定要同時決定它的現值來源
+RAW_SOURCE = {
+    "FastBattleSettingChange": "battleSetting", "FastBattleSettingHpChange": "battleSetting",
+    "FastBattleSettingMpChange": "battleSetting", "FastBattleSettingMpSkillChange": "battleSetting",
+    "FastBattleSettingReviveSkillChange": "battleSetting", "CatchPetSetting": "catchPetSetting",
+    "NomalSettingEatExpItem": "wgNomalSetting", "NomalSettingHandleHeal": "wgNomalSetting",
+    "NomalSettingHandlePet": "wgNomalSetting", "AutoEatOffLineItem": None,
+}
+RAW_PROTOS = tuple(RAW_SOURCE)
 RAW_DENY = {"NomalSettingHandlePet": {"fightPetIndex", "ridePetIndex"}}
-# 每個協定的現值在 RoleAttr 哪一份推送裡（只跟那份比；None＝伺服器不推，每次登入送一次）
-RAW_SOURCE = {p: "battleSetting" for p in RAW_PROTOS if p.startswith("FastBattle")}
-RAW_SOURCE.update({"CatchPetSetting": "catchPetSetting", "NomalSettingEatExpItem": "wgNomalSetting",
-                   "NomalSettingHandleHeal": "wgNomalSetting", "NomalSettingHandlePet": "wgNomalSetting",
-                   "AutoEatOffLineItem": None})
 # 跟 [waigua] 專門的設定管同一批欄位：那一項開著時 raw 不能再寫（不然每次登入兩邊互相蓋）
 HEAL_FIELDS = {"hpRoleCmdFlg", "hpRoleCmdArg", "hpRoleCmdArgEx", "hpRoleHpRolePer", "hpRoleHpPetPer", "hpRoleHpRidePer"}
 FIRST_CMD_FIELDS = {"firstRoleCmdFlg", "firstRoleCmd", "firstRoleCmdArg", "firstRoleCmdArgEx",
