@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色38,角色24   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色32,角色19   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色38、角色24領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色32、角色19領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -211,10 +211,17 @@ def do_park(p, name: str) -> None:
     只留戰寵才夠。只認金虎 310 的舊版對第四、五組（騎寵 307／309）等於沒做；
     只存騎寵也不夠，還會剩休息的那隻（2026-10-27 兩組實機都卡在「超過上限」）。
     """
-    fight = main_fight(p, name)
+    fight_u, ride_u = p.locks(name)
+    # 有鎖定的戰寵（不是騎寵）就留那隻，金虎也一樣：使用者指定練金虎時 main_fight 會挑到休息的非金虎，
+    # 或身上只剩金虎就停（11-05 第八組汝鄢志國、李穎瑩，LESSONS #168）。
+    # 其他 main_fight 呼叫：catch.make_room 已改（#167）；equip-fight／refresh 本來就是「換」戰寵，不受影響
+    fight = next((v for v in slots(p, name).values()
+                  if fight_u and fight_u != ride_u and v.get("uniqueIndex") == fight_u), None) or main_fight(p, name)
     if not fight:
         raise JobError(f"{name} 寵物欄沒有金虎以外的寵物可以當戰寵")
-    _, ride_u = p.locks(name)
+    if not hasattr(p, "parked_fight"):
+        p.parked_fight = {}
+    p.parked_fight[name] = fight.get("uniqueIndex")     # restore 時戰寵用回這隻（交寵物前 rest 會把鎖定清成 0）
     if ride_u and ride_u != fight.get("uniqueIndex"):
         # 記住原本的騎寵，restore 時倉庫沒金虎就領回這隻（2026-11-03 第七、八組騎瑪斯貝卡，LESSONS #154）
         if not hasattr(p, "parked_ride"):
@@ -279,7 +286,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色30，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色54，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -363,7 +370,11 @@ def do_restore(p, name: str) -> None:
     領的是**等級不高於人物**的金虎裡最高的那隻：比人物高的騎不上（使用者 2026-10-25「再取出時要確保是金虎，
     同時等級不能高於人物等級」；三轉後人物 125 級、倉庫有 129 級金虎，舊版挑最高等就挑到它）。"""
     lv = char_level(p, name)
-    cur = _find(p, name, TIGER)
+    kept_u = (getattr(p, "parked_fight", None) or {}).get(name)
+    kept = next((v for v in slots(p, name).values() if kept_u and v.get("uniqueIndex") == kept_u), None)
+    # park 留下的戰寵是金虎時，牠不能被當成騎寵（#168）
+    cur = next(((k, v) for k, v in slots(p, name).items()
+                if v.get("petId") == TIGER and v.get("uniqueIndex") != kept_u), None)
     if cur and lv and (cur[1].get("level") or 0) > lv:
         raise JobError(f"{name} 身上的金虎 {cur[1].get('level')} 級高於人物 {lv} 級，騎不上；先處理再 restore")
     if not cur:
@@ -376,7 +387,7 @@ def do_restore(p, name: str) -> None:
             row = None if here else next((r for r in p.pet_depots(name) if r.get("uniqueIndex") == parked), None)
             if here or row:
                 ride = here or take_pet(p, name, row)
-                fight = main_fight(p, name)
+                fight = kept or main_fight(p, name)
                 if fight and fight.get("uniqueIndex") == ride.get("uniqueIndex"):     # 鎖定被清掉時別挑到騎寵
                     fight = max((v for v in slots(p, name).values() if v.get("petId") != TIGER
                                  and v.get("uniqueIndex") != ride.get("uniqueIndex")),
@@ -388,12 +399,14 @@ def do_restore(p, name: str) -> None:
                 return
         if not tigers:
             raise JobError(f"{name} 個人寵物倉庫找不到{f' {lv} 級以下的' if lv else ''}金虎（騎寵不能高於人物等級）")
-        take_pet(p, name, tigers[0])
-    tiger = _find(p, name, TIGER)[1]
-    fight = main_fight(p, name)
+        got = take_pet(p, name, tigers[0])
+        cur = (None, got)
+    tiger = cur[1]
+    fight = kept or main_fight(p, name)
     if not fight:
         raise JobError(f"{name} 寵物欄沒有金虎以外的寵物可以當戰寵")
     lock(p, name, fight["uniqueIndex"], tiger["uniqueIndex"])
+    (getattr(p, "parked_fight", None) or {}).pop(name, None)
 
 
 def _release_ids(p, name: str) -> set:
@@ -542,7 +555,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色38等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色32等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
