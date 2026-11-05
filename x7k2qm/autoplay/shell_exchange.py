@@ -181,12 +181,21 @@ class ShellExchange:
         return True
 
     # ---- 倉庫：查、領（使用者 11-05「每次回村都要檢查個倉、共倉」「石幣道具一律打開使用」）----
-    def _scan(self, client, public: bool, ids) -> Optional[Dict[int, List[Tuple[int, int, int]]]]:
-        """查倉庫一次（第 1 頁起，遇空頁停，最多 MAX_DEPOT_PAGES 頁）：{itemId: [(page, uniqueIndex, 數量)]}，只收 ids。
+    def _pages(self, name: str, public: bool) -> int:
+        """這隻開了幾頁倉庫（RoleAttr itemDepotPlace／pItemDepotPlace；不知道當 1，最多 MAX_DEPOT_PAGES）。
+        沒開的頁伺服器回 isOK false，不是空頁：11-05 五組都只開 1 頁，每次回村查第 2 頁被拒 →
+        連續失敗 3 次，龜殼存倉／兌換整個停用（查詢 API /depot 一樣照這兩個欄位定頁數）。"""
+        with self.p.lock:
+            v = (self.p.attrs.get(name) or {}).get("pItemDepotPlace" if public else "itemDepotPlace")
+        return max(1, min(v if isinstance(v, int) and v > 0 else 1, MAX_DEPOT_PAGES))
+
+    def _scan(self, name: str, public: bool, ids) -> Optional[Dict[int, List[Tuple[int, int, int]]]]:
+        """這隻查倉庫一次（第 1 頁起，遇空頁停，只查開了的頁）：{itemId: [(page, uniqueIndex, 數量)]}，只收 ids。
         查詢逾時、例外、isOK false → 回 None（不能當成空的：共倉明明有殼卻記成 0 個，規範第 2 點）。"""
         out: Dict[int, List[Tuple[int, int, int]]] = {}
         where = "公共倉庫" if public else "個人倉庫"
-        for page in range(1, MAX_DEPOT_PAGES + 1):
+        client = self.p.clients[name]
+        for page in range(1, self._pages(name, public) + 1):
             try:
                 r = client.request("ItemHandle_GetNewItemDepotInfo", {"page": page, "isPublic": public})
             except Exception as e:  # noqa: BLE001
@@ -241,7 +250,7 @@ class ShellExchange:
 
     def pull_depot(self, name: str, public: bool) -> Tuple[bool, int]:
         """這隻把個倉（public=False）的殼、石幣券領回背包（券順便用掉）。回傳 (有沒有出錯, 做了幾個動作)。"""
-        found = self._scan(self.p.clients[name], public, (SHELL, *STONE_TICKETS))
+        found = self._scan(name, public, (SHELL, *STONE_TICKETS))
         if found is None:
             return False, 0
         return self._take_all(name, public, found)
@@ -249,7 +258,7 @@ class ShellExchange:
     def depot_shells(self) -> Optional[Tuple[int, List[Tuple[int, int, int]]]]:
         """隊長查公共倉庫一次。回傳 (殼總數, [(page, uniqueIndex, 數量)])，查詢失敗回 None；
         同一次查到的石幣券記在 `public_tickets`，給 pull_public_tickets 用（不用再查一次）。"""
-        found = self._scan(self.p.leader(), True, (SHELL, *STONE_TICKETS))
+        found = self._scan(self.p.party[0][1], True, (SHELL, *STONE_TICKETS))
         if found is None:
             self.public_tickets = {}
             return None

@@ -30,7 +30,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色50"), (10003796, "角色20"), (10003799, "角色28"), (10003803, "角色21"), (10003804, "角色37")]
+PARTY = [(10003754, "角色45"), (10003796, "角色19"), (10003799, "角色33"), (10003803, "角色24"), (10003804, "角色49")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -714,12 +714,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色45在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色52在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色28 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色33 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1087,7 +1087,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色50個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色45個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
