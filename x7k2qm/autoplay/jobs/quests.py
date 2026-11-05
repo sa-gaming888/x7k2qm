@@ -219,7 +219,24 @@ def build_quest(p, group: int, log, grid_fn, need_free: int, stop_after=None, ba
     rec = getattr(p, "quest_record_dir", None)       # run() 照 --record 設定；None＝不錄
     if rec:
         kw["record_dir"] = rec
-    return real(p, group, log, grid_fn, need_free=need_free, stop_after=stop_after, **kw)
+    return real(p, group, log, grid_fn, need_free=need_free, stop_after=stop_after,
+                before_step=lambda s: top_up(p, group, s), **kw)
+
+
+QUEST_HEAL_BELOW = 70            # 任務每一步開始前，隊伍最低血量低於這個 % 就先回村補血
+
+
+def top_up(p, group: int, s) -> None:
+    """任務步驟開始前血量太低就先回村補血（之後執行器照目前地圖重新跳回去）。
+    11-05 2010 四寶玉連打三場不補血，第 4 步風的寶玉（風剋地）開打時有人只剩 148/650，四回合死三隻，重打三次都一樣。
+    補血失敗照規則停（不硬打）。"""
+    from ..quest.headless import QuestStop
+    hp = p.hp_percent()
+    if hp is None or hp >= QUEST_HEAL_BELOW:
+        return
+    p.log(f"任務 {group}：步驟 {s.task_id} 開始前隊伍最低血量 {hp}%，先回村補血")
+    if not p.heal_at_samugil():
+        raise QuestStop(f"步驟 {s.task_id} 開始前回村補血失敗")
 
 
 PET_MAX = 5
@@ -478,9 +495,65 @@ def stash_shells(p, free: int) -> None:
         raise JobError("任務開始前龜殼存不進共倉（可能滿了），不開始任務")
 
 
+_TASKS: Optional[Dict[int, dict]] = None
+
+
+def task_table() -> Dict[int, dict]:
+    """Task.json：taskId → 那一步（只讀一次）。"""
+    global _TASKS
+    if _TASKS is None:
+        import json
+        import os
+        from ...features.gamedb.tables import CONFIGS
+        with open(os.path.join(CONFIGS, "Task.json"), encoding="utf-8") as fp:
+            _TASKS = {t["ID"]: t for t in json.load(fp) if isinstance(t, dict) and t.get("ID")}
+    return _TASKS
+
+
+def restore_task_items(p, group: int) -> Dict[str, Dict[int, int]]:
+    """還沒做完的人：從他進行中的那一步起，之後要交的道具背包沒有、個倉第 1 頁有，就領回來。
+    11-05 第一次跑完整劇本：2999 要背包全空，把 2012 做到一半拿到的答案用紙（2509～2515）存進個倉，
+    重跑 2012 停在第 6 步「獲取智慧結晶」交不出、等不到翻面。個倉也沒有就照舊交給執行器（不買、不停）。
+    回傳 {角色: {itemId: 取出幾個}}；取出沒確認就丟 JobError（規範第 2 點）。"""
+    from .carry import depot, in_bag
+    steps = sorted((t for t in task_table().values() if t.get("group") == group), key=lambda t: t.get("step", 0))
+    took: Dict[str, Dict[int, int]] = {}
+    for _, n in p.party:
+        with p.lock:
+            if group in (p.finished.get(n) or []):
+                continue
+        cur = min(doing(p, n, group) or [0])
+        need: Dict[int, int] = {}
+        for t in steps:
+            if cur and t["ID"] < cur:
+                continue                                   # 已經交過的步驟
+            for c in t.get("condition") or []:
+                if isinstance(c, dict) and c.get("itemId"):
+                    need[c["itemId"]] = max(need.get(c["itemId"], 0), int(c.get("itemNum") or 1))
+        missing = {i: k - in_bag(p, n, i) for i, k in need.items() if in_bag(p, n, i) < k}
+        if not missing:
+            continue
+        rows = [r for r in depot(p, n) if r.get("itemId") in missing and r.get("uniqueIndex")]
+        for r in rows:
+            iid = r["itemId"]
+            k = min(missing[iid] - took.get(n, {}).get(iid, 0), int(r.get("overlay") or 1))
+            if k <= 0:
+                continue
+            before = in_bag(p, n, iid)
+            g = p.clients[n].request("ItemHandle_GetItemToNewDepot",
+                                     {"page": 1, "isPublic": False, "uniqueIndex": r["uniqueIndex"], "count": k}) or {}
+            if not (g.get("isOK") and p.wait(lambda: in_bag(p, n, iid) >= before + k, 5)):
+                raise JobError(f"{group}：{n} 從個倉取回任務道具 {iid} 沒確認：{g}")
+            took.setdefault(n, {})[iid] = took.get(n, {}).get(iid, 0) + k
+            p.nap(0.4)
+        if took.get(n):
+            p.log(f"任務 {group}：{n} 從個倉取回之後要交的道具 {took[n]}")
+    return took
+
+
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色98的 2D人龍進化石、角色107的 2D老虎自選蛋、角色85的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色67的 2D人龍進化石、角色65的 2D老虎自選蛋、角色105的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -517,6 +590,13 @@ def run(p, args) -> Tuple[str, dict]:
     done = []
     sg = stop_group(args)
     for g in groups:
+        with p.lock:
+            all_done = all(g in (p.finished.get(n) or []) for _, n in p.party)
+        if all_done:
+            # 全隊早就做完：不整理、不存背包（11-05 2999 已完成還照樣「要背包 15 格全空」把 2012 做到一半的答案用紙存進個倉）
+            p.log(f"任務 {g}：全隊都已完成，跳過")
+            done.append(g)
+            continue
         free = args.free if getattr(args, "free", None) is not None else FREE.get(g, DEFAULT_FREE)
         sa = args.stop_after if g == sg else None
         # 使用者 2026-10-25「1.82 四大 英雄島 所有任務執行前 先平行快速整理一次」：
@@ -529,6 +609,7 @@ def run(p, args) -> Tuple[str, dict]:
         preflight_pets(p, g, getattr(args, "steps_of", lambda g: None)(g))
         stash_shells(p, free)
         stash_bag(p, free)
+        restore_task_items(p, g)
         p.log(f"開始任務 {g}（背包至少空 {free} 格）" + (f"，做完 {sa} 就停" if sa else ""))
         retry, tries = int(getattr(args, "retry", 0) or 0), 0
         while True:

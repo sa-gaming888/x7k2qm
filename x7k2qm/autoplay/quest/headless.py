@@ -38,10 +38,11 @@ class HeadlessQuest:
                  clock: Callable[[], float] = time.time, need_free: int = 1, battle_timeout: float = 180.0,
                  history: Optional[List[tuple]] = None, collect_limit: float = 1800.0,
                  stop_after: Optional[int] = None, after_reward: Optional[Callable[[Step], None]] = None,
-                 record_dir: Optional[str] = None) -> None:
+                 record_dir: Optional[str] = None, before_step: Optional[Callable[[Step], None]] = None) -> None:
         self.clients, self.leader, self.steps, self.npc_pos = clients, leader, steps, npc_pos
         self.actors = list(clients)          # 這個群組真的要接／交任務的人（run() 會排除已完成的）
         self.after_reward = after_reward         # 給寵物的步驟做完後呼叫（jobs/quests 用來馬上照規則表整理寵物欄）
+        self.before_step = before_step           # 每一步開始、跳點之前呼叫（jobs/quests 用來在血量低時先回村補血）
         self.log, self.grid_fn, self.clock = log, grid_fn, clock
         self.idle = idle or time.sleep
         self.need_free, self.battle_timeout = need_free, battle_timeout
@@ -136,7 +137,7 @@ class HeadlessQuest:
     def dead(self) -> List[str]:
         """**目前** hp 剩 1 的人。看最新血量，不是「歷史上出現過 hp=1」——建立執行器時會重播
         `Party.history`（登入後的所有事件），舊的 hp=1 會讓人永遠被當成死亡：2026-10-30 第五組
-        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色45']」，要重啟常駐清掉
+        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色46']」，要重啟常駐清掉
         history 才會好。"""
         return [n for n, hp in self.hp.items() if hp == 1]
 
@@ -513,7 +514,7 @@ class HeadlessQuest:
             self.log(f"任務群組 {group} 全隊都已完成")
             return                                  # 已完成就直接跳過，不檢查空格
         if done:
-            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色100完成，
+            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色68完成，
             # 已完成的任務放棄指令清不掉，整組就永遠卡著、轉生做不了）。已完成的人留在隊伍裡跟著打，
             # 但不接任務、不交付、不列入狀態檢查。步驟不一致（大家都在做、停在不同步）仍然停，見下面。
             self.actors = [n for n in self.clients if n not in done]
@@ -561,6 +562,8 @@ class HeadlessQuest:
                 raise QuestStop(f"隊員任務狀態不一致或不在進行中：{s.task_id} {st}")
             self.log(f"步驟 {s.task_id} {s.name}")
             self.check_pets(s)
+            if self.before_step is not None:
+                self.before_step(s)                   # 可能回村補血：之後照目前地圖重算跳點
             with self.lock:
                 cur = self.maps.get(self.leader)
             for m, x, y in s.hops(cur):
@@ -601,14 +604,15 @@ def npc_positions() -> Dict[int, Tuple[int, int, int]]:
 def build_quest(p, group: int, log: Callable[[str], None], grid_fn, need_free: int = 1,
                 stop_after: Optional[int] = None, battle_timeout: float = 180.0,
                 after_reward: Optional[Callable[[Step], None]] = None,
-                record_dir: Optional[str] = None) -> "HeadlessQuest":
+                record_dir: Optional[str] = None,
+                before_step: Optional[Callable[[Step], None]] = None) -> "HeadlessQuest":
     """隊長＝這組實際登入的第一個角色（p.party[0]），不是寫死的第 2 組 PARTY（2026-10-22 Mac 回報：
     寫死會讓第三組的任務去登第 2 組、把 Windows 練功的 5 隻擠下線）。"""
     return HeadlessQuest(p.clients, p.party[0][1], load_steps(group), npc_positions(), log=log,
                          grid_fn=grid_fn, idle=p.nap, need_free=need_free,
                          history=list(p.history) + (p.snapshot_events() if hasattr(p, "snapshot_events") else []),
                          stop_after=stop_after, battle_timeout=battle_timeout, after_reward=after_reward,
-                         record_dir=record_dir)
+                         record_dir=record_dir, before_step=before_step)
 
 
 def main(argv=None) -> int:
