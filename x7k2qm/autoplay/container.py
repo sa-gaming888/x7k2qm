@@ -106,6 +106,8 @@ def env_sets(env: Mapping[str, str]) -> List[str]:
         out.append(f"bot.start={q(env['START'].strip())}")
     if "SCENARIO" in env:
         sc = env["SCENARIO"].strip()
+        if sc and sc.lower() not in ("builtin", "none") and not os.path.isabs(sc):
+            sc = os.path.abspath(sc)           # 舊用法的相對路徑照工作目錄算（設定檔裡的才相對設定檔）
         out.append(f"files.scenario={q(sc or 'builtin')}")
     if "AUTO_SPIRIT" in env:
         out.append(f"bot.auto_spirit={'true' if env['AUTO_SPIRIT'].strip() == '1' else 'false'}")
@@ -116,7 +118,11 @@ def env_sets(env: Mapping[str, str]) -> List[str]:
         out.append(f"waigua.point_plan={q(plan or 'none')}")
     if "BATTLE_HEAL" in env:
         heal = env["BATTLE_HEAL"].strip()
-        out.append(f"waigua.battle_heal={heal if heal.isdigit() else 'false'}")
+        if heal.lower() in ("", "0", "none", "false", "off"):
+            heal = "false"
+        elif not heal.isdigit():
+            heal = q(heal)                     # 60%、50.5 這種：當字串交給設定檔驗證 → 登入前就報錯停止
+        out.append(f"waigua.battle_heal={heal}")
     return out
 
 
@@ -161,7 +167,9 @@ def check(env: Mapping[str, str]) -> List[str]:
     from .scenario import ScenarioError, load
     path = botconfig.find(env) or botconfig.BUILTIN
     try:
-        cfg = botconfig.load(path, build_parser(), env_sets(env))
+        ap = build_parser()
+        cfg = botconfig.load(path, ap, env_sets(env))       # 也會解析掛載的規則表
+        botconfig.check_overlap(cfg, cfg.bot.get("battle_heal", ap.get_default("battle_heal")), cfg.waigua.first_cmd)
     except botconfig.ConfigError as e:
         problems.append(f"設定檔 {path}：{e}")
         cfg = None

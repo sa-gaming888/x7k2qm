@@ -40,6 +40,18 @@ RAW_PROTOS = ("FastBattleSettingChange", "FastBattleSettingHpChange", "FastBattl
               "FastBattleSettingMpSkillChange", "FastBattleSettingReviveSkillChange", "CatchPetSetting",
               "NomalSettingEatExpItem", "NomalSettingHandleHeal", "AutoEatOffLineItem", "NomalSettingHandlePet")
 RAW_DENY = {"NomalSettingHandlePet": {"fightPetIndex", "ridePetIndex"}}
+# 每個協定的現值在 RoleAttr 哪一份推送裡（只跟那份比；None＝伺服器不推，每次登入送一次）
+RAW_SOURCE = {p: "battleSetting" for p in RAW_PROTOS if p.startswith("FastBattle")}
+RAW_SOURCE.update({"CatchPetSetting": "catchPetSetting", "NomalSettingEatExpItem": "wgNomalSetting",
+                   "NomalSettingHandleHeal": "wgNomalSetting", "NomalSettingHandlePet": "wgNomalSetting",
+                   "AutoEatOffLineItem": None})
+# 跟 [waigua] 專門的設定管同一批欄位：那一項開著時 raw 不能再寫（不然每次登入兩邊互相蓋）
+HEAL_FIELDS = {"hpRoleCmdFlg", "hpRoleCmdArg", "hpRoleCmdArgEx", "hpRoleHpRolePer", "hpRoleHpPetPer", "hpRoleHpRidePer"}
+FIRST_CMD_FIELDS = {"firstRoleCmdFlg", "firstRoleCmd", "firstRoleCmdArg", "firstRoleCmdArgEx",
+                    "firstRoleCmdArgTargetRule"}
+# 同一個設定的兩個寫法：--set 寫其中一個時，另一個寫法（設定檔裡的）作廢，讓 --set／環境變數蓋過
+ALIASES = {("waigua", "point_plan"): ("bot", "point_plan"), ("bot", "point_plan"): ("waigua", "point_plan"),
+           ("waigua", "battle_heal"): ("bot", "battle_heal"), ("bot", "battle_heal"): ("waigua", "battle_heal")}
 
 
 class ConfigError(ValueError):
@@ -64,7 +76,8 @@ class Config:
     waigua: Waigua = field(default_factory=Waigua)
 
 
-def _request_fields() -> Dict[str, set]:
+def _request_fields() -> Dict[str, Dict[str, Optional[str]]]:
+    """協定全名 → {欄位名: sproto 型別（integer／boolean／string／*integer／map…）}。"""
     with open(SCHEMA, encoding="utf-8") as fp:
         s = json.load(fp)
     types = s.get("types") or {}
@@ -73,8 +86,35 @@ def _request_fields() -> Dict[str, set]:
         req = v.get("request") if isinstance(v, dict) else None
         t = types.get(req) if req else None
         fields = t.get("fields") if isinstance(t, dict) else t
-        out[name] = {f.get("name") if isinstance(f, dict) else f for f in (fields or [])}
+        out[name] = {(f.get("name") if isinstance(f, dict) else f): (f.get("type") if isinstance(f, dict) else None)
+                     for f in (fields or [])}
     return out
+
+
+def _type_ok(kind: Optional[str], v: Any) -> bool:
+    """TOML 值合不合 sproto 欄位型別（不合的在登入前擋，免得送出時才編碼失敗）。"""
+    is_int = isinstance(v, int) and not isinstance(v, bool)
+    if kind == "boolean":
+        return isinstance(v, bool)
+    if kind == "integer":
+        return is_int
+    if kind == "string":
+        return isinstance(v, str)
+    if kind == "*integer":
+        return isinstance(v, list) and all(isinstance(x, int) and not isinstance(x, bool) for x in v)
+    return False                                          # map／obj 等巢狀欄位不開放直設
+
+
+def check_overlap(cfg: "Config", battle_heal, first_cmd: str) -> None:
+    """raw 跟專門設定管同一批欄位時擋下（battle_heal、first_cmd 是最後生效的值：命令列＞設定檔）。"""
+    for proto, fields, on, what in (
+            ("WaiGua_FastBattleSettingHpChange", HEAL_FIELDS, bool(battle_heal), "battle_heal"),
+            ("WaiGua_FastBattleSettingChange", FIRST_CMD_FIELDS, first_cmd != "none", "first_cmd")):
+        both = set(cfg.waigua.raw.get(proto, {})) & fields
+        if on and both:
+            off = "false" if what == "battle_heal" else '"none"'
+            raise ConfigError(f"[waigua.raw.{proto[7:]}] {sorted(both)} 跟 [waigua] {what} 管同一個設定；"
+                              f"要自己寫就把 {what} 關掉（{what} = {off}）")
 
 
 def _path(base: str, v: Any, what: str, allow_none: bool) -> Optional[str]:
@@ -116,6 +156,9 @@ def apply_sets(data: dict, sets) -> dict:
             if not isinstance(d, dict):
                 raise ConfigError(f"--set {item}：{k} 不是區塊")
         d[parts[-1]] = value
+        other = ALIASES.get(tuple(parts))
+        if other and isinstance(data.get(other[0]), dict):
+            data[other[0]].pop(other[1], None)            # 同一設定的另一個寫法作廢：--set 蓋過設定檔
     return data
 
 
@@ -144,6 +187,12 @@ def load(path: str, parser=None, sets=()) -> Config:
     cfg.scenario = os.path.join(ROOT, "config", "scenarios", "rebirth.toml") if sc == "builtin" else sc
     rules = _path(path, files.get("item_rules", "builtin"), "item_rules", allow_none=False)
     cfg.item_rules = None if rules == "builtin" else rules
+    if cfg.item_rules:                                    # 登入前就解析：格式錯等到練功中整理時才爆就太晚
+        from . import item_rules
+        try:
+            item_rules.load(cfg.item_rules, tasks=[])     # 只驗規則表本身（任務需求表是內建資料，不用在這讀）
+        except Exception as e:  # noqa: BLE001  解析錯誤的型別不固定，一律當設定檔錯
+            raise ConfigError(f"[files] item_rules 規則表解析失敗：{cfg.item_rules}（{type(e).__name__}: {e}）") from None
 
     w = data.get("waigua") or {}
     bad = set(w) - WAIGUA_KEYS
@@ -184,13 +233,20 @@ def load(path: str, parser=None, sets=()) -> Config:
             if not isinstance(fields, dict) or not fields:
                 raise ConfigError(f"[waigua.raw.{proto}] 要寫至少一個欄位")
             full = "WaiGua_" + proto
-            unknown = set(fields) - known.get(full, set())
+            schema = known.get(full, {})
+            unknown = set(fields) - set(schema)
             if unknown:
                 raise ConfigError(f"[waigua.raw.{proto}] 協定沒有這些欄位 {sorted(unknown)}"
-                                  f"（有：{sorted(known.get(full, set()))}）")
+                                  f"（有：{sorted(schema)}）")
             deny = set(fields) & RAW_DENY.get(proto, set())
             if deny:
                 raise ConfigError(f"[waigua.raw.{proto}] {sorted(deny)} 由寵物流程管，不能寫在設定檔")
+            for k, v in fields.items():
+                kind = schema.get(k)
+                if not _type_ok(kind, v):
+                    want = {"boolean": "true／false", "integer": "整數", "string": "字串（加引號）",
+                            "*integer": "整數陣列（例 [1, 2]）"}.get(kind or "", f"{kind}（巢狀欄位不開放直設）")
+                    raise ConfigError(f"[waigua.raw.{proto}] {k} 要是 {want}：{v!r}")
             wg.raw[full] = dict(fields)
     cfg.waigua = wg
     return cfg

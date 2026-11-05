@@ -2,7 +2,7 @@
 
     python -X utf8 -m x7k2qm.autoplay.jobs mall --profile 3 --discover --id 46                    # 只列：買什麼、多少錢、餘額
     python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46          # 隊長買 1 個
-    python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46 --count 2 --who 角色31
+    python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46 --count 2 --who 角色48
 
 `--id` 是 `ShopMall.json` 的列號（不是道具 ID）。表的 `group` 就是幣種（1 鑽石、2 活力、3 石幣、8 聲望，
 跟 `ShopMallName` 分頁名對得上），`priceDefaultInit` 是單價。常用：

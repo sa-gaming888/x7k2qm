@@ -64,7 +64,7 @@ docker restart bot          # 改完設定檔重開生效（會等這場戰鬥�
 | `[bot]` | 練功程式參數：`start` 起始練功點、`auto_spirit`、`no_retreat`、`stay`、`keep_pets`、`shell_exchange`…（練功程式 `--help` 的長選項，`-` 換 `_`；新參數直接加，不用改容器） |
 | `[files]` | `scenario` 劇本檔（`builtin`／`none`／路徑）、`item_rules` 道具處置規則表（`builtin`／路徑）；路徑可以相對設定檔，例 `scenario = "rebirth.toml"` ＝ `/config/rebirth.toml` |
 | `[waigua]` | 外掛設定，**每次登入（轉生後也會）檢查**，跟現在不一樣才送：`hide` 全部隱藏、`fast_battle` 快速戰鬥、`first_cmd` 首次動作、`auto_points` 推薦加點、`point_plan` 自訂加點、`battle_heal` 戰鬥中技能補血 |
-| `[waigua.raw.<協定>]` | 進階：直接寫外掛協定的欄位（例 `[waigua.raw.FastBattleSettingMpChange]` `MpRoleItemFlg = true`、`MpRoleItemPer = 30` 魔力低於 30% 吃藥）；`/waigua` 查得到現值。鎖定戰寵／騎寵由寵物流程管，不能寫 |
+| `[waigua.raw.<協定>]` | 進階：直接寫外掛協定的欄位（例 `[waigua.raw.FastBattleSettingMpChange]` `MpRoleItemFlg = true`、`MpRoleItemPer = 30` 魔力低於 30% 吃藥）；`/waigua` 查得到現值。欄位型別照協定檢查（整數、true／false、字串要加引號）。鎖定戰寵／騎寵由寵物流程管，不能寫；`battle_heal` 開著時不能寫 `hpRole*`、`first_cmd = "spirit"` 時不能寫 `firstRoleCmd*`（兩邊會互蓋） |
 
 設定檔格式錯、有不認得的欄位、寫了練功程式沒有的參數：**一律不登入**，日誌寫 `停止：設定檔：…`。
 `docker run --rm -v ./bot.toml:/config/bot.toml:ro <映像> --check` 可以先檢查。

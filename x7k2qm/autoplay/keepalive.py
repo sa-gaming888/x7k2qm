@@ -3,6 +3,9 @@
     python -X utf8 -m x7k2qm.autoplay.keepalive --log captures/lingshi_keep.log \\
         --stop-file captures/lingshi_2.stop -- lingshi --profile 2 --discover --apply --element 水
 
+常駐練功（使用者 11-05「以後停了自動重開」）加 `--party`，`--` 後面接 headless_party 的參數，停止檔用 `<log>.stop`；
+Windows 用 Start-Process 開成獨立行程，Claude Code 記憶體不足時才不會連它一起殺（LESSONS #165）。
+
 看這次執行寫進日誌的內容判斷怎麼結束（jobs 的 JobError、崩潰、Windows 強殺結束碼都可能是 1，分不出來）：
 - 結束碼 0、有停止檔、工作自己回報「停止：…」（含被擠下線，規範 2：不重連）→ 不重開。
 - 「停止：例外 …」（崩潰）或完全沒有停止紀錄（被強殺）→ 重開。
@@ -82,11 +85,17 @@ def make_notify(log: Callable[[str], None], label: str) -> Callable[[str], None]
     return notify
 
 
-def run_child(job_argv: List[str], path: str) -> tuple:
+JOBS, PARTY = "x7k2qm.autoplay.jobs", "x7k2qm.autoplay.headless_party"
+
+
+def run_child(job_argv: List[str], path: str, module: str = JOBS) -> tuple:
+    """跑一次子程式，回傳 (結束碼, 這次新寫進日誌的內容)。headless_party 自己寫 --log（同一個檔），
+    stdout 再寫進去會重複，所以只收 stderr（崩潰的 Traceback）。"""
     start = os.path.getsize(path) if os.path.exists(path) else 0
     with open(path, "ab") as fp:
-        rc = subprocess.call([sys.executable, "-X", "utf8", "-m", "x7k2qm.autoplay.jobs", *job_argv],
-                             stdout=fp, stderr=subprocess.STDOUT)
+        out = subprocess.DEVNULL if module == PARTY else fp
+        rc = subprocess.call([sys.executable, "-X", "utf8", "-m", module, *job_argv],
+                             stdout=out, stderr=fp if module == PARTY else subprocess.STDOUT)
     with open(path, "rb") as fp:
         fp.seek(start)
         return rc, fp.read().decode("utf-8", "replace").replace("\r\n", "\n")
@@ -111,6 +120,8 @@ def main(argv=None) -> int:
     ap.add_argument("--log", required=True, help="工作的日誌")
     ap.add_argument("--stop-file", required=True, help="工作的停止檔；有這個檔就不重開")
     ap.add_argument("--label", default="自動重開")
+    ap.add_argument("--party", action="store_true",
+                    help="-- 之後是 headless_party 的參數（常駐練功；使用者 11-05「以後停了自動重開」）")
     ap.add_argument("job", nargs=argparse.REMAINDER, help="-- 之後是 jobs 的參數")
     args = ap.parse_args(argv)
     job = args.job[1:] if args.job[:1] == ["--"] else args.job
@@ -128,7 +139,8 @@ def main(argv=None) -> int:
         log(f"已經有 keepalive 在跑（{pid_path}），不重複啟動")
         return 1
     try:
-        why = supervise(lambda: run_child(job, args.log), lambda: os.path.exists(args.stop_file),
+        module = PARTY if args.party else JOBS
+        why = supervise(lambda: run_child(job, args.log, module), lambda: os.path.exists(args.stop_file),
                         make_notify(log, args.label), log)
     finally:
         os.remove(pid_path)
