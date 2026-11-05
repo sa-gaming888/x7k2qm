@@ -1,4 +1,8 @@
-"""千年龜的殼：回村時存公共倉庫、共倉滿 10 由隊長去薩村寵物店兌換石幣券並用掉；背包快滿時原地存。
+"""千年龜的殼：回村時有殼就由隊長拿去薩村寵物店賣（換石幣券並用掉）；背包快滿時原地存。
+
+使用者 2026-11-05「只要回村，有龜殼就賣」「我不是要存回共倉」：不再湊滿 10 個。共倉只當轉交——
+隊員把殼存進去、隊長馬上全部領出來（只有隊長走到回收員旁邊），照 10／5／1 殼的兌換賣光（每殼都是 5000 石幣）。
+以下是舊的經過：
 
 使用者 2026-10-24：「1. 如果在波拉島打到龜殼存共倉　2. 滿 10 隊長回村順便賣卷」，
 同日改：「改一下，回村再檢查龜殼存倉」、「快滿 停止禦敵 非戰鬥狀態 存共倉」「不然太浪費時間」：
@@ -26,11 +30,14 @@ STONE_TICKETS = (90338, 90811, 90810,
 TICKET_SCRIPT = 1033                       # 道具表查不到 scripts 時的預設值
 EXCHANGE_ID = 4013                         # Item_NewExchangeItem：10 殼 → 石幣5萬券 90338
 SHELLS_PER_EXCHANGE = 10
+# 寵物店龜殼回收員 10315 的三種兌換（ExchangeItem.json，每殼都是 5000 石幣）：大的先換，剩下的用小的
+# 使用者 11-05「只要回村，有龜殼就賣」：不再湊滿 10 個，有幾個賣幾個
+EXCHANGES = ((4013, 10), (4012, 5), (4011, 1))
+MAX_SELL = 30                              # 一次回村最多賣幾個（上限保護；剩下的下次）
 BAG_SIZE = 15                              # 背包格數（同 quest/headless.py）
 FULL_FREE = 2                              # 背包空格 ≤ 這個數＝快滿 → 原地停遇敵存殼
 STORE_EVERY = 600.0                        # 原地存殼最短間隔（秒）：存不進去／背包被別的東西塞滿時不會每圈都停
 MAX_DEPOT_PAGES = 3                        # 數公共倉庫最多查幾頁（遇到空頁就停）
-MAX_EXCHANGES = 3                          # 一次回村最多換幾輪（每輪 10 殼）
 MAX_TICKET_USES = 30                       # 一隻角色一次回村最多用幾張券（上限保護）
 MAX_FAILS = 3                              # 連續失敗幾次就停用
 
@@ -79,7 +86,7 @@ class ShellExchange:
 
     # ---- 回村時（補血後、主動回村）----
     def on_village(self) -> str:
-        """已停戰鬥、人在薩村（或村裡的醫院）時呼叫：存殼 → 共倉 ≥10 就去寵物店兌換 → 全隊用掉石幣券。
+        """已停戰鬥、人在薩村（或村裡的醫院）時呼叫：殼交給隊長（經共倉）→ 有殼就去寵物店賣光 → 全隊用掉石幣券。
         **不負責傳回練功地點**（呼叫的人照原本流程傳回去）。回傳 ok／fail／skip，不丟例外。"""
         if not self.enabled:
             return SKIP
@@ -89,7 +96,7 @@ class ShellExchange:
             # 「倉庫或道具欄如果有石幣道具，一律打開使用」。順序（review 後）：
             # 1. 背包原本的券先用掉（券不能疊、一張一格，先空出格子）
             # 2. 每隻個倉：一疊一疊領，券領了馬上用；背包沒空格就留在倉庫下次（不算失敗）；一隻失敗不影響別隻
-            # 3. 背包的殼存共倉 → 4. 共倉查一次：券隊長一張一張領、用；殼 ≥10 就換 → 5. 剩下的券用完
+            # 3. 背包的殼存共倉 → 4. 共倉查一次：券隊長一張一張領、用；有殼就隊長全部領出來賣 → 5. 剩下的券用完
             ok, acts = True, 0
             self.ticket_stuck = set()
             for _, name in p.party:
@@ -108,7 +115,7 @@ class ShellExchange:
                 total, stacks = dep
                 good, n = self.pull_public_tickets()
                 ok, acts = ok and good, acts + n
-                if total >= SHELLS_PER_EXCHANGE:
+                if total > 0:                                  # 11-05：有殼就賣（以前要湊滿 10）
                     ok = self.exchange_at_shop(total, stacks) and ok
                     acts += 1
             for _, name in p.party:                            # 兌換拿到的券、還沒用完的也用掉
@@ -345,32 +352,40 @@ class ShellExchange:
         p.walk(SHOP_MAP, SHOP_PATH)
         return True
 
-    def exchange(self, rounds: int) -> int:
-        """開對話（NomalHandle type 6，只送不等）→ 送 rounds 次 4013。回傳成功幾次；result 不是 1 就停。"""
+    @staticmethod
+    def plan(n: int) -> List[Tuple[int, int]]:
+        """n 個殼 → [(兌換 ID, 每次幾殼)]，大的先換（23 → 10、10、1、1、1）。"""
+        out = []
+        for ex_id, per in EXCHANGES:
+            while n >= per:
+                out.append((ex_id, per))
+                n -= per
+        return out
+
+    def exchange(self, n: int) -> int:
+        """開對話（NomalHandle type 6，只送不等）→ 照 plan(n) 一次一次換。回傳換掉幾個殼；result 不是 1 就停。"""
         p = self.p
         p.leader().send("Role_NomalHandle", {"type": 6, "extra": 0})
-        done = 0
-        for _ in range(rounds):
-            r = p.leader().request("Item_NewExchangeItem", {"ID": EXCHANGE_ID}) or {}
+        sold = 0
+        for ex_id, per in self.plan(n):
+            r = p.leader().request("Item_NewExchangeItem", {"ID": ex_id}) or {}
             if r.get("result") != 1:
-                p.log(f"龜殼：兌換 {EXCHANGE_ID} 被拒（result 4＝離回收員太遠）：{r}")
+                p.log(f"龜殼：兌換 {ex_id}（{per} 殼）被拒（result 4＝離回收員太遠）：{r}")
                 break
-            done += 1
-        p.log(f"龜殼：兌換 {done} 次（10 殼 → 石幣5萬券）")
-        return done
+            sold += per
+        p.log(f"龜殼：賣了 {sold} 個殼（石幣 {sold * 5000}）")
+        return sold
 
     def exchange_at_shop(self, total: int, stacks) -> bool:
-        """隊長取出 10×輪數 → 走到回收員旁 → 兌換。回傳是否全部換成。"""
+        """隊長從共倉取出（最多 MAX_SELL）→ 走到回收員旁 → 全部賣掉。回傳是否全部賣成。"""
         p = self.p
-        rounds = min(total // SHELLS_PER_EXCHANGE, MAX_EXCHANGES)
-        got = self.withdraw(rounds * SHELLS_PER_EXCHANGE, stacks)
-        rounds = min(rounds, got // SHELLS_PER_EXCHANGE)
-        if rounds <= 0:
-            p.log("龜殼：取不出 10 個，這次不兌換")
+        got = self.withdraw(min(total, MAX_SELL), stacks)
+        if got <= 0:
+            p.log("龜殼：從公共倉庫取不出殼，這次不賣")
             return False
         if not self.go_to_collector():
             return False
-        return self.exchange(rounds) == rounds
+        return self.exchange(got) == got
 
     # ---- 石幣券 ----
     def tickets(self, name: str) -> List[dict]:
