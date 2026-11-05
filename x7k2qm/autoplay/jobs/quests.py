@@ -338,7 +338,7 @@ def set_leader(p, name: Optional[str]):
     """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
 
     執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
-    （2026-10-30 第五組 2016：四隻交完第 1 步，角色24的狗當時在出戰沒交成，
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色21的狗當時在出戰沒交成，
     隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
     if not name:
         return None
@@ -442,10 +442,16 @@ def split_members(p, group: int) -> bool:
     return len({tuple(sorted(doing(p, n, group))) for n in todo}) > 1
 
 
+GIVE_UP_SENDS = 2                # 放棄任務最多送幾次（沒看到清掉才重送）
+GIVE_UP_WAIT = 10.0              # 每次送完等狀態清掉幾秒
+
+
 def give_up(p, group: int) -> Dict[str, str]:
     """全隊放棄一個任務群組。`Task_NewTaskGiveUp{taskGroup}` **沒有 response**（用 request 會逾時），
     只能送出去再看 `Task_TaskInfo` 推回的狀態（2026-10-26 實機確認）。
-    五隻都沒有進行中的步驟才算成功；有人沒清掉就丟 JobError（規範第 2 點，不重送）。
+    五隻都沒有進行中的步驟才算成功；有人沒清掉就丟 JobError（規範第 2 點）。
+    沒看到清掉會**再送一次**：放棄同一個群組重送無害（已經放棄的再送也只是沒有進行中的步驟），
+    11-05 任務陣亡後重打時一隻 8 秒內沒推回狀態就整個劇本停住，前面三隻都正常清掉。
     """
     out = {}
     for _, name in p.party:
@@ -453,9 +459,15 @@ def give_up(p, group: int) -> Dict[str, str]:
         if not before:
             out[name] = "本來就沒有進行中的步驟"
             continue
-        p.clients[name].send("Task_NewTaskGiveUp", {"taskGroup": group})
-        ok = p.wait(lambda: not {t: v for t, v in (p.task_status.get(name) or {}).items()
-                                 if t // 100000 == group and v in IN_PROGRESS}, 8)
+        ok = False
+        for attempt in range(GIVE_UP_SENDS):
+            if attempt:
+                p.log(f"{name} 放棄任務 {group} 沒看到清掉，再送一次")
+            p.clients[name].send("Task_NewTaskGiveUp", {"taskGroup": group})
+            ok = p.wait(lambda: not {t: v for t, v in (p.task_status.get(name) or {}).items()
+                                     if t // 100000 == group and v in IN_PROGRESS}, GIVE_UP_WAIT)
+            if ok:
+                break
         after = doing(p, name, group)
         out[name] = f"放棄 {sorted(before)}" if ok else f"沒清掉：{after}"
         if not ok:
@@ -553,7 +565,7 @@ def restore_task_items(p, group: int) -> Dict[str, Dict[int, int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色67的 2D人龍進化石、角色65的 2D老虎自選蛋、角色105的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色63的 2D人龍進化石、角色95的 2D老虎自選蛋、角色88的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
