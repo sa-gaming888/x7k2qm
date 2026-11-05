@@ -51,7 +51,8 @@ class ShellExchange:
         self.enabled = enabled
         self.fails = 0                     # 連續失敗次數（成功歸零；到 MAX_FAILS 停用）
         self.last_store = 0.0              # 最後一次「試過」原地存殼的時間（不論成敗）
-        self.public_tickets: List[Tuple[int, int, int]] = []   # depot_shells 同一次查到的共倉石幣券
+        self.public_tickets: Dict[int, List[Tuple[int, int, int]]] = {}   # depot_shells 同一次查到的共倉石幣券
+        self.ticket_stuck: set = set()     # 這次回村用券沒看到數量減少的角色（不再重送）
         self._village_path: Optional[List[Tuple[int, int]]] = None
 
     # ---- 背包 ----
@@ -84,22 +85,38 @@ class ShellExchange:
             return SKIP
         p = self.p
         try:
-            # 使用者 11-05「每次回村補血都要檢查道具欄或個倉、共倉是否有龜殼可以賣」：
-            # 個倉的殼先領回背包（下面跟背包的一起存共倉），共倉每次都數，夠 10 就換
-            ok = self.pull_private()
+            # 使用者 11-05「每次回村補血都要檢查道具欄或個倉、共倉是否有龜殼可以賣」
+            # 「倉庫或道具欄如果有石幣道具，一律打開使用」。順序（review 後）：
+            # 1. 背包原本的券先用掉（券不能疊、一張一格，先空出格子）
+            # 2. 每隻個倉：一疊一疊領，券領了馬上用；背包沒空格就留在倉庫下次（不算失敗）；一隻失敗不影響別隻
+            # 3. 背包的殼存共倉 → 4. 共倉查一次：券隊長一張一張領、用；殼 ≥10 就換 → 5. 剩下的券用完
+            ok, acts = True, 0
+            self.ticket_stuck = set()
+            for _, name in p.party:
+                acts += self.use_tickets(name)
+            for _, name in p.party:
+                good, n = self.pull_depot(name, False)
+                ok, acts = ok and good, acts + n
             had = self.bag_shells()
             if had:
                 ok = self.store_all() and ok
-            total, stacks = self.depot_shells()
-            ok = self.pull_public_tickets() and ok
-            if total >= SHELLS_PER_EXCHANGE:
-                ok = self.exchange_at_shop(total, stacks) and ok
-            elif not had and ok and not any(self.tickets(n) for _, n in p.party):
-                return SKIP                                   # 三處都沒殼、也沒券：只查過倉庫，沒送任何動作
-            for _, name in p.party:                            # 背包裡原本就有的券也一起用掉
-                self.use_tickets(name)
+                acts += 1
+            dep = self.depot_shells()
+            if dep is None:
+                ok = False
+            else:
+                total, stacks = dep
+                good, n = self.pull_public_tickets()
+                ok, acts = ok and good, acts + n
+                if total >= SHELLS_PER_EXCHANGE:
+                    ok = self.exchange_at_shop(total, stacks) and ok
+                    acts += 1
+            for _, name in p.party:                            # 兌換拿到的券、還沒用完的也用掉
+                acts += self.use_tickets(name)
                 if self.tickets(name):                         # 沒用完（數量沒減少就停了）也算這次失敗
                     ok = False
+            if ok and not acts:
+                return SKIP                                   # 三處都沒殼、也沒券：只查過倉庫，沒送任何動作
         except Exception as e:  # noqa: BLE001
             p.log(f"龜殼：回村處理例外 {type(e).__name__}: {e}")
             ok = False
@@ -163,11 +180,20 @@ class ShellExchange:
                 p.log(f"龜殼：{name} 存 {it.get('overlay', 1)} 個進公共倉庫")
         return True
 
-    def _scan(self, client, public: bool, ids) -> Dict[int, List[Tuple[int, int, int]]]:
-        """查倉庫一次（第 1 頁起，遇空頁停，最多 MAX_DEPOT_PAGES 頁）：{itemId: [(page, uniqueIndex, 數量)]}，只收 ids。"""
+    # ---- 倉庫：查、領（使用者 11-05「每次回村都要檢查個倉、共倉」「石幣道具一律打開使用」）----
+    def _scan(self, client, public: bool, ids) -> Optional[Dict[int, List[Tuple[int, int, int]]]]:
+        """查倉庫一次（第 1 頁起，遇空頁停，最多 MAX_DEPOT_PAGES 頁）：{itemId: [(page, uniqueIndex, 數量)]}，只收 ids。
+        查詢逾時、例外、isOK false → 回 None（不能當成空的：共倉明明有殼卻記成 0 個，規範第 2 點）。"""
         out: Dict[int, List[Tuple[int, int, int]]] = {}
+        where = "公共倉庫" if public else "個人倉庫"
         for page in range(1, MAX_DEPOT_PAGES + 1):
-            r = client.request("ItemHandle_GetNewItemDepotInfo", {"page": page, "isPublic": public}) or {}
+            try:
+                r = client.request("ItemHandle_GetNewItemDepotInfo", {"page": page, "isPublic": public})
+            except Exception as e:  # noqa: BLE001
+                r = {"error": f"{type(e).__name__}: {e}"}
+            if not r or r.get("isOK") is False or "error" in r:
+                self.p.log(f"龜殼：查{where}第 {page} 頁失敗：{r}")
+                return None
             items = r.get("itemInfoList") or []
             if not items:
                 break
@@ -176,50 +202,68 @@ class ShellExchange:
                     out.setdefault(it["itemId"], []).append((page, it["uniqueIndex"], it.get("overlay", 1)))
         return out
 
-    def _pull(self, name: str, public: bool, ids, what: str, stacks=None) -> bool:
-        """這隻把倉庫裡 ids 的道具全部領回背包（stacks 沒給就自己查一次）。
-        領不出來（isOK false、背包沒增加）記日誌回 False；沒有就回 True。"""
-        p = self.p
-        if stacks is None:
-            stacks = [s for v in self._scan(p.clients[name], public, ids).values() for s in v]
-        if not stacks:
-            return True
-        where = "公共倉庫" if public else "個人倉庫"
+    def _has_room(self, name: str, item_id: int) -> bool:
+        """領這一疊之前：背包要有空格；殼另外可以疊進背包已有的那疊。持鎖時也能呼叫。"""
+        return self.bag_free(name) > 0 or (item_id == SHELL and self._count(name, (SHELL,)) > 0)
+
+    def _take(self, name: str, public: bool, item_id: int, stack: Tuple[int, int, int]) -> bool:
+        """這隻從倉庫領一疊回背包，等背包數量增加才算。"""
+        p, (page, uid, n) = self.p, stack
         with p.lock:
-            before = self._count(name, ids)
-        want = sum(n for _, _, n in stacks)
-        for page, uid, n in stacks:
+            before = self._count(name, (item_id,))
+        try:
             g = p.clients[name].request("ItemHandle_GetItemToNewDepot",
                                         {"page": page, "isPublic": public, "uniqueIndex": uid, "count": n}) or {}
-            if not g.get("isOK"):
-                p.log(f"龜殼：{name} 從{where}取出{what} {n} 個失敗（背包可能滿了）：{g}")
-                return False
-        p.wait(lambda: self._count(name, ids) >= before + want, 5)
-        with p.lock:
-            got = self._count(name, ids) - before
-        p.log(f"龜殼：{name} 從{where}取出{what} {got} 個")
-        return got >= want
+        except Exception as e:  # noqa: BLE001
+            g = {"error": f"{type(e).__name__}: {e}"}
+        ok = bool(g.get("isOK")) and p.wait(lambda: self._count(name, (item_id,)) >= before + n, 5)
+        where = "公共倉庫" if public else "個人倉庫"
+        p.log(f"龜殼：{name} 從{where}取出 {item_id}×{n}" + ("" if ok else f" 沒確認：{g}"))
+        return ok
 
-    def depot_shells(self) -> Tuple[int, List[Tuple[int, int, int]]]:
-        """隊長查公共倉庫。回傳 (殼總數, [(page, uniqueIndex, 數量)])；同一次查到的石幣券記在
-        `public_tickets`，給 pull_public_tickets 用（不用再查一次）。"""
+    def _take_all(self, name: str, public: bool, found: Dict[int, List[Tuple[int, int, int]]]) -> Tuple[bool, int]:
+        """一疊一疊領；券領到就馬上用掉（一張一格，不先全部堆進背包）。背包沒空格就把剩下的留在倉庫等下次，
+        不算失敗。回傳 (有沒有出錯, 做了幾個動作)。"""
+        acts = 0
+        for item_id, stacks in found.items():
+            for stack in stacks:
+                with self.p.lock:
+                    room = self._has_room(name, item_id)
+                if not room:
+                    self.p.log(f"龜殼：{name} 背包沒空格，{'公共' if public else '個人'}倉庫剩下的殼／券留到下次")
+                    return True, acts
+                if not self._take(name, public, item_id, stack):
+                    return False, acts
+                acts += 1
+                if item_id in STONE_TICKETS:
+                    acts += self.use_tickets(name)
+        return True, acts
+
+    def pull_depot(self, name: str, public: bool) -> Tuple[bool, int]:
+        """這隻把個倉（public=False）的殼、石幣券領回背包（券順便用掉）。回傳 (有沒有出錯, 做了幾個動作)。"""
+        found = self._scan(self.p.clients[name], public, (SHELL, *STONE_TICKETS))
+        if found is None:
+            return False, 0
+        return self._take_all(name, public, found)
+
+    def depot_shells(self) -> Optional[Tuple[int, List[Tuple[int, int, int]]]]:
+        """隊長查公共倉庫一次。回傳 (殼總數, [(page, uniqueIndex, 數量)])，查詢失敗回 None；
+        同一次查到的石幣券記在 `public_tickets`，給 pull_public_tickets 用（不用再查一次）。"""
         found = self._scan(self.p.leader(), True, (SHELL, *STONE_TICKETS))
+        if found is None:
+            self.public_tickets = {}
+            return None
         stacks = found.pop(SHELL, [])
-        self.public_tickets = [s for v in found.values() for s in v]
+        self.public_tickets = found
         total = sum(n for _, _, n in stacks)
-        self.p.log(f"龜殼：公共倉庫共 {total} 個" + (f"、石幣券 {sum(n for _, _, n in self.public_tickets)} 張"
-                                                   if self.public_tickets else ""))
+        n_tickets = sum(n for v in found.values() for _, _, n in v)
+        self.p.log(f"龜殼：公共倉庫共 {total} 個" + (f"、石幣券 {n_tickets} 張" if n_tickets else ""))
         return total, stacks
 
-    def pull_private(self) -> bool:
-        """每隻把個人倉庫裡的殼和石幣券全部領回背包（殼之後跟背包的一起存共倉、湊 10 個換券；券之後用掉）。
-        使用者 11-05「倉庫或道具欄如果有石幣道具，一律打開使用」。任一隻領不出來就停，回 False。"""
-        return all(self._pull(name, False, (SHELL, *STONE_TICKETS), "殼／石幣券") for _, name in self.p.party)
-
-    def pull_public_tickets(self) -> bool:
-        """隊長把上次 depot_shells 查到的公共倉庫石幣券全部領回背包（之後用掉）。"""
-        stacks, self.public_tickets = self.public_tickets, []
-        return self._pull(self.p.party[0][1], True, STONE_TICKETS, "石幣券", stacks)
+    def pull_public_tickets(self) -> Tuple[bool, int]:
+        """隊長把上次 depot_shells 查到的共倉石幣券一張一張領回背包、馬上用掉。"""
+        found, self.public_tickets = self.public_tickets, {}
+        return self._take_all(self.p.party[0][1], True, found)
 
     # ---- 兌換 ----
     def withdraw(self, want: int, stacks: List[Tuple[int, int, int]]) -> int:
@@ -327,6 +371,8 @@ class ShellExchange:
         """把這隻背包裡的石幣券**一張一張**用完。Item_ItemUse 沒有 response、實測一次只用掉 1 張 →
         每張送一次、等那格數量減少才送下一張；沒減少就停（不硬重送）。回傳用了幾張。"""
         p, used = self.p, 0
+        if name in self.ticket_stuck:
+            return 0
         table = p.item_table()
         stone0 = p.money.get(name, {}).get("stone")
         for _ in range(MAX_TICKET_USES):
@@ -339,6 +385,7 @@ class ShellExchange:
                                                   "data": [], "useMuch": False})
             if not p.wait(lambda: p.items[name].get(idx, {}).get("overlay", 0) < before, 5):
                 p.log(f"龜殼：{name} 用石幣券 {t['itemId']} 沒看到數量減少，停止用券")
+                self.ticket_stuck.add(name)                   # 這次回村不再對他送（不硬重送）
                 break
             used += 1
         if used:

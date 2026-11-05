@@ -15,6 +15,8 @@
   AUTO_SPIRIT           1（預設）＝隊長依屬性去競技場買精靈金幣、60 級自動穿；0＝不買
   POINT_PLAN            外掛自訂加點「隊長體,敏,攻/隊員體,敏,攻」，預設 100,100,999/80,80,999；none＝照舊（推薦加點）
   BATTLE_HEAL           外掛戰鬥中技能補血門檻 %（人物／寵物／騎寵），預設 50；none＝不設
+  NO_RETREAT            1＝不退回上一張圖（補血太頻繁、輸太多都不退；前進、回村補血照舊）；預設 0
+                        （使用者 2026-11-05「不退圖」）
   API_TOKEN             查詢 API 的 token（至少 16 字元；或 API_TOKEN_FILE）。有設才對外開 8790 埠，
                         沒設只能在容器裡查（docker exec … status_api）
   DATA_DIR              劇本進度、工作佇列、鎖、停止檔的目錄（預設 /data）
@@ -113,6 +115,8 @@ def party_argv(env: Mapping[str, str], stop_file: str) -> List[str]:
     heal = env.get("BATTLE_HEAL", DEFAULT_BATTLE_HEAL).strip()
     if heal and heal.lower() != "none":
         argv += ["--battle-heal", heal]
+    if env.get("NO_RETREAT", "0").strip() == "1":
+        argv.append("--no-retreat")
     return argv
 
 

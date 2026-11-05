@@ -171,6 +171,7 @@ class Views:
 
     def pets(self) -> dict:
         """寵物一覽＋忠誠度、檔次、評分（使用者 11-05「查寵物資訊時要包含忠誠度及檔次、分數資訊」）。"""
+        warm_grade_tables()
         p = self.p
         out = {}
         with p.lock:
@@ -192,6 +193,7 @@ class Views:
 
     def pet(self) -> dict:
         """寵物完整資料：伺服器 PetInfo 全部欄位（攻防敏、屬性、暴擊等、技能、評分 score）＋原名、狀態。"""
+        warm_grade_tables()
         p = self.p
         out = {}
         with p.lock:
@@ -377,6 +379,16 @@ class DepotQuery:
                     "uniqueIndex": x.get("uniqueIndex"), "bind": x.get("bind")}
         return {"petId": x.get("petId"), "name": self.p.pet_name(x), "lv": x.get("level"), "page": page,
                 "hp": x.get("hp"), "hpMax": x.get("hpMax"), "uniqueIndex": x.get("uniqueIndex"), **pet_extra(x)}
+
+
+def warm_grade_tables() -> None:
+    """在拿 party 鎖**之前**先把檔次用的設定表讀進快取（review：第一次查會在鎖裡讀、解析 Monster.json，
+    卡住主迴圈與封包事件）。讀不到就算了，pet_extra 會回「無資料」。"""
+    from .petgrade import _tables
+    try:
+        _tables()
+    except Exception:  # noqa: BLE001
+        pass
 
 
 def pet_extra(x: dict) -> dict:
