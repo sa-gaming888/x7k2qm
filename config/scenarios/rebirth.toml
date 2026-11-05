@@ -46,7 +46,7 @@ job = "clean --apply"
 
 [[step]]
 name = "恐龍博士 2016（狗 18、虎 30）"
-jobs = ["catch --apply --pets 49:1,307:1",
+jobs = ["catch --apply --buy-bait --pets 49:1,307:1",
         "train --pets 49:18,307:30 --start 海主人隧道Lv30",
         "quests --apply --retry 3 --groups 2016 --free 0",
         "clean --apply --confirm-release"]          # 布克布克放生
@@ -55,7 +55,7 @@ skip_if = "done=2016"
 [[step]]
 name = "卡坦 2019 第 1 步（4 色鯊魚 25）"
 jobs = ["pets --apply --mode park",                  # 金虎存倉，空出格子
-        "catch --apply --allow-full --pets 319:1,320:1,321:1,322:1",
+        "catch --apply --buy-bait --allow-full --pets 319:1,320:1,321:1,322:1",
         "train --pets 319:25,320:25,321:25,322:25 --start 海主人隧道Lv30",
         "pets --apply --mode rest",                  # 交之前全部休息、解鎖
         "quests --apply --retry 3 --groups 2019 --free 0 --stop-after 201900001",
@@ -64,7 +64,7 @@ skip_if = "done=2019"
 
 [[step]]
 name = "卡坦 2019 第 2 步（4 色雞 25）"
-jobs = ["catch --apply --allow-full --pets 346:1,347:1,348:1,349:1",
+jobs = ["catch --apply --buy-bait --allow-full --pets 346:1,347:1,348:1,349:1",
         "train --pets 346:25,347:25,348:25,349:25 --start 海主人隧道Lv30",
         "pets --apply --mode rest",
         "quests --apply --retry 3 --groups 2019 --free 0",
