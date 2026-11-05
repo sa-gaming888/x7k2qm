@@ -281,7 +281,7 @@ def _pet_gone(p, name: str, idx: int) -> bool:
 
 def do_store_pet(p, name: str, idx: int, pid: int) -> None:
     """存寵物倉庫第 1 頁：個倉滿了改存共倉、兩邊都滿就停（同 pets.store_pet，LESSONS #89／#93）。
-    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色109個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
+    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色99個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
     _pet_check(p, name, idx, pid, "存倉")
     public = p.pet_depot_target(name)
     if public is None:
