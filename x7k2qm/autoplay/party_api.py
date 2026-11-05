@@ -6,7 +6,9 @@
 
 安全：
   - **只聽 127.0.0.1**、**只有 GET**（其他方法回 405）、不提供任何會改變遊戲狀態的動作。
-    唯一例外 `POST /infolog`：只打開「人物寵物每分鐘印一次、5 分鐘後自動關」的日誌，不送封包、不碰遊戲狀態。
+    例外 `POST /infolog`：只打開「人物寵物每分鐘印一次、5 分鐘後自動關」的日誌，不送封包、不碰遊戲狀態。
+    例外 `POST /debug/*`（debugtap.py，使用者 2026-11-05「runtime debug」）：封包追蹤、出招統計只記錄不送；
+    `POST /debug/fast` 暫時關快戰是唯一會送封包的（由練功主迴圈送，時間到照平常規則開回來）。全部有時限、時間到自動關。
   - 記憶體狀態（/state /roles /role /bag /equip /pets /tasks /buffs /battle /waigua）**不送任何封包**，
     讀的時候拿 `Party.lock` 一次讀完；持鎖期間**不呼叫** Party 裡也要拿這把鎖的函式
     （bag、snapshot、state、locks、pet_index、wounded、hp_lows…；threading.Lock 不可重入 → 死結）。
@@ -24,6 +26,8 @@ import time
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from typing import Callable, Dict, List, Optional, Tuple
+
+from .debugtap import DebugError, history, minutes_of
 
 MAX_REQUESTS = 30           # 倉庫查詢：單次最多送幾個請求
 CACHE_SECONDS = 60.0        # 倉庫查詢：結果快取秒數
@@ -72,12 +76,41 @@ def _values(v) -> list:
     return list(v or [])
 
 
+class DebugUnavailable(Exception):
+    """這個常駐沒有除錯功能（例如測試用的假 Party）。"""
+
+
 class Views:
     """記憶體狀態的唯讀檢視。每個方法拿 Party.lock 一次，持鎖期間只讀欄位、不呼叫拿鎖的函式。"""
 
     def __init__(self, party) -> None:
         self.p = party
         self._task_names: Optional[Tuple[Dict[int, str], Dict[int, str]]] = None
+
+    # ---- 執行中除錯（debugtap；POST 開、時間到自動關）----
+    def debug(self) -> dict:
+        p = self.p
+        tap = getattr(p, "debug", None)
+        if tap is None:
+            raise DebugUnavailable()
+        out = tap.status()
+        until = getattr(p, "debug_fast_until", 0.0)
+        out["fast"] = {"off": True, "until": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(until))} \
+            if until else None
+        return out
+
+    def debug_battle(self) -> dict:
+        tap = getattr(self.p, "debug", None)
+        if tap is None:
+            raise DebugUnavailable()
+        out = tap.battle_report()
+        out["fastOff"] = bool(getattr(self.p, "debug_fast_until", 0.0))
+        return out
+
+    def debug_history(self, q: Dict[str, str]) -> dict:
+        with self.p.lock:
+            rows = list(self.p.history)
+        return history(rows, q.get("names", ""), q.get("who", ""), q.get("limit"), q.get("maxlen"))
 
     # ---- 共用 ----
     def _names(self) -> List[str]:
@@ -413,7 +446,7 @@ class _Stop(Exception):
 
 
 ENDPOINTS = ("state", "roles", "role", "bag", "equip", "pets", "pet", "tasks", "buffs", "battle", "waigua", "depot", "petdepot",
-             "scenario", "jobs", "health", "openapi.json")
+             "scenario", "jobs", "health", "debug", "debug/battle", "debug/history", "openapi.json")
 DOCS = {   # 端點 → 說明（/openapi.json 用）
     "state": "總覽：地圖、隊伍、每隻人物與戰寵騎寵血量、經驗加成、金錢、劇本進度",
     "roles": "人物一覽：等級、轉數、血量、地圖、座標、石幣",
@@ -431,6 +464,16 @@ DOCS = {   # 端點 → 說明（/openapi.json 用）
     "scenario": "劇本進度：第幾步、狀態、最近結果",
     "jobs": "工作佇列：排隊中、執行中、最近完成",
     "health": "連線狀態（不需要 token；容器健康檢查用）",
+    "debug": "執行中除錯：封包追蹤、出招統計、暫時關快戰現在開著哪些、到幾點自動關",
+    "debug/battle": "出招統計（POST /debug/battle 開；每隻放了什麼技能幾次、耗 MP、戰場屬性；關掉後保留最後一份）",
+    "debug/history": "最近收到的封包（不用先開；?names=Battle_*,Item_* 萬用字元、?who=角色、?limit=50、?maxlen=2000）",
+}
+DEBUG_POSTS = {   # POST 端點 → 說明（全部要 token；有時限，預設 5 分鐘、最多 30 分鐘，時間到自動關）
+    "/debug/trace": "封包追蹤：?names=Battle_*（必填，萬用字元，* 全部）&who=角色&dir=recv,send&minutes=5&maxlen=2000，"
+                    "原始內容印到日誌（[debug] 收／送）",
+    "/debug/battle": "出招統計：?minutes=10；結果 GET /debug/battle（快戰開著伺服器不送出招，要配 /debug/fast）",
+    "/debug/fast": "暫時關快戰：?minutes=10；時間到照平常規則開回來（唯一會送封包的除錯動作）",
+    "/debug/stop": "提早關：?what=trace|battle|fast|all",
 }
 OPEN = ("/health",)          # 不用 token 的端點（不含遊戲資料）
 
@@ -446,6 +489,9 @@ def openapi() -> dict:
                                   "responses": {"200": {"description": "JSON"}}}}
     paths["/infolog"] = {"post": {"summary": "人物寵物（等級、血量）每分鐘印一次日誌，5 分鐘後自動關；再打一次從現在重算",
                                   "responses": {"200": {"description": "JSON"}}}}
+    for path, desc in DEBUG_POSTS.items():
+        paths.setdefault(path, {})["post"] = {"summary": desc, "responses": {"200": {"description": "JSON"},
+                                                                             "400": {"description": "參數錯"}}}
     return {"openapi": "3.0.3", "info": {"title": "唯讀查詢 API", "version": "1"},
             "components": {"securitySchemes": {"bearer": {"type": "http", "scheme": "bearer"}}},
             "security": [{"bearer": []}], "paths": paths}
@@ -510,13 +556,19 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
                 if path in ("/depot", "/petdepot"):
                     code, body = depot.query(path[1:])
                     return self._send(code, only_role(body, role))
+                if path == "/debug/history":
+                    return self._send(200, views.debug_history(q))
                 fn = {"/state": views.state, "/roles": views.roles, "/role": views.role, "/bag": views.bag,
                       "/equip": views.equip, "/pets": views.pets, "/pet": views.pet, "/buffs": views.buffs,
                       "/battle": views.battle, "/waigua": views.waigua, "/scenario": views.scenario, "/jobs": views.jobs,
-                      "/health": views.health}.get(path)
+                      "/health": views.health, "/debug": views.debug, "/debug/battle": views.debug_battle}.get(path)
                 if fn is None:
                     return self._send(404, {"error": "找不到", "endpoints": [f"/{e}" for e in ENDPOINTS]})
                 return self._send(200, only_role(fn(), role))
+            except DebugError as e:
+                return self._send(400, {"error": str(e)})
+            except DebugUnavailable:
+                return self._send(503, {"error": "這個常駐沒有除錯功能"})
             except Exception as e:  # noqa: BLE001  讀取出錯只回錯誤，不影響練功
                 return self._send(500, {"error": f"{type(e).__name__}: {e}"})
 
@@ -531,8 +583,9 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
             self._send(405, {"error": "只支援 GET（唯讀）"})
 
         def do_POST(self):
-            path = urllib.parse.urlparse(self.path).path.rstrip("/")
-            if path != "/infolog":
+            u = urllib.parse.urlparse(self.path)
+            path = u.path.rstrip("/")
+            if path != "/infolog" and path not in DEBUG_POSTS:
                 return self._deny()
             try:                                 # 同 _deny：先把請求內容讀掉再回
                 n = min(int(self.headers.get("Content-Length") or 0), 65536)
@@ -542,9 +595,39 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
                 pass
             if not self._authorized(path):
                 return self._send(401, {"error": "要帶 token（Authorization: Bearer <token>）"})
+            if path in DEBUG_POSTS:
+                q = dict(urllib.parse.parse_qsl(u.query))
+                try:
+                    return self._send(200, self._debug_post(path, q))
+                except DebugError as e:
+                    return self._send(400, {"error": str(e)})
+                except DebugUnavailable:
+                    return self._send(503, {"error": "這個常駐沒有除錯功能"})
             until = views.p.start_info_log()
             return self._send(200, {"ok": True, "every": views.p.INFO_EVERY, "until": int(until),
                                     "untilIso": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(until))})
+
+        def _debug_post(self, path: str, q: Dict[str, str]) -> dict:
+            p = views.p
+            tap = getattr(p, "debug", None)
+            if tap is None:
+                raise DebugUnavailable()
+            if path == "/debug/trace":
+                tap.start_trace(q.get("names", ""), q.get("who", ""), q.get("dir", ""), q.get("minutes"),
+                                q.get("maxlen"))
+            elif path == "/debug/battle":
+                tap.start_battle(q.get("minutes"))
+            elif path == "/debug/fast":
+                if not hasattr(p, "debug_fast_off"):
+                    raise DebugUnavailable()
+                p.debug_fast_off(minutes_of(q.get("minutes")))
+            elif path == "/debug/stop":
+                what = q.get("what", "all")
+                if what in ("fast", "all") and hasattr(p, "debug_fast_stop"):
+                    p.debug_fast_stop()
+                if what != "fast":
+                    tap.stop(what)
+            return views.debug()
 
         do_PUT = do_DELETE = do_PATCH = _deny
 

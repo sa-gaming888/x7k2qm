@@ -26,11 +26,12 @@ from typing import Callable, Dict, List, Optional, Tuple
 
 from ..client.config import load
 from ..client.session import open_client
+from .debugtap import DebugTap
 from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色37"), (10003796, "角色21"), (10003799, "角色40"), (10003803, "角色19"), (10003804, "角色45")]
+PARTY = [(10003754, "角色38"), (10003796, "角色24"), (10003799, "角色47"), (10003803, "角色23"), (10003804, "角色31")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -150,6 +151,10 @@ class Party:
         self._battle_t0: Optional[float] = None  # 這場第一個 CmdBegin 的時間
         self._battle_n = 0                       # 這場目前幾個回合
         self.history: List[tuple] = []          # (角色, 事件)：登入後收到的所有事件（超過 20000 筆會砍掉舊的）
+        # 執行中除錯（查詢 API /debug；使用者 2026-11-05「需要一個 runtime debug 方式」）：有時限、時間到自動關
+        self.debug = DebugTap(log)
+        self.debug_fast_until = 0.0              # 暫時關快戰到幾點（0＝沒在關）；主迴圈 tick_debug 送、到時間開回來
+        self.debug_fast_pending = False          # API 要求關快戰，等主迴圈送
         # 任務狀態另外記一份完整的：history 會被砍，常駐跑幾小時後解任務重播不到「第 2 步進行中」，
         # 把空的第 1 步當可接重接 → 多拿一隻金豬（2026-10-25 第二組劇本，LESSONS #41 換條路再犯，#82）
         self.task_status: Dict[str, Dict[int, int]] = {}
@@ -317,6 +322,7 @@ class Party:
 
     def _register(self, name: str, c) -> None:
         self._watch_team_sends(c)
+        self._watch_debug_sends(name, c)
         self.clients[name] = c
         self.petinfo.setdefault(name, {})
         self.items.setdefault(name, {})
@@ -339,10 +345,24 @@ class Party:
         for req in POST_LOGIN_SENDS:
             c.send(req, {})
 
+    def _watch_debug_sends(self, name: str, c) -> None:
+        """送出的封包也給 /debug/trace dir=send 看（沒開追蹤時只多一次判斷）。"""
+        orig = getattr(c, "send", None)
+        if orig is None or getattr(orig, "_debug_watch", False):
+            return
+
+        def send(proto, data=None, *a, **kw):
+            self.debug.on_send(name, proto, data)
+            return orig(proto, data, *a, **kw)
+        send._debug_watch = True
+        send._team_watch = getattr(orig, "_team_watch", False)
+        c.send = send
+
     def _listener(self, name: str):
         def on(e):
             n = e.get("name")
             d = e.get("data") or {}
+            self.debug.on_recv(name, e, bool(self.party) and name == self.party[0][1])
             with self.lock:
                 # 留一份事件紀錄，給之後才掛上的模組（例如無畫面解任務）重播登入時的推送（任務、背包、已完成任務）
                 self.history.append((name, e))
@@ -617,7 +637,9 @@ class Party:
         """5 隻都要開快速戰鬥（`WaiGua_FastBattleHandle{flg}`）；**只能在練功地圖開**（使用者；
         例外：四大洞窟靈石 1 樓，jobs lingshi --afk，使用者 2026-10-31 同意），所以要在傳送之後、
         開原地遇敵之前呼叫。做任務的地圖會把它關掉。回傳沒確認到的角色（空＝5 隻都開了）。
-        設定檔 [waigua] fast_battle = false：不動。"""
+        設定檔 [waigua] fast_battle = false：不動。/debug/fast 暫時關快戰期間也不動。"""
+        if self.debug_fast_until:
+            return []
         if self.waigua is not None and not self.waigua.fast_battle:
             return []
         with self.lock:
@@ -714,12 +736,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色33在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色43在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色40 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色47 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1087,7 +1109,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色37個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色38個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1744,7 +1766,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色26的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色25的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -1922,6 +1944,38 @@ class Party:
 
     INFO_EVERY = 60.0                            # 人物寵物：打開後每 60 秒印一次
     INFO_WINDOW = 300.0                          # 打開 5 分鐘後自動關
+
+    # ---- /debug/fast：暫時關快戰（快戰時伺服器只回勝負、不送出招；2026-11-05 容器實跑）----
+    def debug_fast_off(self, minutes: float) -> float:
+        """查詢 API 呼叫：只記時間，封包由主迴圈 tick_debug 送（API 執行緒不送、不拿 Party.lock 送請求）。
+        已經在關就從現在重算。回傳開回來的時間。"""
+        self.debug_fast_until = time.time() + minutes * 60
+        self.debug_fast_pending = True
+        return self.debug_fast_until
+
+    def debug_fast_stop(self) -> None:
+        """提早結束：下一輪主迴圈就開回來。"""
+        if self.debug_fast_until:
+            self.debug_fast_until = min(self.debug_fast_until, time.time())
+
+    def tick_debug(self) -> None:
+        """主迴圈每輪呼叫：除錯時間到自動關；要關快戰就送；關快戰時間到照平常規則開回來（ensure_fast）。
+        只在主迴圈（練功）呼叫，不在 nap／service：做任務時快戰是故意關的，不能在那裡被開回來。"""
+        self.debug.tick()
+        if self.debug_fast_pending:
+            self.debug_fast_pending = False
+            for _, n in self.party:
+                if n in self.clients:
+                    try:
+                        self.clients[n].request("WaiGua_FastBattleHandle", {"flg": False})
+                    except Exception as e:  # noqa: BLE001  除錯不能讓練功停下來
+                        self.log(f"[debug] {n} 關快戰失敗：{type(e).__name__}: {e}")
+            self.log(f"[debug] 暫時關快戰（看出招用），到 {time.strftime('%H:%M:%S', time.localtime(self.debug_fast_until))}"
+                     " 自動開回來")
+        if self.debug_fast_until and time.time() >= self.debug_fast_until:
+            self.debug_fast_until = 0.0
+            bad = self.ensure_fast()
+            self.log(f"[debug] 暫時關快戰時間到，開回來{'' if not bad else f'（沒確認：{bad}）'}")
 
     def start_info_log(self) -> float:
         """查詢 API `POST /infolog` 呼叫（使用者 2026-11-04「打 api 開啟時，每一分鐘會打印一次，五分鐘後自動關閉」）。
@@ -2163,6 +2217,7 @@ class Party:
                     if self.state().kicked:
                         self.log("停止：被擠下線"); return 1
                     self.tick_info_log()
+                    self.tick_debug()
                     self.nap(interval if r is None else 1)
                     continue
                 if r is not None:
@@ -2199,6 +2254,7 @@ class Party:
                 # 使用者：固定通知（含第一次）都要有人物、寵物的完整狀態
                 self.log_snapshot({"wins": s.wins, "losses": s.losses, "judge": act})
             self.tick_info_log()
+            self.tick_debug()
             if act == "stop":
                 self.log(f"停止：{arg}"); return 1
             if self.signin_day != time.strftime("%Y-%m-%d") and act in ("ok", "wait"):

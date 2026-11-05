@@ -15,7 +15,7 @@
 - **轉生前的同意關卡**：預設停在關卡只練功；`AUTO_REBIRTH=1` 才自動通過。
 - **出錯就停**：逾時、被拒、數值對不上就停在原地並記日誌，不自動重試；程式崩潰有限次自動重開（5、10、20 分鐘）；被同角色在別處登入擠下線時不重開。
 - **請求間隔**：每個請求等到回應才送下一個，間隔隨機 0.3～0.8 秒。
-- **查詢 API**：唯讀，不會改變遊戲狀態（唯一的 POST 是 `/infolog`，只開日誌）。
+- **查詢 API**：唯讀，不會改變遊戲狀態（POST 只有 `/infolog` 開日誌、`/debug/*` 執行中除錯；除錯裡只有「暫時關快戰」會送封包，時間到自動開回來）。
 
 ## 快速開始
 
@@ -126,7 +126,32 @@ curl http://127.0.0.1:8790/openapi.json -H "Authorization: Bearer $TOKEN"   # �
 | `/health` | 連線狀態（不需要 token） |
 
 每個端點都可加 `?role=名字` 只看一隻。只接受 GET，其他方法回 405；
-唯一例外 `POST /infolog`：日誌每 60 秒印一次每隻的人物、戰寵、騎寵等級與血量，5 分鐘後自動關（開著再打一次從現在重算），不送遊戲封包。
+例外 `POST /infolog`：日誌每 60 秒印一次每隻的人物、戰寵、騎寵等級與血量，5 分鐘後自動關（開著再打一次從現在重算），不送遊戲封包。
+
+### 執行中除錯（`/debug`）
+
+不重開、不重新登入就能看封包與出招。全部要 token、有時限（`minutes` 預設 5、最多 30），時間到自動關；結果印在日誌（`[debug]` 開頭）。
+
+```bash
+API="http://127.0.0.1:8790"; H="Authorization: Bearer $TOKEN"
+curl -H "$H" "$API/debug/history?names=Battle_*&limit=20"                 # 最近收到的封包（不用先開，最多約 2 萬筆）
+curl -X POST -H "$H" "$API/debug/trace?names=Item_*,Task_*&dir=recv,send&minutes=5"   # 收／送的封包原始內容印到日誌
+curl -X POST -H "$H" "$API/debug/fast?minutes=10"                          # 暫時關快戰（快戰時伺服器只回勝負）
+curl -X POST -H "$H" "$API/debug/battle?minutes=10"                        # 出招統計
+curl -H "$H" "$API/debug/battle"                                           # 每隻放了什麼技能幾次、耗 MP、戰場屬性
+curl -H "$H" "$API/debug"                                                  # 現在開著哪些、到幾點
+curl -X POST -H "$H" "$API/debug/stop?what=all"                            # 提早關（trace／battle／fast／all）
+```
+
+| 端點 | 內容 |
+| :-- | :-- |
+| `GET /debug/history` | 最近收到的封包：`names`（萬用字元，逗號分隔，預設全部）、`who`（角色）、`limit`（預設 50、最多 500）、`maxlen`（每筆截斷字數，預設 2000） |
+| `POST /debug/trace` | 封包追蹤：`names`（必填，`*` 全部）、`who`、`dir`（`recv`、`send`，預設 recv）、`minutes`、`maxlen` |
+| `POST /debug/battle` | 出招統計（只算隊長那條連線），結果 `GET /debug/battle`；戰鬥位置對到名字，合擊每個出手的人各算一次 |
+| `POST /debug/fast` | 暫時關快戰：由練功主迴圈送（做任務時不送），時間到照平常規則開回來；期間練功會變慢 |
+| `POST /debug/stop` | 提早關：`what` 是 `trace`、`battle`、`fast` 或 `all`（預設） |
+
+抓不到的：伺服器沒送的資料（例如快戰時每回合出招，要先 `/debug/fast`）。除錯不能送任意封包。
 沒設 `API_TOKEN` 時 API 只在容器內開：`docker exec bot python -m x7k2qm.autoplay.status_api state`。
 
 ## 資料目錄 `/data`
