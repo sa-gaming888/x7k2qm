@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色30,角色21   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色58,角色33   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色30、角色21領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色58、角色33領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -39,7 +39,7 @@ NAME = "pets"
 HELP = ("寵物欄整理（--mode list|grade|park|rest|restore|store-all|swap-tiger|refresh|store|release-public|"
         "release-private；不加 --apply 只列；grade 只讀：每隻寵物滿檔／缺 n 檔；info 只讀：每隻完整資訊）")
 MODES = ("list", "grade", "info", "park", "rest", "restore", "store-all", "swap-tiger", "ride-train", "refresh", "equip-fight", "take", "withdraw", "deposit", "store", "release-worst", "release-public",
-         "release-private", "release-below", "dragons", "share", "graduate")
+         "release-private", "release-below", "dragons", "share", "graduate", "ride", "retire")
 GRADUATE_SCORE = 1000                  # 使用者 11-05：分數滿 1000 的寵物改名成分數、存倉、換寵
 FIVE_DRAGONS = (54, 55, 56, 57, 481)   # 五色人龍（利則諾頓、揚奇洛斯、邦浦洛斯、邦奇諾、布魯頓）
 KEEP_DIFF = 3                          # 使用者 2026-11-01：五色人龍留 +3 檔以上練，練到有機會 1000 分
@@ -65,6 +65,8 @@ def add_args(ap) -> None:
                     help="take：滿級（140）的寵物也拿（預設只拿未滿 140）")
     ap.add_argument("--pet-uid", dest="pet_uid", default=None, help="share、withdraw：寵物唯一編號（withdraw 同種多隻時指定）")
     ap.add_argument("--pet-name", dest="pet_name", default=None, help="share：改成這個名字")
+    ap.add_argument("--public", action="store_true",
+                    help="deposit：改存共倉（共倉放不下就停，不改存個倉；使用者 2026-11-05）")
     ap.add_argument("--min-score", dest="min_score", type=int, default=GRADUATE_SCORE,
                     help=f"graduate：評分到這個分數就改名存倉（預設 {GRADUATE_SCORE}）")
     ap.add_argument("--confirm-release", action="store_true",
@@ -85,6 +87,8 @@ def check(args) -> None:
         raise JobError("store 模式要給 --who、--slot、--pet-id（三個都核對過才存）")
     if mode == "take" and not getattr(args, "pet_id", None):
         raise JobError("take 模式要給 --pet-id（要鎖成戰寵的寵物）")
+    if mode == "ride" and (not getattr(args, "pet_uid", None) or not getattr(args, "who", None)):
+        raise JobError("ride 模式要給 --who 和 --pet-uid（要當騎寵的那隻）")
     if mode == "withdraw" and (not getattr(args, "pet_id", None) or not getattr(args, "who", None)):
         raise JobError("withdraw 模式要給 --who 和 --pet-id")
     if mode == "deposit" and not getattr(args, "pet_id", None):
@@ -286,7 +290,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色53，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色60，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -324,10 +328,72 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
           + (f"、騎寵 → {ride_pid}" if ride_pid is not None else ""))
 
 
+def do_ride(p, name: str, uid: int) -> None:
+    """指定唯一編號的寵物換成騎寵、戰寵不動（使用者 11-05「第三組騎寵換一下」：騎寵 140 不長經驗）。
+    身上沒有就從個倉／共倉領；比人物等級高騎不上就停。原本的騎寵留在寵物欄休息。"""
+    fight_u, ride_u = p.locks(name)
+    if uid == ride_u:
+        p.log(f"{name} 騎寵已經是 {uid}，不動")
+        return
+    if uid == fight_u:
+        raise JobError(f"{name} 寵物 {uid} 是鎖定的戰寵，不能同時當騎寵")
+    pet = next((v for v in slots(p, name).values() if v.get("uniqueIndex") == uid), None)
+    if pet is None:
+        rows = [r for r in p.pet_depots(name) if r.get("uniqueIndex") == uid]
+        if not rows:
+            raise JobError(f"{name} 身上和個倉、共倉都找不到寵物 {uid}")
+        lv = char_level(p, name)
+        if lv and (rows[0].get("level") or 0) > lv:
+            raise JobError(f"{name} 寵物 {uid}（{rows[0].get('level')} 級）高於人物 {lv} 級，騎不上")
+        pet = take_pet(p, name, rows[0])
+    lock(p, name, fight_u, uid)
+    p.log(f"{name} 騎寵 → {p.pet_name(pet)}（{pet.get('level')} 級）")
+
+
+def loadout_pet_ids(profile, name: str, folder: Optional[str] = None) -> set:
+    """共用情境配置（config/loadouts/*.json：英雄戰場、副本…）這組／這隻角色會用到的戰寵種類。
+    retire 不能把它們存倉：切配置只找身上那隻、寵物倉不自動領（11-05 第二組菲奇亞 2258 被收進個倉，LESSONS #170）。"""
+    from ..loadout import SHARED_DIR
+    folder = folder or SHARED_DIR
+    out = set()
+    try:
+        files = [f for f in os.listdir(folder) if f.endswith(".json") and ".example." not in f]
+    except OSError:
+        return out
+    for f in files:
+        try:
+            with open(os.path.join(folder, f), encoding="utf-8") as fp:
+                d = json.load(fp)
+        except (OSError, ValueError):
+            continue
+        layers = [d.get("all") or {}, (d.get("roles") or {}).get(name) or {}]
+        prof = (d.get("profiles") or {}).get(str(profile)) or {}
+        layers += [prof.get("*") or {}, prof.get(name) or {}]
+        for layer in layers:
+            pid = (layer.get("pet") or {}).get("petId") if isinstance(layer, dict) else None
+            if pid:
+                out.add(int(pid))
+    return out
+
+
+def do_retire(p, name: str) -> None:
+    """身上滿 140、不是鎖定戰寵／騎寵的寵物改名成評分數字、存倉（使用者 11-05「140的把分數改名後存倉庫」，
+    同 graduate 的命名）。已經是那個名字就不再改。"""
+    fight_u, ride_u = p.locks(name)
+    keep = loadout_pet_ids(getattr(p, "profile", None), name)
+    olds = [v for v in slots(p, name).values() if (v.get("level") or 0) >= MAX_PET_LV
+            and v.get("uniqueIndex") not in (fight_u, ride_u) and v.get("petId") not in keep]
+    for v in olds:
+        if v.get("score"):
+            rename_pet(p, name, v["uniqueIndex"], str(v["score"]))
+        idx = next(k for k, x in slots(p, name).items() if x.get("uniqueIndex") == v["uniqueIndex"])
+        store_pet(p, name, idx)
+
+
 def do_withdraw(p, name: str, pid: int, uid: Optional[int] = None) -> None:
     """只領出、不鎖定（使用者 2026-11-01「我是取出 沒有要戰鬥」）：個倉＋共倉找那種寵物，戰寵、騎寵都不動。
     倉庫有多隻就停，不替使用者挑。"""
-    # 指定了唯一編號就不會拿錯，身上有同種也照領（使用者 11-03：女寵 150074 放到已帶老鼠三號的角色17身上）
+    # 指定了唯一編號就不會拿錯，身上有同種也照領（使用者 11-03：女寵 150074 放到已帶老鼠三號的角色27身上）
     if uid is None and any(v.get("petId") == pid for v in slots(p, name).values()):
         raise JobError(f"{name} 身上已經有寵物 {pid}，不再領（同種要多帶一隻用 --pet-uid 指定）")
     if uid is not None and any(v.get("uniqueIndex") == uid for v in slots(p, name).values()):
@@ -340,14 +406,20 @@ def do_withdraw(p, name: str, pid: int, uid: Optional[int] = None) -> None:
           f"／耐 {got.get('defArg')}／速 {got.get('dexArg')}，沒有鎖定")
 
 
-def do_deposit(p, name: str, pid: int) -> None:
+def do_deposit(p, name: str, pid: int, public: bool = False) -> None:
     """身上那種寵物存**個人**寵物倉庫（withdraw 的相反，使用者 2026-11-02「把mm存到個人倉庫」）：
-    個倉滿了就停，不像 store_pet 改存共倉；要剛好 1 隻、不能是鎖定的戰寵／騎寵。"""
+    個倉滿了就停，不像 store_pet 改存共倉；要剛好 1 隻、不能是鎖定的戰寵／騎寵。
+    `--public` 改存**共倉**（使用者 11-05「存共倉」：五隻剛抓的邦浦洛斯）；共倉滿了就停，不改存個倉。"""
     hits = [k for k, v in slots(p, name).items() if v.get("petId") == pid]
     if len(hits) != 1:
         raise JobError(f"{name} 身上有 {len(hits)} 隻寵物 {pid}（要剛好 1 隻才存）")
-    if slots(p, name)[hits[0]].get("uniqueIndex") in p.locks(name):
+    uid = slots(p, name)[hits[0]].get("uniqueIndex")
+    if uid in p.locks(name):
         raise JobError(f"{name} 第 {hits[0]} 格是鎖定的戰寵／騎寵，不存")
+    if public:
+        to_public(p, name, uid)
+        p.log(f"{name} 寵物 {pid}（{uid}）存共倉")
+        return
     if p.pet_depot_target(name) is not False:
         raise JobError(f"{name} 個人寵物倉庫第 1 頁滿了，不改存共倉，停")
     store_pet(p, name, hits[0])
@@ -555,7 +627,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色30等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色58等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
@@ -976,6 +1048,13 @@ def run(p, args) -> Tuple[str, dict]:
             {"mode": mode, "done": list(counts), "released": sum(counts.values())}
     act = ACTIONS.get(mode)
     done = []
+    if mode == "deposit" and getattr(args, "public", False):
+        # 共倉全帳號共用：送第一筆之前就算好放不放得下，不存一半才停
+        from ..headless_party import PET_DEPOT_NUM
+        want = sum(1 for n in names if any(v.get("petId") == args.pet_id for v in slots(p, n).values()))
+        have = len(p.pet_depot(names[0], public=True))
+        if have + want > PET_DEPOT_NUM:
+            raise JobError(f"共倉第 1 頁 {have}/{PET_DEPOT_NUM}，放不下 {want} 隻（第 2 頁要鑽石解鎖，不碰）；沒有送任何東西")
     for n in names:                    # 一隻出錯就停（JobError 往上丟），後面的角色不做
         if mode == "store":
             do_store_slot(p, n, args)
@@ -985,7 +1064,11 @@ def run(p, args) -> Tuple[str, dict]:
         elif mode == "withdraw":
             do_withdraw(p, n, args.pet_id, int(args.pet_uid) if getattr(args, "pet_uid", None) else None)
         elif mode == "deposit":
-            do_deposit(p, n, args.pet_id)
+            do_deposit(p, n, args.pet_id, public=bool(getattr(args, "public", False)))
+        elif mode == "ride":
+            do_ride(p, n, int(args.pet_uid))
+        elif mode == "retire":
+            do_retire(p, n)
         else:
             act(p, n)
         p.log(f"{n} {mode} 完成｜寵物欄 {_desc(p, slots(p, n).values())}")

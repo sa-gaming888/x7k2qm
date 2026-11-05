@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色30邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色58邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -129,7 +129,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色30誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色58誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -273,6 +273,16 @@ def run(p, args) -> Tuple[str, dict]:
         if bad:
             raise JobError(f"--who 有不在這組的角色：{bad}")
         names = [n for n in names if n in who]
+    if not getattr(args, "apply", False):
+        # 不加 --apply 只列、不送任何封包。以前這裡沒判斷，11-05 第二組「先列清單」卻真的抓了五隻（LESSONS #171）
+        plan_rows = {}
+        for n in names:
+            have = {pid: _count(p, n, pid) for pid, _ in plan}
+            need = sum(max(0, want - have[pid]) for pid, want in plan)
+            plan_rows[n] = {"have": have, "need": need, "bait": _bait(p, n), "slots": len(_pets(p, n))}
+            p.log(f"{n} 只列：身上 {plan_rows[n]['slots']} 隻、已有 {have}、要抓 {need} 隻、"
+                  f"背包誘餌 {plan_rows[n]['bait']} 個（上限 {slot_max} 隻）")
+        return "只列，沒有抓（加 --apply 才抓）", {"plan": plan_rows}
     threads = [threading.Thread(target=runner, args=(n,), daemon=True) for n in names]
     for t in threads:
         t.start()
