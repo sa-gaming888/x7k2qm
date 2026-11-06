@@ -116,6 +116,26 @@ class Views:
             rows = list(self.p.history)
         return history(rows, q.get("names", ""), q.get("who", ""), q.get("limit"), q.get("maxlen"))
 
+    def debug_mem(self) -> dict:
+        """記憶體診斷：行程 RSS、gc 追蹤的物件依型別計數（前 30）、幾個常駐容器的長度、每條連線的監聽器數。
+        11-06 k8s 常駐每小時漲約 47MB、7～8 小時就 OOM（上限 512Mi），找是哪種物件在累積。"""
+        import collections
+        import gc
+        import threading
+        counts = collections.Counter(type(o).__name__ for o in gc.get_objects())
+        rss = None
+        try:
+            with open("/proc/self/status") as fh:
+                rss = next((ln.split(":", 1)[1].strip() for ln in fh if ln.startswith("VmRSS")), None)
+        except OSError:
+            pass
+        p = self.p
+        lens = {k: len(getattr(p, k)) for k in ("history", "battles", "round_times", "battle_rounds")
+                if hasattr(getattr(p, k, None), "__len__")}
+        listeners = {n: len(getattr(c, "listeners", []) or []) for n, c in getattr(p, "clients", {}).items()}
+        return {"rss": rss, "threads": threading.active_count(), "objects": sum(counts.values()),
+                "types": dict(counts.most_common(30)), "lens": lens, "listeners": listeners}
+
     # ---- 共用 ----
     def _names(self) -> List[str]:
         return [n for _, n in self.p.party]
@@ -467,7 +487,7 @@ class _Stop(Exception):
 
 
 ENDPOINTS = ("state", "roles", "role", "bag", "equip", "pets", "pet", "tasks", "buffs", "battle", "waigua", "depot", "petdepot",
-             "scenario", "jobs", "health", "debug", "debug/battle", "debug/history", "openapi.json")
+             "scenario", "jobs", "health", "debug", "debug/battle", "debug/history", "debug/mem", "openapi.json")
 DOCS = {   # 端點 → 說明（/openapi.json 用）
     "state": "總覽：地圖、隊伍、每隻人物與戰寵騎寵血量、經驗加成、金錢、劇本進度",
     "roles": "人物一覽：等級、轉數、血量、地圖、座標、石幣",
@@ -487,6 +507,7 @@ DOCS = {   # 端點 → 說明（/openapi.json 用）
     "health": "連線狀態（不需要 token；容器健康檢查用）",
     "debug": "執行中除錯：封包追蹤、出招統計、暫時關快戰現在開著哪些、到幾點自動關",
     "debug/battle": "出招統計（POST /debug/battle 開；每隻放了什麼技能幾次、耗 MP、戰場屬性；關掉後保留最後一份）",
+    "debug/mem": "記憶體診斷：行程 RSS、物件依型別計數（前 30）、常駐容器長度、每條連線監聽器數（找記憶體一直漲）",
     "debug/history": "最近收到的封包（不用先開；?names=Battle_*,Item_* 萬用字元、?who=角色、?limit=50、?maxlen=2000）",
 }
 DEBUG_POSTS = {   # POST 端點 → 說明（全部要 token；有時限，預設 5 分鐘、最多 30 分鐘，時間到自動關）
@@ -656,7 +677,8 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None, j
                 fn = {"/state": views.state, "/roles": views.roles, "/role": views.role, "/bag": views.bag,
                       "/equip": views.equip, "/pets": views.pets, "/pet": views.pet, "/buffs": views.buffs,
                       "/battle": views.battle, "/waigua": views.waigua, "/scenario": views.scenario, "/jobs": views.jobs,
-                      "/health": views.health, "/debug": views.debug, "/debug/battle": views.debug_battle}.get(path)
+                      "/health": views.health, "/debug": views.debug, "/debug/battle": views.debug_battle,
+                      "/debug/mem": views.debug_mem}.get(path)
                 if fn is None:
                     return self._send(404, {"error": "找不到", "endpoints": [f"/{e}" for e in ENDPOINTS]})
                 return self._send(200, only_role(fn(), role))
