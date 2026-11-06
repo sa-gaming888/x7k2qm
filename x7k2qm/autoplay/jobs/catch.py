@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色65邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色72邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -131,7 +131,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色65誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色72誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -208,6 +208,17 @@ def make_room(p, name: str, over: int, targets: set) -> None:
     for k, v in rest[:over]:
         p.log(f"{name} 寵物欄放不下要抓的，休息中的 {p.pet_name(v)}（{v.get('level')} 級）先存個倉")
         store_pet(p, name, k)
+    left = over - len(rest[:over])
+    ride = next(((k, v) for k, v in _pets(p, name).items()
+                 if ride_u and ride_u != fight_u and v.get("uniqueIndex") == ride_u
+                 and v.get("petId") not in targets), None)
+    if left > 0 and ride:
+        # 還不夠就連騎寵也存：抓寵用不到騎寵。11-06 cgy 一組卡坦重試時騎寵被領回來佔格子，
+        # 劇本自動重試只從抓寵接著做、不會再跑 park，每次「超過上限 5」
+        from .pets import unlock
+        unlock(p, name, fight_u, 0)
+        p.log(f"{name} 寵物欄放不下要抓的，騎寵 {p.pet_name(ride[1])}（{ride[1].get('level')} 級）先存個倉")
+        store_pet(p, name, ride[0])
 
 
 def reuse_depot(p, name: str, plan: List[Tuple[int, int]], slot_max: int) -> Dict[int, int]:
@@ -243,10 +254,12 @@ def reuse_depot(p, name: str, plan: List[Tuple[int, int]], slot_max: int) -> Dic
 
 
 def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
-              timeout: float = CATCH_TIMEOUT, buy: bool = False) -> Dict[int, int]:
-    """一隻角色抓完整個清單，回傳 {petId: 實際抓到幾隻}。這隻出錯就停這隻（丟 JobError）。"""
+              timeout: float = CATCH_TIMEOUT, buy: bool = False, reuse: bool = True) -> Dict[int, int]:
+    """一隻角色抓完整個清單，回傳 {petId: 實際抓到幾隻}。這隻出錯就停這隻（丟 JobError）。
+    reuse=False：不先從倉庫領同種（petgoal --refill 用：倉庫裡同種的是練完存倉的，領出來會被當成補到了）。"""
     c = p.clients[name]
-    reuse_depot(p, name, plan, slot_max)
+    if reuse:
+        reuse_depot(p, name, plan, slot_max)
     todo = [(pid, n - _count(p, name, pid)) for pid, n in plan]
     todo = [(pid, n) for pid, n in todo if n > 0]
     need = sum(n for _, n in todo)

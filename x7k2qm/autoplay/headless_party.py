@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色65"), (10003796, "角色52"), (10003799, "角色74"), (10003803, "角色51"), (10003804, "角色103")]
+PARTY = [(10003754, "角色72"), (10003796, "角色33"), (10003799, "角色103"), (10003803, "角色42"), (10003804, "角色65")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -445,6 +445,10 @@ class Party:
                 elif n == "Pet_PetInfo":
                     for p in d.get("petInfo") or []:
                         x = self.petinfo[name].setdefault(p["petIndex"], {})
+                        if p.get("uniqueIndex") and x.get("uniqueIndex") and p["uniqueIndex"] != x["uniqueIndex"]:
+                            # 這格換成另一隻寵物：舊那隻的欄位全清掉。沒改過名的寵物伺服器不帶 name，
+                            # 舊版沿用前一隻改好的「1000」→ petgoal 把剛領出／剛抓的 1 級當成已達標存倉（11-06，LESSONS #177）
+                            x.clear()
                         x.update({k: p[k] for k in ("petId", "level", "status", "uniqueIndex", "hp", "hpMax", "name",
                                                     # 四個成長欄位；瑪蕾菲雅（女寵）這四欄是餵靈石進度 0～50
                                                     # （參考專案 ops/marketpet：IL PetLogic.isMM；jobs/lingshi 查，使用者 10-31）
@@ -746,12 +750,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色106在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色60在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色74 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色103 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1157,7 +1161,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色65個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色72個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1814,7 +1818,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色31的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色50的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -1882,10 +1886,15 @@ class Party:
                 # 上次練寵中途結束沒改回，鎖定還停在要練的寵物（2026-10-22 誤把金豬記成原本的戰寵）；
                 # 或戰寵鎖定被清成 0（卡坦交寵物前全部休息、解鎖，2026-10-25 第二組練雞時「戰 0」停，#88）
                 # → 原本的戰寵取「除了它、騎寵、金虎以外等級最高的那隻」
+                # 都沒有就退一步取騎寵以外的金虎（11-06 第二、三組練人龍：原本戰寵就是金虎，斷線時戰寵沒改回、
+                # 停在人龍上，重開「找不到原本的戰寵」停，LESSONS #178）
+                trained = pid if isinstance(pid, tuple) else (pid,)
                 with self.lock:
-                    others = [(p.get("level", 0), p.get("uniqueIndex")) for p in self.petinfo[name].values()
-                              if p.get("uniqueIndex") not in (target, ride) and p.get("petId") not in ((*pid, GOLD_TIGER) if isinstance(pid, tuple) else (pid, GOLD_TIGER))
-                              and (p.get("petId") or 0) > 0]
+                    rest = [p for p in self.petinfo[name].values()
+                            if p.get("uniqueIndex") not in (target, ride) and (p.get("petId") or 0) > 0
+                            and p.get("petId") not in trained]
+                others = [(p.get("level", 0), p.get("uniqueIndex")) for p in rest if p.get("petId") != GOLD_TIGER] \
+                    or [(p.get("level", 0), p.get("uniqueIndex")) for p in rest]
                 fight = max(others)[1] if others else 0
             if level >= lv:
                 continue
