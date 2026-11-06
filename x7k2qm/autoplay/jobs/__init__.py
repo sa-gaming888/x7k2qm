@@ -58,9 +58,11 @@ def registry() -> Dict[str, object]:
     from . import buy, pets, points, rebirth
     from . import after_trans
     from . import fruit
+    from . import mall
+    from . import auction
     from . import signin
     from . import spirit
-    return {m.NAME: m for m in (after_trans, buy, catch, clean, fruit, pets, points, quests, rebirth, resume, signin, spirit, train)}
+    return {m.NAME: m for m in (after_trans, auction, buy, catch, clean, fruit, mall, pets, points, quests, rebirth, resume, signin, spirit, train)}
 
 
 Log = Callable[[str], None]
