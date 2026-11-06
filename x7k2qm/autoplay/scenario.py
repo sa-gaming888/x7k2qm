@@ -30,7 +30,8 @@ import tomllib
 from typing import Callable, List, Optional, Tuple
 
 PET_START = "海主人隧道Lv30"       # 自動練寵的起點（使用者：從海主人隧道跳圖）
-PET_TRAIN_MAX = 3                  # 同一步自動練寵最多幾次（使用者同意的例外）
+PET_TRAIN_MAX = 3                  # 同一步、同一隻寵物自動練寵最多幾次（使用者同意的例外）
+PET_TRAIN_STEP_MAX = 10            # 同一步全部寵物加起來最多幾次（英雄島要練 1483、1481、1482 三隻）
 HISTORY_MAX = 300                  # 進度檔保留幾筆結果
 SCENARIO_KEYS = {"name", "loop"}
 STEP_KEYS = {"name", "until", "job", "jobs", "gate", "pet_train", "pet_start", "skip_if"}
@@ -357,7 +358,7 @@ class Runner:
     def _advance(self, d: dict) -> bool:
         """往下一步；回 True＝這次 tick 到此為止（回到第 1 步或全部做完）。
         回到第 1 步不在同一次 tick 接著看：至少隔一輪練功，條件一直成立也不會原地空轉。"""
-        d.update(index=d["index"] + 1, sub=0, pet_tries=0, approved=None, pending=None)
+        d.update(index=d["index"] + 1, sub=0, pet_tries=0, pet_tries_by={}, approved=None, pending=None)
         if d["index"] >= len(self.sc.steps):
             if self.sc.loop:
                 d.update(index=0, round=d.get("round", 1) + 1, step_name=self.sc.steps[0].name, state="run")
@@ -491,14 +492,19 @@ class Runner:
             return
         m = PET_NEED.search(detail or "")
         if status == "failed" and st.pet_train and argv[:1] == ["quests"] and m:
-            if d.get("pet_tries", 0) >= PET_TRAIN_MAX:
-                self._stop(d, f"自動練寵已經 {PET_TRAIN_MAX} 次，quests 還是要練寵：{detail}")
-                return
-            d["pet_tries"] = d.get("pet_tries", 0) + 1
+            # 每隻寵物各算次數：英雄島 2031 要練三隻不同的寵物，整步共用 3 次的話剛好用完、
+            # 任何一隻要重練就停（11-06 第三組 1482 用到第 3/3 次）
             pet = f"{m.group(1)}:{m.group(2)}"
+            by = d.setdefault("pet_tries_by", {})
+            if by.get(pet, 0) >= PET_TRAIN_MAX or d.get("pet_tries", 0) >= PET_TRAIN_STEP_MAX:
+                self._stop(d, f"自動練寵 {pet} 已經 {by.get(pet, 0)} 次（這一步共 {d.get('pet_tries', 0)} 次），"
+                              f"quests 還是要練寵：{detail}")
+                return
+            by[pet] = by.get(pet, 0) + 1
+            d["pet_tries"] = d.get("pet_tries", 0) + 1
             self._hist(d, "need_pet", detail)
             self.log(f"劇本：{self._where(d)} 要寵物 {m.group(1)} 練到 {m.group(2)} 級 → 自動練寵"
-                     f"（第 {d['pet_tries']}/{PET_TRAIN_MAX} 次）")
+                     f"（這隻第 {by[pet]}/{PET_TRAIN_MAX} 次，這一步共 {d['pet_tries']} 次）")
             self._enqueue(d, ["train", "--pets", pet, "--start", st.pet_start], "pet_train")
             return
         self._stop(d, f"工作 {' '.join(argv)} {status}：{detail}")
@@ -583,7 +589,7 @@ def _approve(d: dict, a) -> str:
 def _resume(d: dict, a) -> str:
     if d.get("state") != "stopped":
         raise ScenarioError(f"劇本沒有停止，不用 resume（{describe(d)}）")
-    d.update(state="run", stop_reason=None, pending=None, pet_tries=0)
+    d.update(state="run", stop_reason=None, pending=None, pet_tries=0, pet_tries_by={})
     if a.skip:
         d["sub"] = d.get("sub", 0) + 1
         d.setdefault("history", []).append({"round": d.get("round", 1), "step": d.get("index", 0) + 1,
