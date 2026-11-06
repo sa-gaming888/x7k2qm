@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色72邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色101邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -131,7 +131,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色72誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色101誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -221,6 +221,23 @@ def make_room(p, name: str, over: int, targets: set) -> None:
         store_pet(p, name, ride[0])
 
 
+def store_extras(p, name: str, plan: List[Tuple[int, int]], over: int) -> None:
+    """要抓的物種身上已經多於要的數量（抓錯種，例如抓 322 卻抓到第二隻 319）：多的先存個倉，等級低的先存。
+    make_room 不碰要抓的物種，11-06 cgy 一組卡坦身上兩隻 319、沒有 322，補抓 322 每次「超過上限 5」。"""
+    from .pets import store_pet
+    fight_u, ride_u = p.locks(name)
+    for pid, n in plan:
+        same = sorted(((k, v) for k, v in _pets(p, name).items() if v.get("petId") == pid
+                       and v.get("status") not in (2, 3) and v.get("uniqueIndex") not in (fight_u, ride_u)),
+                      key=lambda kv: -(kv[1].get("level") or 0))
+        for k, v in same[n:][:over]:
+            p.log(f"{name} 寵物欄放不下要抓的，多的一隻 {p.pet_name(v)}（{v.get('level')} 級）先存個倉")
+            store_pet(p, name, k)
+            over -= 1
+        if over <= 0:
+            return
+
+
 def reuse_depot(p, name: str, plan: List[Tuple[int, int]], slot_max: int) -> Dict[int, int]:
     """要抓的寵物個人寵物倉已經有同種的，先領出來用（等級高的優先），不再花誘餌重抓。
     11-06：每次換版 Pod 重開、劇本從頭跑，卡坦第 1 步先 `pets park` 把上次抓好練好的鯊魚存倉、再重抓 4 隻，
@@ -266,6 +283,8 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
     if not need:
         p.log(f"{name} 已經都有，不用抓")
         return {}
+    if len(_pets(p, name)) + need > slot_max:
+        store_extras(p, name, plan, len(_pets(p, name)) + need - slot_max)
     if len(_pets(p, name)) + need > slot_max:
         make_room(p, name, len(_pets(p, name)) + need - slot_max, {pid for pid, _ in plan})
     if len(_pets(p, name)) + need > slot_max:
