@@ -122,7 +122,12 @@ class Views:
         import collections
         import gc
         import threading
-        counts = collections.Counter(type(o).__name__ for o in gc.get_objects())
+        objs = gc.get_objects()
+        counts = collections.Counter(type(o).__name__ for o in objs)
+        # dict 依前幾個鍵分型、list 依長度分組：型別計數只看得到「dict 很多」，看不出是哪一種資料在累積
+        shapes = collections.Counter(",".join(sorted(map(str, list(o)[:6]))) for o in objs if type(o) is dict)
+        lists = collections.Counter(min(len(o), 10) for o in objs if type(o) is list)
+        del objs
         rss = None
         try:
             with open("/proc/self/status") as fh:
@@ -134,7 +139,8 @@ class Views:
                 if hasattr(getattr(p, k, None), "__len__")}
         listeners = {n: len(getattr(c, "listeners", []) or []) for n, c in getattr(p, "clients", {}).items()}
         return {"rss": rss, "threads": threading.active_count(), "objects": sum(counts.values()),
-                "types": dict(counts.most_common(30)), "lens": lens, "listeners": listeners}
+                "types": dict(counts.most_common(30)), "dictShapes": dict(shapes.most_common(20)),
+                "listLens": {str(k): v for k, v in sorted(lists.items())}, "lens": lens, "listeners": listeners}
 
     # ---- 共用 ----
     def _names(self) -> List[str]:
