@@ -8,6 +8,7 @@
 - 龜殼回村有幾個就賣幾個（寵物店回收員 1 殼／5 殼／10 殼三種兌換，每殼都是 5000 石幣），不再存在公共倉庫湊滿 10 個；一次回村最多賣 30 個。
 
 ### Added
+- `jobs auction`：背包道具上架集市換石幣（`Other_MyItemShopGoods`，未實機），回報到期時間；`--apply` 要加 `--confirm-list`（使用者 11-06：上架阿布水 100 萬，用自己別的帳號買下轉石幣）。
 - 查詢 API 執行中除錯 `/debug`：不重開就能查最近收到的封包（`GET /debug/history`）、追蹤收／送的封包（`POST /debug/trace`）、統計每隻出招與耗 MP（`POST /debug/battle`）、暫時關快戰看出招（`POST /debug/fast`）；全部要 token、有時限（最多 30 分鐘）時間到自動關。
 - 掛載設定檔 `/config/bot.toml`（或 `CONFIG_FILE`）：練功參數 `[bot]`、劇本與道具處置規則表 `[files]`、外掛設定 `[waigua]` 全部寫在檔案裡，改設定不用改程式；預設值在內建的 `config/bot.toml`。
 - 外掛設定每次登入（轉生後也會）照設定檔檢查：隱藏、快戰、首次動作、加點、戰鬥中補血；`[waigua.raw.<協定>]` 可以直接設其他外掛欄位（補氣、逃跑、自動吃離線道具…）。

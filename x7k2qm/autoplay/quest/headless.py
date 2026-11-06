@@ -139,7 +139,7 @@ class HeadlessQuest:
     def dead(self) -> List[str]:
         """**目前** hp 剩 1 的人。看最新血量，不是「歷史上出現過 hp=1」——建立執行器時會重播
         `Party.history`（登入後的所有事件），舊的 hp=1 會讓人永遠被當成死亡：2026-10-30 第五組
-        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色29']」，要重啟常駐清掉
+        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色40']」，要重啟常駐清掉
         history 才會好。"""
         return [n for n, hp in self.hp.items() if hp == 1]
 
@@ -156,7 +156,7 @@ class HeadlessQuest:
         """交寵物型：每隻都要有該寵物且等級夠；會給寵物：寵物欄（上限 5）至少空一格（使用者）。不符合就停，不送請求。"""
         # 只看**這一步還在進行中**的人：已經做完那一步的人狀態是 None（伺服器只推目前那一步），
         # 他們的寵物早就交出去了，算進來會停在「要寵物 N 練到 L 級」（2026-10-30 第五組 2016，
-        # 隊長換成落後的角色18重跑第 1 步）。全員都還沒接（都 None）時照舊看全隊。
+        # 隊長換成落後的角色24重跑第 1 步）。全員都還沒接（都 None）時照舊看全隊。
         doers = [n for n in self.actors if self.tasks[n].get(step.task_id) in (1, 4)] or list(self.actors)
         with self.lock:
             # petId ≤ 0 是空格（寵物交出去後那格變 petId -1；2026-10-22 誤算成 5 隻）
@@ -256,7 +256,7 @@ class HeadlessQuest:
     def rest_pet(self, name: str, idx: int) -> None:
         """要交的寵物在出戰／騎乘中就先改休息——出戰中的交不出去（提示 80183
         「所需寵物狀態為戰鬥或騎乘，無法繼續操作」）。以前都靠人先跑一次 `pets --mode rest`，
-        漏掉就整組卡住（2026-10-30 第五組 2016：角色18的狗在出戰沒交成，四隻先走到第 2 步，
+        漏掉就整組卡住（2026-10-30 第五組 2016：角色24的狗在出戰沒交成，四隻先走到第 2 步，
         之後怎麼跑都對不起來）。`NewPet_NewPetChangeStatus` 沒有 response，send 後看 `Pet_PetInfo`。"""
         with self.lock:
             if (self.pets[name].get(idx) or {}).get("status") not in (2, 3):
@@ -295,7 +295,7 @@ class HeadlessQuest:
         # 這不是「出錯重試」：是伺服器已知的行為，上限 2 輪、補完還沒好就停。
         # 只對**進行中**（1／4）的人交：狀態 None 的是已經做完那一步的人（伺服器只推目前那一步），
         # 把他們也算進去會在 pet_slot 找不到寵物而停（2026-10-30 第五組 2016：四隻早就交完狗，
-        # 隊長換成落後的角色18重跑第 1 步）。
+        # 隊長換成落後的角色24重跑第 1 步）。
         mine = [n for n in self.actors if self.tasks[n].get(s.task_id) in (1, 4)]
         for attempt in (1, 2):
             todo = [n for n in mine if self.tasks[n].get(s.task_id) != 2]
@@ -516,7 +516,7 @@ class HeadlessQuest:
             self.log(f"任務群組 {group} 全隊都已完成")
             return                                  # 已完成就直接跳過，不檢查空格
         if done:
-            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色76完成，
+            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色58完成，
             # 已完成的任務放棄指令清不掉，整組就永遠卡著、轉生做不了）。已完成的人留在隊伍裡跟著打，
             # 但不接任務、不交付、不列入狀態檢查。步驟不一致（大家都在做、停在不同步）仍然停，見下面。
             self.actors = [n for n in self.clients if n not in done]
