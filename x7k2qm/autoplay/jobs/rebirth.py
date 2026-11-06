@@ -28,7 +28,7 @@
 
 from typing import Dict, List, Tuple
 
-from . import JobError
+from . import JobError, quests
 from . import pets as pets_job
 
 NAME = "rebirth"
@@ -186,7 +186,42 @@ def build_quest(p, group: int, log, grid_fn, need_free: int, stop_after, battle_
     return real(p, group, log, grid_fn, need_free=need_free, stop_after=stop_after, battle_timeout=battle_timeout)
 
 
+DEATH_RETRY = 3                   # 轉生任務戰鬥有人被打死：重新組隊、回村補血後重打幾次
+
+
 def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
+    """跑一段執行器；有人被打死就重新組隊、回村補血後重打（最多 DEATH_RETRY 次），其他錯誤照舊停。
+    11-06 第五組轉生 2004 打到機暴前角色65被打死，劇本整個停住；1.82 的 quests 早就有 --retry，轉生沒有。"""
+    for tries in range(DEATH_RETRY + 1):
+        try:
+            return _run_quest_once(p, group, grid_fn, need_free, stop_after)
+        except JobError as e:
+            msg = str(e)
+            dead, split = "被打死" in msg, "隊員任務狀態不一致" in msg
+            if not (dead or split) or tries >= DEATH_RETRY:
+                raise
+            if dead:
+                p.log(f"轉生 {group}：有人被打死，重新組隊、回村補血後重打（第 {tries + 1}/{DEATH_RETRY} 次）")
+                with p.lock:
+                    p.s.team = []                  # 陣亡的人被送回記錄點、隊伍散了，快取還是 5 人
+                if not p.form_team():
+                    raise JobError(f"轉生 {group}：重打前重新組隊失敗")
+                if not p.heal_at_samugil():
+                    raise JobError(f"轉生 {group}：重打前回村補血失敗")
+            lag = quests.laggards(p, group) if quests.split_members(p, group) else None
+            if lag:
+                # 陣亡那隻停在前一步（11-06 第五組角色65停在 200400002、其他人 200400003）：落後的人補到同一步，
+                # 其他人跟隊。**不放棄**：轉生前幾步已經交出四大證明，放棄就拿不回來、再也轉不了
+                behind, upto = lag
+                p.log(f"轉生 {group}：隊員進度分岔，{behind} 先補做到 {upto}，其他人跟隊（第 {tries + 1}/{DEATH_RETRY} 次）")
+                quests.run_one(p, group, need_free, grid_fn, stop_after=upto, battle_timeout=BATTLE_TIMEOUT, only=behind)
+            elif split:
+                raise                              # 分岔又補不了（有人沒有進行中的步驟）：停下來給人看，不放棄
+            if not p.set_loop(False):
+                raise JobError(f"轉生 {group}：重打前關不了原地遇敵")
+
+
+def _run_quest_once(p, group: int, grid_fn, need_free: int, stop_after=None):
     """跑一段執行器；QuestStop 轉成 JobError，跑完拿掉這段掛上的監聽器（下一段重新掛、重播 history）。"""
     from ..quest.headless import QuestStop
     before = {n: list(getattr(c, "listeners", [])) for n, c in p.clients.items()}
