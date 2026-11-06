@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色87邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色58邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -107,6 +107,8 @@ def take_bait(p, name: str, need: int) -> bool:
     return False
 
 
+BUY_LOCK = threading.Lock()        # 五隻平行抓寵，但買誘餌一次只讓一隻買（石幣全帳號共用，同時買會互相誤判）
+BUY_CONFIRM_WAIT = 10.0            # 買完等誘餌 +1、石幣扣款推回來幾秒
 BUY_PRICE = 50000                  # OneKeyBuy 表 90402 = {stone 50000}（送前再核對一次）
 BUY_MAX = 5                        # 一隻角色一次最多買幾個（上限保護）
 
@@ -129,7 +131,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色87誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色58誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -146,7 +148,8 @@ def buy_bait(p, name: str, n: int) -> None:
         r = p.clients[name].request("Item_oneKeyBuyItem", {"itemId": BAIT, "itemNum": 1}) or {}
         # **石幣是帳號共用**：五隻同時買，每隻看到的扣款是大家加起來的（2026-10-27 第五組：
         # 以為只扣 50,000，實際看到 −200,000），所以只要求「有扣、至少一份、鑽石沒變」。
-        p.wait(lambda: _bait_raw(p, name) >= c0 + 1 and (p.money.get(name, {}).get("stone") or 0) <= s0 - price, 6)
+        p.wait(lambda: _bait_raw(p, name) >= c0 + 1 and (p.money.get(name, {}).get("stone") or 0) <= s0 - price,
+               BUY_CONFIRM_WAIT)
         with p.lock:
             s1, d1 = p.money.get(name, {}).get("stone"), p.money.get(name, {}).get("denar")
         c1 = _bait(p, name)
@@ -260,7 +263,10 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
                f"要用石幣補買加 --buy-bait（每個 {BUY_PRICE:,} 石幣）")
         if buy:
             try:
-                buy_bait(p, name, need - _bait(p, name))     # 只買缺的量
+                # 11-06 00:10 第四、五組五隻同時買：別隻同時扣款、誘餌推回慢 →「誘餌 3→3、石幣多扣」JobHold，
+                # 錢扣了卻停住。一次只讓一隻買，扣款就對得上
+                with BUY_LOCK:
+                    buy_bait(p, name, need - _bait(p, name))     # 只買缺的量
             except JobError as e:                            # JobHold（花了錢對不上）照舊往上丟
                 if type(e) is not JobError:
                     raise

@@ -44,15 +44,27 @@ def not_reborn(p) -> List[str]:
 def run(p, args) -> Tuple[str, dict]:
     start = getattr(args, "start", None) or START
     names = [n for _, n in p.party]
+    with p.lock:
+        unborn = [n for n in names if not p.trans.get(n) or p.trans[n] < 1]
+        fresh = [n for n in names if p.s.levels.get(n) == 1]
     bad = not_reborn(p)
-    if not names or bad:
+    if not names or unborn:
         raise JobError(f"轉生後規範只套「1 級、轉數 ≥ 1」的角色，這些不是：{bad or '沒有角色'}；沒有送任何東西")
+    if bad:
+        # 已經轉生、只是不是 1 級了：上次規範套過（之後傳送失敗、常駐重開練功升了級）。舊版判定失敗，
+        # 劇本最後一步永遠過不去、回不到第 1 步（11-06 第一組）。只對還是 1 級的套規範，其他人照常傳送、開快戰
+        p.log(f"轉生後規範：{bad} 已經不是 1 級（上次套過），只做傳送、開快戰"
+              + (f"；{fresh} 還是 1 級，照套規範" if fresh else ""))
+        names = fresh
+        if not names:                        # 全隊都套過、已經在練功了：不用再傳回起點（會白退回低等圖）
+            p.no_retreat = True
+            return f"轉生後規範之前已套過（{'、'.join(bad)}），照目前地圖練功；不允許退圖", {"names": []}
     if not getattr(args, "apply", False):
         p.log(f"轉生後規範會套在：{'、'.join(names)}，之後傳到 {start}")
         return "只列（沒加 --apply，沒有送任何動作）", {"names": names, "start": start}
     if not p.form_team():
         raise JobError("組隊失敗")
-    if not p.init_after_trans(names):
+    if names and not p.init_after_trans(names):
         raise JobError("轉生後規範有項目沒確認（看日誌），不傳送")
     if not p.teleport_team(start):
         raise JobError(f"傳送到 {start} 失敗")

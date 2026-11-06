@@ -32,7 +32,7 @@ BATCH = 5                        # Item_batchDelItem 一次最多幾格
 STEP_WAIT = 6.0                  # 每個動作等推送確認的秒數
 MAX_EAT = 20                     # 同一格最多吃幾次（疊著的一次只消耗一個，上限保護）
 RELEASE_MAX_LV = 30              # 放生規則只丟這個等級以下的（任務送的工具寵）；練過的要使用者指名
-                                 # （2026-10-29 角色71 136 級戰寵被規則表放生，LESSONS #103）
+                                 # （2026-10-29 角色93 136 級戰寵被規則表放生，LESSONS #103）
 
 
 def add_args(ap) -> None:
@@ -134,7 +134,7 @@ def make_plan(p, name: str, rules: Rules, depot: Optional[Dict[int, int]] = None
         if r.action == "release" and (pet.get("level") or 0) > RELEASE_MAX_LV:
             # 2026-10-29 第三組：規則表「烏力斯坦 11 → release」沒有等級條件，卡坦開跑前跑過
             # `pets --mode park`（寵物全存倉、鎖定清 0、狀態變休息）→ 上面那個「戰寵／騎寵不動」
-            # 的保護失效，角色71 **136 級的戰寵**就被放生了（不可逆）。
+            # 的保護失效，角色93 **136 級的戰寵**就被放生了（不可逆）。
             # 放生規則是為了丟任務送的 1 級工具寵，練過的一律不丟，要丟請使用者指名。
             plan.pet_skipped.append((idx, pid, f"{pet.get('level')} 級，超過放生上限 {RELEASE_MAX_LV}"))
             continue
@@ -281,7 +281,7 @@ def _pet_gone(p, name: str, idx: int) -> bool:
 
 def do_store_pet(p, name: str, idx: int, pid: int) -> None:
     """存寵物倉庫第 1 頁：個倉滿了改存共倉、兩邊都滿就停（同 pets.store_pet，LESSONS #89／#93）。
-    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色87個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
+    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色58個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
     _pet_check(p, name, idx, pid, "存倉")
     public = p.pet_depot_target(name)
     if public is None:

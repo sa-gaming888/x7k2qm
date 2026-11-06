@@ -340,7 +340,7 @@ def set_leader(p, name: Optional[str]):
     """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
 
     執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
-    （2026-10-30 第五組 2016：四隻交完第 1 步，角色24的狗當時在出戰沒交成，
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色18的狗當時在出戰沒交成，
     隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
     if not name:
         return None
@@ -463,6 +463,24 @@ def laggards(p, group: int) -> Optional[Tuple[List[str], int]]:
     if not before or before[-1] < low:
         return None
     return [n for n in todo if cur[n] == low], before[-1]
+
+
+REGROUP_TRIES = 3                # 重打前組隊／回村補血最多試幾次
+REGROUP_WAIT = 60.0              # 每次失敗後等幾秒再試（戰鬥中、剛過 00:00 傳送會被拒）
+
+
+def regroup_and_heal(p, what: str) -> None:
+    """有人被打死後重打前：清隊伍快取、真的重組、回村補血。傳送被拒（00:00 重置、還在戰鬥中）就等一下再試，
+    最多 REGROUP_TRIES 次才丟 JobError（11-06 review：舊版補血一失敗就整個任務失敗、劇本停住）。"""
+    for k in range(REGROUP_TRIES):
+        if k:
+            p.log(f"{what}：重打前組隊／補血沒成功，{int(REGROUP_WAIT)} 秒後再試（第 {k + 1}/{REGROUP_TRIES} 次）")
+            p.nap(REGROUP_WAIT)
+        with p.lock:
+            p.s.team = []                        # 陣亡的人被送回記錄點、隊伍散了，快取還是 5 人
+        if p.form_team() and p.heal_at_samugil():
+            return
+    raise JobError(f"{what}：重打前重新組隊或回村補血失敗（試了 {REGROUP_TRIES} 次）")
 
 
 GIVE_UP_SENDS = 2                # 放棄任務最多送幾次（沒看到清掉才重送）
@@ -730,7 +748,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色86的 2D人龍進化石、角色63的 2D老虎自選蛋、角色68的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色96的 2D人龍進化石、角色100的 2D老虎自選蛋、角色77的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -811,12 +829,7 @@ def run(p, args) -> Tuple[str, dict]:
                     p.log(f"任務 {g}：有人被打死，重新集合組隊、回村補血後直接重打（第 {tries}/{retry} 次，不回練功）")
                     # 陣亡的人被送回記錄點、隊伍散了，但隊伍快取還是 5 人 → form_team 不重組、補血只傳走一部分
                     # （11-05 第一次跑完整劇本：2010 風的寶玉陣亡後「傳到薩姆吉爾村失敗 isOK True」、回練功也傳不回去）
-                    with p.lock:
-                        p.s.team = []
-                    if not p.form_team():
-                        raise JobError(f"{g}：重打前重新組隊失敗（第 {tries} 次）")
-                    if not p.heal_at_samugil():
-                        raise JobError(f"{g}：重打前回村補血失敗（第 {tries} 次）")
+                    regroup_and_heal(p, f"{g}（第 {tries} 次）")
                 lag = laggards(p, g) if split_members(p, g) else None
                 if lag:
                     # 大家都還在做、只是停在不同步：落後的人補到領先的人那一步之前，其他人跟隊（不放棄已經拿到的進度）

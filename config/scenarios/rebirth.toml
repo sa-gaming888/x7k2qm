@@ -35,7 +35,7 @@ skip_if = "done=2999,2017,2015,2023,2027,2018,2021,2025,2014,2013,2020,2011,2012
 
 [[step]]
 name = "猜謎三兄弟 3003（金豬練到 77）"
-job = "quests --apply --retry 3 --groups 3003 --free 1"
+job = "quests --apply --retry 3 --groups 3003 --free 1 --battle-timeout 420"
 pet_train = true                   # 第 2 步要金豬 14 練到 77 → 自動 train 14:77
 pet_start = "波拉島Lv120"           # 使用者 11-05：金豬強制鎖在波拉島練（77 < 120，pet_route 不會再往前換圖）
 skip_if = "done=3003"
@@ -48,7 +48,7 @@ job = "clean --apply"
 name = "恐龍博士 2016（狗 18、虎 30）"
 jobs = ["catch --apply --buy-bait --pets 49:1,307:1",
         "train --pets 49:18,307:30 --start 海主人隧道Lv30",
-        "quests --apply --retry 3 --groups 2016 --free 0",
+        "quests --apply --retry 3 --groups 2016 --free 0 --battle-timeout 420",
         "clean --apply --confirm-release"]          # 布克布克放生
 skip_if = "done=2016"
 
@@ -58,7 +58,7 @@ jobs = ["pets --apply --mode park",                  # 金虎存倉，空出格�
         "catch --apply --buy-bait --allow-full --pets 319:1,320:1,321:1,322:1",
         "train --pets 319:25,320:25,321:25,322:25 --start 海主人隧道Lv30",
         "pets --apply --mode rest",                  # 交之前全部休息、解鎖
-        "quests --apply --retry 3 --groups 2019 --free 0 --stop-after 201900001",
+        "quests --apply --retry 3 --groups 2019 --free 0 --stop-after 201900001 --battle-timeout 420",
         "clean --apply --confirm-release"]          # 修寶放生
 skip_if = "done=2019"
 
@@ -67,7 +67,7 @@ name = "卡坦 2019 第 2 步（4 色雞 25）"
 jobs = ["catch --apply --buy-bait --allow-full --pets 346:1,347:1,348:1,349:1",
         "train --pets 346:25,347:25,348:25,349:25 --start 海主人隧道Lv30",
         "pets --apply --mode rest",
-        "quests --apply --retry 3 --groups 2019 --free 0",
+        "quests --apply --retry 3 --groups 2019 --free 0 --battle-timeout 420",
         "clean --apply",                             # 金飛存倉
         "pets --apply --mode restore"]               # 金虎領回、鎖戰寵人龍＋騎寵金虎
 skip_if = "done=2019"
@@ -75,7 +75,7 @@ skip_if = "done=2019"
 [[step]]
 name = "英雄島前傳 2031、後傳 2032"
 jobs = ["buy --apply --item 1501 --count 1",          # 前傳接任務條件；500 石幣／隻
-        "quests --apply --retry 3 --groups 2031,2032"]
+        "quests --apply --retry 3 --groups 2031,2032 --battle-timeout 420"]
 pet_train = true                   # 後傳第 7／10／14 步要 1483:30、1481:30、1482:33
 skip_if = "done=2031,2032"
 
@@ -85,7 +85,8 @@ job = "clean --apply"
 
 [[step]]
 name = "四大 2000～2003"
-job = "quests --apply --retry 3 --groups 2000,2001,2002,2003"
+# 四大的守護獸打很久（11-06 review）：900 秒
+job = "quests --apply --retry 3 --groups 2000,2001,2002,2003 --battle-timeout 900"
 skip_if = "done=2000,2001,2002,2003"
 
 [[step]]

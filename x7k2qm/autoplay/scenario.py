@@ -31,7 +31,10 @@ from typing import Callable, List, Optional, Tuple
 
 PET_START = "海主人隧道Lv30"       # 自動練寵的起點（使用者：從海主人隧道跳圖）
 PET_TRAIN_MAX = 3                  # 同一步、同一隻寵物自動練寵最多幾次（使用者同意的例外）
-PET_TRAIN_STEP_MAX = 10            # 同一步全部寵物加起來最多幾次（英雄島要練 1483、1481、1482 三隻）
+PET_TRAIN_STEP_MAX = 10
+AUTO_RETRY_WAIT = 1800.0           # 工作失敗停住後幾秒自動重做那件（不用人 resume）
+AUTO_RETRY_LOST = 60.0             # 工作做到一半常駐掛掉／工作不見了：幾秒後重排
+AUTO_RETRY_MAX = 24                # 同一步最多自動重試幾次（約 12 小時），超過才真的停            # 同一步全部寵物加起來最多幾次（英雄島要練 1483、1481、1482 三隻）
 HISTORY_MAX = 300                  # 進度檔保留幾筆結果
 SCENARIO_KEYS = {"name", "loop"}
 STEP_KEYS = {"name", "until", "job", "jobs", "gate", "pet_train", "pet_start", "skip_if"}
@@ -314,6 +317,13 @@ class Runner:
         d = self.pg.read()
         if d is None:
             d = fresh(self.sc)
+        if d.get("state") == "stopped" and d.get("retry_at") and time.time() >= d["retry_at"]:
+            # 使用者 11-06「要讓他們可以自動解任務順利」：可重做的失敗停一陣子後自己重做失敗的那件
+            # （誘餌／石幣不夠、補血傳送被拒、逾時……），不用等人 resume
+            d.update(state="run", stop_reason=None, pending=None, retry_at=None, pet_tries=0, pet_tries_by={})
+            self._hist(d, "auto_retry", f"自動重試第 {d.get('auto_tries', 0)}/{AUTO_RETRY_MAX} 次")
+            self.log(f"劇本：自動重試 {self._where(d)}（第 {d.get('auto_tries', 0)}/{AUTO_RETRY_MAX} 次）")
+            self.pg.write(d)
         if d.get("state") in ("stopped", "done"):
             return None
         why = None
@@ -335,8 +345,21 @@ class Runner:
                                             "sub": d.get("sub", 0), "result": result, "detail": detail[:300],
                                             "ts": time.time()})
 
-    def _stop(self, d: dict, why: str) -> None:
-        d.update(state="stopped", stop_reason=why[:500], pending=None)
+    def _stop(self, d: dict, why: str, retry: Optional[float] = None) -> None:
+        """停劇本（之後只練功）。retry＝幾秒後自動重做失敗的那件；同一步自動重試超過 AUTO_RETRY_MAX 次就真的停。"""
+        tries = d.get("auto_tries", 0)
+        if retry is not None and tries < AUTO_RETRY_MAX:
+            d.update(state="stopped", stop_reason=why[:500], pending=None, retry_at=time.time() + retry,
+                     auto_tries=tries + 1)
+            idx = d.get("index", 0)
+            name = self.sc.steps[idx].name if 0 <= idx < len(self.sc.steps) else d.get("step_name")
+            d.setdefault("history", []).append({"round": d.get("round", 1), "step": idx + 1, "name": name,
+                                                "result": "retry_later", "detail": why[:300], "ts": time.time()})
+            self.pg.write(d)
+            self.log(f"劇本暫停：第 {idx + 1}/{len(self.sc.steps)} 步「{name}」：{why}"
+                     f"（先練功，{int(retry // 60) or 1} 分鐘後自動重做；第 {tries + 1}/{AUTO_RETRY_MAX} 次）")
+            return
+        d.update(state="stopped", stop_reason=why[:500], pending=None, retry_at=None)
         idx = d.get("index", 0)
         name = self.sc.steps[idx].name if 0 <= idx < len(self.sc.steps) else d.get("step_name")
         d.setdefault("history", []).append({"round": d.get("round", 1), "step": idx + 1, "name": name,
@@ -358,7 +381,8 @@ class Runner:
     def _advance(self, d: dict) -> bool:
         """往下一步；回 True＝這次 tick 到此為止（回到第 1 步或全部做完）。
         回到第 1 步不在同一次 tick 接著看：至少隔一輪練功，條件一直成立也不會原地空轉。"""
-        d.update(index=d["index"] + 1, sub=0, pet_tries=0, pet_tries_by={}, approved=None, pending=None)
+        d.update(index=d["index"] + 1, sub=0, pet_tries=0, pet_tries_by={}, approved=None, pending=None,
+                 auto_tries=0, retry_at=None)
         if d["index"] >= len(self.sc.steps):
             if self.sc.loop:
                 d.update(index=0, round=d.get("round", 1) + 1, step_name=self.sc.steps[0].name, state="run")
@@ -432,10 +456,12 @@ class Runner:
                 if r is not None:
                     self._handle(party, d, r.get("status"), r.get("detail") or "")
                 elif any(j.get("id") == pend["id"] for j in self.q.running()) and getattr(party, "job", None) is None:
-                    self._stop(d, f"工作 {pend['id']} 做到一半常駐就不在了（狀態不明，先查清楚）")
+                    # 常駐重開（同一個 Pod，/data 還在）：劇本的工作都可重做（quests 接著進度、catch 先領倉庫、
+                    # rebirth 有轉生前檢查），一分鐘後重排同一件，不要整個劇本停住等人
+                    self._stop(d, f"工作 {pend['id']} 做到一半常駐就不在了，重做這件", retry=AUTO_RETRY_LOST)
                     return
                 elif not any(j.get("id") == pend["id"] for j in self.q.pending() + self.q.running()):
-                    self._stop(d, f"工作 {pend['id']} 不見了（不在佇列也沒有結果）")
+                    self._stop(d, f"工作 {pend['id']} 不見了（不在佇列也沒有結果），重做這件", retry=AUTO_RETRY_LOST)
                     return
                 else:
                     return                                   # 還在排隊
@@ -474,7 +500,8 @@ class Runner:
         argv = pend.get("argv") or []
         if pend.get("kind") == "pet_train":
             if status != "ok":
-                self._stop(d, f"自動練寵 {' '.join(argv)} 沒成功（{status}）：{detail}")
+                self._stop(d, f"自動練寵 {' '.join(argv)} 沒成功（{status}）：{detail}",
+                           retry=AUTO_RETRY_WAIT if status == "failed" else None)
                 return
             self._hist(d, "pet_train_ok", " ".join(argv))
             self.log(f"劇本：{self._where(d)} 自動練寵完成，重跑 {' '.join(st.jobs[d.get('sub', 0)])}")
@@ -498,7 +525,7 @@ class Runner:
             by = d.setdefault("pet_tries_by", {})
             if by.get(pet, 0) >= PET_TRAIN_MAX or d.get("pet_tries", 0) >= PET_TRAIN_STEP_MAX:
                 self._stop(d, f"自動練寵 {pet} 已經 {by.get(pet, 0)} 次（這一步共 {d.get('pet_tries', 0)} 次），"
-                              f"quests 還是要練寵：{detail}")
+                              f"quests 還是要練寵：{detail}", retry=AUTO_RETRY_WAIT)
                 return
             by[pet] = by.get(pet, 0) + 1
             d["pet_tries"] = d.get("pet_tries", 0) + 1
@@ -507,7 +534,10 @@ class Runner:
                      f"（這隻第 {by[pet]}/{PET_TRAIN_MAX} 次，這一步共 {d['pet_tries']} 次）")
             self._enqueue(d, ["train", "--pets", pet, "--start", st.pet_start], "pet_train")
             return
-        self._stop(d, f"工作 {' '.join(argv)} {status}：{detail}")
+        # failed（JobError）是「沒做成、狀態清楚」：等一陣子自動重做（錢存夠、重置過了、隊伍好了就會過）。
+        # hold（花了錢對不上、還在戰鬥中、程式例外）狀態不明，照舊停下來等人看
+        self._stop(d, f"工作 {' '.join(argv)} {status}：{detail}",
+                   retry=AUTO_RETRY_WAIT if status == "failed" else None)
 
 
 def until_ok(party, cond) -> bool:
@@ -589,7 +619,7 @@ def _approve(d: dict, a) -> str:
 def _resume(d: dict, a) -> str:
     if d.get("state") != "stopped":
         raise ScenarioError(f"劇本沒有停止，不用 resume（{describe(d)}）")
-    d.update(state="run", stop_reason=None, pending=None, pet_tries=0, pet_tries_by={})
+    d.update(state="run", stop_reason=None, pending=None, pet_tries=0, pet_tries_by={}, retry_at=None, auto_tries=0)
     if a.skip:
         d["sub"] = d.get("sub", 0) + 1
         d.setdefault("history", []).append({"round": d.get("round", 1), "step": d.get("index", 0) + 1,
