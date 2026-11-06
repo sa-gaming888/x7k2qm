@@ -9,6 +9,9 @@
     例外 `POST /infolog`：只打開「人物寵物每分鐘印一次、5 分鐘後自動關」的日誌，不送封包、不碰遊戲狀態。
     例外 `POST /debug/*`（debugtap.py，使用者 2026-11-05「runtime debug」）：封包追蹤、出招統計只記錄不送；
     `POST /debug/fast` 暫時關快戰是唯一會送封包的（由練功主迴圈送，時間到照平常規則開回來）。全部有時限、時間到自動關。
+    例外 `POST /jobs`（使用者 2026-11-06）：把白名單工作（`JOB_POSTS`，目前只有 auction）排進工作佇列，跟 `jobs add` 一樣；
+    API 自己不送封包，工作由主迴圈在兩場戰鬥之間照工作本身的規則做。`"apply": true` 才真的做。
+    **預設關**：要環境變數 `BOT_API_JOBS=1`＋`BOT_API_TOKEN` 都有才開，否則 403（含只列）。
   - 記憶體狀態（/state /roles /role /bag /equip /pets /tasks /buffs /battle /waigua）**不送任何封包**，
     讀的時候拿 `Party.lock` 一次讀完；持鎖期間**不呼叫** Party 裡也要拿這把鎖的函式
     （bag、snapshot、state、locks、pet_index、wounded、hp_lows…；threading.Lock 不可重入 → 死結）。
@@ -21,6 +24,7 @@
 """
 
 import json
+import os
 import threading
 import time
 import urllib.parse
@@ -255,6 +259,23 @@ class Views:
             return {"pending": [], "running": [], "recent": []}
         return {"pending": q.pending(), "running": q.running(), "recent": q.recent(20)}
 
+    def job(self, jid: str):
+        """GET /jobs?id=：一件工作的狀態 → (HTTP 碼, 內容)。結束了回結果（status ok／failed／hold…、detail、data）。"""
+        q = getattr(self.p, "jobq", None)
+        if q is None:
+            return 404, {"error": "這個常駐沒有開工作佇列"}
+        try:
+            r = q.result(jid)
+        except ValueError as e:
+            return 400, {"error": str(e)}
+        if r is not None:
+            return 200, r
+        for kind, rows in (("running", q.running()), ("queued", q.pending())):
+            for j in rows:
+                if j.get("id") == jid:
+                    return 200, {**j, "status": kind}
+        return 404, {"error": f"找不到工作 {jid}"}
+
     def health(self) -> dict:
         p = self.p
         with p.lock:
@@ -477,6 +498,70 @@ DEBUG_POSTS = {   # POST 端點 → 說明（全部要 token；有時限，預�
 }
 OPEN = ("/health",)          # 不用 token 的端點（不含遊戲資料）
 
+# POST /jobs：排工作進這個常駐的佇列（跟 `jobs add` 同一個佇列、同一套檢查）。只收白名單裡的工作與欄位；
+# 欄位 → 命令列參數。`"apply": true` 才真的做（加 --apply 與該工作要的確認旗標），不給只列。
+JOB_POSTS = {
+    "auction": {"fields": {"item": int, "price": int, "count": int, "currency": str, "who": str},
+                "required": ("item", "price"), "confirm": "--confirm-list",
+                "summary": "道具上架集市：item 道具 ID、price 單價、count 數量（預設 1）、currency 幣別"
+                           "（石幣／活力／聲望／鑽石或 3／2／8／1，預設石幣）、who 哪一隻（預設隊長）"},
+}
+MAX_BODY = 65536
+
+
+class JobRequestError(Exception):
+    """POST /jobs 內容不合法 → 400。"""
+
+
+def job_argv(body, profile: str) -> List[str]:
+    """POST /jobs 的 JSON → 佇列用的 argv（同 `jobs add` 存的格式）。不合法丟 JobRequestError。"""
+    if not isinstance(body, dict):
+        raise JobRequestError("內容要是 JSON 物件，例如 {\"job\":\"auction\",\"item\":2400,\"price\":1000000}")
+    name = body.get("job")
+    spec = JOB_POSTS.get(name)
+    if spec is None:
+        raise JobRequestError(f"不開放的工作 {name!r}（可用：{'、'.join(JOB_POSTS)}）")
+    extra = set(body) - set(spec["fields"]) - {"job", "apply"}
+    if extra:
+        raise JobRequestError(f"不認得的欄位：{'、'.join(sorted(extra))}")
+    miss = [k for k in spec["required"] if body.get(k) in (None, "")]
+    if miss:
+        raise JobRequestError(f"缺欄位：{'、'.join(miss)}")
+    apply = body.get("apply", False)
+    if not isinstance(apply, bool):
+        raise JobRequestError("apply 要是 true 或 false")
+    argv = [name, "--profile", str(profile)]
+    for k, typ in spec["fields"].items():
+        v = body.get(k)
+        if v is None:
+            continue
+        if typ is int and (isinstance(v, bool) or not isinstance(v, int)):
+            raise JobRequestError(f"{k} 要是整數")
+        if isinstance(v, bool) or (typ is str and not isinstance(v, (str, int))):
+            raise JobRequestError(f"{k} 格式不對")
+        s = str(v)
+        if s.startswith("-") or "\n" in s:
+            raise JobRequestError(f"{k} 的值不合法：{s!r}")
+        argv += [f"--{k}", s]
+    if apply:
+        argv.append("--apply")
+        if spec.get("confirm"):
+            argv.append(spec["confirm"])
+    return argv
+
+
+def check_job(argv: List[str]) -> None:
+    """排進佇列前先照工作自己的規則檢查一次（參數錯就不排），錯丟 JobRequestError。"""
+    from .jobs import JobError
+    from .jobs.__main__ import parse
+    try:
+        mod, args = parse(argv)
+        chk = getattr(mod, "check", None)
+        if chk:
+            chk(args)
+    except JobError as e:
+        raise JobRequestError(str(e))
+
 
 def openapi() -> dict:
     paths = {}
@@ -489,6 +574,14 @@ def openapi() -> dict:
                                   "responses": {"200": {"description": "JSON"}}}}
     paths["/infolog"] = {"post": {"summary": "人物寵物（等級、血量）每分鐘印一次日誌，5 分鐘後自動關；再打一次從現在重算",
                                   "responses": {"200": {"description": "JSON"}}}}
+    paths["/jobs"]["get"]["parameters"].append({"name": "id", "in": "query", "required": False,
+                                                 "schema": {"type": "string"}, "description": "只看這件工作的狀態／結果"})
+    paths["/jobs"]["post"] = {
+        "summary": "排工作進佇列（兩場戰鬥之間做）。JSON：{job, apply, …欄位}；apply 不給或 false 只列。"
+                   + "；".join(f"{k}：{v['summary']}" for k, v in JOB_POSTS.items()),
+        "requestBody": {"content": {"application/json": {"schema": {"type": "object"}}}},
+        "responses": {"202": {"description": "已排進佇列：{id, argv, result}"}, "400": {"description": "參數錯"},
+                      "503": {"description": "沒有工作佇列"}}}
     for path, desc in DEBUG_POSTS.items():
         paths.setdefault(path, {})["post"] = {"summary": desc, "responses": {"200": {"description": "JSON"},
                                                                              "400": {"description": "參數錯"}}}
@@ -512,7 +605,7 @@ def only_role(obj, role: str):
     return out
 
 
-def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
+def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None, jobs: bool = False):
     import hmac
 
     class Handler(BaseHTTPRequestHandler):
@@ -556,6 +649,8 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
                 if path in ("/depot", "/petdepot"):
                     code, body = depot.query(path[1:])
                     return self._send(code, only_role(body, role))
+                if path == "/jobs" and q.get("id"):
+                    return self._send(*views.job(q["id"]))
                 if path == "/debug/history":
                     return self._send(200, views.debug_history(q))
                 fn = {"/state": views.state, "/roles": views.roles, "/role": views.role, "/bag": views.bag,
@@ -585,16 +680,22 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
         def do_POST(self):
             u = urllib.parse.urlparse(self.path)
             path = u.path.rstrip("/")
-            if path != "/infolog" and path not in DEBUG_POSTS:
+            if path != "/infolog" and path != "/jobs" and path not in DEBUG_POSTS:
                 return self._deny()
+            raw, size = b"", 0
             try:                                 # 同 _deny：先把請求內容讀掉再回
-                n = min(int(self.headers.get("Content-Length") or 0), 65536)
+                size = int(self.headers.get("Content-Length") or 0)
+                n = min(size, MAX_BODY)
                 if n:
-                    self.rfile.read(n)
+                    raw = self.rfile.read(n)
             except (ValueError, OSError):
                 pass
             if not self._authorized(path):
                 return self._send(401, {"error": "要帶 token（Authorization: Bearer <token>）"})
+            if path == "/jobs":
+                if size > MAX_BODY:
+                    return self._send(413, {"error": f"內容超過 {MAX_BODY} bytes"})
+                return self._post_job(raw)
             if path in DEBUG_POSTS:
                 q = dict(urllib.parse.parse_qsl(u.query))
                 try:
@@ -606,6 +707,29 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
             until = views.p.start_info_log()
             return self._send(200, {"ok": True, "every": views.p.INFO_EVERY, "until": int(until),
                                     "untilIso": time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime(until))})
+
+        def _post_job(self, raw: bytes):
+            if not jobs:
+                return self._send(403, {"error": f"POST /jobs 未開放（要設環境變數 {JOBS_ENV}=1 和 {TOKEN_ENV} 再重開常駐）"})
+            if not token:
+                return self._send(403, {"error": f"POST /jobs 未開放：沒有設 {TOKEN_ENV}（排工作一定要 token）"})
+            p = views.p
+            q = getattr(p, "jobq", None)
+            if q is None:
+                return self._send(503, {"error": "這個常駐沒有開工作佇列"})
+            try:
+                body = json.loads(raw.decode("utf-8") or "null")
+            except (ValueError, UnicodeDecodeError):
+                return self._send(400, {"error": "內容要是 JSON"})
+            try:
+                argv = job_argv(body, getattr(p, "profile", ""))
+                check_job(argv)
+            except JobRequestError as e:
+                return self._send(400, {"error": str(e)})
+            job = q.add(argv[0], argv)
+            p.log(f"查詢 API 排進工作 {job['id']}：{' '.join(argv)}")
+            return self._send(202, {"id": job["id"], "argv": argv, "status": "queued",
+                                    "apply": "--apply" in argv, "result": f"/jobs?id={job['id']}"})
 
         def _debug_post(self, path: str, q: Dict[str, str]) -> dict:
             p = views.p
@@ -636,16 +760,24 @@ def make_handler(views: Views, depot: DepotQuery, token: Optional[str] = None):
 
 LOOPBACK = ("127.0.0.1", "localhost", "::1")
 TOKEN_ENV = "BOT_API_TOKEN"
+JOBS_ENV = "BOT_API_JOBS"      # =1 才開 POST /jobs（本機、容器都預設關；本遊戲-Docker 11-06 決定）
 MIN_TOKEN = 16
 
 
+def jobs_enabled() -> bool:
+    return os.environ.get(JOBS_ENV, "").strip() == "1"
+
+
 def serve(party, port: int, depot: Optional[DepotQuery] = None, host: str = "127.0.0.1",
-          token: Optional[str] = None) -> ThreadingHTTPServer:
+          token: Optional[str] = None, jobs: Optional[bool] = None) -> ThreadingHTTPServer:
     """在背景執行緒啟動唯讀 API，回傳 server（shutdown() 停止）。port 0＝系統挑。
-    預設只聽 127.0.0.1；聽其他位址（容器對外）**一定要 token**（至少 16 字元），沒有就拒絕啟動。"""
+    預設只聽 127.0.0.1；聽其他位址（容器對外）**一定要 token**（至少 16 字元），沒有就拒絕啟動。
+    jobs：開不開 `POST /jobs`（None＝看環境變數 BOT_API_JOBS=1）；開了也一定要有 token，沒有就整個拒絕（含只列）。"""
     if host not in LOOPBACK and (not token or len(token) < MIN_TOKEN):
         raise ValueError(f"API 要對外（{host}）一定要設 token（至少 {MIN_TOKEN} 字元）")
-    srv = ThreadingHTTPServer((host, port), make_handler(Views(party), depot or DepotQuery(party), token or None))
+    jobs = jobs_enabled() if jobs is None else bool(jobs)
+    srv = ThreadingHTTPServer((host, port), make_handler(Views(party), depot or DepotQuery(party), token or None,
+                                                         jobs=jobs))
     srv.daemon_threads = True
     threading.Thread(target=srv.serve_forever, name="x7k2qm-party-api", daemon=True).start()
     return srv

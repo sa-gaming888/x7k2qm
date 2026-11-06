@@ -3,6 +3,8 @@
 
     python -X utf8 -m x7k2qm.autoplay.jobs auction --profile 4 --item 2400 --price 1000000                 # 只列
     python -X utf8 -m x7k2qm.autoplay.jobs add auction --profile 4 --item 2400 --price 1000000 --apply --confirm-list
+    --currency 活力｜聲望｜鑽石 改收別種錢（預設石幣；收鑽石是別人付給我們，不違反「鑽石不花」）。
+    常駐在跑時也可以用查詢 API `POST /jobs` 排（party_api.py「POST /jobs」）。
 
 協定 `Other_MyItemShopGoods{action, itemIndex, price, currency, itemNum, extra, canCallPrice}` →
 `{itemList: newshopGoodList[], isUploadOk}`。action 的值照 參考專案 `tools/headless/ops/market.py`（有官方畫面錄檔佐證，LESSONS #173）：
@@ -20,21 +22,34 @@ from typing import List, Tuple
 from . import JobError, JobHold
 
 NAME = "auction"
-HELP = "道具上架集市（--item 道具 ID、--price 單價，石幣；--apply 要再加 --confirm-list）"
+HELP = "道具上架集市（--item 道具 ID、--price 單價、--currency 幣別預設石幣；--apply 要再加 --confirm-list）"
 PAUSE = lambda a: bool(getattr(a, "apply", False))      # noqa: E731
 
 ACTION_LIST, ACTION_UPLOAD = 1, 2       # 3＝領取／下架，上架時不能送（LESSONS #173）
 ACTION_CLAIM = 3                        # 領取／下架同一個請求（伺服器看賣掉沒）：只對 isBuyed 的那筆送（--claim）
 CLAIM_WAIT = 8.0
 STONE = 3                           # 幣種：石幣（doc/features/shop.md §3.2）
+CURRENCIES = {"鑽石": 1, "活力": 2, "石幣": 3, "聲望": 8}   # 收哪種錢；賣掉時伺服器抽稅：鑽石 5%、其他 10%
+CURRENCY_NAMES = {v: k for k, v in CURRENCIES.items()}
 MAX_PRICE = 100_000_000             # 上限保護（打錯一個 0）
 STALL_MAX = 20                      # Config.newShopBoothUpItemMaxNum（參考專案 market.py）
 UPLOAD_WAIT = 8.0
 
 
+def currency_of(v) -> int:
+    """幣別：名字（石幣）或代號（3）→ 代號；不認得丟 JobError。"""
+    s = str(v if v is not None else "石幣").strip()
+    if s in CURRENCIES:
+        return CURRENCIES[s]
+    if s.isdigit() and int(s) in CURRENCY_NAMES:
+        return int(s)
+    raise JobError(f"幣別 {v!r} 不認得（可用 {'／'.join(f'{k} {n}' for k, n in CURRENCIES.items())}）")
+
+
 def add_args(ap) -> None:
     ap.add_argument("--item", type=int, default=None, help="要上架的道具 ID（例：阿布的水 2400，不能是綁定的）")
-    ap.add_argument("--price", type=int, default=None, help="單價（石幣）")
+    ap.add_argument("--price", type=int, default=None, help="單價（--currency 那種錢）")
+    ap.add_argument("--currency", default="石幣", help="收哪種錢：石幣（預設）／活力／聲望／鑽石，或代號 3／2／8／1")
     ap.add_argument("--claim", action="store_true",
                     help="領錢：讀攤位，只對已賣出（isBuyed）的那幾筆送領取；還在賣的不碰（送了會變下架）")
     ap.add_argument("--count", type=int, default=1, help="上架幾個（預設 1）")
@@ -47,6 +62,7 @@ def check(args) -> None:
         return
     if getattr(args, "item", None) is None or getattr(args, "price", None) is None:
         raise JobError("上架要給 --item、--price（領錢用 --claim）")
+    currency_of(getattr(args, "currency", "石幣"))
     if not 10 <= int(args.price) * int(getattr(args, "count", 1) or 1) <= MAX_PRICE:
         raise JobError(f"整筆價（--price×--count）要在 10～{MAX_PRICE:,}")
     if int(getattr(args, "count", 1) or 1) < 1:
@@ -92,7 +108,7 @@ def stone(p, who: str):
 
 
 def claim(p, who: str, apply: bool) -> Tuple[str, dict]:
-    """攤位上已賣出的那幾筆領錢（使用者 11-06「角色23 買了，去領取」）。action 3 是「領取／下架」同一個請求，
+    """攤位上已賣出的那幾筆領錢（使用者 11-06：另一個帳號買了，去領取）。action 3 是「領取／下架」同一個請求，
     伺服器看賣掉沒：**只對 isBuyed 的送**，還在賣的不碰。領了要看到石幣增加，沒增加就 JobHold 停在原地等人看。"""
     c = p.clients[who]
     goods = my_goods(c)
@@ -131,9 +147,12 @@ def run(p, args) -> Tuple[str, dict]:
     name = (p.item_table().get(item, {}) or {}).get("nameTn") or str(item)
     cells = [it for it in p.bag(who) if it.get("itemId") == item and not it.get("bind")]
     have = sum(int(it.get("overlay") or 1) for it in cells)
-    p.log(f"集市：{who} 上架 {name}×{count}，單價 {price:,} 石幣（背包有 {have} 個）")
+    cur = currency_of(getattr(args, "currency", "石幣"))
+    unit = CURRENCY_NAMES[cur]
+    p.log(f"集市：{who} 上架 {name}×{count}，單價 {price:,} {unit}（背包有 {have} 個）")
     if not getattr(args, "apply", False):
-        return "只列要上架什麼（沒加 --apply，沒有送任何動作）", {"who": who, "item": item, "have": have}
+        return (f"只列：{who} 上架 {name}×{count}，{price * count:,} {unit}，背包有 {have} 個（沒加 --apply，沒有送任何動作）",
+                {"who": who, "item": item, "have": have, "currency": unit})
     if have < count:
         # 背包不夠就先從個人倉庫領（11-06 第五組：剛買的阿布水被劇本的清背包照規則表存進個倉，上架時背包 0 個）
         have = _take_from_depot(p, who, item, count - have, name) + have
@@ -153,18 +172,18 @@ def run(p, args) -> Tuple[str, dict]:
     cell = big[0]
     total = price * count                                              # 協定的 price 是整筆價
     r = c.request("Other_MyItemShopGoods", {"action": ACTION_UPLOAD, "itemIndex": cell["itemIndex"], "price": total,
-                                           "currency": STONE, "itemNum": count, "canCallPrice": False}) or {}
+                                           "currency": cur, "itemNum": count, "canCallPrice": False}) or {}
     gone = p.wait(lambda: sum(int(it.get("overlay") or 1) for it in p.bag(who)
                               if it.get("itemId") == item and not it.get("bind")) <= have - count, UPLOAD_WAIT)
     rows = r.get("itemList")
     rows = (list(rows.values()) if isinstance(rows, dict) else list(rows or [])) or my_goods(c)
     new = [g for g in rows if g.get("uniqueIndex") not in before and int(g.get("price") or 0) == total
-           and g.get("type") == item and int(g.get("itemNum") or 0) == count and g.get("currency") == STONE]
+           and g.get("type") == item and int(g.get("itemNum") or 0) == count and g.get("currency") == cur]
     if not r.get("isUploadOk") and not gone and not new:
         raise JobError(f"{who} 上架 {name} 被拒（回應 isUploadOk={r.get('isUploadOk')}），道具還在背包")
     if not (r.get("isUploadOk") and gone and new):
         raise JobHold(f"{who} 上架 {name} 對不上：isUploadOk={r.get('isUploadOk')}、背包少了={gone}、清單新的一筆={new}，停在原地")
     g = new[0]
-    p.log(f"集市：{who} 上架 {name}×{count}，{total:,} 石幣，到期 {when(g.get('overTime'))}（編號 {g.get('uniqueIndex')}）")
-    return (f"{who} 上架 {name}×{count}，{total:,} 石幣，到期 {when(g.get('overTime'))}",
-            {"who": who, "item": item, "price": total, "overTime": g.get("overTime"), "uniqueIndex": g.get("uniqueIndex")})
+    p.log(f"集市：{who} 上架 {name}×{count}，{total:,} {unit}，到期 {when(g.get('overTime'))}（編號 {g.get('uniqueIndex')}）")
+    return (f"{who} 上架 {name}×{count}，{total:,} {unit}，到期 {when(g.get('overTime'))}",
+            {"who": who, "item": item, "price": total, "currency": unit, "overTime": g.get("overTime"), "uniqueIndex": g.get("uniqueIndex")})

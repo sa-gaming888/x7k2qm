@@ -8,7 +8,9 @@
 - 龜殼回村有幾個就賣幾個（寵物店回收員 1 殼／5 殼／10 殼三種兌換，每殼都是 5000 石幣），不再存在公共倉庫湊滿 10 個；一次回村最多賣 30 個。
 
 ### Added
-- `jobs auction --claim`：讀攤位，只對已賣出（isBuyed）的那幾筆送領取（action 3），看到石幣增加才算；還在賣的不碰（使用者 11-06「nova32 買了，去領取」）。
+- 查詢 API `POST /jobs`：用 HTTP 排集市上架（白名單只有 `auction`，`"apply": true` 才真的上架）。**預設關**，要環境變數 `API_JOBS=1` 且有 `API_TOKEN`；`API_JOBS` 不是 0／1、或開了卻沒 token，啟動前就報錯。
+- `jobs auction --currency`：上架可選幣別。
+- `jobs auction --claim`：讀攤位，只對已賣出（isBuyed）的那幾筆送領取（action 3），看到石幣增加才算；還在賣的不碰（使用者 11-06：另一個帳號買了，去領取）。
 - `jobs auction`：背包道具上架集市換石幣（`Other_MyItemShopGoods`，未實機），回報到期時間；`--apply` 要加 `--confirm-list`（使用者 11-06：上架阿布水 100 萬，用自己別的帳號買下轉石幣）。
 - 查詢 API 執行中除錯 `/debug`：不重開就能查最近收到的封包（`GET /debug/history`）、追蹤收／送的封包（`POST /debug/trace`）、統計每隻出招與耗 MP（`POST /debug/battle`）、暫時關快戰看出招（`POST /debug/fast`）；全部要 token、有時限（最多 30 分鐘）時間到自動關。
 - 掛載設定檔 `/config/bot.toml`（或 `CONFIG_FILE`）：練功參數 `[bot]`、劇本與道具處置規則表 `[files]`、外掛設定 `[waigua]` 全部寫在檔案裡，改設定不用改程式；預設值在內建的 `config/bot.toml`。

@@ -23,6 +23,8 @@
   BATTLE_HEAL           外掛戰鬥中技能補血門檻 %；none＝不設                  → waigua.battle_heal
   API_TOKEN             查詢 API 的 token（至少 16 字元；或 API_TOKEN_FILE）。有設才對外開 8790 埠，
                         沒設只能在容器裡查（docker exec … status_api）
+  API_JOBS              1＝開放 POST /jobs 排白名單工作（目前只有 auction 集市上架，會改遊戲狀態）；
+                        預設關，要同時設 API_TOKEN（使用者 11-06 經 本遊戲 session：容器預設關）
   DATA_DIR              劇本進度、工作佇列、鎖、停止檔的目錄（預設 /data）
 
 - 密碼只放在行程環境變數，不寫檔、不進日誌（`describe()` 只列有沒有設）。
@@ -95,6 +97,13 @@ def child_env(env: Mapping[str, str]) -> Dict[str, str]:
         if len(token) < MIN_TOKEN:
             raise SetupError(f"API_TOKEN 至少 {MIN_TOKEN} 字元")
         out["BOT_API_TOKEN"] = token
+    jobs = env.get("API_JOBS", "").strip()
+    if jobs not in ("", "0", "1"):
+        raise SetupError(f"API_JOBS 只能是 1 或 0（現在是 {jobs!r}）")
+    if jobs == "1":                            # POST /jobs 會改遊戲狀態：預設關，要明確開而且一定要有 token
+        if not token:
+            raise SetupError("API_JOBS=1 要同時設 API_TOKEN（POST /jobs 一定要 token）")
+        out["BOT_API_JOBS"] = "1"
     return out
 
 

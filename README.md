@@ -15,7 +15,7 @@
 - **轉生前的同意關卡**：預設停在關卡只練功；`AUTO_REBIRTH=1` 才自動通過。
 - **出錯就停**：逾時、被拒、數值對不上就停在原地並記日誌，不自動重試；程式崩潰有限次自動重開（5、10、20 分鐘）；被同角色在別處登入擠下線時不重開。
 - **請求間隔**：每個請求等到回應才送下一個，間隔隨機 0.3～0.8 秒。
-- **查詢 API**：唯讀，不會改變遊戲狀態（POST 只有 `/infolog` 開日誌、`/debug/*` 執行中除錯；除錯裡只有「暫時關快戰」會送封包，時間到自動開回來）。
+- **查詢 API**：預設唯讀，不會改變遊戲狀態（POST 只有 `/infolog` 開日誌、`/debug/*` 執行中除錯；除錯裡只有「暫時關快戰」會送封包，時間到自動開回來）。`API_JOBS=1` 才另外開放 `POST /jobs` 排集市上架。
 
 ## 快速開始
 
@@ -81,6 +81,7 @@ docker restart bot          # 改完設定檔重開生效（會等這場戰鬥�
 | `CONFIG_FILE` | | 設定檔路徑；預設有掛載 `/config/bot.toml` 就用，沒有用內建的 |
 | `AUTO_REBIRTH` | | `1`＝轉生關卡自動通過；其他值停在關卡 |
 | `API_TOKEN` | | 查詢 API 的 token（至少 16 字元，或 `API_TOKEN_FILE`）；有設才對外開 8790 埠 |
+| `API_JOBS` | `0` | `1`＝開放 `POST /jobs`（排集市上架，**會改遊戲狀態**）；要同時設 `API_TOKEN`，只能是 `0` 或 `1` |
 
 下面這幾個**有設才蓋過設定檔**（舊的啟動方式照樣能用）：
 
@@ -127,6 +128,18 @@ curl http://127.0.0.1:8790/openapi.json -H "Authorization: Bearer $TOKEN"   # �
 
 每個端點都可加 `?role=名字` 只看一隻。只接受 GET，其他方法回 405；
 例外 `POST /infolog`：日誌每 60 秒印一次每隻的人物、戰寵、騎寵等級與血量，5 分鐘後自動關（開著再打一次從現在重算），不送遊戲封包。
+
+### 排工作（`POST /jobs`，預設關）
+
+唯一會改遊戲狀態的端點。要 `-e API_JOBS=1` 加上 `API_TOKEN` 才開；沒開回 403，token 錯回 401。
+只收白名單工作（目前只有 `auction` 集市上架），跟 `docker exec … jobs add` 進同一個佇列，練功兩場戰鬥之間做。
+不帶 `"apply": true` 只列出會上架什麼；帶了才真的上架。
+
+```bash
+curl -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"job":"auction","item":2400,"price":1000000,"apply":true}' http://127.0.0.1:8790/jobs
+curl -H "Authorization: Bearer $TOKEN" "http://127.0.0.1:8790/jobs?id=回傳的id"   # 看結果
+```
 
 ### 執行中除錯（`/debug`）
 
