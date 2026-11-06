@@ -52,6 +52,58 @@ SHOP_PATH = [(15, 21), (15, 20), (15, 19), (14, 18), (14, 17), (13, 16), (12, 16
 OK, FAIL, FATAL, SKIP = "ok", "fail", "fatal", "skip"
 
 
+# ---- 走進薩村寵物店（龜殼回收員、jobs/petsell 賣寵物的店長共用；2026-10-24 起實機跑通的走法）----
+def village_to_shop_door(start: Tuple[int, int], cache: Optional[dict] = None) -> List[Tuple[int, int]]:
+    """薩村 start → 寵物店門口（A*，load_grid(1000) 有資料）。給 cache 就把算過的起點記起來（落點那條每次都一樣）。"""
+    from .pathing import astar, load_grid
+    if cache is not None and start in cache:
+        return cache[start]
+    path = astar(load_grid(VILLAGE), start, SHOP_DOOR) or []
+    if cache is not None and start == VILLAGE_LANDING:
+        cache[start] = path
+    return path
+
+
+def transfer_to_village(p, tag: str) -> bool:
+    """隊長 Transfer_TransferTo{point:1}，全隊一起到薩村落點。**只有隊長送**（隊員送會 tip 30746）。"""
+    r = p.leader().request("Transfer_TransferTo", {"point": 1}) or {}
+    if not r.get("isOK") or not p.wait(lambda: all(p.s.member_maps.get(n) == VILLAGE for _, n in p.party), 15):
+        p.log(f"{tag}：傳到薩姆吉爾村失敗 {r}")
+        return False
+    with p.lock:
+        p.leader_pos = (VILLAGE,) + VILLAGE_LANDING
+    return True
+
+
+def walk_into_pet_shop(p, inside: List[Tuple[int, int]], tag: str, cache: Optional[dict] = None) -> bool:
+    """隊長（隊員跟著）走到薩村寵物店門 → Role_RoleWarp 進 1003（落點 (15,21)）→ 照 inside 走到店裡的目的地。
+    已經在薩村而且知道隊長座標就直接走；否則（練功地圖、醫院 1005…）先傳到薩村落點。
+    不能在薩村裡再傳薩村：傳到同一張圖會被拒（2026-10-24 實測）。失敗記日誌回 False（不重送）。"""
+    lead = p.party[0][1]
+    with p.lock:
+        here, pos = p.s.leader_map, p.leader_pos
+    if here == VILLAGE and pos and pos[0] == VILLAGE:
+        start = (pos[1], pos[2])
+    elif here == VILLAGE:
+        p.log(f"{tag}：人在薩村但不知道隊長座標，走不到寵物店")
+        return False
+    elif transfer_to_village(p, tag):
+        start = VILLAGE_LANDING
+    else:
+        return False
+    path = village_to_shop_door(start, cache)
+    if not path:
+        p.log(f"{tag}：算不出薩村 {start} 到寵物店的路")
+        return False
+    p.walk(VILLAGE, path)
+    r = p.leader().request("Role_RoleWarp", {"map": VILLAGE, "x": SHOP_DOOR[0], "y": SHOP_DOOR[1]})
+    if not p.wait(lambda: p.s.member_maps.get(lead) == SHOP_MAP, 8):
+        p.log(f"{tag}：進不了寵物店 {r}")
+        return False
+    p.walk(SHOP_MAP, inside)
+    return True
+
+
 class ShellExchange:
     def __init__(self, party, enabled: bool = True) -> None:
         self.p = party
@@ -60,7 +112,7 @@ class ShellExchange:
         self.last_store = 0.0              # 最後一次「試過」原地存殼的時間（不論成敗）
         self.public_tickets: Dict[int, List[Tuple[int, int, int]]] = {}   # depot_shells 同一次查到的共倉石幣券
         self.ticket_stuck: set = set()     # 這次回村用券沒看到數量減少的角色（不再重送）
-        self._village_path: Optional[List[Tuple[int, int]]] = None
+        self._paths: Dict[Tuple[int, int], List[Tuple[int, int]]] = {}   # 薩村落點 → 寵物店門的路（算一次就快取）
 
     # ---- 背包 ----
     def _count(self, name: str, ids) -> int:
@@ -305,52 +357,15 @@ class ShellExchange:
         return got
 
     def village_path(self, start: Tuple[int, int]) -> List[Tuple[int, int]]:
-        """薩村 start → 寵物店門口（A*，load_grid(1000) 有資料）。從落點出發的那條算一次就快取。"""
-        from .pathing import astar, load_grid
-        if start != VILLAGE_LANDING:
-            return astar(load_grid(VILLAGE), start, SHOP_DOOR) or []
-        if self._village_path is None:
-            self._village_path = astar(load_grid(VILLAGE), VILLAGE_LANDING, SHOP_DOOR) or []
-        return self._village_path
+        """薩村 start → 寵物店門口（共用 `village_to_shop_door`，從落點出發的那條快取在這個物件上）。"""
+        return village_to_shop_door(start, self._paths)
 
     def to_village(self) -> bool:
-        """隊長 Transfer_TransferTo{point:1}，全隊一起到薩村落點。**只有隊長送**（隊員送會 tip 30746）。"""
-        p = self.p
-        r = p.leader().request("Transfer_TransferTo", {"point": 1}) or {}
-        if not r.get("isOK") or not p.wait(lambda: all(p.s.member_maps.get(n) == VILLAGE for _, n in p.party), 15):
-            p.log(f"龜殼：傳到薩姆吉爾村失敗 {r}")
-            return False
-        with p.lock:
-            p.leader_pos = (VILLAGE,) + VILLAGE_LANDING
-        return True
+        return transfer_to_village(self.p, "龜殼")
 
     def go_to_collector(self) -> bool:
-        """（人在村裡）走到寵物店門 → Warp 進 1003 → 照錄檔路徑走到 (11,15)。
-        已經在薩村而且知道隊長座標就直接走；否則（例如在醫院 1005）先傳到薩村落點。
-        不能在薩村裡再傳薩村：傳到同一張圖會被拒（2026-10-24 實測）。"""
-        p, lead = self.p, self.p.party[0][1]
-        with p.lock:
-            here, pos = p.s.leader_map, p.leader_pos
-        if here == VILLAGE and pos and pos[0] == VILLAGE:
-            start = (pos[1], pos[2])
-        elif here == VILLAGE:
-            p.log("龜殼：人在薩村但不知道隊長座標，走不到寵物店")
-            return False
-        elif self.to_village():
-            start = VILLAGE_LANDING
-        else:
-            return False
-        path = self.village_path(start)
-        if not path:
-            p.log(f"龜殼：算不出薩村 {start} 到寵物店的路")
-            return False
-        p.walk(VILLAGE, path)
-        r = p.leader().request("Role_RoleWarp", {"map": VILLAGE, "x": SHOP_DOOR[0], "y": SHOP_DOOR[1]})
-        if not p.wait(lambda: p.s.member_maps.get(lead) == SHOP_MAP, 8):
-            p.log(f"龜殼：進不了寵物店 {r}")
-            return False
-        p.walk(SHOP_MAP, SHOP_PATH)
-        return True
+        """（人在村裡）走到寵物店門 → Warp 進 1003 → 照錄檔路徑走到回收員旁 (11,15)。"""
+        return walk_into_pet_shop(self.p, SHOP_PATH, "龜殼", self._paths)
 
     @staticmethod
     def plan(n: int) -> List[Tuple[int, int]]:
