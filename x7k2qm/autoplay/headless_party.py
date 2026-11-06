@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色77"), (10003796, "角色45"), (10003799, "角色85"), (10003803, "角色35"), (10003804, "角色68")]
+PARTY = [(10003754, "角色91"), (10003796, "角色28"), (10003799, "角色83"), (10003803, "角色31"), (10003804, "角色85")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -739,12 +739,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色62在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色65在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色85 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色83 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -777,8 +777,22 @@ class Party:
         # 已經全隊在那張圖就不送：剛登出又馬上登入時，傳送到同一張圖會被拒（2026-10-24 05:58、06:08 實測兩次 isOK false）
         if all(self.s.member_maps.get(n) == mapid for _, n in self.party):
             return True
-        ok = self.transfer(self.party[0][1], NAME_TO_POINT[place], mapid)
-        return ok and self.wait(lambda: all(self.s.member_maps.get(n) == mapid for _, n in self.party), 15)
+        arrived = lambda: all(self.s.member_maps.get(n) == mapid for _, n in self.party)  # noqa: E731
+        if not self.transfer(self.party[0][1], NAME_TO_POINT[place], mapid):
+            return False
+        if self.wait(arrived, 15):
+            return True
+        # 隊長到了、有隊員沒跟上：隊伍多半已被伺服器解散，快取還是 5 人（11-06 兩組轉生後 after-trans
+        # 「傳送到 柯奧龜洞Lv10 失敗」，日誌只有「隊伍已經是 5 人，不用重組」）→ 清快取真的重組、再傳一次
+        with self.lock:
+            behind = {n: self.s.member_maps.get(n) for _, n in self.party if self.s.member_maps.get(n) != mapid}
+            self.s.team = []
+        self.log(f"傳送到 {place}：隊員沒跟上 {behind}，重新組隊再傳一次")
+        if not self.form_team():
+            return False
+        if arrived():
+            return True
+        return self.transfer(self.party[0][1], NAME_TO_POINT[place], mapid) and self.wait(arrived, 15)
 
     def stop_requested(self) -> bool:
         """有停止檔就結束（之後 close() 會送 Role_Exit 登出）。強制砍行程不會跑登出，要停一律用停止檔。"""
@@ -1136,7 +1150,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色77個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色91個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1793,7 +1807,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色47的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色51的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
