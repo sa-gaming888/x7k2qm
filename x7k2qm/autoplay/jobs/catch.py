@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色71邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色58邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -129,9 +129,24 @@ def onekey_price() -> Optional[int]:
     return int(info[0]["stone"])
 
 
+def top_up_bait(p, name: str, k: int, buy: bool) -> None:
+    """抓到一半誘餌用完：沒抓到也會耗誘餌，開頭算好的量可能不夠（11-06 twidc 一組卡坦抓雞，前三隻多丟了幾個，
+    第四隻 349 開抓時誘餌 0，4 分鐘抓不到，劇本停 30 分鐘）。先從倉庫補，--buy-bait 再用石幣補買到 k 個；
+    補不到就照舊往下抓（抓不到會回報差幾隻）。花了錢對不上（JobHold）照舊往上丟。"""
+    if take_bait(p, name, k) or not buy:
+        return
+    try:
+        with BUY_LOCK:
+            buy_bait(p, name, min(BUY_MAX, k - _bait(p, name)))
+        p.log(f"{name} 抓到一半誘餌用完，已補到 {_bait(p, name)} 個")
+    except JobError as e:
+        if type(e) is not JobError:
+            raise
+        p.log(f"{name} 抓到一半誘餌用完，補買失敗（{e}）")
+
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色71誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色58誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -328,12 +343,18 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
     try:
         for pid, n in todo:
             base = _count(p, name, pid)
+            if _bait(p, name) < n:
+                top_up_bait(p, name, n, buy)
             if not _setting(p, name, True, pid).get("isOK"):
                 raise JobError(f"{name} 開自動抓寵 {pid} 失敗")
             # 用 p.nap 計次而不是看時鐘：測試把 nap 換成不睡，就不用等真的 240 秒
+            topped = False
             for _ in range(int(timeout / POLL)):
                 if _count(p, name, pid) - base >= n:
                     break
+                if not topped and _bait(p, name) <= 0:     # 這隻還沒抓到誘餌就丟光了：補一次（外掛照樣開著會接著丟）
+                    topped = True
+                    top_up_bait(p, name, n - (_count(p, name, pid) - base), buy)
                 p.nap(POLL)
             _setting(p, name, False, pid)
             got[pid] = _count(p, name, pid) - base
