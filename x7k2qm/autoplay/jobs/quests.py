@@ -340,7 +340,7 @@ def set_leader(p, name: Optional[str]):
     """指定誰帶隊（`--leader`）：把他排到隊伍第一位、解散重組。回傳原本的順序（要還原）；不用換回 None。
 
     執行器是從**隊長**目前進行到的步驟開跑的，落後的隊員補不到前面的步驟
-    （2026-10-30 第五組 2016：四隻交完第 1 步，角色18的狗當時在出戰沒交成，
+    （2026-10-30 第五組 2016：四隻交完第 1 步，角色20的狗當時在出戰沒交成，
     隊長停在第 2 步 → 每次都卡「隊員任務狀態不一致」）。讓落後那位當隊長就會從他那一步重跑。"""
     if not name:
         return None
@@ -630,12 +630,48 @@ def drop_finished_tokens(p) -> Dict[str, List[int]]:
         junk = set()
         for g in done:
             junk |= _group_tokens(g)
+        if not junk:
+            continue
         cells = sorted((it["itemIndex"], it["itemId"]) for it in p.bag(n) if it.get("itemId") in junk)
         if cells:
             p.log(f"{n} 身上已完成任務的交件道具 {[i for _, i in cells]} 刪掉（任務做完就用不到）")
             clean.do_delete(p, n, cells)
             out[n] = [i for _, i in cells]
+        gone = _drop_from_depot(p, n, junk)
+        if gone:
+            out.setdefault(n, []).extend(gone)
     return out
+
+
+def _drop_from_depot(p, name: str, junk: set) -> List[int]:
+    """個人倉庫第 1 頁裡的已完成任務交件道具：一筆一筆領到背包再刪（倉庫沒有直接刪的協定）。
+    使用者 11-06 同意刪：2010 早就做完，舊的四寶玉、結晶石被清背包存進個倉，一組佔 5～10 格。
+    背包沒空格就先不動（下次整理再刪）；領出沒確認丟 JobError（規範第 2 點）。"""
+    from .carry import depot, in_bag
+    from ..shell_exchange import BAG_SIZE
+    try:
+        rows = [r for r in depot(p, name) if r.get("itemId") in junk and r.get("uniqueIndex")]
+    except Exception as e:                         # noqa: BLE001  查不到倉庫就這次不動
+        p.log(f"{name} 查個人倉庫失敗（{e}），已完成任務的道具這次先不刪")
+        return []
+    gone: List[int] = []
+    for r in rows:
+        if len(p.bag(name)) >= BAG_SIZE:
+            p.log(f"{name} 背包滿了，倉庫裡已完成任務的道具先不刪")
+            break
+        iid, k = r["itemId"], int(r.get("overlay") or 1)
+        before = in_bag(p, name, iid)
+        g = p.clients[name].request("ItemHandle_GetItemToNewDepot",
+                                    {"page": 1, "isPublic": False, "uniqueIndex": r["uniqueIndex"], "count": k}) or {}
+        if not (g.get("isOK") and p.wait(lambda: in_bag(p, name, iid) >= before + k, 5)):
+            raise JobError(f"{name} 從個倉領出已完成任務的道具 {iid} 沒確認：{g}")
+        cells = sorted((it["itemIndex"], it["itemId"]) for it in p.bag(name) if it.get("itemId") == iid)
+        clean.do_delete(p, name, cells)
+        gone.extend([iid] * len(cells))
+        p.nap(0.4)
+    if gone:
+        p.log(f"{name} 個人倉庫裡已完成任務的交件道具 {gone} 領出來刪掉")
+    return gone
 
 
 def _first_step_items(group: int) -> set:
@@ -694,7 +730,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色54的 2D人龍進化石、角色106的 2D老虎自選蛋、角色64的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色62的 2D人龍進化石、角色104的 2D老虎自選蛋、角色79的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE

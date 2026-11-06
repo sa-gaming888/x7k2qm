@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色70邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色101邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -129,7 +129,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色70誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色101誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -246,11 +246,32 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
         make_room(p, name, len(_pets(p, name)) + need - slot_max, {pid for pid, _ in plan})
     if len(_pets(p, name)) + need > slot_max:
         raise JobError(f"{name} 停止：現在 {len(_pets(p, name))} 隻、要抓 {need} 隻，超過上限 {slot_max}")
+    short = None
     if not take_bait(p, name, need):
-        if not buy:
-            raise JobError(f"{name} 停止：誘餌不夠（要 {need} 個，身上 {_bait(p, name)} 個）；"
-                           f"要用石幣補買加 --buy-bait（每個 {BUY_PRICE:,} 石幣）")
-        buy_bait(p, name, need - _bait(p, name))     # 只買缺的量
+        why = (f"誘餌不夠（要 {need} 個，身上 {_bait(p, name)} 個）；"
+               f"要用石幣補買加 --buy-bait（每個 {BUY_PRICE:,} 石幣）")
+        if buy:
+            try:
+                buy_bait(p, name, need - _bait(p, name))     # 只買缺的量
+            except JobError as e:                            # JobHold（花了錢對不上）照舊往上丟
+                if type(e) is not JobError:
+                    raise
+                why = str(e)
+        have = _bait(p, name)
+        if have < need:
+            if have <= 0:
+                raise JobError(f"{name} 停止：{why}")
+            # 有幾個誘餌就先抓幾隻（使用者 11-06「倉庫有寵物誘餌，可以直接抓寵」）：抓到的留著，
+            # 下次只差剩下的；舊版不到 need 個就一隻都不抓，身上 2～3 個誘餌白放
+            full, todo, left = todo, [], have
+            for pid, n in full:
+                k = min(n, left)
+                if k > 0:
+                    todo.append((pid, k))
+                left -= k
+            short = f"{name} 誘餌只夠抓 {have}/{need} 隻（{why}），先抓 {todo}，剩下的下次補"
+            p.log(short)
+            need = have
     c.send("Team_TeamLeave", {})
     p.nap(1.5)
     fight, ride = p.locks(name)
@@ -275,6 +296,8 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
     finally:
         _setting(p, name, False, last)
         restore_fight_pet(p, name, fight, ride)
+    if short:
+        raise JobError(f"{short}；這次抓到 {got}")
     return got
 
 
