@@ -40,7 +40,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色101邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色87邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -129,7 +129,7 @@ def onekey_price() -> Optional[int]:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色101誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色87誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -210,23 +210,31 @@ def make_room(p, name: str, over: int, targets: set) -> None:
 def reuse_depot(p, name: str, plan: List[Tuple[int, int]], slot_max: int) -> Dict[int, int]:
     """要抓的寵物個人寵物倉已經有同種的，先領出來用（等級高的優先），不再花誘餌重抓。
     11-06：每次換版 Pod 重開、劇本從頭跑，卡坦第 1 步先 `pets park` 把上次抓好練好的鯊魚存倉、再重抓 4 隻，
-    一隻角色 4 個誘餌，兩組石幣被燒到買不起。只看個倉（共倉是全帳號共用，不拿別人的）。回傳 {petId: 領出幾隻}。"""
+    一隻角色 4 個誘餌，兩組石幣被燒到買不起。先看個倉、沒有再看共倉（個倉滿了 park／make_room 會改存共倉；
+    使用者 11-06「要抓的寵物先看倉庫是否存在，已經存在就從倉庫取回，不要重複抓」）。
+    共倉那隻被同帳號別人先領走（領出沒確認）就不硬拿、照舊抓。回傳 {petId: 領出幾隻}。"""
     from .pets import take_pet
     try:
-        rows = [r for r in p.pet_depots(name) if not r.get("isPublic")]
+        rows = sorted(p.pet_depots(name), key=lambda r: bool(r.get("isPublic")))   # 個倉優先
     except Exception as e:                         # noqa: BLE001  查不到倉庫就照舊抓
         p.log(f"{name} 查寵物倉失敗（{e}），照舊抓")
         return {}
     took: Dict[int, int] = {}
     targets = {pid for pid, _ in plan}
     for pid, n in plan:
-        cand = sorted((r for r in rows if r.get("petId") == pid), key=lambda r: -(r.get("level") or 0))
+        cand = sorted((r for r in rows if r.get("petId") == pid),
+                      key=lambda r: (bool(r.get("isPublic")), -(r.get("level") or 0)))
         while cand and _count(p, name, pid) < n:
             if len(_pets(p, name)) >= slot_max:
                 make_room(p, name, 1, targets)
             if len(_pets(p, name)) >= slot_max:
                 break
-            take_pet(p, name, cand.pop(0))
+            row = cand.pop(0)
+            try:
+                take_pet(p, name, row)
+            except JobError as e:
+                p.log(f"{name} 從倉庫領 {pid} 沒成功（{e}），改用抓的")
+                continue
             took[pid] = took.get(pid, 0) + 1
     return took
 
