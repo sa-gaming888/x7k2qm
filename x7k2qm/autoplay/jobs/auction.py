@@ -23,7 +23,9 @@ NAME = "auction"
 HELP = "道具上架集市（--item 道具 ID、--price 單價，石幣；--apply 要再加 --confirm-list）"
 PAUSE = lambda a: bool(getattr(a, "apply", False))      # noqa: E731
 
-ACTION_LIST, ACTION_UPLOAD = 1, 2       # 3＝領取／下架，不能送（LESSONS #173）
+ACTION_LIST, ACTION_UPLOAD = 1, 2       # 3＝領取／下架，上架時不能送（LESSONS #173）
+ACTION_CLAIM = 3                        # 領取／下架同一個請求（伺服器看賣掉沒）：只對 isBuyed 的那筆送（--claim）
+CLAIM_WAIT = 8.0
 STONE = 3                           # 幣種：石幣（doc/features/shop.md §3.2）
 MAX_PRICE = 100_000_000             # 上限保護（打錯一個 0）
 STALL_MAX = 20                      # Config.newShopBoothUpItemMaxNum（參考專案 market.py）
@@ -31,14 +33,20 @@ UPLOAD_WAIT = 8.0
 
 
 def add_args(ap) -> None:
-    ap.add_argument("--item", type=int, required=True, help="要上架的道具 ID（例：阿布的水 2400，不能是綁定的）")
-    ap.add_argument("--price", type=int, required=True, help="單價（石幣）")
+    ap.add_argument("--item", type=int, default=None, help="要上架的道具 ID（例：阿布的水 2400，不能是綁定的）")
+    ap.add_argument("--price", type=int, default=None, help="單價（石幣）")
+    ap.add_argument("--claim", action="store_true",
+                    help="領錢：讀攤位，只對已賣出（isBuyed）的那幾筆送領取；還在賣的不碰（送了會變下架）")
     ap.add_argument("--count", type=int, default=1, help="上架幾個（預設 1）")
     ap.add_argument("--who", default=None, help="哪一隻上架（預設隊長）")
     ap.add_argument("--confirm-list", dest="confirm_list", action="store_true", help="--apply 時一定要加（上架會把道具交給交易所）")
 
 
 def check(args) -> None:
+    if getattr(args, "claim", False):
+        return
+    if getattr(args, "item", None) is None or getattr(args, "price", None) is None:
+        raise JobError("上架要給 --item、--price（領錢用 --claim）")
     if not 10 <= int(args.price) * int(getattr(args, "count", 1) or 1) <= MAX_PRICE:
         raise JobError(f"整筆價（--price×--count）要在 10～{MAX_PRICE:,}")
     if int(getattr(args, "count", 1) or 1) < 1:
@@ -78,8 +86,43 @@ def _take_from_depot(p, who: str, item: int, need: int, name: str) -> int:
     return got
 
 
+def stone(p, who: str):
+    with p.lock:
+        return (p.money.get(who) or {}).get("stone")
+
+
+def claim(p, who: str, apply: bool) -> Tuple[str, dict]:
+    """攤位上已賣出的那幾筆領錢（使用者 11-06「角色23 買了，去領取」）。action 3 是「領取／下架」同一個請求，
+    伺服器看賣掉沒：**只對 isBuyed 的送**，還在賣的不碰。領了要看到石幣增加，沒增加就 JobHold 停在原地等人看。"""
+    c = p.clients[who]
+    goods = my_goods(c)
+    sold = [g for g in goods if g.get("isBuyed")]
+    p.log(f"集市：{who} 攤位 {len(goods)} 筆、已賣出 {len(sold)} 筆"
+          + (f"（{[(g.get('uniqueIndex'), g.get('price')) for g in sold]}）" if sold else ""))
+    if not sold:
+        return f"{who} 攤位沒有已賣出的（{len(goods)} 筆還在賣），不送領取", {"sold": 0}
+    if not apply:
+        return f"只列（沒加 --apply）：{len(sold)} 筆已賣出可以領", {"sold": len(sold)}
+    got = 0
+    for g in sold:
+        s0 = stone(p, who) or 0
+        c.request("Other_MyItemShopGoods", {"action": ACTION_CLAIM, "itemIndex": g["uniqueIndex"]})
+        if not p.wait(lambda: (stone(p, who) or 0) > s0, CLAIM_WAIT):
+            raise JobHold(f"{who} 領取集市 {g.get('uniqueIndex')}（{g.get('price'):,} 石幣）後石幣沒增加（{s0:,}），停在原地")
+        p.log(f"集市：{who} 領到 {g.get('uniqueIndex')}：石幣 {s0:,} → {stone(p, who):,}")
+        got += (stone(p, who) or 0) - s0
+        p.nap(0.6)
+    return f"{who} 領了 {len(sold)} 筆，石幣 +{got:,}", {"sold": len(sold), "stone": got}
+
+
 def run(p, args) -> Tuple[str, dict]:
     check(args)
+    if getattr(args, "claim", False):
+        names = [n for _, n in p.party]
+        who = getattr(args, "who", None) or names[0]
+        if who not in names:
+            raise JobError(f"--who {who} 不在這組")
+        return claim(p, who, bool(getattr(args, "apply", False)))
     names = [n for _, n in p.party]
     who = getattr(args, "who", None) or names[0]
     if who not in names:

@@ -213,7 +213,7 @@ def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
             elif split:
                 raise                              # 分岔又補不了（有人沒有進行中的步驟）：停下來給人看，不放棄
             # 重打前一定真的重組：補進度換過隊長、還原時會解散隊伍（11-06 第五組補完後沒重組，
-            # 角色109一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
+            # 角色75一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
             with p.lock:
                 p.s.team = []
             if not p.form_team():
