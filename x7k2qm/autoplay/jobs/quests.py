@@ -479,6 +479,9 @@ def regroup_and_heal(p, what: str) -> None:
         with p.lock:
             p.s.team = []                        # 陣亡的人被送回記錄點、隊伍散了，快取還是 5 人
         if p.form_team() and p.heal_at_samugil():
+            # 沒騎寵／沒戰寵也補上再打：11-06 0 轉組騎寵存在倉庫，劇本一路接工作沒回練功、ensure_ride 沒跑，
+            # 轉生 2004 機暴連三次有人被打死（已轉生的組都騎著寵物）
+            p.ensure_fight_pets()
             return
     raise JobError(f"{what}：重打前重新組隊或回村補血失敗（試了 {REGROUP_TRIES} 次）")
 
@@ -748,7 +751,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色57的 2D人龍進化石、角色93的 2D老虎自選蛋、角色70的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色71的 2D人龍進化石、角色78的 2D老虎自選蛋、角色56的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
