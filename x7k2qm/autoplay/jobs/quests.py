@@ -562,6 +562,8 @@ def restore_task_items(p, group: int) -> Dict[str, Dict[int, int]]:
         for t in steps:
             if cur and t["ID"] < cur:
                 continue                                   # 已經交過的步驟
+            if not cur and t is not steps[0]:
+                break                                      # 還沒接（或被重置）：只領第 1 步要帶的，舊進度的道具不領回
             for c in t.get("condition") or []:
                 if isinstance(c, dict) and c.get("itemId"):
                     need[c["itemId"]] = max(need.get(c["itemId"], 0), int(c.get("itemNum") or 1))
@@ -602,6 +604,69 @@ def _group_items(group: int) -> Dict[int, int]:
     return {i: max(k, 1) for i, k in own.items() if i not in other}
 
 
+def _group_tokens(group: int) -> set:
+    """這個群組要**交出去**的道具（步驟條件），而且別的群組都用不到——做完這個群組就只是佔格子的廢物。
+    只看條件、不看獎勵：最後一步的獎勵（例：2010 的 2765）可能是有用的東西，不能刪。"""
+    mine, other = set(), set()
+    for t in task_table().values():
+        ids = {c["itemId"] for c in t.get("condition") or [] if isinstance(c, dict) and c.get("itemId")}
+        ids |= {r["itemId"] for r in t.get("reward") or [] if isinstance(r, dict) and r.get("itemId")}
+        if t.get("group") == group:
+            mine |= {c["itemId"] for c in t.get("condition") or [] if isinstance(c, dict) and c.get("itemId")}
+        else:
+            other |= ids
+    return mine - other
+
+
+def drop_finished_tokens(p) -> Dict[str, List[int]]:
+    """每隻身上「已經做完的群組」專用的交件道具全刪。
+    11-06 第三組：2010 早就做完，舊版重打留下兩套四寶玉＋結晶石（10 格）、2031 的勾玉 5 格 → 背包 15 格全滿，
+    英雄島買耐久力回複藥（1501）一直「沒確認」、劇本停住。clean 的規則表沒寫這些道具就不動。
+    回傳 {角色: [刪掉的 itemId]}；刪除沒確認由 clean.do_delete 丟 JobError。"""
+    out: Dict[str, List[int]] = {}
+    for _, n in p.party:
+        with p.lock:
+            done = list(p.finished.get(n) or [])
+        junk = set()
+        for g in done:
+            junk |= _group_tokens(g)
+        cells = sorted((it["itemIndex"], it["itemId"]) for it in p.bag(n) if it.get("itemId") in junk)
+        if cells:
+            p.log(f"{n} 身上已完成任務的交件道具 {[i for _, i in cells]} 刪掉（任務做完就用不到）")
+            clean.do_delete(p, n, cells)
+            out[n] = [i for _, i in cells]
+    return out
+
+
+def _first_step_items(group: int) -> set:
+    """第 1 步要帶的道具（例：2031 先買好的耐久力回複藥 1501）：還沒接任務前就該在身上，不能當舊道具丟。"""
+    steps = sorted((t for t in task_table().values() if t.get("group") == group), key=lambda t: t.get("step", 0))
+    return {c["itemId"] for c in (steps[0].get("condition") if steps else None) or []
+            if isinstance(c, dict) and c.get("itemId")}
+
+
+def drop_stale_tokens(p, group: int) -> Dict[str, List[int]]:
+    """還沒做完、也沒有進行中步驟的人（上一次沒做完被重置／放棄）：這個群組的交件道具全丟，重接會重新發。
+    使用者 11-06：「每次解任務前都應該先清空道具欄，如果是上一個任務沒完成重置，道具要丟掉」。
+    第 1 步要帶的道具不丟。回傳 {角色: [刪掉的 itemId]}。"""
+    junk = _group_tokens(group) - _first_step_items(group)
+    out: Dict[str, List[int]] = {}
+    if not junk:
+        return out
+    for _, n in p.party:
+        with p.lock:
+            if group in (p.finished.get(n) or []):
+                continue
+        if doing(p, n, group):
+            continue
+        cells = sorted((it["itemIndex"], it["itemId"]) for it in p.bag(n) if it.get("itemId") in junk)
+        if cells:
+            p.log(f"任務 {group}：{n} 沒有進行中的步驟（上次沒做完被重置），身上舊的交件道具 {[i for _, i in cells]} 丟掉")
+            clean.do_delete(p, n, cells)
+            out[n] = [i for _, i in cells]
+    return out
+
+
 def trim_task_items(p, group: int) -> Dict[str, List[int]]:
     """這個群組專用的道具，背包裡多過要交的數量就刪掉多的。
     11-05 2010 陣亡重打 3 次：每次放棄重接又發一套四寶玉（第 1～4 步的獎勵），舊的留在背包，
@@ -629,7 +694,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色90的 2D人龍進化石、角色55的 2D老虎自選蛋、角色58的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色85的 2D人龍進化石、角色108的 2D老虎自選蛋、角色106的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE
@@ -685,6 +750,8 @@ def run(p, args) -> Tuple[str, dict]:
         preflight_pets(p, g, getattr(args, "steps_of", lambda g: None)(g))
         stash_shells(p, free)
         stash_bag(p, free)
+        drop_finished_tokens(p)
+        drop_stale_tokens(p, g)
         restore_task_items(p, g)
         trim_task_items(p, g)
         p.log(f"開始任務 {g}（背包至少空 {free} 格）" + (f"，做完 {sa} 就停" if sa else ""))
@@ -731,6 +798,7 @@ def run(p, args) -> Tuple[str, dict]:
                     # 全隊放棄重接（LESSONS #94；11-05 兩組 2010 都這樣停住）
                     p.log(f"任務 {g}：隊員進度分岔，全隊放棄後重接（第 {tries}/{retry} 次）")
                     give_up(p, g)
+                    drop_stale_tokens(p, g)
                     trim_task_items(p, g)
                 p.nap(2)
         p.log(f"任務 {g} {'停在 ' + str(sa) + '（--stop-after）' if early else '完成'}，清背包")
