@@ -20,6 +20,7 @@
 並用 session 喚醒等待中的 request。
 """
 
+import queue
 import random
 import socket
 import struct
@@ -196,6 +197,9 @@ def _brief(data: Optional[Dict[str, Any]], limit: int = 120) -> str:
     return text if len(text) <= limit else text[:limit] + "…"
 
 
+EVENTS_KEEP = 2000   # 事件佇列最多留幾筆，超過丟最舊的（沒人取的佇列不無限長）
+
+
 class GameClient(EventQueue):
     def __init__(self, schema: Optional[Schema] = None, timeout: float = 10.0,
                  heartbeat_interval: float = 5.0, interval: Tuple[float, float] = REQUEST_INTERVAL,
@@ -303,6 +307,13 @@ class GameClient(EventQueue):
             for f in self.listeners:
                 f(e)
             self.events.put(e)
+            # 佇列只給 wait_for／drain 用（例如 trip_spirit 先 drain 再等）；常駐練功只靠 listeners、
+            # 登入後就沒人取，舊版無上限：k8s 常駐每小時多 3 萬多筆事件、7～8 小時就碰 512Mi 被 OOMKilled（11-06）
+            while self.events.qsize() > EVENTS_KEEP:
+                try:
+                    self.events.get_nowait()
+                except queue.Empty:
+                    break
 
     # ---- 送 ----
     def send(self, name: str, data: Optional[Dict[str, Any]] = None,
