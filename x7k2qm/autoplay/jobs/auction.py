@@ -57,6 +57,27 @@ def my_goods(c) -> List[dict]:
     return list(rows.values()) if isinstance(rows, dict) else list(rows)
 
 
+def _take_from_depot(p, who: str, item: int, need: int, name: str) -> int:
+    """個人倉庫第 1 頁裡沒綁定的那個道具，領到背包，最多領 need 個；回傳實際領到幾個。領出沒確認丟 JobError。"""
+    from .carry import depot, in_bag
+    got = 0
+    for r in depot(p, who):
+        if got >= need:
+            break
+        if r.get("itemId") != item or r.get("bind") or not r.get("uniqueIndex"):
+            continue
+        k = min(need - got, int(r.get("overlay") or 1))
+        before = in_bag(p, who, item)
+        g = p.clients[who].request("ItemHandle_GetItemToNewDepot",
+                                   {"page": 1, "isPublic": False, "uniqueIndex": r["uniqueIndex"], "count": k}) or {}
+        if not (g.get("isOK") and p.wait(lambda: in_bag(p, who, item) >= before + k, 5)):
+            raise JobError(f"{who} 從個倉領 {name} 沒確認：{g}")
+        p.log(f"集市：{who} 從個人倉庫領出 {name}×{k} 來上架")
+        got += k
+        p.nap(0.4)
+    return got
+
+
 def run(p, args) -> Tuple[str, dict]:
     check(args)
     names = [n for _, n in p.party]
@@ -71,7 +92,11 @@ def run(p, args) -> Tuple[str, dict]:
     if not getattr(args, "apply", False):
         return "只列要上架什麼（沒加 --apply，沒有送任何動作）", {"who": who, "item": item, "have": have}
     if have < count:
-        raise JobError(f"{who} 背包只有 {have} 個 {name}（要 {count}），先買或從倉庫領")
+        # 背包不夠就先從個人倉庫領（11-06 第五組：剛買的阿布水被劇本的清背包照規則表存進個倉，上架時背包 0 個）
+        have = _take_from_depot(p, who, item, count - have, name) + have
+        cells = [it for it in p.bag(who) if it.get("itemId") == item and not it.get("bind")]
+    if have < count:
+        raise JobError(f"{who} 背包＋個倉只有 {have} 個 {name}（要 {count}），先買")
     if not p.wait(lambda: not p.fighting.get(who), 60):
         raise JobError(f"{who} 還在戰鬥中，不上架")
     big = [it for it in cells if int(it.get("overlay") or 1) >= count]   # 請求只有一個 itemIndex，要從同一格拿
