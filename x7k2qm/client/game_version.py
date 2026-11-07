@@ -12,7 +12,7 @@ import re
 import struct
 from typing import Dict, Optional, Tuple
 
-FALLBACK = "1.0.4"
+FALLBACK = "1.0.5"                      # 11-07 16:02 維護改版，1.0.4 被擋 result=4、1.0.5 實測可登入
 DEFAULT_BUNDLE = ""
 BUNDLE_OFFSET = 331                     # bundle 去掉前 331 bytes 是標準 UnityFS（REVERSE-ENGINEERING §1）
 

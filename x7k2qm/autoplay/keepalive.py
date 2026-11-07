@@ -7,9 +7,14 @@
 Windows 用 Start-Process 開成獨立行程，Claude Code 記憶體不足時才不會連它一起殺（LESSONS #165）。
 
 看這次執行寫進日誌的內容判斷怎麼結束（jobs 的 JobError、崩潰、Windows 強殺結束碼都可能是 1，分不出來）：
-- 結束碼 0、有停止檔、工作自己回報「停止：…」（含被擠下線，規範 2：不重連）→ 不重開。
-- 「停止：例外 …」（崩潰）或完全沒有停止紀錄（被強殺）→ 重開。
-- 重開間隔 5、10、20 分鐘；連續 3 次沒撐過 STABLE_SECONDS 就放棄，推響鈴 TG。
+- 結束碼 0、有停止檔、工作自己回報「停止：…」→ 不重開。
+- 明講被擠下線（「被擠下線」「被踢下線」「KickConnect」）→ 不重開（規範 2）。
+- 斷線（「連線中斷」「連線被關閉」「連線已關閉」，使用者 11-07「接下來這些帳號斷線 預設重登10次」）→
+  重登，最多 `--relogin` 次（預設 10）；間隔 5、10、20 分鐘，之後每次 30 分鐘。
+  「連線被關閉」分不出是不是有人登入擠掉（LESSONS #136），照使用者這次的指示一律當斷線重登；
+  要自己進遊戲前先放停止檔。
+- 「停止：例外 …」（崩潰）或完全沒有停止紀錄（被強殺）→ 重開，間隔 5、10、20 分鐘，最多 3 次。
+- 跑滿 STABLE_SECONDS 才算恢復，兩種次數都歸零；用完次數就放棄，推響鈴 TG。
 
 這支程式自己被殺、電腦關機時不會重來（沒有誰看著它）。
 """
@@ -24,26 +29,41 @@ from typing import Callable, List, Optional
 
 BACKOFF = (300.0, 600.0, 1200.0)      # 規範 2：5 分鐘起、每次加倍、最多 3 次
 STABLE_SECONDS = 1800.0               # 跑滿這麼久才算恢復，重開次數歸零
+RELOGIN_MAX = 10                      # 使用者 11-07「接下來這些帳號斷線 預設重登10次」
+RELOGIN_CAP = 1800.0                  # 斷線重登的間隔加倍到 30 分鐘就不再加
 
-PLANNED, CRASHED, KILLED, DONE = "planned", "crashed", "killed", "done"
+PLANNED, CRASHED, KILLED, DONE, DISCONNECTED = "planned", "crashed", "killed", "done", "disconnected"
 _STOP_LINE = re.compile(r"^\S+ \S+ (?:\[\w+\] )?停止：(.*)$", re.M)   # headless_party 的日誌沒有 [標籤]（容器用）
+_KICKED = re.compile(r"被擠下線|被踢下線|KickConnect")
+_DISCONNECT = re.compile(r"連線中斷|連線被關閉|連線已關閉")
 
 
 def classify(rc: int, text: str) -> str:
-    """text 是這次執行新寫進日誌的內容。"""
+    """text 是這次執行新寫進日誌的內容。被擠下線、斷線看這次所有的停止紀錄（petgoal 斷線時最後一行是
+    「寵物目標第 1 輪沒練完（練功停止）」，斷線那行在前面）；其他看最後一行。"""
     if rc == 0:
         return DONE
     stops = _STOP_LINE.findall(text)
     if not stops:
         return KILLED
+    if any(_KICKED.search(s) for s in stops):
+        return PLANNED
+    if any(_DISCONNECT.search(s) for s in stops):
+        return DISCONNECTED
     return CRASHED if stops[-1].startswith("例外") else PLANNED
+
+
+def relogin_wait(n: int) -> float:
+    """第 n 次（從 0 起）斷線重登前等多久：5、10、20 分鐘，之後 30 分鐘。"""
+    return min(BACKOFF[0] * 2 ** n, RELOGIN_CAP)
 
 
 def supervise(run_once: Callable[[], tuple], stop_exists: Callable[[], bool], notify: Callable[[str], None],
               log: Callable[[str], None], sleep: Callable[[float], None] = time.sleep,
-              clock: Callable[[], float] = time.monotonic) -> str:
-    """run_once() 回傳 (結束碼, 這次新增的日誌)。回傳最後結束的原因。"""
-    fails = 0
+              clock: Callable[[], float] = time.monotonic, relogin: int = RELOGIN_MAX) -> str:
+    """run_once() 回傳 (結束碼, 這次新增的日誌)。回傳最後結束的原因。
+    崩潰／強殺最多重開 3 次；斷線另外算，最多重登 relogin 次（0＝斷線不重登）。"""
+    fails = drops = 0
     while True:
         t0 = clock()
         rc, text = run_once()
@@ -55,13 +75,21 @@ def supervise(run_once: Callable[[], tuple], stop_exists: Callable[[], bool], no
             log("有停止檔，不重開")
             return "stopped"
         if clock() - t0 >= STABLE_SECONDS:
-            fails = 0
-        if fails >= len(BACKOFF):
-            notify(f"⛔ 自動重開 {fails} 次都失敗，放棄（最後判定 {kind}），請查日誌")
-            return "gave_up"
-        wait = BACKOFF[fails]
-        fails += 1
-        notify(f"⚠️ 工作異常結束（{kind}），{wait / 60:.0f} 分鐘後自動重開（第 {fails}/{len(BACKOFF)} 次）")
+            fails = drops = 0
+        if kind == DISCONNECTED:
+            if drops >= relogin:
+                notify(f"⛔ 斷線重登 {drops} 次都沒撐住，放棄，請查日誌" if drops else "⛔ 斷線，沒設定重登，停")
+                return "gave_up"
+            wait = relogin_wait(drops)
+            drops += 1
+            notify(f"⚠️ 斷線，{wait / 60:.0f} 分鐘後重登（第 {drops}/{relogin} 次）")
+        else:
+            if fails >= len(BACKOFF):
+                notify(f"⛔ 自動重開 {fails} 次都失敗，放棄（最後判定 {kind}），請查日誌")
+                return "gave_up"
+            wait = BACKOFF[fails]
+            fails += 1
+            notify(f"⚠️ 工作異常結束（{kind}），{wait / 60:.0f} 分鐘後自動重開（第 {fails}/{len(BACKOFF)} 次）")
         sleep(wait)
         if stop_exists():
             log("等待重開時看到停止檔，不重開")
@@ -122,6 +150,8 @@ def main(argv=None) -> int:
     ap.add_argument("--label", default="自動重開")
     ap.add_argument("--party", action="store_true",
                     help="-- 之後是 headless_party 的參數（常駐練功；使用者 11-05「以後停了自動重開」）")
+    ap.add_argument("--relogin", type=int, default=RELOGIN_MAX,
+                    help=f"斷線最多重登幾次（預設 {RELOGIN_MAX}，使用者 11-07；0＝斷線就停）")
     ap.add_argument("job", nargs=argparse.REMAINDER, help="-- 之後是 jobs 的參數")
     args = ap.parse_args(argv)
     job = args.job[1:] if args.job[:1] == ["--"] else args.job
@@ -141,7 +171,7 @@ def main(argv=None) -> int:
     try:
         module = PARTY if args.party else JOBS
         why = supervise(lambda: run_child(job, args.log, module), lambda: os.path.exists(args.stop_file),
-                        make_notify(log, args.label), log)
+                        make_notify(log, args.label), log, relogin=max(0, args.relogin))
     finally:
         os.remove(pid_path)
     log(f"結束：{why}")
