@@ -16,7 +16,7 @@
   BOT_PC_ID       機器識別（預設照遊戲格式自己產生，見 make_pc_id）
   BOT_LOGIN_HOST  HTTP 登入伺服器（預設 eologin.idealsa.org）
   BOT_GAME_HOST   遊戲伺服器（預設用 HTTP 回應的 IP）
-  BOT_CLIENT_VER  客戶端版本（沒設就從本機遊戲檔自動抓，見 game_version.py；都沒有用 1.0.3）
+  BOT_CLIENT_VER  客戶端版本（組別的 _<組> 優先，沒有就讀通用的；都沒設從本機遊戲檔自動抓，見 game_version.py；再沒有用 FALLBACK）
   BOT_PC_IP / BOT_COUNTRY   對外 IP 與國家（預設像遊戲一樣問 ip-api.com）
 
 第二組帳號（自動玩用）：同樣的名稱加後綴 _2，例如 BOT_ACCOUNT_2、BOT_PASSWORD_2、BOT_RID_2（load(profile="2")）。
@@ -130,4 +130,5 @@ def load(environ: Mapping[str, str] = os.environ, profile: str = "", accounts: O
         account=account, password=password, pc_id=get("PC_ID") or make_pc_id(),
         node=get("NODE") or "game1", rid=int(rid) if rid else None,
         login_host=get("LOGIN_HOST") or LOGIN_HOST, game_host=get("GAME_HOST"),
-        client_ver=get("CLIENT_VER") or local_client_ver() or FALLBACK, pc_ip=get("PC_IP"), country=get("COUNTRY"))
+        # 組別變數 → 通用 BOT_CLIENT_VER（改版時設一個就全部生效；11-07 只設通用的，帶 --profile 讀不到、照樣 result=4）
+        client_ver=get("CLIENT_VER") or environ.get(env_name("CLIENT_VER")) or local_client_ver() or FALLBACK, pc_ip=get("PC_IP"), country=get("COUNTRY"))
