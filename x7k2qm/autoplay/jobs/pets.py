@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色88,角色44   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色109,角色50   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色88、角色44領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色109、角色50領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -290,7 +290,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色98，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色59，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -432,13 +432,15 @@ def do_withdraw(p, name: str, pid: int, uid: Optional[int] = None) -> None:
           f"／耐 {got.get('defArg')}／速 {got.get('dexArg')}，沒有鎖定")
 
 
-def do_deposit(p, name: str, pid: int, public: bool = False) -> None:
+def do_deposit(p, name: str, pid: int, public: bool = False, uid: Optional[int] = None) -> None:
     """身上那種寵物存**個人**寵物倉庫（withdraw 的相反，使用者 2026-11-02「把mm存到個人倉庫」）：
     個倉滿了就停，不像 store_pet 改存共倉；要剛好 1 隻、不能是鎖定的戰寵／騎寵。
     `--public` 改存**共倉**（使用者 11-05「存共倉」：五隻剛抓的邦浦洛斯）；共倉滿了就停，不改存個倉。"""
-    hits = [k for k, v in slots(p, name).items() if v.get("petId") == pid]
+    # --pet-uid：同種多隻時指定哪一隻（使用者 11-08 第六組每人 2 隻黑暴，只留 +2 以上的練）
+    hits = [k for k, v in slots(p, name).items() if v.get("petId") == pid and (uid is None or v.get("uniqueIndex") == uid)]
     if len(hits) != 1:
-        raise JobError(f"{name} 身上有 {len(hits)} 隻寵物 {pid}（要剛好 1 隻才存）")
+        raise JobError(f"{name} 身上有 {len(hits)} 隻寵物 {pid}{'' if uid is None else f'（唯一編號 {uid}）'}"
+                       f"（要剛好 1 隻才存；同種多隻用 --pet-uid 指定）")
     uid = slots(p, name)[hits[0]].get("uniqueIndex")
     if uid in p.locks(name):
         raise JobError(f"{name} 第 {hits[0]} 格是鎖定的戰寵／騎寵，不存")
@@ -665,7 +667,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色88等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色109等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
@@ -956,11 +958,18 @@ def list_lines(p, names: List[str]) -> List[str]:
 
 
 def _grade_row(p, where: str, pet: dict) -> dict:
-    from ..petgrade import grade
+    from ..petgrade import forecast_score, grade
     label, diff = grade(pet)
+    fc = forecast_score(pet) if (pet.get("level") or 0) < 140 else None
     return {"where": where, "name": p.pet_name(pet), "petId": pet.get("petId"), "level": pet.get("level"),
             "trans": pet.get("trans") or 0, "grade": label, "diff": diff,
-            "args": [pet.get(k) for k in ("vitArg", "atkArg", "defArg", "dexArg")], "score": pet.get("score")}
+            "args": [pet.get(k) for k in ("vitArg", "atkArg", "defArg", "dexArg")], "score": pet.get("score"),
+            "forecast": fc and fc["score"]}
+
+
+def forecast_text(r: dict) -> str:
+    """「｜預估 140 級 1012」（使用者 11-08；116 筆實測平均誤差 1.6、最大 6）。推不出來（140 級、轉生寵、缺欄）回空字串。"""
+    return f"｜預估 140 級 {r['forecast']}" if r.get("forecast") else ""
 
 
 def grade_rows(p, names: List[str]) -> List[dict]:
@@ -1023,7 +1032,7 @@ def info_line(r: dict) -> str:
             f"｜地 {g('earth')} 水 {g('water')} 火 {g('fire')} 風 {g('wind')}"
             f"｜暴擊 {g('physicalCrit')} 抗暴 {g('physicalResistCrit')} 暴傷 {g('physicalCritDamage')}"
             f" 命中 {g('physicalHit')} 閃避 {g('physicalDodge')} 穿透 {g('physicalPenetrate')} 反擊 {g('physicalBeatBack')}"
-            f"｜檔次 {r['grade']} 體{v} 腕{a} 耐{d} 速{s}｜評分 {r['score']}"
+            f"｜檔次 {r['grade']} 體{v} 腕{a} 耐{d} 速{s}｜評分 {r['score']}{forecast_text(r)}"
             f"｜忠誠 {g('allegiance')} 星 {g('petStar')} 經驗 {g('exp')}｜{flags}"
             f"｜技能 {skill_text(x.get('skills'))}｜編號 {g('uniqueIndex')}")
 
@@ -1042,7 +1051,7 @@ def run(p, args) -> Tuple[str, dict]:
             total = "" if r["diff"] is None else f"（總 {sum(r['args'])}）"
             v, a, d, x = r["args"]
             p.log(f"{r['where']}｜{r['name']}（{r['petId']}）Lv{r['level']}｜{r['grade']}{total}"
-                  f"｜個體檔 體{v} 腕{a} 耐{d} 速{x}｜評分 {r['score']}")
+                  f"｜個體檔 體{v} 腕{a} 耐{d} 速{x}｜評分 {r['score']}{forecast_text(r)}")
         full = sum(1 for r in rows if r["grade"] == "滿檔")
         return f"寵物檔次：{len(rows)} 隻，滿檔 {full} 隻（只讀，沒有送任何改動）", {"mode": mode, "rows": rows}
     if mode == "release-below":
@@ -1102,7 +1111,8 @@ def run(p, args) -> Tuple[str, dict]:
         elif mode == "withdraw":
             do_withdraw(p, n, args.pet_id, int(args.pet_uid) if getattr(args, "pet_uid", None) else None)
         elif mode == "deposit":
-            do_deposit(p, n, args.pet_id, public=bool(getattr(args, "public", False)))
+            do_deposit(p, n, args.pet_id, public=bool(getattr(args, "public", False)),
+                       uid=int(args.pet_uid) if getattr(args, "pet_uid", None) else None)
         elif mode == "ride":
             do_ride(p, n, int(args.pet_uid))
         elif mode == "retire":

@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色88"), (10003796, "角色44"), (10003799, "角色74"), (10003803, "角色45"), (10003804, "角色63")]
+PARTY = [(10003754, "角色109"), (10003796, "角色50"), (10003799, "角色58"), (10003803, "角色32"), (10003804, "角色83")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -163,6 +163,7 @@ class Party:
         self.petinfo: Dict[str, Dict[int, dict]] = {}   # 寵物欄（petId、level、status）；角色登入後才有
         self.train_pet: Optional[Tuple[int, int]] = None   # 練寵模式：(petId, 目標等級)
         self.orig_fight: Dict[str, Tuple[int, int]] = {}   # 練寵中的角色 → 原本的（戰寵, 騎寵）唯一編號
+        self.train_uid: Dict[str, int] = {}  # 練寵中的角色 → 正在練的那隻唯一編號（同種多隻時判斷到級／換圖看牠，LESSONS #184）
         self.train_skip: set = set()     # 練寵時不換戰寵的角色（jobs petgoal：這輪沒有寵物可練的人照常用原本戰寵）
         self.wg: Dict[str, dict] = {}            # 角色 → 外掛一般設定（wgNomalSetting）
         self.battle: Dict[str, dict] = {}        # 角色 → 外掛戰鬥設定（battleSetting；首次動作等）
@@ -750,12 +751,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色96在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色85在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色74 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色58 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1161,7 +1162,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色88個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色109個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1818,7 +1819,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色29的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色46的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -1872,6 +1873,7 @@ class Party:
     def start_pet_training(self) -> bool:
         """5 隻的戰寵都改成要練的寵物，記住原本的戰寵；已經夠等級的不改。"""
         pid, lv = self.train_pet
+        self.train_uid.clear()               # 上一輪留下的（petgoal／train 直接清 orig_fight 時沒清這個）
         for _, name in self.party:
             if name in self.train_skip:
                 continue
@@ -1905,15 +1907,28 @@ class Party:
             if not fight or not target:
                 self.log(f"{name} 找不到原本的戰寵或要練的寵物（戰 {fight}、騎 {ride}、目標 {target}）"); return False
             self.orig_fight[name] = (fight, ride)
+            self.train_uid[name] = target
             if not self.set_fight_pet(name, target, ride):
                 return False
         return True
+
+    def training_index(self, name: str, pid, lv: int) -> Optional[int]:
+        """正在練的那隻在第幾格：開始時記下的唯一編號還在身上就用牠；不在（舊進度、被存倉）才照舊挑「還沒到級裡最高」。
+        11-08 第六組每人身上 2 隻 1 級黑暴練 40：舊版用 pet_index(below=40)，練的那隻過 40 就改看另一隻 1 級的，
+        永遠「沒到級」、地圖也照 1 級留在 31401，練到 57 才被我發現（LESSONS #184）。"""
+        uid = self.train_uid.get(name)
+        if uid:
+            with self.lock:
+                idx = next((i for i, p in self.petinfo[name].items() if p.get("uniqueIndex") == uid), None)
+            if idx is not None:
+                return idx
+        return self.pet_index(name, pid, below=lv)
 
     def check_pet_training(self) -> bool:
         """練到等級的就停戰鬥、把戰寵改回原本的、再開遇敵（可以超過指定等級）。"""
         pid, lv = self.train_pet
         for name, (fight, ride) in list(self.orig_fight.items()):
-            idx = self.pet_index(name, pid, below=lv)
+            idx = self.training_index(name, pid, lv)
             with self.lock:
                 level = self.petinfo[name].get(idx, {}).get("level", 0) if idx else 0
             if level < lv:
@@ -1922,6 +1937,7 @@ class Party:
             if not self.pause() or not self.set_fight_pet(name, fight, ride) or not self.set_loop(True):
                 return False
             del self.orig_fight[name]
+            self.train_uid.pop(name, None)
             if not self.orig_fight:
                 self.log(f"5 隻的寵物 {pid} 都到 {lv} 級以上了")
         return True
@@ -1931,7 +1947,7 @@ class Party:
         pid, lv = self.train_pet
         levels = []
         for name in self.orig_fight:
-            idx = self.pet_index(name, pid, below=lv)
+            idx = self.training_index(name, pid, lv)
             with self.lock:
                 levels.append(self.petinfo[name].get(idx, {}).get("level", 0) if idx else 0)
         if not levels:

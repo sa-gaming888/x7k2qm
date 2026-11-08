@@ -27,6 +27,7 @@ HELP = "用外掛自動抓寵（--pets petId:隻數,...；五隻角色同時抓�
 PAUSE = True
 
 BAIT = 90402                     # 寵物誘餌：一隻用 1 個
+BAG_DEFAULT = 15                 # RoleAttr.bagNum 沒推過時的背包格數
 CATCH_TIMEOUT = 240.0            # 單一 petId 最多等幾秒
 POLL = 0.5                       # 每隔幾秒看一次抓到沒
 SLOT_MAX, SLOT_MAX_FULL = 4, 5   # 預設抓完要留 1 格；--allow-full 允許暫時滿格
@@ -40,7 +41,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色88邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色109邦恩吉 240 秒沒遇到")
 
 
 def plan_of(args) -> List[Tuple[int, int]]:
@@ -146,7 +147,7 @@ def top_up_bait(p, name: str, k: int, buy: bool) -> None:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色88誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色109誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -160,6 +161,9 @@ def buy_bait(p, name: str, n: int) -> None:
         s0, d0, c0 = money.get("stone"), money.get("denar"), _bait(p, name)
         if s0 is None or s0 < price:
             raise JobError(f"{name} 石幣 {s0} 不夠 {price:,}，不買")
+        if c0 < 1 and bag_free(p, name) < 1:
+            # 11-08 16:21 第九組角色27背包滿、身上沒有誘餌可以疊：一鍵買照樣扣 50,000 石幣、誘餌沒進背包（LESSONS #186）
+            raise JobError(f"{name} 背包沒空格、身上也沒有誘餌可以疊，不買（伺服器會扣錢但東西進不來）")
         r = p.clients[name].request("Item_oneKeyBuyItem", {"itemId": BAIT, "itemNum": 1}) or {}
         # **石幣是帳號共用**：五隻同時買，每隻看到的扣款是大家加起來的（2026-10-27 第五組：
         # 以為只扣 50,000，實際看到 −200,000），所以只要求「有扣、至少一份、鑽石沒變」。
@@ -174,6 +178,13 @@ def buy_bait(p, name: str, n: int) -> None:
             raise JobHold(f"{name} 買誘餌後對不上：誘餌 {c0}→{c1}（要 +1）、石幣 {s0}→{s1}（至少要 −{price:,}；帳號共用，別人同時買會扣更多）、"
                           f"鑽石 {d0}→{d1}（不能變），停在原地")
         p.log(f"{name} 用石幣買 1 個寵物誘餌：誘餌 {c0}→{c1}、石幣 {s0:,}→{s1:,}")
+
+
+def bag_free(p, name: str) -> int:
+    """背包空格數：RoleAttr.bagNum（沒推過就當 15）減掉背包裡有東西的格子。"""
+    with p.lock:
+        size = (p.attrs.get(name) or {}).get("bagNum") or BAG_DEFAULT
+    return size - len(p.bag(name))
 
 
 def _bait_raw(p, name: str) -> int:
