@@ -28,7 +28,7 @@ WAIGUA_CLOSE = (1249, 73)
 WAIGUA_ROLE_RADIOS = [(130, 133), (284, 133), (438, 133), (130, 183), (284, 183)]
 WAIGUA_FAST_BATTLE = (459, 316)
 MAP_LOAD_SECONDS = 4.0
-LEADER_CONN = "61466"                      # 隊長（角色71）在遊戲客戶端的連線埠尾碼；重新登入後要更新
+LEADER_CONN = "61466"                      # 隊長（角色69）在遊戲客戶端的連線埠尾碼；重新登入後要更新
 
 # 練級傳送面板上的按鈕（客戶區），與 Transfer point、地圖 ID
 TRAIN_POINTS = {

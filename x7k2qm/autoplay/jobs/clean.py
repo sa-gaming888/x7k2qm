@@ -33,7 +33,8 @@ STEP_WAIT = 6.0                  # 每個動作等推送確認的秒數
 MAX_EAT = 20                     # 同一格最多吃幾次（疊著的一次只消耗一個，上限保護）
 RELEASE_MAX_LV = 30              # 放生規則只丟這個等級以下的（任務送的工具寵）；練過的要使用者指名
 KEEP_DIFF = 3                    # release_below3：檔差 ≥ +3 的留（同 pets.KEEP_DIFF）
-                                 # （2026-10-29 角色105 136 級戰寵被規則表放生，LESSONS #103）
+TIGER = 310                      # 金格薩貝魯（金虎）：每隻角色留一隻 1 級的，轉生後當騎寵
+                                 # （2026-10-29 角色88 136 級戰寵被規則表放生，LESSONS #103）
 
 
 def add_args(ap) -> None:
@@ -119,6 +120,7 @@ def make_plan(p, name: str, rules: Rules, depot: Optional[Dict[int, int]] = None
     fight, ride = p.locks(name)
     with p.lock:
         pets = {k: dict(v) for k, v in p.petinfo.get(name, {}).items()}
+    spare_tiger = None                  # 個倉已有的 1 級金虎數（要放生金虎時才查）
     for idx, pet in sorted(pets.items()):
         pid = pet.get("petId") or 0
         if pid <= 0:
@@ -137,6 +139,17 @@ def make_plan(p, name: str, rules: Rules, depot: Optional[Dict[int, int]] = None
             from ..petgrade import grade
             _, diff = grade(pet)
             if (pet.get("level") or 0) == 1 and diff is not None and diff < KEEP_DIFF:
+                # 11-09 第一組（cgy）英雄島後傳 2032 給的 1 級金虎當場被放生，轉生後
+                # `reset_pets_after_trans` 找不到 1 級金虎當騎寵、傳送被拒、常駐停止。
+                # 個倉還沒有 1 級金虎就留這隻（存個倉），其餘照放生。
+                if pid == TIGER:
+                    if spare_tiger is None:
+                        spare_tiger = sum(1 for d in p.pet_depot(name)
+                                          if d.get("petId") == TIGER and (d.get("level") or 0) == 1)
+                    if spare_tiger == 0:
+                        spare_tiger = 1
+                        plan.store_pet_private.append((idx, pid))
+                        continue
                 plan.release.append((idx, pid))
             else:
                 plan.store_pet_private.append((idx, pid))
@@ -144,7 +157,7 @@ def make_plan(p, name: str, rules: Rules, depot: Optional[Dict[int, int]] = None
         if r.action == "release" and (pet.get("level") or 0) > RELEASE_MAX_LV:
             # 2026-10-29 第三組：規則表「烏力斯坦 11 → release」沒有等級條件，卡坦開跑前跑過
             # `pets --mode park`（寵物全存倉、鎖定清 0、狀態變休息）→ 上面那個「戰寵／騎寵不動」
-            # 的保護失效，角色105 **136 級的戰寵**就被放生了（不可逆）。
+            # 的保護失效，角色88 **136 級的戰寵**就被放生了（不可逆）。
             # 放生規則是為了丟任務送的 1 級工具寵，練過的一律不丟，要丟請使用者指名。
             plan.pet_skipped.append((idx, pid, f"{pet.get('level')} 級，超過放生上限 {RELEASE_MAX_LV}"))
             continue
@@ -291,7 +304,7 @@ def _pet_gone(p, name: str, idx: int) -> bool:
 
 def do_store_pet(p, name: str, idx: int, pid: int) -> None:
     """存寵物倉庫第 1 頁：個倉滿了改存共倉、兩邊都滿就停（同 pets.store_pet，LESSONS #89／#93）。
-    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色71個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
+    2026-10-26 卡坦 2019 第 2 步給金飛後整理：角色69個倉 20/20，這裡寫死存個倉 → isOK false 停住。"""
     _pet_check(p, name, idx, pid, "存倉")
     public = p.pet_depot_target(name)
     if public is None:
