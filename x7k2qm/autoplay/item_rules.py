@@ -18,8 +18,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 RULES_MD = os.path.join(ROOT, "doc", "autoplay", "game", "item-rules.md")
 
 ITEM_ACTIONS = {"delete", "store_private", "store_public", "equip", "keep", "sell", "eat"}
-PET_ACTIONS = {"release", "store_pet_private", "keep"}
-IRREVERSIBLE = {"delete", "sell", "release"}       # 不可逆：不能碰保護名單
+# release_below3：1 級、檔差未滿 +3 的放生，其他（+3 以上、練過的、看不出檔差的）照 store_pet_private 存個倉
+# （使用者 11-09「金虎 金飛 紅爆 藍爆 如果沒+3 以上都丟棄」，選「加進規則表」「只丟 1 級的」）
+PET_ACTIONS = {"release", "release_below3", "store_pet_private", "keep"}
+IRREVERSIBLE = {"delete", "sell", "release", "release_below3"}       # 不可逆：不能碰保護名單
 KIND = {"道具": "item", "寵物": "pet"}
 _COND = re.compile(r"^(trans)(=|>=|<=)(\d+)$|^(done)=(\d+)$|^(depot)(<|>=)(\d+)$|^(leftover)$")
 

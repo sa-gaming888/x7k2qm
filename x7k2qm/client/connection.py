@@ -122,6 +122,7 @@ GATE_NO_HEAD = frozenset({
     "Other_NewShopGetItemPriceRecord",  # 初心錄檔 739/739、IL
     "Other_NewShopGetPetPriceRecord",  # 初心錄檔 744/744、IL
     "Other_MyItemShopGoods",          # 集市上架（jobs/auction）：**未實機驗證**，沒有錄檔；照同系列 Other_*Shop* 錄檔都不帶 head
+    "Other_NewShopBuyGood",           # 交易所購買（jobs/marketbuy）：參考專案 官方錄檔 2/2 head false、IL SendNewShopBuyGood rid 0
     "Npc_NpcInteract",                # 時光錄檔 53/53、IL
     "Role_RoleWalk",                  # 時光錄檔 167/167、IL
     "Role_NomalHandle",               # 時光錄檔 5/5、IL

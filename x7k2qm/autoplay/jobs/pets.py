@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色109,角色50   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色85,角色47   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色109、角色50領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色85、角色47領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -290,7 +290,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色59，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色86，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -667,7 +667,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色109等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色85等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
@@ -907,11 +907,13 @@ def release_below(p, names: List[str], args) -> Tuple[str, dict]:
     先放身上的騰出寵物欄，再領倉庫的；每隻用唯一編號核對，任務條件／保護名單上的不動。"""
     from .clean import do_release
     from ..item_rules import load
-    rows = below_rows(p, names)
     rules = load()
+    # 五色人龍＋規則表 release_below3 的物種（使用者 11-09 金虎、金飛、紅暴、藍暴）
+    species = set(FIVE_DRAGONS) | rules.ids("pet", {"release_below3"})
+    rows = below_rows(p, names, species=species)
     block = sorted({x["pet"].get("petId") for x in rows} & (set(rules.task_pets) | set(rules.protect)))
     show = [(x["who"] or "共倉", x["where"], p.pet_name(x["pet"]), f"{x['diff']:+d}") for x in rows]
-    p.log(f"放生低於 +{KEEP_DIFF} 檔的五色人龍 {len(rows)} 隻：{show}")
+    p.log(f"放生低於 +{KEEP_DIFF} 檔的 1 級寵物（五色人龍、規則表 release_below3）{len(rows)} 隻：{show}")
     if block:
         raise JobError(f"寵物 {block} 在任務條件／保護名單上，不放生，什麼都沒動")
     data = {"mode": "release-below", "count": len(rows), "rows": show, "done": []}
@@ -931,7 +933,7 @@ def release_below(p, names: List[str], args) -> Tuple[str, dict]:
             raise JobError(f"{who} 找不到要放生的 {p.pet_name(pet)}（已放生 {done} 隻）")
         do_release(p, who, idx, pet.get("petId"))
         done += 1
-    return f"放生低於 +{KEEP_DIFF} 檔的五色人龍 {done} 隻", dict(data, released=done)
+    return f"放生低於 +{KEEP_DIFF} 檔的 1 級寵物 {done} 隻", dict(data, released=done)
 
 
 ACTIONS = {"park": do_park, "rest": do_rest, "restore": do_restore, "store-all": store_all,
