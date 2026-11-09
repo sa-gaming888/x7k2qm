@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色69"), (10003796, "角色45"), (10003799, "角色90"), (10003803, "角色34"), (10003804, "角色78")]
+PARTY = [(10003754, "角色95"), (10003796, "角色37"), (10003799, "角色76"), (10003803, "角色44"), (10003804, "角色90")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -78,6 +78,7 @@ def p_level(p):
 
 
 GOLD_TIGER = 310          # 金格薩貝魯（金虎）：轉生後固定當騎寵（使用者 2026-10-24）
+RED_TIGER = 309           # 格魯西斯（紅虎）：沒有 1 級金虎時改騎 1 級紅虎（使用者 11-09「去抓五隻紅虎來騎」）
 SPIRIT_ITEM_TYPE = 9      # Item.json type：精靈道具（貝鈴／石笛／木笛／金幣）；其他裝備的 skill 不是精靈
 PET_LEVEL_MAX = 140       # 滿級；戰寵要挑**未滿 140** 裡等級最高的（滿級的練不動）
 PET_DEPOT_NUM = 20        # 寵物倉庫一頁幾格（Config perPetDepotNum／P_perPetDepotNum）
@@ -751,12 +752,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色66在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色107在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色90 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色76 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1162,7 +1163,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色69個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色95個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1203,11 +1204,15 @@ class Party:
         rows = self.pet_depots(name)
         # **只挑 1 級的金虎**（使用者原話「取出 1 級的金虎」）：轉生後人物是 1 級，
         # 騎不上高等坐騎——2026-10-24 第二組領回 128 級金虎，狀態直接變休息（3a492c3 的 bug）。
-        tiger = next((p for p in rows
-                      if p.get("petId") == GOLD_TIGER and (p.get("level") or 0) == 1), None)
+        tiger = next((p for kind in (GOLD_TIGER, RED_TIGER) for p in rows
+                      if p.get("petId") == kind and (p.get("level") or 0) == 1), None)
         best = max((p for p in rows
-                    if (p.get("level") or 0) < PET_LEVEL_MAX and p.get("petId") != GOLD_TIGER),
+                    if (p.get("level") or 0) < PET_LEVEL_MAX and p.get("petId") not in (GOLD_TIGER, RED_TIGER)),
                    key=lambda p: p.get("level") or 0, default=None)
+        caught = None
+        if tiger is None and best is not None:
+            # 11-09 cgy 兩組：英雄島給的 1 級金虎被 release_below3 放生，轉生後沒有騎寵、傳送被拒
+            caught = tiger = self.catch_red_tiger(name)
         if tiger is None or best is None:
             others = [p.get("level") for p in rows if p.get("petId") == GOLD_TIGER]
             why = (f"沒有 1 級金虎（倉庫裡的金虎等級：{others}）" if others and tiger is None
@@ -1217,15 +1222,33 @@ class Party:
                      f"{f'沒有未滿 {PET_LEVEL_MAX} 級的寵物' if best is None else ''}"
                      f"｜倉庫 {[(p.get('petId'), p.get('level')) for p in rows]}")
             return False
-        for p, what in ((tiger, "金虎"), (best, f"戰寵（{p_level(best)} 級）")):
+        for p, what in ((tiger, "騎寵"), (best, f"戰寵（{p_level(best)} 級）")):
+            if p is caught:
+                continue                                    # 剛抓的紅虎就在身上
             rr = c.request("NewPet_GetPetFromNewDepot",
                            {"page": self.pet_page(name, p), "isPublic": bool(p.get("isPublic")),
                             "uniqueIndex": p["uniqueIndex"]}) or {}
             if not rr.get("isOK"):
                 self.log(f"{name} 從倉庫領回{what}失敗：{rr}"); return False
             self.nap(0.8)
-        self.log(f"{name} 領回金虎與戰寵（petId {best.get('petId')}、{p_level(best)} 級）")
+        self.log(f"{name} 領回騎寵（petId {tiger.get('petId')}）與戰寵（petId {best.get('petId')}、{p_level(best)} 級）")
         return self.set_fight_pet(name, best["uniqueIndex"], tiger["uniqueIndex"])
+
+    def catch_red_tiger(self, name: str) -> Optional[dict]:
+        """倉庫沒有 1 級金虎、也沒有 1 級紅虎 → 用誘餌抓一隻 1 級紅虎當騎寵（誘餌不夠用石幣補買）。
+        抓不到就回 None，照舊停下來回報。"""
+        from .jobs import JobError
+        from .jobs.catch import SLOT_MAX, catch_one
+        try:
+            catch_one(self, name, [(RED_TIGER, 1)], SLOT_MAX, buy=True)
+        except JobError as e:
+            self.log(f"{name} 抓紅虎失敗：{e}")
+            return None
+        with self.lock:
+            got = [dict(p) for p in self.petinfo[name].values()
+                   if p.get("petId") == RED_TIGER and (p.get("level") or 0) == 1 and p.get("uniqueIndex")]
+        self.log(f"{name} 沒有 1 級金虎，抓了 1 級紅虎當騎寵：{'成功' if got else '沒抓到'}")
+        return got[0] if got else None
 
     def ensure_pets(self, name: str) -> bool:
         """規範 3：戰寵、騎寵一定要設（唯一編號）。騎寵只能挑不用學的（Ride.json needlearn false）、等級最高的；
@@ -1819,7 +1842,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色41的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色51的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
