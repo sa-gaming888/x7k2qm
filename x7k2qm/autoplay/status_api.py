@@ -56,7 +56,7 @@ def fmt_state(d: dict) -> List[str]:
     out = [f"地圖 {_v(d.get('map'))}｜隊伍 {_v(d.get('team'))}｜遇敵 {'開' if d.get('loop') else '關'}"
            f"｜快戰 {'開' if d.get('fast') else '關'}｜被踢 {'是' if d.get('kicked') else '否'}"
            f"｜最後一場 {_time(lb['t']) + (' 勝' if lb.get('win') == 1 else ' 敗') if lb else DASH}",
-           f"活力 {_v(m.get('gold'))}／聲望 {_v(m.get('lockDenar'))}／石幣合計 {_v(m.get('stone'))}"]
+           f"活力 {_v(m.get('gold'))}／聲望 {_v(m.get('lockDenar'))}／石幣 {_v(m.get('stone'))}"]
     for r in d.get("roles") or []:
         pets = "／".join(f"{k} {p['name']} {_v(p.get('lv'))} 級 {_hp(p.get('hp'), p.get('hpMax'))}" if p else f"無{k}"
                         for k, p in (("戰寵", r.get("fight")), ("騎寵", r.get("ride"))))

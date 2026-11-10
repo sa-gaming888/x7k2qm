@@ -2,7 +2,7 @@
 
     python -X utf8 -m x7k2qm.autoplay.jobs mall --profile 3 --discover --id 46                    # 只列：買什麼、多少錢、餘額
     python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46          # 隊長買 1 個
-    python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46 --count 2 --who 角色43
+    python -X utf8 -m x7k2qm.autoplay.jobs add mall --profile 3 --discover --apply --id 46 --count 2 --who 角色29
 
 `--id` 是 `ShopMall.json` 的列號（不是道具 ID）。表的 `group` 就是幣種（1 鑽石、2 活力、3 石幣、8 聲望，
 跟 `ShopMallName` 分頁名對得上），`priceDefaultInit` 是單價。常用：
@@ -14,7 +14,7 @@
 活力、石幣是遊戲內賺得到的。同一個道具石幣分頁也有（例：46 是同一顆果子 1,000,000 石幣）時要自己比價、挑划算的。
 送前核對：餘額夠全部要買的量、背包至少 1 格空。送後核對（每買 1 個）：背包那個道具 **+1**、
 幣種餘額 **正好 −單價**；扣了錢卻對不上 → hold 停在原地，沒扣錢 → 停，不重送。
-活力、聲望是帳號共用（看哪隻都一樣），石幣每隻各自扣。
+活力、聲望、石幣都是帳號共用（看哪隻都一樣，11-11 實測）；送後核對看買的那隻。
 """
 
 import json

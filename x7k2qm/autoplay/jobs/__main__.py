@@ -47,6 +47,8 @@ def build_parser(jobs) -> argparse.ArgumentParser:
         sp.add_argument("--log", default="captures/jobs.log")
         sp.add_argument("--wait", type=float, default=WAIT_DEFAULT, help="排進常駐佇列後最多等結果幾秒")
         sp.add_argument("--no-wait", action="store_true", help="排進常駐佇列後不等結果")
+        sp.add_argument("--api-port", type=int, default=None,
+                        help="自己登入時開唯讀查詢 API（只聽 127.0.0.1；第 N 組慣例 8789+N），給狀態上傳拿寵物面板（11-11）")
         if hasattr(mod, "add_args"):
             mod.add_args(sp)
     return ap
@@ -144,7 +146,8 @@ def main(argv=None, party_factory=None, is_alive=None, sleep=time.sleep) -> int:
         log(f"停止：{args.job} 只能排進常駐練功的佇列，第 {args.profile} 組現在沒有常駐在跑")
         return 1
     try:
-        owner.acquire(odir, args.profile, owner.KIND_JOBS, log=log, is_alive=is_alive)
+        owner.acquire(odir, args.profile, owner.KIND_JOBS, api_port=getattr(args, "api_port", None), log=log,
+                      is_alive=is_alive)
     except owner.OwnerBusy as e:
         log(f"停止：{e}")
         return 1
@@ -171,7 +174,15 @@ def default_party(mod, args, log):
 
 def _run_here(mod, args, log, party_factory) -> int:
     p = party_factory(log) if party_factory is not None else default_party(mod, args, log)
+    srv = None
     try:
+        if getattr(args, "api_port", None):
+            from .. import party_api
+            try:
+                srv = party_api.serve(p, args.api_port)          # 唯讀、只聽 127.0.0.1；開不起來只記日誌，工作照跑
+                log(f"本機查詢 API：http://127.0.0.1:{args.api_port}/state")
+            except OSError as e:
+                log(f"本機查詢 API 開不起來（埠 {args.api_port}）：{e}；工作照跑")
         detail, _ = run_job(mod, args, p)
         log(detail)
         return 0
@@ -182,6 +193,8 @@ def _run_here(mod, args, log, party_factory) -> int:
         log(f"停止：例外 {type(e).__name__}: {e}")
         return 1
     finally:
+        if srv is not None:
+            srv.shutdown()
         p.close()
 
 

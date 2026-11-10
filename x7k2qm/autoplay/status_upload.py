@@ -86,15 +86,90 @@ def _buffs(r: dict, now: float) -> List[dict]:
     return out
 
 
+_SKILLS: Optional[Dict[int, str]] = None
+# 寵物面板要的戰鬥數值：網頁欄位 → PetInfo 欄位（同參考專案的面板格式）
+PET_FIELDS = (("hp", "hp"), ("hp_max", "hpMax"), ("mp", "mp"), ("mp_max", "mpMax"), ("exp", "exp"),
+              ("attack", "physicalAttack"), ("defense", "physicalDefense"), ("agile", "agile"),
+              ("crit", "physicalCrit"), ("hit", "physicalHit"), ("dodge", "physicalDodge"),
+              ("crit_damage", "physicalCritDamage"), ("penetrate", "physicalPenetrate"),
+              ("resist_crit", "physicalResistCrit"), ("rank", "rankNum"), ("star", "petStar"))
+GROWTH = ("體", "腕", "耐", "速")
+
+
+def skill_name(sid, lv) -> str:
+    """技能名稱（設定表 SkillBattle：ID＝技能×1000＋等級）；讀不到回空字串。"""
+    global _SKILLS
+    if _SKILLS is None:
+        _SKILLS = {}
+        try:
+            from ..features.gamedb.tables import CONFIGS
+            with open(os.path.join(CONFIGS, "SkillBattle.json"), encoding="utf-8") as fp:
+                _SKILLS = {r["ID"]: r.get("nameTn") or "" for r in json.load(fp) if r.get("ID")}
+        except Exception:  # noqa: BLE001  名稱只是加註
+            pass
+    try:
+        sid, lv = int(sid), int(lv or 1)
+    except (TypeError, ValueError):
+        return ""
+    return _SKILLS.get(sid * 1000 + lv) or _SKILLS.get(sid * 1000 + 1, "")
+
+
+def pet_panel(row: dict) -> dict:
+    """查詢 API /pet 的一列 → 寵物面板（欄位名照參考專案：species、status_name、hp_max…）。不帶 rid。"""
+    x = row.get("info") or {}
+    growth = row.get("growth") or []
+    skills = []
+    for s in sorted([s for s in (x.get("skills") or []) if isinstance(s, dict) and s.get("skillId")],
+                    key=lambda s: s.get("skillPos") or 0):
+        skills.append({"pos": s.get("skillPos"), "skillId": s.get("skillId"), "level": s.get("skillLevel"),
+                       "name": skill_name(s.get("skillId"), s.get("skillLevel"))})
+    out = {"slot": row.get("index"), "uniqueIndex": x.get("uniqueIndex"), "petId": x.get("petId"),
+           "species": row.get("species"), "nickname": row.get("nickname") or "", "level": x.get("level"),
+           "trans": x.get("trans") or 0, "status": x.get("status"), "status_name": row.get("status"),
+           "locked_fight": bool(row.get("lockedFight")), "locked_ride": bool(row.get("lockedRide")),
+           "score": row.get("score"), "loyalty": row.get("loyalty"),
+           "grade": {"標籤": row.get("grade"), "檔差合計": row.get("gradeDiff"),
+                     "個體檔": {k: (growth[i] if i < len(growth) else None) for i, k in enumerate(GROWTH)}},
+           "skills": skills}
+    out.update({k: x.get(src) for k, src in PET_FIELDS})
+    return out
+
+
+def pet_docs(group: str, meta: dict, pet_rows: Dict[str, List[dict]]) -> Dict[str, object]:
+    """身上全部寵物 → /groups/<組>/pets（每隻角色一個清單）、/pet-index（uniqueIndex → 面板）、/search-index/<組>。"""
+    by_role, index, search = OrderedDict(), {}, []
+    for role, rows in pet_rows.items():
+        panels = [pet_panel(r) for r in rows]
+        by_role[role] = panels
+        for p in panels:
+            where = f"{role} 身上第{p['slot']}格"
+            if p["uniqueIndex"] is not None:
+                index[str(p["uniqueIndex"])] = {"where": where, "pet": p}
+            search.append({"group": group, "kind": "pet", "role": role, "where": "身上", "where_detail": where,
+                           "name": p["species"], "nickname": p["nickname"], "itemId": None, "petId": p["petId"],
+                           "uniqueIndex": p["uniqueIndex"], "count": 1, "bind": None})
+    base = f"/groups/{group}"
+    return {f"{base}/pets": dict(meta, section="pets", roles=by_role, note="身上全部寵物（含休息中）；倉庫的沒有上傳"),
+            f"{base}/pet-index": {"meta": meta, "pets": index},
+            f"/search-index/{group}": search}
+
+
 def group_docs(group: str, label: str, snap: Optional[dict], snap_t: Optional[float], source: str,
                tail: List[str], program: Optional[str], pid, started: Optional[float], running: bool, now: float,
-               place: Callable[[object], str], reason: str = "") -> Dict[str, object]:
-    """一組的 /groups/<組>、/pets、/money、/live。snap＝快照格式（Party.snapshot／查詢 API /state）；沒有就只有 live。"""
+               place: Callable[[object], str], reason: str = "",
+               pet_rows: Optional[Dict[str, List[dict]]] = None) -> Dict[str, object]:
+    """一組的 /groups/<組>、/pets、/money、/live。snap＝快照格式（Party.snapshot／查詢 API /state）；沒有就只有 live。
+    pet_rows（查詢 API /pet 的 {角色: [列]}）有給 → 寵物分頁換成身上全部寵物的面板，另外加 pet-index、search-index。"""
     base = f"/groups/{group}"
     age = None if snap_t is None else now - snap_t
     fresh = running and age is not None and age <= STALE
-    state = "running" if fresh else ("stale" if running else "stopped")
-    state_text = {"running": "練功中", "stale": f"程式在跑但資料 {age_text(age) or '沒有'}", "stopped": "沒在跑"}[state]
+    # 資料是新的但最後一場戰鬥超過 15 分鐘＝程式活著但沒在打（卡住、遇敵關著）；查詢 API 永遠是「現在」，只看資料時間抓不到
+    lb = ((snap or {}).get("lastBattle") or {}).get("t")
+    idle = (snap_t - lb) if fresh and isinstance(lb, (int, float)) and snap_t is not None else None
+    stuck = idle is not None and idle > STALE
+    state = "running" if fresh and not stuck else ("stale" if running else "stopped")
+    stale_text = f"程式在跑但 {age_text(idle)}最後一場戰鬥" if stuck else f"程式在跑但資料 {age_text(age) or '沒有'}"
+    state_text = {"running": "練功中", "stale": stale_text, "stopped": "沒在跑"}[state]
     meta = {"group": group, "label": label, "data_time": fmt_time(snap_t), "age_seconds": None if age is None else int(age),
             "age": age_text(age), "source": source, "state": state, "state_text": state_text}
     docs: Dict[str, object] = {}
@@ -110,7 +185,8 @@ def group_docs(group: str, label: str, snap: Optional[dict], snap_t: Optional[fl
           "pid": pid if running else None, "started": fmt_time(started) if running else None,
           "last_seen": fmt_time(snap_t), "last_seen_age": age_text(age),
           "last_seen_seconds": None if age is None else int(age), "data_time": fmt_time(snap_t),
-          "reason": "" if fresh else (reason or (tail[-1][:200] if tail else ""))}
+          "reason": "" if state == "running" else (reason or (stale_text if stuck else "")
+                                                     or (tail[-1][:200] if tail else ""))}
     docs[f"{base}/live"] = dict(group=group, **li, roles=live_roles,
                                 team=(snap or {}).get("team"), fast=(snap or {}).get("fast"),
                                 last_battle=(snap or {}).get("lastBattle"),
@@ -129,12 +205,16 @@ def group_docs(group: str, label: str, snap: Optional[dict], snap_t: Optional[fl
                       "exp_buffs": _buffs(r, now)}
         pets[n] = ps
         money_by[n] = {"石幣": r.get("stone")}
-    totals = {"money": {"石幣": money.get("stone"), "活力": money.get("gold"), "聲望": money.get("lockDenar")}}
+    # 石幣帳號共用（11-11 實測五隻同值）：取隊長那隻的，不用 money.stone——11-11 以前的練功程式那欄是五隻相加（LESSONS #195）
+    stone = next((r.get("stone") for r in roles if r.get("stone") is not None), None)
+    totals = {"money": {"石幣": stone, "活力": money.get("gold"), "聲望": money.get("lockDenar")}}
     docs[base] = dict(meta, roles=summary, totals=totals, sections=["pets", "money", "live"],
-                      note="活力、聲望是帳號共用（取隊長）；石幣每隻各自有，合計在 totals")
+                      note="石幣、活力、聲望都是帳號共用（取隊長），不是五隻相加")
     docs[f"{base}/pets"] = dict(meta, section="pets", roles=pets,
                                 note="只有出戰、騎乘中的寵物；休息中與倉庫的寵物沒有上傳")
     docs[f"{base}/money"] = dict(meta, section="money", roles=money_by, totals=totals)
+    if pet_rows:
+        docs.update(pet_docs(group, meta, pet_rows))
     return docs
 
 
@@ -191,21 +271,38 @@ def fetch_json(url: str, token: Optional[str], timeout: float = FETCH_TIMEOUT) -
 
 def build_docs_from_api(targets: List[Tuple[str, str, str]], token: Optional[str], now: float,
                         fetch: Callable[[str, Optional[str]], dict], place: Callable[[object], str]) -> Dict[str, object]:
-    """每組 GET <網址>/state；連不上就那組標 stopped、附原因，其他組照常。"""
+    """每組 GET <網址>/state、/pet；連不上就那組標 stopped、附原因，其他組照常。"""
     per = []
     for g, label, url in targets:
-        try:
-            st = fetch(url + "/state", token)
-            err = ""
-        except Exception as e:  # noqa: BLE001  一組連不上不影響其他組
-            st, err = None, f"查詢 API 連不上：{type(e).__name__} {str(e)[:150]}"
-        ok = st is not None and not st.get("kicked")
-        reason = err or ("被擠下線" if st and st.get("kicked") else "")
-        gd = group_docs(g, label, st, now if st is not None else None, "練功程式查詢 API /state", [],
-                        "練功" if ok else None, None, None, ok, now, place, reason=reason)
-        proc = {"pid": None, "kind": "練功", "started": None, "log": None, "log_tail": [reason] if reason else []}
+        gd, proc = api_group(g, label, url, token, now, fetch, place)
         per.append((g, label, gd, proc))
     return summarize(per, now)
+
+
+def api_group(g: str, label: str, url: str, token: Optional[str], now: float,
+              fetch: Callable[[str, Optional[str]], dict], place: Callable[[object], str],
+              program: str = "練功", pid=None, started: Optional[float] = None, tail: Optional[List[str]] = None,
+              log_name: Optional[str] = None) -> Tuple[Dict[str, object], dict]:
+    """一組：GET /state（失敗＝stopped）＋GET /pet（失敗只是沒有寵物面板）。回 (文件, 程式資訊)。"""
+    try:
+        st = fetch(url + "/state", token)
+        err = ""
+    except Exception as e:  # noqa: BLE001  一組連不上不影響其他組
+        st, err = None, f"查詢 API 連不上：{type(e).__name__} {str(e)[:150]}"
+    pets = None
+    if st is not None:
+        try:
+            pets = (fetch(url + "/pet", token) or {}).get("pet") or None
+        except Exception:  # noqa: BLE001  寵物面板拿不到：總覽照送
+            pets = None
+    ok = st is not None and not st.get("kicked")
+    reason = err or ("被擠下線" if st and st.get("kicked") else "")
+    tail = list(tail or [])
+    gd = group_docs(g, label, st, now if st is not None else None, "練功程式查詢 API /state、/pet", tail,
+                    program if ok else None, pid, started, ok, now, place, reason=reason, pet_rows=pets)
+    proc = {"pid": pid, "kind": program, "started": fmt_time(started), "log": log_name,
+            "log_tail": tail or ([reason] if reason else [])}
+    return gd, proc
 
 
 def place_default(mapid) -> str:
