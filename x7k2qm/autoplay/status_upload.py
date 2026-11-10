@@ -41,6 +41,7 @@ FETCH_TIMEOUT = 15.0
 STALE = 900                        # 資料超過 15 分鐘沒更新＝不是在練
 VOLATILE = ("age", "age_seconds", "last_seen_age", "last_seen_seconds", "uptime", "uptime_seconds")
 ENV = "BOT_UPLOAD_"
+UPLOADER_VERSION = 3               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error）
 
 
 def read_json(path: str) -> Optional[dict]:
@@ -311,17 +312,24 @@ def api_group(g: str, label: str, url: str, token: Optional[str], now: float,
         err = ""
     except Exception as e:  # noqa: BLE001  一組連不上不影響其他組
         st, err = None, f"查詢 API 連不上：{type(e).__name__} {str(e)[:150]}"
-    pets = None
+    pets, pet_err = None, None
     if st is not None:
         try:
-            pets = (fetch(url + "/pet", token) or {}).get("pet") or None
-        except Exception:  # noqa: BLE001  寵物面板拿不到：總覽照送
-            pets = None
+            got = fetch(url + "/pet", token) or {}
+            pets = got.get("pet") or None
+            if pets is None:
+                pet_err = f"/pet 回應沒有寵物資料（鍵：{','.join(sorted(got))[:80] or '空'}）"
+        except Exception as e:  # noqa: BLE001  寵物面板拿不到：總覽照送，原因寫進 live（11-11 叢集寵物缺欄位，查不出原因）
+            pets, pet_err = None, f"/pet 拿不到：{type(e).__name__} {str(e)[:150]}"
     ok = st is not None and not st.get("kicked")
     reason = err or ("被擠下線" if st and st.get("kicked") else "")
     tail = list(tail or [])
     gd = group_docs(g, label, st, now if st is not None else None, "練功程式查詢 API /state、/pet", tail,
                     program if ok else None, pid, started, ok, now, place, reason=reason, pet_rows=pets)
+    live = gd.get(f"/groups/{g}/live")
+    if isinstance(live, dict):
+        live["pets_error"] = pet_err
+        live["uploader"] = UPLOADER_VERSION
     proc = {"pid": pid, "kind": program, "started": fmt_time(started), "log": log_name,
             "log_tail": tail or ([reason] if reason else [])}
     return gd, proc
