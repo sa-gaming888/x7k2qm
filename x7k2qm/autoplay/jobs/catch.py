@@ -41,7 +41,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色95邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色54邦恩吉 240 秒沒遇到")
     ap.add_argument("--no-reuse", dest="no_reuse", action="store_true",
                     help="不先從倉庫領同種的，一律抓新的（使用者 11-08 第七組抓綠虎來練：共倉那隻是練滿 140 改名存倉的）")
 
@@ -149,7 +149,7 @@ def top_up_bait(p, name: str, k: int, buy: bool) -> None:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色95誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色54誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -164,7 +164,7 @@ def buy_bait(p, name: str, n: int) -> None:
         if s0 is None or s0 < price:
             raise JobError(f"{name} 石幣 {s0} 不夠 {price:,}，不買")
         if c0 < 1 and bag_free(p, name) < 1:
-            # 11-08 16:21 第九組角色27背包滿、身上沒有誘餌可以疊：一鍵買照樣扣 50,000 石幣、誘餌沒進背包（LESSONS #186）
+            # 11-08 16:21 第九組角色15背包滿、身上沒有誘餌可以疊：一鍵買照樣扣 50,000 石幣、誘餌沒進背包（LESSONS #186）
             raise JobError(f"{name} 背包沒空格、身上也沒有誘餌可以疊，不買（伺服器會扣錢但東西進不來）")
         r = p.clients[name].request("Item_oneKeyBuyItem", {"itemId": BAIT, "itemNum": 1}) or {}
         # **石幣是帳號共用**：五隻同時買，每隻看到的扣款是大家加起來的（2026-10-27 第五組：
@@ -220,10 +220,12 @@ def restore_fight_pet(p, name: str, fight: int, ride: int) -> None:
         p.log(f"{name} 戰寵設回 → {p.set_fight_pet(name, fight, ride)}")
 
 
-def make_room(p, name: str, over: int, targets: set) -> None:
+def make_room(p, name: str, over: int, targets: set, keep: Optional[set] = None) -> None:
     """寵物欄放不下要抓的：休息中的寵物（不是鎖定的戰寵／騎寵、不在出戰／騎乘、不是這次要抓的物種）先存個倉，
     最多存 over 隻、等級低的先存。11-03 第六、八組、11-04 第八組恐龍博士 2016 各停一次「超過上限 4」——
-    使用者指定戰寵後原本的戰寵留在欄位休息，多佔一格（LESSONS #162）。個倉滿了 store_pet 會丟 JobError，照樣停。"""
+    使用者指定戰寵後原本的戰寵留在欄位休息，多佔一格（LESSONS #162）。個倉滿了 store_pet 會丟 JobError，照樣停。
+    keep：呼叫的人指定不能動的（唯一編號）。11-10 petgoal 補抓騎寵時把休息中、正在練的布魯頓／1 級黑豹當成「等級低的先存」存掉了，
+    第七、八、九組下一輪「身上沒有寵物」停（LESSONS #188）。"""
     from .pets import main_fight, store_pet
     fight_u, ride_u = p.locks(name)
     # 主戰寵也不動：卡坦交寵物前 `pets rest` 會把鎖定清成 0、全部改休息，這時只看鎖定會把主戰寵存掉。
@@ -231,6 +233,7 @@ def make_room(p, name: str, over: int, targets: set) -> None:
     main = None if fight_u else (main_fight(p, name) or {}).get("uniqueIndex")
     rest = sorted(((k, v) for k, v in _pets(p, name).items()
                    if v.get("status") not in (2, 3) and v.get("uniqueIndex") not in (fight_u, ride_u, main, None, 0)
+                   and v.get("uniqueIndex") not in (keep or set())
                    and v.get("petId") not in targets),
                   key=lambda kv: kv[1].get("level") or 0)
     for k, v in rest[:over]:
@@ -299,7 +302,8 @@ def reuse_depot(p, name: str, plan: List[Tuple[int, int]], slot_max: int) -> Dic
 
 
 def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
-              timeout: float = CATCH_TIMEOUT, buy: bool = False, reuse: bool = True) -> Dict[int, int]:
+              timeout: float = CATCH_TIMEOUT, buy: bool = False, reuse: bool = True,
+              keep: Optional[set] = None) -> Dict[int, int]:
     """一隻角色抓完整個清單，回傳 {petId: 實際抓到幾隻}。這隻出錯就停這隻（丟 JobError）。
     reuse=False：不先從倉庫領同種（petgoal --refill 用：倉庫裡同種的是練完存倉的，領出來會被當成補到了）。"""
     c = p.clients[name]
@@ -314,7 +318,7 @@ def catch_one(p, name: str, plan: List[Tuple[int, int]], slot_max: int,
     if len(_pets(p, name)) + need > slot_max:
         store_extras(p, name, plan, len(_pets(p, name)) + need - slot_max)
     if len(_pets(p, name)) + need > slot_max:
-        make_room(p, name, len(_pets(p, name)) + need - slot_max, {pid for pid, _ in plan})
+        make_room(p, name, len(_pets(p, name)) + need - slot_max, {pid for pid, _ in plan}, keep)
     if len(_pets(p, name)) + need > slot_max:
         raise JobError(f"{name} 停止：現在 {len(_pets(p, name))} 隻、要抓 {need} 隻，超過上限 {slot_max}")
     short = None

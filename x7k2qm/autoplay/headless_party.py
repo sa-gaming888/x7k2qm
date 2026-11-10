@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色95"), (10003796, "角色37"), (10003799, "角色76"), (10003803, "角色44"), (10003804, "角色90")]
+PARTY = [(10003754, "角色54"), (10003796, "角色27"), (10003799, "角色42"), (10003803, "角色23"), (10003804, "角色33")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -198,6 +198,13 @@ class Party:
         self._items: Optional[Dict[int, dict]] = None  # 道具表（data/configs/Item.json）
         self._rides: Optional[set] = None        # 不用學就能騎的 petId（data/configs/Ride.json needlearn false）
         self.pet_start: Optional[str] = None     # 練寵起點（使用者：人物等級高、寵物低，從海底開始）
+        self.pet_jump = 0                        # 跳級：寵物差幾級就可以進下一張圖（使用者 11-10「練級要盡可能用跳級去練」）
+        # 練功中經驗果加成沒了就自己吃（使用者 11-07「沒吃果子記得自己吃」、11-11「練寵都沒有吃果子」）：
+        # 背包、倉庫有就吃，沒有就用石幣在商城石幣分頁買（fruit_buy）。出錯一次就整個關掉，不每圈重試
+        self.auto_fruit = False
+        self.fruit_buy = False
+        self.fruit_next = 0.0
+        self.fruit_off = False
         self._cfg = None
         self.advance_after: Dict[str, Tuple[int, float]] = {}  # 地點 → 退回後（練到幾級, 或到哪個時間）才能再去
         self.buffs: Dict[str, Dict[int, int]] = {}   # 角色 → {buffId: 到期 unix 秒}（RoleAttr.newRolebuffs）
@@ -752,12 +759,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色107在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色38在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色76 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色42 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1163,7 +1170,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色95個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色54個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1615,6 +1622,67 @@ class Party:
 
     SPIRIT_TRIES_MAX = 3
 
+    # ---- 練功中自動吃經驗果 ----
+    FRUIT_EVERY = 300.0                          # 幾秒看一次加成（不必每圈看）
+    FRUIT_LOW = 600                              # 果子加成剩不到 10 分鐘就當沒有
+    FRUIT_MALL_ID = 46                           # 商城石幣分頁：2倍智慧果（綁定），1,000,000 石幣（只准石幣買果子，使用者 11-02）
+    FRUIT_RESERVE = 1_000_000                    # 買完至少還要留這麼多石幣，不夠就不買
+
+    def fruit_missing(self, now: Optional[float] = None) -> List[str]:
+        """沒有經驗果加成（名稱有「果」的 buff，剩不到 FRUIT_LOW 秒也算沒有）的角色。月卡祝福等不算果子。"""
+        now = time.time() if now is None else now
+        return [n for _, n in self.party
+                if not any("果" in (b.get("name") or "") and (not b.get("until") or b["until"] - now > self.FRUIT_LOW)
+                           for b in self.exp_buffs(n, now=now))]
+
+    def buy_fruit(self, name: str) -> bool:
+        """商城石幣分頁買 1 顆 2倍智慧果（jobs mall 同一套檢查與送後核對）。石幣不夠（留 FRUIT_RESERVE）就不買，回 False。"""
+        from types import SimpleNamespace
+        from .jobs import mall
+        price = int(mall.row_of(self.FRUIT_MALL_ID).get("priceDefaultInit") or 0)
+        have = mall.balance(self, name, "stone")
+        if have is None or have < price + self.FRUIT_RESERVE:
+            self.log(f"自動吃果子：{name} 石幣 {have} 不夠（買一顆 {price:,}，還要留 {self.FRUIT_RESERVE:,}），不買")
+            return False
+        mall.run(self, SimpleNamespace(id=self.FRUIT_MALL_ID, count=1, who=name, apply=True))
+        return True
+
+    def autofruit(self, now: Optional[float] = None) -> bool:
+        """有人沒有經驗果加成 → 停遇敵（吃東西不能在戰鬥中）→ 倉庫的先取出 → 一隻一隻吃（每吃一顆重看一次，
+        加成算整個帳號時只吃一顆就夠）→ 沒有果子且有 fruit_buy 就用石幣買 → 重開遇敵。
+        出錯（吃了數量沒減少、買不成）就記一行、這次登入不再自動吃（規範 2：不每圈重試）。回傳有沒有動作。"""
+        now = time.time() if now is None else now
+        if not self.auto_fruit or self.fruit_off or now < self.fruit_next:
+            return False
+        self.fruit_next = now + self.FRUIT_EVERY
+        miss = self.fruit_missing()
+        if not miss:
+            return False
+        self.log(f"自動吃果子：{'、'.join(miss)} 沒有經驗果加成")
+        if not self.pause():
+            self.log("自動吃果子：停不了戰鬥，下次再看")
+            return False
+        try:
+            self.take_exp_fruits(miss)
+            for n in miss:
+                if n not in self.fruit_missing():
+                    continue                             # 前面那隻吃了，整個帳號都有了
+                if not any(it.get("itemId") in EXP_FRUITS for it in self.bag(n)):
+                    if not (self.fruit_buy and self.buy_fruit(n)):
+                        self.log(f"自動吃果子：{n} 背包、倉庫都沒有果子{'' if self.fruit_buy else '（沒開自動買）'}")
+                        continue
+                if not self.eat_exp_fruit(n):
+                    raise RuntimeError(f"{n} 吃了果子沒看到數量減少")
+                self.wait(lambda: n not in self.fruit_missing(), 5)
+            left = self.fruit_missing()
+            self.log("自動吃果子：" + (f"還是沒有加成：{'、'.join(left)}" if left else "全隊都有經驗果加成了"))
+        except Exception as e:                           # noqa: BLE001  吃果子出錯不停練功，但不再自動吃
+            self.fruit_off = True
+            self.log(f"自動吃果子出錯（{e}），這次登入不再自動吃")
+        finally:
+            self.set_loop(True)
+        return True
+
     def init_after_trans(self, names: List[str]) -> bool:
         """轉生後規範（使用者 2026-10-23「應該改成 1 轉那時候的」）：轉生回到 1 級時做的事。
 
@@ -1842,7 +1910,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色51的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色25的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -1966,7 +2034,8 @@ class Party:
         return True
 
     def pet_route(self, s: State) -> Tuple[str, Optional[str]]:
-        """練寵時的地圖：照練功路線門檻，但用「還在練的寵物裡最低等級」判斷；只往前、不退。"""
+        """練寵時的地圖：照練功路線門檻，但用「還在練的寵物裡最低等級」判斷；只往前、不退。
+        pet_jump：門檻放寬幾級（跳級練，經驗多但寵物較常倒、要回村補血）。"""
         pid, lv = self.train_pet
         levels = []
         for name in self.orig_fight:
@@ -1975,7 +2044,7 @@ class Party:
                 levels.append(self.petinfo[name].get(idx, {}).get("level", 0) if idx else 0)
         if not levels:
             return "ok", None
-        low = min(levels)
+        low = min(levels) + max(0, int(self.pet_jump or 0))
         target = None
         for place, mapid, need in ROUTE:
             if need <= low and NAME_TO_MAP.get(self.pet_start or "", 0) and \
@@ -2407,7 +2476,7 @@ class Party:
                 if self.shells.store_in_place() == "fatal":
                     return 1
             if act in ("ok", "wait"):
-                self.autoclean_if_full() or self.autorefresh_pets() or self.autospirit()
+                self.autoclean_if_full() or self.autorefresh_pets() or self.autospirit() or self.autofruit()
             if s.hp_percent is not None and s.hp_percent >= 50:
                 with self.lock:
                     self.heals = 0
@@ -2544,6 +2613,8 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--discover", action="store_true", help="角色清單從登入結果取（第 2 組預設用寫死的 5 隻）")
     ap.add_argument("--api-port", type=int, default=None,
                     help="開本機唯讀查詢 API（只聽 127.0.0.1；建議第 2 組 8791、第 N 組 8789+N）；不給就不開")
+    ap.add_argument("--auto-fruit", action="store_true",
+                    help="練功中經驗果加成沒了就自己吃（背包、倉庫有就吃，沒有就用石幣在商城石幣分頁買 1,000,000／顆，留 100 萬石幣）")
     ap.add_argument("--auto-spirit", action="store_true",
                     help="隊長依人物屬性去競技場買精靈金幣（500 石幣），60 級才穿、首次動作設好（容器版預設開）")
     ap.add_argument("--point-plan", default=None,
@@ -2654,6 +2725,7 @@ def _main_owned(args, log, jdir: str) -> int:
     p.keep_pets = args.keep_pets
     p.no_retreat = args.no_retreat
     p.auto_spirit = args.auto_spirit
+    p.auto_fruit = p.fruit_buy = bool(getattr(args, "auto_fruit", False))
     if args.battle_heal is not None:
         if not 1 <= args.battle_heal <= 99:
             log("停止：--battle-heal 要在 1～99")

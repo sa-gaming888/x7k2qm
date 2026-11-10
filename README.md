@@ -167,6 +167,42 @@ curl -X POST -H "$H" "$API/debug/stop?what=all"                            # 提
 抓不到的：伺服器沒送的資料（例如快戰時每回合出招，要先 `/debug/fast`）。除錯不能送任意封包。
 沒設 `API_TOKEN` 時 API 只在容器內開：`docker exec bot python -m x7k2qm.autoplay.status_api state`。
 
+## 狀態上傳（選用）
+
+同一個映像換指令跑：定時向各練功容器的查詢 API 要 `/state`，整理成「組別總覽、每組人物、出戰騎乘寵物、金錢、即時狀態、程式清單」幾份 JSON，
+只把有變的 POST 到你指定的網址。只會送 GET 給查詢 API，不送遊戲封包、不排工作。一個叢集只要跑一份。
+
+```yaml
+containers:
+  - name: status-upload
+    image: ghcr.io/<owner>/x7k2qm:<版本>
+    command: ["python", "-X", "utf8", "-m", "x7k2qm.autoplay.status_upload"]
+    env:
+      - {name: BOT_UPLOAD_TARGETS, value: "2:練功=http://bot-2:8790,3=http://bot-3:8790"}
+      - {name: BOT_UPLOAD_URL, value: "https://<你的上傳端>/ingest"}
+      - {name: BOT_UPLOAD_PREFIX, value: "/<上傳端規定的前綴>"}
+      - {name: BOT_UPLOAD_STATE, value: /data/status_upload_state.json}
+      - name: BOT_UPLOAD_KEY
+        valueFrom: {secretKeyRef: {name: status-upload, key: key}}
+      - name: BOT_UPLOAD_API_TOKEN          # 練功容器的 API_TOKEN（練功容器要設 API_TOKEN，8790 才對外聽）
+        valueFrom: {secretKeyRef: {name: bot-api, key: token}}
+```
+
+| 變數 | 必填 | 說明 |
+| :-- | :-: | :-- |
+| `BOT_UPLOAD_TARGETS` | ✔ | `組=網址`，逗號分隔；可加標籤 `組:標籤=網址` |
+| `BOT_UPLOAD_URL` | ✔ | 上傳網址 |
+| `BOT_UPLOAD_KEY` | ✔ | 上傳金鑰（放 Secret） |
+| `BOT_UPLOAD_PREFIX` | ✔ | 每份文件路徑的前綴，以 `/` 開頭 |
+| `BOT_UPLOAD_HEADER` | | 金鑰標頭名稱，預設 `X-Ingest-Key` |
+| `BOT_UPLOAD_API_TOKEN` | | 查詢 API 的 token（`Authorization: Bearer`） |
+| `BOT_UPLOAD_STATE` | | 記錄「上次送了什麼」的檔案；放持久磁碟，重啟後不用全部重送 |
+| `BOT_UPLOAD_EVERY` | | 幾秒一輪，預設 300 |
+
+上傳格式：`POST {"docs": [{"path", "body": "<JSON 字串>", "hash"}], "delete": [...], "synced": <秒>}`，對方回 `{"ok": true}` 才算成功。
+路徑有 `/groups`、`/groups/<組>`、`/groups/<組>/pets`、`/groups/<組>/money`、`/groups/<組>/live`、`/live`、`/procs`、`/_heartbeat`。
+一次 POST 不超過約 0.6 MB；這輪不見的路徑放進 `delete`。失敗只記日誌，下一輪照常；某一組連不上，那組標 `stopped` 並附原因，其他組照送。
+
 ## 資料目錄 `/data`
 
 | 路徑 | 內容 |
