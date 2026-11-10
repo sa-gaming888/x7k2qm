@@ -41,7 +41,7 @@ FETCH_TIMEOUT = 15.0
 STALE = 900                        # 資料超過 15 分鐘沒更新＝不是在練
 VOLATILE = ("age", "age_seconds", "last_seen_age", "last_seen_seconds", "uptime", "uptime_seconds")
 ENV = "BOT_UPLOAD_"
-UPLOADER_VERSION = 3               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error）
+UPLOADER_VERSION = 4               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error，4＝人物面板 panel）
 
 
 def read_json(path: str) -> Optional[dict]:
@@ -156,6 +156,51 @@ def pet_panel(row: dict) -> dict:
            "skills": skills}
     out.update({k: x.get(src) for k, src in PET_FIELDS})
     return out
+
+
+POINTS = (("體", "vitality"), ("攻", "strength"), ("防", "stamina"), ("敏", "speed"))
+ELEMENTS = (("地", "earth"), ("水", "water"), ("火", "fire"), ("風", "wind"))
+RESISTS = (("抗暴", "physicalResistCrit"), ("毒抗", "poisonResist"), ("麻抗", "paralysisResist"), ("睡抗", "sleepResist"),
+           ("石抗", "stoneResist"), ("酒抗", "drunkResist"), ("混抗", "chaosResist"), ("暈抗", "dizzinessResist"),
+           ("魔抗", "barrierResist"), ("封技抗", "silenceResist"))
+ROLE_FIELDS = (("level", "level"), ("trans", "trans"), ("job", "job"), ("exp", "exp"), ("hp", "hp"), ("hp_max", "hpMax"),
+               ("mp", "mp"), ("mp_max", "mpMax"), ("attack", "physicalAttack"), ("defense", "physicalDefense"),
+               ("agile", "agile"), ("crit", "physicalCrit"), ("crit_damage", "physicalCritDamage"),
+               ("hit", "physicalHit"), ("dodge", "physicalDodge"), ("penetrate", "physicalPenetrate"),
+               ("potential_point", "potentialPoint"), ("auto_point_type", "autoSetPointType"),
+               ("auto_point", "autoPointDiyList"), ("bag_slots", "bagNum"))
+
+
+def role_panel(row: dict, place: Callable[[object], str]) -> dict:
+    """查詢 API /role 的一列（attr＝伺服器 RoleAttr 全部欄位）→ 人物面板（欄位名照網頁）。不帶 rid、帳號、隊伍 rid。
+    初心沒有配點方案（pointSave 空）→ 不放 current_plan／plans；欄位沒有的不放。"""
+    a = row.get("attr") or {}
+    out = {"name": row.get("name") or a.get("name")}
+    out.update({k: a[src] for k, src in ROLE_FIELDS if a.get(src) is not None})
+    if any(a.get(k) is not None for _, k in POINTS):
+        out["points"] = {zh: a.get(k) for zh, k in POINTS}
+    if any(a.get(k) is not None for _, k in ELEMENTS):
+        out["element"] = {zh: a.get(k) or 0 for zh, k in ELEMENTS}
+    if any(a.get(k) is not None for _, k in RESISTS):
+        out["resist"] = {zh: a.get(k) or 0 for zh, k in RESISTS}
+    if a.get("map") is not None:
+        pos = a.get("nowPos") if isinstance(a.get("nowPos"), dict) else None
+        out["map"] = {"id": a.get("map"), "name": place(a.get("map")),
+                      "pos": {"x": pos.get("x"), "y": pos.get("y")} if pos else None}
+    if a.get("stone") is not None:
+        out["money"] = {"石幣": a.get("stone"), "活力": a.get("gold"), "聲望": a.get("lockDenar")}
+    return out
+
+
+def panel_docs(group: str, meta: dict, role_rows: List[dict], place: Callable[[object], str]) -> Dict[str, object]:
+    """/groups/<組>/panel：每隻角色的人物面板＋totals.team（屬性、敏捷一覽）。"""
+    roles = OrderedDict()
+    for r in role_rows:
+        pn = role_panel(r, place)
+        roles[pn["name"]] = pn
+    team = [{k: v for k, v in (("name", n), ("element", p.get("element")), ("agile", p.get("agile"))) if v is not None}
+            for n, p in roles.items()]
+    return {f"/groups/{group}/panel": dict(meta, section="panel", roles=roles, totals={"team": team})}
 
 
 def pet_docs(group: str, meta: dict, pet_rows: Dict[str, List[dict]]) -> Dict[str, object]:
@@ -326,9 +371,24 @@ def api_group(g: str, label: str, url: str, token: Optional[str], now: float,
     tail = list(tail or [])
     gd = group_docs(g, label, st, now if st is not None else None, "練功程式查詢 API /state、/pet", tail,
                     program if ok else None, pid, started, ok, now, place, reason=reason, pet_rows=pets)
+    role_err = None
+    head = gd.get(f"/groups/{g}")
+    if st is not None and isinstance(head, dict):          # 人物面板（11-11 使用者「初心缺少面板資料」）
+        try:
+            rows = (fetch(url + "/role", token) or {}).get("roles") or []
+            if rows:
+                meta = {k: head[k] for k in ("group", "label", "data_time", "age", "age_seconds", "source", "state",
+                                             "state_text") if k in head}
+                gd.update(panel_docs(g, meta, rows, place))
+                head["sections"] = list(head.get("sections") or []) + ["panel"]
+            else:
+                role_err = "/role 回應沒有人物資料"
+        except Exception as e:  # noqa: BLE001  人物面板拿不到：其他照送
+            role_err = f"/role 拿不到：{type(e).__name__} {str(e)[:150]}"
     live = gd.get(f"/groups/{g}/live")
     if isinstance(live, dict):
         live["pets_error"] = pet_err
+        live["panel_error"] = role_err
         live["uploader"] = UPLOADER_VERSION
     proc = {"pid": pid, "kind": program, "started": fmt_time(started), "log": log_name,
             "log_tail": tail or ([reason] if reason else [])}
