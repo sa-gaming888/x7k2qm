@@ -96,6 +96,27 @@ PET_FIELDS = (("hp", "hp"), ("hp_max", "hpMax"), ("mp", "mp"), ("mp_max", "mpMax
 GROWTH = ("體", "腕", "耐", "速")
 
 
+_SPECIES: Optional[Dict[int, str]] = None
+
+
+def species_name(pid) -> str:
+    """物種名稱（設定表 Monster.json nameTn）。不能用查詢 API /pet 的 species：那是 Party.pet_name，有暱稱就回暱稱
+    （11-11 網頁面板物種顯示成「50/12/6/6」，網頁那邊回報）。讀不到回空字串。"""
+    global _SPECIES
+    if _SPECIES is None:
+        _SPECIES = {}
+        try:
+            from ..features.gamedb.tables import CONFIGS
+            with open(os.path.join(CONFIGS, "Monster.json"), encoding="utf-8") as fp:
+                _SPECIES = {int(r["ID"]): r.get("nameTn") or "" for r in json.load(fp) if r.get("ID") is not None}
+        except Exception:  # noqa: BLE001  名稱只是加註
+            pass
+    try:
+        return _SPECIES.get(int(pid), "")
+    except (TypeError, ValueError):
+        return ""
+
+
 def skill_name(sid, lv) -> str:
     """技能名稱（設定表 SkillBattle：ID＝技能×1000＋等級）；讀不到回空字串。"""
     global _SKILLS
@@ -124,7 +145,8 @@ def pet_panel(row: dict) -> dict:
         skills.append({"pos": s.get("skillPos"), "skillId": s.get("skillId"), "level": s.get("skillLevel"),
                        "name": skill_name(s.get("skillId"), s.get("skillLevel"))})
     out = {"slot": row.get("index"), "uniqueIndex": x.get("uniqueIndex"), "petId": x.get("petId"),
-           "species": row.get("species"), "nickname": row.get("nickname") or "", "level": x.get("level"),
+           "species": species_name(x.get("petId")) or row.get("species"), "nickname": row.get("nickname") or "",
+           "level": x.get("level"),
            "trans": x.get("trans") or 0, "status": x.get("status"), "status_name": row.get("status"),
            "locked_fight": bool(row.get("lockedFight")), "locked_ride": bool(row.get("lockedRide")),
            "score": row.get("score"), "loyalty": row.get("loyalty"),
