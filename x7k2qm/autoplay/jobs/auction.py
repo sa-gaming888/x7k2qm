@@ -54,6 +54,8 @@ def add_args(ap) -> None:
                     help="領錢：讀攤位，只對已賣出（isBuyed）的那幾筆送領取；還在賣的不碰（送了會變下架）")
     ap.add_argument("--count", type=int, default=1, help="上架幾個（預設 1）")
     ap.add_argument("--who", default=None, help="哪一隻上架（預設隊長）")
+    ap.add_argument("--lots", type=int, default=1,
+                    help="分幾筆上架（每筆 --count 個、各自 --price×--count；使用者 11-11「上架8個阿布水，每一個賣五百萬」）")
     ap.add_argument("--confirm-list", dest="confirm_list", action="store_true", help="--apply 時一定要加（上架會把道具交給交易所）")
 
 
@@ -67,6 +69,8 @@ def check(args) -> None:
         raise JobError(f"整筆價（--price×--count）要在 10～{MAX_PRICE:,}")
     if int(getattr(args, "count", 1) or 1) < 1:
         raise JobError("--count 要 ≥ 1")
+    if not 1 <= int(getattr(args, "lots", 1) or 1) <= STALL_MAX:
+        raise JobError(f"--lots 要在 1～{STALL_MAX}")
     if getattr(args, "apply", False) and not getattr(args, "confirm_list", False):
         raise JobError("上架要加 --confirm-list")
 
@@ -113,6 +117,11 @@ def claim(p, who: str, apply: bool) -> Tuple[str, dict]:
     c = p.clients[who]
     goods = my_goods(c)
     sold = [g for g in goods if g.get("isBuyed")]
+    # 11-11 第五組：8 筆都被買走，攤位卻只剩 4 筆、已賣出 0 筆——每一筆都列出來才看得出是哪幾筆
+    for g in goods:
+        p.log(f"集市：{who} 攤位｜編號 {g.get('uniqueIndex')}｜道具 {g.get('type')}×{g.get('itemNum')}｜"
+              f"{int(g.get('price') or 0):,} {CURRENCY_NAMES.get(g.get('currency'), g.get('currency'))}｜"
+              f"{'已賣出' if g.get('isBuyed') else '賣中'}｜到期 {when(g.get('overTime'))}")
     p.log(f"集市：{who} 攤位 {len(goods)} 筆、已賣出 {len(sold)} 筆"
           + (f"（{[(g.get('uniqueIndex'), g.get('price')) for g in sold]}）" if sold else ""))
     if not sold:
@@ -144,33 +153,59 @@ def run(p, args) -> Tuple[str, dict]:
     if who not in names:
         raise JobError(f"--who {who} 不在這組")
     item, price, count = int(args.item), int(args.price), int(getattr(args, "count", 1) or 1)
+    lots = int(getattr(args, "lots", 1) or 1)
     name = (p.item_table().get(item, {}) or {}).get("nameTn") or str(item)
     cells = [it for it in p.bag(who) if it.get("itemId") == item and not it.get("bind")]
     have = sum(int(it.get("overlay") or 1) for it in cells)
     cur = currency_of(getattr(args, "currency", "石幣"))
     unit = CURRENCY_NAMES[cur]
-    p.log(f"集市：{who} 上架 {name}×{count}，單價 {price:,} {unit}（背包有 {have} 個）")
+    p.log(f"集市：{who} 上架 {name}×{count}，單價 {price:,} {unit}，{lots} 筆（背包有 {have} 個）")
     if not getattr(args, "apply", False):
-        return (f"只列：{who} 上架 {name}×{count}，{price * count:,} {unit}，背包有 {have} 個（沒加 --apply，沒有送任何動作）",
+        return (f"只列：{who} 上架 {name}×{count}，{price * count:,} {unit}，{lots} 筆，背包有 {have} 個（沒加 --apply，沒有送任何動作）",
                 {"who": who, "item": item, "have": have, "currency": unit})
-    if have < count:
+    need = count * lots
+    if have < need:
         # 背包不夠就先從個人倉庫領（11-06 第五組：剛買的阿布水被劇本的清背包照規則表存進個倉，上架時背包 0 個）
-        have = _take_from_depot(p, who, item, count - have, name) + have
-        cells = [it for it in p.bag(who) if it.get("itemId") == item and not it.get("bind")]
-    if have < count:
-        raise JobError(f"{who} 背包＋個倉只有 {have} 個 {name}（要 {count}），先買")
+        have = _take_from_depot(p, who, item, need - have, name) + have
+    if have < need:
+        raise JobError(f"{who} 背包＋個倉只有 {have} 個 {name}（要 {need}），先買")
     if not p.wait(lambda: not p.fighting.get(who), 60):
         raise JobError(f"{who} 還在戰鬥中，不上架")
+    c = p.clients[who]
+    goods0 = my_goods(c)
+    if len(goods0) + lots > STALL_MAX:
+        raise JobError(f"{who} 攤位已有 {len(goods0)} 筆，再上 {lots} 筆會超過上限 {STALL_MAX}，不上架")
+    done = []
+    for k in range(lots):
+        try:
+            g = _upload_one(p, c, who, item, name, price * count, count, cur, unit)
+        except (JobError, JobHold) as e:
+            if not done:
+                raise
+            # 已經上架的不能當沒發生：前面成功的列出來，後面不做（規範 2）
+            msg = f"第 {k + 1}/{lots} 筆出錯，前面完成 {len(done)} 筆（{[d['uniqueIndex'] for d in done]}）：{e}"
+            raise (JobHold if isinstance(e, JobHold) else JobError)(msg) from e
+        done.append({"uniqueIndex": g.get("uniqueIndex"), "overTime": g.get("overTime"), "price": price * count,
+                     "itemNum": count})
+        if k + 1 < lots:
+            p.nap(0.6)
+    total = price * count
+    last = done[-1]
+    head = f"{who} 上架 {name}×{count}，{total:,} {unit}" + (f"，共 {lots} 筆" if lots > 1 else "")
+    return (f"{head}，到期 {when(last.get('overTime'))}",
+            {"who": who, "item": item, "price": total, "currency": unit, "overTime": last.get("overTime"),
+             "uniqueIndex": last.get("uniqueIndex"), "lots": done})
+
+
+def _upload_one(p, c, who: str, item: int, name: str, total: int, count: int, cur: int, unit: str) -> dict:
+    """上架一筆（count 個、整筆價 total）。成功回清單裡新的那一筆；被拒 JobError、對不上 JobHold（不重送）。"""
+    cells = [it for it in p.bag(who) if it.get("itemId") == item and not it.get("bind")]
+    have = sum(int(it.get("overlay") or 1) for it in cells)
     big = [it for it in cells if int(it.get("overlay") or 1) >= count]   # 請求只有一個 itemIndex，要從同一格拿
     if not big:
         raise JobError(f"{who} 背包沒有哪一格 {name} 有 {count} 個（先疊在同一格）")
-    c = p.clients[who]
-    goods0 = my_goods(c)
-    if len(goods0) >= STALL_MAX:
-        raise JobError(f"{who} 攤位已有 {len(goods0)} 筆（上限 {STALL_MAX}），不上架")
-    before = {g.get("uniqueIndex") for g in goods0}
+    before = {g.get("uniqueIndex") for g in my_goods(c)}
     cell = big[0]
-    total = price * count                                              # 協定的 price 是整筆價
     r = c.request("Other_MyItemShopGoods", {"action": ACTION_UPLOAD, "itemIndex": cell["itemIndex"], "price": total,
                                            "currency": cur, "itemNum": count, "canCallPrice": False}) or {}
     gone = p.wait(lambda: sum(int(it.get("overlay") or 1) for it in p.bag(who)
@@ -185,5 +220,4 @@ def run(p, args) -> Tuple[str, dict]:
         raise JobHold(f"{who} 上架 {name} 對不上：isUploadOk={r.get('isUploadOk')}、背包少了={gone}、清單新的一筆={new}，停在原地")
     g = new[0]
     p.log(f"集市：{who} 上架 {name}×{count}，{total:,} {unit}，到期 {when(g.get('overTime'))}（編號 {g.get('uniqueIndex')}）")
-    return (f"{who} 上架 {name}×{count}，{total:,} {unit}，到期 {when(g.get('overTime'))}",
-            {"who": who, "item": item, "price": total, "currency": unit, "overTime": g.get("overTime"), "uniqueIndex": g.get("uniqueIndex")})
+    return g

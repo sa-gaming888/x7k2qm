@@ -41,7 +41,7 @@ FETCH_TIMEOUT = 15.0
 STALE = 900                        # 資料超過 15 分鐘沒更新＝不是在練
 VOLATILE = ("age", "age_seconds", "last_seen_age", "last_seen_seconds", "uptime", "uptime_seconds")
 ENV = "BOT_UPLOAD_"
-UPLOADER_VERSION = 4               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error，4＝人物面板 panel）
+UPLOADER_VERSION = 5               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error，4＝人物面板 panel，5＝分頁不帶即時狀態 _live）
 
 
 def read_json(path: str) -> Optional[dict]:
@@ -286,12 +286,32 @@ def group_docs(group: str, label: str, snap: Optional[dict], snap_t: Optional[fl
     return docs
 
 
+LIVE_KEYS = ("live", "data_time", "age", "age_seconds")
+
+
+def detach_live(group: str, gd: Dict[str, object]) -> Dict[str, object]:
+    """/groups/<組>… 分頁（/live 以外）拿掉即時狀態，body 第一個鍵放 "_live": "<組>"，網頁讀時從 /groups/<組>/live 補回。
+    網頁端 11-11 改約定：資料庫一天只能寫 10 萬列，分頁帶 data_time 每輪都變、每輪全部重寫（一天約 13 萬列）。
+    pet-index 的即時狀態在 meta 裡；沒有 /groups/<組>/live 的組照舊。雜湊算的是拿掉後的 body，自然不看這些欄位。"""
+    base = f"/groups/{group}"
+    if f"{base}/live" not in gd:
+        return gd
+    out: Dict[str, object] = {}
+    for path, body in gd.items():
+        if (path == base or path.startswith(base + "/")) and path != f"{base}/live" and isinstance(body, dict):
+            body = {"_live": group, **{k: v for k, v in body.items() if k not in LIVE_KEYS and k != "_live"}}
+            if isinstance(body.get("meta"), dict):
+                body["meta"] = {k: v for k, v in body["meta"].items() if k not in LIVE_KEYS}
+        out[path] = body
+    return out
+
+
 def summarize(per_group: List[Tuple[str, str, Dict[str, object], dict]], now: float) -> Dict[str, object]:
     """各組 group_docs 的結果 → 全部文件＋/groups、/live、/procs。per_group：(組, 標籤, 文件, 程式資訊 or None)。"""
     docs: Dict[str, object] = {}
     glist, live_list, procs = [], [], []
     for g, label, gd, proc in per_group:
-        docs.update(gd)
+        docs.update(detach_live(g, gd))
         live = gd[f"/groups/{g}/live"]
         live_list.append({k: live[k] for k in ("group", "state", "state_text", "program", "pid", "started",
                                                "last_seen", "last_seen_age", "last_seen_seconds", "data_time", "reason")})

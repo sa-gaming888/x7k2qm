@@ -193,7 +193,7 @@ DEATH_RETRY = 6                   # 轉生任務戰鬥有人被打死：重新�
 
 def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
     """跑一段執行器；有人被打死就重新組隊、回村補血後重打（最多 DEATH_RETRY 次），其他錯誤照舊停。
-    11-06 第五組轉生 2004 打到機暴前孔菲菲被打死，劇本整個停住；1.82 的 quests 早就有 --retry，轉生沒有。"""
+    11-06 第五組轉生 2004 打到機暴前角色57被打死，劇本整個停住；1.82 的 quests 早就有 --retry，轉生沒有。"""
     for tries in range(DEATH_RETRY + 1):
         try:
             q = _run_quest_once(p, group, grid_fn, need_free, stop_after)
@@ -212,7 +212,7 @@ def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
                 quests.regroup_and_heal(p, f"轉生 {group}")
             lag = quests.laggards(p, group) if quests.split_members(p, group) else None
             if lag:
-                # 陣亡那隻停在前一步（11-06 第五組孔菲菲停在 200400002、其他人 200400003）：落後的人補到同一步，
+                # 陣亡那隻停在前一步（11-06 第五組角色57停在 200400002、其他人 200400003）：落後的人補到同一步，
                 # 其他人跟隊。**不放棄**：轉生前幾步已經交出四大證明，放棄就拿不回來、再也轉不了
                 behind, upto = lag
                 p.log(f"轉生 {group}：隊員進度分岔，{behind} 先補做到 {upto}，其他人跟隊（第 {tries + 1}/{DEATH_RETRY} 次）")
@@ -230,7 +230,7 @@ def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
             elif split:
                 raise                              # 分岔又補不了（有人沒有進行中的步驟）：停下來給人看，不放棄
             # 重打前一定真的重組：補進度換過隊長、還原時會解散隊伍（11-06 第五組補完後沒重組，
-            # 戚飛躍一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
+            # 角色92一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
             with p.lock:
                 p.s.team = []
             if not p.form_team():

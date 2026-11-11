@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色47"), (10003796, "角色21"), (10003799, "角色48"), (10003803, "角色24"), (10003804, "角色46")]
+PARTY = [(10003754, "角色96"), (10003796, "角色32"), (10003799, "角色73"), (10003803, "角色40"), (10003804, "角色84")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -50,6 +50,7 @@ RETRY_LEVELS = 3
 # 76 級在五兄弟兩小時沒升級，只看等級等於卡死在低等圖
 RETRY_SECONDS = 1200
 EXP_FRUITS = {90398, 90399, 90638, 90639}   # Config.autoEatExpItemList：外掛可自動吃的經驗道具
+SPIRIT_BOW = 2775                            # 精靈王之弓：轉生後 1 級立刻穿上（使用者 2026-11-11）
 # 人物裝備的道具類型（Item.type）：0～4、17～19 武器，6 兜，7 鎧，8 手環，9 貝鈴，10 項鍊，11 戒指，13 耳飾，
 # 15 護身符，24 腰帶，25 盾，26 鞋，27 手套。29～37 是寵物裝備、16 聖水、20 肉、21 雜項、22 寶石、23 行李：不是人物裝備。
 # 迎新助力禮盒（內含新手裝、經驗果、1轉新手禮盒）、1～5轉新手禮盒（90328～90333）。
@@ -759,12 +760,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色43在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色59在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色48 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色73 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1170,7 +1171,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色47個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色96個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1689,7 +1690,7 @@ class Party:
         和 0 轉開局的差別——**不碰裝備、不存綁定道具**：
         身上穿的是練滿一輪的好裝（月光的手鐲等），新手裝會把它換掉；四大證明等綁定道具
         二轉還要用，存倉只是多繞路。
-        做的事：開 1轉新手禮盒（倉庫有就先取出）、吃經驗果、寵物鎖定、全部隱藏、自動加點。
+        做的事：開 1轉新手禮盒（倉庫有就先取出）、吃經驗果、寵物鎖定、**武器換精靈王之弓**、全部隱藏、自動加點。
         """
         self.log(f"轉生後規範（1 級但已轉生）：{'、'.join(names)}")
         if not self.pause():
@@ -1700,8 +1701,45 @@ class Party:
             self.open_boxes(name)
             self.eat_exp_fruit(name)
             ok = self.reset_pets_after_trans(name) and ok   # 騎寵金虎＋戰寵「未滿 140 最高等」
+            ok = self.wear_spirit_bow(name) and ok          # 使用者 11-11「每次轉身完，立刻改穿裝備武器-精靈王之弓」
         # 轉生會洗掉外掛設定（首次動作、補血、raw…），照登入同一套設回；沒有自訂加點計畫就用轉生加點
         return not self.align_waigua(names, hide_if_unknown=True, trans_points=True) and ok
+
+    def wear_spirit_bow(self, name: str) -> bool:
+        """轉生後 1 級立刻把武器換成精靈王之弓（使用者 2026-11-11「1轉1等 後，每次轉身完，立刻改穿裝備武器-精靈王之弓」）。
+        已經穿著就不動；背包沒有就從個人倉庫、再從共倉取一把（16F 換到的弓平常被規則表存個倉）。
+        `ItemHandle_itemEquipOn{itemIndex}` 要回 isOK 且那件變成穿著（itemStorge ≠ 0）才算；找不到、取不出、穿不上 → False（規範 2：停）。"""
+        with self.lock:
+            if any(it.get("itemId") == SPIRIT_BOW and it.get("itemStorge", 0) != 0 and it.get("overlay", 1) > 0
+                   for it in self.items[name].values()):
+                return True
+        bow = next((it for it in self.bag(name) if it["itemId"] == SPIRIT_BOW), None)
+        c = self.clients[name]
+        if bow is None:
+            for public in (False, True):
+                r = c.request("ItemHandle_GetNewItemDepotInfo", {"page": 1, "isPublic": public}) or {}
+                row = next((it for it in r.get("itemInfoList") or []
+                            if it.get("itemId") == SPIRIT_BOW and it.get("uniqueIndex")), None)
+                if row is None:
+                    continue
+                g = c.request("ItemHandle_GetItemToNewDepot", {"page": 1, "isPublic": public,
+                                                              "uniqueIndex": row["uniqueIndex"], "count": 1}) or {}
+                if not g.get("isOK") or not self.wait(
+                        lambda: any(it.get("itemId") == SPIRIT_BOW and it.get("itemStorge", 0) == 0
+                                    and it.get("overlay", 1) > 0 for it in self.items[name].values()), 5):
+                    self.log(f"{name} 精靈王之弓從{'共倉' if public else '個人倉庫'}取不出來：{g}"); return False
+                self.log(f"{name} 從{'共倉' if public else '個人倉庫'}取出精靈王之弓")
+                bow = next((it for it in self.bag(name) if it["itemId"] == SPIRIT_BOW), None)
+                break
+        if bow is None:
+            self.log(f"{name} 背包、個倉、共倉都沒有精靈王之弓，沒換武器"); return False
+        idx = bow["itemIndex"]
+        r = c.request("ItemHandle_itemEquipOn", {"itemIndex": idx}) or {}
+        worn = bool(r.get("isOK")) and self.wait(
+            lambda: any(it.get("itemId") == SPIRIT_BOW and it.get("itemStorge", 0) != 0
+                        for it in self.items[name].values()), 5)
+        self.log(f"{name} 穿上精靈王之弓" if worn else f"{name} 精靈王之弓穿不上：{r}")
+        return worn
 
     # ---- 新角色：自動加點 ----
     def ensure_auto_points(self, names: Optional[List[str]] = None, failed: Optional[List[str]] = None) -> List[str]:
@@ -1910,7 +1948,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色25的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色29的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
