@@ -88,7 +88,7 @@ docker restart bot          # 改完設定檔重開生效（會等這場戰鬥�
 | 變數 | 對應設定檔 | 說明 |
 | :-- | :-- | :-- |
 | `START` | `bot.start` | 起始練功點；空字串＝留在原地 |
-| `SCENARIO` | `files.scenario` | 劇本路徑；`none`＝只練功 |
+| `SCENARIO` | `files.scenario` | 劇本路徑；`none`＝只練功；`/app/config/scenarios/petgoal.toml`＝內建練寵劇本（五色人龍＋老虎，每隻人物負責一種） |
 | `AUTO_SPIRIT` | `bot.auto_spirit` | `1`＝隊長買精靈金幣、60 級自動穿；其他值＝不買 |
 | `NO_RETREAT` | `bot.no_retreat` | `1`＝不退回上一張圖；其他值＝照常 |
 | `POINT_PLAN` | `waigua.point_plan` | 自訂加點 `隊長體,敏,攻/隊員體,敏,攻`；`none`＝不設 |

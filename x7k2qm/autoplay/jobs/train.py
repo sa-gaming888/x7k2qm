@@ -85,11 +85,13 @@ def restore(p) -> List[str]:
 def levels_of(p, pid: int) -> Dict[str, tuple]:
     """每隻角色身上那種 petId 所有隻的等級（由低到高；沒有就空）。
     同種多隻要全看：11-02 第六組練新抓的虎 307，身上另有 128 級騎寵貝魯卡，只看最高的永遠不變。"""
+    from ..headless_party import species_of
     out = {}
     with p.lock:
         for _, name in p.party:
+            ids = species_of(pid, name)
             out[name] = tuple(sorted(v.get("level", 0) for v in p.petinfo.get(name, {}).values()
-                                     if v.get("petId") in (pid if isinstance(pid, tuple) else (pid,))))
+                                     if v.get("petId") in ids))
     return out
 
 
