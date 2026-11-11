@@ -6,11 +6,17 @@
 # petgoal 一次最多補抓 20 隻（--refill-max 預設），抓滿就正常結束；loop 讓它接著再跑一次。
 # 失敗照劇本規則：30 分鐘後自動重做、最多 24 次；送出後對不上（JobHold）才停下來等人。
 #
+# 不到 120 級的組先照常練級（第 1 步），到了才開始練寵。
 # 用法：容器環境變數 SCENARIO=/app/config/scenarios/petgoal.toml（或 bot.toml 的 files.scenario）。
 
 [scenario]
 name = "練寵"
 loop = true
+
+[[step]]
+name = "練到 120 級（地雷區傳送門檻）"
+# 補抓在地雷區Lv130，伺服器擋 120 級以下傳送（71266；11-12 cgy 五轉 44～113 級的組「傳送 22 被拒」整個 petgoal 失敗）
+until = "level>=120"
 
 [[step]]
 name = "五色人龍＋老虎練到目標"

@@ -294,7 +294,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色95 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色91 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -335,7 +335,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色27、15:46 第二組角色86人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色27、15:46 第二組角色60人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
