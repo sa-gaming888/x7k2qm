@@ -36,7 +36,8 @@
 
 from typing import Dict, List, Optional, Tuple
 
-from . import JobError
+from . import JobError, JobHold
+from . import loyalty
 from . import train as T
 from .pets import MAX_PET_LV, rename_pet, slots, store_pet, take_pet
 from ..petgrade import grade
@@ -294,7 +295,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色91 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色108 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -335,7 +336,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色27、15:46 第二組角色60人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色27、15:46 第二組角色88人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -558,6 +559,91 @@ def ride_ok(v: dict, rids: List[int], g, fight: int) -> bool:
     return not is_done(v, g)
 
 
+RIDE_LOYAL = 100                         # 騎寵忠誠不到 100 伺服器不讓騎（11-12 實機，LESSONS #198）
+RIDE_LOYAL_BUDGET = 400000               # 一隻最多花多少石幣補（0 補到 100＝20 次×2 萬）
+
+
+def mount(p, n: str, fight, uid) -> bool:
+    """鎖好的騎寵要真的在騎（狀態 3）才有經驗。休息中而且忠誠不到 100 → 用石幣補到 100 再送一次鎖定
+    （使用者 11-12「全部補，以後自動補」）。石幣不夠、花到上限 → 記日誌、騎寵先空著、照練；送了對不上（JobHold）照停。"""
+    def at():
+        with p.lock:
+            return next(((i, dict(v)) for i, v in p.petinfo[n].items() if v.get("uniqueIndex") == uid), (None, None))
+    idx, v = at()
+    if v is None or v.get("status") == 3:
+        return v is not None
+    if int(v.get("allegiance") or 0) < RIDE_LOYAL:
+        try:
+            times, cost = loyalty.raise_to(p, n, idx, RIDE_LOYAL, RIDE_LOYAL_BUDGET)
+        except JobHold:
+            raise
+        except JobError as e:
+            p.log(f"寵物目標：{e}；{n} 騎寵先空著")
+            if "石幣不夠" in str(e):        # 這輪賣完寵物後由 fund_broke 讓牠自己賣檔差的換石幣再補
+                p.__dict__.setdefault("ride_broke", set()).add(n)
+            return False
+        p.log(f"寵物目標：{n} 騎寵 {uid} 忠誠 {v.get('allegiance') or 0} 騎不上，補到 {RIDE_LOYAL}（{times} 次、{cost} 石幣）")
+        p.set_fight_pet(n, fight, uid)
+    idx, v = at()
+    if v is None or v.get("status") != 3:
+        p.log(f"寵物目標：{n} 騎寵 {uid} 還是沒騎上（忠誠 {(v or {}).get('allegiance')}）")
+        return False
+    return True
+
+
+FUND_LEVEL = 120                         # 賣來換石幣的最低等級
+FUND_MAX = 3                             # 一隻角色一次最多賣幾隻
+
+
+def fund_broke(p, names: List[str], args) -> List[str]:
+    """使用者 11-12「如果石幣不夠可以賣 120 以上檔數差的老虎或人龍」：補騎寵忠誠時石幣不夠的角色，
+    把**自己**身上＋個倉 120 級以上、檔差不到 +cut（人龍看 --cut、老虎看 --ride-cut）的人龍／老虎賣掉（隊長賣就好：石幣是整個帳號共用的，
+    11-12 第三組實測賣前五隻都 2000、賣後五隻都 662000），夠付補到 100 就停、一次最多 3 隻；賣完再補忠誠叫騎寵上場。沒得賣就記日誌、騎寵照空著。"""
+    broke = getattr(p, "ride_broke", None)
+    if not broke:
+        return []
+    from .petsell import price_of, refuse_reason, sell_all
+    dragons, tigers = set(pet_ids(args)), set(ride_ids(args))
+    rg = ride_goal(args)
+    out: List[str] = []
+    for n in [x for x in names if x in broke]:
+        fight, ride = p.locks(n)
+        cur = next((v for v in slots(p, n).values() if v.get("uniqueIndex") == ride), None) if ride else None
+        if cur is None:
+            continue
+        need = -(-(RIDE_LOYAL - int(cur.get("allegiance") or 0)) // 5) * loyalty.LOYAL_COST
+        pool = []
+        for where, rows in (("身上", list(slots(p, n).values())), ("個倉", p.pet_depot(n))):
+            for r in rows:
+                sp = r.get("petId")
+                if sp not in dragons | tigers or (r.get("level") or 0) < FUND_LEVEL:
+                    continue
+                d = grade(r)[1]
+                cut = args.cut if sp in dragons else rg.cut
+                if d is None or d >= cut or refuse_reason(p, n, r, where == "身上"):
+                    continue
+                pool.append({"who": n, "where": where, "uid": r["uniqueIndex"], "level": r.get("level"), "diff": d, "pet": r})
+        pool.sort(key=lambda c: c["level"] or 0, reverse=True)
+        pick, est = [], 0
+        for c in pool:
+            if est >= need or len(pick) >= FUND_MAX:
+                break
+            pick.append(c)
+            est += price_of(c["level"] or 0)
+        if not pick:
+            p.log(f"寵物目標：{n} 石幣不夠補騎寵忠誠，也沒有 {FUND_LEVEL} 級以上、檔差不夠的老虎／人龍可賣，騎寵先空著")
+            continue
+        p.log(f"寵物目標：{n} 石幣不夠補騎寵忠誠（要 {need}），賣自己的 {len(pick)} 隻換石幣")
+        if not p.form_team():
+            raise JobError("賣寵物前組不起隊，不賣")
+        for x in sell_all(p, pick):
+            out.append(f"{n} {x['level']} 級 {x['uid']} → 賣 +{x['gain']}（補忠誠用）")
+            p.log(f"寵物目標：{out[-1]}")
+        broke.discard(n)
+        mount(p, n, fight, ride)
+    return out
+
+
 def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]:
     """--ride-ids：輪與輪之間（全隊已停戰鬥）每隻角色的騎寵換成沒練完的那幾種，到目標的跟戰寵一樣收。
     挑法：身上的先、再個倉、再共倉，檔次高的先（使用者 11-10「只騎 +3 以上的貝魯卡／貝魯伊卡」；
@@ -587,6 +673,9 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
                     done.append(finish(p, n, v, g))
         cur = next((v for v in slots(p, n).values() if v.get("uniqueIndex") == ride), None) if ride else None
         if cur is not None and ride_ok(cur, rids, g, fight):
+            if cur.get("status") == 1:        # 鎖著卻在休息＝沒在騎、沒經驗（LESSONS #198）：補忠誠、叫牠上場
+                p.log(f"寵物目標：{n} 騎寵 {ride}（{cur.get('petId')}）鎖著卻在休息，叫牠上場")
+                mount(p, n, fight, ride)
             continue
         pick = sorted((v for v in slots(p, n).values() if ride_ok(v, rids, g, fight) and v.get("uniqueIndex") != ride),
                       key=lambda v: (diff_of(v), v.get("level") or 0), reverse=True)
@@ -602,11 +691,18 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
                     break
         if new is None:
             need.append(n)
+            # 沒有指定那種可騎，身上鎖著的是別種老虎、還沒到目標 → 先騎著（有經驗總比空著好），休息中就補忠誠叫上場。
+            # 11-12 --assign 後第十組可樂娜指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
+            if (cur is not None and cur.get("status") == 1 and cur.get("petId") in ride_ids(args)
+                    and grade(cur)[1] is not None and not is_done(cur, g)):
+                p.log(f"寵物目標：{n} 沒有指定的騎寵可換，先騎著身上的 {ride}（{cur.get('petId')}）")
+                mount(p, n, fight, ride)
             continue
         uid = new["uniqueIndex"]
         if not p.set_fight_pet(n, fight, uid):
             raise JobError(f"{n} 騎寵換不成 {uid}，停")
         p.log(f"寵物目標：{n} 騎寵 → {uid}（{new.get('petId')}）{diff_of(new):+d} 檔 {new.get('level')} 級｜{goal_text(new, g)}")
+        mount(p, n, fight, uid)
         if cur is not None and cur.get("petId") in rids and grade(cur)[1] is not None and is_done(cur, g):
             if to_sell(cur, g):
                 selling.append((n, cur))
@@ -683,6 +779,7 @@ def run(p, args) -> Tuple[str, dict]:
             ride_need = ride_step(p, names, args, selling, done)     # --ride-ids：騎寵換沒練完的、到目標的一起收
             if selling:
                 done.extend(sell(p, selling, args))
+            done.extend(fund_broke(p, names, args))             # 補騎寵忠誠石幣不夠：自己賣檔差的換錢再補
             idle = []
             for n in names:
                 left = [v for v in on_body(p, n, args) if not is_done(v, args)]

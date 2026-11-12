@@ -8,7 +8,7 @@
 檢查（不加 --apply 就只做這個；不通過列原因、結束碼 1）：每隻角色
 - 1.82 任務（2010～2028 裡的 16 個＋3003）、四大洞窟 2000～2003、英雄島 2031／2032 都完成（`finishTasks`）；
 - 剩餘點數 0（`potentialPoint`；沒配完就轉生等於白丟屬性點）；
-- 寵物欄有空格（最後一步給守護獸，滿格拿不到）；
+- 寵物欄有空格（最後一步給守護獸，滿格拿不到；這一轉要帶的守護獸都已經在身上就不用）；
 - 四大證明 2701 2770 2707 2735 在背包（16F 守門人收走換精靈王之弓）；不在背包但在個人倉庫算「待取出」，
   **只有 --apply 才取出**；
 - 等級夠（2004～2007 要 131、2008 五轉要 140）；全隊轉數一樣。
@@ -19,6 +19,7 @@
    （戰鬥型，`battle_timeout` 420：2026-10-24 第三組二轉，漆黑 10 樓與機暴 180 秒內沒翻面，其實早就打完了）。
 3. **全部寵物存個人寵物倉庫**（`pets.store_all`：鎖定清 0 → 改休息 → 逐隻存 → 確認寵物欄全空）；
    使用者 2026-10-24：打完機暴後全存，守護獸才放得進寵物欄，轉生獎勵寵也固定在第 1 格。
+   **這一轉覲見精靈王要帶的守護獸（`GUARDIANS`）留在身上**，倉庫裡有的領回來（重做時上次領到的會在倉庫）。
 4. 跑完剩下的步驟（通過守護人、覲見精靈王）→ 等 `Role_RoleInfo.trans` 變成 轉數＋1。
 任何一步失敗就停（規範第 2 點）；重跑會從進行中的那一步接續（執行器自己略過做完的步驟）。
 
@@ -47,6 +48,10 @@ DEFAULT_LEVEL = 131
 BOSS_STEP = 4                                          # 第 4 步「挑戰機暴」：打完先停、全部寵物存倉
 BATTLE_TIMEOUT = 420.0
 SLOT_MAX = 5
+# 第 6 步「覲見精靈王」要身上帶的守護獸（Task.json 200X00006 condition；五轉 2008 四隻都要）。
+# 存寵物時要留著、倉庫裡有就領回：11-12 一轉重做時把上次領到的大地守護獸存進個倉，精靈王那步「要寵物 1373」卡住；
+# 五轉身上四隻守護獸＋戰寵剛好 5/5，檢查又被「寵物欄滿」擋下。
+GUARDIANS = {2004: (1373,), 2005: (1374,), 2006: (1375,), 2007: (1376,), 2008: (1373, 1374, 1375, 1376)}
 TRANS_WAIT = 15.0                                      # 跑完後等轉數更新的秒數
 PROOF_STEP = 3                                         # 第 3 步交四大證明（Task.json 200X00003 condition）
 ACTIVE = (1, 2, 4)                                     # 任務狀態：進行中、完成、進度更新
@@ -80,6 +85,26 @@ def group_for(trans: int) -> int:
     if not FIRST_GROUP <= g <= LAST_GROUP:
         raise JobError(f"轉數 {trans} 沒有下一轉的任務（只有 {FIRST_GROUP}～{LAST_GROUP}）")
     return g
+
+
+def guardians_for(trans) -> Tuple[int, ...]:
+    """這一轉覲見精靈王要帶的守護獸；轉數不明或沒有下一轉回空。"""
+    if trans is None:
+        return ()
+    return GUARDIANS.get(FIRST_GROUP + trans, ())
+
+
+def take_guardians(p, name: str, need) -> List[int]:
+    """身上沒有、倉庫（個倉＋共倉）有的守護獸領回來；回傳領了哪些。倉庫也沒有的留給任務自己給（第 5 步通過守護人）。"""
+    got = []
+    for pid in need:
+        if any(v.get("petId") == pid for v in pets_job.slots(p, name).values()):
+            continue
+        row = next((r for r in p.pet_depots(name) if r.get("petId") == pid), None)
+        if row:
+            pets_job.take_pet(p, name, row)
+            got.append(pid)
+    return got
 
 
 def _depot_rows(p, name: str) -> List[dict]:
@@ -117,8 +142,9 @@ def inspect(p, name: str) -> dict:
         problems.append("不知道剩餘點數")
     elif a.get("potentialPoint"):
         problems.append(f"剩餘點數 {a.get('potentialPoint')} 沒配完")
-    if len(pets) >= SLOT_MAX:
-        problems.append(f"寵物欄滿 {len(pets)}/{SLOT_MAX}")
+    keep = set(guardians_for(trans))
+    if len(pets) >= SLOT_MAX and not (keep and keep <= {v.get("petId") for v in pets.values()}):
+        problems.append(f"寵物欄滿 {len(pets)}/{SLOT_MAX}")              # 要帶的守護獸都在身上就不用空格
     lost = [x for x in missing if x not in in_depot]
     if lost:
         problems.append(f"四大證明背包和個倉都沒有 {lost}")
@@ -193,7 +219,7 @@ DEATH_RETRY = 6                   # 轉生任務戰鬥有人被打死：重新�
 
 def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
     """跑一段執行器；有人被打死就重新組隊、回村補血後重打（最多 DEATH_RETRY 次），其他錯誤照舊停。
-    11-06 第五組轉生 2004 打到機暴前角色71被打死，劇本整個停住；1.82 的 quests 早就有 --retry，轉生沒有。"""
+    11-06 第五組轉生 2004 打到機暴前角色97被打死，劇本整個停住；1.82 的 quests 早就有 --retry，轉生沒有。"""
     for tries in range(DEATH_RETRY + 1):
         try:
             q = _run_quest_once(p, group, grid_fn, need_free, stop_after)
@@ -212,7 +238,7 @@ def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
                 quests.regroup_and_heal(p, f"轉生 {group}")
             lag = quests.laggards(p, group) if quests.split_members(p, group) else None
             if lag:
-                # 陣亡那隻停在前一步（11-06 第五組角色71停在 200400002、其他人 200400003）：落後的人補到同一步，
+                # 陣亡那隻停在前一步（11-06 第五組角色97停在 200400002、其他人 200400003）：落後的人補到同一步，
                 # 其他人跟隊。**不放棄**：轉生前幾步已經交出四大證明，放棄就拿不回來、再也轉不了
                 behind, upto = lag
                 p.log(f"轉生 {group}：隊員進度分岔，{behind} 先補做到 {upto}，其他人跟隊（第 {tries + 1}/{DEATH_RETRY} 次）")
@@ -230,7 +256,7 @@ def run_quest(p, group: int, grid_fn, need_free: int, stop_after=None):
             elif split:
                 raise                              # 分岔又補不了（有人沒有進行中的步驟）：停下來給人看，不放棄
             # 重打前一定真的重組：補進度換過隊長、還原時會解散隊伍（11-06 第五組補完後沒重組，
-            # 角色73一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
+            # 角色60一個人跳去交了 200400003，其他四隻留在 32011 → 又分岔）
             with p.lock:
                 p.s.team = []
             if not p.form_team():
@@ -286,11 +312,13 @@ def run(p, args) -> Tuple[str, dict]:
     q = run_quest(p, group, grid_fn, free, stop_after=boss)
     if not q.stopped_early:
         raise JobError(f"轉生 {group}：執行器沒有停在 {boss}（可能整個任務已經做完？），寵物沒動，先查狀態")
-    p.log(f"打完機暴 {boss}，全部寵物存個人寵物倉庫")
+    keep = GUARDIANS.get(group, ())
+    p.log(f"打完機暴 {boss}，全部寵物存個人寵物倉庫（守護獸 {list(keep)} 留著）")
     stored = {}
     for _, n in p.party:
-        stored[n] = pets_job.store_all(p, n)
-    p.log("寵物欄全空，跑剩下的步驟（通過守護人、覲見精靈王）")
+        stored[n] = pets_job.store_all(p, n, keep=keep)
+        take_guardians(p, n, keep)
+    p.log("寵物欄只剩守護獸，跑剩下的步驟（通過守護人、覲見精靈王）")
     run_quest(p, group, grid_fn, free)
     if not p.wait(lambda: all(p.trans.get(n) == trans + 1 for _, n in p.party), TRANS_WAIT):
         with p.lock:

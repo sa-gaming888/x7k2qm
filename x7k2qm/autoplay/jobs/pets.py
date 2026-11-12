@@ -5,7 +5,7 @@
     ... --apply --mode rest          # 交寵物前：鎖定清 0、全部改休息
     ... --apply --mode restore       # 卡坦後：金虎（不高於人物等級裡最高的）領回、鎖 戰寵＝主戰寵／騎寵＝金虎
     ... --apply --mode store-all     # 全部寵物存個人寵物倉庫（轉生打完機暴後；rebirth 也呼叫這裡）
-    ... --apply --mode swap-tiger --who 角色60,角色49   # 轉生後騎寵換成 1 級金虎
+    ... --apply --mode swap-tiger --who 角色88,角色38   # 轉生後騎寵換成 1 級金虎
     ... --apply --mode take --pet-id 1381                 # 指定的寵物（身上沒有就從個倉領）鎖成戰寵，騎寵照舊
     ... --apply --mode release-public --pet-id 355 --confirm-release   # 共倉裡規則表是 release 的 1 級寵物逐隻領出放生
     ... --apply --mode release-private --pet-id 329 --confirm-release  # 同上，每隻角色放自己個倉的
@@ -25,7 +25,7 @@
 restore 與 swap-tiger 的差別（兩個都是「金虎領回當騎寵」，挑的金虎不同）：
 - `restore`：卡坦的願望（2019）前後用 → 領**等級不高於人物**的金虎裡最高的那隻（騎不上的不拿），戰寵＝主戰寵（目前鎖定的，沒有就身上最高等、不是金虎的）。
 - `swap-tiger`：轉生後用，人物回到 1 級騎不上高等坐騎 → 身上的高等金虎存倉、領 **1 級**金虎，戰寵沿用原本的。
-  2026-10-24 第二組：init_after_trans 給角色60、角色49領回 128 級金虎，狀態直接變休息（騎不上）。
+  2026-10-24 第二組：init_after_trans 給角色88、角色38領回 128 級金虎，狀態直接變休息（騎不上）。
 """
 
 import json
@@ -290,7 +290,7 @@ def do_take(p, name: str, pid: int, any_level: bool = False, ride_pid: Optional[
     fight_u, ride_u = p.locks(name)
     fits = lambda x: x.get("petId") == pid and (any_level or (x.get("level") or 0) < MAX_PET_LV)   # noqa: E731
     # 身上那隻同種的若是鎖定騎寵（例：騎金虎又要拿個倉另一隻金虎當戰寵），跳過它改從個倉領
-    # （11-04 角色85，舊版挑到騎寵直接停，LESSONS #159）
+    # （11-04 角色103，舊版挑到騎寵直接停，LESSONS #159）
     keep_ride = ride_u if ride_pid is None else None
     here = [v for v in slots(p, name).values() if fits(v) and not (keep_ride and v.get("uniqueIndex") == keep_ride)]
     if here:
@@ -535,15 +535,20 @@ def _release_ids(p, name: str) -> set:
     return out
 
 
-def store_all(p, name: str) -> int:
+def store_all(p, name: str, keep=()) -> int:
     """全部寵物存個人寵物倉庫（使用者 2026-10-24：轉生打完機暴後全存，守護獸才放得進寵物欄）。
-    外掛戰寵／騎寵鎖定清 0 → 出戰／騎乘的改休息 → 逐隻存倉 → 確認寵物欄全空。回傳存了幾隻。"""
+    外掛戰寵／騎寵鎖定清 0 → 出戰／騎乘的改休息 → 逐隻存倉 → 確認寵物欄全空。回傳存了幾隻。
+    keep：這些種類每種留一隻在身上（轉生覲見精靈王要帶的守護獸）。"""
     unlock(p, name, 0, 0)
     for k in slots(p, name):
         rest_pet(p, name, k)
     n = 0
     drop = _release_ids(p, name)
+    kept = {}
     for k, v in sorted(slots(p, name).items()):
+        if v.get("petId") in keep and v["petId"] not in kept:
+            kept[v["petId"]] = k
+            continue
         # 規則表寫 release 的 1 級寵物直接放生、不存倉（2026-11-03 第六組轉生把奇娜、多魯寶、烏力斯坦全存進個倉，
         # 使用者：「之前定義轉身可以丟的你怎麼沒丟」，LESSONS #153）
         if v.get("petId") in drop and (v.get("level") or 0) == 1:
@@ -552,10 +557,10 @@ def store_all(p, name: str) -> int:
             continue
         store_pet(p, name, k)
         n += 1
-    left = slots(p, name)
+    left = {k: v for k, v in slots(p, name).items() if k not in kept.values()}
     if left:
         raise JobError(f"{name} 寵物欄還有 {_desc(p, left.values())}")
-    p.log(f"{name} 寵物欄已清空（存了 {n} 隻）")
+    p.log(f"{name} 寵物欄已清空（存了 {n} 隻）" if not kept else f"{name} 寵物欄只留 {sorted(kept)}（存了 {n} 隻）")
     return n
 
 
@@ -667,7 +672,7 @@ def do_refresh(p, name: str) -> None:
 
 def do_store_slot(p, name: str, args) -> None:
     """指定一格存個人寵物倉庫（可逆）：那一格要是 --pet-id、不是鎖定的戰寵／騎寵，否則停。
-    2026-10-25 角色60等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
+    2026-10-25 角色88等邦恩吉 240 秒時外掛多抓一隻克邦凱斯，寵物欄 5/5 補抓不了 → 先把多的那隻存倉。"""
     slot, pid = args.slot, args.pet_id
     pet = slots(p, name).get(slot)
     if not pet or pet.get("petId") != pid:
