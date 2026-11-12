@@ -34,6 +34,7 @@
   所以練完的角色這輪剩下的時間照舊用原戰寵跟著打，輪一結束馬上賣＋補抓、下一輪全員都有寵物練。
 """
 
+import argparse
 from typing import Dict, List, Optional, Tuple
 
 from . import JobError, JobHold
@@ -75,8 +76,9 @@ def add_args(ap) -> None:
                     help="--refill 誘餌不夠時用石幣補買（每個 50,000 石幣、只花石幣，同 jobs catch --buy-bait）")
     ap.add_argument("--jump", type=int, default=0,
                     help="跳級：寵物等級加這麼多再判斷換圖門檻（例 40：80 級就進地雷區Lv130；使用者 11-10「練級要盡可能用跳級去練」）")
-    ap.add_argument("--fruit", action="store_true",
-                    help="練寵中經驗果加成沒了就自己吃，沒有就用石幣買（Party.autofruit；使用者 11-11「練寵都沒有吃果子」）")
+    ap.add_argument("--fruit", action=argparse.BooleanOptionalAction, default=True,
+                    help="練寵中經驗果加成剩不到 1 小時就自己吃，沒有就用石幣買（Party.autofruit；使用者 11-11「練寵都沒有吃果子」、"
+                         "11-12 預設開），--no-fruit 關掉")
     ap.add_argument("--uids", default="",
                     help="只練這幾隻（寵物唯一編號，逗號分隔；例：只練預估到得了 1100 的黑豹）。給了就不補抓戰寵")
     ap.add_argument("--ride-ids", dest="ride_ids", default="",
@@ -295,7 +297,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色108 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色66 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -336,7 +338,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色27、15:46 第二組角色88人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色27、15:46 第二組角色74人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -546,6 +548,10 @@ def release_caught(p, n: str, pet: dict) -> None:
     uid, pid = pet.get("uniqueIndex"), pet.get("petId")
     if pid in set(rules.task_pets) | set(rules.protect) or (pet.get("level") or 0) != 1:
         raise JobError(f"{n} 剛抓的 {uid}（{pid}）不是 1 級或在任務條件／保護名單上，不放生，停")
+    if uid in p.locks(n):
+        # 抓之前沒有戰寵（上一隻練完存倉了）時，catch 的 restore_fight_pet 會挑身上等級最高的＝剛抓的 1 級當戰寵，
+        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組可樂娜，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
+        free_for_sale(p, n, uid)
     idx = next((k for k, v in slots(p, n).items() if v.get("uniqueIndex") == uid), None)
     if idx is None:
         raise JobError(f"{n} 找不到剛抓的 {uid}，不放生，停")
