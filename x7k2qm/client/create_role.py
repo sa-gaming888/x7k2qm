@@ -1,7 +1,7 @@
 """建角色（無畫面）：照遊戲 `AccountNetManager.SendCreateRole` 送 HTTP GET `CreateRole`（doc/autoplay/game/character.md §1.4）。
 
     python -X utf8 -m x7k2qm.client.create_role --profile 3 --count 5 --water 10 --speed 20
-    python -X utf8 -m x7k2qm.client.create_role --profile 7 --fire 10 --speed 20 --names 角色58,敖睿昕,敖璿鳳,敖睿芯,敖睿翎
+    python -X utf8 -m x7k2qm.client.create_role --profile 7 --fire 10 --speed 20 --names 角色65,敖睿昕,敖璿鳳,敖睿芯,敖睿翎
 
 - 帳密只從環境變數讀（BOT_ACCOUNT_<組> / BOT_PASSWORD_<組>）；網址含混淆後的帳密，**不寫日誌、不放進錯誤訊息**。
 - 四屬性共 10 點（協定每點 ×10）；地火互斥、水風互斥。基礎屬性（體力、腕力、耐力、速度）共 20 點，都要分完。
