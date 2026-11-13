@@ -38,6 +38,7 @@
 """
 
 import argparse
+import time
 from typing import Dict, List, Optional, Tuple
 
 from . import JobError, JobHold
@@ -77,8 +78,9 @@ def add_args(ap) -> None:
                     help=f"--refill 抓寵地點（預設 {CATCH_AT}；不在那裡先全隊傳過去）")
     ap.add_argument("--buy-bait", dest="buy_bait", action="store_true",
                     help="--refill 誘餌不夠時用石幣補買（每個 50,000 石幣、只花石幣，同 jobs catch --buy-bait）")
-    ap.add_argument("--jump", type=int, default=0,
-                    help="跳級：寵物等級加這麼多再判斷換圖門檻（例 40：80 級就進地雷區Lv130；使用者 11-10「練級要盡可能用跳級去練」）")
+    ap.add_argument("--jump", default="0",
+                    help="跳級：寵物等級加這麼多再判斷換圖門檻（例 40：80 級就進地雷區Lv130；使用者 11-10「練級要盡可能用跳級去練」）；"
+                         "auto：從 40 起看補血次數自己調（使用者 11-13「高等陪低等練輸出才會快…跳級練」）")
     ap.add_argument("--fruit", action=argparse.BooleanOptionalAction, default=True,
                     help="練寵中經驗果加成剩不到 1 小時就自己吃，沒有就用石幣買（Party.autofruit；使用者 11-11「練寵都沒有吃果子」、"
                          "11-12 預設開），--no-fruit 關掉")
@@ -210,7 +212,20 @@ def refilling(args) -> bool:
     return bool(getattr(args, "refill", False))
 
 
+def jump_of(args) -> int:
+    """--jump 的起始值：數字照用，auto 從 Party.JUMP_AUTO_START 起。"""
+    v = str(getattr(args, "jump", "0") or "0").strip().lower()
+    if v == "auto":
+        from ..headless_party import Party
+        return Party.JUMP_AUTO_START
+    try:
+        return max(0, int(v))
+    except ValueError:
+        raise JobError(f"--jump 要是數字或 auto（收到 {v!r}）")
+
+
 def check(args) -> None:
+    jump_of(args)
     if not 1 < int(args.low_level) <= MAX_PET_LV:
         raise JobError(f"--low-level 要在 2～{MAX_PET_LV}")
     from .petsell import MIN_LEVEL
@@ -300,7 +315,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色102 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色43 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -310,7 +325,7 @@ def free_for_sale(p, n: str, uid: int) -> None:
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是戰寵，先解掉戰寵鎖定")
     elif ride == uid:
         # 改練另一種時，以前當騎寵練的同種到級要賣，牠還鎖著騎寵、騎乘中：只解戰寵的舊版改休息沒確認整組停
-        # （11-10 23:06 第十組改練 307，海尼根騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
+        # （11-10 23:06 第十組改練 307，角色40騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
         unlock(p, n, fight, 0)
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是騎寵，先解掉騎寵鎖定")
     if idx is not None:
@@ -341,7 +356,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色27、15:46 第二組角色108人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色17、15:46 第二組角色32人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -399,7 +414,7 @@ def swap_in(p, name: str, args, key, claimed: set, fills: Optional[Dict[str, int
     """練功中（已關遇敵、不在戰鬥）幫這隻角色換上下一隻要練的：先領倉庫沒練完的指定寵物（fetch），
     沒有就拿個倉沒滿 140 的（fill_row，記在 fills）。換上後加進 orig_fight／train_uid，跟一開始就在練的一樣收。
     身上 5 格滿了、倉庫都沒有 → 回 False（照舊用原本戰寵跟著打）。
-    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色31布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
+    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色25布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
     from .catch import SLOT_MAX
     if len(slots(p, name)) >= SLOT_MAX:
         p.log(f"寵物目標：{name} 身上 {SLOT_MAX} 格滿了，領不出下一隻，先用原本戰寵跟著打")
@@ -479,7 +494,7 @@ def keep_of(p, name: str, args) -> set:
 
 def park_unlisted(p, names: List[str], args) -> None:
     """--uids：身上同種、不在名單上的先存倉——練寵模式照物種挑戰寵（pet_index），同種兩隻會挑錯
-    （11-10 第九組角色27身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
+    （11-10 第九組角色17身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
     only = uid_set(args)
     if not only:
         return
@@ -557,7 +572,7 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
     cap = int(getattr(args, "refill_max", REFILL_MAX))
     # 到上限不再讓角色空手（使用者 11-13「如果上限 30 次都沒抓到，就在抓一次隨便抓一隻去練，根據檔次決定練到達分or 賣」）：
     # 每次補抓、每隻還沒寵物練的角色在額度用完後**再抓 1 隻、不放生**，照檔次走原本的目標（≥ --cut 練到分數、< --cut 練到級賣／存）。
-    # 舊版到上限就 return，11-13 第七組敖璿鳳補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
+    # 舊版到上限就 return，11-13 第七組角色54補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
     release = bool(getattr(args, "release_low", False)) and not ride     # 騎寵照舊練到 120 賣
     wanted = 0 if ride else int(getattr(args, "refill_want", 0) or 0)
     if wanted and state.get("kept", 0) >= wanted:
@@ -637,7 +652,7 @@ def release_caught(p, n: str, pet: dict) -> None:
         raise JobError(f"{n} 剛抓的 {uid}（{pid}）不是 1 級或在任務條件／保護名單上，不放生，停")
     if uid in p.locks(n):
         # 抓之前沒有戰寵（上一隻練完存倉了）時，catch 的 restore_fight_pet 會挑身上等級最高的＝剛抓的 1 級當戰寵，
-        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組可樂娜，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
+        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色51，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
         free_for_sale(p, n, uid)
     idx = next((k for k, v in slots(p, n).items() if v.get("uniqueIndex") == uid), None)
     if idx is None:
@@ -751,7 +766,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         rids = rids_of(args, n)               # --assign：這隻只騎指定的那種
         fight, ride = p.locks(n)
         # 身上休息中、已經到目標的那幾種（上次換下來沒處理、或上次中斷留著的）先收／賣，不然一直佔格子：
-        # 11-10 18:36 第七組敖睿芯只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
+        # 11-10 18:36 第七組角色41只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
         # 「現在 4 隻、要抓 1 隻，超過上限 4」整組停（LESSONS #189）
         queued = {id(x) for _, x in selling}
         for v in list(slots(p, n).values()):
@@ -785,7 +800,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         if new is None:
             need.append(n)
             # 沒有指定那種可騎，身上鎖著的是別種老虎、還沒到目標 → 先騎著（有經驗總比空著好），休息中就補忠誠叫上場。
-            # 11-12 --assign 後第十組可樂娜指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
+            # 11-12 --assign 後第十組角色51指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
             if (cur is not None and cur.get("status") == 1 and cur.get("petId") in ride_ids(args)
                     and grade(cur)[1] is not None and not is_done(cur, g)):
                 p.log(f"寵物目標：{n} 沒有指定的騎寵可換，先騎著身上的 {ride}（{cur.get('petId')}）")
@@ -833,7 +848,8 @@ def run(p, args) -> Tuple[str, dict]:
 
     old = (p.train_pet, p.pet_start, p.no_retreat, p.stop_file, set(p.train_skip), p.pet_jump,
            p.auto_fruit, p.fruit_buy)
-    p.pet_jump = max(0, int(getattr(args, "jump", 0) or 0))
+    p.pet_jump, p.pet_jump_auto = jump_of(args), str(getattr(args, "jump", "0")).strip().lower() == "auto"
+    p.jump_heals, p.jump_changed = [], time.time()
     if getattr(args, "fruit", False):
         p.auto_fruit = p.fruit_buy = True
     if getattr(args, "stop_file", None):
@@ -978,6 +994,7 @@ def run(p, args) -> Tuple[str, dict]:
             p.log(f"還原戰寵：{bad} 改不回去（要手動設）")
         (p.train_pet, p.pet_start, p.no_retreat, p.stop_file, p.train_skip, p.pet_jump,
          p.auto_fruit, p.fruit_buy) = old
+        p.pet_jump_auto = False
     if bad:
         raise JobError(f"練完了，但 {bad} 的戰寵改不回去（要手動設）")
     data = {"done": done, "rounds": rounds}

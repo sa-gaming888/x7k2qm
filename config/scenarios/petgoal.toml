@@ -7,6 +7,7 @@
 # 失敗照劇本規則：30 分鐘後自動重做、最多 24 次；送出後對不上（JobHold）才停下來等人。
 #
 # 不到 120 級的組先照常練級（第 1 步），到了才開始練寵。
+# --jump auto：高等的戰寵負責輸出、低等的跟著跳圖練，從跳 40 級起看補血次數自己調（使用者 11-13「高等陪低等練輸出才會快才能快速跳等，跳級練」）。
 # 用法：容器環境變數 SCENARIO=/app/config/scenarios/petgoal.toml（或 bot.toml 的 files.scenario）。
 
 [scenario]
@@ -20,4 +21,4 @@ until = "level>=120"
 
 [[step]]
 name = "五色人龍＋老虎練到目標"
-job = "petgoal --apply --pet-id 54,55,56,57,481 --ride-ids 307,308,309,310 --assign 1:54:307,2:481:310,3:57:309,4:56:308,5:55:307 --sell-low --refill --release-low --ride-refill --buy-bait --fruit"
+job = "petgoal --apply --pet-id 54,55,56,57,481 --ride-ids 307,308,309,310 --assign 1:54:307,2:481:310,3:57:309,4:56:308,5:55:307 --sell-low --refill --release-low --ride-refill --buy-bait --fruit --jump auto"

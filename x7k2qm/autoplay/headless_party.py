@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色108"), (10003796, "角色31"), (10003799, "角色92"), (10003803, "角色46"), (10003804, "角色106")]
+PARTY = [(10003754, "角色32"), (10003796, "角色25"), (10003799, "角色42"), (10003803, "角色27"), (10003804, "角色39")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -209,6 +209,11 @@ class Party:
         self._rides: Optional[set] = None        # 不用學就能騎的 petId（data/configs/Ride.json needlearn false）
         self.pet_start: Optional[str] = None     # 練寵起點（使用者：人物等級高、寵物低，從海底開始）
         self.pet_jump = 0                        # 跳級：寵物差幾級就可以進下一張圖（使用者 11-10「練級要盡可能用跳級去練」）
+        # 自動跳級（使用者 11-13「高等陪低等練輸出才會快才能快速跳等，跳級練」）：pet_jump 從 JUMP_AUTO_START 起，
+        # 看補血次數自己調（pet_route）。jump_heals 是補血時間，換圖不清（heal_times 換圖就清、只看 5 分鐘）
+        self.pet_jump_auto = False
+        self.jump_heals: List[float] = []
+        self.jump_changed = 0.0
         # 練功中經驗果加成沒了就自己吃（使用者 11-07「沒吃果子記得自己吃」、11-11「練寵都沒有吃果子」）：
         # 背包、倉庫有就吃，沒有就用石幣在商城石幣分頁買（fruit_buy）。出錯一次就整個關掉，不每圈重試
         self.auto_fruit = False
@@ -774,12 +779,12 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色102在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色43在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
             # 先全部離隊：隊長離隊後其他 4 隻在伺服器上還是一隊（新隊長是下一隻），隊員不能自己傳送
-            # （16:30 實測角色92 isOK false；提示 30746 隊員不能傳送）
+            # （16:30 實測角色42 isOK false；提示 30746 隊員不能傳送）
             self.dismiss_team()
             for _, n in self.party[1:] + self.party[:1]:
                 if n == self.party[0][1] and maps.get(n) != 1000:
@@ -1185,7 +1190,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色108個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色32個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1964,7 +1969,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色49的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色26的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -2098,9 +2103,41 @@ class Party:
                 self.log(f"5 隻的寵物 {pid} 都到 {lv} 級以上了")
         return True
 
+    JUMP_AUTO_START = 40      # 自動跳級的起點（11-10 實測 --jump 40 可用）
+    JUMP_STEP = 20
+    JUMP_MAX = 80
+    JUMP_DOWN_HEALS = 5       # JUMP_DOWN_WINDOW 秒內補血這麼多次 → 少跳 JUMP_STEP、退回該去的圖
+    JUMP_DOWN_WINDOW = 600
+    JUMP_UP_WINDOW = 900      # 這麼久補血不到 2 次、離上次調整也這麼久 → 多跳 JUMP_STEP
+
+    def tune_jump(self, now: Optional[float] = None) -> Optional[str]:
+        """自動跳級：補血太多就少跳、很久都沒什麼補血就多跳；回傳這次怎麼調（記日誌用），沒調回 None。
+        11-10 實測固定跳太多：1 級直接在波拉島 21 分鐘補血 30 次，所以要看補血次數收回來。"""
+        if not self.pet_jump_auto:
+            return None
+        now = time.time() if now is None else now
+        with self.lock:
+            self.jump_heals[:] = [t for t in self.jump_heals if now - t <= max(self.JUMP_DOWN_WINDOW, self.JUMP_UP_WINDOW)]
+            down = sum(1 for t in self.jump_heals if now - t <= self.JUMP_DOWN_WINDOW)
+            up = sum(1 for t in self.jump_heals if now - t <= self.JUMP_UP_WINDOW)
+        old = int(self.pet_jump or 0)
+        if down >= self.JUMP_DOWN_HEALS and old > 0:
+            self.pet_jump = max(0, old - self.JUMP_STEP)
+            why = f"{self.JUMP_DOWN_WINDOW // 60} 分鐘補血 {down} 次"
+        elif up < 2 and old < self.JUMP_MAX and now - self.jump_changed >= self.JUMP_UP_WINDOW:
+            self.pet_jump = min(self.JUMP_MAX, old + self.JUMP_STEP)
+            why = f"{self.JUMP_UP_WINDOW // 60} 分鐘補血 {up} 次"
+        else:
+            return None
+        self.jump_changed = now
+        with self.lock:
+            self.jump_heals.clear()
+        return f"自動跳級：{why}，跳 {old} → {self.pet_jump} 級"
+
     def pet_route(self, s: State) -> Tuple[str, Optional[str]]:
         """練寵時的地圖：照練功路線門檻，但用「還在練的寵物裡最低等級」判斷；只往前、不退。
-        pet_jump：門檻放寬幾級（跳級練，經驗多但寵物較常倒、要回村補血）。"""
+        pet_jump：門檻放寬幾級（跳級練，經驗多但寵物較常倒、要回村補血）。
+        自動跳級（pet_jump_auto）：高等的戰寵負責輸出，低等的跟著跳圖；補血太多少跳時，該去的圖比現在低就退一張。"""
         pid, lv = self.train_pet
         levels = []
         for name in self.orig_fight:
@@ -2109,6 +2146,9 @@ class Party:
                 levels.append(self.petinfo[name].get(idx, {}).get("level", 0) if idx else 0)
         if not levels:
             return "ok", None
+        tuned = self.tune_jump()
+        if tuned:
+            self.log(tuned)
         low = min(levels) + max(0, int(self.pet_jump or 0))
         target = None
         for place, mapid, need in ROUTE:
@@ -2117,8 +2157,12 @@ class Party:
                 target = (place, mapid)
         if target and target[1] != s.leader_map:
             cur = next((i for i, (_, m, _) in enumerate(ROUTE) if m == s.leader_map), -1)
-            if [m for _, m, _ in ROUTE].index(target[1]) > cur:
+            to = [m for _, m, _ in ROUTE].index(target[1])
+            if to > cur:
                 return "advance", target[0]
+            # 自動跳級才會退：少跳後該去的圖比現在低（換圖冷卻擋下的話下一圈還會再退，所以不只看這次有沒有調）
+            if self.pet_jump_auto and 0 <= to < cur:
+                return "retreat", ROUTE[cur - 1][0]
         return "ok", None
 
     def wounded(self) -> List[str]:
@@ -2278,6 +2322,7 @@ class Party:
             n = self.heals
             self.heal_times.append(time.time())
             self.heal_times[:] = [t for t in self.heal_times if time.time() - t <= 300]
+            self.jump_heals.append(time.time())
         self.log(f"補血：開始（{why}，第 {n} 次），練功地點 {place or '不知道'}")
         if not place:
             self.log("停止：補血：不知道原本的練功地點，補完血傳不回去"); return False
