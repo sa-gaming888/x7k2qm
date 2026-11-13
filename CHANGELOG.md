@@ -4,6 +4,9 @@
 
 ## [Unreleased]
 
+### Fixed
+- 練寵補抓跳過野外抓不到的金虎（310，任務給的）：指定騎 310 的人物練完不再去地雷區等著抓，整個 petgoal 也不會因此停；其他照抓。
+
 ### Added
 - register workflow 多一個「server」下拉選單（A／B）：B 讀 secret `GAME_LOGIN_HOST_B`（同一套註冊、建角協定的另一台），一樣註冊完自動建五隻角色；Telegram 結果標題標出是哪台。
 - 練寵自動跳級 `petgoal --jump auto`（內建練寵劇本預設開）：高等戰寵負責輸出、低等的跟著跳圖；從跳 40 級起，10 分鐘補血 5 次以上少跳 20 級並退回一張圖，
