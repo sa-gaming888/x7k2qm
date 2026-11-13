@@ -16,7 +16,9 @@
 每一輪：
 1. 每隻角色身上有沒練完的那種寵物就練牠；沒有就從**自己的個倉**、再從**共倉**領一隻沒練完的（共倉的同一隻不會兩個人搶）。
 2. 有寵物的角色一起練（`headless_party` 練寵模式：戰寵換成牠、換圖看寵物等級只往前）；沒有的角色照常用原本戰寵跟著打。
-3. 某隻到目標：關遇敵 → 戰寵改回原本的 → 改名（要的話）→ 存倉（個倉滿才存共倉）→ 其他人繼續練。
+3. 某隻到目標：關遇敵 → 戰寵改回原本的 → 改名（要的話）→ 存倉（個倉滿才存共倉）→ **當場換下一隻**（`swap_in`）→ 其他人繼續練。
+   換下一隻（使用者 11-13，LESSONS #203）：先領倉庫沒練完的指定寵物；沒有就從自己個倉拿沒滿 140 的頂替練（`fill_row`），
+   頂替的滿 140 就收回再找下一隻；指定的都練完（只剩頂替的在練）→ 頂替的全收回、這輪結束。這輪一開始就沒寵物的角色也一樣。
 4. 這輪都收完 → 下一輪領下一批；倉庫裡也沒有沒練完的 → 結束。
 練功自己停了（停止檔、連線中斷、補血失敗…）或 6 小時沒有任何一隻升級 → 整個停（規範第 2 點），還沒改回的戰寵改回原本的。
 
@@ -28,10 +30,11 @@
 - 一隻一隻抓（`jobs catch` 的 `catch_one`，不再從倉庫領同種——倉庫的已經由 fetch 挑過，練完的不能再領出來）。
   任何一隻抓不到、誘餌不夠、開不了 → JobError 整個停，不重試、後面的不抓（規範第 2 點）。
 - 上限：這次執行最多補抓 `--refill-max` 隻（預設 20），到了就不再抓，剩下的練完就正常結束。
+  有 `--release-low` 時（低檔放生也算額度）：到了上限還沒寵物練的角色**再抓 1 隻、不挑檔次、不放生**，
+  照檔次練到分數或練到級賣（使用者 11-13「如果上限 30 次都沒抓到，就在抓一次隨便抓一隻去練」，LESSONS #203）；每輪都這樣，所以會一直輪下去。
 - 誘餌不夠加 `--buy-bait` 才用石幣補買（`catch.buy_bait`，每個 5 萬、只花石幣）。
-- 為什麼不在一輪中途就補：五隻是同一隊、在同一張圖；中途有人練完時隊伍多半在 120 級以上的圖，
-  1 級新寵上場會被秒，抓寵又要離隊（整隊練功中斷），同一隻角色身上兩隻同種也會讓練寵模式認錯隻。
-  所以練完的角色這輪剩下的時間照舊用原戰寵跟著打，輪一結束馬上賣＋補抓、下一輪全員都有寵物練。
+- 補抓為什麼在輪與輪之間：五隻是同一隊、在同一張圖；中途有人練完時隊伍多半在 120 級以上的圖，
+  1 級新寵上場會被秒，抓寵又要離隊（整隊練功中斷）。所以補抓等輪結束；這輪剩下的時間由第 3 步的「當場換下一隻」補位，不讓角色空手。
 """
 
 import argparse
@@ -297,7 +300,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色61 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色102 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -338,7 +341,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色27、15:46 第二組角色99人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色27、15:46 第二組角色108人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -352,16 +355,100 @@ def finish(p, name: str, pet: dict, args) -> str:
     return msg
 
 
+def todo_rows(p, name: str, args, claimed: set, public: bool) -> List[dict]:
+    return [r for r in p.pet_depot(name, public=public)
+            if mine(r, args, name) and r.get("uniqueIndex") not in claimed and not is_done(r, args)]
+
+
+def fetch_ready(p, name: str, args, claimed: set) -> bool:
+    """個倉或共倉有沒有沒練完的指定寵物（只查、不領）。"""
+    return any(todo_rows(p, name, args, claimed, public) for public in (False, True))
+
+
 def fetch(p, name: str, args, claimed: set) -> Optional[dict]:
     """從個倉、再從共倉領一隻沒練完的（共倉裡別人這輪領過的不算）。"""
     for public in (False, True):
-        rows = [r for r in p.pet_depot(name, public=public)
-                if mine(r, args, name) and r.get("uniqueIndex") not in claimed and not is_done(r, args)]
+        rows = todo_rows(p, name, args, claimed, public)
         if rows:
             row = max(rows, key=lambda r: (diff_of(r), r.get("level") or 0))      # 檔次高的先練
             claimed.add(row["uniqueIndex"])
             return take_pet(p, name, row)
     return None
+
+
+NO_FILL = (1479,)                # 拿倉庫寵物頂替時不拿的種類：瑪蕾菲雅（女寵，打靈石用）
+
+
+def fill_row(p, name: str, args, claimed: set) -> Optional[dict]:
+    """沒有指定的寵物可練時，**自己個倉**裡沒滿 140、等級最高的那隻（使用者 11-13「如果沒有指定的寵物可以練，
+    就拿倉庫沒滿140的練」）。不拿：共倉（132 共用寵物等別人的東西在那）、女寵、上鎖的、
+    已經練完的指定種類（拿出來馬上又會被收回去）。"""
+    rows = []
+    for r in p.pet_depot(name):
+        if (r.get("level") or 0) >= MAX_PET_LV or r.get("uniqueIndex") in claimed or r.get("petLock") == 1 \
+                or r.get("petId") in NO_FILL:
+            continue
+        # 指定練的那幾種、騎寵那幾種照各自的規則（--uids 外的、練完的、騎寵候選都不拿來頂替）
+        if r.get("petId") in pet_ids(args) or r.get("petId") in rids_of(args, name):
+            continue
+        rows.append(r)
+    return max(rows, key=lambda r: r.get("level") or 0) if rows else None
+
+
+def swap_in(p, name: str, args, key, claimed: set, fills: Optional[Dict[str, int]]) -> bool:
+    """練功中（已關遇敵、不在戰鬥）幫這隻角色換上下一隻要練的：先領倉庫沒練完的指定寵物（fetch），
+    沒有就拿個倉沒滿 140 的（fill_row，記在 fills）。換上後加進 orig_fight／train_uid，跟一開始就在練的一樣收。
+    身上 5 格滿了、倉庫都沒有 → 回 False（照舊用原本戰寵跟著打）。
+    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色31布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
+    from .catch import SLOT_MAX
+    if len(slots(p, name)) >= SLOT_MAX:
+        p.log(f"寵物目標：{name} 身上 {SLOT_MAX} 格滿了，領不出下一隻，先用原本戰寵跟著打")
+        return False
+    pet = fetch(p, name, args, claimed)
+    what = "指定的"
+    if pet is None:
+        if fills is None:                          # 指定的都沒人在練了：不拿頂替的
+            return False
+        row = fill_row(p, name, args, claimed)
+        if row is None:
+            return False
+        claimed.add(row["uniqueIndex"])
+        pet = take_pet(p, name, row)
+        fills[name] = pet["uniqueIndex"]
+        what = "（沒有指定的可練）個倉沒滿 140 的"
+    fight, ride = p.locks(name)
+    if fight == pet["uniqueIndex"]:
+        fight = 0
+    p.orig_fight[name] = (fight, ride)
+    p.train_uid[name] = pet["uniqueIndex"]
+    p.train_skip.discard(name)
+    if not p.set_fight_pet(name, pet["uniqueIndex"], ride):
+        raise JobError(f"{name} 換上下一隻要練的 {pet['uniqueIndex']} 沒確認")
+    p.log(f"寵物目標：{name} 接著練{what} {p.pet_name(pet)}（{pet.get('petId')}）{pet.get('level')} 級，唯一編號 {pet['uniqueIndex']}")
+    return True
+
+
+def drop_fill(p, name: str, fills: Dict[str, int]) -> str:
+    """頂替的那隻收掉（練到 140、或這輪指定的都練完了）：戰寵改回原本的 → 存回倉庫。"""
+    from .pets import rest_pet
+    uid = fills.pop(name)
+    fight, ride = p.orig_fight.pop(name, (0, 0))
+    p.train_uid.pop(name, None)
+    if fight or ride:
+        if not p.set_fight_pet(name, fight, ride):
+            raise JobError(f"{name} 頂替的寵物收掉時戰寵改不回 {fight}")
+    else:
+        from .pets import unlock
+        unlock(p, name, 0, ride)
+    idx = next((k for k, v in slots(p, name).items() if v.get("uniqueIndex") == uid), None)
+    if idx is None:
+        return f"{name} 頂替的 {uid} 不在身上了"
+    pet = slots(p, name)[idx]
+    rest_pet(p, name, idx)
+    store_pet(p, name, idx)
+    msg = f"{name} 頂替的 {p.pet_name(pet)}（{pet.get('petId')}）練到 {pet.get('level')} 級 → 存倉"
+    p.log(f"寵物目標：{msg}")
+    return msg
 
 
 def go_catch_place(p, who: List[str], place: str) -> None:
@@ -468,15 +555,9 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
         if not who:
             return []
     cap = int(getattr(args, "refill_max", REFILL_MAX))
-    room = cap - state["caught"]
-    if room <= 0:
-        if not state["capped"]:
-            state["capped"] = True
-            p.log(f"寵物目標：補抓已達上限 {cap} 隻，不再抓（{'、'.join(who)} 沒寵物練）")
-        return []
-    if len(who) > room:
-        p.log(f"寵物目標：補抓只剩 {room} 隻額度，這次只幫 {'、'.join(who[:room])} 抓")
-        who = who[:room]
+    # 到上限不再讓角色空手（使用者 11-13「如果上限 30 次都沒抓到，就在抓一次隨便抓一隻去練，根據檔次決定練到達分or 賣」）：
+    # 每次補抓、每隻還沒寵物練的角色在額度用完後**再抓 1 隻、不放生**，照檔次走原本的目標（≥ --cut 練到分數、< --cut 練到級賣／存）。
+    # 舊版到上限就 return，11-13 第七組敖璿鳳補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
     release = bool(getattr(args, "release_low", False)) and not ride     # 騎寵照舊練到 120 賣
     wanted = 0 if ride else int(getattr(args, "refill_want", 0) or 0)
     if wanted and state.get("kept", 0) >= wanted:
@@ -489,16 +570,22 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
     timeout = REFILL_TIMEOUT or CATCH_TIMEOUT
     role = "騎寵" if ride else ""
     for n in who:
+        last = False                   # 額度用完後的最後一隻：不管檔次都留下
         while True:                    # --release-low：低檔的放生後同一隻角色再抓，直到留下一隻或額度用完
             if wanted and state.get("kept", 0) >= wanted:
                 state["wanted_log"] = True
                 p.log(f"寵物目標：補抓已留下 {wanted} 隻要練的，不再抓")
                 break
             if state["caught"] >= cap:
+                if last or not release:        # 沒有 --release-low：抓到的本來就全留，到上限照舊停
+                    if not state["capped"]:
+                        state["capped"] = True
+                        p.log(f"寵物目標：補抓已達上限 {cap} 隻，不再抓（{n} 沒寵物練）")
+                    break
                 if not state["capped"]:
                     state["capped"] = True
-                    p.log(f"寵物目標：補抓已達上限 {cap} 隻，不再抓（{n} 沒寵物練）")
-                break
+                last = True
+                p.log(f"寵物目標：補抓已達上限 {cap} 隻，{n} 還沒寵物練 → 再抓 1 隻、不挑檔次（照檔次練到分數或練到級賣）")
             mine_a = a.get(n, (0, 0))[1 if ride else 0]
             if mine_a:
                 sp = mine_a
@@ -523,7 +610,7 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
             p.wait(graded, GRADE_WAIT)
             pet = next(v for v in of_species(p, n, sp) if v.get("uniqueIndex") == uid)
             d = diff_of(pet)                                                   # 算不出檔次 → 停
-            if release and d < args.cut:
+            if release and d < args.cut and not last:
                 release_caught(p, n, pet)
                 state["released"] = state.get("released", 0) + 1
                 state["log"].append(f"{n} 補抓 {uid}（{sp}）{d:+d} 檔｜低於 +{args.cut}，放生")
@@ -817,26 +904,67 @@ def run(p, args) -> Tuple[str, dict]:
             p.train_skip = set(names) - set(active)
             p.orig_fight.clear()
             stall = T.stall_guard(p, key)
+            fills: Dict[str, int] = {}             # 這輪頂替練的（指定的沒了，拿個倉沒滿 140 的）：角色 → 唯一編號
+            tried: set = set()                     # 這輪找過下一隻、倉庫沒有的角色（不每 15 秒查一次倉庫）
+
+            def refresh() -> None:
+                """沒在練的角色當場補下一隻（使用者 11-13：存進去就要換一隻，不要等這輪結束）。
+                指定的都練完、只剩頂替的 → 頂替的收掉，讓這輪結束去賣／補抓（不讓頂替的拖住輪次）。"""
+                def designated() -> bool:
+                    return any(m not in fills for m in p.orig_fight)
+                idle = [n for n in names if n not in p.orig_fight and n not in tried]
+                for n in idle:
+                    # 指定的都沒人在練了就不拿頂替的（拿了這輪也馬上結束，白領白存）
+                    if not designated() and not fetch_ready(p, n, args, claimed):
+                        tried.add(n)
+                        continue
+                    halt()
+                    if not swap_in(p, n, args, key, claimed, fills if designated() else None):
+                        tried.add(n)
+                if fills and not designated():
+                    halt()
+                    for n in list(fills):
+                        done.append(drop_fill(p, n, fills))
+
+            off = {"v": False}                     # 這次 until 有沒有關過遇敵（最後要開回來）
+
+            def halt() -> None:
+                if not off["v"]:
+                    if not p.pause():
+                        raise JobError("練寵中要換寵物，關不掉遇敵")
+                    off["v"] = True
 
             def until() -> bool:
+                off["v"] = False
                 for n in list(p.orig_fight):
                     # 看開練時換上的那隻（train_uid）：多種一起練時身上可能同時有兩隻要練的，照等級挑會看錯隻
                     idx = p.training_index(n, key, TRAIN_LV)
                     with p.lock:
                         pet = dict(p.petinfo[n].get(idx, {})) if idx else {}
+                    if n in fills:
+                        if pet and (pet.get("level") or 0) < MAX_PET_LV:
+                            continue
+                        halt()
+                        done.append(drop_fill(p, n, fills))
+                        tried.discard(n)
+                        continue
                     if not pet or not is_done(pet, args):
                         continue
                     fight, ride = p.orig_fight[n]
-                    if not p.pause() or not p.set_fight_pet(n, fight, ride):
-                        raise JobError(f"{n} 寵物到目標了，但關不掉遇敵或戰寵改不回 {fight}")
+                    halt()
+                    if not p.set_fight_pet(n, fight, ride):
+                        raise JobError(f"{n} 寵物到目標了，但戰寵改不回 {fight}")
                     del p.orig_fight[n]
+                    p.train_uid.pop(n, None)
                     if to_sell(pet, args):
                         # 不在這裡賣：其他人還在練，賣要整隊走去寵物店；留在身上，下一輪開始時一起賣
                         p.log(f"寵物目標：{n} {pet.get('level')} 級 檔差 {diff_of(pet):+d} 到目標，這輪結束後賣")
                     else:
                         done.append(finish(p, n, pet, args))
-                    if p.orig_fight and not p.set_loop(True):
-                        raise JobError("收完一隻後遇敵開不回來")
+                    tried.discard(n)                      # 下面 refresh 當場換下一隻
+                refresh()
+                if off["v"] and p.orig_fight and not p.set_loop(True):
+                    raise JobError("換完寵物後遇敵開不回來")
                 return stall()
 
             code = p.train_loop(args.start, T.INTERVAL, until=until)
