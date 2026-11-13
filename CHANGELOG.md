@@ -5,6 +5,7 @@
 ## [Unreleased]
 
 ### Added
+- register workflow 多一個「server」下拉選單（A／B）：B 讀 secret `GAME_LOGIN_HOST_B`（同一套註冊、建角協定的另一台），一樣註冊完自動建五隻角色；Telegram 結果標題標出是哪台。
 - 練寵自動跳級 `petgoal --jump auto`（內建練寵劇本預設開）：高等戰寵負責輸出、低等的跟著跳圖；從跳 40 級起，10 分鐘補血 5 次以上少跳 20 級並退回一張圖，
   15 分鐘補血不到 2 次就多跳 20 級（最多 80）。固定數字的 `--jump` 照舊。
 - 內建練寵劇本 `config/scenarios/petgoal.toml`（`SCENARIO=/app/config/scenarios/petgoal.toml`）：不練級、不轉生，`jobs petgoal` 一直循環。

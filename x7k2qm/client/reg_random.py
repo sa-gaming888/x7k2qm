@@ -134,8 +134,8 @@ def register_random(count: int, send: Callable[[str, str, str], int], log: Calla
     return done, None
 
 
-def report(done: List[tuple], count: int, why: Optional[str], element: Optional[str] = None) -> str:
-    head = f"🆕 註冊帳號：成功 {len(done)}／{count} 組"
+def report(done: List[tuple], count: int, why: Optional[str], element: Optional[str] = None, tag: str = "") -> str:
+    head = f"🆕 註冊帳號{f'［{tag}］' if tag else ''}：成功 {len(done)}／{count} 組"
     lines = [head + (f"（角色屬性 {element}、敏 20）" if element else "")]
     for n, row in enumerate(done, 1):
         acc, pw, phone = row[:3]
@@ -153,6 +153,7 @@ def main(argv=None, environ: Mapping[str, str] = os.environ) -> int:
     ap.add_argument("--host", default=LOGIN_HOST)
     ap.add_argument("--element", default="地", help="五隻角色的屬性：地／水／火／風（預設地，10 點全加）")
     ap.add_argument("--no-roles", dest="roles", action="store_false", help="只註冊、不建角色")
+    ap.add_argument("--tag", default="", help="Telegram 結果標題上的伺服器標記（同一個 TG 群組收好幾個伺服器的帳號時分得出來）")
     args = ap.parse_args(argv)
     if not 1 <= args.count <= MAX_COUNT:
         print(f"停止：--count 要在 1～{MAX_COUNT}")
@@ -202,7 +203,7 @@ def main(argv=None, environ: Mapping[str, str] = os.environ) -> int:
     done, why = register_random(args.count, send, print, on_new=mask, roles=roles)
     print(f"結束：成功 {len(done)}／{args.count} 組" + (f"；停止：{why}" if why else ""))
     if done or why:
-        err = tg.send(report(done, args.count, why, args.element if args.roles else None), silent=False)
+        err = tg.send(report(done, args.count, why, args.element if args.roles else None, args.tag), silent=False)
         if err:
             print(f"⚠️ TG 推送失敗（{err}）：已註冊 {len(done)} 組但帳密沒推到（日誌不印帳密）")
             return 1

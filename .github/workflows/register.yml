@@ -4,7 +4,8 @@ name: register
 # 帳號（單字＋數字）、密碼（英文＋數字）、台灣手機號碼全部隨機產生；每個帳號註冊完接著建五隻角色（名字隨機、敏 20）。
 # 結果（帳密、電話、角色名）只推到 Telegram，日誌不印。
 # 要先設的 secrets（Settings → Secrets and variables → Actions）：
-#   GAME_LOGIN_HOST   HTTP 登入伺服器（選填，沒設用 eologin.idealsa.org）
+#   GAME_LOGIN_HOST   伺服器 A 的 HTTP 登入伺服器（選填，沒設用 eologin.idealsa.org）
+#   GAME_LOGIN_HOST_B 伺服器 B 的 HTTP 登入伺服器（選 B 才要；同一套註冊／建角協定的另一台）
 #   TG_BOT_TOKEN      Telegram 機器人 token
 #   TG_CHAT_ID        要推送的群組 id
 
@@ -22,6 +23,12 @@ on:
         default: "地"
         type: choice
         options: ["地", "水", "火", "風"]
+      server:
+        description: "註冊到哪台：A＝secret GAME_LOGIN_HOST（沒設用預設）、B＝secret GAME_LOGIN_HOST_B"
+        required: true
+        default: "A"
+        type: choice
+        options: ["A", "B"]
 
 permissions:
   contents: read
@@ -45,11 +52,19 @@ jobs:
         env:
           COUNT: ${{ inputs.count }}
           ELEMENT: ${{ inputs.element }}
-          LOGIN_HOST: ${{ secrets.GAME_LOGIN_HOST }}
+          SERVER: ${{ inputs.server }}
+          LOGIN_HOST_A: ${{ secrets.GAME_LOGIN_HOST }}
+          LOGIN_HOST_B: ${{ secrets.GAME_LOGIN_HOST_B }}
           BOT_TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           BOT_TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
           if [ -z "$BOT_TG_TOKEN" ] || [ -z "$BOT_TG_CHAT_ID" ]; then
             echo "停止：先設 secrets TG_BOT_TOKEN、TG_CHAT_ID"; exit 1
           fi
-          python -X utf8 -m x7k2qm.client.reg_random --count "$COUNT" --element "$ELEMENT" --host "${LOGIN_HOST:-eologin.idealsa.org}"
+          case "$SERVER" in
+            A) HOST="${LOGIN_HOST_A:-eologin.idealsa.org}" ;;
+            B) HOST="$LOGIN_HOST_B"
+               if [ -z "$HOST" ]; then echo "停止：選 B 要先設 secret GAME_LOGIN_HOST_B"; exit 1; fi ;;
+            *) echo "停止：server 要是 A 或 B"; exit 1 ;;
+          esac
+          python -X utf8 -m x7k2qm.client.reg_random --count "$COUNT" --element "$ELEMENT" --host "$HOST" --tag "$SERVER"

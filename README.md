@@ -37,7 +37,8 @@ docker stop -t 300 bot      # 等這場戰鬥打完再登出（docker 預設只�
 ## 註冊帳號（GitHub Actions）
 
 1. Settings → Secrets and variables → Actions 設兩個 secret：`TG_BOT_TOKEN`（Telegram 機器人 token）、`TG_CHAT_ID`（要推送的群組 id）。登入伺服器預設 `eologin.idealsa.org`，要換才設 `GAME_LOGIN_HOST`。
-2. Actions → **register** → Run workflow，填要建幾組（1～20）、選角色屬性（地／水／火／風，預設地）。
+   同一套註冊／建角協定的另一台伺服器：再設 `GAME_LOGIN_HOST_B`，跑的時候 server 選 **B**。
+2. Actions → **register** → Run workflow，填要建幾組（1～20）、選角色屬性（地／水／火／風，預設地）、選伺服器（A／B，預設 A；Telegram 標題會標 ［A］／［B］）。
 3. 每組帳號（英文單字＋數字，6～8 字元）、密碼（英文＋數字，8 字元）、台灣手機號碼都隨機產生，一組一組註冊（間隔 1.2 秒以上）；
    隨機帳號剛好有人用了就換一個（最多 3 次），其他失敗就停。
 4. 每個帳號註冊完接著建**五隻角色**：屬性 10 點全加選的那一種、基礎點數敏 20、名字隨機（被用了換一個）；少於五隻就停。

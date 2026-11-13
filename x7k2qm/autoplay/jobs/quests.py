@@ -751,7 +751,7 @@ def trim_task_items(p, group: int) -> Dict[str, List[int]]:
 
 def stash_bag(p, free: int) -> None:
     """要整個背包全空的任務（成人儀式 2999，15 格）：整理和存殼之後背包還有東西的角色，剩下的道具全存個倉。
-    11-04 一天三次停在「背包空格不足 15」：角色33的 2D人龍進化石、角色36的 2D老虎自選蛋、角色29的鑽石道具——
+    11-04 一天三次停在「背包空格不足 15」：角色37的 2D人龍進化石、角色53的 2D老虎自選蛋、角色39的鑽石道具——
     規則表沒寫的道具 clean 不動，只能手動 `carry --store` 再 resume（LESSONS #161）。
     只在要全空時才做：一般任務只要幾格，身上可能有任務道具（例：四寶玉），不亂存。"""
     from ..shell_exchange import BAG_SIZE

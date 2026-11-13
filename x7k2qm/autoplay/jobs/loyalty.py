@@ -1,7 +1,7 @@
 """loyalty：把身上指定寵物的忠誠用石幣加到目標（預設 100）。使用者 2026-11-12「做」（先加一隻看騎不騎得上）。
 
-    python -X utf8 -m x7k2qm.autoplay.jobs loyalty --profile 2 --discover --who 角色32                      # 只列（預設看鎖定的騎寵）
-    python -X utf8 -m x7k2qm.autoplay.jobs loyalty --profile 2 --discover --apply --who 角色32 --uid 1000000176912
+    python -X utf8 -m x7k2qm.autoplay.jobs loyalty --profile 2 --discover --who 角色52                      # 只列（預設看鎖定的騎寵）
+    python -X utf8 -m x7k2qm.autoplay.jobs loyalty --profile 2 --discover --apply --who 角色52 --uid 1000000176912
 
 起因（LESSONS #198）：11-12 查到鎖定的騎寵 29 隻裡 13 隻一直「休息」沒騎上，忠誠都不到 100；在騎的 16 隻忠誠都是 100。
 補送 `NewPet_NewPetChangeStatus` 改成騎乘伺服器也不理。
