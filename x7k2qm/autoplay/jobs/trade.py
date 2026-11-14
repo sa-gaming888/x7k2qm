@@ -480,10 +480,17 @@ def parse_pet_kinds(specs: List[str]) -> List[Tuple[int, Optional[int], Optional
     return out
 
 
-def check_profile(args) -> None:
+def check_profile(args, locked_one_ok: bool = False, is_alive=None) -> None:
+    """擋不能碰的組。`locked_one_ok`（trade-give／trade-take 用）：第 1 組**有活著的擁有者鎖**就放行——
+    叢集容器裡每一組都是 --profile 1、由常駐拿著鎖（11-14 cgy↔twidc 實測被這條擋下）；
+    這台的交易所常駐不拿鎖，照樣擋。"""
     prof = str(getattr(args, "profile", "") or "")
     if prof == "4" and str(getattr(args, "group4_ok", "") or "").strip():
         return
+    if prof == "1" and locked_one_ok:
+        base = getattr(args, "owner_dir", None) or owner.default_dir()
+        if owner.live(base, "1", is_alive):
+            return
     if prof in BLOCKED_GROUPS:
         raise JobError(f"不碰 {BLOCKED_GROUPS[prof]}" + ("；使用者當下同意時加 --group4-ok \"原話\"" if prof == "4" else ""))
 

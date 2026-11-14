@@ -37,7 +37,7 @@ def add_args(ap) -> None:
 
 
 def check(args) -> None:
-    T.check_profile(args)
+    T.check_profile(args, locked_one_ok=True)
     items, pets = T.parse_items(args.item or []), list(args.pet or [])
     if not items and not pets:
         raise JobError("要給 --item 或 --pet")

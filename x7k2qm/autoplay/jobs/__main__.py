@@ -11,7 +11,7 @@
   預設等結果印出（`--wait` 秒數上限，常駐不在了也不再等），`--no-wait` 排完就走。
 - **沒有常駐**：先拿帳號擁有者鎖（別的程式在用就拒絕），自己登入執行，做完登出、放掉鎖。
 - 結束碼：0＝ok；1＝failed／參數錯／被拒；3＝hold；4＝取消／過期／等不到結果。
-- 日誌同時印在畫面與 `--log`（預設 captures/jobs.log）。
+- 日誌同時印在畫面與 `--log`（預設工作目錄旁的 jobs.log：captures/jobs.log；容器 /data/jobs.log）。
 """
 
 import argparse
@@ -45,7 +45,9 @@ def build_parser(jobs) -> argparse.ArgumentParser:
         _common(sp)
         sp.add_argument("--discover", action="store_true", help="角色清單從登入結果取（第 2 組預設寫死 5 隻）")
         sp.add_argument("--apply", action="store_true", help="真的執行；不加只列清單／狀態")
-        sp.add_argument("--log", default="captures/jobs.log")
+        # 預設跟著工作目錄（captures/jobs → captures/jobs.log；容器 /data/jobs → /data/jobs.log），
+        # 不寫死 captures/：容器的 /app 唯讀，exec 不帶 --log 會丟 OSError（11-14 叢集實測）
+        sp.add_argument("--log", default=default_log())
         sp.add_argument("--wait", type=float, default=WAIT_DEFAULT, help="排進常駐佇列後最多等結果幾秒")
         sp.add_argument("--no-wait", action="store_true", help="排進常駐佇列後不等結果")
         sp.add_argument("--api-port", type=int, default=None,
@@ -63,6 +65,12 @@ def parse(argv, jobs=None):
     except SystemExit:
         raise JobError(f"參數不合法：{' '.join(argv)}")
     return jobs[args.job], args
+
+
+def default_log() -> str:
+    """工作日誌預設路徑：工作目錄旁邊的 jobs.log（captures/jobs → captures/jobs.log）。"""
+    import os
+    return os.path.join(os.path.dirname(os.path.normpath(jobqueue.default_dir())) or ".", "jobs.log")
 
 
 def _dirs(args):
