@@ -41,7 +41,7 @@ def add_args(ap) -> None:
     ap.add_argument("--buy-bait", action="store_true",
                     help="誘餌不夠時用石幣補買缺的量（抓寵「+」，每個 50,000 石幣、只花石幣；使用者 2026-10-25 同意）")
     ap.add_argument("--who", default=None,
-                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色47邦恩吉 240 秒沒遇到")
+                    help="只幫這些角色抓（逗號分隔名字；預設全隊）。補抓用：2026-10-25 角色68邦恩吉 240 秒沒遇到")
     ap.add_argument("--no-reuse", dest="no_reuse", action="store_true",
                     help="不先從倉庫領同種的，一律抓新的（使用者 11-08 第七組抓綠虎來練：共倉那隻是練滿 140 改名存倉的）")
 
@@ -149,7 +149,7 @@ def top_up_bait(p, name: str, k: int, buy: bool) -> None:
 
 def buy_bait(p, name: str, n: int) -> None:
     """抓寵畫面的「+」：`Item_oneKeyBuyItem{itemId 90402, itemNum 1}`，一次 1 個（參考專案 A 級錄檔）。
-    **只花石幣**（使用者 2026-10-25「買」：角色47誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
+    **只花石幣**（使用者 2026-10-25「買」：角色68誘餌少 1 個）。送前核對 OneKeyBuy 表＝石幣 50,000、石幣夠；
     每買 1 個要看到 誘餌 +1、石幣正好 −50,000、鑽石（denar）不變，任何一項對不上就丟 JobHold（花了錢、停在原地等人看）。"""
     from . import JobHold
     price = onekey_price()
@@ -164,7 +164,7 @@ def buy_bait(p, name: str, n: int) -> None:
         if s0 is None or s0 < price:
             raise JobError(f"{name} 石幣 {s0} 不夠 {price:,}，不買")
         if c0 < 1 and bag_free(p, name) < 1:
-            # 11-08 16:21 第九組角色30背包滿、身上沒有誘餌可以疊：一鍵買照樣扣 50,000 石幣、誘餌沒進背包（LESSONS #186）
+            # 11-08 16:21 第九組角色33背包滿、身上沒有誘餌可以疊：一鍵買照樣扣 50,000 石幣、誘餌沒進背包（LESSONS #186）
             raise JobError(f"{name} 背包沒空格、身上也沒有誘餌可以疊，不買（伺服器會扣錢但東西進不來）")
         r = p.clients[name].request("Item_oneKeyBuyItem", {"itemId": BAIT, "itemNum": 1}) or {}
         # **石幣是帳號共用**：五隻同時買，每隻看到的扣款是大家加起來的（2026-10-27 第五組：
@@ -213,7 +213,7 @@ def restore_fight_pet(p, name: str, fight: int, ride: int) -> None:
     if not fight:
         # 抓寵前戰寵鎖定就是 0（卡坦交寵物前全部休息、解鎖）→ 用身上等級最高、不是金虎的那隻（剛抓的都是 1 級）。
         # 舊版寫死人龍，三轉後人龍在倉庫 → 戰寵一直沒設回、接著練寵「戰 0」停（2026-10-25 #88）
-        # 騎寵那隻也不能挑（11-12 第七組角色51：身上只有騎寵老虎 309，抓完把它同時設成戰寵和騎寵，伺服器不認）
+        # 騎寵那隻也不能挑（11-12 第七組角色64：身上只有騎寵老虎 309，抓完把它同時設成戰寵和騎寵，伺服器不認）
         cands = [v for v in _pets(p, name).values()
                  if v.get("petId") != 310 and v.get("uniqueIndex") and v.get("uniqueIndex") != ride]
         fight = max(cands, key=lambda v: v.get("level") or 0).get("uniqueIndex") if cands else 0

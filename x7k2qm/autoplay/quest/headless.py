@@ -25,6 +25,7 @@ INTERACT_TRIES = 3              # 戰鬥型互動最多送幾次（打完遇敵�
 RESEND_GRACE = 5.0              # 打完一場後再等幾秒看任務推進，才當成「那場不是任務戰鬥」
 BATTLE_HARD_CAP = 1800.0        # 戰鬥還在進行就一直看著，最多 30 分鐘（LESSONS #121）
 HOP_BATTLE_WAIT = 150.0        # 跳點前／被拒後等原地遇敵那場打完，最多這麼久（LESSONS #169）
+STATE_SETTLE = 5.0             # 隊員狀態不一致時先等幾秒讓伺服器把每個人的推送推齊，再判斷分岔
 
 
 class QuestStop(RuntimeError):
@@ -139,9 +140,21 @@ class HeadlessQuest:
     def dead(self) -> List[str]:
         """**目前** hp 剩 1 的人。看最新血量，不是「歷史上出現過 hp=1」——建立執行器時會重播
         `Party.history`（登入後的所有事件），舊的 hp=1 會讓人永遠被當成死亡：2026-10-30 第五組
-        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色36']」，要重啟常駐清掉
+        五隻明明 779/779 滿血，每次排 2016 都立刻「有人被打死：['角色35']」，要重啟常駐清掉
         history 才會好。"""
         return [n for n, hp in self.hp.items() if hp == 1]
+
+    def settled(self, s: Step, st: Dict[str, Optional[int]]) -> bool:
+        """這一步全隊狀態能往下做：全部做完（2）、全部同一個進行中狀態，或交寵物型隊長在做、其他人做完或同一步。"""
+        if all(v == 2 for v in st.values()):
+            return True
+        # 交寵物型是**每隻各自交**，中途被打斷會留下「有人 2、有人 1」的混合狀態；
+        # 這種情況不該停，hand_over() 只會補送還沒推進的那幾隻（2026-10-23 第三組實機）。
+        # 交寵物型只要隊長在進行中就做：其他人**已經做完**（伺服器只推目前那一步，做完的是 None）
+        # 或還在同一步都行，`hand_over()` 只會對還沒推進的補送（2026-10-23 第三組、2026-10-30 第五組）。
+        if s.type == 7 and set(st.values()) <= {1, 2, 4, None} and st[self.leader] in (1, 4):
+            return True
+        return len(set(st.values())) == 1 and st[self.leader] in (1, 4)
 
     def statuses(self, tid: int) -> Dict[str, Optional[int]]:
         with self.lock:
@@ -156,7 +169,7 @@ class HeadlessQuest:
         """交寵物型：每隻都要有該寵物且等級夠；會給寵物：寵物欄（上限 5）至少空一格（使用者）。不符合就停，不送請求。"""
         # 只看**這一步還在進行中**的人：已經做完那一步的人狀態是 None（伺服器只推目前那一步），
         # 他們的寵物早就交出去了，算進來會停在「要寵物 N 練到 L 級」（2026-10-30 第五組 2016，
-        # 隊長換成落後的角色22重跑第 1 步）。全員都還沒接（都 None）時照舊看全隊。
+        # 隊長換成落後的角色23重跑第 1 步）。全員都還沒接（都 None）時照舊看全隊。
         doers = [n for n in self.actors if self.tasks[n].get(step.task_id) in (1, 4)] or list(self.actors)
         with self.lock:
             # petId ≤ 0 是空格（寵物交出去後那格變 petId -1；2026-10-22 誤算成 5 隻）
@@ -256,7 +269,7 @@ class HeadlessQuest:
     def rest_pet(self, name: str, idx: int) -> None:
         """要交的寵物在出戰／騎乘中就先改休息——出戰中的交不出去（提示 80183
         「所需寵物狀態為戰鬥或騎乘，無法繼續操作」）。以前都靠人先跑一次 `pets --mode rest`，
-        漏掉就整組卡住（2026-10-30 第五組 2016：角色22的狗在出戰沒交成，四隻先走到第 2 步，
+        漏掉就整組卡住（2026-10-30 第五組 2016：角色23的狗在出戰沒交成，四隻先走到第 2 步，
         之後怎麼跑都對不起來）。`NewPet_NewPetChangeStatus` 沒有 response，send 後看 `Pet_PetInfo`。"""
         with self.lock:
             if (self.pets[name].get(idx) or {}).get("status") not in (2, 3):
@@ -295,7 +308,7 @@ class HeadlessQuest:
         # 這不是「出錯重試」：是伺服器已知的行為，上限 2 輪、補完還沒好就停。
         # 只對**進行中**（1／4）的人交：狀態 None 的是已經做完那一步的人（伺服器只推目前那一步），
         # 把他們也算進去會在 pet_slot 找不到寵物而停（2026-10-30 第五組 2016：四隻早就交完狗，
-        # 隊長換成落後的角色22重跑第 1 步）。
+        # 隊長換成落後的角色23重跑第 1 步）。
         mine = [n for n in self.actors if self.tasks[n].get(s.task_id) in (1, 4)]
         for attempt in (1, 2):
             todo = [n for n in mine if self.tasks[n].get(s.task_id) != 2]
@@ -516,7 +529,7 @@ class HeadlessQuest:
             self.log(f"任務群組 {group} 全隊都已完成")
             return                                  # 已完成就直接跳過，不檢查空格
         if done:
-            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色59完成，
+            # 使用者 2026-10-28 同意：**有人已經完成就自動續跑**（第四組 2010 只有隊長角色57完成，
             # 已完成的任務放棄指令清不掉，整組就永遠卡著、轉生做不了）。已完成的人留在隊伍裡跟著打，
             # 但不接任務、不交付、不列入狀態檢查。步驟不一致（大家都在做、停在不同步）仍然停，見下面。
             self.actors = [n for n in self.clients if n not in done]
@@ -557,17 +570,17 @@ class HeadlessQuest:
                     return                                # 指定的那一步早就做完了
                 continue                                  # 進行中那一步之前的都已經做完
             st = self.statuses(s.task_id)
+            if not self.settled(s, st):
+                # 上一步剛交完，下一步「進行中」是每個人各自推的，有人還沒推到：11-14 一組 3003 交完金豬全隊都進了第 3 步，
+                # 檢查時有人還沒推到就當成分岔 → 全隊放棄重接、金豬白練。先等推齊再判斷
+                self.wait(lambda: self.settled(s, {n: self.tasks[n].get(s.task_id) for n in self.actors}), STATE_SETTLE)
+                st = self.statuses(s.task_id)
             if all(v == 2 for v in st.values()):
                 if s.task_id == self.stop_after:
                     self.stopped_early = True
                     return
                 continue
-            # 交寵物型是**每隻各自交**，中途被打斷會留下「有人 2、有人 1」的混合狀態；
-            # 這種情況不該停，hand_over() 只會補送還沒推進的那幾隻（2026-10-23 第三組實機）。
-            # 交寵物型只要隊長在進行中就做：其他人**已經做完**（伺服器只推目前那一步，做完的是 None）
-            # 或還在同一步都行，`hand_over()` 只會對還沒推進的補送（2026-10-23 第三組、2026-10-30 第五組）。
-            mixed_ok = s.type == 7 and set(st.values()) <= {1, 2, 4, None} and st[self.leader] in (1, 4)
-            if not mixed_ok and (len(set(st.values())) != 1 or st[self.leader] not in (1, 4)):
+            if not self.settled(s, st):
                 raise QuestStop(f"隊員任務狀態不一致或不在進行中：{s.task_id} {st}")
             self.log(f"步驟 {s.task_id} {s.name}")
             self.check_pets(s)
