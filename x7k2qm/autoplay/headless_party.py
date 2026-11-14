@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色45"), (10003796, "角色36"), (10003799, "角色68"), (10003803, "角色42"), (10003804, "角色67")]
+PARTY = [(10003754, "角色49"), (10003796, "角色40"), (10003799, "角色68"), (10003803, "角色42"), (10003804, "角色44")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -187,6 +187,10 @@ class Party:
         self.spirit_tries = 0                    # 自動排的 spirit 失敗幾次（成功不算；到 SPIRIT_TRIES_MAX 就不再排）
         self.spirit_job: Optional[str] = None    # 上一件自動排的 spirit 工作 id（看結果用）
         self.spirit_have = False                 # 已經買好、等 60 級（背包或個倉）：等級不到不再排
+        self.auto_daily = False                  # 每天自動排每日委託（--auto-daily，容器版預設開；使用者 11-15）
+        self.daily_day: Optional[str] = None     # 哪一天（本地日期）已經排過每日委託
+        self.daily_job: Optional[str] = None     # 上一件自動排的 daily 工作 id（看結果用）
+        self.daily_fails = 0                     # 連續幾天失敗（到 DAILY_FAILS_MAX 就不再排，要人看）
         self.point_plan = None                   # 外掛自訂加點目標（--point-plan）：{"lead": (體, 敏, 攻), "member": (...)}
         self.battle_heal: Optional[int] = None   # 外掛戰鬥中技能補血門檻 %（--battle-heal；None＝不動）
         self.waigua = None                       # 設定檔 [waigua]（botconfig.Waigua）；None＝沒用設定檔，照舊
@@ -1193,7 +1197,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色45個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色49個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1645,6 +1649,65 @@ class Party:
 
     SPIRIT_TRIES_MAX = 3
 
+    # ---- 每日委託（--auto-daily，使用者 11-15「加上去」：叢集每天自動解每日）----
+    DAILY_TRANS = 3                              # 3 轉以上才有每日委託（0～2 轉查清單回 isOK false）
+    DAILY_AFTER = 600                            # 本地 0 點換日、清單重置：過 10 分鐘才排
+    DAILY_FAILS_MAX = 3                          # 規範 2：連續 3 天失敗就不再自動排
+    DAILY_INSIDE = ("petgoal",)                  # 這些長工作進行中也排（它的練功迴圈每輪收佇列，做完回來接著練）
+
+    def autodaily_due(self, now: Optional[float] = None) -> Optional[List[str]]:
+        """今天要不要排 `daily --apply`：回要做的角色（3 轉以上），不用排回 None。
+        一天只排一次（成功、失敗都算；失敗不在同一天重排）；只在有佇列、沒有 hold、佇列空、
+        不在工作中（或在 DAILY_INSIDE 的長工作裡）時排。轉數還沒收齊先不判斷。"""
+        if not self.auto_daily or not self.party:
+            return None
+        now = time.time() if now is None else now
+        if self.jobq is None or self.hosted_only or self.hold or self.jobq.pending():
+            return None
+        if self.job is not None and self.job.get("name") not in self.DAILY_INSIDE:
+            return None
+        lt = time.localtime(now)
+        if lt.tm_hour * 3600 + lt.tm_min * 60 + lt.tm_sec < self.DAILY_AFTER:
+            return None
+        self._daily_result()
+        day = time.strftime("%Y-%m-%d", lt)
+        if self.daily_day == day or self.daily_job is not None or self.daily_fails >= self.DAILY_FAILS_MAX:
+            return None
+        names = [n for _, n in self.party]
+        if any(self.trans.get(n) is None for n in names):
+            return None
+        pick = [n for n in names if self.trans[n] >= self.DAILY_TRANS]
+        if not pick:
+            self.daily_day = day                     # 今天沒人能做：明天再看（轉生後就會有）
+            return None
+        return pick
+
+    def _daily_result(self) -> None:
+        """看上一件自動排的 daily 結果：ok 失敗天數歸零，其他（failed／hold／取消）算一天失敗。"""
+        if not self.daily_job or self.jobq is None:
+            return
+        r = self.jobq.result(self.daily_job)
+        if r is None:
+            return
+        self.daily_job = None
+        if r.get("status") == "ok":
+            self.daily_fails = 0
+        else:
+            self.daily_fails += 1
+            if self.daily_fails >= self.DAILY_FAILS_MAX:
+                self.log(f"每日委託：連續 {self.daily_fails} 天自動排都沒成功，不再自動排（看日誌原因，重開常駐才會再排）")
+
+    def autodaily(self, now: Optional[float] = None) -> bool:
+        pick = self.autodaily_due(now)
+        if not pick:
+            return False
+        now = time.time() if now is None else now
+        self.daily_day = time.strftime("%Y-%m-%d", time.localtime(now))
+        job = self.jobq.add("daily", ["daily", "--apply", "--profile", self.profile, "--who", ",".join(pick)])
+        self.daily_job = job["id"]
+        self.log(f"每日委託：自動排 daily（{job['id']}；{'、'.join(pick)}；連續失敗 {self.daily_fails}/{self.DAILY_FAILS_MAX} 天）")
+        return True
+
     # ---- 練功中自動吃經驗果 ----
     FRUIT_EVERY = 300.0                          # 幾秒看一次加成（不必每圈看）
     FRUIT_LOW = 3600                             # 果子加成剩不到 1 小時就補吃（同種加成會疊加；使用者 11-12「果子<1小時」）
@@ -1972,7 +2035,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色41的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色35的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -2593,7 +2656,8 @@ class Party:
                 if self.shells.store_in_place() == "fatal":
                     return 1
             if act in ("ok", "wait"):
-                self.autoclean_if_full() or self.autorefresh_pets() or self.autospirit() or self.autofruit()
+                (self.autoclean_if_full() or self.autorefresh_pets() or self.autospirit() or self.autofruit()
+                 or self.autodaily())
             if s.hp_percent is not None and s.hp_percent >= 50:
                 with self.lock:
                     self.heals = 0
@@ -2753,6 +2817,9 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--scenario-dir", default=None, help="劇本進度目錄（預設 BOT_SCENARIO_DIR 或 captures/scenario）")
     ap.add_argument("--no-auto-spirit", dest="auto_spirit", action="store_false",
                     help="不買／不穿隊長屬性精靈（設定檔開了 auto_spirit 時用來關）")
+    ap.add_argument("--auto-daily", dest="auto_daily", action="store_true", default=False,
+                    help="每天（本地 0:10 以後）自動排一次每日委託 daily，只做 3 轉以上的角色（只花石幣；容器版預設開）")
+    ap.add_argument("--no-auto-daily", dest="auto_daily", action="store_false", help="不自動排每日委託")
     ap.add_argument("--config", default=None,
                     help="設定檔（TOML，格式見 x7k2qm/autoplay/botconfig.py、config/bot.toml）：[bot] 參數、[files] 劇本／"
                          "規則表、[waigua] 外掛設定（每次登入檢查）。命令列有給的參數照命令列")
@@ -2843,6 +2910,7 @@ def _main_owned(args, log, jdir: str) -> int:
     p.keep_pets = args.keep_pets
     p.no_retreat = args.no_retreat
     p.auto_spirit = args.auto_spirit
+    p.auto_daily = bool(getattr(args, "auto_daily", False))
     p.auto_fruit = p.fruit_buy = bool(getattr(args, "auto_fruit", False))
     if args.battle_heal is not None:
         if not 1 <= args.battle_heal <= 99:

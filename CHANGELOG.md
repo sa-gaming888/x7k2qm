@@ -10,6 +10,8 @@
 - 練寵補抓跳過野外抓不到的金虎（310，任務給的）：指定騎 310 的人物練完不再去地雷區等著抓，整個 petgoal 也不會因此停；其他照抓。
 
 ### Added
+- 每天自動解每日委託（`bot.auto_daily`，預設開；`AUTO_DAILY=0` 關）：本地 0:10 以後每天排一次 `jobs daily`，只做 3 轉以上的角色、只花石幣；
+  練寵（petgoal）進行中也會在兩場戰鬥之間做，做完回去接著練；連續 3 天失敗就不再自動排。解完只留獎勵，剩下的委託材料、料理刪掉。`jobs daily` 收進公開映像（使用者 11-15）。
 - `jobs trade-give`／`trade-take` 收進公開映像：容器跟別台的帳號交易，給方、收方各在自己正在跑的練功程式裡做一半（使用者 11-14 同意）。
 - 修正：`docker exec`／`kubectl exec` 進容器跑 `jobs add`、`jobs scenario resume` 以前會寫到 `/app/captures`，練功程式看不到；映像現在預設 `/data/jobs`、`/data/owner`、`/data/scenario`。
 - register workflow 多一個「server」下拉選單（A／B）：B 讀 secret `GAME_LOGIN_HOST_B`（同一套註冊、建角協定的另一台），一樣註冊完自動建五隻角色；Telegram 結果標題標出是哪台。

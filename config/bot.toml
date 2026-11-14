@@ -2,7 +2,7 @@
 #
 # 容器：複製這份改好，掛載到 /config/bot.toml（或用環境變數 CONFIG_FILE 指定路徑），重開容器生效：
 #   docker run ... -v ./bot.toml:/config/bot.toml:ro <映像>
-# 沒掛載就用映像內建的這份（＝下面的預設值）。環境變數 START、SCENARIO、AUTO_SPIRIT、POINT_PLAN、
+# 沒掛載就用映像內建的這份（＝下面的預設值）。環境變數 START、SCENARIO、AUTO_SPIRIT、AUTO_DAILY、POINT_PLAN、
 # BATTLE_HEAL、NO_RETREAT 有設的話蓋過這裡。
 # 格式錯、不認得的欄位、練功程式沒有的參數：一律不登入，日誌寫「停止：設定檔：…」。
 
@@ -10,6 +10,7 @@
 # 練功程式參數（headless_party --help 的長選項，- 換成 _）。以後新增的參數直接加在這裡，不用改容器。
 start = "柯奧龜洞Lv10"     # 登入後先傳到哪個練級點；"" ＝留在原地
 auto_spirit = true         # 隊長依屬性去競技場買精靈 Lv5 金幣、60 級自動穿
+auto_daily = true          # 每天 0:10 以後自動解每日委託一次（3 轉以上的角色；只花石幣；使用者 11-15）
 no_retreat = false         # true＝不退回上一張圖（前進、回村補血照舊）
 # stay = false             # true＝鎖在 start 那張圖：不退也不前進
 # keep_pets = false        # true＝戰寵／騎寵不自動換

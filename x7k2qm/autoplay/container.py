@@ -18,6 +18,7 @@
   START                 起始練功點（空字串＝留在原地）                       → bot.start
   SCENARIO              劇本檔路徑；none＝只練功、不解任務不轉生              → files.scenario
   AUTO_SPIRIT           1＝隊長買精靈金幣、60 級自動穿；其他值＝不買          → bot.auto_spirit
+  AUTO_DAILY            1＝每天自動解每日委託（3 轉以上的角色）；其他值＝不解 → bot.auto_daily
   NO_RETREAT            1＝不退回上一張圖；其他值＝照常退                     → bot.no_retreat
   POINT_PLAN            外掛自訂加點「隊長體,敏,攻/隊員體,敏,攻」；none＝不設 → waigua.point_plan
   BATTLE_HEAL           外掛戰鬥中技能補血門檻 %；none＝不設                  → waigua.battle_heal
@@ -121,6 +122,8 @@ def env_sets(env: Mapping[str, str]) -> List[str]:
         out.append(f"files.scenario={q(sc or 'builtin')}")
     if "AUTO_SPIRIT" in env:
         out.append(f"bot.auto_spirit={'true' if env['AUTO_SPIRIT'].strip() == '1' else 'false'}")
+    if "AUTO_DAILY" in env:
+        out.append(f"bot.auto_daily={'true' if env['AUTO_DAILY'].strip() == '1' else 'false'}")
     if "NO_RETREAT" in env:
         out.append(f"bot.no_retreat={'true' if env['NO_RETREAT'].strip() == '1' else 'false'}")
     if "POINT_PLAN" in env:
