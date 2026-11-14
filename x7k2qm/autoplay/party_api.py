@@ -457,8 +457,11 @@ class DepotQuery:
             return {"itemId": x.get("itemId"), "name": self.p.item_table().get(x.get("itemId"), {}).get("nameTn")
                     or str(x.get("itemId")), "count": x.get("overlay", 1), "page": page,
                     "uniqueIndex": x.get("uniqueIndex"), "bind": x.get("bind")}
+        # trans、nickname、petLock：寵物合成統計要（status_upload.compose_doc；使用者 11-14 合成進度）
         return {"petId": x.get("petId"), "name": self.p.pet_name(x), "lv": x.get("level"), "page": page,
-                "hp": x.get("hp"), "hpMax": x.get("hpMax"), "uniqueIndex": x.get("uniqueIndex"), **pet_extra(x)}
+                "hp": x.get("hp"), "hpMax": x.get("hpMax"), "uniqueIndex": x.get("uniqueIndex"),
+                "trans": x.get("trans") or 0, "nickname": x.get("name") or "", "petLock": x.get("petLock"),
+                **pet_extra(x)}
 
 
 def warm_grade_tables() -> None:

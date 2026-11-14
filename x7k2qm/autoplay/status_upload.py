@@ -41,7 +41,7 @@ FETCH_TIMEOUT = 15.0
 STALE = 900                        # 資料超過 15 分鐘沒更新＝不是在練
 VOLATILE = ("age", "age_seconds", "last_seen_age", "last_seen_seconds", "uptime", "uptime_seconds")
 ENV = "BOT_UPLOAD_"
-UPLOADER_VERSION = 5               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error，4＝人物面板 panel，5＝分頁不帶即時狀態 _live）
+UPLOADER_VERSION = 6               # 寫進 /groups/<組>/live 的 uploader：網頁看得出叢集跑的是哪一版（2＝有寵物面板，3＝多 pets_error，4＝人物面板 panel，5＝分頁不帶即時狀態 _live，6＝寵物合成 compose）
 
 
 def read_json(path: str) -> Optional[dict]:
@@ -286,6 +286,141 @@ def group_docs(group: str, label: str, snap: Optional[dict], snap_t: Optional[fl
     return docs
 
 
+# ---------------- 寵物合成進度（/groups/<組>/compose） ----------------
+# 使用者 2026-11-14「我要能知道每個集群 總共有多少已經達標 的 五色人龍 老虎 … 預計可以做幾個蛋或成品 以及欠缺的寵物是那些」；
+# 暴龍先不做。格式：網頁端約定的「寵物合成分頁」。配方從 ExchangeItem.json 讀（jobs.petex.recipe）。
+# (分類, 配方, 蛋 itemId, 成品 petId)：成品＝蛋孵出來的 2D 寵物（Monster.json 2D利則諾頓 20032…、2D格魯西斯 10075…）
+COMPOSE = (("五色人龍", 4428, 92159, (20032, 20033, 20034, 20035, 20036)),
+           ("老虎", 4427, 92160, (10075, 10076, 10077, 10078)))
+COMPOSE_EVERY = 1800.0             # 倉庫查詢要在練功連線上送請求：30 分鐘才重查一次，其他輪沿用
+DEPOT_FETCH_TIMEOUT = 60.0         # 倉庫查詢一次送十幾個請求（每個間隔 0.3～0.8 秒），15 秒不夠
+_compose_cache: Dict[str, Tuple[float, dict]] = {}
+
+
+_ITEMS: Optional[Dict[int, str]] = None
+
+
+def _item_name(iid) -> str:
+    """道具名稱（設定表 Item.json nameTn）；讀不到回編號。"""
+    global _ITEMS
+    if _ITEMS is None:
+        _ITEMS = {}
+        try:
+            from ..features.gamedb.tables import CONFIGS
+            with open(os.path.join(CONFIGS, "Item.json"), encoding="utf-8") as fp:
+                _ITEMS = {int(r["ID"]): r.get("nameTn") or "" for r in json.load(fp) if r.get("ID") is not None}
+        except Exception:  # noqa: BLE001  名稱只是加註
+            pass
+    return _ITEMS.get(iid) or str(iid)
+
+
+def compose_pets(pet_rows: Dict[str, List[dict]], petdepot: dict) -> List[dict]:
+    """身上（查詢 API /pet）＋個倉、共倉（/petdepot）→ 一隻一列 {petId, uniqueIndex, nickname, where, level, trans, score, lock}。"""
+    out = []
+    for role, rows in (pet_rows or {}).items():
+        for r in rows:
+            x = r.get("info") or {}
+            out.append({"petId": x.get("petId"), "uniqueIndex": x.get("uniqueIndex"), "nickname": x.get("name") or "",
+                        "where": f"{role} 身上", "level": x.get("level"), "trans": x.get("trans") or 0,
+                        "score": r.get("score", x.get("score")), "lock": x.get("petLock") == 1})
+    places = [(f"{role} 個倉", rows) for role, rows in ((petdepot or {}).get("personal") or {}).items()]
+    places.append(("共倉", (petdepot or {}).get("public") or []))
+    for where, rows in places:
+        for r in rows or []:
+            out.append({"petId": r.get("petId"), "uniqueIndex": r.get("uniqueIndex"), "nickname": r.get("nickname") or "",
+                        "where": where, "level": r.get("lv"), "trans": r.get("trans") or 0,
+                        "score": r.get("score"), "lock": r.get("petLock") == 1})
+    return out
+
+
+def item_counts(bag: dict, depot: dict) -> Dict[int, int]:
+    """背包（/bag）＋道具倉庫個人、公共（/depot）每種道具總數。"""
+    out: Dict[int, int] = {}
+    rows = [r for rs in ((bag or {}).get("bag") or {}).values() for r in rs or []]
+    rows += [r for rs in ((depot or {}).get("personal") or {}).values() for r in rs or []]
+    rows += list((depot or {}).get("public") or [])
+    for r in rows:
+        if r.get("itemId"):
+            out[r["itemId"]] = out.get(r["itemId"], 0) + int(r.get("count") or 1)
+    return out
+
+
+def compose_category(rec: dict, egg: int, products, pets: List[dict], items: Dict[int, int]) -> dict:
+    """一個配方的統計（網頁欄位照 api_contract：recipes、qualified、blocked、below、can_make、limit…）。"""
+    def row(p, **extra):
+        return dict({k: p[k] for k in ("uniqueIndex", "nickname", "where", "level", "trans", "score")}, **extra)
+
+    mats = [{"name": _item_name(iid), "itemId": iid, "need": n, "have": items.get(iid, 0)} for iid, n in rec["items"]]
+    recipes, counts = [], {}
+    for pid, point in rec["pets"]:
+        mine = [p for p in pets if p["petId"] == pid]
+        ok = [p for p in mine if isinstance(p["score"], int) and p["score"] >= point]
+        q = sorted((row(p) for p in ok if not p["lock"]), key=lambda r: -r["score"])
+        b = sorted((row(p, why="上鎖") for p in ok if p["lock"]), key=lambda r: -r["score"])
+        low = sorted((row(p, gap=point - p["score"] if isinstance(p["score"], int) else None)
+                      for p in mine if p not in ok), key=lambda r: (r["gap"] is None, r["gap"] or 0))
+        name = species_name(pid) or str(pid)
+        counts[name] = len(q)
+        recipes.append({"species": name, "petId": pid, "point": point, "egg_name": _item_name(egg), "rep": 0, "coin": 0,
+                        "materials": [{k: m[k] for k in ("name", "need", "have")} for m in mats],
+                        "qualified": q, "blocked": b, "below": low})
+    by_pets = min(counts.values()) if counts else 0
+    by_mat = {m["name"]: m["have"] // m["need"] for m in mats if m["need"] > 0}
+    can = min([by_pets] + list(by_mat.values()))
+    limit = [n for n, c in list(counts.items()) + list(by_mat.items()) if c == can]
+    short = [{"name": m["name"], "need": by_pets * m["need"], "have": m["have"], "short": by_pets * m["need"] - m["have"]}
+             for m in mats if by_pets * m["need"] > m["have"]]
+    return {"recipes": recipes,
+            "qualified": sum(len(r["qualified"]) for r in recipes), "blocked": sum(len(r["blocked"]) for r in recipes),
+            "below": sum(len(r["below"]) for r in recipes), "can_make": can, "limit": limit, "material_short": short,
+            "eggs_have": items.get(egg, 0),
+            "products_have": sum(1 for p in pets if p["petId"] in products),
+            "missing_species": [r["species"] for r in recipes if not r["qualified"] and not r["blocked"]]}
+
+
+def compose_doc(meta: dict, money: dict, pets: List[dict], items: Dict[int, int], queried: float,
+                recipe: Optional[Callable[[int], dict]] = None) -> dict:
+    """/groups/<組>/compose 的內容。recipe（測試可換）：配方 ID → {pets [(petId, petPoint)], items [(itemId, num)]}。"""
+    if recipe is None:
+        from .jobs.petex import recipe
+    cats = OrderedDict((name, compose_category(recipe(rid), egg, products, pets, items))
+                       for name, rid, egg, products in COMPOSE)
+    return dict(meta, section="compose", money={"聲望": money.get("聲望"), "石幣": money.get("石幣")},
+                queried_at=fmt_time(queried), categories=cats,
+                note="寵物算身上＋個倉＋共倉、評分是伺服器評分；道具算背包＋道具倉庫（個人＋公共）")
+
+
+def compose_for(g: str, url: str, token: Optional[str], now: float, fetch: Callable[..., dict],
+                pet_rows: Optional[Dict[str, List[dict]]], head: dict) -> Tuple[Optional[dict], Optional[str]]:
+    """查 /petdepot、/bag、/depot 算合成進度；COMPOSE_EVERY 內沿用上次的結果（倉庫查詢會在練功連線上送請求）。
+    回 (文件 or None, 錯誤 or None)。查失敗：有上次的照送上次的，錯誤寫進 live。"""
+    key = f"{g}|{url}"
+    hit = _compose_cache.get(key)
+    if hit and now - hit[0] < COMPOSE_EVERY:
+        return hit[1], None
+
+    def slow(path):
+        if fetch is fetch_json:
+            return fetch_json(url + path, token, timeout=DEPOT_FETCH_TIMEOUT)
+        return fetch(url + path, token)
+    try:
+        pd = slow("/petdepot")
+        if pd.get("error"):
+            raise RuntimeError(f"/petdepot：{str(pd['error'])[:120]}")
+        dp = slow("/depot")
+        if dp.get("error"):
+            raise RuntimeError(f"/depot：{str(dp['error'])[:120]}")
+        bag = fetch(url + "/bag", token)
+        meta = {k: head[k] for k in ("group", "label", "data_time", "age", "age_seconds", "source", "state",
+                                     "state_text") if k in head}
+        doc = compose_doc(meta, ((head.get("totals") or {}).get("money") or {}),
+                          compose_pets(pet_rows or {}, pd), item_counts(bag, dp), now)
+    except Exception as e:  # noqa: BLE001  合成統計拿不到：其他分頁照送
+        return (hit[1] if hit else None), f"合成統計拿不到：{type(e).__name__} {str(e)[:150]}"
+    _compose_cache[key] = (now, doc)
+    return doc, None
+
+
 LIVE_KEYS = ("live", "data_time", "age", "age_seconds")
 
 
@@ -405,10 +540,20 @@ def api_group(g: str, label: str, url: str, token: Optional[str], now: float,
                 role_err = "/role 回應沒有人物資料"
         except Exception as e:  # noqa: BLE001  人物面板拿不到：其他照送
             role_err = f"/role 拿不到：{type(e).__name__} {str(e)[:150]}"
+    compose_err = None
+    if ok and isinstance(head, dict):                      # 寵物合成進度（使用者 11-14）：身上要拿得到才算，不然少算
+        if pets is None:
+            compose_err = "身上寵物（/pet）拿不到，合成統計不算"
+        else:
+            doc, compose_err = compose_for(g, url, token, now, fetch, pets, head)
+            if doc is not None:
+                gd[f"/groups/{g}/compose"] = doc
+                head["sections"] = list(head.get("sections") or []) + ["compose"]
     live = gd.get(f"/groups/{g}/live")
     if isinstance(live, dict):
         live["pets_error"] = pet_err
         live["panel_error"] = role_err
+        live["compose_error"] = compose_err
         live["uploader"] = UPLOADER_VERSION
     proc = {"pid": pid, "kind": program, "started": fmt_time(started), "log": log_name,
             "log_tail": tail or ([reason] if reason else [])}
