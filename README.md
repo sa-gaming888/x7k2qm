@@ -91,6 +91,8 @@ docker restart bot          # 改完設定檔重開生效（會等這場戰鬥�
 | `START` | `bot.start` | 起始練功點；空字串＝留在原地 |
 | `SCENARIO` | `files.scenario` | 劇本路徑；`none`＝只練功；`/app/config/scenarios/petgoal.toml`＝內建練寵劇本（五色人龍＋老虎，每隻人物負責一種） |
 | `AUTO_SPIRIT` | `bot.auto_spirit` | `1`＝隊長買精靈金幣、60 級自動穿；其他值＝不買 |
+| `STATE_URL` | — | 狀態保存位址（https，例 `https://<worker>/state/<ns>`）：啟動先抓回劇本進度與還沒做的工作，之後有變才上傳；Pod 重建能接著做。沒設＝不保存 |
+| `STATE_KEY` | — | 狀態保存密鑰（設了 `STATE_URL` 必填；或 `STATE_KEY_FILE`） |
 | `AUTO_DAILY` | `bot.auto_daily` | `1`＝每天 0:10 以後自動解一次每日委託（3 轉以上的角色，只花石幣；預設開）；其他值＝不解 |
 | `NO_RETREAT` | `bot.no_retreat` | `1`＝不退回上一張圖；其他值＝照常 |
 | `POINT_PLAN` | `waigua.point_plan` | 自訂加點 `隊長體,敏,攻/隊員體,敏,攻`；`none`＝不設 |

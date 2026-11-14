@@ -27,6 +27,9 @@
   API_JOBS              1＝開放 POST /jobs 排白名單工作（目前只有 auction 集市上架，會改遊戲狀態）；
                         預設關，要同時設 API_TOKEN（使用者 11-06 經 本遊戲 session：容器預設關）
   DATA_DIR              劇本進度、工作佇列、鎖、停止檔的目錄（預設 /data）
+  STATE_URL             狀態保存位址（選填，https；例 https://<worker>/state/<ns>）：啟動先抓回劇本進度與還沒做的工作，
+                        之後有變才上傳（statesync.py；使用者 11-15「紀錄狀態讓他重開可以接回來用」）
+  STATE_KEY             狀態保存密鑰（設了 STATE_URL 必填；或 STATE_KEY_FILE）
 
 - 密碼只放在行程環境變數，不寫檔、不進日誌（`describe()` 只列有沒有設）。
 - 練功程式崩潰或被強殺：照 keepalive 有限次重開（5、10、20 分鐘）；自己回報停止、被擠下線不重開（規範 2）。
@@ -155,7 +158,8 @@ def describe(env: Mapping[str, str]) -> str:
     shown = (acc[:2] + "…") if acc else "（未設）"
     pw = "已設" if _secret(env, "GAME_PASSWORD") else "未設"
     auto = "自動同意" if env.get("AUTO_REBIRTH", "0").strip() == "1" else "停在關卡等人"
-    return f"帳號 {shown}｜密碼 {pw}｜轉生 {auto}"
+    state = "開" if env.get("STATE_URL", "").strip() else "關"
+    return f"帳號 {shown}｜密碼 {pw}｜轉生 {auto}｜狀態保存 {state}"
 
 
 def run_tee(cmd: List[str], env: Mapping[str, str], cwd: str, out: TextIO = None) -> Tuple[int, str]:
@@ -171,6 +175,20 @@ def run_tee(cmd: List[str], env: Mapping[str, str], cwd: str, out: TextIO = None
             tail.append(line)
         rc = proc.wait()
     return rc, "".join(tail)
+
+
+def state_config(env: Mapping[str, str]):
+    """狀態保存設定：沒設 STATE_URL 回 None；設了就要 https 和 STATE_KEY（或 STATE_KEY_FILE）。
+    回 (網址, 密鑰, 物件名稱＝帳號)。"""
+    url = env.get("STATE_URL", "").strip()
+    if not url:
+        return None
+    if not url.startswith("https://"):
+        raise SetupError("STATE_URL 要是 https://")
+    key = _secret(env, "STATE_KEY")
+    if not key:
+        raise SetupError("設了 STATE_URL 就要設 STATE_KEY")
+    return url, key, env.get("GAME_ACCOUNT", "").strip()
 
 
 def check(env: Mapping[str, str]) -> List[str]:
@@ -192,6 +210,10 @@ def check(env: Mapping[str, str]) -> List[str]:
             load(cfg.scenario)
         except ScenarioError as e:
             problems.append(f"劇本：{e}")
+    try:
+        state_config(env)
+    except SetupError as e:
+        problems.append(str(e))
     from .jobs import registry
     registry()
     for rel in (("data", "sproto_schema.json"), ("data", "configs", "Monster.json"), ("data", "mapgrids", "1000.json")):
@@ -237,11 +259,30 @@ def main(argv=None, environ: Mapping[str, str] = os.environ,
     signal.signal(signal.SIGINT, on_term)
 
     log(f"啟動：{describe(environ)}")
+    syncer = None
+    try:
+        st = state_config(environ)
+        if st is not None:
+            from .statesync import Remote, StateError, Syncer
+            try:
+                syncer = Syncer(data, Remote(*st), log)
+                syncer.boot()                  # 登入前：Pod 重建後接回劇本進度與還沒做的工作
+            except StateError as e:
+                log(f"停止：狀態保存：{e}（遠端存檔不能用；刪掉那份或拿掉 STATE_URL 再開）")
+                return 2
+            syncer.start()
+    except SetupError as e:
+        log(f"停止：{e}")
+        return 2
     cmd = [sys.executable, "-X", "utf8", "-m", "x7k2qm.autoplay.headless_party", *party_argv(environ, stop_path)]
 
     def run_once() -> tuple:
         return spawn(cmd, env=env, cwd=data)
-    why = keepalive.supervise(run_once, lambda: os.path.exists(keep_stop), log, log)
+    try:
+        why = keepalive.supervise(run_once, lambda: os.path.exists(keep_stop), log, log)
+    finally:
+        if syncer is not None:
+            syncer.stop()                      # 練功程式登出後最後送一次
     log(f"結束：{why}")
     return 0 if why in (keepalive.DONE, keepalive.PLANNED, "stopped") else 1
 
