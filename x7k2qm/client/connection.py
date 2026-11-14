@@ -123,6 +123,8 @@ GATE_NO_HEAD = frozenset({
     "Other_NewShopGetPetPriceRecord",  # 初心錄檔 744/744、IL
     "Other_GetNewShopGoodByIndex",    # 交易所點一筆看詳細（jobs/marketpets）：參考專案 官方錄檔 psa_20261023_102736 等外層不帶 head；11-14 實機 19 筆都有回
     "Other_MyItemShopGoods",          # 集市上架（jobs/auction）：**未實機驗證**，沒有錄檔；照同系列 Other_*Shop* 錄檔都不帶 head
+    "Other_MyPetShopGoods",           # 讀自己的寵物攤位（jobs/petauction）：參考專案 官方錄檔 psa_20261023_130926 不帶 head；11-14 實機第八組帶 head 送也有回（登記前的預設），不帶的還沒實機
+    "Other_NewUploadPetDepotToAh",    # 個人寵物倉上架交易所（jobs/petauction）：同上錄檔 2 筆不帶 head；11-14 實機帶 head 送 4 筆都成功，不帶的還沒實機
     "Other_NewShopBuyGood",           # 交易所購買（jobs/marketbuy）：參考專案 官方錄檔 2/2 head false、IL SendNewShopBuyGood rid 0
     "Npc_NpcInteract",                # 時光錄檔 53/53、IL
     "Role_RoleWalk",                  # 時光錄檔 167/167、IL

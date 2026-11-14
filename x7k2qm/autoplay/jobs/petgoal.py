@@ -19,6 +19,8 @@
 3. 某隻到目標：關遇敵 → 戰寵改回原本的 → 改名（要的話）→ 存倉（個倉滿才存共倉）→ **當場換下一隻**（`swap_in`）→ 其他人繼續練。
    換下一隻（使用者 11-13，LESSONS #203）：先領倉庫沒練完的指定寵物；沒有就從自己個倉拿沒滿 140 的頂替練（`fill_row`），
    頂替的滿 140 就收回再找下一隻；指定的都練完（只剩頂替的在練）→ 頂替的全收回、這輪結束。這輪一開始就沒寵物的角色也一樣。
+   有 `--refill`、倉庫沒有指定的、這隻角色抓得到 → 不頂替，**這輪提早收**（還在練的留在身上），回到輪與輪之間補抓同種
+   （使用者 11-14 同意）；頂替只用在抓不到的（沒開 --refill、指定野外抓不到的、到上限沒 --release-low）。
 4. 這輪都收完 → 下一輪領下一批；倉庫裡也沒有沒練完的 → 結束。
 練功自己停了（停止檔、連線中斷、補血失敗…）或 6 小時沒有任何一隻升級 → 整個停（規範第 2 點），還沒改回的戰寵改回原本的。
 
@@ -316,7 +318,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色42 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色52 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -326,7 +328,7 @@ def free_for_sale(p, n: str, uid: int) -> None:
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是戰寵，先解掉戰寵鎖定")
     elif ride == uid:
         # 改練另一種時，以前當騎寵練的同種到級要賣，牠還鎖著騎寵、騎乘中：只解戰寵的舊版改休息沒確認整組停
-        # （11-10 23:06 第十組改練 307，角色35騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
+        # （11-10 23:06 第十組改練 307，角色54騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
         unlock(p, n, fight, 0)
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是騎寵，先解掉騎寵鎖定")
     if idx is not None:
@@ -357,7 +359,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色19、15:46 第二組角色39人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色28、15:46 第二組角色57人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -397,7 +399,7 @@ DIGIGUS = 1589                   # 迪基格斯：人物五轉的組禁止練（
 
 
 def no_fill_ids(p) -> tuple:
-    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色52、第八組角色56被頂替成 1589，LESSONS #204）。"""
+    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色68、第八組角色69被頂替成 1589，LESSONS #204）。"""
     if any((v or 0) >= 5 for v in getattr(p, "trans", {}).values()):
         return NO_FILL + (DIGIGUS,)
     return NO_FILL
@@ -424,7 +426,7 @@ def swap_in(p, name: str, args, key, claimed: set, fills: Optional[Dict[str, int
     """練功中（已關遇敵、不在戰鬥）幫這隻角色換上下一隻要練的：先領倉庫沒練完的指定寵物（fetch），
     沒有就拿個倉沒滿 140 的（fill_row，記在 fills）。換上後加進 orig_fight／train_uid，跟一開始就在練的一樣收。
     身上 5 格滿了、倉庫都沒有 → 回 False（照舊用原本戰寵跟著打）。
-    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色27布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
+    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色42布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
     from .catch import SLOT_MAX
     if len(slots(p, name)) >= SLOT_MAX:
         p.log(f"寵物目標：{name} 身上 {SLOT_MAX} 格滿了，領不出下一隻，先用原本戰寵跟著打")
@@ -504,7 +506,7 @@ def keep_of(p, name: str, args) -> set:
 
 def park_unlisted(p, names: List[str], args) -> None:
     """--uids：身上同種、不在名單上的先存倉——練寵模式照物種挑戰寵（pet_index），同種兩隻會挑錯
-    （11-10 第九組角色19身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
+    （11-10 第九組角色28身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
     only = uid_set(args)
     if not only:
         return
@@ -561,6 +563,23 @@ def share_unassigned(p, names: List[str], args) -> List[str]:
     return moved
 
 
+def can_refill(name: str, args, state: dict) -> bool:
+    """--refill 會不會幫這隻角色抓新的戰寵（同 refill 的篩選：沒指定、指定野外抓不到的、留夠了、
+    到上限又沒 --release-low 的都不抓）。只判斷、不送封包。"""
+    if not refilling(args):
+        return False
+    a = assigned(args)
+    if a and name not in a:
+        return False
+    sp = a.get(name, (0, 0))[0]
+    if sp in NO_WILD or not (sp or [s for s in pet_ids(args) if s not in NO_WILD]):
+        return False
+    wanted = int(getattr(args, "refill_want", 0) or 0)
+    if wanted and state.get("kept", 0) >= wanted:
+        return False
+    return state["caught"] < int(getattr(args, "refill_max", REFILL_MAX)) or bool(getattr(args, "release_low", False))
+
+
 def of_species(p, name: str, species: int) -> List[dict]:
     return [v for v in slots(p, name).values() if v.get("petId") == species]
 
@@ -594,7 +613,7 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
     cap = int(getattr(args, "refill_max", REFILL_MAX))
     # 到上限不再讓角色空手（使用者 11-13「如果上限 30 次都沒抓到，就在抓一次隨便抓一隻去練，根據檔次決定練到達分or 賣」）：
     # 每次補抓、每隻還沒寵物練的角色在額度用完後**再抓 1 隻、不放生**，照檔次走原本的目標（≥ --cut 練到分數、< --cut 練到級賣／存）。
-    # 舊版到上限就 return，11-13 第七組角色55補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
+    # 舊版到上限就 return，11-13 第七組角色51補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
     release = bool(getattr(args, "release_low", False)) and not ride     # 騎寵照舊練到 120 賣
     wanted = 0 if ride else int(getattr(args, "refill_want", 0) or 0)
     if wanted and state.get("kept", 0) >= wanted:
@@ -674,7 +693,7 @@ def release_caught(p, n: str, pet: dict) -> None:
         raise JobError(f"{n} 剛抓的 {uid}（{pid}）不是 1 級或在任務條件／保護名單上，不放生，停")
     if uid in p.locks(n):
         # 抓之前沒有戰寵（上一隻練完存倉了）時，catch 的 restore_fight_pet 會挑身上等級最高的＝剛抓的 1 級當戰寵，
-        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色50，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
+        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色58，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
         free_for_sale(p, n, uid)
     idx = next((k for k, v in slots(p, n).items() if v.get("uniqueIndex") == uid), None)
     if idx is None:
@@ -788,7 +807,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         rids = rids_of(args, n)               # --assign：這隻只騎指定的那種
         fight, ride = p.locks(n)
         # 身上休息中、已經到目標的那幾種（上次換下來沒處理、或上次中斷留著的）先收／賣，不然一直佔格子：
-        # 11-10 18:36 第七組角色52只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
+        # 11-10 18:36 第七組角色68只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
         # 「現在 4 隻、要抓 1 隻，超過上限 4」整組停（LESSONS #189）
         queued = {id(x) for _, x in selling}
         for v in list(slots(p, n).values()):
@@ -822,7 +841,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         if new is None:
             need.append(n)
             # 沒有指定那種可騎，身上鎖著的是別種老虎、還沒到目標 → 先騎著（有經驗總比空著好），休息中就補忠誠叫上場。
-            # 11-12 --assign 後第十組角色50指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
+            # 11-12 --assign 後第十組角色58指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
             if (cur is not None and cur.get("status") == 1 and cur.get("petId") in ride_ids(args)
                     and grade(cur)[1] is not None and not is_done(cur, g)):
                 p.log(f"寵物目標：{n} 沒有指定的騎寵可換，先騎著身上的 {ride}（{cur.get('petId')}）")
@@ -944,13 +963,34 @@ def run(p, args) -> Tuple[str, dict]:
             stall = T.stall_guard(p, key)
             fills: Dict[str, int] = {}             # 這輪頂替練的（指定的沒了，拿個倉沒滿 140 的）：角色 → 唯一編號
             tried: set = set()                     # 這輪找過下一隻、倉庫沒有的角色（不每 15 秒查一次倉庫）
+            started = set(active)                  # 這輪開始時有指定寵物練的（這輪中途練完的才會提早收輪去補抓）
+
+            def end_round(who: List[str]) -> None:
+                """這輪中途有人練完、倉庫沒有指定的、--refill 抓得到 → 這輪先收（頂替的存回、還在練的戰寵改回原本的，
+                沒練完的留在身上下一輪接著練），回到輪與輪之間補抓同種。舊版改拿個倉別的寵物頂替、等其他人練完才補抓：
+                11-14 第十二組三隻人龍 23:45 練完，另兩隻 138 級的 6 小時沒升級，那三人 6 小時沒練人龍（使用者 11-14 同意改）。"""
+                halt()
+                for n in list(fills):
+                    done.append(drop_fill(p, n, fills))
+                for n in list(p.orig_fight):
+                    fight, ride = p.orig_fight.pop(n)
+                    p.train_uid.pop(n, None)
+                    if not p.set_fight_pet(n, fight, ride):
+                        raise JobError(f"{n} 這輪提早收，戰寵改不回 {fight}")
+                p.log(f"寵物目標：{'、'.join(who)} 練完、倉庫沒有指定的 → 這輪先收，補抓同種再練（沒練完的下一輪接著練）")
 
             def refresh() -> None:
                 """沒在練的角色當場補下一隻（使用者 11-13：存進去就要換一隻，不要等這輪結束）。
+                倉庫沒有、--refill 抓得到 → 這輪先收去補抓（end_round）；抓不到才拿個倉沒滿 140 的頂替。
                 指定的都練完、只剩頂替的 → 頂替的收掉，讓這輪結束去賣／補抓（不讓頂替的拖住輪次）。"""
                 def designated() -> bool:
                     return any(m not in fills for m in p.orig_fight)
                 idle = [n for n in names if n not in p.orig_fight and n not in tried]
+                catch = [n for n in idle if n in started and p.orig_fight and can_refill(n, args, refill_state)
+                         and not fetch_ready(p, n, args, claimed)]
+                if catch:
+                    end_round(catch)
+                    return
                 for n in idle:
                     # 指定的都沒人在練了就不拿頂替的（拿了這輪也馬上結束，白領白存）
                     if not designated() and not fetch_ready(p, n, args, claimed):

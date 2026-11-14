@@ -40,7 +40,8 @@ def build_parser(jobs) -> argparse.ArgumentParser:
     for name, mod in jobs.items():
         if name in SUBCOMMANDS:
             raise RuntimeError(f"工作名稱 {name} 跟子指令撞名")
-        sp = sub.add_parser(name, help=mod.HELP)
+        # argparse 把 help 當 % 格式字串：說明裡有「%」（mpitem「--per% 喝」）會讓 `jobs --help` 整個丟 ValueError
+        sp = sub.add_parser(name, help=mod.HELP.replace("%", "%%"))
         _common(sp)
         sp.add_argument("--discover", action="store_true", help="角色清單從登入結果取（第 2 組預設寫死 5 隻）")
         sp.add_argument("--apply", action="store_true", help="真的執行；不加只列清單／狀態")
