@@ -1,8 +1,8 @@
 """petex：寵物合成 2D人龍自選蛋（配方 4428，使用者 2026-11-13「盤點一下所有人物，可以做幾隻2D 人龍」「先合掉，然後恢復練功」）。
 **不可逆**：五隻寵物合成後就沒了，要加 --confirm-exchange。
 
-    python -X utf8 -m x7k2qm.autoplay.jobs petex --profile 7 --discover --who 角色68 --uids u1,u2,u3,u4,u5            # 只列
-    python -X utf8 -m x7k2qm.autoplay.jobs petex --profile 7 --discover --who 角色68 --uids u1,u2,u3,u4,u5 --apply --confirm-exchange
+    python -X utf8 -m x7k2qm.autoplay.jobs petex --profile 7 --discover --who 角色54 --uids u1,u2,u3,u4,u5            # 只列
+    python -X utf8 -m x7k2qm.autoplay.jobs petex --profile 7 --discover --who 角色54 --uids u1,u2,u3,u4,u5 --apply --confirm-exchange
 
 配方（data/configs/ExchangeItem.json 4428）：利則諾頓 54、揚奇洛斯 55、邦浦洛斯 56、邦奇諾 57、布魯頓 481 各 1 隻
 （伺服器評分 score ≥ petPoint 1000）＋ 2D人龍進化石 93022 ×1 → 2D人龍自選蛋 92159。

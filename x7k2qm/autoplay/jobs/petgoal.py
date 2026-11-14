@@ -53,6 +53,8 @@ NAME = "petgoal"
 HELP = ("同一種寵物依檔次各自練到目標（檔差<3 練到 120 級、≥3 練到 1000 分改名），到了就存倉、領下一隻"
         "（--refill：倉庫沒有就抓新的補）")
 PAUSE = True
+# --apply 長跑時開工作佇列，兩場戰鬥之間收 trade-give／trade-take（使用者 11-14「讓兩邊不同程式自己交易」）
+HOSTS_QUEUE = lambda a: bool(getattr(a, "apply", False))    # noqa: E731
 TRAIN_LV = MAX_PET_LV + 1        # 交給練寵模式的目標等級：永遠到不了，收不收由這個工作自己判斷
 CATCH_AT = "地雷區Lv130"          # --refill 預設抓寵地點（11-06 第二、三、七、八、十組人龍都在這裡抓到）
 REFILL_MAX = 20                  # --refill 一次執行最多補抓幾隻（上限保護）
@@ -318,7 +320,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色52 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色60 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -328,7 +330,7 @@ def free_for_sale(p, n: str, uid: int) -> None:
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是戰寵，先解掉戰寵鎖定")
     elif ride == uid:
         # 改練另一種時，以前當騎寵練的同種到級要賣，牠還鎖著騎寵、騎乘中：只解戰寵的舊版改休息沒確認整組停
-        # （11-10 23:06 第十組改練 307，角色54騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
+        # （11-10 23:06 第十組改練 307，角色43騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
         unlock(p, n, fight, 0)
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是騎寵，先解掉騎寵鎖定")
     if idx is not None:
@@ -359,7 +361,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色28、15:46 第二組角色57人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色30、15:46 第二組角色47人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -399,7 +401,7 @@ DIGIGUS = 1589                   # 迪基格斯：人物五轉的組禁止練（
 
 
 def no_fill_ids(p) -> tuple:
-    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色68、第八組角色69被頂替成 1589，LESSONS #204）。"""
+    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色54、第八組角色69被頂替成 1589，LESSONS #204）。"""
     if any((v or 0) >= 5 for v in getattr(p, "trans", {}).values()):
         return NO_FILL + (DIGIGUS,)
     return NO_FILL
@@ -426,7 +428,7 @@ def swap_in(p, name: str, args, key, claimed: set, fills: Optional[Dict[str, int
     """練功中（已關遇敵、不在戰鬥）幫這隻角色換上下一隻要練的：先領倉庫沒練完的指定寵物（fetch），
     沒有就拿個倉沒滿 140 的（fill_row，記在 fills）。換上後加進 orig_fight／train_uid，跟一開始就在練的一樣收。
     身上 5 格滿了、倉庫都沒有 → 回 False（照舊用原本戰寵跟著打）。
-    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色42布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
+    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色40布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
     from .catch import SLOT_MAX
     if len(slots(p, name)) >= SLOT_MAX:
         p.log(f"寵物目標：{name} 身上 {SLOT_MAX} 格滿了，領不出下一隻，先用原本戰寵跟著打")
@@ -506,7 +508,7 @@ def keep_of(p, name: str, args) -> set:
 
 def park_unlisted(p, names: List[str], args) -> None:
     """--uids：身上同種、不在名單上的先存倉——練寵模式照物種挑戰寵（pet_index），同種兩隻會挑錯
-    （11-10 第九組角色28身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
+    （11-10 第九組角色30身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
     only = uid_set(args)
     if not only:
         return
@@ -693,7 +695,7 @@ def release_caught(p, n: str, pet: dict) -> None:
         raise JobError(f"{n} 剛抓的 {uid}（{pid}）不是 1 級或在任務條件／保護名單上，不放生，停")
     if uid in p.locks(n):
         # 抓之前沒有戰寵（上一隻練完存倉了）時，catch 的 restore_fight_pet 會挑身上等級最高的＝剛抓的 1 級當戰寵，
-        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色58，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
+        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色62，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
         free_for_sale(p, n, uid)
     idx = next((k for k, v in slots(p, n).items() if v.get("uniqueIndex") == uid), None)
     if idx is None:
@@ -807,7 +809,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         rids = rids_of(args, n)               # --assign：這隻只騎指定的那種
         fight, ride = p.locks(n)
         # 身上休息中、已經到目標的那幾種（上次換下來沒處理、或上次中斷留著的）先收／賣，不然一直佔格子：
-        # 11-10 18:36 第七組角色68只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
+        # 11-10 18:36 第七組角色54只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
         # 「現在 4 隻、要抓 1 隻，超過上限 4」整組停（LESSONS #189）
         queued = {id(x) for _, x in selling}
         for v in list(slots(p, n).values()):
@@ -841,7 +843,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         if new is None:
             need.append(n)
             # 沒有指定那種可騎，身上鎖著的是別種老虎、還沒到目標 → 先騎著（有經驗總比空著好），休息中就補忠誠叫上場。
-            # 11-12 --assign 後第十組角色58指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
+            # 11-12 --assign 後第十組角色62指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
             if (cur is not None and cur.get("status") == 1 and cur.get("petId") in ride_ids(args)
                     and grade(cur)[1] is not None and not is_done(cur, g)):
                 p.log(f"寵物目標：{n} 沒有指定的騎寵可換，先騎著身上的 {ride}（{cur.get('petId')}）")

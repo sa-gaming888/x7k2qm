@@ -31,7 +31,7 @@ from .logrotate import RotatingFile
 from .supervisor import REPORT_EVERY, ROUTE, SPOTS, State, decide
 
 # (rid, 名字)；第一個是隊長
-PARTY = [(10003754, "角色57"), (10003796, "角色42"), (10003799, "角色64"), (10003803, "角色38"), (10003804, "角色53")]
+PARTY = [(10003754, "角色47"), (10003796, "角色40"), (10003799, "角色64"), (10003803, "角色37"), (10003804, "角色52")]
 TRANSFER_POINT = {11001: 16, 10001: 17, 31401: 18, 31706: 19, 11004: 20, 500: 21, 502: 23, 60049: 22, 300: 40}
 # 路線外的 SPOTS 也能當 --start（配 --stay 鎖著練，supervisor.SPOTS）
 NAME_TO_POINT = {name: TRANSFER_POINT[m] for name, m, _ in ROUTE + SPOTS if m in TRANSFER_POINT}
@@ -239,7 +239,10 @@ class Party:
         self.shells = ShellExchange(self)
         # 工作佇列（jobqueue.Queue；main 依 --jobs-dir 設定，None＝不收工作）：主迴圈每輪取一件，用這個 Party 做
         self.jobq = None
-        self.job: Optional[dict] = None          # 目前在做的工作 {id, name, since}
+        # 長跑的固定指令（petgoal）開的佇列：只做 HOSTED_OK 的工作（trade-give／trade-take），也不自動排清理、換寵、精靈
+        # （清理會放生、換寵會動到練寵的寵物；使用者 11-14「讓兩邊不同程式自己交易」）
+        self.hosted_only = False
+        self.job: Optional[dict] = None         # 目前在做的工作 {id, name, since}
         self.hold: Optional[dict] = None         # 停在原地等人 {reason, place, since}：不監管、不回練功，只收工作
         # 劇本（scenario.Runner；main 依 --scenario 設定，None＝不跑劇本）：佇列空、沒有 hold 時每輪 tick 一次
         self.scenario = None
@@ -779,7 +782,7 @@ class Party:
             # 隊員先傳、隊長最後傳：隊長剛登入馬上傳送會被拒（15:45 實測 isOK false），多等隊員那幾趟
             self.log(f"組隊前隊員不在同一張地圖 {maps}：全部離隊、各自傳回薩姆吉爾村集合再組隊")
             # 先關遇敵、等沒人在戰鬥：斷線前開著原地遇敵的角色，重登後伺服器照樣幫他遇敵，戰鬥中傳送一定被拒
-            # （10-31 第三組：前晚 23:48 斷線時角色52在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
+            # （10-31 第三組：前晚 23:48 斷線時角色60在地雷區開著遇敵，07:46／07:48 兩次傳回村都 isOK false）
             if not self.pause():
                 self.log("組隊：還有人在戰鬥中、停不了遇敵，不傳送")
                 return False
@@ -1190,7 +1193,7 @@ class Party:
 
     def pet_depot_target(self, name: str) -> Optional[bool]:
         """寵物要存哪個倉庫：個倉第 1 頁還有空位 → False（個倉）；滿了改共倉第 1 頁 → True；兩邊都滿 → None。
-        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色57個倉 20/20 存不進去（LESSONS #89）。
+        使用者 2026-10-26「改存共倉」：第二組四轉打完機暴要全部存倉，角色47個倉 20/20 存不進去（LESSONS #89）。
         第 2 頁以後要鑽石解鎖（個倉 100、共倉 200），不碰。"""
         if len(self.pet_depot(name)) < PET_DEPOT_NUM:
             return False
@@ -1597,7 +1600,7 @@ class Party:
         if not self.auto_spirit or not self.party:
             return False
         now = time.time() if now is None else now
-        if self.jobq is None or self.hold or self.job is not None or self.jobq.pending():
+        if self.jobq is None or self.hosted_only or self.hold or self.job is not None or self.jobq.pending():
             return False
         if now - self.last_spirit < self.AUTOCLEAN_EVERY:
             return False
@@ -1796,7 +1799,7 @@ class Party:
         回傳這次有沒有排。"""
         from .shell_exchange import FULL_FREE
         now = time.time() if now is None else now
-        if self.jobq is None or self.hold or self.job is not None or self.jobq.pending():
+        if self.jobq is None or self.hosted_only or self.hold or self.job is not None or self.jobq.pending():
             return False
         if now - self.last_autoclean < self.AUTOCLEAN_EVERY:
             return False
@@ -1825,7 +1828,7 @@ class Party:
         有人的鎖定戰寵／騎寵滿 140 級 → 排一次 `pets --apply --mode refresh`。練寵模式中（戰寵是要練的那隻）不排；
         佇列有東西／hold 中不排；10 分鐘內不重排（換不了的不會每圈都排）。"""
         now = time.time() if now is None else now
-        if self.jobq is None or self.hold or self.job is not None or self.jobq.pending():
+        if self.jobq is None or self.hosted_only or self.hold or self.job is not None or self.jobq.pending():
             return False
         if self.train_pet or self.orig_fight or now - self.last_petrefresh < self.AUTOCLEAN_EVERY:
             return False
@@ -1969,7 +1972,7 @@ class Party:
 
         **一併關掉「自動換戰寵」**（`autoChangeFightPetFlg`）：開著的時候鎖戰寵會被伺服器拒（提示
         40000000021「開啟自動換戰寵不能鎖戰寵」），而且它會自己挑等級最高的上場——2026-10-30 第五組
-        練四色鯊魚，角色35的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
+        練四色鯊魚，角色38的 319（56 級）一直佔著出戰、要練的 322 停在 18 級，`take` 回報成功但
         戰寵鎖還是 0。鎖定跟自動換本來就互斥，要鎖就一定要關。"""
         r = self.clients[name].request("WaiGua_NomalSettingHandlePet",
                                        {"fightPetIndex": fight_unique, "ridePetIndex": ride_unique,
@@ -2425,6 +2428,8 @@ class Party:
         status, detail, data, paused = "failed", "", {}, False
         try:
             mod, args = parse(job.get("argv") or [])
+            if self.hosted_only and not getattr(mod, "HOSTED_OK", False):
+                raise JobError(f"這個佇列（練寵工作開的）只收 trade-give／trade-take，{job.get('name')} 不做")
             if str(args.profile) != str(self.profile):
                 raise JobError(f"工作是第 {args.profile} 組的，這裡是第 {self.profile} 組")
             paused = pauses(mod, args)

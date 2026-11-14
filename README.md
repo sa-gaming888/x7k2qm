@@ -219,6 +219,22 @@ docker exec bot python -m x7k2qm.autoplay.jobs scenario resume --profile 1
 docker exec bot python -m x7k2qm.autoplay.jobs scenario approve --profile 1   # 手動通過轉生關卡
 ```
 
+`docker exec`（或 `kubectl exec`）進來的指令預設就用 `/data/jobs`、`/data/owner`、`/data/scenario`，跟練功程式同一份。
+有改 `DATA_DIR` 的話要自己帶 `--jobs-dir`、`--owner-dir`、`--scenario-dir`。
+
+### 跟別台的帳號交易（`trade-give`／`trade-take`）
+
+給方、收方各在自己正在跑的練功程式裡做一半（各用自己的連線，不用停程式、不同 IP 也行）。容器的組別固定是 `1`。
+
+```bash
+# 1. 收方先排，日誌出現「收方就緒：名字（rid N）」
+docker exec bot python -m x7k2qm.autoplay.jobs add trade-take --profile 1 --apply --no-wait …
+# 2. 給方再排，帶收方的 rid
+docker exec bot python -m x7k2qm.autoplay.jobs add trade-give --profile 1 --taker-rid N --apply …
+```
+
+完整參數看 `python -m x7k2qm.autoplay.jobs trade-give --help`。練寵劇本（`petgoal --apply`）的佇列只收這兩種工作。
+
 ## 注意
 
 - 同一個帳號只能在一個地方登入：容器在跑時用遊戲客戶端登入，會互相擠下線（容器被擠下線就停止、不重開）。

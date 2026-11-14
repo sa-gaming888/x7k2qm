@@ -9,6 +9,8 @@
 - 練寵補抓跳過野外抓不到的金虎（310，任務給的）：指定騎 310 的人物練完不再去地雷區等著抓，整個 petgoal 也不會因此停；其他照抓。
 
 ### Added
+- `jobs trade-give`／`trade-take` 收進公開映像：容器跟別台的帳號交易，給方、收方各在自己正在跑的練功程式裡做一半（使用者 11-14 同意）。
+- 修正：`docker exec`／`kubectl exec` 進容器跑 `jobs add`、`jobs scenario resume` 以前會寫到 `/app/captures`，練功程式看不到；映像現在預設 `/data/jobs`、`/data/owner`、`/data/scenario`。
 - register workflow 多一個「server」下拉選單（A／B）：B 讀 secret `GAME_LOGIN_HOST_B`（同一套註冊、建角協定的另一台），一樣註冊完自動建五隻角色；Telegram 結果標題標出是哪台。
 - 練寵自動跳級 `petgoal --jump auto`（內建練寵劇本預設開）：高等戰寵負責輸出、低等的跟著跳圖；從跳 40 級起，10 分鐘補血 5 次以上少跳 20 級並退回一張圖，
   15 分鐘補血不到 2 次就多跳 20 級（最多 80）。固定數字的 `--jump` 照舊。

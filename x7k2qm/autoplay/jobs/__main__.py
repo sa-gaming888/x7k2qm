@@ -140,20 +140,29 @@ def main(argv=None, party_factory=None, is_alive=None, sleep=time.sleep) -> int:
     own = owner.live(odir, args.profile, is_alive)
     if own and own.get("kind") == owner.KIND_PARTY:
         return _enqueue(args, argv, own, jdir, odir, log, is_alive, sleep)
+    if own and own.get("kind") == owner.KIND_JOBS and own.get("jobs_dir"):
+        # 長跑的固定指令（petgoal --apply）也開了佇列：只收宣告 HOSTED_OK 的工作（trade-give／trade-take），
+        # 其他工作（換寵、存倉…）會搶練寵的寵物（練寵中別換戰寵），一律不排
+        if getattr(mod, "HOSTED_OK", False):
+            return _enqueue(args, argv, own, jdir, odir, log, is_alive, sleep)
+        log(f"停止：{owner.describe(own)} 正在用第 {args.profile} 組帳號，它的佇列只收 "
+            f"{'／'.join(sorted(n for n, m in jobs.items() if getattr(m, 'HOSTED_OK', False)))}，{args.job} 不排、不登入")
+        return 1
     if own:
         log(f"停止：{owner.describe(own)} 正在用第 {args.profile} 組帳號（不是常駐練功，沒有佇列），不登入")
         return 1
     if getattr(mod, "QUEUE_ONLY", False):
         log(f"停止：{args.job} 只能排進常駐練功的佇列，第 {args.profile} 組現在沒有常駐在跑")
         return 1
+    host = hosts_queue(mod, args)
     try:
         owner.acquire(odir, args.profile, owner.KIND_JOBS, api_port=getattr(args, "api_port", None), log=log,
-                      is_alive=is_alive)
+                      is_alive=is_alive, jobs_dir=jdir if host else None)
     except owner.OwnerBusy as e:
         log(f"停止：{e}")
         return 1
     try:
-        return _run_here(mod, args, log, party_factory)
+        return _run_here(mod, args, log, party_factory, jdir if host else None)
     finally:
         owner.release(odir, args.profile)
 
@@ -173,8 +182,19 @@ def default_party(mod, args, log):
                  pick=getattr(args, "role", None) if solo else None)
 
 
-def _run_here(mod, args, log, party_factory) -> int:
+def hosts_queue(mod, args) -> bool:
+    """長跑的工作（宣告 HOSTS_QUEUE，例 petgoal --apply）自己登入時也開工作佇列，練功迴圈在兩場戰鬥之間收
+    HOSTED_OK 的工作（trade-give／trade-take；使用者 11-14「讓兩邊不同程式自己交易」）。"""
+    h = getattr(mod, "HOSTS_QUEUE", False)
+    return bool(h(args)) if callable(h) else bool(h)
+
+
+def _run_here(mod, args, log, party_factory, jdir=None) -> int:
     p = party_factory(log) if party_factory is not None else default_party(mod, args, log)
+    if jdir:
+        p.jobq = jobqueue.Queue(jdir, args.profile)
+        p.hosted_only = True
+        log(f"工作佇列：{jdir}（只收 trade-give／trade-take，用 `jobs add` 排）")
     srv = None
     try:
         if getattr(args, "api_port", None):
