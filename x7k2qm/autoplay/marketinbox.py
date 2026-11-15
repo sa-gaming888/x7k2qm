@@ -18,7 +18,7 @@ stall 攤位列出／領取／下架）。`apply` 不給只列（不動攤位）
 重開後看到 accepted 卻找不到那件工作（Pod 重開時正在做、或結果沒寫回）→ 記 lost，不重排；要再做請送新的 id。
 狀態：rejected、accepted、queued、running、ok、failed、hold、expired、cancelled、lost。
 
-帳號端：容器設 `MARKET_INBOX=1`（要有 `STATE_URL`），容器裡開背景執行緒每 INTERVAL 秒讀一次（`Inbox`）。
+帳號端：容器設 `MARKET_INBOX=1`（要有 `STATE_URL`），容器裡開背景執行緒每 INTERVAL 秒（10 分鐘）讀一次（`Inbox`）。
 送指令／看結果（使用者這台，密鑰讀 `~/.x7k2qm/state_keys.json`，不印出）：
 
     python -X utf8 -m x7k2qm.autoplay.marketinbox send --ns k8s-cgy --account <帳號> --job stall --set mode=claim --apply
@@ -40,7 +40,7 @@ from .statesync import ID_RE, Remote, StateError
 
 VERSION = 1
 CMD_SUFFIX, RES_SUFFIX = "-mcmd", "-mres"
-INTERVAL = 60.0
+INTERVAL = 600.0                 # 10 分鐘讀一次（使用者 11-15：60 秒太耗 Worker 免費額度，一個帳號每天 144 次）
 MAX_CMDS = 50                    # 指令物件最多幾筆（多的不看）
 MAX_RESULTS = 100                # 結果最多留幾筆（最舊的先丟）
 MAX_AGE, MAX_AHEAD = 3600, 300   # 指令 ts 要在 1 小時內、不能比現在晚 5 分鐘以上
@@ -294,7 +294,7 @@ def main(argv=None) -> int:
         raise SystemExit(f"指令編號 {c['id']} 已經用過，換一個")
     d["cmds"].append(c)
     cmd_r.put(json.dumps(d, ensure_ascii=False).encode("utf-8"))
-    print(f"已送出 {c['id']}：{json.dumps(c, ensure_ascii=False)}（帳號約 {int(INTERVAL)} 秒內讀到，用 show 看結果）")
+    print(f"已送出 {c['id']}：{json.dumps(c, ensure_ascii=False)}（帳號約 {int(INTERVAL // 60)} 分鐘內讀到，用 show 看結果）")
     return 0
 
 
