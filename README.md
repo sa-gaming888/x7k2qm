@@ -93,6 +93,7 @@ docker restart bot          # 改完設定檔重開生效（會等這場戰鬥�
 | `AUTO_SPIRIT` | `bot.auto_spirit` | `1`＝隊長買精靈金幣、60 級自動穿；其他值＝不買 |
 | `STATE_URL` | — | 狀態保存位址（https，例 `https://<worker>/state/<ns>`）：啟動先抓回劇本進度與還沒做的工作，之後有變才上傳；Pod 重建能接著做。沒設＝不保存 |
 | `STATE_KEY` | — | 狀態保存密鑰（設了 `STATE_URL` 必填；或 `STATE_KEY_FILE`） |
+| `MARKET_INBOX` | — | `1`＝開交易所遠端指令：每 60 秒讀 `<STATE_URL>/<帳號>-mcmd`，檢查過排進佇列（道具上架、個倉寵物上架、攤位列出／領取／下架），結果寫 `<帳號>-mres`；要有 `STATE_URL`。預設關 |
 | `AUTO_DAILY` | `bot.auto_daily` | `1`＝每天 0:10 以後自動解一次每日委託（3 轉以上的角色，只花石幣；預設開）；其他值＝不解 |
 | `NO_RETREAT` | `bot.no_retreat` | `1`＝不退回上一張圖；其他值＝照常 |
 | `POINT_PLAN` | `waigua.point_plan` | 自訂加點 `隊長體,敏,攻/隊員體,敏,攻`；`none`＝不設 |

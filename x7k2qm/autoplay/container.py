@@ -24,12 +24,14 @@
   BATTLE_HEAL           外掛戰鬥中技能補血門檻 %；none＝不設                  → waigua.battle_heal
   API_TOKEN             查詢 API 的 token（至少 16 字元；或 API_TOKEN_FILE）。有設才對外開 8790 埠，
                         沒設只能在容器裡查（docker exec … status_api）
-  API_JOBS              1＝開放 POST /jobs 排白名單工作（目前只有 auction 集市上架，會改遊戲狀態）；
+  API_JOBS              1＝開放 POST /jobs 排白名單工作（auction 道具上架、petauction 寵物上架、stall 攤位領取／下架，會改遊戲狀態）；
                         預設關，要同時設 API_TOKEN（使用者 11-06 經 本遊戲 session：容器預設關）
   DATA_DIR              劇本進度、工作佇列、鎖、停止檔的目錄（預設 /data）
   STATE_URL             狀態保存位址（選填，https；例 https://<worker>/state/<ns>）：啟動先抓回劇本進度與還沒做的工作，
                         之後有變才上傳（statesync.py；使用者 11-15「紀錄狀態讓他重開可以接回來用」）
   STATE_KEY             狀態保存密鑰（設了 STATE_URL 必填；或 STATE_KEY_FILE）
+  MARKET_INBOX          1＝開交易所遠端指令：每分鐘讀 <STATE_URL>/<帳號>-mcmd，檢查過排進佇列（上架、領取、下架），
+                        結果寫 <帳號>-mres（marketinbox.py；使用者 11-15）；要有 STATE_URL
 
 - 密碼只放在行程環境變數，不寫檔、不進日誌（`describe()` 只列有沒有設）。
 - 練功程式崩潰或被強殺：照 keepalive 有限次重開（5、10、20 分鐘）；自己回報停止、被擠下線不重開（規範 2）。
@@ -159,7 +161,8 @@ def describe(env: Mapping[str, str]) -> str:
     pw = "已設" if _secret(env, "GAME_PASSWORD") else "未設"
     auto = "自動同意" if env.get("AUTO_REBIRTH", "0").strip() == "1" else "停在關卡等人"
     state = "開" if env.get("STATE_URL", "").strip() else "關"
-    return f"帳號 {shown}｜密碼 {pw}｜轉生 {auto}｜狀態保存 {state}"
+    inbox = "開" if env.get("MARKET_INBOX", "").strip() == "1" else "關"
+    return f"帳號 {shown}｜密碼 {pw}｜轉生 {auto}｜狀態保存 {state}｜交易所指令 {inbox}"
 
 
 def run_tee(cmd: List[str], env: Mapping[str, str], cwd: str, out: TextIO = None) -> Tuple[int, str]:
@@ -191,6 +194,16 @@ def state_config(env: Mapping[str, str]):
     return url, key, env.get("GAME_ACCOUNT", "").strip()
 
 
+def market_inbox(env: Mapping[str, str]) -> bool:
+    """MARKET_INBOX=1 開交易所遠端指令（marketinbox.py）；要有 STATE_URL（指令放在同一個地方）。"""
+    v = env.get("MARKET_INBOX", "").strip()
+    if v not in ("", "0", "1"):
+        raise SetupError(f"MARKET_INBOX 只能是 1 或 0（現在是 {v!r}）")
+    if v == "1" and state_config(env) is None:
+        raise SetupError("MARKET_INBOX=1 要同時設 STATE_URL、STATE_KEY（指令放在狀態保存同一個地方）")
+    return v == "1"
+
+
 def check(env: Mapping[str, str]) -> List[str]:
     """不登入的自我檢查：劇本能載入、工作都認得、地圖格子與設定表在。回傳問題清單（空＝通過）。"""
     problems = []
@@ -212,6 +225,7 @@ def check(env: Mapping[str, str]) -> List[str]:
             problems.append(f"劇本：{e}")
     try:
         state_config(env)
+        market_inbox(env)
     except SetupError as e:
         problems.append(str(e))
     from .jobs import registry
@@ -259,7 +273,7 @@ def main(argv=None, environ: Mapping[str, str] = os.environ,
     signal.signal(signal.SIGINT, on_term)
 
     log(f"啟動：{describe(environ)}")
-    syncer = None
+    syncer = inbox = None
     try:
         st = state_config(environ)
         if st is not None:
@@ -271,6 +285,15 @@ def main(argv=None, environ: Mapping[str, str] = os.environ,
                 log(f"停止：狀態保存：{e}（遠端存檔不能用；刪掉那份或拿掉 STATE_URL 再開）")
                 return 2
             syncer.start()
+        if market_inbox(environ):                # 交易所遠端指令（使用者 11-15；marketinbox.py）
+            from . import marketinbox
+            from .statesync import StateError
+            try:
+                inbox = marketinbox.make(st[0], st[1], st[2], data, PROFILE, log)
+            except StateError as e:
+                log(f"停止：交易所指令：{e}")
+                return 2
+            inbox.start()
     except SetupError as e:
         log(f"停止：{e}")
         return 2
@@ -281,6 +304,8 @@ def main(argv=None, environ: Mapping[str, str] = os.environ,
     try:
         why = keepalive.supervise(run_once, lambda: os.path.exists(keep_stop), log, log)
     finally:
+        if inbox is not None:
+            inbox.stop()
         if syncer is not None:
             syncer.stop()                      # 練功程式登出後最後送一次
     log(f"結束：{why}")

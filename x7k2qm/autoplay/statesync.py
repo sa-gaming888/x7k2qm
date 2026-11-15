@@ -152,7 +152,8 @@ class Syncer:
         """有變才送；回 True＝這次送了。"""
         if not self.enabled:
             return False
-        blob = pack(collect(self.data))
+        files = collect(self.data)
+        blob = pack(files)
         h = hashlib.sha256(blob).hexdigest()
         if h == self.last:
             return False
@@ -165,6 +166,7 @@ class Syncer:
             self.log(f"狀態保存：上傳失敗（{type(e).__name__}: {e}）")
             return False
         self.last = h
+        self.log(f"狀態保存：已上傳 {len(blob)} bytes（{len(files)} 個檔）")   # 有變才送，一天幾次（11-15 k8s 要查得到）
         return True
 
     def _loop(self) -> None:

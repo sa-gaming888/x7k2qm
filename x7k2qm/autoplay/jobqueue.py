@@ -68,9 +68,10 @@ class Queue:
         return [j for j in out if j]
 
     # ---- 排隊端（jobs add／status／cancel）----
-    def add(self, name: str, argv: List[str], now: Optional[float] = None) -> dict:
+    def add(self, name: str, argv: List[str], now: Optional[float] = None, jid: Optional[str] = None) -> dict:
+        """jid：指定工作編號（遠端指令用固定編號，重開後查得到同一件；marketinbox.py）。"""
         now = time.time() if now is None else now
-        jid = time.strftime("%Y%m%d-%H%M%S", time.localtime(now)) + f"-{random.randrange(16 ** 4):04x}"
+        jid = jid or time.strftime("%Y%m%d-%H%M%S", time.localtime(now)) + f"-{random.randrange(16 ** 4):04x}"
         job = {"id": jid, "name": name, "argv": list(argv), "ts": now}
         _write(self._path("queue", jid), job)
         return job

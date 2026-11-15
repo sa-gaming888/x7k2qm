@@ -229,7 +229,7 @@ def run(p, args) -> Tuple[str, dict]:
                   f"約 {cost:,} 石幣")
         return "只列每日委託要做什麼（沒加 --apply，沒有送任何動作）", {"plan": out}
     # 組隊中隊員跟著隊長走、自己不能傳送（提示 30746）：2026-10-28 第二組隊長做完在 2009，
-    # 角色38跟著在 2009、要去 1009 傳不回村子就停 → 開跑前先解散，回練功時 form_team 會重組
+    # 角色35跟著在 2009、要去 1009 傳不回村子就停 → 開跑前先解散，回練功時 form_team 會重組
     p.dismiss_team()
     done = {}
     for name in names:
@@ -251,7 +251,7 @@ def do_one(p, name: str) -> int:
         book_id, need, _ = recipe(p, product)
         new = sum(1 for iid, num in need if bag_count(p, name, iid) < 1)   # 背包還沒有的材料各佔 1 格
         if new and free_slots(p, name) < new + 2:         # 買完還要留 2 格合成（cook）
-            # 2026-10-31 第三組角色56：背包 4 格阿布的水、空 6 格，買齊 5 樣材料剩 0 格合成不了 → 材料卡在背包
+            # 2026-10-31 第三組角色53：背包 4 格阿布的水、空 6 格，買齊 5 樣材料剩 0 格合成不了 → 材料卡在背包
             raise JobError(f"{name} 背包空 {free_slots(p, name)} 格，{item_name(p, product)} 要買 {new} 樣材料"
                            f"＋合成留 2 格，放不下（先清背包）")
         for iid, num in need:

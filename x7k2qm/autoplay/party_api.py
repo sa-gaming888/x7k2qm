@@ -9,7 +9,7 @@
     例外 `POST /infolog`：只打開「人物寵物每分鐘印一次、5 分鐘後自動關」的日誌，不送封包、不碰遊戲狀態。
     例外 `POST /debug/*`（debugtap.py，使用者 2026-11-05「runtime debug」）：封包追蹤、出招統計只記錄不送；
     `POST /debug/fast` 暫時關快戰是唯一會送封包的（由練功主迴圈送，時間到照平常規則開回來）。全部有時限、時間到自動關。
-    例外 `POST /jobs`（使用者 2026-11-06）：把白名單工作（`JOB_POSTS`，目前只有 auction）排進工作佇列，跟 `jobs add` 一樣；
+    例外 `POST /jobs`（使用者 2026-11-06）：把白名單工作（`JOB_POSTS`：auction、petauction、stall）排進工作佇列，跟 `jobs add` 一樣；
     API 自己不送封包，工作由主迴圈在兩場戰鬥之間照工作本身的規則做。`"apply": true` 才真的做。
     **預設關**：要環境變數 `BOT_API_JOBS=1`＋`BOT_API_TOKEN` 都有才開，否則 403（含只列）。
   - 記憶體狀態（/state /roles /role /bag /equip /pets /tasks /buffs /battle /waigua）**不送任何封包**，
@@ -531,10 +531,17 @@ OPEN = ("/health",)          # 不用 token 的端點（不含遊戲資料）
 # POST /jobs：排工作進這個常駐的佇列（跟 `jobs add` 同一個佇列、同一套檢查）。只收白名單裡的工作與欄位；
 # 欄位 → 命令列參數。`"apply": true` 才真的做（加 --apply 與該工作要的確認旗標），不給只列。
 JOB_POSTS = {
-    "auction": {"fields": {"item": int, "price": int, "count": int, "currency": str, "who": str},
+    "auction": {"fields": {"item": int, "price": int, "count": int, "lots": int, "currency": str, "who": str},
                 "required": ("item", "price"), "confirm": "--confirm-list",
                 "summary": "道具上架集市：item 道具 ID、price 單價、count 數量（預設 1）、currency 幣別"
-                           "（石幣／活力／聲望／鑽石或 3／2／8／1，預設石幣）、who 哪一隻（預設隊長）"},
+                           "（石幣／活力／聲望／鑽石或 3／2／8／1，預設石幣）、who 哪一隻（預設隊長）、lots 分幾筆"},
+    # 使用者 11-15「api 把完整資訊通知帳號，他檢查過沒問題，會自動去交易所上下架跟領取」（遠端走 marketinbox.py）
+    "petauction": {"fields": {"pet_uid": str, "price": int, "currency": str},
+                   "required": ("pet_uid", "price", "currency"), "confirm": "--confirm-list",
+                   "summary": "個倉寵物上架：pet_uid 寵物唯一編號（逗號分隔多隻）、price 每隻價錢、currency 幣別（必填）"},
+    "stall": {"fields": {"mode": str, "uid": str, "who": str},
+              "required": (), "confirm": "--confirm-stall",
+              "summary": "攤位（道具＋寵物）：mode list 列出（預設）／claim 領取已賣出與已到期／delist 下架 uid（攤位編號，逗號分隔）"},
 }
 MAX_BODY = 65536
 
@@ -572,7 +579,7 @@ def job_argv(body, profile: str) -> List[str]:
         s = str(v)
         if s.startswith("-") or "\n" in s:
             raise JobRequestError(f"{k} 的值不合法：{s!r}")
-        argv += [f"--{k}", s]
+        argv += [f"--{k.replace('_', '-')}", s]
     if apply:
         argv.append("--apply")
         if spec.get("confirm"):
