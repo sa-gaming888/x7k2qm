@@ -303,8 +303,17 @@ class Runner:
 
     # ---- 進度 ----
     def start(self) -> dict:
-        """常駐啟動時呼叫：沒有進度檔就從第 1 步開始；有就接著（劇本名對不上＝停止，不自己重設）。"""
+        """常駐啟動時呼叫：沒有進度檔就從第 1 步開始；有就接著。
+        進度檔是別的劇本＝人換了劇本（例：五轉後 SCENARIO 從轉生改成練寵）：舊進度搬到 `<組>.prev.json` 留著，新劇本從第 1 步開始。
+        以前是停下來等人處理，11-16 cgy 三組換成練寵劇本後全部停在「進度檔是劇本轉生」，只練功不練寵（LESSONS #218）。
+        同一份劇本改過步驟（步驟名對不上）照舊停止，由人 reset。"""
         d = self.pg.read()
+        if d is not None and d.get("scenario") != self.sc.name:
+            prev = Progress(os.path.dirname(self.pg.path), f"{self.profile}.prev")
+            prev.write(d)
+            self.log(f"劇本：進度檔是劇本「{d.get('scenario')}」（{describe(d)}），現在載入的是「{self.sc.name}」"
+                     f"→ 換劇本，舊進度存到 {os.path.basename(prev.path)}")
+            d = None
         if d is None:
             d = fresh(self.sc)
             self.pg.write(d)
