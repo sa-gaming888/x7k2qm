@@ -323,7 +323,7 @@ def to_sell(pet: dict, args) -> bool:
 
 def free_for_sale(p, n: str, uid: int) -> None:
     """要賣的這隻還是戰寵（身上只有人龍和騎寵時，原本的戰寵就是牠自己，練完沒得換回）：解掉戰寵鎖定、改休息。
-    11-07 18:38 第三組角色68 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
+    11-07 18:38 第三組角色43 120 級人龍「出戰中，不賣」整組停（LESSONS #181）。"""
     from .pets import rest_pet, unlock
     fight, ride = p.locks(n)
     with p.lock:
@@ -333,7 +333,7 @@ def free_for_sale(p, n: str, uid: int) -> None:
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是戰寵，先解掉戰寵鎖定")
     elif ride == uid:
         # 改練另一種時，以前當騎寵練的同種到級要賣，牠還鎖著騎寵、騎乘中：只解戰寵的舊版改休息沒確認整組停
-        # （11-10 23:06 第十組改練 307，角色59騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
+        # （11-10 23:06 第十組改練 307，角色51騎著的 307「改休息沒確認」，LESSONS #191）。騎寵空著，下一步 ride_step 補
         unlock(p, n, fight, 0)
         p.log(f"寵物目標：{n} 要賣的 {uid} 還是騎寵，先解掉騎寵鎖定")
     if idx is not None:
@@ -364,7 +364,7 @@ def finish(p, name: str, pet: dict, args) -> str:
         raise JobError(f"{name} 寵物 {uid} 是鎖定的騎寵，不存")
     if uid == fight:
         # 身上只有人龍和騎寵時，原本的戰寵就是牠自己（#179），「改回原本的」還是牠 → 跟賣的那條一樣先解鎖、改休息再存
-        # （11-08 15:27 第九組角色32、15:46 第二組角色49人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
+        # （11-08 15:27 第九組角色30、15:46 第二組角色44人龍到 1000 分改名存倉時「還是鎖定的戰寵」整組停，LESSONS #185）
         free_for_sale(p, name, uid)
     d = diff_of(pet)
     if d >= args.cut:
@@ -404,7 +404,7 @@ DIGIGUS = 1589                   # 迪基格斯：人物五轉的組禁止練（
 
 
 def no_fill_ids(p) -> tuple:
-    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色48、第八組角色69被頂替成 1589，LESSONS #204）。"""
+    """這組不拿來頂替的種類：女寵；隊裡有人五轉再加迪基格斯（11-13 第七組角色49、第八組角色68被頂替成 1589，LESSONS #204）。"""
     if any((v or 0) >= 5 for v in getattr(p, "trans", {}).values()):
         return NO_FILL + (DIGIGUS,)
     return NO_FILL
@@ -447,13 +447,13 @@ def swap_in(p, name: str, args, key, claimed: set, fills: Optional[Dict[str, int
     """練功中（已關遇敵、不在戰鬥）幫這隻角色換上下一隻要練的：先領倉庫沒練完的指定寵物（fetch），
     沒有就拿個倉沒滿 140 的（fill_row，記在 fills）。換上後加進 orig_fight／train_uid，跟一開始就在練的一樣收。
     身上 5 格滿了、倉庫都沒有 → 回 False（照舊用原本戰寵跟著打）。
-    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色38布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
+    舊版要等這一輪其他人都練完才領下一隻：11-12 21:08 第二組角色35布魯頓存倉後空手跟隊 13 小時（LESSONS #203）。"""
     from .catch import SLOT_MAX
     pet = None
     what = "指定的"
     if len(slots(p, name)) >= SLOT_MAX:
         # 身上滿了領不出倉庫的：原本的戰寵已經 140（不長經驗）就拿身上休息中、沒滿 140 的頂替
-        # （11-15 第九組角色41水爆存倉後用 140 級人龍跟打；使用者「要可以自動換」，LESSONS #212）
+        # （11-15 第九組角色36水爆存倉後用 140 級人龍跟打；使用者「要可以自動換」，LESSONS #212）
         pet = body_fill(p, name, args) if fills is not None else None
         if pet is None:
             p.log(f"寵物目標：{name} 身上 {SLOT_MAX} 格滿了，領不出下一隻，先用原本戰寵跟著打")
@@ -541,7 +541,7 @@ def keep_of(p, name: str, args) -> set:
 
 def park_unlisted(p, names: List[str], args) -> None:
     """--uids：身上同種、不在名單上的先存倉——練寵模式照物種挑戰寵（pet_index），同種兩隻會挑錯
-    （11-10 第九組角色32身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
+    （11-10 第九組角色30身上 +3 黑豹 169453 和 +0 的 169423，換成了 169423，LESSONS #188）。鎖定中的不動。"""
     only = uid_set(args)
     if not only:
         return
@@ -630,7 +630,7 @@ def can_ride_refill(name: str, args, state: dict) -> bool:
 def ride_room(p, n: str, args, slot_max: int) -> None:
     """補抓騎寵前身上放不下：休息中、已經到目標的野外騎寵種類先存倉（不改名、不賣），空出格子再抓。
     補抓騎寵不看 --assign（抓帳號最缺的那種），ride_step 卻只收這隻角色指定的那種，別種練完的會一直留在身上；
-    catch 的 make_room 又不動要抓的物種 → 11-15 19:48 第二組角色38（指定 310，身上一隻 137 級的 307 休息）
+    catch 的 make_room 又不動要抓的物種 → 11-15 19:48 第二組角色35（指定 310，身上一隻 137 級的 307 休息）
     「現在 4 隻、要抓 1 隻，超過上限 4」，整組這次執行的騎寵補抓被關掉，三隻 121 級該換的老虎一直照騎（LESSONS #215）。
     鎖定的戰寵／騎寵、正在練的（keep_of）、金虎不動；倉庫都滿就不存，照舊由 catch_one 擋下。"""
     over = len(slots(p, n)) + 1 - slot_max
@@ -714,7 +714,7 @@ def refill(p, who: List[str], args, state: dict, species: Optional[List[int]] = 
     state.setdefault(count, 0)
     # 到上限不再讓角色空手（使用者 11-13「如果上限 30 次都沒抓到，就在抓一次隨便抓一隻去練，根據檔次決定練到達分or 賣」）：
     # 每次補抓、每隻還沒寵物練的角色在額度用完後**再抓 1 隻、不放生**，照檔次走原本的目標（≥ --cut 練到分數、< --cut 練到級賣／存）。
-    # 舊版到上限就 return，11-13 第七組角色66補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
+    # 舊版到上限就 return，11-13 第七組角色58補抓邦奇諾 30 隻都低於 +3 全放生，之後整輪空手跟隊（LESSONS #203）
     release = bool(getattr(args, "release_low", False)) and not ride     # 騎寵照舊練到 120 賣
     wanted = 0 if ride else int(getattr(args, "refill_want", 0) or 0)
     if wanted and state.get("kept", 0) >= wanted:
@@ -821,7 +821,7 @@ def release_caught(p, n: str, pet: dict) -> None:
         raise JobError(f"{n} 剛抓的 {uid}（{pid}）不是 1 級或在任務條件／保護名單上，不放生，停")
     if uid in p.locks(n):
         # 抓之前沒有戰寵（上一隻練完存倉了）時，catch 的 restore_fight_pet 會挑身上等級最高的＝剛抓的 1 級當戰寵，
-        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色65，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
+        # 放生就被「是戰寵／騎寵，不放生」擋下整組停（11-12 13:40 第十組角色63，LESSONS #200）。剛抓的 1 級先解鎖改休息再放
         free_for_sale(p, n, uid)
     idx = next((k for k, v in slots(p, n).items() if v.get("uniqueIndex") == uid), None)
     if idx is None:
@@ -935,7 +935,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
         rids = rids_of(args, n)               # --assign：這隻只騎指定的那種
         fight, ride = p.locks(n)
         # 身上休息中、已經到目標的那幾種（上次換下來沒處理、或上次中斷留著的）先收／賣，不然一直佔格子：
-        # 11-10 18:36 第七組角色48只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
+        # 11-10 18:36 第七組角色49只有 4 格，兩隻 120 級以上的 307 留在身上，補抓騎寵時 make_room 不動要抓的物種 →
         # 「現在 4 隻、要抓 1 隻，超過上限 4」整組停（LESSONS #189）
         queued = {id(x) for _, x in selling}
         for v in list(slots(p, n).values()):
@@ -977,7 +977,7 @@ def ride_step(p, names: List[str], args, selling: list, done: list) -> List[str]
             if cur is None or not ride_ok(cur, every, g, fight):   # 現在騎的別種老虎還沒到目標就不用補抓
                 need.append(n)
             # 沒有指定那種可騎，身上鎖著的是別種老虎、還沒到目標 → 先騎著（有經驗總比空著好），休息中就補忠誠叫上場。
-            # 11-12 --assign 後第十組角色65指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
+            # 11-12 --assign 後第十組角色63指定 310、身上鎖的是 307 忠誠 96 一直休息，舊版直接略過（LESSONS #198）
             if (cur is not None and cur.get("status") == 1 and cur.get("petId") in ride_ids(args)
                     and grade(cur)[1] is not None and not is_done(cur, g)):
                 p.log(f"寵物目標：{n} 沒有指定的騎寵可換，先騎著身上的 {ride}（{cur.get('petId')}）")
