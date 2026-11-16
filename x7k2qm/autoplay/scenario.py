@@ -240,8 +240,18 @@ class Progress:
             raise ScenarioError(f"進度檔 {self.path} 讀不了：{e}")
 
     def write(self, d: dict) -> None:
-        d["updated"] = time.time()
+        """內容（不算 updated）跟檔案一樣就不寫：練等時主迴圈每輪 tick 都呼叫，以前每次蓋新的 updated，
+        狀態保存（statesync）每分鐘都當成有變上傳，20 組練等每小時約 1,175 次，打爆 Worker 免費額度（11-16，LESSONS #216）。"""
         d["history"] = list(d.get("history") or [])[-HISTORY_MAX:]
+        try:
+            old = self.read()
+        except ScenarioError:
+            old = None
+        if old is not None and {k: v for k, v in old.items() if k != "updated"} == \
+                json.loads(json.dumps({k: v for k, v in d.items() if k != "updated"}, default=str)):
+            d["updated"] = old.get("updated")
+            return
+        d["updated"] = time.time()
         os.makedirs(os.path.dirname(self.path) or ".", exist_ok=True)
         tmp = f"{self.path}.{os.getpid()}.tmp"
         with open(tmp, "w", encoding="utf-8") as fp:
